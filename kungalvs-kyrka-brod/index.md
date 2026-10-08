@@ -117,7 +117,15 @@ Fem iakttagelser:
 - **Arbetet 1958–59 syns.** Det stämmer med Bebyggelseregistrets uppgift om konservatorsarbeten av Thorbjörn Engblad 1959.
 - **Inget från 1970.** Samlingens senaste daterade fotografier är från 1963. Någon rapport av Sven Gustafsson kom inte fram.
 
-Två av fotografierna används på barnsidan: [nr 78, före](https://pub.raa.se/dokumentation/dce231c1-ba5f-4fd2-bb65-af0e8e7bfd70), och [nr 79, efter](https://pub.raa.se/dokumentation/063c1b4a-29a6-42c8-8267-79686fffa299). De visar samma målning i långhuset men är tagna från olika håll. All skillnad mellan dem beror alltså inte på konserveringen.
+Två exempel ur serien visar samma målning i långhuset, före och efter. De är tagna från olika håll, så all skillnad mellan dem beror inte på konserveringen. Båda är märkta Public Domain.
+
+![Svartvitt fotografi av takmålningen i långhuset 1935, med Kristus i en oval strålkrans bland mörka moln](tak-1935-fore.jpg)
+
+[Nr 78](https://pub.raa.se/dokumentation/dce231c1-ba5f-4fd2-bb65-af0e8e7bfd70), 1935: ”Takmålning i långhuset. Före renoveringen.”
+
+![Svartvitt fotografi av samma takmålning 1936, där Kristusfiguren och änglarna runt om syns tydligt](tak-1936-efter.jpg)
+
+[Nr 79](https://pub.raa.se/dokumentation/063c1b4a-29a6-42c8-8267-79686fffa299), 1936: ”Takmålning i långhuset. Efter renoveringen.”
 
 Sökningarna ”Kungälvs kyrka konservering” (43 träffar) och ”Kungälvs kyrka Gustafsson” (35 träffar) gav mest arkeologiska rapporter. Av de träfflistorna lästes bara de första raderna.
 

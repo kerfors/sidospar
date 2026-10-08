@@ -7,6 +7,7 @@ https://kerfors.github.io/sidospar/
 
 | Mapp | Projekt |
 | --- | --- |
+| `kungalvs-kyrka-brod/` | Källgenomgång: tvättades taket i Kungälvs kyrka med ljust bröd? Med en version för barn. |
 | `bohus-1678/` | Källgenomgång: sköt belägrarna in latrin i Bohus fästning 1678? Med en version för barn. |
 
 ## Struktur

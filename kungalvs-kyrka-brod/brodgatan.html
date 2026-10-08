@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tvättade man taket i Kungälvs kyrka med ljust bröd? En detektivjakt bland källor, för barn.">
+<title>Brödgåtan i Kungälvs kyrka</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Grandstander:wght@500;700;800&display=swap">
+<style>
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+/* Layout: samma högläsningsspalt som Bajsgåtan; en teckning överst i stället för arkivbilder, ledtrådarna som en rad med stämplar. */
+:root {
+  --bg: #e6eef0;
+  --ark: #f8f9f6;
+  --ink: #22292e;
+  --dim: #55636b;
+  --mur: #b8425f;
+  --alv: #2f6a85;
+  --brun: #7b4a1c;
+  --linje: #c3d0d4;
+  --display: "Grandstander", "Comic Sans MS", "Trebuchet MS", sans-serif;
+  --body: "Atkinson Hyperlegible", "Verdana", "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131e26; --ark: #1d2b35; --ink: #edf1ef; --dim: #a3b3ba;
+    --mur: #f08ea4; --alv: #8cc6dd; --brun: #dfa56a; --linje: #33454f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #131e26; --ark: #1d2b35; --ink: #edf1ef; --dim: #a3b3ba;
+  --mur: #f08ea4; --alv: #8cc6dd; --brun: #dfa56a; --linje: #33454f;
+  color-scheme: dark;
+}
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+.sida {
+  max-width: 40rem;
+  margin-inline: auto;
+  padding-inline: 20px;
+  padding-block: 2.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+section, header, footer { display: flex; flex-direction: column; gap: 1.1rem; min-width: 0; }
+p, h1, h2, h3, ul, figure { margin: 0; }
+h1 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  line-height: 0.98;
+  color: var(--mur);
+  text-wrap: balance;
+}
+h2 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(1.7rem, 6vw, 2.2rem);
+  line-height: 1.15;
+  text-wrap: balance;
+}
+.fraga { font-size: 1.5rem; line-height: 1.4; font-weight: 700; }
+figure { display: flex; flex-direction: column; gap: 0.6rem; }
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--linje);
+  border-radius: 3px;
+}
+figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--linje);
+  border-radius: 3px;
+}
+figcaption, .liten { font-size: 1rem; line-height: 1.45; color: var(--dim); }
+
+.tal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 1.2rem 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+.tal li { display: flex; flex-direction: column; gap: 0.1rem; min-width: 0; }
+.tal b {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 2.6rem;
+  line-height: 1;
+  color: var(--alv);
+  font-variant-numeric: tabular-nums;
+}
+.tal span { font-size: 1.05rem; line-height: 1.35; }
+
+.ledtradar { display: flex; flex-direction: column; gap: 0; padding: 0; list-style: none; }
+.ledtradar > li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-block: 1.6rem;
+  border-top: 2px solid var(--linje);
+  min-width: 0;
+}
+.ledtradar > li:last-child { border-bottom: 2px solid var(--linje); }
+.huvud { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; }
+h3 { font-family: var(--display); font-weight: 700; font-size: 1.4rem; line-height: 1.2; flex: 1 1 14rem; }
+.stampel {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.65rem;
+  border: 3px solid currentColor;
+  border-radius: 6px;
+  transform: rotate(-3deg);
+  white-space: nowrap;
+}
+.stampel.ja { color: var(--brun); }
+.stampel.nej { color: var(--alv); }
+.stampel.vet { color: var(--dim); }
+
+.dom {
+  background: var(--ark);
+  border: 1px solid var(--linje);
+  border-radius: 4px;
+  padding: 1.8rem 1.4rem;
+}
+.dom .svar {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(3.2rem, 15vw, 5.5rem);
+  line-height: 1;
+  color: var(--mur);
+}
+.punkter { padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.6rem; }
+.kallor { font-size: 1rem; line-height: 1.5; color: var(--dim); }
+.kallor ul { padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.35rem; }
+a { color: var(--alv); text-underline-offset: 0.15em; overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--mur); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="sida">
+
+<header>
+  <h1>Brödgåtan i Kungälvs kyrka</h1>
+  <p class="fraga">Tvättade man verkligen kyrktaket med bröd?</p>
+  <p>Så berättades det i skolan förr. Med ljust bröd, en barkis! Vi blev detektiver igen och letade efter bevis.</p>
+  <figure>
+    <svg viewBox="0 0 800 380" role="img" aria-labelledby="t1 d1" xmlns="http://www.w3.org/2000/svg">
+      <title id="t1">Teckning av ett målat tak som suddas rent med en limpa</title>
+      <desc id="d1">En blå himmel med vita moln. Den vänstra halvan är mörk av sot. Den högra halvan är ren och klar. Mitt på bilden suddar en ljus limpa med vallmofrön bort sotet, och smulor faller ner.</desc>
+      <defs>
+        <clipPath id="ram"><rect x="0" y="0" width="800" height="380" rx="6"/></clipPath>
+        <clipPath id="sotsida"><path d="M0 0 H392 C372 60 418 110 396 170 C376 230 420 290 398 380 H0 Z"/></clipPath>
+      </defs>
+      <g clip-path="url(#ram)">
+        <rect width="800" height="380" fill="#6fa3cf"/>
+        <g stroke="#5b8fbc" stroke-width="2">
+          <path d="M0 76 H800 M0 152 H800 M0 228 H800 M0 304 H800"/>
+        </g>
+        <g fill="#f6f3ea">
+          <g><circle cx="110" cy="110" r="38"/><circle cx="160" cy="92" r="48"/><circle cx="215" cy="112" r="36"/><rect x="100" y="110" width="130" height="38" rx="19"/></g>
+          <g><circle cx="270" cy="270" r="32"/><circle cx="315" cy="252" r="42"/><circle cx="362" cy="272" r="30"/><rect x="262" y="270" width="112" height="32" rx="16"/></g>
+          <g><circle cx="540" cy="96" r="34"/><circle cx="588" cy="76" r="46"/><circle cx="640" cy="98" r="34"/><rect x="530" y="96" width="124" height="36" rx="18"/></g>
+          <g><circle cx="620" cy="282" r="36"/><circle cx="670" cy="262" r="46"/><circle cx="722" cy="284" r="34"/><rect x="610" y="282" width="126" height="38" rx="19"/></g>
+        </g>
+        <rect width="800" height="380" fill="#2b2118" opacity="0.62" clip-path="url(#sotsida)"/>
+        <g fill="#e9cf9c">
+          <circle cx="372" cy="318" r="5"/><circle cx="408" cy="338" r="4"/><circle cx="350" cy="350" r="3.5"/>
+          <circle cx="430" cy="306" r="3.5"/><circle cx="392" cy="362" r="4.5"/><circle cx="446" cy="350" r="3"/>
+        </g>
+        <g transform="translate(400 196) rotate(-18)">
+          <ellipse cx="0" cy="8" rx="132" ry="58" fill="#b9792f"/>
+          <ellipse cx="0" cy="-2" rx="126" ry="50" fill="#e0a85a"/>
+          <ellipse cx="-8" cy="-12" rx="104" ry="32" fill="#efc986"/>
+          <g stroke="#b9792f" stroke-width="5" stroke-linecap="round" fill="none">
+            <path d="M-70 -30 q14 22 4 44"/><path d="M-20 -38 q14 24 4 50"/><path d="M30 -36 q14 24 4 48"/><path d="M78 -26 q12 18 4 36"/>
+          </g>
+          <g fill="#3a2f28">
+            <circle cx="-92" cy="-4" r="3"/><circle cx="-48" cy="-22" r="3"/><circle cx="-44" cy="6" r="3"/><circle cx="2" cy="-26" r="3"/>
+            <circle cx="6" cy="8" r="3"/><circle cx="52" cy="-20" r="3"/><circle cx="56" cy="8" r="3"/><circle cx="98" cy="-6" r="3"/>
+            <circle cx="-70" cy="14" r="3"/><circle cx="-18" cy="18" r="3"/><circle cx="30" cy="18" r="3"/><circle cx="80" cy="12" r="3"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <figcaption>En teckning av hur det kan ha gått till: sotigt tak till vänster, suddat till höger. Det är ingen bild från kyrkan.</figcaption>
+  </figure>
+</header>
+
+<section>
+  <h2>Först: vad är det för tak?</h2>
+  <p>Kungälvs kyrka är byggd av trä. Den är nästan 350 år gammal.</p>
+  <p>Hela taket är en enda stor målning. Där finns änglar och moln, en djävul med eldsprutande drakar och en stad som brinner.</p>
+  <ul class="tal">
+    <li><b>1698</b><span>målades taket</span></li>
+    <li><b>3</b><span>målare: en mästare, hans gesäll och gesällens son</span></li>
+    <li><b>1 287</b><span>ansikten i taket, har konservatorn räknat</span></li>
+  </ul>
+  <p>Mästaren hette Erik Grijs. En gesäll är en som har lärt sig yrket men ännu inte är mästare.</p>
+</section>
+
+<section>
+  <h2>Varför måste ett tak tvättas?</h2>
+  <p>Sot och damm stiger uppåt och fastnar i taket. Sot kommer från sådant som brinner, som levande ljus.</p>
+  <p>År 1880 var taket smutsigt och nersotat. Då gjorde en målare som hette Wallström rent det.</p>
+  <p>Den som tvättar en gammal målning måste vara väldigt försiktig. Annars kan färgen följa med.</p>
+</section>
+
+<section>
+  <h2>Kan man sudda med bröd?</h2>
+  <p>Ja, det kan man! Mjukt bröd fungerar som ett suddgummi. Smutsen fastnar i brödet.</p>
+  <p>En konservator är en som lagar och tvättar gamla målningar. En konservator har berättat att man suddade väggarna i en kyrka i Uppsala med vanligt bröd år 1954.</p>
+  <p>Frågan är: gjorde man så i Kungälv också?</p>
+</section>
+
+<section>
+  <h2>Ledtrådarna</h2>
+  <p>En detektiv vill veta två saker. Vad säger ledtråden? Och hur vet den det?</p>
+  <ul class="ledtradar">
+    <li>
+      <div class="huvud"><h3>Berättelsen från skolan</h3><span class="stampel ja">Säger bröd</span></div>
+      <p>Omkring 1970 berättades det i skolan i Kungälv att taket i Kungälvs kyrka tvättades med ljust bröd.</p>
+      <p>Men ingen har skrivit upp vem som berättade det först.</p>
+    </li>
+    <li>
+      <div class="huvud"><h3>Kyrkan i Uppsala, 1954</h3><span class="stampel ja">Bröd!</span></div>
+      <p>Där suddade man väggarna med vanligt bröd. Så sättet att tvätta fanns på riktigt.</p>
+      <p>Men det var en annan kyrka. Där sitter målningarna på väggar av sten och kalk. Taket i Kungälv är av trä.</p>
+    </li>
+    <li>
+      <div class="huvud"><h3>Två kyrkor till, 2014 och 2015</h3><span class="stampel ja">Deg</span></div>
+      <p>Där använde konservatorerna en deg i stället för bröd. Den knådas av vetemjöl, vatten, soda och kopparsulfat. Sedan suddar man med den.</p>
+      <p>Den degen ska man inte äta!</p>
+    </li>
+    <li>
+      <div class="huvud"><h3>Kungälvs kyrka 1935</h3><span class="stampel vet">Vet inte hur</span></div>
+      <p>Det året gjordes taket rent. Konservatorn hette Sven Gustafsson och kom från Göteborg.</p>
+      <p>Men texterna vi har läst berättar inte vad han tvättade med.</p>
+    </li>
+    <li>
+      <div class="huvud"><h3>Kungälvs kyrka 1970</h3><span class="stampel vet">Vet inte hur</span></div>
+      <p>Just när berättelsen gick i skolan arbetade en konservator i kyrkan. Han hette Thorbjörn Engblad.</p>
+      <p>Han målade en rad små vita prickar vid det han själv hade målat, och skrev årtalet 1970. Då kan alla se vad som är nytt och vad som är gammalt.</p>
+      <p>Men ingen text säger att han tvättade taket.</p>
+    </li>
+    <li>
+      <div class="huvud"><h3>Kungälvs kyrka 2023</h3><span class="stampel nej">Inget bröd</span></div>
+      <p>Då tvättades taket senast. Först med mjuk pensel och dammsugare. Sedan suddade de med en särskild suddsvamp, bräda för bräda.</p>
+      <ul class="tal">
+        <li><b>3</b><span>som tvättade: en konservator, hennes dotter och en målarmästare</span></li>
+        <li><b>325 år</b><span>hade gått sedan taket målades</span></li>
+      </ul>
+      <p>Tre målade taket. Tre tvättade det.</p>
+    </li>
+    <li>
+      <div class="huvud"><h3>Sökningen i Riksarkivet</h3><span class="stampel nej">Hittade inget</span></div>
+      <p>Riksarkivet har lärt en dator att läsa gammal handstil. Vi sökte på kyrka och bröd.</p>
+      <p>Datorn hittade bara människor som för länge sedan dömdes till ”fängelse vid vatten och bröd”. Ingenting om kyrktak.</p>
+    </li>
+  </ul>
+</section>
+
+<section class="dom">
+  <h2>Så, är det sant?</h2>
+  <p class="svar">Kanske.</p>
+  <p>Att man har suddat målningar i kyrkor med bröd är sant. Det har vi hittat bevis för.</p>
+  <p>Att man gjorde det just i Kungälvs kyrka har vi inte hittat något bevis för. Vi har inte heller hittat något som säger att det är påhitt.</p>
+  <p>Berättelsen kan alltså vara sann. Det kan ändras till ett ja eller ett nej om någon hittar rätt papper.</p>
+</section>
+
+<section>
+  <h2>Här kan beviset gömma sig</h2>
+  <ul class="punkter">
+    <li>I det som konservatorerna själva skrev om sitt arbete 1935 och 1970. Sådana papper kan ligga i ett arkiv.</li>
+    <li>I gamla tidningar från Kungälv.</li>
+    <li>Hos konservatorn Maria Lagerqvist. Hon tvättade taket 2023 och har läst gamla papper om kyrkan.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Varför inte bröd i dag?</h2>
+  <p>Med brödet följer pyttesmå levande saker som kallas mikroorganismer. De kan fastna i väggen. Då kan det börja mögla.</p>
+  <p>Därför använder konservatorerna svampar och särskild deg i dag.</p>
+</section>
+
+<section>
+  <h2>En hemlighet i skeppet</h2>
+  <p>Mitt i kyrkan hänger ett stort modellskepp. I botten på skeppet låg en hälsning gömd. Konservatorerna hittade den 2023.</p>
+  <ul class="punkter">
+    <li>En tidning från den 20 december 1935.</li>
+    <li>Ett hoprullat foto. På baksidan står det att Sven Gustafsson gjorde alla konserveringsarbeten i kyrkan.</li>
+    <li>Ett par gamla segel och fyra små kanoner.</li>
+  </ul>
+  <p>Maria sa att de skulle lägga dit en ny tidning när de var klara.</p>
+</section>
+
+<section>
+  <h2>Leta själv i kyrkan</h2>
+  <ul class="punkter">
+    <li>De vita prickarna och årtalet 1970. De sitter på väggen vid orgeln.</li>
+    <li>Djävulen med drakarna. Mitt emot finns Abraham.</li>
+    <li>Staden som brinner. Det är Kungälv.</li>
+    <li>Några små ytor i taket som inte tvättades 2023. De skulle sparas för att visa före och efter. Finns de kvar?</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Se när taket tvättas</h2>
+  <p>Församlingen filmade arbetet 2023. Det finns sju korta filmer på Youtube. Tillsammans tar de knappt tjugo minuter.</p>
+  <ul class="punkter">
+    <li><a href="https://youtu.be/3RNJkaNl-fg">Del 1</a>, 2.30 minuter</li>
+    <li><a href="https://youtu.be/MyRVbUt26GE">Del 2</a>, 3.15 minuter</li>
+    <li><a href="https://youtu.be/KxUQ0p9DkbM">Del 3</a>, 3.16 minuter</li>
+    <li><a href="https://youtu.be/10FdcmG9NOY">Del 4</a>, 1.38 minuter</li>
+    <li><a href="https://youtu.be/K1rTHsyzjE8">Del 5</a>, 2.43 minuter</li>
+    <li><a href="https://youtu.be/25IHIZEoeZ4">Del 6</a>, 3.25 minuter</li>
+    <li><a href="https://youtu.be/FQG6f76BNNo">Del 7</a>, 2.39 minuter</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Att prata om</h2>
+  <ul class="punkter">
+    <li>Varför tror du att mjukt bröd kan sudda bort smuts?</li>
+    <li>Hur kan en berättelse leva kvar i femtio år utan att någon har skrivit ner den?</li>
+    <li>Vad tror du själv: bröd eller inte bröd?</li>
+  </ul>
+</section>
+
+<footer class="kallor">
+  <h2>För den som läser högt</h2>
+  <p><a href="./">Källäget: vad källorna säger, för vuxna</a></p>
+  <p>Allt på sidan kommer från källorna nedan. Uppgiften om Uppsala 1954 är läst som ett sökutdrag ur en låst tidningsartikel. Talet 1 287 är konservatorns eget, med tillägget ”om jag räknat rätt”. Namnet stavas både Gustafsson och Gustavsson i källorna. Teckningen överst är gjord för den här sidan och visar inget som är dokumenterat.</p>
+  <ul>
+    <li><a href="https://www.svenskakyrkan.se/kungalv/nyheter/att-arbeta-med-ett-1600-talstak">Att arbeta med ett 1600-talstak</a>, Maria Lagerqvist, Kungälv-Ytterby församling, 2024</li>
+    <li><a href="https://www.svenskakyrkan.se/kungalv/nyheter/narkontakt-med-taket">Närkontakt med taket</a>, Kungälv-Ytterby församling, 2023</li>
+    <li><a href="https://www.svenskakyrkan.se/kungalv/nyheter/snart-ar-hela-taket-suddat">Snart är hela taket rensuddat</a>, Kungälv-Ytterby församling, 2023</li>
+    <li><a href="https://www.svenskakyrkan.se/kungalv/nyheter/gomda-halsningar-fran-1935">Gömda hälsningar från 1935</a>, Kungälv-Ytterby församling, 2023</li>
+    <li><a href="https://www.kringla.nu/kringla/objekt?referens=raa/bbr/21400000443036">Kungälvs kyrka</a>, Bebyggelseregistret, Riksantikvarieämbetet</li>
+    <li><a href="https://www.unt.se/kultur/kyrkokonst/artikel/storrengoring-i-helga-trefaldighetskyrkan/l767145r">Storrengöring i Helga trefaldighetskyrkan</a>, Upsala Nya Tidning, 2015</li>
+    <li><a href="https://svenskakyrkan.se/default.aspx?id=1266298">Reportage om Ärentuna kyrka</a>, Uppsalatidningen, 2015</li>
+    <li><a href="https://www.svenskakyrkan.se/katrineholmsbygdens-forsamling/skoldinge-kyrka">Sköldinge kyrka</a>, Katrineholmsbygdens församling</li>
+  </ul>
+</footer>
+
+</div>
+</body>
+</html>

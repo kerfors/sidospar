@@ -27,6 +27,3 @@ Bilderna i `kungalvs-kyrka-brod/` är två fotografier från Riksantikvarieämbe
 (K 1 C: 34 Kungälv, nr 78 och 79), märkta Public Domain. De är förminskade från
 https://pub.raa.se/dokumentation/dce231c1-ba5f-4fd2-bb65-af0e8e7bfd70 och
 https://pub.raa.se/dokumentation/063c1b4a-29a6-42c8-8267-79686fffa299
-
-Bilderna i `kongahalla-beredskapssjukhus/` är tre skärmbilder ur Riksarkivets söktjänst
-(Sjukvårdsberedskapsnämndens arkivförteckning, SE/RA/420177/52), tagna 8 oktober 2026.

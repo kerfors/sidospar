@@ -37,7 +37,7 @@ Två saker gick inte i webbläsaren i steg 3. Riksarkivets söktjänst visade en
 
 Mot Riksarkivet gjordes 6 sökningar i förteckningarna (en av dem avbröts efter 30 sekunder) och 1 sökning i maskintolkad text. Inga sidor eller bilder hämtades därifrån.
 
-En sökning efter ett fritt foto av skolan gav inget: inga träffar på Wikimedia Commons, Europeana eller DigitaltMuseum. Sidan illustreras därför bara med skärmbilder ur Riksarkivets söktjänst.
+En sökning efter ett fritt foto av skolan gav inget: inga träffar på Wikimedia Commons, Europeana eller DigitaltMuseum. Sidan har därför inga bilder.
 
 Sökandet avbröts medvetet här. Sammanställningen visar läget efter en förmiddag, inte en uttömd fråga.
 
@@ -172,10 +172,6 @@ Ett försök att öppna serierna direkt i Riksarkivets söktjänst i webbläsare
 
 Kerstin öppnade Sjukvårdsberedskapsnämndens förteckning själv. Uppgifterna är avlästa från hennes skärmbilder.
 
-![Utsnitt ur Sjukvårdsberedskapsnämndens arkivförteckning i Riksarkivets söktjänst, med serierna EIIab om skolbyggnader, FVIII och JIb](ra-forteckning-sbn.png)
-
-*Sjukvårdsberedskapsnämndens förteckning i Riksarkivets söktjänst. Serien EIIab gäller skolbyggnader som beredskapssjukhus. Skärmbild 8 oktober 2026.*
-
 | Serie | Volymer och år | Kommentar |
 | --- | --- | --- |
 | JIb, Ritningar över beredskapssjukhus, förråd och skyddsrum | 1 volym, 1960–1975 | Täcker åren då skolan planerades, byggdes och togs i bruk |
@@ -186,14 +182,6 @@ Kerstin öppnade Sjukvårdsberedskapsnämndens förteckning själv. Uppgifterna 
 | EIVb, P-byråns hemliga handlingar, allmän serie | År inte synliga | |
 
 Två saker är nya. Det fanns en särskild korrespondensserie om skolbyggnader som beredskapssjukhus, vilket bekräftar att skolorna hanterades som egen fråga centralt. Och ritningsvolymen JIb/1 når fram till 1975. Om det finns en ritning över ett annex i Kungälv hos Riksarkivet är det där den bör ligga.
-
-![Volymposten för ritningar över beredskapssjukhus, förråd och skyddsrum, daterad 1960–1975](ra-volym-jib1-1960-1975.png)
-
-*Ritningsvolymen SE/RA/420177/52/JIb/1, 1960–1975. Skärmbild 8 oktober 2026.*
-
-![Volymposten för förteckning över beredskapssjukhus och blodgivarcentraler, daterad 1960](ra-volym-dv1-1960.png)
-
-*Förteckningsvolymen SE/RA/420177/52/DV/1, 1960. Skärmbild 8 oktober 2026.*
 
 Enligt masteruppsatsen innehåller serien DVI förteckningarna för 1953 och 1954. Förteckningarna från 1960-talet och framåt hämtade författaren i stället ur landstingets arkiv.
 

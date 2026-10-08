@@ -2,6 +2,12 @@
 
 Personliga projekt vid sidan av arbetet. [Kerstin Forsberg](https://kerfors.github.io/)
 
+## Beredskapssjukhus på Kongahälla
+
+Kunde Kongahällagymnasiet göras om till beredskapssjukhus, med syrgasuttag bakom väggpanelerna? Ett rykte från 1970-talet, prövat mot öppna webbkällor och Riksarkivets MCP-tjänst, oktober 2026.
+
+- [Beredskapssjukhus på Kongahälla – källäget](kongahalla-beredskapssjukhus/)
+
 ## Kungälvs kyrka: bröd mot kyrktaket
 
 Tvättade man takmålningarna med ljust bröd, som det berättades i skolan? En källgenomgång med öppna webbkällor och Riksarkivets MCP-tjänst, oktober 2026.

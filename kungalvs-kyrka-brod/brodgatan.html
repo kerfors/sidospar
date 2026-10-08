@@ -10,7 +10,7 @@
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; }
 img { max-width: 100%; }
-/* Layout: samma högläsningsspalt som Bajsgåtan; en teckning överst i stället för arkivbilder, ledtrådarna som en rad med stämplar. */
+/* Layout: samma högläsningsspalt som Bajsgåtan; två arkivbilder överst, före och efter, ledtrådarna som en rad med stämplar. */
 :root {
   --bg: #e6eef0;
   --ark: #f8f9f6;
@@ -71,13 +71,6 @@ h2 {
 .fraga { font-size: 1.5rem; line-height: 1.4; font-weight: 700; }
 figure { display: flex; flex-direction: column; gap: 0.6rem; }
 figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid var(--linje);
-  border-radius: 3px;
-}
-figure svg {
   display: block;
   width: 100%;
   height: auto;
@@ -160,45 +153,12 @@ a:focus-visible { outline: 3px solid var(--mur); outline-offset: 2px; }
   <p class="fraga">Tvättade man verkligen kyrktaket med bröd?</p>
   <p>Så berättades det i skolan förr. Med ljust bröd, en barkis! Vi blev detektiver igen och letade efter bevis.</p>
   <figure>
-    <svg viewBox="0 0 800 380" role="img" aria-labelledby="t1 d1" xmlns="http://www.w3.org/2000/svg">
-      <title id="t1">Teckning av ett målat tak som suddas rent med en limpa</title>
-      <desc id="d1">En blå himmel med vita moln. Den vänstra halvan är mörk av sot. Den högra halvan är ren och klar. Mitt på bilden suddar en ljus limpa med vallmofrön bort sotet, och smulor faller ner.</desc>
-      <defs>
-        <clipPath id="ram"><rect x="0" y="0" width="800" height="380" rx="6"/></clipPath>
-        <clipPath id="sotsida"><path d="M0 0 H392 C372 60 418 110 396 170 C376 230 420 290 398 380 H0 Z"/></clipPath>
-      </defs>
-      <g clip-path="url(#ram)">
-        <rect width="800" height="380" fill="#6fa3cf"/>
-        <g stroke="#5b8fbc" stroke-width="2">
-          <path d="M0 76 H800 M0 152 H800 M0 228 H800 M0 304 H800"/>
-        </g>
-        <g fill="#f6f3ea">
-          <g><circle cx="110" cy="110" r="38"/><circle cx="160" cy="92" r="48"/><circle cx="215" cy="112" r="36"/><rect x="100" y="110" width="130" height="38" rx="19"/></g>
-          <g><circle cx="270" cy="270" r="32"/><circle cx="315" cy="252" r="42"/><circle cx="362" cy="272" r="30"/><rect x="262" y="270" width="112" height="32" rx="16"/></g>
-          <g><circle cx="540" cy="96" r="34"/><circle cx="588" cy="76" r="46"/><circle cx="640" cy="98" r="34"/><rect x="530" y="96" width="124" height="36" rx="18"/></g>
-          <g><circle cx="620" cy="282" r="36"/><circle cx="670" cy="262" r="46"/><circle cx="722" cy="284" r="34"/><rect x="610" y="282" width="126" height="38" rx="19"/></g>
-        </g>
-        <rect width="800" height="380" fill="#2b2118" opacity="0.62" clip-path="url(#sotsida)"/>
-        <g fill="#e9cf9c">
-          <circle cx="372" cy="318" r="5"/><circle cx="408" cy="338" r="4"/><circle cx="350" cy="350" r="3.5"/>
-          <circle cx="430" cy="306" r="3.5"/><circle cx="392" cy="362" r="4.5"/><circle cx="446" cy="350" r="3"/>
-        </g>
-        <g transform="translate(400 196) rotate(-18)">
-          <ellipse cx="0" cy="8" rx="132" ry="58" fill="#b9792f"/>
-          <ellipse cx="0" cy="-2" rx="126" ry="50" fill="#e0a85a"/>
-          <ellipse cx="-8" cy="-12" rx="104" ry="32" fill="#efc986"/>
-          <g stroke="#b9792f" stroke-width="5" stroke-linecap="round" fill="none">
-            <path d="M-70 -30 q14 22 4 44"/><path d="M-20 -38 q14 24 4 50"/><path d="M30 -36 q14 24 4 48"/><path d="M78 -26 q12 18 4 36"/>
-          </g>
-          <g fill="#3a2f28">
-            <circle cx="-92" cy="-4" r="3"/><circle cx="-48" cy="-22" r="3"/><circle cx="-44" cy="6" r="3"/><circle cx="2" cy="-26" r="3"/>
-            <circle cx="6" cy="8" r="3"/><circle cx="52" cy="-20" r="3"/><circle cx="56" cy="8" r="3"/><circle cx="98" cy="-6" r="3"/>
-            <circle cx="-70" cy="14" r="3"/><circle cx="-18" cy="18" r="3"/><circle cx="30" cy="18" r="3"/><circle cx="80" cy="12" r="3"/>
-          </g>
-        </g>
-      </g>
-    </svg>
-    <figcaption>En teckning av hur det kan ha gått till: sotigt tak till vänster, suddat till höger. Det är ingen bild från kyrkan.</figcaption>
+    <img src="tak-1935-fore.jpg" alt="Svartvitt foto av det målade kyrktaket. Kristus svävar i en oval ram av strålar, omgiven av mörka moln. Längst till vänster syns en orgel med spetsiga torn." width="1400" height="941">
+    <figcaption>Före. Taket i långhuset år 1935, innan konservatorn började.</figcaption>
+  </figure>
+  <figure>
+    <img src="tak-1936-efter.jpg" alt="Svartvitt foto av samma takmålning. Kristus i den ovala ramen syns tydligt, med små änglar och moln runt omkring." width="1400" height="1015">
+    <figcaption>Efter. Samma målning år 1936, när arbetet var klart. Ser du någon skillnad? Bilderna finns hos Riksantikvarieämbetet.</figcaption>
   </figure>
 </header>
 
@@ -250,7 +210,8 @@ a:focus-visible { outline: 3px solid var(--mur); outline-offset: 2px; }
     <li>
       <div class="huvud"><h3>Kungälvs kyrka 1935</h3><span class="stampel vet">Vet inte hur</span></div>
       <p>Det året gjordes taket rent. Konservatorn hette Sven Gustafsson och kom från Göteborg.</p>
-      <p>Men texterna vi har läst berättar inte vad han tvättade med.</p>
+      <p>Någon fotograferade taket före och efter. Två av de bilderna ser du högst upp på sidan.</p>
+      <p>Men varken bilderna eller texterna vi har läst berättar vad han tvättade med.</p>
     </li>
     <li>
       <div class="huvud"><h3>Kungälvs kyrka 1970</h3><span class="stampel vet">Vet inte hur</span></div>
@@ -345,13 +306,15 @@ a:focus-visible { outline: 3px solid var(--mur); outline-offset: 2px; }
 <footer class="kallor">
   <h2>För den som läser högt</h2>
   <p><a href="./">Källäget: vad källorna säger, för vuxna</a></p>
-  <p>Allt på sidan kommer från källorna nedan. Uppgiften om Uppsala 1954 är läst som ett sökutdrag ur en låst tidningsartikel. Talet 1 287 är konservatorns eget, med tillägget ”om jag räknat rätt”. Namnet stavas både Gustafsson och Gustavsson i källorna. Teckningen överst är gjord för den här sidan och visar inget som är dokumenterat.</p>
+  <p>Allt på sidan kommer från källorna nedan. Uppgiften om Uppsala 1954 är läst som ett sökutdrag ur en låst tidningsartikel. Talet 1 287 är konservatorns eget, med tillägget ”om jag räknat rätt”. Namnet stavas både Gustafsson och Gustavsson i källorna. De två fotografierna överst är tagna från olika håll, så all skillnad beror inte på konserveringen. Vem som fotograferade vet vi inte. Bilderna är märkta Public Domain hos Riksantikvarieämbetet.</p>
   <ul>
     <li><a href="https://www.svenskakyrkan.se/kungalv/nyheter/att-arbeta-med-ett-1600-talstak">Att arbeta med ett 1600-talstak</a>, Maria Lagerqvist, Kungälv-Ytterby församling, 2024</li>
     <li><a href="https://www.svenskakyrkan.se/kungalv/nyheter/narkontakt-med-taket">Närkontakt med taket</a>, Kungälv-Ytterby församling, 2023</li>
     <li><a href="https://www.svenskakyrkan.se/kungalv/nyheter/snart-ar-hela-taket-suddat">Snart är hela taket rensuddat</a>, Kungälv-Ytterby församling, 2023</li>
     <li><a href="https://www.svenskakyrkan.se/kungalv/nyheter/gomda-halsningar-fran-1935">Gömda hälsningar från 1935</a>, Kungälv-Ytterby församling, 2023</li>
     <li><a href="https://www.kringla.nu/kringla/objekt?referens=raa/bbr/21400000443036">Kungälvs kyrka</a>, Bebyggelseregistret, Riksantikvarieämbetet</li>
+    <li><a href="https://pub.raa.se/dokumentation/dce231c1-ba5f-4fd2-bb65-af0e8e7bfd70">Takmålning i långhuset. Före renoveringen</a>, 1935, Riksantikvarieämbetet, K 1 C: 34 Kungälv, nr 78</li>
+    <li><a href="https://pub.raa.se/dokumentation/063c1b4a-29a6-42c8-8267-79686fffa299">Takmålning i långhuset. Efter renoveringen</a>, 1936, Riksantikvarieämbetet, K 1 C: 34 Kungälv, nr 79</li>
     <li><a href="https://www.unt.se/kultur/kyrkokonst/artikel/storrengoring-i-helga-trefaldighetskyrkan/l767145r">Storrengöring i Helga trefaldighetskyrkan</a>, Upsala Nya Tidning, 2015</li>
     <li><a href="https://svenskakyrkan.se/default.aspx?id=1266298">Reportage om Ärentuna kyrka</a>, Uppsalatidningen, 2015</li>
     <li><a href="https://www.svenskakyrkan.se/katrineholmsbygdens-forsamling/skoldinge-kyrka">Sköldinge kyrka</a>, Katrineholmsbygdens församling</li>

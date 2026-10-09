@@ -1,0 +1,521 @@
+{
+    "bild": {
+        "id": "DSCF3157",
+        "kalla": "https://www.cyberphoto.se/captains-log/kameramuseum",
+        "beskrivning": "Contax-skåpet, första bilden i CyberPhotos kameramuseum",
+        "bredd_px": 2000,
+        "hojd_px": 2415,
+        "fotograf": "Thomas Lövgren"
+    },
+    "kameror": [
+        {
+            "id": "h1-1",
+            "hylla": 1,
+            "pos": 1,
+            "tillverkare": "Contax",
+            "modell": "RTS",
+            "modell_sakerhet": "avläst",
+            "objektiv": "Yashica ML 50 mm f/1,9",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": null,
+            "notering": "Text på kameran: RTS. Objektivtext: ML 50mm 1:1.9, Made in Japan.",
+            "bbox": [
+                85,
+                110,
+                405,
+                220
+            ],
+            "objektiv_match": "exakt",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Yashica ML 50mm f/1,9",
+                    "url": "https://www.cyberphoto.se/captains-log/yashica-ml-50-1-9"
+                }
+            ],
+            "objektiv_url": "https://www.cyberphoto.se/captains-log/yashica-ml-50-1-9",
+            "objektiv_blogg": "Yashica ML 50mm f/1,9"
+        },
+        {
+            "id": "h1-2",
+            "hylla": 1,
+            "pos": 2,
+            "tillverkare": "Contax",
+            "modell": "RTS",
+            "modell_sakerhet": "avläst",
+            "objektiv": "Carl Zeiss Sonnar T* 2,8/85",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": "6579113",
+            "notering": "Olivgrön klädsel, avviker från seriens svarta.",
+            "bbox": [
+                530,
+                115,
+                390,
+                215
+            ],
+            "objektiv_match": "trolig - indexet saknar serienamn",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Carl Zeiss 85mm f/2,8",
+                    "url": "https://www.cyberphoto.se/captains-log/carl-zeiss-85mm-f-2-8"
+                }
+            ],
+            "objektiv_url": null,
+            "objektiv_blogg": null
+        },
+        {
+            "id": "h1-3",
+            "hylla": 1,
+            "pos": 3,
+            "tillverkare": "Contax",
+            "modell": null,
+            "modell_sakerhet": "ej läsbar",
+            "objektiv": "Carl Zeiss Sonnar T* 3,5/100",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": "6639525",
+            "notering": "Modellbeteckningen sitter på vänstra ovansidan och skyms av objektivet. Endast första bokstaven skymtar.",
+            "bbox": [
+                975,
+                130,
+                385,
+                215
+            ],
+            "objektiv_match": "exakt",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Carl Zeiss Sonnar 100mm f/3,5",
+                    "url": "https://www.cyberphoto.se/captains-log/carl-zeiss-sonnar-100-3-5"
+                }
+            ],
+            "objektiv_url": "https://www.cyberphoto.se/captains-log/carl-zeiss-sonnar-100-3-5",
+            "objektiv_blogg": "Carl Zeiss Sonnar 100mm f/3,5"
+        },
+        {
+            "id": "h1-4",
+            "hylla": 1,
+            "pos": 4,
+            "tillverkare": "Contax",
+            "modell": null,
+            "modell_sakerhet": "ej läsbar",
+            "objektiv": "Carl Zeiss Distagon T* 2/28",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": "5906642",
+            "notering": "Modellbeteckningen skyms helt av objektivet.",
+            "bbox": [
+                1450,
+                120,
+                410,
+                215
+            ],
+            "objektiv_match": "brännvidd finns men bländartalet skiljer",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Carl Zeiss Biogon 28mm f/2,8",
+                    "url": "https://www.cyberphoto.se/captains-log/zeiss-biogon-28-2-8"
+                }
+            ],
+            "objektiv_url": null,
+            "objektiv_blogg": null
+        },
+        {
+            "id": "h2-1",
+            "hylla": 2,
+            "pos": 1,
+            "tillverkare": "Contax",
+            "modell": "167MT",
+            "modell_sakerhet": "avläst",
+            "objektiv": "Yashica ML 35 mm f/2,8",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": null,
+            "notering": null,
+            "bbox": [
+                215,
+                615,
+                410,
+                220
+            ],
+            "objektiv_match": "exakt",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Yashica ML 35mm f/2,8",
+                    "url": "https://www.cyberphoto.se/captains-log/yashica-ml-35-2-8"
+                }
+            ],
+            "objektiv_url": "https://www.cyberphoto.se/captains-log/yashica-ml-35-2-8",
+            "objektiv_blogg": "Yashica ML 35mm f/2,8"
+        },
+        {
+            "id": "h2-2",
+            "hylla": 2,
+            "pos": 2,
+            "tillverkare": "Contax",
+            "modell": "RTS",
+            "modell_sakerhet": "avläst",
+            "objektiv": "Carl Zeiss Planar T* 1,4/50",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": "6875468",
+            "notering": "Grå klädsel. Står framför sin originalkartong (Contax, 35mm single-lens reflex camera).",
+            "bbox": [
+                880,
+                615,
+                410,
+                220
+            ],
+            "objektiv_match": "exakt",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Carl Zeiss Planar 50mm f/1,4",
+                    "url": "https://www.cyberphoto.se/captains-log/carl-zeiss-planar-50-1-4"
+                }
+            ],
+            "objektiv_url": "https://www.cyberphoto.se/captains-log/carl-zeiss-planar-50-1-4",
+            "objektiv_blogg": "Carl Zeiss Planar 50mm f/1,4"
+        },
+        {
+            "id": "h2-3",
+            "hylla": 2,
+            "pos": 3,
+            "tillverkare": "Contax",
+            "modell": null,
+            "modell_sakerhet": "ej läsbar",
+            "objektiv": "Carl Zeiss Tessar T* 2,8/45",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": "7400182",
+            "notering": "Kropp med stort integrerat grepp. Ingen modelltext synlig i denna vinkel.",
+            "bbox": [
+                1400,
+                610,
+                400,
+                225
+            ],
+            "objektiv_match": "exakt",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Carl Zeiss Tessar 45mm f/2,8",
+                    "url": "https://www.cyberphoto.se/captains-log/carl-zeiss-tessar-45-2-8"
+                }
+            ],
+            "objektiv_url": "https://www.cyberphoto.se/captains-log/carl-zeiss-tessar-45-2-8",
+            "objektiv_blogg": "Carl Zeiss Tessar 45mm f/2,8"
+        },
+        {
+            "id": "h3-1",
+            "hylla": 3,
+            "pos": 1,
+            "tillverkare": "Contax",
+            "modell": null,
+            "modell_sakerhet": "ej läsbar",
+            "objektiv": "Yashica ML Zoom 42-75 mm f/3,5-4,5",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": null,
+            "notering": "Winder monterad. Modellbeteckningen ej synlig.",
+            "bbox": [
+                265,
+                1120,
+                360,
+                220
+            ],
+            "objektiv_match": "brännvidd finns men bländartalet skiljer",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Yashica ML 42-75mm",
+                    "url": "https://www.cyberphoto.se/captains-log/yashica-ml-42-75"
+                }
+            ],
+            "objektiv_url": null,
+            "objektiv_blogg": null
+        },
+        {
+            "id": "h3-2",
+            "hylla": 3,
+            "pos": 2,
+            "tillverkare": "Contax",
+            "modell": "RTS (guldpläterad specialutgåva)",
+            "modell_sakerhet": "avläst",
+            "objektiv": "Carl Zeiss Planar T* 1,4/50, guldutförande",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": null,
+            "notering": "Guldpläterad kropp med ödleskinnsklädsel. Står på en Zeiss-kartong.",
+            "bbox": [
+                845,
+                1025,
+                355,
+                235
+            ],
+            "objektiv_match": "exakt",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Carl Zeiss Planar 50mm f/1,4",
+                    "url": "https://www.cyberphoto.se/captains-log/carl-zeiss-planar-50-1-4"
+                }
+            ],
+            "objektiv_url": "https://www.cyberphoto.se/captains-log/carl-zeiss-planar-50-1-4",
+            "objektiv_blogg": "Carl Zeiss Planar 50mm f/1,4"
+        },
+        {
+            "id": "h3-3",
+            "hylla": 3,
+            "pos": 3,
+            "tillverkare": "Contax",
+            "modell": null,
+            "modell_sakerhet": "ej läsbar",
+            "objektiv": "Carl Zeiss Planar T* 1,7/50",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": "6796749",
+            "notering": "Winder monterad. Modellbeteckningen ej synlig.",
+            "bbox": [
+                1415,
+                1120,
+                440,
+                225
+            ],
+            "objektiv_match": "exakt",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Carl Zeiss Planar 50mm f/1,7",
+                    "url": "https://www.cyberphoto.se/captains-log/carl-zeiss-50-1-7"
+                }
+            ],
+            "objektiv_url": "https://www.cyberphoto.se/captains-log/carl-zeiss-50-1-7",
+            "objektiv_blogg": "Carl Zeiss Planar 50mm f/1,7"
+        },
+        {
+            "id": "h4-1",
+            "hylla": 4,
+            "pos": 1,
+            "tillverkare": "Contax",
+            "modell": null,
+            "modell_sakerhet": "ej läsbar",
+            "objektiv": "Yashica ML Macro 55 mm f/4",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": null,
+            "notering": "Contax TLA-blixt står bakom kameran; blixtens typnummer går inte att läsa entydigt.",
+            "bbox": [
+                155,
+                1500,
+                470,
+                265
+            ],
+            "objektiv_match": "exakt",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Yashica ML 55mm f/4 Macro",
+                    "url": "https://www.cyberphoto.se/captains-log/yashica-ml-55-4-macro"
+                }
+            ],
+            "objektiv_url": "https://www.cyberphoto.se/captains-log/yashica-ml-55-4-macro",
+            "objektiv_blogg": "Yashica ML 55mm f/4 Macro"
+        },
+        {
+            "id": "h4-2",
+            "hylla": 4,
+            "pos": 2,
+            "tillverkare": "Contax",
+            "modell": "RTS",
+            "modell_sakerhet": "avläst",
+            "objektiv": "Yashica DSB 28 mm f/2,8",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": null,
+            "notering": null,
+            "bbox": [
+                845,
+                1510,
+                375,
+                250
+            ],
+            "objektiv_match": "ingen träff i indexet",
+            "objektiv_kandidater": [],
+            "objektiv_url": null,
+            "objektiv_blogg": null
+        },
+        {
+            "id": "h4-3",
+            "hylla": 4,
+            "pos": 3,
+            "tillverkare": "Contax",
+            "modell": "Aria",
+            "modell_sakerhet": "avläst",
+            "objektiv": "Carl Zeiss Planar T* 1,7/50",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": "6494504",
+            "notering": null,
+            "bbox": [
+                1385,
+                1530,
+                420,
+                235
+            ],
+            "objektiv_match": "exakt",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Carl Zeiss Planar 50mm f/1,7",
+                    "url": "https://www.cyberphoto.se/captains-log/carl-zeiss-50-1-7"
+                }
+            ],
+            "objektiv_url": "https://www.cyberphoto.se/captains-log/carl-zeiss-50-1-7",
+            "objektiv_blogg": "Carl Zeiss Planar 50mm f/1,7"
+        },
+        {
+            "id": "h5-1",
+            "hylla": 5,
+            "pos": 1,
+            "tillverkare": "Contax",
+            "modell": null,
+            "modell_sakerhet": "ej läsbar",
+            "objektiv": "Yashica ML 50 mm f/2",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": null,
+            "notering": null,
+            "bbox": [
+                115,
+                2040,
+                350,
+                275
+            ],
+            "objektiv_match": "exakt",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Yashica ML 50mm f/2",
+                    "url": "https://www.cyberphoto.se/captains-log/yashica-ml-50-2"
+                }
+            ],
+            "objektiv_url": "https://www.cyberphoto.se/captains-log/yashica-ml-50-2",
+            "objektiv_blogg": "Yashica ML 50mm f/2"
+        },
+        {
+            "id": "h5-2",
+            "hylla": 5,
+            "pos": 2,
+            "tillverkare": "Contax",
+            "modell": null,
+            "modell_sakerhet": "ej läsbar",
+            "objektiv": "Yashica ML 50 mm, bländartal ej läsbart",
+            "objektiv_sakerhet": "osäker",
+            "serienummer": null,
+            "notering": "Grön klädsel.",
+            "bbox": [
+                465,
+                2050,
+                340,
+                270
+            ],
+            "objektiv_match": "tvetydig - flera kandidater",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Yashica ML 50mm f/1,4",
+                    "url": "https://www.cyberphoto.se/captains-log/yashica-ml-50-1-4"
+                },
+                {
+                    "namn": "Yashica ML 50mm f/1,7",
+                    "url": "https://www.cyberphoto.se/captains-log/yashica-ml-50-1-7"
+                },
+                {
+                    "namn": "Yashica ML 50mm f/1,9",
+                    "url": "https://www.cyberphoto.se/captains-log/yashica-ml-50-1-9"
+                },
+                {
+                    "namn": "Yashica ML 50mm f/2",
+                    "url": "https://www.cyberphoto.se/captains-log/yashica-ml-50-2"
+                }
+            ],
+            "objektiv_url": null,
+            "objektiv_blogg": null
+        },
+        {
+            "id": "h5-3",
+            "hylla": 5,
+            "pos": 3,
+            "tillverkare": "Canon",
+            "modell": "Canomatic M70",
+            "modell_sakerhet": "avläst",
+            "objektiv": "Canon Lens 40 mm f/2,8 (fast)",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": null,
+            "notering": "Enda icke-Contax i skåpet. Namnet delvis skymt: ...MATIC M 70 syns. Modellnamnet kontrollerat mot Canon Camera Museum.",
+            "bbox": [
+                805,
+                2030,
+                190,
+                180
+            ],
+            "objektiv_match": "trolig - indexet saknar serienamn",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Canon 40mm f/2,8 från A35F",
+                    "url": "https://www.cyberphoto.se/captains-log/canon-40mm-f-2-8-fran-a35f"
+                }
+            ],
+            "objektiv_url": null,
+            "objektiv_blogg": null
+        },
+        {
+            "id": "h5-4",
+            "hylla": 5,
+            "pos": 4,
+            "tillverkare": "Contax",
+            "modell": "Preview",
+            "modell_sakerhet": "osäker",
+            "objektiv": "Carl Zeiss Planar, brännvidd ej läsbar",
+            "objektiv_sakerhet": "osäker",
+            "serienummer": null,
+            "notering": "Lådformad kropp med pistolgrepp och Polaroid-rygg. Ingen modelltext syns; identifieringen bygger på formen.",
+            "bbox": [
+                935,
+                1890,
+                530,
+                415
+            ],
+            "objektiv_match": "tvetydig - brännvidd ej avläst",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Carl Zeiss Planar 35mm f/3,5",
+                    "url": "https://www.cyberphoto.se/captains-log/carl-zeiss-planar-35mm-f-3-5"
+                },
+                {
+                    "namn": "Carl Zeiss Planar 50mm f/1,4",
+                    "url": "https://www.cyberphoto.se/captains-log/carl-zeiss-planar-50-1-4"
+                },
+                {
+                    "namn": "Carl Zeiss Planar 50mm f/1,7",
+                    "url": "https://www.cyberphoto.se/captains-log/carl-zeiss-50-1-7"
+                },
+                {
+                    "namn": "Carl Zeiss Planar 80mm f/2,8 till Hasselblad",
+                    "url": "https://www.cyberphoto.se/captains-log/hasselblad-80-2-8"
+                },
+                {
+                    "namn": "Carl Zeiss Planar 100mm f/2",
+                    "url": "https://www.cyberphoto.se/captains-log/zeiss-planar-100-2"
+                }
+            ],
+            "objektiv_url": null,
+            "objektiv_blogg": null
+        },
+        {
+            "id": "h5-5",
+            "hylla": 5,
+            "pos": 5,
+            "tillverkare": "Contax",
+            "modell": "Preview",
+            "modell_sakerhet": "osäker",
+            "objektiv": "Carl Zeiss Sonnar 2,8/85",
+            "objektiv_sakerhet": "avläst",
+            "serienummer": null,
+            "notering": "Samma typ som föregående. Ingen modelltext syns.",
+            "bbox": [
+                1490,
+                1890,
+                480,
+                420
+            ],
+            "objektiv_match": "trolig - indexet saknar serienamn",
+            "objektiv_kandidater": [
+                {
+                    "namn": "Carl Zeiss 85mm f/2,8",
+                    "url": "https://www.cyberphoto.se/captains-log/carl-zeiss-85mm-f-2-8"
+                }
+            ],
+            "objektiv_url": null,
+            "objektiv_blogg": null
+        }
+    ]
+}

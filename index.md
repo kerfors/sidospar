@@ -21,3 +21,10 @@ Sköt belägrarna in latrin i fästningen, eller är det en legend? En källgeno
 
 - [Latrin på Bohus 1678 – källäget](bohus-1678/)
 - [Bajsgåtan på Bohus](bohus-1678/bajsgatan.html), samma fråga berättad för barn
+
+## Kameramuseet: peka på en kamera i hyllan
+
+Går det att göra en översiktsbild av ett kameraskåp klickbar, kamera för kamera? Ett experiment med Contax-skåpet i CyberPhotos kameramuseum, augusti 2026.
+
+- [Kameramuseet – experimentet](kameramuseum-contax/)
+- [Den klickbara Contax-hyllan](kameramuseum-contax/contax-hyllan.html)

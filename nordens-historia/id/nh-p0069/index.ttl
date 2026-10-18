@@ -19,6 +19,20 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0171#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-011" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Tjänsten ger artikelns sammanfattning och litteraturlista; själva levnadsteckningen finns bara på SBL:s webbplats." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0171 ;
+    schema:reviewBody "SBL:s sammanfattning: konung 12 februari 1771, krönt 29 maj 1772. Statskuppen nämns inte." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "ej verifierad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0172#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809> ;
@@ -66,13 +80,6 @@ nh:nh-c0170 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-nh:nh-c0171 a schema:Claim ;
-    dcterms:identifier "GE42",
-        "nh-c0171" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0069 ;
-    schema:text "Gustav III:s statskupp 1772" .
-
 nh:nh-c0172 a schema:Claim ;
     dcterms:identifier "GE43",
         "nh-c0172" ;
@@ -80,7 +87,17 @@ nh:nh-c0172 a schema:Claim ;
     schema:about nh:nh-p0069 ;
     schema:text "finska kriget 1808–09" .
 
+nh:nh-c0171 a schema:Claim ;
+    dcterms:identifier "GE42",
+        "nh-c0171" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0069 ;
+    schema:text "Gustav III:s statskupp 1772" .
+
 <https://snl.no/Gustav_3.> schema:name "Gustav 3 – Store norske leksikon" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Gustav III" .
 
 <https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809> schema:name "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)" .
 

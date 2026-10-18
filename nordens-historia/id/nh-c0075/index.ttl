@@ -14,6 +14,18 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0075#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-001" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0075 ;
+    schema:reviewBody "SBL: född senast i början av 980-talet, död troligen vintern 1021–1022, svensk konung från omkring 995." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0075/> a schema:WebPage ;
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0075 .
@@ -25,5 +37,7 @@ nh:nh-c0075 a schema:Claim ;
     schema:about nh:nh-p0030 ;
     schema:text "Olof Skötkonung" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> schema:name "Svenskt biografiskt lexikon – Olof \"skötkonung\"" .
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Olof \"skötkonung\"",
+        "Svenskt biografiskt lexikon – Olof \"skötkonung\"" .
 

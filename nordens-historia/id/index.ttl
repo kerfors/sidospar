@@ -549,6 +549,18 @@ nh: a schema:WebPage ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0075#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-001" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0075 ;
+    schema:reviewBody "SBL: född senast i början av 980-talet, död troligen vintern 1021–1022, svensk konung från omkring 995." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0077#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten> ;
@@ -571,6 +583,20 @@ nh: a schema:WebPage ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0078#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-002" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sdhk?SDHK=203> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sdhk?SDHK=203> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Årtalet står inte i brevet. SDHK anger att det är supplerat av utgivarna." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0078 ;
+    schema:reviewBody "SDHK registrerar påven Alexander III:s brev om utnämningen av Stefan i Uppsala till ärkebiskop, daterat Sens 5 augusti 1164." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0080#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> ;
@@ -582,6 +608,20 @@ nh: a schema:WebPage ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0080#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-003" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Samma SBL-artikel som i den första kontrollen, här hämtad genom tjänsten." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0080 ;
+    schema:reviewBody "SBL: Birger Magnusson till Bjälbo, Sveriges jarl, född troligen på 1200-talets första årtionde, död 21 oktober 1266." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0081#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.britannica.com/place/Stockholm> ;
@@ -590,6 +630,22 @@ nh: a schema:WebPage ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0081 ;
     schema:reviewBody "Stockholm nämns första gången 1252 i brev utfärdade av Birger jarl." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0081#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-004" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sdhk?SDHK=664>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=665> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sdhk?SDHK=664>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=665> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Registret visar brev daterade i Stockholm 1252. Att de är de första omnämnandena framgår inte av registret." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0081 ;
+    schema:reviewBody "SDHK har två brev från 1252 med utfärdandeort Stockholm: juli 1252 (kung Valdemar och Birger jarl, Fogdö kloster) och 19 augusti 1252 (Birger jarl, \"Datum Stockholm\")." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
@@ -1008,6 +1064,22 @@ nh: a schema:WebPage ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0144#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-005" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sdhk?SDHK=3228>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=39886> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sdhk?SDHK=3228>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=39886> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Dagen är utgivarnas datering (DS nr 2418 not). SDHK markerar en av de medeltida avskrifterna (nr 39886) som förfalskning." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0144 ;
+    schema:reviewBody "SDHK registrerar freden mellan storfursten Jurij Danielowitsch (för Novgorod) och kung Magnus, med datering 12 augusti 1323." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0145#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Magnus_7._Eriksson> ;
@@ -1054,6 +1126,20 @@ nh: a schema:WebPage ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0148#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-006" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Samma år som affischen. Lex.dk, som den första kontrollen använde, har 1363 som rubrikår." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0148 ;
+    schema:reviewBody "SBL: konung av Sverige 1364–89." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0151#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Kalmarunionen> ;
@@ -1062,6 +1148,26 @@ nh: a schema:WebPage ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0151 ;
     schema:reviewBody "Lex.dk: Margareta formade unionen; Erik av Pommern kröntes i Kalmar 1397 och regerade efter hennes död 1412 till 1439." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0151#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-007" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392>,
+        <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=14836>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=14837> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392>,
+        <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=14836>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=14837> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Året stämmer i båda registren, men dagen skiljer: SBL anger kröningen 17 juni 1397, SDHK daterar kröningsbrevet 13 juli 1397." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0151 ;
+    schema:reviewBody "SBL: Erik av Pommern krönt till konung i de tre rikena i Kalmar 17 juni 1397, ensamregent vid Margaretas död i oktober 1412, avsatt i Sverige omkring 29 september 1439. Margareta död 28 oktober 1412. SDHK registrerar kröningsbrevet och Kalmardokumentet från juli 1397." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
@@ -1133,6 +1239,18 @@ nh: a schema:WebPage ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0160#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-008" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0160 ;
+    schema:reviewBody "SBL: vald till konung i Strängnäs 6 juni 1523, död 29 september 1560." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0161#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag> ;
@@ -1168,6 +1286,18 @@ nh: a schema:WebPage ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0164#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-009" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0164 ;
+    schema:reviewBody "SBL: efter faderns död 30 oktober 1611 hyllad som fullmyndig konung 26 december 1611." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0165#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden> ;
@@ -1187,6 +1317,18 @@ nh: a schema:WebPage ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0166 ;
     schema:reviewBody "Karl XII:s död 1718 markerar stormaktstidens slut." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0166#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-010" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0166 ;
+    schema:reviewBody "SBL: död 30 november 1718 vid belägringen av Fredrikstens fästning." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
@@ -1222,6 +1364,20 @@ nh: a schema:WebPage ;
     schema:reviewBody "Gustav III genomförde en statskupp den 19 augusti 1772 med en ny regeringsform som stärkte kungamakten." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0171#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-011" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Tjänsten ger artikelns sammanfattning och litteraturlista; själva levnadsteckningen finns bara på SBL:s webbplats." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0171 ;
+    schema:reviewBody "SBL:s sammanfattning: konung 12 februari 1771, krönt 29 maj 1772. Statskuppen nämns inte." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "ej verifierad" ] .
 
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0172#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -1366,6 +1522,20 @@ nh: a schema:WebPage ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0185#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-012" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sdhk?SDHK=30221>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=30290> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sdhk?SDHK=30221>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=30290> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0185 ;
+    schema:reviewBody "SDHK: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom 27 februari 1477; ärkebiskop Jakob, universitetets kansler, i Uppsala 20 juli 1477." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0186#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Københavns_Universitet> ;
@@ -1410,6 +1580,20 @@ nh: a schema:WebPage ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0189#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-013" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Sammanfattningen stämmer med att han var i Nederländerna 1735 men nämner inte verket." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0189 ;
+    schema:reviewBody "SBL:s sammanfattning: resor i Europa 1735–38, doktorsgrad i Harderwijk i Holland juni 1735. Systema naturae nämns inte." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "ej verifierad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0190#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius> ;
@@ -1418,6 +1602,18 @@ nh: a schema:WebPage ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0190 ;
     schema:reviewBody "Uppsala universitet anger att Celsius konstruerade sin skala 1742." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0190#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-014" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0190 ;
+    schema:reviewBody "SBL:s förteckning över tryckta arbeten: \"Observationer om twänne beständiga grader på en thermometer\", Vetenskapsakademiens handlingar 1742, s. 171–180." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
@@ -1466,6 +1662,18 @@ nh: a schema:WebPage ;
     schema:reviewBody "Nobelstiftelsen anger att dynamiten uppfanns 1866 och patenterades året därpå, 1867." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0194#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-015" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0194 ;
+    schema:reviewBody "SBL:s sammanfattning: född 1833, styrelseledamot i Nitroglycerin AB 22 oktober 1864. Dynamiten och patentet nämns inte." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "ej verifierad" ] .
 
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0195#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -2528,12 +2736,6 @@ nh: a schema:WebPage ;
     skos:prefLabel "Unionen Sverige–Norge enligt Store norske leksikon"@sv ;
     prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0173#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/#claude-agenter> a prov:SoftwareAgent ;
-    prov:actedOnBehalfOf [ a prov:Person,
-                schema:Person ;
-            schema:name "Kerstin Forsberg" ] ;
-    schema:name "Claude, AI-agenter med webbsökning" .
-
 <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-natmus> a skos:ConceptScheme ;
     skos:prefLabel "Periodindelning enligt Nationalmuseet"@sv ;
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
@@ -2543,6 +2745,13 @@ nh: a schema:WebPage ;
     skos:prefLabel "Periodindelning enligt Sveriges riksdag"@sv ;
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
     schema:url <https://riksdagen.se/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/#riksarkivets-mcp> a prov:Entity,
+        schema:WebAPI ;
+    schema:name "Riksarkivets MCP-tjänst (beta)" ;
+    schema:provider [ a schema:Organization ;
+            schema:name "Riksarkivet" ;
+            schema:url <https://riksarkivet.se/> ] .
 
 nh:nh-c0001 a schema:Claim ;
     dcterms:identifier "IS01",
@@ -3365,13 +3574,6 @@ nh:nh-c0074 a schema:Claim ;
     schema:about nh:nh-p0030 ;
     schema:text "Birka" .
 
-nh:nh-c0075 a schema:Claim ;
-    dcterms:identifier "SV08",
-        "nh-c0075" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0030 ;
-    schema:text "Olof Skötkonung" .
-
 nh:nh-c0076 a schema:Claim ;
     dcterms:identifier "SV09",
         "nh-c0076" ;
@@ -3400,13 +3602,6 @@ nh:nh-c0077 a schema:Claim ;
     schema:about nh:nh-p0031 ;
     schema:text "Erikska och sverkerska ätterna" .
 
-nh:nh-c0078 a schema:Claim ;
-    dcterms:identifier "SV11",
-        "nh-c0078" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0031 ;
-    schema:text "ärkesäte i Uppsala 1164" .
-
 nh:nh-c0079 a schema:Claim ;
     dcterms:identifier "SV12",
         "nh-c0079" ;
@@ -3427,20 +3622,6 @@ nh:nh-c0079 a schema:Claim ;
     schema:reviewBody "NE anger att folkungaätten styrde Sverige 1250–1363 (Norge 1319–87), inte till 1319." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
-
-nh:nh-c0080 a schema:Claim ;
-    dcterms:identifier "SV13",
-        "nh-c0080" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0032 ;
-    schema:text "Birger jarl" .
-
-nh:nh-c0081 a schema:Claim ;
-    dcterms:identifier "SV14",
-        "nh-c0081" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0032 ;
-    schema:text "Stockholm nämns 1252" .
 
 nh:nh-c0082 a schema:Claim ;
     dcterms:identifier "SV15",
@@ -4203,13 +4384,6 @@ nh:nh-c0143 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
 
-nh:nh-c0144 a schema:Claim ;
-    dcterms:identifier "GE15",
-        "nh-c0144" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0060 ;
-    schema:text "Freden i Nöteborg 1323" .
-
 nh:nh-c0145 a schema:Claim ;
     dcterms:identifier "GE16",
         "nh-c0145" ;
@@ -4230,13 +4404,6 @@ nh:nh-c0147 a schema:Claim ;
     dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "digerdöden 1350" .
-
-nh:nh-c0148 a schema:Claim ;
-    dcterms:identifier "GE19",
-        "nh-c0148" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0061 ;
-    schema:text "Albrekt av Mecklenburg 1364–89" .
 
 nh:nh-c0149 a schema:Claim ;
     dcterms:identifier "GE20",
@@ -4273,13 +4440,6 @@ nh:nh-c0150 a schema:Claim ;
     schema:reviewBody "Lex.dk daterar Kalmarunionen traditionellt till 1397–1523." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
-
-nh:nh-c0151 a schema:Claim ;
-    dcterms:identifier "GE22",
-        "nh-c0151" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0063 ;
-    schema:text "Margareta och Erik av Pommern" .
 
 nh:nh-c0152 a schema:Claim ;
     dcterms:identifier "GE23",
@@ -4372,13 +4532,6 @@ nh:nh-c0159 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
 
-nh:nh-c0160 a schema:Claim ;
-    dcterms:identifier "GE31",
-        "nh-c0160" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0066 ;
-    schema:text "Gustav Vasa" .
-
 nh:nh-c0161 a schema:Claim ;
     dcterms:identifier "GE32",
         "nh-c0161" ;
@@ -4411,26 +4564,12 @@ nh:nh-c0163 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-nh:nh-c0164 a schema:Claim ;
-    dcterms:identifier "GE35",
-        "nh-c0164" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0067 ;
-    schema:text "Gustav II Adolf" .
-
 nh:nh-c0165 a schema:Claim ;
     dcterms:identifier "GE36",
         "nh-c0165" ;
     dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0067 ;
     schema:text "westfaliska freden 1648" .
-
-nh:nh-c0166 a schema:Claim ;
-    dcterms:identifier "GE37",
-        "nh-c0166" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0067 ;
-    schema:text "Karl XII" .
 
 nh:nh-c0167 a schema:Claim ;
     dcterms:identifier "GE38",
@@ -4483,13 +4622,6 @@ nh:nh-c0170 a schema:Claim ;
     schema:reviewBody "NE daterar perioden från Gustav III:s statskupp 1772 till Gustav IV Adolfs avsättning 1809." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
-
-nh:nh-c0171 a schema:Claim ;
-    dcterms:identifier "GE42",
-        "nh-c0171" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0069 ;
-    schema:text "Gustav III:s statskupp 1772" .
 
 nh:nh-c0172 a schema:Claim ;
     dcterms:identifier "GE43",
@@ -4593,13 +4725,6 @@ nh:nh-c0184 a schema:Claim ;
     schema:about nh:nh-m0003 ;
     schema:text "Snorres Heimskringla (c.): 1230" .
 
-nh:nh-c0185 a schema:Claim ;
-    dcterms:identifier "MI04",
-        "nh-c0185" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
-    schema:about nh:nh-m0004 ;
-    schema:text "Uppsala universitet: 1477" .
-
 nh:nh-c0186 a schema:Claim ;
     dcterms:identifier "MI05",
         "nh-c0186" ;
@@ -4621,20 +4746,6 @@ nh:nh-c0188 a schema:Claim ;
     schema:about nh:nh-m0007 ;
     schema:text "Rømer mäter ljusets hastighet: 1676" .
 
-nh:nh-c0189 a schema:Claim ;
-    dcterms:identifier "MI08",
-        "nh-c0189" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
-    schema:about nh:nh-m0008 ;
-    schema:text "Linnés Systema Naturae: 1735" .
-
-nh:nh-c0190 a schema:Claim ;
-    dcterms:identifier "MI09",
-        "nh-c0190" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
-    schema:about nh:nh-m0009 ;
-    schema:text "Celsiusskalan: 1742" .
-
 nh:nh-c0191 a schema:Claim ;
     dcterms:identifier "MI10",
         "nh-c0191" ;
@@ -4655,13 +4766,6 @@ nh:nh-c0193 a schema:Claim ;
     dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0012 ;
     schema:text "Kalevala: 1835" .
-
-nh:nh-c0194 a schema:Claim ;
-    dcterms:identifier "MI13",
-        "nh-c0194" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
-    schema:about nh:nh-m0013 ;
-    schema:text "Nobels dynamit: 1867" .
 
 nh:nh-c0195 a schema:Claim ;
     dcterms:identifier "MI14",
@@ -5123,6 +5227,12 @@ nh:nh-m0026 a crm:E5_Event,
 
 <https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki> schema:name "Wikipedia (en): Sammallahdenmäki" .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/#claude-agenter> a prov:SoftwareAgent ;
+    prov:actedOnBehalfOf [ a prov:Person,
+                schema:Person ;
+            schema:name "Kerstin Forsberg" ] ;
+    schema:name "Claude, AI-agenter med webbsökning" .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0031#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Danmarks_historie_i_middelalderen> ;
@@ -5148,6 +5258,111 @@ nh:nh-m0026 a crm:E5_Event,
     schema:reviewBody "Konstitutionell monarki infördes 1849 enligt Lex, men 1945 är inget slut på den; Lex periodiserar i stället 1814–1914 och 1914–1945." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0075 a schema:Claim ;
+    dcterms:identifier "SV08",
+        "nh-c0075" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0030 ;
+    schema:text "Olof Skötkonung" .
+
+nh:nh-c0078 a schema:Claim ;
+    dcterms:identifier "SV11",
+        "nh-c0078" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0031 ;
+    schema:text "ärkesäte i Uppsala 1164" .
+
+nh:nh-c0080 a schema:Claim ;
+    dcterms:identifier "SV13",
+        "nh-c0080" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0032 ;
+    schema:text "Birger jarl" .
+
+nh:nh-c0081 a schema:Claim ;
+    dcterms:identifier "SV14",
+        "nh-c0081" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0032 ;
+    schema:text "Stockholm nämns 1252" .
+
+nh:nh-c0144 a schema:Claim ;
+    dcterms:identifier "GE15",
+        "nh-c0144" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0060 ;
+    schema:text "Freden i Nöteborg 1323" .
+
+nh:nh-c0148 a schema:Claim ;
+    dcterms:identifier "GE19",
+        "nh-c0148" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0061 ;
+    schema:text "Albrekt av Mecklenburg 1364–89" .
+
+nh:nh-c0151 a schema:Claim ;
+    dcterms:identifier "GE22",
+        "nh-c0151" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0063 ;
+    schema:text "Margareta och Erik av Pommern" .
+
+nh:nh-c0160 a schema:Claim ;
+    dcterms:identifier "GE31",
+        "nh-c0160" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0066 ;
+    schema:text "Gustav Vasa" .
+
+nh:nh-c0164 a schema:Claim ;
+    dcterms:identifier "GE35",
+        "nh-c0164" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0067 ;
+    schema:text "Gustav II Adolf" .
+
+nh:nh-c0166 a schema:Claim ;
+    dcterms:identifier "GE37",
+        "nh-c0166" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0067 ;
+    schema:text "Karl XII" .
+
+nh:nh-c0171 a schema:Claim ;
+    dcterms:identifier "GE42",
+        "nh-c0171" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0069 ;
+    schema:text "Gustav III:s statskupp 1772" .
+
+nh:nh-c0185 a schema:Claim ;
+    dcterms:identifier "MI04",
+        "nh-c0185" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
+    schema:about nh:nh-m0004 ;
+    schema:text "Uppsala universitet: 1477" .
+
+nh:nh-c0189 a schema:Claim ;
+    dcterms:identifier "MI08",
+        "nh-c0189" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
+    schema:about nh:nh-m0008 ;
+    schema:text "Linnés Systema Naturae: 1735" .
+
+nh:nh-c0190 a schema:Claim ;
+    dcterms:identifier "MI09",
+        "nh-c0190" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
+    schema:about nh:nh-m0009 ;
+    schema:text "Celsiusskalan: 1742" .
+
+nh:nh-c0194 a schema:Claim ;
+    dcterms:identifier "MI13",
+        "nh-c0194" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
+    schema:about nh:nh-m0013 ;
+    schema:text "Nobels dynamit: 1867" .
 
 <https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf> schema:name "Läkartidningen 2003 (artikel om digerdöden)" .
 
@@ -5277,9 +5492,62 @@ nh:nh-m0026 a crm:E5_Event,
 
 <https://snl.no/vikingtid> schema:name "Vikingtid – Store norske leksikon" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> schema:name "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)" .
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Carl (von) Linné" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> schema:name "Svenskt biografiskt lexikon – Olof \"skötkonung\"" .
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Karl XII" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Gustav I" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Gustav II Adolf" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Gustav III" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Anders Celsius" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Erik av Pommern" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Albrekt av Mecklenburg" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Alfred B Nobel" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Margareta" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=14836> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 14836: kung Eriks kröningsbrev, Kalmar" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=14837> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 14837: Kalmardokumentet: de tre rikenas råd om en kung, Kalmar" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=203> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=30221> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=30290> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=3228> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=39886> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 39886: samma fred, i en annan medeltida avskrift" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=664> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=665> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
 
 <https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html> schema:name "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet" .
 
@@ -5562,6 +5830,14 @@ nh:nh-p0044 a crm:E4_Period,
 <https://snl.no/Ekofisk> schema:name "Store norske leksikon: Ekofisk" .
 
 <https://snl.no/Norge_i_h%C3%B8ymiddelalderen> schema:name "Store norske leksikon: Norge i høymiddelalderen" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Birger Magnusson (Birger jarl)",
+        "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Olof \"skötkonung\"",
+        "Svenskt biografiskt lexikon – Olof \"skötkonung\"" .
 
 <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet> schema:name "Uppslagsverket Finland: Finlands historia – 1800-talet" .
 
@@ -6557,6 +6833,11 @@ nh:nh-p0068 a crm:E4_Period,
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
     schema:url <https://uppslagsverket.fi/> .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> a schema:Dataset ;
+    schema:name "Diplomatarium Suecanum (SDHK)" ;
+    schema:publisher [ a schema:Organization ;
+            schema:name "Riksarkivet" ] .
+
 nh:nh-p0002 a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "nh-p0002" ;
@@ -6745,11 +7026,22 @@ nh:nh-p0070 a crm:E4_Period,
     schema:name "Unionen Sverige–Norge" ;
     schema:temporalCoverage "1814/1905" .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> a schema:Dataset ;
+    schema:name "Svenskt biografiskt lexikon (SBL)" ;
+    schema:publisher [ a schema:Organization ;
+            schema:name "Riksarkivet" ] .
+
 <https://snl.no/Finlands_historie> schema:name "Store norske leksikon: Finlands historie" .
 
 <https://snl.no/Islands_historie> schema:name "Islands historie (Store norske leksikon)" .
 
 <https://lex.dk/Danmarks_historie_i_middelalderen> schema:name "Lex: Danmarks historie i middelalderen" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> a prov:Activity ;
+    prov:startedAtTime "2026-10-18"^^xsd:date ;
+    prov:used <https://kerfors.github.io/sidospar/nordens-historia/id/#riksarkivets-mcp> ;
+    prov:wasAssociatedWith <https://kerfors.github.io/sidospar/nordens-historia/id/#claude-agenter> ;
+    schema:name "Kontroll mot Riksarkivets register" .
 
 <https://snl.no/Norges_historie> schema:name "Store norske leksikon: Norges historie" .
 

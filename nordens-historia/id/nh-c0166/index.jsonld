@@ -96,6 +96,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -139,6 +142,32 @@
     "name": "Stormaktstiden – Nationalencyklopedin"
    },
    "prov:wasDerivedFrom": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden"
+  },
+  {
+   "@id": "nh:nh-c0166#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-010",
+   "itemReviewed": "nh:nh-c0166",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SBL: död 30 november 1718 vid belägringen av Fredrikstens fästning.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357",
+     "name": "SBL: Karl XII",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357"
+   ]
   }
  ]
 }

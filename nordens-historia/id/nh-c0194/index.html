@@ -105,6 +105,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -152,6 +155,32 @@
     "@type": "Comment",
     "text": "Åtgärd på affischen: Etikett ”(patent)”."
    }
+  },
+  {
+   "@id": "nh:nh-c0194#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-015",
+   "itemReviewed": "nh:nh-c0194",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "ej verifierad"
+   },
+   "reviewBody": "SBL:s sammanfattning: född 1833, styrelseledamot i Nitroglycerin AB 22 oktober 1864. Dynamiten och patentet nämns inte.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143",
+     "name": "SBL: Alfred B Nobel",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143"
+   ]
   }
  ]
 }
@@ -202,6 +231,17 @@
 <dt>Kontrollerad</dt><dd>2026-10-18</dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
+<h2>Andra kontrollen: Riksarkivet</h2>
+<p>Uppgiften är också kontrollerad mot Riksarkivets register, Svenskt biografiskt lexikon (SBL) och
+Diplomatarium Suecanum (SDHK), genom Riksarkivets MCP-tjänst (beta). Det är en egen granskning bredvid den första.</p>
+<dl>
+<dt>Utlåtande</dt><dd><span class="v ej">ej verifierad</span></dd>
+<dt>Registerposter</dt><dd><a href="https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143">SBL: Alfred B Nobel</a></dd>
+<dt>Belägg</dt><dd>SBL:s sammanfattning: född 1833, styrelseledamot i Nitroglycerin AB 22 oktober 1864. Dynamiten och patentet nämns inte.</dd>
+
+<dt>Kontrollerad</dt><dd>2026-10-18</dd>
+</dl>
+
 <h2>Data i två format</h2>
 <p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
 <div class="formats">
@@ -303,6 +343,9 @@
   },
   &quot;prov:actedOnBehalfOf&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:used&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
   }
  },
  &quot;@graph&quot;: [
@@ -350,6 +393,32 @@
     &quot;@type&quot;: &quot;Comment&quot;,
     &quot;text&quot;: &quot;Åtgärd på affischen: Etikett ”(patent)”.&quot;
    }
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0194#riksarkivet&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;ra-015&quot;,
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0194&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;ej verifierad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SBL:s sammanfattning: född 1833, styrelseledamot i Nitroglycerin AB 22 oktober 1864. Dynamiten och patentet nämns inte.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-riksarkivet-2026-10-18&quot;,
+   &quot;citation&quot;: [
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143&quot;,
+     &quot;name&quot;: &quot;SBL: Alfred B Nobel&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sbl&quot;
+    }
+   ],
+   &quot;prov:wasDerivedFrom&quot;: [
+    &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143&quot;
+   ]
   }
  ]
 }</pre></div>
@@ -371,9 +440,26 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;omdiskuterad&quot; ] .
 
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0194#riksarkivet&gt; a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier &quot;ra-015&quot; ;
+    prov:wasDerivedFrom &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18&gt; ;
+    schema:citation &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0194 ;
+    schema:reviewBody &quot;SBL:s sammanfattning: född 1833, styrelseledamot i Nitroglycerin AB 22 oktober 1864. Dynamiten och patentet nämns inte.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;ej verifierad&quot; ] .
+
 &lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0194/&gt; a schema:WebPage ;
     schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#dataset&gt; ;
     schema:mainEntity nh:nh-c0194 .
+
+&lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl&gt; ;
+    schema:name &quot;SBL: Alfred B Nobel&quot; .
+
+&lt;https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/&gt; schema:name &quot;Nobelprize.org: Alfred Nobel&#x27;s life and work&quot; .
 
 nh:nh-c0194 a schema:Claim ;
     dcterms:identifier &quot;MI13&quot;,
@@ -381,8 +467,6 @@ nh:nh-c0194 a schema:Claim ;
     dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe&gt; ;
     schema:about nh:nh-m0013 ;
     schema:text &quot;Nobels dynamit: 1867&quot; .
-
-&lt;https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/&gt; schema:name &quot;Nobelprize.org: Alfred Nobel&#x27;s life and work&quot; .
 
 </pre></div>
 </div>

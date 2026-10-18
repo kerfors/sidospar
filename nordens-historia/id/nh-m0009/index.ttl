@@ -17,6 +17,18 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0190#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-014" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0190 ;
+    schema:reviewBody "SBL:s förteckning över tryckta arbeten: \"Observationer om twänne beständiga grader på en thermometer\", Vetenskapsakademiens handlingar 1742, s. 171–180." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0009/> a schema:WebPage ;
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-m0009 .
@@ -38,6 +50,9 @@ nh:nh-m0009 a crm:E5_Event,
     schema:about wd:Q110748751 ;
     schema:name "Celsiusskalan" ;
     schema:startDate "1742"^^xsd:gYear .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Anders Celsius" .
 
 <https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius> schema:name "Uppsala universitet: Anders Celsius" .
 

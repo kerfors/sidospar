@@ -105,6 +105,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -148,6 +151,36 @@
     "name": "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)"
    },
    "prov:wasDerivedFrom": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238"
+  },
+  {
+   "@id": "nh:nh-c0080#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-003",
+   "itemReviewed": "nh:nh-c0080",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SBL: Birger Magnusson till Bjälbo, Sveriges jarl, född troligen på 1200-talets första årtionde, död 21 oktober 1266.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238",
+     "name": "SBL: Birger Magnusson (Birger jarl)",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Samma SBL-artikel som i den första kontrollen, här hämtad genom tjänsten."
+   }
   }
  ]
 }
@@ -198,6 +231,17 @@
 <dt>Kontrollerad</dt><dd>2026-10-18</dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
+<h2>Andra kontrollen: Riksarkivet</h2>
+<p>Uppgiften är också kontrollerad mot Riksarkivets register, Svenskt biografiskt lexikon (SBL) och
+Diplomatarium Suecanum (SDHK), genom Riksarkivets MCP-tjänst (beta). Det är en egen granskning bredvid den första.</p>
+<dl>
+<dt>Utlåtande</dt><dd><span class="v bekräftad">bekräftad</span></dd>
+<dt>Registerposter</dt><dd><a href="https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238">SBL: Birger Magnusson (Birger jarl)</a></dd>
+<dt>Belägg</dt><dd>SBL: Birger Magnusson till Bjälbo, Sveriges jarl, född troligen på 1200-talets första årtionde, död 21 oktober 1266.</dd>
+<dt>Notering</dt><dd>Samma SBL-artikel som i den första kontrollen, här hämtad genom tjänsten.</dd>
+<dt>Kontrollerad</dt><dd>2026-10-18</dd>
+</dl>
+
 <h2>Data i två format</h2>
 <p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
 <div class="formats">
@@ -299,6 +343,9 @@
   },
   &quot;prov:actedOnBehalfOf&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:used&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
   }
  },
  &quot;@graph&quot;: [
@@ -342,6 +389,36 @@
     &quot;name&quot;: &quot;Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)&quot;
    },
    &quot;prov:wasDerivedFrom&quot;: &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0080#riksarkivet&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;ra-003&quot;,
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0080&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SBL: Birger Magnusson till Bjälbo, Sveriges jarl, född troligen på 1200-talets första årtionde, död 21 oktober 1266.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-riksarkivet-2026-10-18&quot;,
+   &quot;citation&quot;: [
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&quot;,
+     &quot;name&quot;: &quot;SBL: Birger Magnusson (Birger jarl)&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sbl&quot;
+    }
+   ],
+   &quot;prov:wasDerivedFrom&quot;: [
+    &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&quot;
+   ],
+   &quot;schema:comment&quot;: {
+    &quot;@type&quot;: &quot;Comment&quot;,
+    &quot;text&quot;: &quot;Samma SBL-artikel som i den första kontrollen, här hämtad genom tjänsten.&quot;
+   }
   }
  ]
 }</pre></div>
@@ -361,6 +438,20 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;bekräftad&quot; ] .
 
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0080#riksarkivet&gt; a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier &quot;ra-003&quot; ;
+    prov:wasDerivedFrom &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18&gt; ;
+    schema:citation &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&gt; ;
+    schema:comment [ a schema:Comment ;
+            schema:text &quot;Samma SBL-artikel som i den första kontrollen, här hämtad genom tjänsten.&quot; ] ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0080 ;
+    schema:reviewBody &quot;SBL: Birger Magnusson till Bjälbo, Sveriges jarl, född troligen på 1200-talets första årtionde, död 21 oktober 1266.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
 &lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0080/&gt; a schema:WebPage ;
     schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#dataset&gt; ;
     schema:mainEntity nh:nh-c0080 .
@@ -372,7 +463,9 @@ nh:nh-c0080 a schema:Claim ;
     schema:about nh:nh-p0032 ;
     schema:text &quot;Birger jarl&quot; .
 
-&lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&gt; schema:name &quot;Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)&quot; .
+&lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl&gt; ;
+    schema:name &quot;SBL: Birger Magnusson (Birger jarl)&quot;,
+        &quot;Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)&quot; .
 
 </pre></div>
 </div>

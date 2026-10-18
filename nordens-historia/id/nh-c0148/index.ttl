@@ -14,9 +14,28 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0148#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-006" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Samma år som affischen. Lex.dk, som den första kontrollen använde, har 1363 som rubrikår." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0148 ;
+    schema:reviewBody "SBL: konung av Sverige 1364–89." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0148/> a schema:WebPage ;
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0148 .
+
+<https://lex.dk/Albrecht_af_Mecklenburg> schema:name "Lex.dk: Albrecht af Mecklenburg" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Albrekt av Mecklenburg" .
 
 nh:nh-c0148 a schema:Claim ;
     dcterms:identifier "GE19",
@@ -24,6 +43,4 @@ nh:nh-c0148 a schema:Claim ;
     dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "Albrekt av Mecklenburg 1364–89" .
-
-<https://lex.dk/Albrecht_af_Mecklenburg> schema:name "Lex.dk: Albrecht af Mecklenburg" .
 

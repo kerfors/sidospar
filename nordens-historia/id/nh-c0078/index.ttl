@@ -14,9 +14,28 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0078#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-002" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sdhk?SDHK=203> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sdhk?SDHK=203> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Årtalet står inte i brevet. SDHK anger att det är supplerat av utgivarna." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0078 ;
+    schema:reviewBody "SDHK registrerar påven Alexander III:s brev om utnämningen av Stefan i Uppsala till ärkebiskop, daterat Sens 5 augusti 1164." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0078/> a schema:WebPage ;
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0078 .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=203> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens" .
+
+<https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd> schema:name "Svenska kyrkan – Ärkebiskopslängd" .
 
 nh:nh-c0078 a schema:Claim ;
     dcterms:identifier "SV11",
@@ -24,6 +43,4 @@ nh:nh-c0078 a schema:Claim ;
     dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0031 ;
     schema:text "ärkesäte i Uppsala 1164" .
-
-<https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd> schema:name "Svenska kyrkan – Ärkebiskopslängd" .
 

@@ -96,6 +96,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -243,6 +246,32 @@
     "name": "Gustav 1 Vasa – Store norske leksikon"
    },
    "prov:wasDerivedFrom": "https://snl.no/Gustav_1_Vasa"
+  },
+  {
+   "@id": "nh:nh-c0160#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-008",
+   "itemReviewed": "nh:nh-c0160",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SBL: vald till konung i Strängnäs 6 juni 1523, död 29 september 1560.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315",
+     "name": "SBL: Gustav I",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315"
+   ]
   },
   {
    "@id": "nh:nh-c0161",

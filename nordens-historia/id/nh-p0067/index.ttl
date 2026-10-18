@@ -19,6 +19,18 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0164#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-009" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0164 ;
+    schema:reviewBody "SBL: efter faderns död 30 oktober 1611 hyllad som fullmyndig konung 26 december 1611." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0165#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden> ;
@@ -38,6 +50,18 @@
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0166 ;
     schema:reviewBody "Karl XII:s död 1718 markerar stormaktstidens slut." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0166#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-010" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0166 ;
+    schema:reviewBody "SBL: död 30 november 1718 vid belägringen av Fredrikstens fästning." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
@@ -77,19 +101,19 @@ nh:nh-c0163 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-nh:nh-c0164 a schema:Claim ;
-    dcterms:identifier "GE35",
-        "nh-c0164" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0067 ;
-    schema:text "Gustav II Adolf" .
-
 nh:nh-c0165 a schema:Claim ;
     dcterms:identifier "GE36",
         "nh-c0165" ;
     dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0067 ;
     schema:text "westfaliska freden 1648" .
+
+nh:nh-c0164 a schema:Claim ;
+    dcterms:identifier "GE35",
+        "nh-c0164" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0067 ;
+    schema:text "Gustav II Adolf" .
 
 nh:nh-c0166 a schema:Claim ;
     dcterms:identifier "GE37",
@@ -99,6 +123,12 @@ nh:nh-c0166 a schema:Claim ;
     schema:text "Karl XII" .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden> schema:name "Westfaliska freden – Nationalencyklopedin" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Karl XII" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Gustav II Adolf" .
 
 nh:nh-p0067 a crm:E4_Period,
         skos:Concept ;

@@ -96,6 +96,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -285,6 +288,36 @@
     "name": "Lex.dk: Albrecht af Mecklenburg"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Albrecht_af_Mecklenburg"
+  },
+  {
+   "@id": "nh:nh-c0148#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-006",
+   "itemReviewed": "nh:nh-c0148",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SBL: konung av Sverige 1364–89.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648",
+     "name": "SBL: Albrekt av Mecklenburg",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Samma år som affischen. Lex.dk, som den första kontrollen använde, har 1363 som rubrikår."
+   }
   }
  ]
 }

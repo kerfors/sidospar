@@ -96,6 +96,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -162,6 +165,32 @@
     "name": "Uppsala universitet: Anders Celsius"
    },
    "prov:wasDerivedFrom": "https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius"
+  },
+  {
+   "@id": "nh:nh-c0190#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-014",
+   "itemReviewed": "nh:nh-c0190",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SBL:s förteckning över tryckta arbeten: \"Observationer om twänne beständiga grader på en thermometer\", Vetenskapsakademiens handlingar 1742, s. 171–180.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758",
+     "name": "SBL: Anders Celsius",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758"
+   ]
   }
  ]
 }

@@ -70,6 +70,7 @@ CONTEXT = {
     "prov:wasDerivedFrom": {"@type": "@id"},
     "prov:wasAssociatedWith": {"@type": "@id"},
     "prov:actedOnBehalfOf": {"@type": "@id"},
+    "prov:used": {"@type": "@id"},
 }
 
 PREFIXES = {k: v for k, v in CONTEXT.items() if isinstance(v, str) and not k.startswith("@")}
@@ -104,6 +105,12 @@ def load():
     wd = json.loads(wpath.read_text(encoding="utf-8")) if wpath.exists() else {}
     defs = json.loads((HERE / "data" / "definitions.json").read_text(encoding="utf-8"))["definitions"]
     return items, claims, wd, defs
+
+
+def load_riksarkivet():
+    """data/riksarkivet.json: the second check, against SBL and SDHK via Riksarkivet's MCP service."""
+    ra = json.loads((HERE / "data" / "riksarkivet.json").read_text(encoding="utf-8"))
+    return {"checked": ra["checked"], "by_claim": {r["claim"]: r for r in ra["checks"]}}
 
 
 # ---------------------------------------------------------------- turtle
@@ -275,7 +282,27 @@ def event_node(e, wd, kind, rel=None):
     return node
 
 
-def claim_nodes(c):
+def ra_review_node(c, r, checked):
+    """The second check of a claim, against Riksarkivet's registers."""
+    node = {
+        "@id": "nh:" + c["id"] + "#riksarkivet",
+        "@type": ["ClaimReview", "prov:Entity"],
+        "dcterms:identifier": r["id"],
+        "itemReviewed": "nh:" + c["id"],
+        "reviewRating": {"@type": "Rating", "alternateName": r["verdict"]},
+        "reviewBody": r["evidence"],
+        "datePublished": checked,
+        "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-" + checked,
+        "citation": [{"@id": x["url"], "name": x["title"], "isPartOf": "nh:#register-" + x["register"].lower()}
+                     for x in r["records"]],
+        "prov:wasDerivedFrom": [x["url"] for x in r["records"]],
+    }
+    if r["note"]:
+        node["schema:comment"] = {"@type": "Comment", "text": r["note"]}
+    return node
+
+
+def claim_nodes(c, ra):
     claim = {
         "@id": "nh:" + c["id"],
         "@type": "Claim",
@@ -300,10 +327,12 @@ def claim_nodes(c):
         review["schema:correction"] = c["correct_value"]
     if c["action"]:
         review["schema:comment"] = {"@type": "Comment", "text": "Åtgärd på affischen: " + c["action"]}
+    if c["id"] in ra["by_claim"]:
+        return [claim, review, ra_review_node(c, ra["by_claim"][c["id"]], ra["checked"])]
     return [claim, review]
 
 
-def shared_nodes(wd, columns):
+def shared_nodes(wd, columns, ra):
     nodes = [
         {"@id": "nh:#dataset", "@type": "Dataset",
          "name": "Nordens historia – en tidslinje",
@@ -339,6 +368,18 @@ def shared_nodes(wd, columns):
         {"@id": "nh:#claude-agenter", "@type": ["prov:SoftwareAgent"],
          "name": "Claude, AI-agenter med webbsökning",
          "prov:actedOnBehalfOf": {"@type": ["prov:Person", "Person"], "name": "Kerstin Forsberg"}},
+        {"@id": "nh:#kontroll-riksarkivet-" + ra["checked"], "@type": "prov:Activity",
+         "name": "Kontroll mot Riksarkivets register",
+         "prov:startedAtTime": {"@value": ra["checked"], "@type": "xsd:date"},
+         "prov:wasAssociatedWith": "nh:#claude-agenter",
+         "prov:used": "nh:#riksarkivets-mcp"},
+        {"@id": "nh:#riksarkivets-mcp", "@type": ["WebAPI", "prov:Entity"],
+         "name": "Riksarkivets MCP-tjänst (beta)",
+         "provider": {"@type": "Organization", "name": "Riksarkivet", "url": "https://riksarkivet.se/"}},
+        {"@id": "nh:#register-sbl", "@type": "Dataset", "name": "Svenskt biografiskt lexikon (SBL)",
+         "publisher": {"@type": "Organization", "name": "Riksarkivet"}},
+        {"@id": "nh:#register-sdhk", "@type": "Dataset", "name": "Diplomatarium Suecanum (SDHK)",
+         "publisher": {"@type": "Organization", "name": "Riksarkivet"}},
     ]
     for c in columns:
         ref = place_ref(c, wd)
@@ -427,7 +468,7 @@ def wd_html(item_id, wd):
     return f'<a href="https://www.wikidata.org/wiki/{m["qid"]}">{m["qid"]}</a> {lab} ({rel})'
 
 
-def claims_table(cl, show_about=False, by_id=None):
+def claims_table(cl, ra, show_about=False, by_id=None):
     rows = []
     for c in cl:
         about = ""
@@ -435,11 +476,33 @@ def claims_table(cl, show_about=False, by_id=None):
             about = "<td>" + ", ".join(f'<a href="../{a}/">{escape(by_id[a]["label"])}</a>' for a in c["about"]) + "</td>"
         src = (f'<a href="{escape(c["source_url"])}">{escape(c["source_title"] or c["source_url"])}</a>'
                if c["source_url"] else escape(c["source_title"]))
+        r = ra["by_claim"].get(c["id"])
+        second = f'<br><span style="color:#6b7682">Riksarkivet:</span> {verdict_badge(r["verdict"])}' if r else ""
         rows.append(f'<tr><td><a href="../{c["id"]}/">{c["id"]}</a></td><td>{escape(c["statement"])}</td>'
-                    f'{about}<td>{verdict_badge(c["verdict"])}</td><td>{src}</td></tr>')
+                    f'{about}<td>{verdict_badge(c["verdict"])}{second}</td><td>{src}</td></tr>')
     head = "<th>Uppgift</th>" + ("<th>Om</th>" if show_about else "")
     return ('<div class="tw"><table><thead><tr><th>Id</th>' + head + '<th>Utlåtande</th><th>Källa</th></tr></thead><tbody>'
             + "".join(rows) + "</tbody></table></div>")
+
+
+def ra_html(r, checked):
+    """The second check, against Riksarkivet's registers, on a claim page."""
+    recs = "<br>".join(
+        f'<a href="{escape(x["url"])}">{escape(x["title"])}</a>'
+        + (f' <span style="color:#6b7682">(registrets datering: {escape(x["date"])})</span>' if x.get("date") else "")
+        for x in r["records"])
+    note = f'<dt>Notering</dt><dd>{escape(r["note"])}</dd>' if r["note"] else ""
+    return f"""<h2>Andra kontrollen: Riksarkivet</h2>
+<p>Uppgiften är också kontrollerad mot Riksarkivets register, Svenskt biografiskt lexikon (SBL) och
+Diplomatarium Suecanum (SDHK), genom Riksarkivets MCP-tjänst (beta). Det är en egen granskning bredvid den första.</p>
+<dl>
+<dt>Utlåtande</dt><dd>{verdict_badge(r["verdict"])}</dd>
+<dt>Registerposter</dt><dd>{recs}</dd>
+<dt>Belägg</dt><dd>{escape(r["evidence"])}</dd>
+{note}
+<dt>Kontrollerad</dt><dd>{checked}</dd>
+</dl>
+"""
 
 
 def link_list(ids, by_id):
@@ -483,7 +546,7 @@ def definitions_html(item, defs):
             + "".join(rows) + "</tbody></table></div>\n")
 
 
-def item_page(item, kind, node, cl, wd, places, rel=None, by_id=None, defs=(), def_nodes=()):
+def item_page(item, kind, node, cl, wd, places, ra, rel=None, by_id=None, defs=(), def_nodes=()):
     rel = rel or {"meets": {}, "met_by": {}, "within": {}, "contains": {}}
     iri = ID + item["id"]
     if kind == "period":
@@ -495,7 +558,7 @@ def item_page(item, kind, node, cl, wd, places, rel=None, by_id=None, defs=(), d
     desc = f"<p>{escape(item['description'])}</p>" if item.get("description") else ""
     doc = {"@context": CONTEXT, "@graph": [
         {"@id": iri + "/", "@type": "WebPage", "mainEntity": "nh:" + item["id"], "isPartOf": "nh:#dataset"},
-        node] + list(def_nodes) + [n for c in cl for n in claim_nodes(c)]}
+        node] + list(def_nodes) + [n for c in cl for n in claim_nodes(c, ra)]}
     ttl = turtle(doc)
     body = f"""<p class="kind">{TYPE_LABEL[kind]}</p>
 <h1>{escape(item['label'])}</h1>
@@ -511,13 +574,13 @@ def item_page(item, kind, node, cl, wd, places, rel=None, by_id=None, defs=(), d
 </dl>
 {definitions_html(item, defs)}
 <h2>Kontrollerade uppgifter</h2>
-{claims_table(cl)}
+{claims_table(cl, ra)}
 {formats_html(doc, ttl)}"""
     return page(item["label"], body, doc, 2), doc, ttl
 
 
-def claim_page(c, by_id):
-    nodes = claim_nodes(c)
+def claim_page(c, by_id, ra):
+    nodes = claim_nodes(c, ra)
     iri = ID + c["id"]
     about = ", ".join(f'<a href="../{a}/">{escape(by_id[a]["label"])}</a> <code>{a}</code>' for a in c["about"])
     src = (f'<a href="{escape(c["source_url"])}">{escape(c["source_title"] or c["source_url"])}</a>'
@@ -540,6 +603,7 @@ def claim_page(c, by_id):
 <dt>Kontrollerad</dt><dd>{c['checked']}</dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
+{ra_html(ra["by_claim"][c["id"]], ra["checked"]) if c["id"] in ra["by_claim"] else ""}
 {formats_html(doc, ttl)}"""
     return page(c["statement"], body, doc, 2), doc, ttl
 
@@ -584,7 +648,8 @@ formulering finns i <code>skos:scopeNote</code>.</li>
 <code>time:intervalMeets</code> när en period slutar samma år som nästa börjar i samma kolumn, och
 <code>crm:P10_falls_within</code> för händelser och milstolpar som inträffar under en period.</li>
 <li><strong>PROV-O</strong> för proveniensen: varje granskning är genererad av källkontrollen den {date}, utförd av
-AI-agenter för Kerstin Forsbergs räkning, och härledd från sin källa.</li>
+AI-agenter för Kerstin Forsbergs räkning, och härledd från sin källa. En del uppgifter har också en andra granskning,
+mot Riksarkivets register SBL och SDHK, genererad av en egen aktivitet som använde Riksarkivets MCP-tjänst.</li>
 <li><strong>Wikidata</strong> som länk utåt. Perioder och händelser länkas med <code>skos:exactMatch</code> eller
 <code>skos:closeMatch</code>. Milstolpar är händelser (grundandet, uppfinningen) och pekar på saken med
 <code>schema:about</code>. Varje länk är hittad med Wikidatas sökverktyg och kontrollerad mot wikidata.org.</li>
@@ -627,6 +692,7 @@ def write(path, text):
 
 def main():
     items, claims, wd, defs = load()
+    ra = load_riksarkivet()
     rel = relations(items)
     defs_by_period = {}
     for d in defs:
@@ -642,7 +708,7 @@ def main():
         for a in c["about"]:
             claims_by_item.setdefault(a, []).append(c)
 
-    graph = shared_nodes(wd, items["columns"]) + scheme_nodes(defs)
+    graph = shared_nodes(wd, items["columns"], ra) + scheme_nodes(defs)
     sections = []
     for kind, lst in kinds:
         rows = []
@@ -655,7 +721,7 @@ def main():
             places = ", ".join(
                 f'<a href="https://www.wikidata.org/wiki/{wd["place:" + c]["qid"]}">{escape(c)}</a>'
                 if wd.get("place:" + c, {}).get("qid") else escape(c) for c in cols)
-            html, doc, ttl = item_page(x, kind, node, claims_by_item.get(x["id"], []), wd, places,
+            html, doc, ttl = item_page(x, kind, node, claims_by_item.get(x["id"], []), wd, places, ra,
                                        rel, by_id, defs_by_period.get(x["id"], []), dnodes)
             write(out / x["id"] / "index.html", html)
             write(out / x["id"] / "index.jsonld", json.dumps(doc, ensure_ascii=False, indent=1))
@@ -668,8 +734,8 @@ def main():
                          ["Id", "Namn", "Tid", "Wikidata"], rows))
     rows = []
     for c in claims:
-        graph += claim_nodes(c)
-        html, doc, ttl = claim_page(c, by_id)
+        graph += claim_nodes(c, ra)
+        html, doc, ttl = claim_page(c, by_id, ra)
         write(out / c["id"] / "index.html", html)
         write(out / c["id"] / "index.jsonld", json.dumps(doc, ensure_ascii=False, indent=1))
         write(out / c["id"] / "index.ttl", ttl)

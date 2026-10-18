@@ -105,6 +105,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -254,6 +257,32 @@
    "prov:wasDerivedFrom": "https://snl.no/Gustav_1_Vasa"
   },
   {
+   "@id": "nh:nh-c0160#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-008",
+   "itemReviewed": "nh:nh-c0160",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SBL: vald till konung i Strängnäs 6 juni 1523, död 29 september 1560.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315",
+     "name": "SBL: Gustav I",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315"
+   ]
+  },
+  {
    "@id": "nh:nh-c0161",
    "@type": "Claim",
    "dcterms:identifier": [
@@ -378,7 +407,7 @@
 <div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1523 – 1611</td><td><code>1523/1611</code></td><td>affischens eget val</td><td></td></tr><tr id="def-062"><td><a href="https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden">Nationalencyklopedin</a><br><span style="color:#6b7682">äldre Vasatiden 1521–1611 (Vasatiden 1521–1654)</span></td><td>1521 – 1611</td><td><code>1521/1611</code></td><td>avviker</td><td><a href="../nh-c0159/">nh-c0159</a></td></tr></tbody></table></div>
 
 <h2>Kontrollerade uppgifter</h2>
-<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0159/">nh-c0159</a></td><td>Period &#x27;Vasatiden&#x27;: 1523 – 1611</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden">Vasatiden – Nationalencyklopedin</a></td></tr><tr><td><a href="../nh-c0160/">nh-c0160</a></td><td>Gustav Vasa</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Gustav_1_Vasa">Gustav 1 Vasa – Store norske leksikon</a></td></tr><tr><td><a href="../nh-c0161/">nh-c0161</a></td><td>reformationen 1527</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag">Västerås riksdag – Nationalencyklopedin</a></td></tr><tr><td><a href="../nh-c0162/">nh-c0162</a></td><td>Uppsala möte 1593</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.svenskakyrkan.se/kristentro/bekannelseskrifter">Bekännelseskrifter – Svenska kyrkan</a></td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0159/">nh-c0159</a></td><td>Period &#x27;Vasatiden&#x27;: 1523 – 1611</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden">Vasatiden – Nationalencyklopedin</a></td></tr><tr><td><a href="../nh-c0160/">nh-c0160</a></td><td>Gustav Vasa</td><td><span class="v bekräftad">bekräftad</span><br><span style="color:#6b7682">Riksarkivet:</span> <span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Gustav_1_Vasa">Gustav 1 Vasa – Store norske leksikon</a></td></tr><tr><td><a href="../nh-c0161/">nh-c0161</a></td><td>reformationen 1527</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag">Västerås riksdag – Nationalencyklopedin</a></td></tr><tr><td><a href="../nh-c0162/">nh-c0162</a></td><td>Uppsala möte 1593</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.svenskakyrkan.se/kristentro/bekannelseskrifter">Bekännelseskrifter – Svenska kyrkan</a></td></tr></tbody></table></div>
 <h2>Data i två format</h2>
 <p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
 <div class="formats">
@@ -479,6 +508,9 @@
    &quot;@type&quot;: &quot;@id&quot;
   },
   &quot;prov:actedOnBehalfOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:used&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   }
  },
@@ -629,6 +661,32 @@
    &quot;prov:wasDerivedFrom&quot;: &quot;https://snl.no/Gustav_1_Vasa&quot;
   },
   {
+   &quot;@id&quot;: &quot;nh:nh-c0160#riksarkivet&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;ra-008&quot;,
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0160&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SBL: vald till konung i Strängnäs 6 juni 1523, död 29 september 1560.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-riksarkivet-2026-10-18&quot;,
+   &quot;citation&quot;: [
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315&quot;,
+     &quot;name&quot;: &quot;SBL: Gustav I&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sbl&quot;
+    }
+   ],
+   &quot;prov:wasDerivedFrom&quot;: [
+    &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315&quot;
+   ]
+  },
+  {
    &quot;@id&quot;: &quot;nh:nh-c0161&quot;,
    &quot;@type&quot;: &quot;Claim&quot;,
    &quot;dcterms:identifier&quot;: [
@@ -725,6 +783,18 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;bekräftad&quot; ] .
 
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0160#riksarkivet&gt; a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier &quot;ra-008&quot; ;
+    prov:wasDerivedFrom &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18&gt; ;
+    schema:citation &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0160 ;
+    schema:reviewBody &quot;SBL: vald till konung i Strängnäs 6 juni 1523, död 29 september 1560.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
 &lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0161#granskning&gt; a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom &lt;https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag&gt; ;
@@ -788,13 +858,6 @@ nh:nh-c0159 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;omdiskuterad&quot; ] .
 
-nh:nh-c0160 a schema:Claim ;
-    dcterms:identifier &quot;GE31&quot;,
-        &quot;nh-c0160&quot; ;
-    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
-    schema:about nh:nh-p0066 ;
-    schema:text &quot;Gustav Vasa&quot; .
-
 nh:nh-c0161 a schema:Claim ;
     dcterms:identifier &quot;GE32&quot;,
         &quot;nh-c0161&quot; ;
@@ -809,9 +872,19 @@ nh:nh-c0162 a schema:Claim ;
     schema:about nh:nh-p0066 ;
     schema:text &quot;Uppsala möte 1593&quot; .
 
+nh:nh-c0160 a schema:Claim ;
+    dcterms:identifier &quot;GE31&quot;,
+        &quot;nh-c0160&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
+    schema:about nh:nh-p0066 ;
+    schema:text &quot;Gustav Vasa&quot; .
+
 &lt;https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag&gt; schema:name &quot;Västerås riksdag – Nationalencyklopedin&quot; .
 
 &lt;https://snl.no/Gustav_1_Vasa&gt; schema:name &quot;Gustav 1 Vasa – Store norske leksikon&quot; .
+
+&lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl&gt; ;
+    schema:name &quot;SBL: Gustav I&quot; .
 
 &lt;https://www.svenskakyrkan.se/kristentro/bekannelseskrifter&gt; schema:name &quot;Bekännelseskrifter – Svenska kyrkan&quot; .
 

@@ -105,6 +105,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -248,6 +251,36 @@
    "prov:wasDerivedFrom": "https://snl.no/Gustav_3."
   },
   {
+   "@id": "nh:nh-c0171#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-011",
+   "itemReviewed": "nh:nh-c0171",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "ej verifierad"
+   },
+   "reviewBody": "SBL:s sammanfattning: konung 12 februari 1771, krönt 29 maj 1772. Statskuppen nämns inte.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317",
+     "name": "SBL: Gustav III",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Tjänsten ger artikelns sammanfattning och litteraturlista; själva levnadsteckningen finns bara på SBL:s webbplats."
+   }
+  },
+  {
    "@id": "nh:nh-c0172",
    "@type": "Claim",
    "dcterms:identifier": [
@@ -333,7 +366,7 @@
 <div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1772 – 1809</td><td><code>1772/1809</code></td><td>affischens eget val</td><td></td></tr><tr id="def-065"><td><a href="https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden">Nationalencyklopedin</a></td><td>1772 – 1809</td><td><code>1772/1809</code></td><td>samma</td><td><a href="../nh-c0170/">nh-c0170</a></td></tr></tbody></table></div>
 
 <h2>Kontrollerade uppgifter</h2>
-<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0170/">nh-c0170</a></td><td>Period &#x27;Gustavianska tiden&#x27;: 1772 – 1809</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden">Gustavianska tiden – Nationalencyklopedin</a></td></tr><tr><td><a href="../nh-c0171/">nh-c0171</a></td><td>Gustav III:s statskupp 1772</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Gustav_3.">Gustav 3 – Store norske leksikon</a></td></tr><tr><td><a href="../nh-c0172/">nh-c0172</a></td><td>finska kriget 1808–09</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809">Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)</a></td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0170/">nh-c0170</a></td><td>Period &#x27;Gustavianska tiden&#x27;: 1772 – 1809</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden">Gustavianska tiden – Nationalencyklopedin</a></td></tr><tr><td><a href="../nh-c0171/">nh-c0171</a></td><td>Gustav III:s statskupp 1772</td><td><span class="v bekräftad">bekräftad</span><br><span style="color:#6b7682">Riksarkivet:</span> <span class="v ej">ej verifierad</span></td><td><a href="https://snl.no/Gustav_3.">Gustav 3 – Store norske leksikon</a></td></tr><tr><td><a href="../nh-c0172/">nh-c0172</a></td><td>finska kriget 1808–09</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809">Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)</a></td></tr></tbody></table></div>
 <h2>Data i två format</h2>
 <p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
 <div class="formats">
@@ -434,6 +467,9 @@
    &quot;@type&quot;: &quot;@id&quot;
   },
   &quot;prov:actedOnBehalfOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:used&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   }
  },
@@ -578,6 +614,36 @@
    &quot;prov:wasDerivedFrom&quot;: &quot;https://snl.no/Gustav_3.&quot;
   },
   {
+   &quot;@id&quot;: &quot;nh:nh-c0171#riksarkivet&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;ra-011&quot;,
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0171&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;ej verifierad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SBL:s sammanfattning: konung 12 februari 1771, krönt 29 maj 1772. Statskuppen nämns inte.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-riksarkivet-2026-10-18&quot;,
+   &quot;citation&quot;: [
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317&quot;,
+     &quot;name&quot;: &quot;SBL: Gustav III&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sbl&quot;
+    }
+   ],
+   &quot;prov:wasDerivedFrom&quot;: [
+    &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317&quot;
+   ],
+   &quot;schema:comment&quot;: {
+    &quot;@type&quot;: &quot;Comment&quot;,
+    &quot;text&quot;: &quot;Tjänsten ger artikelns sammanfattning och litteraturlista; själva levnadsteckningen finns bara på SBL:s webbplats.&quot;
+   }
+  },
+  {
    &quot;@id&quot;: &quot;nh:nh-c0172&quot;,
    &quot;@type&quot;: &quot;Claim&quot;,
    &quot;dcterms:identifier&quot;: [
@@ -635,6 +701,20 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;bekräftad&quot; ] .
 
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0171#riksarkivet&gt; a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier &quot;ra-011&quot; ;
+    prov:wasDerivedFrom &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18&gt; ;
+    schema:citation &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317&gt; ;
+    schema:comment [ a schema:Comment ;
+            schema:text &quot;Tjänsten ger artikelns sammanfattning och litteraturlista; själva levnadsteckningen finns bara på SBL:s webbplats.&quot; ] ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0171 ;
+    schema:reviewBody &quot;SBL:s sammanfattning: konung 12 februari 1771, krönt 29 maj 1772. Statskuppen nämns inte.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;ej verifierad&quot; ] .
+
 &lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0172#granskning&gt; a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom &lt;https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809&gt; ;
@@ -682,13 +762,6 @@ nh:nh-c0170 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;bekräftad&quot; ] .
 
-nh:nh-c0171 a schema:Claim ;
-    dcterms:identifier &quot;GE42&quot;,
-        &quot;nh-c0171&quot; ;
-    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
-    schema:about nh:nh-p0069 ;
-    schema:text &quot;Gustav III:s statskupp 1772&quot; .
-
 nh:nh-c0172 a schema:Claim ;
     dcterms:identifier &quot;GE43&quot;,
         &quot;nh-c0172&quot; ;
@@ -696,7 +769,17 @@ nh:nh-c0172 a schema:Claim ;
     schema:about nh:nh-p0069 ;
     schema:text &quot;finska kriget 1808–09&quot; .
 
+nh:nh-c0171 a schema:Claim ;
+    dcterms:identifier &quot;GE42&quot;,
+        &quot;nh-c0171&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
+    schema:about nh:nh-p0069 ;
+    schema:text &quot;Gustav III:s statskupp 1772&quot; .
+
 &lt;https://snl.no/Gustav_3.&gt; schema:name &quot;Gustav 3 – Store norske leksikon&quot; .
+
+&lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl&gt; ;
+    schema:name &quot;SBL: Gustav III&quot; .
 
 &lt;https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809&gt; schema:name &quot;Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)&quot; .
 

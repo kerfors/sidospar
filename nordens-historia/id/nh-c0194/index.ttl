@@ -16,9 +16,26 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0194#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-015" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0194 ;
+    schema:reviewBody "SBL:s sammanfattning: född 1833, styrelseledamot i Nitroglycerin AB 22 oktober 1864. Dynamiten och patentet nämns inte." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "ej verifierad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0194/> a schema:WebPage ;
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0194 .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Alfred B Nobel" .
+
+<https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> schema:name "Nobelprize.org: Alfred Nobel's life and work" .
 
 nh:nh-c0194 a schema:Claim ;
     dcterms:identifier "MI13",
@@ -26,6 +43,4 @@ nh:nh-c0194 a schema:Claim ;
     dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0013 ;
     schema:text "Nobels dynamit: 1867" .
-
-<https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> schema:name "Nobelprize.org: Alfred Nobel's life and work" .
 

@@ -96,6 +96,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -139,6 +142,36 @@
     "name": "Nationalencyklopedin: Systema naturae"
    },
    "prov:wasDerivedFrom": "https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae"
+  },
+  {
+   "@id": "nh:nh-c0189#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-013",
+   "itemReviewed": "nh:nh-c0189",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "ej verifierad"
+   },
+   "reviewBody": "SBL:s sammanfattning: resor i Europa 1735–38, doktorsgrad i Harderwijk i Holland juni 1735. Systema naturae nämns inte.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735",
+     "name": "SBL: Carl (von) Linné",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Sammanfattningen stämmer med att han var i Nederländerna 1735 men nämner inte verket."
+   }
   }
  ]
 }

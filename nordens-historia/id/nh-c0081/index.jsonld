@@ -96,6 +96,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -139,6 +142,42 @@
     "name": "Encyclopaedia Britannica – Stockholm"
    },
    "prov:wasDerivedFrom": "https://www.britannica.com/place/Stockholm"
+  },
+  {
+   "@id": "nh:nh-c0081#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-004",
+   "itemReviewed": "nh:nh-c0081",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SDHK har två brev från 1252 med utfärdandeort Stockholm: juli 1252 (kung Valdemar och Birger jarl, Fogdö kloster) och 19 augusti 1252 (Birger jarl, \"Datum Stockholm\").",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sdhk?SDHK=664",
+     "name": "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm",
+     "isPartOf": "nh:#register-sdhk"
+    },
+    {
+     "@id": "https://sok.riksarkivet.se/sdhk?SDHK=665",
+     "name": "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm",
+     "isPartOf": "nh:#register-sdhk"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sdhk?SDHK=664",
+    "https://sok.riksarkivet.se/sdhk?SDHK=665"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Registret visar brev daterade i Stockholm 1252. Att de är de första omnämnandena framgår inte av registret."
+   }
   }
  ]
 }

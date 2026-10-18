@@ -96,6 +96,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -237,6 +240,36 @@
     "name": "Gustav 3 – Store norske leksikon"
    },
    "prov:wasDerivedFrom": "https://snl.no/Gustav_3."
+  },
+  {
+   "@id": "nh:nh-c0171#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-011",
+   "itemReviewed": "nh:nh-c0171",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "ej verifierad"
+   },
+   "reviewBody": "SBL:s sammanfattning: konung 12 februari 1771, krönt 29 maj 1772. Statskuppen nämns inte.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317",
+     "name": "SBL: Gustav III",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Tjänsten ger artikelns sammanfattning och litteraturlista; själva levnadsteckningen finns bara på SBL:s webbplats."
+   }
   },
   {
    "@id": "nh:nh-c0172",

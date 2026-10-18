@@ -19,6 +19,22 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0144#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-005" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sdhk?SDHK=3228>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=39886> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sdhk?SDHK=3228>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=39886> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Dagen är utgivarnas datering (DS nr 2418 not). SDHK markerar en av de medeltida avskrifterna (nr 39886) som förfalskning." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0144 ;
+    schema:reviewBody "SDHK registrerar freden mellan storfursten Jurij Danielowitsch (för Novgorod) och kung Magnus, med datering 12 augusti 1323." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0060#def-057> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-057" ;
@@ -67,6 +83,12 @@ nh:nh-c0144 a schema:Claim ;
     schema:text "Freden i Nöteborg 1323" .
 
 <https://lex.dk/Sjlisselburg> schema:name "Lex.dk: Sjlisselburg" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=3228> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=39886> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 39886: samma fred, i en annan medeltida avskrift" .
 
 <https://snl.no/Magnus_7._Eriksson> schema:name "Store norske leksikon: Magnus 7. Eriksson" .
 

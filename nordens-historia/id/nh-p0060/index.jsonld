@@ -96,6 +96,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -248,6 +251,42 @@
     "name": "Lex.dk: Sjlisselburg"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Sjlisselburg"
+  },
+  {
+   "@id": "nh:nh-c0144#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-005",
+   "itemReviewed": "nh:nh-c0144",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SDHK registrerar freden mellan storfursten Jurij Danielowitsch (för Novgorod) och kung Magnus, med datering 12 augusti 1323.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sdhk?SDHK=3228",
+     "name": "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus",
+     "isPartOf": "nh:#register-sdhk"
+    },
+    {
+     "@id": "https://sok.riksarkivet.se/sdhk?SDHK=39886",
+     "name": "SDHK nr 39886: samma fred, i en annan medeltida avskrift",
+     "isPartOf": "nh:#register-sdhk"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sdhk?SDHK=3228",
+    "https://sok.riksarkivet.se/sdhk?SDHK=39886"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Dagen är utgivarnas datering (DS nr 2418 not). SDHK markerar en av de medeltida avskrifterna (nr 39886) som förfalskning."
+   }
   }
  ]
 }

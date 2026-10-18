@@ -105,6 +105,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -252,6 +255,36 @@
    "prov:wasDerivedFrom": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238"
   },
   {
+   "@id": "nh:nh-c0080#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-003",
+   "itemReviewed": "nh:nh-c0080",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SBL: Birger Magnusson till Bjälbo, Sveriges jarl, född troligen på 1200-talets första årtionde, död 21 oktober 1266.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238",
+     "name": "SBL: Birger Magnusson (Birger jarl)",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Samma SBL-artikel som i den första kontrollen, här hämtad genom tjänsten."
+   }
+  },
+  {
    "@id": "nh:nh-c0081",
    "@type": "Claim",
    "dcterms:identifier": [
@@ -285,6 +318,42 @@
     "name": "Encyclopaedia Britannica – Stockholm"
    },
    "prov:wasDerivedFrom": "https://www.britannica.com/place/Stockholm"
+  },
+  {
+   "@id": "nh:nh-c0081#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-004",
+   "itemReviewed": "nh:nh-c0081",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SDHK har två brev från 1252 med utfärdandeort Stockholm: juli 1252 (kung Valdemar och Birger jarl, Fogdö kloster) och 19 augusti 1252 (Birger jarl, \"Datum Stockholm\").",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sdhk?SDHK=664",
+     "name": "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm",
+     "isPartOf": "nh:#register-sdhk"
+    },
+    {
+     "@id": "https://sok.riksarkivet.se/sdhk?SDHK=665",
+     "name": "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm",
+     "isPartOf": "nh:#register-sdhk"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sdhk?SDHK=664",
+    "https://sok.riksarkivet.se/sdhk?SDHK=665"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Registret visar brev daterade i Stockholm 1252. Att de är de första omnämnandena framgår inte av registret."
+   }
   }
  ]
 }
@@ -337,7 +406,7 @@
 <div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1250 – 1319</td><td><code>1250/1319</code></td><td>affischens eget val</td><td></td></tr><tr id="def-031"><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar">Nationalencyklopedin</a><br><span style="color:#6b7682">folkungaätten styr Sverige 1250–1363</span></td><td>1250 – 1363</td><td><code>1250/1363</code></td><td>avviker</td><td><a href="../nh-c0079/">nh-c0079</a></td></tr></tbody></table></div>
 
 <h2>Kontrollerade uppgifter</h2>
-<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0079/">nh-c0079</a></td><td>Period &#x27;Folkungatid&#x27;: 1250 – 1319</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar">Nationalencyklopedin – folkungar</a></td></tr><tr><td><a href="../nh-c0080/">nh-c0080</a></td><td>Birger jarl</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238">Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)</a></td></tr><tr><td><a href="../nh-c0081/">nh-c0081</a></td><td>Stockholm nämns 1252</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.britannica.com/place/Stockholm">Encyclopaedia Britannica – Stockholm</a></td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0079/">nh-c0079</a></td><td>Period &#x27;Folkungatid&#x27;: 1250 – 1319</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar">Nationalencyklopedin – folkungar</a></td></tr><tr><td><a href="../nh-c0080/">nh-c0080</a></td><td>Birger jarl</td><td><span class="v bekräftad">bekräftad</span><br><span style="color:#6b7682">Riksarkivet:</span> <span class="v bekräftad">bekräftad</span></td><td><a href="https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238">Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)</a></td></tr><tr><td><a href="../nh-c0081/">nh-c0081</a></td><td>Stockholm nämns 1252</td><td><span class="v bekräftad">bekräftad</span><br><span style="color:#6b7682">Riksarkivet:</span> <span class="v bekräftad">bekräftad</span></td><td><a href="https://www.britannica.com/place/Stockholm">Encyclopaedia Britannica – Stockholm</a></td></tr></tbody></table></div>
 <h2>Data i två format</h2>
 <p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
 <div class="formats">
@@ -438,6 +507,9 @@
    &quot;@type&quot;: &quot;@id&quot;
   },
   &quot;prov:actedOnBehalfOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:used&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   }
  },
@@ -586,6 +658,36 @@
    &quot;prov:wasDerivedFrom&quot;: &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&quot;
   },
   {
+   &quot;@id&quot;: &quot;nh:nh-c0080#riksarkivet&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;ra-003&quot;,
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0080&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SBL: Birger Magnusson till Bjälbo, Sveriges jarl, född troligen på 1200-talets första årtionde, död 21 oktober 1266.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-riksarkivet-2026-10-18&quot;,
+   &quot;citation&quot;: [
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&quot;,
+     &quot;name&quot;: &quot;SBL: Birger Magnusson (Birger jarl)&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sbl&quot;
+    }
+   ],
+   &quot;prov:wasDerivedFrom&quot;: [
+    &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&quot;
+   ],
+   &quot;schema:comment&quot;: {
+    &quot;@type&quot;: &quot;Comment&quot;,
+    &quot;text&quot;: &quot;Samma SBL-artikel som i den första kontrollen, här hämtad genom tjänsten.&quot;
+   }
+  },
+  {
    &quot;@id&quot;: &quot;nh:nh-c0081&quot;,
    &quot;@type&quot;: &quot;Claim&quot;,
    &quot;dcterms:identifier&quot;: [
@@ -619,6 +721,42 @@
     &quot;name&quot;: &quot;Encyclopaedia Britannica – Stockholm&quot;
    },
    &quot;prov:wasDerivedFrom&quot;: &quot;https://www.britannica.com/place/Stockholm&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0081#riksarkivet&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;ra-004&quot;,
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0081&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SDHK har två brev från 1252 med utfärdandeort Stockholm: juli 1252 (kung Valdemar och Birger jarl, Fogdö kloster) och 19 augusti 1252 (Birger jarl, \&quot;Datum Stockholm\&quot;).&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-riksarkivet-2026-10-18&quot;,
+   &quot;citation&quot;: [
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sdhk?SDHK=664&quot;,
+     &quot;name&quot;: &quot;SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sdhk&quot;
+    },
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sdhk?SDHK=665&quot;,
+     &quot;name&quot;: &quot;SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sdhk&quot;
+    }
+   ],
+   &quot;prov:wasDerivedFrom&quot;: [
+    &quot;https://sok.riksarkivet.se/sdhk?SDHK=664&quot;,
+    &quot;https://sok.riksarkivet.se/sdhk?SDHK=665&quot;
+   ],
+   &quot;schema:comment&quot;: {
+    &quot;@type&quot;: &quot;Comment&quot;,
+    &quot;text&quot;: &quot;Registret visar brev daterade i Stockholm 1252. Att de är de första omnämnandena framgår inte av registret.&quot;
+   }
   }
  ]
 }</pre></div>
@@ -643,6 +781,20 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;bekräftad&quot; ] .
 
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0080#riksarkivet&gt; a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier &quot;ra-003&quot; ;
+    prov:wasDerivedFrom &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18&gt; ;
+    schema:citation &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&gt; ;
+    schema:comment [ a schema:Comment ;
+            schema:text &quot;Samma SBL-artikel som i den första kontrollen, här hämtad genom tjänsten.&quot; ] ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0080 ;
+    schema:reviewBody &quot;SBL: Birger Magnusson till Bjälbo, Sveriges jarl, född troligen på 1200-talets första årtionde, död 21 oktober 1266.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
 &lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0081#granskning&gt; a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom &lt;https://www.britannica.com/place/Stockholm&gt; ;
@@ -651,6 +803,22 @@
     schema:datePublished &quot;2026-10-18&quot; ;
     schema:itemReviewed nh:nh-c0081 ;
     schema:reviewBody &quot;Stockholm nämns första gången 1252 i brev utfärdade av Birger jarl.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0081#riksarkivet&gt; a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier &quot;ra-004&quot; ;
+    prov:wasDerivedFrom &lt;https://sok.riksarkivet.se/sdhk?SDHK=664&gt;,
+        &lt;https://sok.riksarkivet.se/sdhk?SDHK=665&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18&gt; ;
+    schema:citation &lt;https://sok.riksarkivet.se/sdhk?SDHK=664&gt;,
+        &lt;https://sok.riksarkivet.se/sdhk?SDHK=665&gt; ;
+    schema:comment [ a schema:Comment ;
+            schema:text &quot;Registret visar brev daterade i Stockholm 1252. Att de är de första omnämnandena framgår inte av registret.&quot; ] ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0081 ;
+    schema:reviewBody &quot;SDHK har två brev från 1252 med utfärdandeort Stockholm: juli 1252 (kung Valdemar och Birger jarl, Fogdö kloster) och 19 augusti 1252 (Birger jarl, \&quot;Datum Stockholm\&quot;).&quot; ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;bekräftad&quot; ] .
 
@@ -707,11 +875,19 @@ nh:nh-c0081 a schema:Claim ;
     schema:about nh:nh-p0032 ;
     schema:text &quot;Stockholm nämns 1252&quot; .
 
-&lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&gt; schema:name &quot;Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)&quot; .
+&lt;https://sok.riksarkivet.se/sdhk?SDHK=664&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk&gt; ;
+    schema:name &quot;SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm&quot; .
+
+&lt;https://sok.riksarkivet.se/sdhk?SDHK=665&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk&gt; ;
+    schema:name &quot;SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm&quot; .
 
 &lt;https://www.britannica.com/place/Stockholm&gt; schema:name &quot;Encyclopaedia Britannica – Stockholm&quot; .
 
 &lt;https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar&gt; schema:name &quot;Nationalencyklopedin – folkungar&quot; .
+
+&lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl&gt; ;
+    schema:name &quot;SBL: Birger Magnusson (Birger jarl)&quot;,
+        &quot;Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)&quot; .
 
 nh:nh-p0032 a crm:E4_Period,
         skos:Concept ;

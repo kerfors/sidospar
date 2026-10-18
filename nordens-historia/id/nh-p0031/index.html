@@ -105,6 +105,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -284,6 +287,36 @@
     "name": "Svenska kyrkan – Ärkebiskopslängd"
    },
    "prov:wasDerivedFrom": "https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd"
+  },
+  {
+   "@id": "nh:nh-c0078#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-002",
+   "itemReviewed": "nh:nh-c0078",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SDHK registrerar påven Alexander III:s brev om utnämningen av Stefan i Uppsala till ärkebiskop, daterat Sens 5 augusti 1164.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sdhk?SDHK=203",
+     "name": "SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens",
+     "isPartOf": "nh:#register-sdhk"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sdhk?SDHK=203"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Årtalet står inte i brevet. SDHK anger att det är supplerat av utgivarna."
+   }
   }
  ]
 }
@@ -336,7 +369,7 @@
 <div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1050 – 1250</td><td><code>1050/1250</code></td><td>affischens eget val</td><td></td></tr><tr id="def-030"><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt">Nationalencyklopedin</a><br><span style="color:#6b7682">riksenheten stabiliseras under äldre medeltid ca 1000–1300</span></td><td>c. 1000 – c. 1300</td><td><code>1000/1300</code></td><td>avviker</td><td><a href="../nh-c0076/">nh-c0076</a></td></tr></tbody></table></div>
 
 <h2>Kontrollerade uppgifter</h2>
-<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0076/">nh-c0076</a></td><td>Period &#x27;Riket växer fram&#x27;: 1066 – 1250</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt">Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt</a></td></tr><tr><td><a href="../nh-c0077/">nh-c0077</a></td><td>Erikska och sverkerska ätterna</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten">Nationalencyklopedin – sverkerska ätten</a></td></tr><tr><td><a href="../nh-c0078/">nh-c0078</a></td><td>ärkesäte i Uppsala 1164</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd">Svenska kyrkan – Ärkebiskopslängd</a></td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0076/">nh-c0076</a></td><td>Period &#x27;Riket växer fram&#x27;: 1066 – 1250</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt">Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt</a></td></tr><tr><td><a href="../nh-c0077/">nh-c0077</a></td><td>Erikska och sverkerska ätterna</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten">Nationalencyklopedin – sverkerska ätten</a></td></tr><tr><td><a href="../nh-c0078/">nh-c0078</a></td><td>ärkesäte i Uppsala 1164</td><td><span class="v bekräftad">bekräftad</span><br><span style="color:#6b7682">Riksarkivet:</span> <span class="v bekräftad">bekräftad</span></td><td><a href="https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd">Svenska kyrkan – Ärkebiskopslängd</a></td></tr></tbody></table></div>
 <h2>Data i två format</h2>
 <p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
 <div class="formats">
@@ -437,6 +470,9 @@
    &quot;@type&quot;: &quot;@id&quot;
   },
   &quot;prov:actedOnBehalfOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:used&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   }
  },
@@ -617,6 +653,36 @@
     &quot;name&quot;: &quot;Svenska kyrkan – Ärkebiskopslängd&quot;
    },
    &quot;prov:wasDerivedFrom&quot;: &quot;https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0078#riksarkivet&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;ra-002&quot;,
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0078&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SDHK registrerar påven Alexander III:s brev om utnämningen av Stefan i Uppsala till ärkebiskop, daterat Sens 5 augusti 1164.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-riksarkivet-2026-10-18&quot;,
+   &quot;citation&quot;: [
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sdhk?SDHK=203&quot;,
+     &quot;name&quot;: &quot;SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sdhk&quot;
+    }
+   ],
+   &quot;prov:wasDerivedFrom&quot;: [
+    &quot;https://sok.riksarkivet.se/sdhk?SDHK=203&quot;
+   ],
+   &quot;schema:comment&quot;: {
+    &quot;@type&quot;: &quot;Comment&quot;,
+    &quot;text&quot;: &quot;Årtalet står inte i brevet. SDHK anger att det är supplerat av utgivarna.&quot;
+   }
   }
  ]
 }</pre></div>
@@ -649,6 +715,20 @@
     schema:datePublished &quot;2026-10-18&quot; ;
     schema:itemReviewed nh:nh-c0078 ;
     schema:reviewBody &quot;Stefan blev 1164 förste ärkebiskop i Uppsala då Sverige blev egen kyrkoprovins.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0078#riksarkivet&gt; a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier &quot;ra-002&quot; ;
+    prov:wasDerivedFrom &lt;https://sok.riksarkivet.se/sdhk?SDHK=203&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18&gt; ;
+    schema:citation &lt;https://sok.riksarkivet.se/sdhk?SDHK=203&gt; ;
+    schema:comment [ a schema:Comment ;
+            schema:text &quot;Årtalet står inte i brevet. SDHK anger att det är supplerat av utgivarna.&quot; ] ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0078 ;
+    schema:reviewBody &quot;SDHK registrerar påven Alexander III:s brev om utnämningen av Stefan i Uppsala till ärkebiskop, daterat Sens 5 augusti 1164.&quot; ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;bekräftad&quot; ] .
 
@@ -704,6 +784,9 @@ nh:nh-c0078 a schema:Claim ;
     dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0031 ;
     schema:text &quot;ärkesäte i Uppsala 1164&quot; .
+
+&lt;https://sok.riksarkivet.se/sdhk?SDHK=203&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk&gt; ;
+    schema:name &quot;SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens&quot; .
 
 &lt;https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten&gt; schema:name &quot;Nationalencyklopedin – sverkerska ätten&quot; .
 

@@ -105,6 +105,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -171,6 +174,38 @@
     "name": "Uppsala universitet: Kort historik och tidigare jubileer"
    },
    "prov:wasDerivedFrom": "https://www.uu.se/550/tidigare-jubileer-och-kort-historik"
+  },
+  {
+   "@id": "nh:nh-c0185#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-012",
+   "itemReviewed": "nh:nh-c0185",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SDHK: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom 27 februari 1477; ärkebiskop Jakob, universitetets kansler, i Uppsala 20 juli 1477.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sdhk?SDHK=30221",
+     "name": "SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom",
+     "isPartOf": "nh:#register-sdhk"
+    },
+    {
+     "@id": "https://sok.riksarkivet.se/sdhk?SDHK=30290",
+     "name": "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala",
+     "isPartOf": "nh:#register-sdhk"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sdhk?SDHK=30221",
+    "https://sok.riksarkivet.se/sdhk?SDHK=30290"
+   ]
   }
  ]
 }
@@ -220,7 +255,7 @@
 </dl>
 
 <h2>Kontrollerade uppgifter</h2>
-<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0185/">nh-c0185</a></td><td>Uppsala universitet: 1477</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.uu.se/550/tidigare-jubileer-och-kort-historik">Uppsala universitet: Kort historik och tidigare jubileer</a></td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0185/">nh-c0185</a></td><td>Uppsala universitet: 1477</td><td><span class="v bekräftad">bekräftad</span><br><span style="color:#6b7682">Riksarkivet:</span> <span class="v bekräftad">bekräftad</span></td><td><a href="https://www.uu.se/550/tidigare-jubileer-och-kort-historik">Uppsala universitet: Kort historik och tidigare jubileer</a></td></tr></tbody></table></div>
 <h2>Data i två format</h2>
 <p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
 <div class="formats">
@@ -322,6 +357,9 @@
   },
   &quot;prov:actedOnBehalfOf&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:used&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
   }
  },
  &quot;@graph&quot;: [
@@ -388,6 +426,38 @@
     &quot;name&quot;: &quot;Uppsala universitet: Kort historik och tidigare jubileer&quot;
    },
    &quot;prov:wasDerivedFrom&quot;: &quot;https://www.uu.se/550/tidigare-jubileer-och-kort-historik&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0185#riksarkivet&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;ra-012&quot;,
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0185&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SDHK: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom 27 februari 1477; ärkebiskop Jakob, universitetets kansler, i Uppsala 20 juli 1477.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-riksarkivet-2026-10-18&quot;,
+   &quot;citation&quot;: [
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sdhk?SDHK=30221&quot;,
+     &quot;name&quot;: &quot;SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sdhk&quot;
+    },
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sdhk?SDHK=30290&quot;,
+     &quot;name&quot;: &quot;SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sdhk&quot;
+    }
+   ],
+   &quot;prov:wasDerivedFrom&quot;: [
+    &quot;https://sok.riksarkivet.se/sdhk?SDHK=30221&quot;,
+    &quot;https://sok.riksarkivet.se/sdhk?SDHK=30290&quot;
+   ]
   }
  ]
 }</pre></div>
@@ -407,6 +477,20 @@
     schema:datePublished &quot;2026-10-18&quot; ;
     schema:itemReviewed nh:nh-c0185 ;
     schema:reviewBody &quot;Universitetets egen historik anger att det grundades 1477.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0185#riksarkivet&gt; a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier &quot;ra-012&quot; ;
+    prov:wasDerivedFrom &lt;https://sok.riksarkivet.se/sdhk?SDHK=30221&gt;,
+        &lt;https://sok.riksarkivet.se/sdhk?SDHK=30290&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18&gt; ;
+    schema:citation &lt;https://sok.riksarkivet.se/sdhk?SDHK=30221&gt;,
+        &lt;https://sok.riksarkivet.se/sdhk?SDHK=30290&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0185 ;
+    schema:reviewBody &quot;SDHK: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom 27 februari 1477; ärkebiskop Jakob, universitetets kansler, i Uppsala 20 juli 1477.&quot; ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;bekräftad&quot; ] .
 
@@ -431,6 +515,12 @@ nh:nh-m0004 a crm:E5_Event,
     schema:about wd:Q185246 ;
     schema:name &quot;Uppsala universitet&quot; ;
     schema:startDate &quot;1477&quot;^^xsd:gYear .
+
+&lt;https://sok.riksarkivet.se/sdhk?SDHK=30221&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk&gt; ;
+    schema:name &quot;SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom&quot; .
+
+&lt;https://sok.riksarkivet.se/sdhk?SDHK=30290&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk&gt; ;
+    schema:name &quot;SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala&quot; .
 
 &lt;https://www.uu.se/550/tidigare-jubileer-och-kort-historik&gt; schema:name &quot;Uppsala universitet: Kort historik och tidigare jubileer&quot; .
 

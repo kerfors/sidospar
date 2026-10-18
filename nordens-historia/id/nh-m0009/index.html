@@ -105,6 +105,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -171,6 +174,32 @@
     "name": "Uppsala universitet: Anders Celsius"
    },
    "prov:wasDerivedFrom": "https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius"
+  },
+  {
+   "@id": "nh:nh-c0190#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-014",
+   "itemReviewed": "nh:nh-c0190",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SBL:s förteckning över tryckta arbeten: \"Observationer om twänne beständiga grader på en thermometer\", Vetenskapsakademiens handlingar 1742, s. 171–180.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758",
+     "name": "SBL: Anders Celsius",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758"
+   ]
   }
  ]
 }
@@ -220,7 +249,7 @@
 </dl>
 
 <h2>Kontrollerade uppgifter</h2>
-<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0190/">nh-c0190</a></td><td>Celsiusskalan: 1742</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius">Uppsala universitet: Anders Celsius</a></td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0190/">nh-c0190</a></td><td>Celsiusskalan: 1742</td><td><span class="v bekräftad">bekräftad</span><br><span style="color:#6b7682">Riksarkivet:</span> <span class="v bekräftad">bekräftad</span></td><td><a href="https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius">Uppsala universitet: Anders Celsius</a></td></tr></tbody></table></div>
 <h2>Data i två format</h2>
 <p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
 <div class="formats">
@@ -322,6 +351,9 @@
   },
   &quot;prov:actedOnBehalfOf&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:used&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
   }
  },
  &quot;@graph&quot;: [
@@ -388,6 +420,32 @@
     &quot;name&quot;: &quot;Uppsala universitet: Anders Celsius&quot;
    },
    &quot;prov:wasDerivedFrom&quot;: &quot;https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0190#riksarkivet&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;ra-014&quot;,
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0190&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SBL:s förteckning över tryckta arbeten: \&quot;Observationer om twänne beständiga grader på en thermometer\&quot;, Vetenskapsakademiens handlingar 1742, s. 171–180.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-riksarkivet-2026-10-18&quot;,
+   &quot;citation&quot;: [
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758&quot;,
+     &quot;name&quot;: &quot;SBL: Anders Celsius&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sbl&quot;
+    }
+   ],
+   &quot;prov:wasDerivedFrom&quot;: [
+    &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758&quot;
+   ]
   }
  ]
 }</pre></div>
@@ -407,6 +465,18 @@
     schema:datePublished &quot;2026-10-18&quot; ;
     schema:itemReviewed nh:nh-c0190 ;
     schema:reviewBody &quot;Uppsala universitet anger att Celsius konstruerade sin skala 1742.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0190#riksarkivet&gt; a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier &quot;ra-014&quot; ;
+    prov:wasDerivedFrom &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18&gt; ;
+    schema:citation &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0190 ;
+    schema:reviewBody &quot;SBL:s förteckning över tryckta arbeten: \&quot;Observationer om twänne beständiga grader på en thermometer\&quot;, Vetenskapsakademiens handlingar 1742, s. 171–180.&quot; ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;bekräftad&quot; ] .
 
@@ -431,6 +501,9 @@ nh:nh-m0009 a crm:E5_Event,
     schema:about wd:Q110748751 ;
     schema:name &quot;Celsiusskalan&quot; ;
     schema:startDate &quot;1742&quot;^^xsd:gYear .
+
+&lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl&gt; ;
+    schema:name &quot;SBL: Anders Celsius&quot; .
 
 &lt;https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius&gt; schema:name &quot;Uppsala universitet: Anders Celsius&quot; .
 

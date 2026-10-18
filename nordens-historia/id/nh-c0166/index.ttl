@@ -14,9 +14,26 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0166#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-010" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0166 ;
+    schema:reviewBody "SBL: död 30 november 1718 vid belägringen av Fredrikstens fästning." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0166/> a schema:WebPage ;
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0166 .
+
+<https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> schema:name "Stormaktstiden – Nationalencyklopedin" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Karl XII" .
 
 nh:nh-c0166 a schema:Claim ;
     dcterms:identifier "GE37",
@@ -24,6 +41,4 @@ nh:nh-c0166 a schema:Claim ;
     dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0067 ;
     schema:text "Karl XII" .
-
-<https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> schema:name "Stormaktstiden – Nationalencyklopedin" .
 

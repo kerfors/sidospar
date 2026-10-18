@@ -96,6 +96,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -139,6 +142,36 @@
     "name": "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)"
    },
    "prov:wasDerivedFrom": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238"
+  },
+  {
+   "@id": "nh:nh-c0080#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-003",
+   "itemReviewed": "nh:nh-c0080",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SBL: Birger Magnusson till Bjälbo, Sveriges jarl, född troligen på 1200-talets första årtionde, död 21 oktober 1266.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238",
+     "name": "SBL: Birger Magnusson (Birger jarl)",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Samma SBL-artikel som i den första kontrollen, här hämtad genom tjänsten."
+   }
   }
  ]
 }

@@ -105,6 +105,9 @@
   },
   "prov:actedOnBehalfOf": {
    "@type": "@id"
+  },
+  "prov:used": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -171,6 +174,36 @@
     "name": "Nationalencyklopedin: Systema naturae"
    },
    "prov:wasDerivedFrom": "https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae"
+  },
+  {
+   "@id": "nh:nh-c0189#riksarkivet",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "dcterms:identifier": "ra-013",
+   "itemReviewed": "nh:nh-c0189",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "ej verifierad"
+   },
+   "reviewBody": "SBL:s sammanfattning: resor i Europa 1735–38, doktorsgrad i Harderwijk i Holland juni 1735. Systema naturae nämns inte.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-2026-10-18",
+   "citation": [
+    {
+     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735",
+     "name": "SBL: Carl (von) Linné",
+     "isPartOf": "nh:#register-sbl"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735"
+   ],
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Sammanfattningen stämmer med att han var i Nederländerna 1735 men nämner inte verket."
+   }
   }
  ]
 }
@@ -220,7 +253,7 @@
 </dl>
 
 <h2>Kontrollerade uppgifter</h2>
-<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0189/">nh-c0189</a></td><td>Linnés Systema Naturae: 1735</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae">Nationalencyklopedin: Systema naturae</a></td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0189/">nh-c0189</a></td><td>Linnés Systema Naturae: 1735</td><td><span class="v bekräftad">bekräftad</span><br><span style="color:#6b7682">Riksarkivet:</span> <span class="v ej">ej verifierad</span></td><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae">Nationalencyklopedin: Systema naturae</a></td></tr></tbody></table></div>
 <h2>Data i två format</h2>
 <p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
 <div class="formats">
@@ -322,6 +355,9 @@
   },
   &quot;prov:actedOnBehalfOf&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:used&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
   }
  },
  &quot;@graph&quot;: [
@@ -388,6 +424,36 @@
     &quot;name&quot;: &quot;Nationalencyklopedin: Systema naturae&quot;
    },
    &quot;prov:wasDerivedFrom&quot;: &quot;https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0189#riksarkivet&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;ra-013&quot;,
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0189&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;ej verifierad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SBL:s sammanfattning: resor i Europa 1735–38, doktorsgrad i Harderwijk i Holland juni 1735. Systema naturae nämns inte.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-riksarkivet-2026-10-18&quot;,
+   &quot;citation&quot;: [
+    {
+     &quot;@id&quot;: &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735&quot;,
+     &quot;name&quot;: &quot;SBL: Carl (von) Linné&quot;,
+     &quot;isPartOf&quot;: &quot;nh:#register-sbl&quot;
+    }
+   ],
+   &quot;prov:wasDerivedFrom&quot;: [
+    &quot;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735&quot;
+   ],
+   &quot;schema:comment&quot;: {
+    &quot;@type&quot;: &quot;Comment&quot;,
+    &quot;text&quot;: &quot;Sammanfattningen stämmer med att han var i Nederländerna 1735 men nämner inte verket.&quot;
+   }
   }
  ]
 }</pre></div>
@@ -410,6 +476,20 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName &quot;bekräftad&quot; ] .
 
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0189#riksarkivet&gt; a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier &quot;ra-013&quot; ;
+    prov:wasDerivedFrom &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18&gt; ;
+    schema:citation &lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735&gt; ;
+    schema:comment [ a schema:Comment ;
+            schema:text &quot;Sammanfattningen stämmer med att han var i Nederländerna 1735 men nämner inte verket.&quot; ] ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0189 ;
+    schema:reviewBody &quot;SBL:s sammanfattning: resor i Europa 1735–38, doktorsgrad i Harderwijk i Holland juni 1735. Systema naturae nämns inte.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;ej verifierad&quot; ] .
+
 &lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0008/&gt; a schema:WebPage ;
     schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#dataset&gt; ;
     schema:mainEntity nh:nh-m0008 .
@@ -431,6 +511,9 @@ nh:nh-m0008 a crm:E5_Event,
     schema:about wd:Q29270 ;
     schema:name &quot;Linnés Systema Naturae&quot; ;
     schema:startDate &quot;1735&quot;^^xsd:gYear .
+
+&lt;https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735&gt; schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl&gt; ;
+    schema:name &quot;SBL: Carl (von) Linné&quot; .
 
 &lt;https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae&gt; schema:name &quot;Nationalencyklopedin: Systema naturae&quot; .
 

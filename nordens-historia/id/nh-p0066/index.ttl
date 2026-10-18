@@ -19,6 +19,18 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0160#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-008" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0160 ;
+    schema:reviewBody "SBL: vald till konung i Strängnäs 6 juni 1523, död 29 september 1560." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0161#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag> ;
@@ -82,13 +94,6 @@ nh:nh-c0159 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
 
-nh:nh-c0160 a schema:Claim ;
-    dcterms:identifier "GE31",
-        "nh-c0160" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0066 ;
-    schema:text "Gustav Vasa" .
-
 nh:nh-c0161 a schema:Claim ;
     dcterms:identifier "GE32",
         "nh-c0161" ;
@@ -103,9 +108,19 @@ nh:nh-c0162 a schema:Claim ;
     schema:about nh:nh-p0066 ;
     schema:text "Uppsala möte 1593" .
 
+nh:nh-c0160 a schema:Claim ;
+    dcterms:identifier "GE31",
+        "nh-c0160" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    schema:about nh:nh-p0066 ;
+    schema:text "Gustav Vasa" .
+
 <https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag> schema:name "Västerås riksdag – Nationalencyklopedin" .
 
 <https://snl.no/Gustav_1_Vasa> schema:name "Gustav 1 Vasa – Store norske leksikon" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Gustav I" .
 
 <https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> schema:name "Bekännelseskrifter – Svenska kyrkan" .
 

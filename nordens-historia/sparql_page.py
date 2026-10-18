@@ -103,29 +103,47 @@ ORDER BY ?ar
 ORDER BY ?ar
 """),
     ("kallor", "Utlåtanden per källa",
-     "Antal granskningar per webbplats, och hur många som blev bekräftade och omdiskuterade.",
-     """SELECT ?kalla (COUNT(?granskning) AS ?granskningar)
+     "Antal granskningar i den första kontrollen per webbplats, och hur många som blev bekräftade och omdiskuterade.",
+     f"""SELECT ?kalla (COUNT(?granskning) AS ?granskningar)
        (SUM(IF(?utlatande = "bekräftad", 1, 0)) AS ?bekraftade)
-       (SUM(IF(?utlatande = "omdiskuterad", 1, 0)) AS ?omdiskuterade) WHERE {
+       (SUM(IF(?utlatande = "omdiskuterad", 1, 0)) AS ?omdiskuterade) WHERE {{
   ?granskning a schema:ClaimReview ;
+              prov:wasGeneratedBy <{ld.ID}#kontroll-{ld.CHECK_DATE}> ;
               schema:citation ?url ;
               schema:reviewRating/schema:alternateName ?utlatande .
   BIND (REPLACE(STRBEFORE(STRAFTER(STR(?url), "://"), "/"), "^www[.]", "") AS ?kalla)
-}
+}}
 GROUP BY ?kalla
 ORDER BY DESC(?granskningar) ?kalla
 """),
     ("typer", "Utlåtanden per typ av uppgift",
-     "Hur utlåtandena fördelar sig på uppgiftens typ (dcterms:type). De omdiskuterade är till största delen periodgränser.",
-     """SELECT ?typ ?typNamn ?utlatande (COUNT(?uppgift) AS ?antal) WHERE {
+     "Hur utlåtandena i den första kontrollen fördelar sig på uppgiftens typ (dcterms:type). De omdiskuterade är till största delen periodgränser.",
+     f"""SELECT ?typ ?typNamn ?utlatande (COUNT(?uppgift) AS ?antal) WHERE {{
   ?uppgift a schema:Claim ;
            dcterms:type ?typ .
   ?typ skos:prefLabel ?typNamn .
   ?granskning schema:itemReviewed ?uppgift ;
+              prov:wasGeneratedBy <{ld.ID}#kontroll-{ld.CHECK_DATE}> ;
               schema:reviewRating/schema:alternateName ?utlatande .
-}
+}}
 GROUP BY ?typ ?typNamn ?utlatande
 ORDER BY ?typ ?utlatande
+"""),
+    ("riksarkivet", "Två kontroller av samma uppgift",
+     "Uppgifter som också är kontrollerade mot Riksarkivets register (SBL och SDHK), med utlåtandet från båda kontrollerna.",
+     f"""SELECT ?uppgift ?text ?forsta ?riksarkivet (GROUP_CONCAT(DISTINCT ?registerNamn; separator=", ") AS ?register) WHERE {{
+  ?uppgift a schema:Claim ;
+           schema:text ?text .
+  ?g1 schema:itemReviewed ?uppgift ;
+      prov:wasGeneratedBy <{ld.ID}#kontroll-{ld.CHECK_DATE}> ;
+      schema:reviewRating/schema:alternateName ?forsta .
+  ?g2 schema:itemReviewed ?uppgift ;
+      prov:wasGeneratedBy/prov:used <{ld.ID}#riksarkivets-mcp> ;
+      schema:reviewRating/schema:alternateName ?riksarkivet ;
+      schema:citation/schema:isPartOf/schema:name ?registerNamn .
+}}
+GROUP BY ?uppgift ?text ?forsta ?riksarkivet
+ORDER BY ?uppgift
 """),
     ("milstolpar", "Milstolpar och vad de handlar om i Wikidata",
      "En milstolpe är en händelse, till exempel grundandet av ett universitet. Wikidata har saken, inte händelsen, "
@@ -199,6 +217,9 @@ och <code>crm:P10_falls_within</code> till perioden.</li>
 och typen i <code>dcterms:type</code> (begrepp i <code>&lt;{ld.ID}#uppgiftstyper&gt;</code>);
 granskningen är en <code>schema:ClaimReview</code> med <code>schema:itemReviewed</code>, utlåtandet i
 <code>schema:reviewRating/schema:alternateName</code> och källan i <code>schema:citation</code>.</li>
+<li><strong>Två kontroller</strong>: granskningarna skiljs åt av <code>prov:wasGeneratedBy</code>. Den första kontrollen
+är <code>&lt;{ld.ID}#kontroll-{ld.CHECK_DATE}&gt;</code>; den andra, mot Riksarkivets register, använde
+(<code>prov:used</code>) <code>&lt;{ld.ID}#riksarkivets-mcp&gt;</code>.</li>
 </ul>
 """
 

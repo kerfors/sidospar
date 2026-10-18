@@ -17,6 +17,20 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0189#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-013" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Sammanfattningen stämmer med att han var i Nederländerna 1735 men nämner inte verket." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0189 ;
+    schema:reviewBody "SBL:s sammanfattning: resor i Europa 1735–38, doktorsgrad i Harderwijk i Holland juni 1735. Systema naturae nämns inte." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "ej verifierad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0008/> a schema:WebPage ;
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-m0008 .
@@ -38,6 +52,9 @@ nh:nh-m0008 a crm:E5_Event,
     schema:about wd:Q29270 ;
     schema:name "Linnés Systema Naturae" ;
     schema:startDate "1735"^^xsd:gYear .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+    schema:name "SBL: Carl (von) Linné" .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae> schema:name "Nationalencyklopedin: Systema naturae" .
 

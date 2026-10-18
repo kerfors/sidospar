@@ -1,0 +1,284 @@
+{
+ "note": "Andra kontrollen, mot Riksarkivet: Svenskt biografiskt lexikon (SBL) och Diplomatarium Suecanum (SDHK), hämtade genom Riksarkivets MCP-tjänst (beta). Beläggen är egna sammanfattningar av registrens uppgifter, inte citat. 'ej verifierad' betyder att det tjänsten ger inte räcker för att pröva uppgiften.",
+ "checked": "2026-10-18",
+ "service": {
+  "name": "Riksarkivets MCP-tjänst (beta)",
+  "tools": [
+   "search_sbl",
+   "view_sbl_article",
+   "diplomatics_search_sdhk"
+  ]
+ },
+ "checks": [
+  {
+   "id": "ra-001",
+   "claim": "nh-c0075",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SBL",
+     "id": "7749",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749",
+     "title": "SBL: Olof \"skötkonung\""
+    }
+   ],
+   "evidence": "SBL: född senast i början av 980-talet, död troligen vintern 1021–1022, svensk konung från omkring 995.",
+   "note": ""
+  },
+  {
+   "id": "ra-002",
+   "claim": "nh-c0078",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SDHK",
+     "id": "203",
+     "url": "https://sok.riksarkivet.se/sdhk?SDHK=203",
+     "date": "11640805; årtalet supplerat, se ST I:1, s. 82 not 1",
+     "title": "SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens"
+    }
+   ],
+   "evidence": "SDHK registrerar påven Alexander III:s brev om utnämningen av Stefan i Uppsala till ärkebiskop, daterat Sens 5 augusti 1164.",
+   "note": "Årtalet står inte i brevet. SDHK anger att det är supplerat av utgivarna."
+  },
+  {
+   "id": "ra-003",
+   "claim": "nh-c0080",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SBL",
+     "id": "18238",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238",
+     "title": "SBL: Birger Magnusson (Birger jarl)"
+    }
+   ],
+   "evidence": "SBL: Birger Magnusson till Bjälbo, Sveriges jarl, född troligen på 1200-talets första årtionde, död 21 oktober 1266.",
+   "note": "Samma SBL-artikel som i den första kontrollen, här hämtad genom tjänsten."
+  },
+  {
+   "id": "ra-004",
+   "claim": "nh-c0081",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SDHK",
+     "id": "664",
+     "url": "https://sok.riksarkivet.se/sdhk?SDHK=664",
+     "date": "12520700",
+     "title": "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm"
+    },
+    {
+     "register": "SDHK",
+     "id": "665",
+     "url": "https://sok.riksarkivet.se/sdhk?SDHK=665",
+     "date": "12520819",
+     "title": "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm"
+    }
+   ],
+   "evidence": "SDHK har två brev från 1252 med utfärdandeort Stockholm: juli 1252 (kung Valdemar och Birger jarl, Fogdö kloster) och 19 augusti 1252 (Birger jarl, \"Datum Stockholm\").",
+   "note": "Registret visar brev daterade i Stockholm 1252. Att de är de första omnämnandena framgår inte av registret."
+  },
+  {
+   "id": "ra-005",
+   "claim": "nh-c0144",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SDHK",
+     "id": "3228",
+     "url": "https://sok.riksarkivet.se/sdhk?SDHK=3228",
+     "date": "13230812; se DS nr 2418 not",
+     "title": "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus"
+    },
+    {
+     "register": "SDHK",
+     "id": "39886",
+     "url": "https://sok.riksarkivet.se/sdhk?SDHK=39886",
+     "date": "13230812; förfalskning, se under medeltida avskrifter",
+     "title": "SDHK nr 39886: samma fred, i en annan medeltida avskrift"
+    }
+   ],
+   "evidence": "SDHK registrerar freden mellan storfursten Jurij Danielowitsch (för Novgorod) och kung Magnus, med datering 12 augusti 1323.",
+   "note": "Dagen är utgivarnas datering (DS nr 2418 not). SDHK markerar en av de medeltida avskrifterna (nr 39886) som förfalskning."
+  },
+  {
+   "id": "ra-006",
+   "claim": "nh-c0148",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SBL",
+     "id": "5648",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648",
+     "title": "SBL: Albrekt av Mecklenburg"
+    }
+   ],
+   "evidence": "SBL: konung av Sverige 1364–89.",
+   "note": "Samma år som affischen. Lex.dk, som den första kontrollen använde, har 1363 som rubrikår."
+  },
+  {
+   "id": "ra-007",
+   "claim": "nh-c0151",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SBL",
+     "id": "15392",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392",
+     "title": "SBL: Erik av Pommern"
+    },
+    {
+     "register": "SBL",
+     "id": "9097",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097",
+     "title": "SBL: Margareta"
+    },
+    {
+     "register": "SDHK",
+     "id": "14836",
+     "url": "https://sok.riksarkivet.se/sdhk?SDHK=14836",
+     "date": "13970713",
+     "title": "SDHK nr 14836: kung Eriks kröningsbrev, Kalmar"
+    },
+    {
+     "register": "SDHK",
+     "id": "14837",
+     "url": "https://sok.riksarkivet.se/sdhk?SDHK=14837",
+     "date": "13970720; el. 13970713",
+     "title": "SDHK nr 14837: Kalmardokumentet: de tre rikenas råd om en kung, Kalmar"
+    }
+   ],
+   "evidence": "SBL: Erik av Pommern krönt till konung i de tre rikena i Kalmar 17 juni 1397, ensamregent vid Margaretas död i oktober 1412, avsatt i Sverige omkring 29 september 1439. Margareta död 28 oktober 1412. SDHK registrerar kröningsbrevet och Kalmardokumentet från juli 1397.",
+   "note": "Året stämmer i båda registren, men dagen skiljer: SBL anger kröningen 17 juni 1397, SDHK daterar kröningsbrevet 13 juli 1397."
+  },
+  {
+   "id": "ra-008",
+   "claim": "nh-c0160",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SBL",
+     "id": "13315",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315",
+     "title": "SBL: Gustav I"
+    }
+   ],
+   "evidence": "SBL: vald till konung i Strängnäs 6 juni 1523, död 29 september 1560.",
+   "note": ""
+  },
+  {
+   "id": "ra-009",
+   "claim": "nh-c0164",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SBL",
+     "id": "13316",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316",
+     "title": "SBL: Gustav II Adolf"
+    }
+   ],
+   "evidence": "SBL: efter faderns död 30 oktober 1611 hyllad som fullmyndig konung 26 december 1611.",
+   "note": ""
+  },
+  {
+   "id": "ra-010",
+   "claim": "nh-c0166",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SBL",
+     "id": "12357",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357",
+     "title": "SBL: Karl XII"
+    }
+   ],
+   "evidence": "SBL: död 30 november 1718 vid belägringen av Fredrikstens fästning.",
+   "note": ""
+  },
+  {
+   "id": "ra-011",
+   "claim": "nh-c0171",
+   "verdict": "ej verifierad",
+   "records": [
+    {
+     "register": "SBL",
+     "id": "13317",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317",
+     "title": "SBL: Gustav III"
+    }
+   ],
+   "evidence": "SBL:s sammanfattning: konung 12 februari 1771, krönt 29 maj 1772. Statskuppen nämns inte.",
+   "note": "Tjänsten ger artikelns sammanfattning och litteraturlista; själva levnadsteckningen finns bara på SBL:s webbplats."
+  },
+  {
+   "id": "ra-012",
+   "claim": "nh-c0185",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SDHK",
+     "id": "30221",
+     "url": "https://sok.riksarkivet.se/sdhk?SDHK=30221",
+     "date": "14770227",
+     "title": "SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom"
+    },
+    {
+     "register": "SDHK",
+     "id": "30290",
+     "url": "https://sok.riksarkivet.se/sdhk?SDHK=30290",
+     "date": "14770720",
+     "title": "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala"
+    }
+   ],
+   "evidence": "SDHK: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom 27 februari 1477; ärkebiskop Jakob, universitetets kansler, i Uppsala 20 juli 1477.",
+   "note": ""
+  },
+  {
+   "id": "ra-013",
+   "claim": "nh-c0189",
+   "verdict": "ej verifierad",
+   "records": [
+    {
+     "register": "SBL",
+     "id": "10735",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735",
+     "title": "SBL: Carl (von) Linné"
+    }
+   ],
+   "evidence": "SBL:s sammanfattning: resor i Europa 1735–38, doktorsgrad i Harderwijk i Holland juni 1735. Systema naturae nämns inte.",
+   "note": "Sammanfattningen stämmer med att han var i Nederländerna 1735 men nämner inte verket."
+  },
+  {
+   "id": "ra-014",
+   "claim": "nh-c0190",
+   "verdict": "bekräftad",
+   "records": [
+    {
+     "register": "SBL",
+     "id": "14758",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758",
+     "title": "SBL: Anders Celsius"
+    }
+   ],
+   "evidence": "SBL:s förteckning över tryckta arbeten: \"Observationer om twänne beständiga grader på en thermometer\", Vetenskapsakademiens handlingar 1742, s. 171–180.",
+   "note": ""
+  },
+  {
+   "id": "ra-015",
+   "claim": "nh-c0194",
+   "verdict": "ej verifierad",
+   "records": [
+    {
+     "register": "SBL",
+     "id": "8143",
+     "url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143",
+     "title": "SBL: Alfred B Nobel"
+    }
+   ],
+   "evidence": "SBL:s sammanfattning: född 1833, styrelseledamot i Nitroglycerin AB 22 oktober 1864. Dynamiten och patentet nämns inte.",
+   "note": ""
+  }
+ ]
+}

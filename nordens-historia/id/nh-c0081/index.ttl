@@ -14,9 +14,33 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0081#riksarkivet> a prov:Entity,
+        schema:ClaimReview ;
+    dcterms:identifier "ra-004" ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sdhk?SDHK=664>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=665> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sdhk?SDHK=664>,
+        <https://sok.riksarkivet.se/sdhk?SDHK=665> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Registret visar brev daterade i Stockholm 1252. Att de är de första omnämnandena framgår inte av registret." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0081 ;
+    schema:reviewBody "SDHK har två brev från 1252 med utfärdandeort Stockholm: juli 1252 (kung Valdemar och Birger jarl, Fogdö kloster) och 19 augusti 1252 (Birger jarl, \"Datum Stockholm\")." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
 <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0081/> a schema:WebPage ;
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0081 .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=664> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=665> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
+
+<https://www.britannica.com/place/Stockholm> schema:name "Encyclopaedia Britannica – Stockholm" .
 
 nh:nh-c0081 a schema:Claim ;
     dcterms:identifier "SV14",
@@ -24,6 +48,4 @@ nh:nh-c0081 a schema:Claim ;
     dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0032 ;
     schema:text "Stockholm nämns 1252" .
-
-<https://www.britannica.com/place/Stockholm> schema:name "Encyclopaedia Britannica – Stockholm" .
 

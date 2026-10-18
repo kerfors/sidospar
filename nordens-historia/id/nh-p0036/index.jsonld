@@ -1,0 +1,221 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0036/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0036",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0036",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0036",
+   "name": "Välfärdsstat",
+   "skos:prefLabel": {
+    "sv": "Välfärdsstat"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1945/2026",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1945",
+    "crm:P82b_end_of_the_end": "2026"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q34"
+   ],
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "description": "EU 1995; Nato 2024",
+   "skos:definition": {
+    "sv": "EU 1995; Nato 2024"
+   }
+  },
+  {
+   "@id": "nh:nh-c0086",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0086",
+    "SV19"
+   ],
+   "text": "Period 'Välfärdsstat': 1945 – 2026",
+   "about": [
+    {
+     "@id": "nh:nh-p0036"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0086#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0086",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "NE:s avsnitt Välfärdssamhället börjar 1945 med socialdemokratisk regering efter samlingsregeringen.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet",
+    "name": "Nationalencyklopedin – Sverige, historia: Välfärdssamhället"
+   },
+   "prov:wasDerivedFrom": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet"
+  },
+  {
+   "@id": "nh:nh-c0087",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0087",
+    "SV20"
+   ],
+   "text": "EU 1995",
+   "about": [
+    {
+     "@id": "nh:nh-p0036"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0087#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0087",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Sverige blev EU-medlem 1 januari 1995.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/",
+    "name": "Regeringskansliet – Sverige i EU 30 år"
+   },
+   "prov:wasDerivedFrom": "https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/"
+  },
+  {
+   "@id": "nh:nh-c0088",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0088",
+    "SV21"
+   ],
+   "text": "Nato 2024",
+   "about": [
+    {
+     "@id": "nh:nh-p0036"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0088#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0088",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Sverige blev fullvärdig Natomedlem 7 mars 2024.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/",
+    "name": "Regeringskansliet – Sveriges och Natos historia"
+   },
+   "prov:wasDerivedFrom": "https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/"
+  }
+ ]
+}

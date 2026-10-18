@@ -1,0 +1,264 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0064/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0064",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0064",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0064",
+   "name": "Danmark–Norge",
+   "skos:prefLabel": {
+    "sv": "Danmark–Norge"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1523/1660",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1523",
+    "crm:P82b_end_of_the_end": "1660"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20"
+   ],
+   "dcterms:spatial": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20"
+   ],
+   "description": "Reformationen 1536; Norges riksråd avskaffas 1536/37; Kristian IV",
+   "skos:definition": {
+    "sv": "Reformationen 1536; Norges riksråd avskaffas 1536/37; Kristian IV"
+   },
+   "skos:closeMatch": "wd:Q62651"
+  },
+  {
+   "@id": "nh:nh-c0153",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0153",
+    "GE24"
+   ],
+   "text": "Period 'Danmark–Norge': 1523 – 1660",
+   "about": [
+    {
+     "@id": "nh:nh-p0064"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0153#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0153",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Lex.dk har avsnittet 'Fra kongeligt fællesskab til dansk dominans 1523–1660', med enväldet 1660 som gräns.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Danmark-Norge",
+    "name": "Lex.dk: Danmark-Norge"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Danmark-Norge"
+  },
+  {
+   "@id": "nh:nh-c0154",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0154",
+    "GE25"
+   ],
+   "text": "Reformationen 1536",
+   "about": [
+    {
+     "@id": "nh:nh-p0064"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0154#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0154",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Lex.dk: reformationen infördes i Danmark genom recessen 30 oktober 1536.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Reformationen_i_Danmark",
+    "name": "Lex.dk: Reformationen i Danmark"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Reformationen_i_Danmark"
+  },
+  {
+   "@id": "nh:nh-c0155",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0155",
+    "GE26"
+   ],
+   "text": "Norges riksråd avskaffas 1537",
+   "about": [
+    {
+     "@id": "nh:nh-p0064"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0155#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0155",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "SNL: Norgesparagrafen i Christian III:s handfästning okt 1536 gjorde att riksrådet föll bort; i praktiken upphörde det 1537 när ärkebiskopen flydde.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Christian_3",
+    "name": "Store norske leksikon: Christian 3"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Christian_3",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Ändrat till 1536/37."
+   }
+  },
+  {
+   "@id": "nh:nh-c0156",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0156",
+    "GE27"
+   ],
+   "text": "Kristian IV",
+   "about": [
+    {
+     "@id": "nh:nh-p0064"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0156#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0156",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Christian 4. var kung av Danmark och Norge 1588–1648 (självständigt styre från 1596).",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Christian_4.",
+    "name": "Christian 4. – lex.dk"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Christian_4."
+  }
+ ]
+}

@@ -1,0 +1,222 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0011/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0011",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0011",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0011",
+   "name": "Valdemarstiden",
+   "skos:prefLabel": {
+    "sv": "Valdemarstiden"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1157/1241",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1157",
+    "crm:P82b_end_of_the_end": "1241"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q35"
+   ],
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "description": "Absalon och Köpenhamn; Jyske Lov 1241",
+   "skos:definition": {
+    "sv": "Absalon och Köpenhamn; Jyske Lov 1241"
+   },
+   "skos:exactMatch": "wd:Q10712169"
+  },
+  {
+   "@id": "nh:nh-c0028",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0028",
+    "DA12"
+   ],
+   "text": "Period 'Valdemarstiden': 1157 – 1241",
+   "about": [
+    {
+     "@id": "nh:nh-p0011"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0028#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0028",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Lex använder perioden 'Valdemarernes storhedstid' 1157–1241.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Danmarks_historie_i_middelalderen",
+    "name": "Lex: Danmarks historie i middelalderen"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Danmarks_historie_i_middelalderen"
+  },
+  {
+   "@id": "nh:nh-c0029",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0029",
+    "DA13"
+   ],
+   "text": "Absalon och Köpenhamn",
+   "about": [
+    {
+     "@id": "nh:nh-p0011"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0029#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0029",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Absalon fick 1167 Köpenhamn i gåva av kungen, byggde borgen där och kallas stadens grundare.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Absalon",
+    "name": "Lex: Absalon"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Absalon"
+  },
+  {
+   "@id": "nh:nh-c0030",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0030",
+    "DA14"
+   ],
+   "text": "Jyske Lov 1241",
+   "about": [
+    {
+     "@id": "nh:nh-p0011"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0030#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0030",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Jyske Lov gavs 1241 av Valdemar Sejr i Vordingborg.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Jyske_Lov",
+    "name": "Lex: Jyske Lov"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Jyske_Lov"
+  }
+ ]
+}

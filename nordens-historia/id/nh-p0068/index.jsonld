@@ -1,0 +1,228 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0068/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0068",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0068",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0068",
+   "name": "Frihetstiden",
+   "skos:prefLabel": {
+    "sv": "Frihetstiden"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1719/1772",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1719",
+    "crm:P82b_end_of_the_end": "1772"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "dcterms:spatial": [
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "description": "Riksdagsstyre; hattar och mössor",
+   "skos:definition": {
+    "sv": "Riksdagsstyre; hattar och mössor"
+   },
+   "skos:exactMatch": "wd:Q2267264"
+  },
+  {
+   "@id": "nh:nh-c0167",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0167",
+    "GE38"
+   ],
+   "text": "Period 'Frihetstiden': 1718 – 1772",
+   "about": [
+    {
+     "@id": "nh:nh-p0068"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0167#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0167",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "NE daterar frihetstiden 1719–1772, från enväldets avskaffande till Gustav III:s statskupp.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden",
+    "name": "Frihetstiden – Nationalencyklopedin"
+   },
+   "prov:wasDerivedFrom": "https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Start ändrat till 1719."
+   }
+  },
+  {
+   "@id": "nh:nh-c0168",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0168",
+    "GE39"
+   ],
+   "text": "Riksdagsstyre",
+   "about": [
+    {
+     "@id": "nh:nh-p0068"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0168#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0168",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Från 1719 blev riksdagen maktcentrum och kontrollerade rådet medan kungens makt minskade.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/",
+    "name": "Besluten som förändrade Sverige – Sveriges riksdag"
+   },
+   "prov:wasDerivedFrom": "https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/"
+  },
+  {
+   "@id": "nh:nh-c0169",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0169",
+    "GE40"
+   ],
+   "text": "hattar och mössor",
+   "about": [
+    {
+     "@id": "nh:nh-p0068"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0169#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0169",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Hattpartiet grundades 1734 i opposition mot Arvid Horns 'mössor' och upphörde efter statskuppen 1772.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/hatter",
+    "name": "Hatter – Store norske leksikon"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/hatter"
+  }
+ ]
+}

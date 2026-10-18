@@ -1,0 +1,124 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0130/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-c0130",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-c0130",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0130",
+    "GE01"
+   ],
+   "text": "Period 'Nordisk bronsålder': 1 700 f.Kr. – 500 f.Kr.",
+   "about": [
+    {
+     "@id": "nh:nh-p0055"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0130#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0130",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SNL anger nordisk bronsålder till ca 1700–500 f.Kr. (äldre 1700–1100, yngre 1100–500).",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/bronsealder",
+    "name": "Store norske leksikon: bronsealder"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/bronsealder"
+  }
+ ]
+}

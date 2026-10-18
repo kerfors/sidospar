@@ -1,9 +1,11 @@
 """Generate index.html: a Nordic timeline poster in the style of
 Chart Origin's "Timeline of World History".
 
-Data lives in COLUMNS, BLOCKS, BARS and MILESTONES below.
-Run: python3 build.py  ->  writes index.html next to this script.
+Data lives in data/items.json and data/claims.json.
+Run: python3 build.py  ->  writes index.html, kallor.html and id/ (via make_kallor.py and ld.py).
 """
+import json
+import sys
 from pathlib import Path
 from html import escape
 
@@ -35,147 +37,22 @@ def col_x(c):
     return X0 + c * COL_W
 
 
-# ---------------------------------------------------------------- palette
-P = {
-    "stone": "#c9b79c", "stone2": "#d9c9ad", "bronze": "#e6a85a",
-    "iron1": "#b7a7d9", "iron2": "#a3c4e8", "iron3": "#9fd3c7",
-    "iron4": "#a8cf9a", "viking": "#5f9ea0", "red": "#f07a6e",
-    "dk": "#f29b88", "no": "#7fb3e6", "se": "#f6d06f", "fi": "#9ec9f0",
-    "is": "#8fd0d8", "union": "#e8606a", "dkno": "#f2a65a",
-    "sefi": "#f9dc8a", "seno": "#c7b3e6", "modern": "#86c99a",
-    "war": "#9aa7b4", "sapmi": "#c8a2c8", "sapmi2": "#e3b7cf",
-    "green": "#6cc08b", "teal": "#5bc0be", "pink": "#f2b5c4",
-    "sand": "#e9c99b", "mint": "#a9e2d0", "gold": "#e6b85c",
-}
-
 # ---------------------------------------------------------------- data
+# All content lives in data/items.json, each item with an opaque id (see ld.py).
+DATA = json.loads((Path(__file__).parent / "data" / "items.json").read_text(encoding="utf-8"))
+assert DATA["columns"] == COLUMNS, "column order in data/items.json differs from COLUMNS"
+P = DATA["palette"]
+CI = {name: i for i, name in enumerate(COLUMNS)}
 # (first_col, last_col, start, end, title, description, colour)
-# Columns: 0 Island, 1 Danmark, 2 Norge, 3 Sverige, 4 Finland, 5 Sápmi
-BLOCKS = [
-    # --- Island
-    (0, 0, 870, 930, "Landnámstiden", "Traditionellt 874: Ingólfur Arnarson i Reykjavík", P["mint"]),
-    (0, 0, 930, 1262, "Fristaten", "Alltinget på Þingvellir; kristendomen antas 999/1000; sagalitteraturen", P["is"]),
-    (0, 0, 1262, 1380, "Under norska kronan", "Gamli sáttmáli 1262–64; gemensam kung med Danmark från 1380", P["no"]),
-    (0, 0, 1814, 1918, "Under danska kronan", "Alltinget sammanträder åter 1845; hemmastyre 1904", P["dk"]),
-    (0, 0, 1918, 1944, "Konungariket Island", "Personalunion med Danmark", P["teal"]),
-    (0, 0, 1944, 2026, "Republiken Island", "Utropas 17 juni 1944; Nato 1949", P["is"]),
-
-    # --- Danmark
-    (1, 1, -10000, -3900, "Jägarstenålder", "Maglemose-, Kongemose- och Ertebøllekultur", P["stone"]),
-    (1, 1, -3900, -1700, "Bondestenålder", "Trattbägarkultur; dösar och gånggrifter", P["stone2"]),
-    (1, 1, 793, 1050, "Vikingatid", "Hedeby; Jellingestenen c. 965; Knut den store, kung i England 1016 och Danmark c. 1018", P["viking"]),
-    (1, 1, 1050, 1157, "Tidig medeltid", "Ärkesäte i Lund 1103/04", P["dk"]),
-    (1, 1, 1157, 1241, "Valdemarstiden", "Absalon och Köpenhamn; Jyske Lov 1241", P["pink"]),
-    (1, 1, 1241, 1340, "Strid och rikets upplösning", "Kunglös tid 1332–40", P["dk"]),
-    (1, 1, 1340, 1380, "Riket återupprättas", "Valdemar Atterdag; digerdöden", P["sand"]),
-    (1, 1, 1814, 1849, "Enväldets sista decennier", "Kielfreden 1814: Norge avträds", P["pink"]),
-    (1, 1, 1849, 1914, "Grundlov och 1864", "Grundloven 1849; Slesvig, Holsten och Lauenburg förloras 1864", P["dk"]),
-    (1, 1, 1914, 1945, "Världskrigens tid", "Sønderjylland åter 1920", P["pink"]),
-    (1, 1, 1945, 1973, "Välfärdsstaten byggs", "", P["modern"]),
-    (1, 1, 1973, 2026, "I EG/EU", "EG 1973; Grönlands hjemmestyre 1979", P["green"]),
-
-    # --- Norge
-    (2, 2, -10000, -4000, "Jägarstenålder", "Fosna- och Komsakultur längs kusten", P["stone"]),
-    (2, 2, -4000, -1700, "Yngre stenålder", "Jordbruket når Sydnorge", P["stone2"]),
-    (2, 2, 793, 1050, "Vikingatid", "Hafrsfjord slutet av 800-talet; Stiklestad 1030", P["viking"]),
-    (2, 2, 1050, 1130, "Riket konsolideras", "Olav Kyrre; Bergen växer fram", P["no"]),
-    (2, 2, 1130, 1240, "Inbördeskrigstiden", "Ärkesäte i Nidaros 1152/53; Sverre", P["iron2"]),
-    (2, 2, 1240, 1319, "Storhetstiden", "Håkon IV; Grönland 1261, Island 1262–64; Magnus Lagabøtes landslov 1274", P["no"]),
-    (2, 2, 1343, 1380, "Håkon VI", "Utsedd 1343, ensam kung från 1355; digerdöden 1349", P["iron2"]),
-    (2, 2, 1905, 1945, "Självständigt kungarike", "Haakon VII; kvinnlig rösträtt 1913", P["no"]),
-    (2, 2, 1945, 2026, "Olja och välfärd", "Ekofisk 1969; nej till EG/EU 1972 och 1994", P["modern"]),
-
-    # --- Sverige
-    (3, 3, -10000, -4000, "Jägarstenålder", "Inlandsisen drar sig tillbaka; Hensbackakultur på Västkusten", P["stone"]),
-    (3, 3, -4000, -1700, "Bondestenålder", "Trattbägar-, gropkeramisk och stridsyxekultur", P["stone2"]),
-    (3, 3, 793, 1050, "Vikingatid", "Birka; Olof Skötkonung", P["viking"]),
-    (3, 3, 1050, 1250, "Riket växer fram", "Erikska och sverkerska ätterna; ärkesäte i Uppsala 1164", P["se"]),
-    (3, 3, 1250, 1319, "Folkungatid", "Folkungaätten regerar 1250–1363; Birger jarl; Stockholm nämns 1252", P["gold"]),
-    (3, 3, 1809, 1814, "Nytt statsskick: 1809 års RF", "", P["se"]),
-    (3, 3, 1905, 1921, "Demokratins genombrott", "Allmän och lika rösträtt 1918–21", P["se"]),
-    (3, 3, 1921, 1945, "Mellankrigstid och krig", "Neutralitet under andra världskriget", P["gold"]),
-    (3, 3, 1945, 2026, "Välfärdsstat", "EU 1995; Nato 2024", P["modern"]),
-
-    # --- Finland
-    (4, 4, -8600, -5000, "Suomusjärvikultur", "Mesolitisk jägarkultur efter isavsmältningen", P["stone"]),
-    (4, 4, -5000, -2800, "Kamkeramisk kultur", "", P["stone2"]),
-    (4, 4, -2800, -1600, "Båtyxe- och Kiukaiskultur", "Båtyxkulturen från c. 3200 f.Kr., parallellt med sen kamkeramik", P["stone"]),
-    (4, 4, -1600, -500, "Bronsålder", "Rösen vid kusten; Sammallahdenmäki", P["bronze"]),
-    (4, 4, -500, 800, "Äldre järnålder", "Förromersk till merovingisk tid; järnåldern fortsätter genom vikinga- och korstågstid", P["iron1"]),
-    (4, 4, 800, 1025, "Vikingatid", "", P["viking"]),
-    (4, 4, 1025, 1300, "Korstågstid", "Till c. 1150 i väster och c. 1300 i öster", P["fi"]),
-    (4, 4, 1300, 1319, "Svenska riket", "Åbo domkyrka invigs 1300", P["sefi"]),
-    (4, 4, 1809, 1917, "Storfurstendömet Finland", "Under Ryssland efter freden i Fredrikshamn; Borgå lantdag 1809; enkammarlantdag och kvinnlig rösträtt 1906", P["iron1"]),
-    (4, 4, 1917, 1939, "Självständigt Finland", "6 dec 1917; inbördeskriget 1918; republik 1919", P["fi"]),
-    (4, 4, 1939, 1944, "Krigsåren", "Vinter- och fortsättningskriget", P["war"]),
-    (4, 4, 1944, 2026, "Andra republiken", "Vapenstillestånd 1944; Lapplandskriget 1944–45; EU 1995; Nato 2023", P["modern"]),
-
-    # --- Sápmi
-    (5, 5, -9000, -500, "Fångstkulturer i norr", "Komsakultur; hällkonst i Alta", P["sapmi2"]),
-    (5, 5, -500, 1050, "Samisk kultur tar form", "Ursamiska sprids under äldre järnålder; dateringen omdiskuterad", P["sapmi"]),
-    (5, 5, 1050, 1550, "Siidasamhällen", "Fångst, fiske och handel; skatt till flera riken", P["sapmi2"]),
-    (5, 5, 1550, 1751, "Skatt, handel och mission", "Lappmarksplakatet 1673", P["sapmi"]),
-    (5, 5, 1751, 1917, "Gränser och nybyggen", "Lappkodicillen 1751; nybyggen breder ut sig", P["sapmi2"]),
-    (5, 5, 1917, 2026, "Samisk organisering", "Sameting: Norge 1989, Sverige 1993, Finland 1996 (delegation från 1973)", P["sapmi"]),
-
-    # --- shared blocks (adjacent columns)
-    (1, 3, -1700, -500, "Nordisk bronsålder", "Solvagnen från Trundholm; hällristningarna i Tanum", P["bronze"]),
-    (1, 3, -500, 1, "Förromersk järnålder", "Hjortspringbåten", P["iron1"]),
-    (1, 3, 1, 400, "Romersk järnålder", "Handel med Romarriket; runskriften tas i bruk", P["iron2"]),
-    (1, 3, 400, 550, "Folkvandringstid", "Guldbrakteater; guldhornen från Gallehus", P["iron3"]),
-    (1, 3, 550, 793, "Vendeltid / merovingertid", "Gamla Uppsala, Vendel och Valsgärde", P["iron4"]),
-    (2, 4, 1319, 1343, "Magnus Eriksson: Sverige och Norge", "Freden i Nöteborg 1323", P["seno"]),
-    (3, 4, 1343, 1397, "Sverige med Finland", "Magnus Erikssons landslag; digerdöden 1350; Albrekt av Mecklenburg 1364–89", P["sefi"]),
-    (0, 2, 1380, 1397, "Danmark–Norge", "", P["dkno"]),
-    (0, 4, 1397, 1523, "Kalmarunionen", "Margareta och Erik av Pommern; Sverige bryter sig ur 1523", P["union"]),
-    (0, 2, 1523, 1660, "Danmark–Norge", "Reformationen 1536; Norges riksråd avskaffas 1536/37; Kristian IV", P["dkno"]),
-    (0, 2, 1660, 1814, "Danmark–Norge under enväldet", "Kongeloven 1665", P["sand"]),
-    (3, 4, 1523, 1611, "Äldre Vasatiden", "Gustav Vasa; reformationen inleds 1527; Uppsala möte 1593", P["se"]),
-    (3, 4, 1611, 1718, "Stormaktstiden", "Gustav II Adolf; westfaliska freden 1648; Karl XII", P["gold"]),
-    (3, 4, 1719, 1772, "Frihetstiden", "Riksdagsstyre; hattar och mössor", P["sefi"]),
-    (3, 4, 1772, 1809, "Gustavianska tiden", "Gustav III:s statskupp 1772; finska kriget 1808–09", P["se"]),
-    (2, 3, 1814, 1905, "Unionen Sverige–Norge", "Två riken, en kung; Norge med egen grundlov (Eidsvoll 17 maj 1814)", P["seno"]),
-]
-
-# Thin dark bars for short, cross-border events: (first_col, last_col, year, label)
-BARS = [
-    (1, 3, 793, "793 Lindisfarne – vikingatiden börjar"),
-    (3, 3, 1520, "1520 Stockholms blodbad"),
-    (1, 2, 1658, "1658 Roskildefreden – Skånelandskapen och Bohuslän till Sverige"),
-    (2, 3, 1905, "1905 Unionsupplösningen"),
-    (1, 2, 1940, "1940–45 Tysk ockupation"),
-    (0, 3, 1952, "1952 Nordiska rådet (Finland ansluter 1955)"),
-]
-
-# Numbered milestones: (column, year, label)
-MILESTONES = [
-    (0, 930, "Alltinget instiftas"),
-    (1, 965, "Jellingestenen"),
-    (0, 1230, "Snorres Heimskringla (c.)"),
-    (3, 1477, "Uppsala universitet"),
-    (1, 1479, "Köpenhamns universitet"),
-    (1, 1576, "Tycho Brahes Uraniborg"),
-    (1, 1676, "Rømer mäter ljusets hastighet"),
-    (3, 1735, "Linnés Systema Naturae"),
-    (3, 1742, "Celsiusskalan"),
-    (3, 1766, "Tryckfrihetsförordningen"),
-    (3, 1809, "Justitieombudsmannen"),
-    (4, 1835, "Kalevala"),
-    (3, 1867, "Nobels dynamit (patent)"),
-    (2, 1888, "Nansen över Grönland"),
-    (3, 1901, "Nobelpriset"),
-    (4, 1906, "Kvinnlig rösträtt och valbarhet"),
-    (2, 1911, "Amundsen på Sydpolen"),
-    (1, 1913, "Bohrs atommodell"),
-    (5, 1917, "Första samiska landsmötet"),
-    (3, 1952, "Tetra Pak, första maskinen"),
-    (1, 1958, "LEGO-klossen (patentansökan)"),
-    (3, 1958, "Pacemakern"),
-    (3, 1959, "Trepunktsbältet"),
-    (2, 1969, "Ekofiskfyndet"),
-    (4, 1991, "Linux"),
-    (3, 2008, "Spotify"),
-]
+BLOCKS = [(CI[p["columns"][0]], CI[p["columns"][-1]], p["start"], p["end"], p["label"], p["description"], P[p["colour"]])
+          for p in DATA["periods"]]
+BLOCK_IDS = [p["id"] for p in DATA["periods"]]
+# (first_col, last_col, year, label)
+BARS = [(CI[e["columns"][0]], CI[e["columns"][-1]], e["year"], e["label"]) for e in DATA["events"]]
+BAR_IDS = [e["id"] for e in DATA["events"]]
+# (column, year, label)
+MILESTONES = [(CI[m["column"]], m["year"], m["label"]) for m in DATA["milestones"]]
+MS_IDS = [m["id"] for m in DATA["milestones"]]
 
 ERAS = [
     (-10000, -1700, "STENÅLDER"), (-1700, -500, "BRONSÅLDER"),
@@ -188,7 +65,7 @@ TICKS = [-10000, -8000, -6000, -4000, -3000, -2000, -1000, -500, 1, 200, 400,
          600, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1550, 1600, 1650,
          1700, 1750, 1800, 1850, 1900, 1950, 2000]
 
-CREDIT_IMG = "https://media.licdn.com/dms/image/v2/D4E22AQHrvGeeC1Ylvg/feedshare-image-high-res/B4EaFEPazcKoAU-/0/1792146255419"
+CREDIT_IMG = "https://media.licdn.com/dms/image/v2/D4E22AQHrvGeeC1Ylvg/feedshare-shrink_480/B4EaFEPazcKoAg-/0/1792146255419?e=1793836800&v=beta&t=dkVaqlOlNRKleqIJVH9ou7Dd-xSD3iDiva5qpIxfqi4"
 CREDIT_POST = "https://lnkd.in/p/ePw54Bpe"
 
 INK = "#1d2733"
@@ -228,13 +105,17 @@ def text_lines(x, y0, lines, fs, weight="400", style="normal", fill=INK, anchor=
     return out
 
 
-def render_block(b):
+def item_attrs(item_id, label):
+    return f'class="item" data-id="{item_id}" tabindex="0" role="button" aria-label="{escape(label)}"'
+
+
+def render_block(b, item_id):
     c0, c1, s, e, title, desc, colour = b
     x = col_x(c0) + GAP / 2
     w = (c1 - c0 + 1) * COL_W - GAP
     y0, y1 = y(s), y(e)
     h = y1 - y0 - GAP
-    out = [f'<g><title>{escape(title)} ({yr(s)}–{yr(e)}). {escape(desc)}</title>',
+    out = [f'<g {item_attrs(item_id, title)}><title>{escape(title)} ({yr(s)}–{yr(e)}). {escape(desc)}</title>',
            f'<rect x="{x:.1f}" y="{y0 + GAP / 2:.1f}" width="{w:.1f}" height="{h:.1f}" fill="{colour}"/>']
     cx = x + w / 2
     span = c1 - c0 + 1
@@ -276,13 +157,14 @@ def render_block(b):
     return out
 
 
-def render_bar(bar):
+def render_bar(bar, item_id):
     c0, c1, year, label = bar
     x = col_x(c0) + GAP / 2
     w = (c1 - c0 + 1) * COL_W - GAP
     yy = y(year)
-    return [f'<rect x="{x:.1f}" y="{yy - 6:.1f}" width="{w:.1f}" height="12" fill="#1f2a36" rx="1"/>',
-            f'<text x="{x + w / 2:.1f}" y="{yy + 3:.1f}" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">{escape(label)}</text>']
+    return [f'<g {item_attrs(item_id, label)}><title>{escape(label)}</title>',
+            f'<rect x="{x:.1f}" y="{yy - 6:.1f}" width="{w:.1f}" height="12" fill="#1f2a36" rx="1"/>',
+            f'<text x="{x + w / 2:.1f}" y="{yy + 3:.1f}" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">{escape(label)}</text>', '</g>']
 
 
 def render_milestones():
@@ -299,7 +181,7 @@ def render_milestones():
             if abs(py - yy) < 15 and abs(px - cx) < 15:
                 cx -= 17
         placed.setdefault(c, []).append((yy, cx))
-        out.append(f'<g><title>{i}. {escape(label)} ({year})</title>'
+        out.append(f'<g {item_attrs(MS_IDS[i - 1], label)}><title>{i}. {escape(label)} ({year})</title>'
                    f'<circle cx="{cx:.1f}" cy="{yy:.1f}" r="7" fill="#fff" stroke="{INK}" stroke-width="1.2"/>'
                    f'<text x="{cx:.1f}" y="{yy + 3:.1f}" font-size="8" font-weight="700" fill="{INK}" text-anchor="middle">{i}</text></g>')
     return out
@@ -461,14 +343,17 @@ def build_svg():
         col, row = divmod(i - 1, per_col)
         lx = 40 + col * 300
         ly = 140 + row * 16
+        s.append(f'<g {item_attrs(MS_IDS[i - 1], label)}>')
+        s.append(f'<rect x="{lx - 2}" y="{ly - 12}" width="280" height="15" fill="#fbfaf7" opacity="0"/>')
         s.append(f'<circle cx="{lx + 6}" cy="{ly - 3.5}" r="6" fill="#fff" stroke="{INK}" stroke-width="1"/>')
         s.append(f'<text x="{lx + 6}" y="{ly - 0.8}" font-size="7.5" font-weight="700" fill="{INK}" text-anchor="middle">{i}</text>')
         s.append(f'<text x="{lx + 17}" y="{ly}" font-size="10" fill="{INK}">{escape(label)} <tspan fill="#6b7682">({year})</tspan></text>')
+        s.append('</g>')
     s += render_axis()
-    for b in BLOCKS:
-        s += render_block(b)
-    for bar in BARS:
-        s += render_bar(bar)
+    for b, item_id in zip(BLOCKS, BLOCK_IDS):
+        s += render_block(b, item_id)
+    for bar, item_id in zip(BARS, BAR_IDS):
+        s += render_bar(bar, item_id)
     s += render_milestones()
     for c in range(len(COLUMNS)):
         s += icon(c, column_top(c))
@@ -513,11 +398,15 @@ PAGE = """<!doctype html>
 <p>En nordisk variant av Chart Origins affisch <em>Timeline of World History</em>:
 en kolumn per land, ett block per riksbildning eller period, och sammanslagna block
 där länderna delat rike – Kalmarunionen, Danmark–Norge, Sverige med Finland och unionen Sverige–Norge.
-Håll muspekaren över ett block för datum.</p>
-<p><strong>Originalet:</strong> <a href="{img}">Timeline of World History</a> av
-<a href="https://chartorigin.com">Chart Origin</a>, delad på <a href="{post}">LinkedIn</a>.
+Klicka på ett block, en händelse eller en siffra för datum, källor och identifierare.</p>
+<p><strong>Originalet:</strong> <a href="{post}">Timeline of World History</a> av
+<a href="https://chartorigin.com">Chart Origin</a>, delat på LinkedIn
+(<a href="{img}">bilden</a>, en tidsbegränsad länk från LinkedIn).
 Idén och formen är deras; innehållet här är mitt eget urval.</p>
 <p><strong>Källäget:</strong> varje uppgift är kontrollerad mot en uppslagskälla, se <a href="kallor.html">källförteckningen</a>.</p>
+<p><strong>Länkade data:</strong> varje period, händelse, milstolpe och kontrollerad uppgift har en egen beständig
+identifierare som går att slå upp, med JSON-LD och länkar till Wikidata. Se <a href="id/">identifierarna</a>.
+Innehåll och data är licensierade under <a href="https://creativecommons.org/licenses/by/4.0/deed.sv">CC BY 4.0</a>.</p>
 </div>
 <div class="poster">
 {svg}
@@ -538,10 +427,151 @@ Idén och formen är deras; innehållet här är mitt eget urval.</p>
 """
 
 
+EXTRA_HEAD = """<style>
+  .poster .item { cursor: pointer; }
+  .poster .item:focus { outline: none; }
+  .poster .item:hover > rect, .poster .item:hover > circle { filter: brightness(0.93); }
+  .poster .item.sel > rect, .poster .item.sel > circle { stroke: #1d2733; stroke-width: 2.5; }
+  .poster .item.sel > circle { fill: #ffd84d; }
+  .poster .item:focus-visible > rect, .poster .item:focus-visible > circle { stroke: #2f6db5; stroke-width: 3; }
+  #panel { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); width: min(640px, calc(100% - 32px));
+           box-sizing: border-box; background: #fff; border: 1px solid #d6d2c8; border-radius: 6px;
+           box-shadow: 0 6px 24px rgba(0,0,0,0.15); padding: 14px 16px; z-index: 10; max-height: 60vh; overflow: auto; }
+  #panel[hidden] { display: none; }
+  #panel .kind { color: #6b7682; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0; }
+  #panel h2 { margin: 2px 0 4px; font-size: 1.2rem; padding-right: 28px; }
+  #panel p { margin: 4px 0; }
+  #panel .meta { color: #4a5764; font-size: 0.9rem; }
+  #panel code { font-size: 0.8rem; background: #f1eee7; padding: 1px 4px; border-radius: 3px; overflow-wrap: anywhere; }
+  #panel .close { position: absolute; top: 8px; right: 10px; border: 0; background: none; font-size: 1.4rem; cursor: pointer; color: #4a5764; }
+  .v { display: inline-block; padding: 0 6px; border-radius: 3px; font-size: 0.78rem; margin-right: 4px; }
+  .v.bekräftad { background: #d8efdc; } .v.omdiskuterad { background: #f7e3b5; }
+</style>
+"""
+
+PANEL = """<aside id="panel" hidden aria-live="polite">
+<button class="close" type="button" aria-label="Stäng">×</button>
+<p class="kind" id="p-kind"></p>
+<h2 id="p-label"></h2>
+<p class="meta" id="p-meta"></p>
+<p id="p-desc"></p>
+<p id="p-claims"></p>
+<p id="p-wd"></p>
+<p><a id="p-link" href="#">Öppna posten</a> · <code id="p-iri"></code></p>
+</aside>
+"""
+
+SCRIPT = """<script>
+(function () {
+  const D = JSON.parse(document.getElementById('nh-data').textContent);
+  const panel = document.getElementById('panel');
+  const $ = (id) => document.getElementById(id);
+  function show(id, scroll) {
+    const d = D[id];
+    if (!d) return;
+    $('p-kind').textContent = d.kind;
+    $('p-label').textContent = d.label;
+    $('p-meta').textContent = d.when + ' · ' + d.where;
+    $('p-desc').textContent = d.desc || '';
+    const c = $('p-claims');
+    c.textContent = '';
+    for (const [v, n] of Object.entries(d.verdicts)) {
+      const s = document.createElement('span');
+      s.className = 'v ' + v;
+      s.textContent = n + ' ' + v;
+      c.appendChild(s);
+    }
+    const k = document.createElement('a');
+    k.href = d.url;
+    k.textContent = 'källor och utlåtanden';
+    c.appendChild(document.createTextNode(' '));
+    c.appendChild(k);
+    const w = $('p-wd');
+    w.textContent = '';
+    if (d.wd) {
+      w.appendChild(document.createTextNode('Wikidata (' + d.wd.rel + '): '));
+      const a = document.createElement('a');
+      a.href = 'https://www.wikidata.org/wiki/' + d.wd.qid;
+      a.textContent = d.wd.qid + ' ' + d.wd.label;
+      w.appendChild(a);
+    }
+    $('p-link').href = d.url;
+    $('p-iri').textContent = d.iri;
+    panel.hidden = false;
+    document.querySelectorAll('.item.sel').forEach((e) => e.classList.remove('sel'));
+    const els = document.querySelectorAll('.poster .item[data-id="' + id + '"]');
+    els.forEach((e) => e.classList.add('sel'));
+    history.replaceState(null, '', '#' + id);
+    if (scroll && els.length) els[els.length - 1].scrollIntoView({ block: 'center' });
+  }
+  const svg = document.querySelector('.poster svg');
+  svg.addEventListener('click', (e) => {
+    const g = e.target.closest('.item');
+    if (g) show(g.dataset.id, false);
+  });
+  svg.addEventListener('keydown', (e) => {
+    const g = e.target.closest('.item');
+    if (g && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); show(g.dataset.id, false); }
+  });
+  panel.querySelector('.close').addEventListener('click', () => {
+    panel.hidden = true;
+    document.querySelectorAll('.item.sel').forEach((e) => e.classList.remove('sel'));
+    history.replaceState(null, '', location.pathname);
+  });
+  const fromHash = () => { const h = location.hash.slice(1); if (D[h]) show(h, true); };
+  window.addEventListener('hashchange', fromHash);
+  fromHash();
+})();
+</script>
+"""
+
+ID_BASE = "https://kerfors.github.io/sidospar/nordens-historia/id/"
+
+
+def panel_data():
+    here = Path(__file__).parent
+    claims = json.loads((here / "data" / "claims.json").read_text(encoding="utf-8"))
+    wpath = here / "data" / "wikidata.json"
+    wd = json.loads(wpath.read_text(encoding="utf-8")) if wpath.exists() else {}
+    verdicts = {}
+    for c in claims:
+        for a in c["about"]:
+            v = verdicts.setdefault(a, {})
+            v[c["verdict"]] = v.get(c["verdict"], 0) + 1
+    out = {}
+    def add(x, kind, when, where):
+        m = wd.get(x["id"])
+        link = None
+        if m and m.get("qid") and m.get("match") not in (None, "none"):
+            rel = "handlar om" if kind == "Milstolpe" or m.get("relation") == "about" else \
+                {"exactMatch": "samma som", "closeMatch": "närliggande"}[m["match"]]
+            link = {"qid": m["qid"], "label": m.get("wikidata_label", ""), "rel": rel}
+        out[x["id"]] = {"kind": kind, "label": x["label"], "when": when, "where": where,
+                        "desc": x.get("description", ""), "verdicts": verdicts.get(x["id"], {}),
+                        "wd": link, "url": "id/" + x["id"] + "/", "iri": ID_BASE + x["id"]}
+    for x in DATA["periods"]:
+        add(x, "Period", f"{yr(x['start'])} – {yr(x['end'])}", ", ".join(x["columns"]))
+    for x in DATA["events"]:
+        add(x, "Händelse", yr(x["year"]), ", ".join(x["columns"]))
+    for x in DATA["milestones"]:
+        add(x, "Milstolpe", yr(x["year"]), x["column"])
+    return out
+
+
 def main():
     out = Path(__file__).with_name("index.html")
-    out.write_text(PAGE.format(svg=build_svg(), img=CREDIT_IMG, post=CREDIT_POST), encoding="utf-8")
+    html = PAGE.format(svg=build_svg(), img=CREDIT_IMG, post=CREDIT_POST)
+    data = json.dumps(panel_data(), ensure_ascii=False).replace("</", "<\\/")
+    html = html.replace("</head>", EXTRA_HEAD + "</head>", 1)
+    html = html.replace("</main>", PANEL + "</main>", 1)
+    html = html.replace("</body>", f'<script type="application/json" id="nh-data">{data}</script>\n' + SCRIPT + "</body>", 1)
+    out.write_text(html, encoding="utf-8")
     print(f"wrote {out}")
+    sys.dont_write_bytecode = True
+    import make_kallor
+    import ld
+    make_kallor.main()
+    ld.main()
 
 
 if __name__ == "__main__":

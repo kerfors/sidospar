@@ -1,0 +1,667 @@
+{
+ "nh-p0001": {
+  "match": "exactMatch",
+  "qid": "Q2725768",
+  "wikidata_label": "settlement of Iceland",
+  "wikidata_description": "survey of the topic",
+  "reason": "Same named event/period: the Norse settlement (landnám) of Iceland."
+ },
+ "nh-p0002": {
+  "match": "exactMatch",
+  "qid": "Q62389",
+  "wikidata_label": "Icelandic Commonwealth",
+  "wikidata_description": "predecessor state of Iceland",
+  "reason": "Icelandic Commonwealth (Free State), inception 930, dissolved 1262 - same period."
+ },
+ "nh-p0003": {
+  "match": "none",
+  "reason": "No Wikidata item for Iceland under the Norwegian crown 1262-1380; only the Old Covenant treaty (Q2717020) exists."
+ },
+ "nh-p0004": {
+  "match": "none",
+  "reason": "No Wikidata item for Iceland under Danish rule 1814-1918 found (only 'Iceland under home rule', which covers 1904-1918)."
+ },
+ "nh-p0005": {
+  "match": "exactMatch",
+  "qid": "Q62567",
+  "wikidata_label": "Kingdom of Iceland",
+  "wikidata_description": "former country",
+  "reason": "Kingdom of Iceland, personal union with Denmark, 1 Dec 1918 to 17 Jun 1944."
+ },
+ "nh-p0006": {
+  "match": "closeMatch",
+  "qid": "Q189",
+  "wikidata_label": "Iceland",
+  "wikidata_description": "Nordic island country in the North Atlantic Ocean",
+  "reason": "Iceland item has official name 'Republiken Island', inception 17 June 1944, follows Kingdom of Iceland.",
+  "reason_edit": "Period 1944– vs the state Iceland: a period is not the same thing as a state; also used as place."
+ },
+ "nh-p0007": {
+  "match": "closeMatch",
+  "qid": "Q104245387",
+  "wikidata_label": "Mesolithic Europe",
+  "wikidata_description": "mesolithic period in Europe",
+  "reason": "Same concept (Mesolithic hunter-gatherer Stone Age) but Europe-wide; no Denmark-specific Mesolithic item found."
+ },
+ "nh-p0008": {
+  "match": "closeMatch",
+  "qid": "Q1275904",
+  "wikidata_label": "Neolithic Europe",
+  "wikidata_description": "period when Neolithic technology was present in Europe",
+  "reason": "Same concept (Neolithic) but Europe-wide; no Danish/Scandinavian Neolithic item found."
+ },
+ "nh-p0009": {
+  "match": "exactMatch",
+  "qid": "Q24528168",
+  "wikidata_label": "Viking Age Denmark",
+  "wikidata_description": "aspect of history",
+  "reason": "Country-specific Viking Age item located in Denmark."
+ },
+ "nh-p0010": {
+  "match": "none",
+  "reason": "No item for Danish early medieval period 1050-1157; 'History of Denmark (1047-1397)' is far broader."
+ },
+ "nh-p0011": {
+  "match": "exactMatch",
+  "qid": "Q10712169",
+  "wikidata_label": "Valdemarian Age",
+  "wikidata_description": "period in Danish history between 1157 and 1241",
+  "reason": "Valdemarian Age, Danish history 1157-1241 - identical named period."
+ },
+ "nh-p0012": {
+  "match": "none",
+  "reason": "Descriptive label; no Wikidata item for Denmark 1241-1340 found."
+ },
+ "nh-p0013": {
+  "match": "none",
+  "reason": "Descriptive label; no Wikidata item for Denmark 1340-1380 found."
+ },
+ "nh-p0014": {
+  "match": "closeMatch",
+  "qid": "Q11964718",
+  "wikidata_label": "history of Denmark (1814-1848)",
+  "wikidata_description": "Aspekt der Geschichte",
+  "reason": "Wikidata period item for Denmark 1814-1848 covers nearly the same span, but is a generic history segment rather than this named era."
+ },
+ "nh-p0015": {
+  "match": "closeMatch",
+  "qid": "Q11964717",
+  "wikidata_label": "history of Denmark (1848-1901)",
+  "wikidata_description": "Aspekt der Geschichte",
+  "reason": "Danish history segment 1848-1901 overlaps the constitutional era but ends earlier than our 1914."
+ },
+ "nh-p0016": {
+  "match": "none",
+  "reason": "Generic label; Danmarks historie (1901-1945) has a different start, no matching item."
+ },
+ "nh-p0017": {
+  "match": "none",
+  "reason": "Generic label; only 'history of Denmark (1945-1990)', a considerably broader span."
+ },
+ "nh-p0018": {
+  "match": "none",
+  "reason": "No Wikidata item for Denmark in the EC/EU 1973-present."
+ },
+ "nh-p0019": {
+  "match": "closeMatch",
+  "qid": "Q104245387",
+  "wikidata_label": "Mesolithic Europe",
+  "wikidata_description": "mesolithic period in Europe",
+  "reason": "Same concept (Mesolithic) but Europe-wide; no Norway-specific item found."
+ },
+ "nh-p0020": {
+  "match": "closeMatch",
+  "qid": "Q1275904",
+  "wikidata_label": "Neolithic Europe",
+  "wikidata_description": "period when Neolithic technology was present in Europe",
+  "reason": "Same concept (Neolithic) but Europe-wide; no Norway-specific item found."
+ },
+ "nh-p0021": {
+  "match": "exactMatch",
+  "qid": "Q253018",
+  "wikidata_label": "Viking Age Norway",
+  "wikidata_description": "aspect of history",
+  "reason": "Country-specific Viking Age item located in Norway."
+ },
+ "nh-p0022": {
+  "match": "none",
+  "reason": "Descriptive label; no Wikidata item for Norway 1050-1130 found."
+ },
+ "nh-p0023": {
+  "match": "exactMatch",
+  "qid": "Q1760671",
+  "wikidata_label": "Civil war era in Norway",
+  "wikidata_description": "Period of Norwegian history dominated by internecine dynastic warfare, 1130-1240",
+  "reason": "Civil war era in Norway, start 1130, end 1240 - identical period."
+ },
+ "nh-p0024": {
+  "match": "none",
+  "reason": "No Wikidata item for the Norwegian 'storhetstid' 1240-1319 found."
+ },
+ "nh-p0025": {
+  "match": "none",
+  "reason": "Period is a reign; only the person Haakon VI of Norway (Q313015) exists, a different kind of entity."
+ },
+ "nh-p0026": {
+  "match": "none",
+  "reason": "No Wikidata item for independent Norway 1905-1945 found."
+ },
+ "nh-p0027": {
+  "match": "closeMatch",
+  "qid": "Q10602292",
+  "wikidata_label": "history of Norway since 1945",
+  "wikidata_description": "aspect of history",
+  "reason": "'History of Norway since 1945' covers the same span but is a generic history segment, not this themed era."
+ },
+ "nh-p0028": {
+  "match": "closeMatch",
+  "qid": "Q104245387",
+  "wikidata_label": "Mesolithic Europe",
+  "wikidata_description": "mesolithic period in Europe",
+  "reason": "Same concept (Mesolithic) but Europe-wide; no Sweden-specific item found."
+ },
+ "nh-p0029": {
+  "match": "closeMatch",
+  "qid": "Q1275904",
+  "wikidata_label": "Neolithic Europe",
+  "wikidata_description": "period when Neolithic technology was present in Europe",
+  "reason": "Same concept (Neolithic) but Europe-wide; no Sweden-specific item found."
+ },
+ "nh-p0030": {
+  "match": "exactMatch",
+  "qid": "Q10685826",
+  "wikidata_label": "Viking Age Sweden",
+  "wikidata_description": "aspect of history",
+  "reason": "Country-specific Viking Age item located in Sweden."
+ },
+ "nh-p0031": {
+  "match": "none",
+  "reason": "Descriptive label; no Wikidata item for Sweden 1050-1250 found."
+ },
+ "nh-p0032": {
+  "match": "closeMatch",
+  "qid": "Q10497488",
+  "wikidata_label": "Folkunga Dynasty",
+  "wikidata_description": "Aspekt der Geschichte",
+  "reason": "Same named period (Folkungatiden) but Wikidata spans 1250-1389 versus our 1250-1319."
+ },
+ "nh-p0033": {
+  "match": "none",
+  "reason": "Period 1809-1814 has no period item; 1809 års regeringsform (Q2255302) is the constitution document, not the period."
+ },
+ "nh-p0034": {
+  "match": "none",
+  "reason": "No Wikidata item for Sweden's democratic breakthrough 1905-1921 found."
+ },
+ "nh-p0035": {
+  "match": "none",
+  "reason": "Generic label; 'Sweden during World War II' covers only part of 1921-1945."
+ },
+ "nh-p0036": {
+  "match": "none",
+  "reason": "Folkhemmet (Q957260) is a political concept, not the 1945-present Swedish welfare-state period; no period item found."
+ },
+ "nh-p0037": {
+  "match": "exactMatch",
+  "qid": "Q930351",
+  "wikidata_label": "Suomusjärvi culture",
+  "reason": "Same Mesolithic culture in Finland, 87th-51st century BCE."
+ },
+ "nh-p0038": {
+  "match": "closeMatch",
+  "qid": "Q129385",
+  "wikidata_label": "Comb Ceramic culture",
+  "wikidata_description": "archaeological culture",
+  "reason": "Same culture, but Wikidata item covers all of Eastern Europe rather than Finland only."
+ },
+ "nh-p0039": {
+  "match": "closeMatch",
+  "qid": "Q18228533",
+  "wikidata_label": "Kiukainen culture",
+  "reason": "Our period combines Battle Axe and Kiukainen cultures in Finland; item covers only the Kiukainen part."
+ },
+ "nh-p0040": {
+  "match": "closeMatch",
+  "qid": "Q11761",
+  "wikidata_label": "Bronze Age",
+  "wikidata_description": "prehistoric period and age studied in archaeology, part of the Holocene Epoch",
+  "reason": "General Bronze Age; ours is the Finnish regional phase."
+ },
+ "nh-p0041": {
+  "match": "none",
+  "reason": "No item for the Finnish Early Iron Age; general Iron Age is too broad a concept."
+ },
+ "nh-p0042": {
+  "match": "closeMatch",
+  "qid": "Q213649",
+  "wikidata_label": "Viking Age",
+  "wikidata_description": "the period of European history characterised by Viking raids and trading",
+  "reason": "General Viking Age; ours is its Finnish scope."
+ },
+ "nh-p0043": {
+  "match": "none",
+  "reason": "No Wikidata item found for the Finnish Crusade period."
+ },
+ "nh-p0044": {
+  "match": "closeMatch",
+  "qid": "Q12375230",
+  "wikidata_label": "Finland under Swedish rule",
+  "wikidata_description": "aspect of Swedish and Finnish history",
+  "reason": "Finland as part of the Swedish realm, but item spans 1104-1809 versus our 1300-1319."
+ },
+ "nh-p0045": {
+  "match": "exactMatch",
+  "qid": "Q62633",
+  "wikidata_label": "Grand Duchy of Finland",
+  "wikidata_description": "predecessor state of modern Finland",
+  "reason": "Same entity, 1809-1917 under Russia."
+ },
+ "nh-p0046": {
+  "match": "none",
+  "reason": "No item for interwar independent Finland 1917-1939."
+ },
+ "nh-p0047": {
+  "match": "exactMatch",
+  "qid": "Q3315504",
+  "wikidata_label": "Finland in World War II",
+  "wikidata_description": "military engagements regarding Finland during World War II",
+  "reason": "Same thing: Finland's Winter and Continuation Wars."
+ },
+ "nh-p0048": {
+  "match": "none",
+  "reason": "No item for post-1944 Finland ('Second Republic') found."
+ },
+ "nh-p0049": {
+  "match": "none",
+  "reason": "Generic label; Komsa culture (Q1577518) covers only part of the period."
+ },
+ "nh-p0050": {
+  "match": "none",
+  "reason": "Generic descriptive period label with no matching item."
+ },
+ "nh-p0051": {
+  "match": "none",
+  "reason": "Siida (Q1790830) is a Sami social structure, not this period."
+ },
+ "nh-p0052": {
+  "match": "none",
+  "reason": "Generic descriptive period label with no matching item."
+ },
+ "nh-p0053": {
+  "match": "none",
+  "reason": "Generic descriptive period label with no matching item."
+ },
+ "nh-p0054": {
+  "match": "none",
+  "reason": "Generic descriptive period label; Sami parliaments are separate institutions."
+ },
+ "nh-p0055": {
+  "match": "closeMatch",
+  "qid": "Q605601",
+  "wikidata_label": "Nordic Bronze Age",
+  "wikidata_description": "Bronze Age in Scandinavia",
+  "reason": "Same named period; scope differs per match rules (multi-country item)."
+ },
+ "nh-p0056": {
+  "match": "closeMatch",
+  "qid": "Q893307",
+  "wikidata_label": "Pre-Roman Iron Age",
+  "wikidata_description": "the earliest part of the Iron Age in Scandinavia and the North European Plain (5th/4th–1st centuries BC)",
+  "reason": "Same period, but item also covers the North European Plain."
+ },
+ "nh-p0057": {
+  "match": "closeMatch",
+  "qid": "Q2566630",
+  "wikidata_label": "Roman Iron Age",
+  "reason": "Same named period, item is broader than Denmark/Norway/Sweden."
+ },
+ "nh-p0058": {
+  "match": "closeMatch",
+  "qid": "Q131192",
+  "wikidata_label": "Migration Period",
+  "wikidata_description": "period in European history with large migration of peoples, from the 4th to the 6th centuries",
+  "reason": "European Migration Period; ours is its Scandinavian scope."
+ },
+ "nh-p0059": {
+  "match": "closeMatch",
+  "qid": "Q1275225",
+  "wikidata_label": "Vendel era",
+  "wikidata_description": "period of Swedish prehistory (540–790 CE)",
+  "reason": "Vendel era is Swedish; ours covers Denmark, Norway and Sweden (Merovingian period)."
+ },
+ "nh-p0060": {
+  "match": "none",
+  "reason": "No item for the 1319-1343 Swedish-Norwegian union under Magnus Eriksson."
+ },
+ "nh-p0061": {
+  "match": "none",
+  "reason": "Generic descriptive period label with no matching item."
+ },
+ "nh-p0062": {
+  "match": "none",
+  "reason": "Candidate Q140592609 (union from 1380) could not be confirmed on wikidata.org; Q62651 starts 1524/1536."
+ },
+ "nh-p0063": {
+  "match": "exactMatch",
+  "qid": "Q62623",
+  "wikidata_label": "Kalmar Union",
+  "wikidata_description": "former country. personal union of the three kingdoms of Denmark, Sweden and Norway (1397–1523)",
+  "reason": "Same union, 1397-1523."
+ },
+ "nh-p0064": {
+  "match": "closeMatch",
+  "qid": "Q62651",
+  "wikidata_label": "Denmark–Norway",
+  "wikidata_description": "political union (1524–1814)",
+  "reason": "Same union, but item spans 1524-1814 versus our 1523-1660 phase."
+ },
+ "nh-p0065": {
+  "match": "closeMatch",
+  "qid": "Q62651",
+  "wikidata_label": "Denmark–Norway",
+  "wikidata_description": "political union (1524–1814)",
+  "reason": "Same union; our period is only its absolutist phase 1660-1814."
+ },
+ "nh-p0066": {
+  "match": "exactMatch",
+  "qid": "Q3290518",
+  "wikidata_label": "history of Sweden (1523–1611)",
+  "wikidata_description": "Kingdom of Sweden period",
+  "reason": "Item has alias 'Older Vasa period', 1523-1611."
+ },
+ "nh-p0067": {
+  "match": "exactMatch",
+  "qid": "Q215443",
+  "wikidata_label": "Swedish Empire",
+  "wikidata_description": "the years 1611–1721 in the history of Sweden",
+  "reason": "Same named period (Stormaktstiden)."
+ },
+ "nh-p0068": {
+  "match": "exactMatch",
+  "qid": "Q2267264",
+  "wikidata_label": "Age of Liberty",
+  "wikidata_description": "the years 1718-1772 in Swedish history",
+  "reason": "Same named period (Frihetstiden)."
+ },
+ "nh-p0069": {
+  "match": "exactMatch",
+  "qid": "Q3300409",
+  "wikidata_label": "history of Sweden from 1772 through 1809",
+  "wikidata_description": "Sweden from 1772 to 1809, through the reigns of Kings Gustav III, Gustav IV, and Charles XIII",
+  "reason": "Item has alias 'Gustavian era', 1772-1809."
+ },
+ "nh-p0070": {
+  "match": "exactMatch",
+  "qid": "Q62589",
+  "wikidata_label": "Union between Sweden and Norway",
+  "wikidata_description": "personal union between Sweden and Norway 1814–1905",
+  "reason": "Same union, 1814-1905."
+ },
+ "nh-e0001": {
+  "match": "exactMatch",
+  "qid": "Q133850450",
+  "wikidata_label": "Sack of Lindisfarne",
+  "wikidata_description": "793 sack",
+  "reason": "Wikidata item for the 793 Viking looting of Lindisfarne, part of the Viking Age."
+ },
+ "nh-e0002": {
+  "match": "exactMatch",
+  "qid": "Q846876",
+  "wikidata_label": "Stockholm Bloodbath",
+  "wikidata_description": "massacre",
+  "reason": "Massacre at Stortorget, Stockholm, 7-9 November 1520."
+ },
+ "nh-e0003": {
+  "match": "exactMatch",
+  "qid": "Q212234",
+  "wikidata_label": "Treaty of Roskilde",
+  "wikidata_description": "peace treaty",
+  "reason": "Peace treaty signed 28 February 1658 by the Swedish Empire and Denmark-Norway."
+ },
+ "nh-e0004": {
+  "match": "exactMatch",
+  "qid": "Q2264910",
+  "wikidata_label": "Dissolution of the union between Norway and Sweden",
+  "wikidata_description": "the dissolution of the United Kingdoms of Sweden and Norway",
+  "reason": "Dissolution of the Swedish-Norwegian union, point in time 1905."
+ },
+ "nh-e0005": {
+  "match": "closeMatch",
+  "qid": "Q819274",
+  "wikidata_label": "German occupation of Norway",
+  "wikidata_description": "Nazi occupation of Norway during World War II",
+  "reason": "Covers Norway only (9 Apr 1940 to 8 May 1945); the Danish occupation is a separate item, Q819136 \"Denmark in World War II\"."
+ },
+ "nh-e0006": {
+  "match": "exactMatch",
+  "qid": "Q146165",
+  "wikidata_label": "Nordic Council",
+  "wikidata_description": "geo-political inter-parliamentary forum for co-operation between the Nordic countries",
+  "reason": "Matched to the organisation itself (inception 16 March 1952), not to a founding-event item.",
+  "relation": "about",
+  "reason_edit": "The poster item is the founding (1952); Q146165 is the organisation, so schema:about."
+ },
+ "nh-m0001": {
+  "match": "exactMatch",
+  "qid": "Q131279",
+  "wikidata_label": "Althing",
+  "wikidata_description": "unicameral parliament of Iceland",
+  "reason": "The Icelandic parliament, inception 930."
+ },
+ "nh-m0002": {
+  "match": "exactMatch",
+  "qid": "Q21162313",
+  "wikidata_label": "Harald's runestone",
+  "wikidata_description": "the larger Jelling runestone",
+  "reason": "Harald Bluetooth's large Jelling stone (c. 965); both stones together are Q723999 Jelling stones."
+ },
+ "nh-m0003": {
+  "match": "exactMatch",
+  "qid": "Q215806",
+  "wikidata_label": "Heimskringla",
+  "wikidata_description": "collection of kings' sagas, written by Snorri Sturluson",
+  "reason": "Snorri Sturluson's kings' sagas, inception 1225."
+ },
+ "nh-m0004": {
+  "match": "exactMatch",
+  "qid": "Q185246",
+  "wikidata_label": "Uppsala University",
+  "wikidata_description": "research university in Uppsala, Sweden",
+  "reason": "The university itself."
+ },
+ "nh-m0005": {
+  "match": "exactMatch",
+  "qid": "Q186285",
+  "wikidata_label": "University of Copenhagen",
+  "wikidata_description": "public research university in Copenhagen, Denmark",
+  "reason": "The university itself."
+ },
+ "nh-m0006": {
+  "match": "exactMatch",
+  "qid": "Q79220",
+  "wikidata_label": "Uraniborg",
+  "wikidata_description": "observatory constructed by Tycho Brahe",
+  "reason": "Tycho Brahe's observatory on Ven, inception 1576."
+ },
+ "nh-m0007": {
+  "match": "exactMatch",
+  "qid": "Q2898393",
+  "wikidata_label": "Rømer's determination of the speed of light",
+  "wikidata_description": "1676 experiment which showed that light has finite speed",
+  "reason": "Rømer's 1676 determination of the speed of light (Wikidata gives the country as France, where the work was done)."
+ },
+ "nh-m0008": {
+  "match": "exactMatch",
+  "qid": "Q29270",
+  "wikidata_label": "Systema Naturae",
+  "wikidata_description": "major work by Carolus Linnaeus",
+  "reason": "The work by Linnaeus, publication date 1735."
+ },
+ "nh-m0009": {
+  "match": "exactMatch",
+  "qid": "Q110748751",
+  "wikidata_label": "Celsius temperature scale",
+  "wikidata_description": "temperature scale which defines the degree Celsius",
+  "reason": "The temperature scale (the unit degree Celsius is a separate item, Q25267)."
+ },
+ "nh-m0010": {
+  "match": "closeMatch",
+  "qid": "Q2456773",
+  "wikidata_label": "Freedom of the Press Act",
+  "wikidata_description": "One of four parts of Sweden's constitution",
+  "reason": "Wikidata models the 1766 ordinance as an edition of the constitutional Freedom of the Press Act (inception 1949); the 1766 documents are archival collection Q134479147."
+ },
+ "nh-m0011": {
+  "match": "exactMatch",
+  "qid": "Q107157415",
+  "wikidata_label": "Parliamentary Ombudsman",
+  "wikidata_description": "Swedish government agency",
+  "reason": "The agency Riksdagens ombudsmän (JO), inception 1809; the office of ombudsman itself is Q1774881."
+ },
+ "nh-m0012": {
+  "match": "exactMatch",
+  "qid": "Q130924",
+  "wikidata_label": "Kalevala",
+  "wikidata_description": "19th-century work of epic poetry compiled by Elias Lönnrot from Karelian and Finnish oral folklore and mythology",
+  "reason": "The Finnish national epic."
+ },
+ "nh-m0013": {
+  "match": "exactMatch",
+  "qid": "Q80728",
+  "wikidata_label": "dynamite",
+  "wikidata_description": "explosive preparation of stabilized nitroglycerin",
+  "reason": "Invented by Alfred Nobel, time of invention 1867."
+ },
+ "nh-m0014": {
+  "match": "exactMatch",
+  "qid": "Q4354065",
+  "wikidata_label": "Nansen's Greenland expedition",
+  "reason": "Expedition across Greenland, May 1888 to May 1889, country Norway."
+ },
+ "nh-m0015": {
+  "match": "exactMatch",
+  "qid": "Q7191",
+  "wikidata_label": "Nobel Prize",
+  "wikidata_description": "set of annual international awards, primarily 5 established in 1895 by Alfred Nobel",
+  "reason": "The prize itself (first awarded 1901)."
+ },
+ "nh-m0016": {
+  "match": "exactMatch",
+  "qid": "Q95099079",
+  "wikidata_label": "women's suffrage in Finland",
+  "wikidata_description": "overview of women's suffrage in Finland",
+  "reason": "Item specific to women's suffrage in Finland."
+ },
+ "nh-m0017": {
+  "match": "exactMatch",
+  "qid": "Q8414",
+  "wikidata_label": "Amundsen's South Pole expedition",
+  "wikidata_description": "first expedition to reach the geographic South Pole",
+  "reason": "Expedition 1910 to 1912 that reached the South Pole in 1911."
+ },
+ "nh-m0018": {
+  "match": "exactMatch",
+  "qid": "Q172948",
+  "wikidata_label": "Bohr model",
+  "wikidata_description": "atomic model introduced by Niels Bohr in 1913",
+  "reason": "Bohr's atomic model, inception 1913."
+ },
+ "nh-m0019": {
+  "match": "exactMatch",
+  "qid": "Q19387464",
+  "wikidata_label": "Sami assembly of 1917",
+  "wikidata_description": "First Sámi National Assembly",
+  "reason": "First Sámi national assembly, Trondheim, 6-9 February 1917."
+ },
+ "nh-m0020": {
+  "match": "closeMatch",
+  "qid": "Q4050869",
+  "wikidata_label": "Tetra Classic",
+  "wikidata_description": "trademark and line of tetrahedral product packaging by Tetra Pak",
+  "reason": "There is no item for the first machine, so this links the tetrahedral package it produced; the company is Q659200."
+ },
+ "nh-m0021": {
+  "match": "exactMatch",
+  "qid": "Q58780590",
+  "wikidata_label": "Lego brick",
+  "wikidata_description": "specific designs manufactured by The Lego Group which can be different colors",
+  "reason": "The Lego brick itself; there is no separate item for the 1958 patent application."
+ },
+ "nh-m0022": {
+  "match": "closeMatch",
+  "qid": "Q372713",
+  "wikidata_label": "artificial pacemaker",
+  "wikidata_description": "medical device that uses electrical impulses to regulate the beating of the heart",
+  "reason": "Generic pacemaker device; there is no item for the first implantable pacemaker of 1958."
+ },
+ "nh-m0023": {
+  "match": "closeMatch",
+  "qid": "Q15883336",
+  "wikidata_label": "car seatbelt",
+  "wikidata_description": "type of product; vehicle safety equipment",
+  "reason": "Car seat belt in general; no item was found for the three-point seat belt specifically."
+ },
+ "nh-m0024": {
+  "match": "closeMatch",
+  "qid": "Q1323379",
+  "wikidata_label": "Ekofisk",
+  "wikidata_description": "Norwegian oil field in the North Sea",
+  "reason": "The oil field itself; there is no item for the 1969 discovery event."
+ },
+ "nh-m0025": {
+  "match": "exactMatch",
+  "qid": "Q14579",
+  "wikidata_label": "Linux kernel",
+  "wikidata_description": "Unix-like operating system kernel, basis for all Linux operating systems",
+  "reason": "Torvalds's kernel; the Linux OS family is Q388."
+ },
+ "nh-m0026": {
+  "match": "exactMatch",
+  "qid": "Q689141",
+  "wikidata_label": "Spotify",
+  "wikidata_description": "Swedish audio streaming service",
+  "reason": "The streaming service; the holding company is Q60269744."
+ },
+ "place:Island": {
+  "match": "exactMatch",
+  "qid": "Q189",
+  "wikidata_label": "Iceland",
+  "wikidata_description": "Nordic island country in the North Atlantic Ocean",
+  "reason": "Sovereign country Iceland."
+ },
+ "place:Danmark": {
+  "match": "exactMatch",
+  "qid": "Q35",
+  "wikidata_label": "Denmark",
+  "wikidata_description": "country in Northern Europe",
+  "reason": "Denmark as a country; the wider Kingdom of Denmark is Q756617."
+ },
+ "place:Norge": {
+  "match": "exactMatch",
+  "qid": "Q20",
+  "wikidata_label": "Norway",
+  "wikidata_description": "country in Northern Europe",
+  "reason": "Sovereign country Norway."
+ },
+ "place:Sverige": {
+  "match": "exactMatch",
+  "qid": "Q34",
+  "wikidata_label": "Sweden",
+  "wikidata_description": "country in Northern Europe",
+  "reason": "Sovereign country Sweden."
+ },
+ "place:Finland": {
+  "match": "exactMatch",
+  "qid": "Q33",
+  "wikidata_label": "Finland",
+  "wikidata_description": "country in Northern Europe",
+  "reason": "Sovereign country Finland."
+ },
+ "place:Sápmi": {
+  "match": "exactMatch",
+  "qid": "Q62132",
+  "wikidata_label": "Sápmi",
+  "wikidata_description": "cultural region traditionally inhabited by the Sami people",
+  "reason": "Sámi cultural region."
+ }
+}

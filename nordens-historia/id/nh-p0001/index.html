@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landnámstiden – Nordens historia</title>
+<link rel="alternate" type="application/ld+json" href="index.jsonld">
+<script type="application/ld+json">
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0001/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0001",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0001",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0001",
+   "name": "Landnámstiden",
+   "skos:prefLabel": {
+    "sv": "Landnámstiden"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "0870/0930",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0870",
+    "crm:P82b_end_of_the_end": "0930"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q189"
+   ],
+   "dcterms:spatial": [
+    "wd:Q189"
+   ],
+   "description": "Traditionellt 874: Ingólfur Arnarson i Reykjavík",
+   "skos:definition": {
+    "sv": "Traditionellt 874: Ingólfur Arnarson i Reykjavík"
+   },
+   "skos:exactMatch": "wd:Q2725768"
+  },
+  {
+   "@id": "nh:nh-c0001",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0001",
+    "IS01"
+   ],
+   "text": "Period 'Landnámstiden': 874 – 930",
+   "about": [
+    {
+     "@id": "nh:nh-p0001"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0001#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0001",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "SNL anger landnamstiden till cirka 870–930; 874 är det traditionella året för Ingólfurs bosättning, medan lex.dk säger att bosättningen började omkring 870.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Islands_historie",
+    "name": "Islands historie (Store norske leksikon)"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Islands_historie",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Start 870; 874 anges som traditionellt år."
+   }
+  },
+  {
+   "@id": "nh:nh-c0002",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0002",
+    "IS02"
+   ],
+   "text": "Ingólfur Arnarson i Reykjavík",
+   "about": [
+    {
+     "@id": "nh:nh-p0001"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0002#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0002",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SNL beskriver Ingólfur som den förste fasta bosättaren från Norge och säger att han slog sig ned i Reykjavík.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Ingolv_Arnesson",
+    "name": "Ingolv Arnesson (Store norske leksikon)"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Ingolv_Arnesson"
+  }
+ ]
+}
+</script>
+<style>
+  body { margin: 0; background: #fbfaf7; color: #1d2733;
+         font-family: Inter, "Helvetica Neue", Arial, sans-serif; line-height: 1.5; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+  a { color: #2f6db5; }
+  .crumbs { font-size: 0.9rem; }
+  .kind { color: #6b7682; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0; }
+  h1 { margin: 0.1em 0 0.4em; }
+  dl { display: grid; grid-template-columns: 11em 1fr; gap: 4px 12px; }
+  dt { color: #6b7682; } dd { margin: 0; overflow-wrap: anywhere; }
+  code { font-size: 0.85em; background: #f1eee7; padding: 1px 4px; border-radius: 3px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #e3e0d8; }
+  th { background: #f1eee7; }
+  .v { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.78rem; white-space: nowrap; }
+  .v.bekräftad { background: #d8efdc; } .v.omdiskuterad { background: #f7e3b5; }
+  .v.avvikande { background: #f6c9c4; } .v.ej { background: #e3e3e3; }
+  .tw { overflow-x: auto; }
+  @media (max-width: 600px) { dl { grid-template-columns: 1fr; } dt { margin-top: 6px; } }
+</style>
+</head>
+<body>
+<main>
+<p class="crumbs"><a href="../../">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="../../kallor.html">Källäget</a></p>
+<p class="kind">Period</p>
+<h1>Landnámstiden</h1>
+<p>Traditionellt 874: Ingólfur Arnarson i Reykjavík</p>
+<dl>
+<dt>Identifierare</dt><dd><code>https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0001</code></dd>
+<dt>Tid</dt><dd>870 – 930 &nbsp;<code>0870/0930</code></dd>
+<dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q189">Island</a></dd>
+<dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q2725768">Q2725768</a> settlement of Iceland (samma som)</dd>
+<dt>På affischen</dt><dd><a href="../../#nh-p0001">Visa på affischen</a></dd>
+<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
+</dl>
+<h2>Kontrollerade uppgifter</h2>
+<div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0001/">nh-c0001</a></td><td>Period &#x27;Landnámstiden&#x27;: 874 – 930</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://snl.no/Islands_historie">Islands historie (Store norske leksikon)</a></td></tr><tr><td><a href="../nh-c0002/">nh-c0002</a></td><td>Ingólfur Arnarson i Reykjavík</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Ingolv_Arnesson">Ingolv Arnesson (Store norske leksikon)</a></td></tr></tbody></table></div>
+
+</main>
+</body>
+</html>

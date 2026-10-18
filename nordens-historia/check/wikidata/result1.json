@@ -1,0 +1,282 @@
+[
+ {
+  "id": "nh-p0001",
+  "match": "exactMatch",
+  "qid": "Q2725768",
+  "wikidata_label": "settlement of Iceland",
+  "wikidata_description": "survey of the topic",
+  "reason": "Same named event/period: the Norse settlement (landnám) of Iceland."
+ },
+ {
+  "id": "nh-p0002",
+  "match": "exactMatch",
+  "qid": "Q62389",
+  "wikidata_label": "Icelandic Commonwealth",
+  "wikidata_description": "predecessor state of Iceland",
+  "reason": "Icelandic Commonwealth (Free State), inception 930, dissolved 1262 - same period."
+ },
+ {
+  "id": "nh-p0003",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No Wikidata item for Iceland under the Norwegian crown 1262-1380; only the Old Covenant treaty (Q2717020) exists."
+ },
+ {
+  "id": "nh-p0004",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No Wikidata item for Iceland under Danish rule 1814-1918 found (only 'Iceland under home rule', which covers 1904-1918)."
+ },
+ {
+  "id": "nh-p0005",
+  "match": "exactMatch",
+  "qid": "Q62567",
+  "wikidata_label": "Kingdom of Iceland",
+  "wikidata_description": "former country",
+  "reason": "Kingdom of Iceland, personal union with Denmark, 1 Dec 1918 to 17 Jun 1944."
+ },
+ {
+  "id": "nh-p0006",
+  "match": "exactMatch",
+  "qid": "Q189",
+  "wikidata_label": "Iceland",
+  "wikidata_description": "Nordic island country in the North Atlantic Ocean",
+  "reason": "Iceland item has official name 'Republiken Island', inception 17 June 1944, follows Kingdom of Iceland."
+ },
+ {
+  "id": "nh-p0007",
+  "match": "closeMatch",
+  "qid": "Q104245387",
+  "wikidata_label": "Mesolithic Europe",
+  "wikidata_description": "mesolithic period in Europe",
+  "reason": "Same concept (Mesolithic hunter-gatherer Stone Age) but Europe-wide; no Denmark-specific Mesolithic item found."
+ },
+ {
+  "id": "nh-p0008",
+  "match": "closeMatch",
+  "qid": "Q1275904",
+  "wikidata_label": "Neolithic Europe",
+  "wikidata_description": "period when Neolithic technology was present in Europe",
+  "reason": "Same concept (Neolithic) but Europe-wide; no Danish/Scandinavian Neolithic item found."
+ },
+ {
+  "id": "nh-p0009",
+  "match": "exactMatch",
+  "qid": "Q24528168",
+  "wikidata_label": "Viking Age Denmark",
+  "wikidata_description": "aspect of history",
+  "reason": "Country-specific Viking Age item located in Denmark."
+ },
+ {
+  "id": "nh-p0010",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No item for Danish early medieval period 1050-1157; 'History of Denmark (1047-1397)' is far broader."
+ },
+ {
+  "id": "nh-p0011",
+  "match": "exactMatch",
+  "qid": "Q10712169",
+  "wikidata_label": "Valdemarian Age",
+  "wikidata_description": "period in Danish history between 1157 and 1241",
+  "reason": "Valdemarian Age, Danish history 1157-1241 - identical named period."
+ },
+ {
+  "id": "nh-p0012",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Descriptive label; no Wikidata item for Denmark 1241-1340 found."
+ },
+ {
+  "id": "nh-p0013",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Descriptive label; no Wikidata item for Denmark 1340-1380 found."
+ },
+ {
+  "id": "nh-p0014",
+  "match": "closeMatch",
+  "qid": "Q11964718",
+  "wikidata_label": "history of Denmark (1814-1848)",
+  "wikidata_description": "Aspekt der Geschichte",
+  "reason": "Wikidata period item for Denmark 1814-1848 covers nearly the same span, but is a generic history segment rather than this named era."
+ },
+ {
+  "id": "nh-p0015",
+  "match": "closeMatch",
+  "qid": "Q11964717",
+  "wikidata_label": "history of Denmark (1848-1901)",
+  "wikidata_description": "Aspekt der Geschichte",
+  "reason": "Danish history segment 1848-1901 overlaps the constitutional era but ends earlier than our 1914."
+ },
+ {
+  "id": "nh-p0016",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Generic label; Danmarks historie (1901-1945) has a different start, no matching item."
+ },
+ {
+  "id": "nh-p0017",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Generic label; only 'history of Denmark (1945-1990)', a considerably broader span."
+ },
+ {
+  "id": "nh-p0018",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No Wikidata item for Denmark in the EC/EU 1973-present."
+ },
+ {
+  "id": "nh-p0019",
+  "match": "closeMatch",
+  "qid": "Q104245387",
+  "wikidata_label": "Mesolithic Europe",
+  "wikidata_description": "mesolithic period in Europe",
+  "reason": "Same concept (Mesolithic) but Europe-wide; no Norway-specific item found."
+ },
+ {
+  "id": "nh-p0020",
+  "match": "closeMatch",
+  "qid": "Q1275904",
+  "wikidata_label": "Neolithic Europe",
+  "wikidata_description": "period when Neolithic technology was present in Europe",
+  "reason": "Same concept (Neolithic) but Europe-wide; no Norway-specific item found."
+ },
+ {
+  "id": "nh-p0021",
+  "match": "exactMatch",
+  "qid": "Q253018",
+  "wikidata_label": "Viking Age Norway",
+  "wikidata_description": "aspect of history",
+  "reason": "Country-specific Viking Age item located in Norway."
+ },
+ {
+  "id": "nh-p0022",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Descriptive label; no Wikidata item for Norway 1050-1130 found."
+ },
+ {
+  "id": "nh-p0023",
+  "match": "exactMatch",
+  "qid": "Q1760671",
+  "wikidata_label": "Civil war era in Norway",
+  "wikidata_description": "Period of Norwegian history dominated by internecine dynastic warfare, 1130-1240",
+  "reason": "Civil war era in Norway, start 1130, end 1240 - identical period."
+ },
+ {
+  "id": "nh-p0024",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No Wikidata item for the Norwegian 'storhetstid' 1240-1319 found."
+ },
+ {
+  "id": "nh-p0025",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Period is a reign; only the person Haakon VI of Norway (Q313015) exists, a different kind of entity."
+ },
+ {
+  "id": "nh-p0026",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No Wikidata item for independent Norway 1905-1945 found."
+ },
+ {
+  "id": "nh-p0027",
+  "match": "closeMatch",
+  "qid": "Q10602292",
+  "wikidata_label": "history of Norway since 1945",
+  "wikidata_description": "aspect of history",
+  "reason": "'History of Norway since 1945' covers the same span but is a generic history segment, not this themed era."
+ },
+ {
+  "id": "nh-p0028",
+  "match": "closeMatch",
+  "qid": "Q104245387",
+  "wikidata_label": "Mesolithic Europe",
+  "wikidata_description": "mesolithic period in Europe",
+  "reason": "Same concept (Mesolithic) but Europe-wide; no Sweden-specific item found."
+ },
+ {
+  "id": "nh-p0029",
+  "match": "closeMatch",
+  "qid": "Q1275904",
+  "wikidata_label": "Neolithic Europe",
+  "wikidata_description": "period when Neolithic technology was present in Europe",
+  "reason": "Same concept (Neolithic) but Europe-wide; no Sweden-specific item found."
+ },
+ {
+  "id": "nh-p0030",
+  "match": "exactMatch",
+  "qid": "Q10685826",
+  "wikidata_label": "Viking Age Sweden",
+  "wikidata_description": "aspect of history",
+  "reason": "Country-specific Viking Age item located in Sweden."
+ },
+ {
+  "id": "nh-p0031",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Descriptive label; no Wikidata item for Sweden 1050-1250 found."
+ },
+ {
+  "id": "nh-p0032",
+  "match": "closeMatch",
+  "qid": "Q10497488",
+  "wikidata_label": "Folkunga Dynasty",
+  "wikidata_description": "Aspekt der Geschichte",
+  "reason": "Same named period (Folkungatiden) but Wikidata spans 1250-1389 versus our 1250-1319."
+ },
+ {
+  "id": "nh-p0033",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Period 1809-1814 has no period item; 1809 års regeringsform (Q2255302) is the constitution document, not the period."
+ },
+ {
+  "id": "nh-p0034",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No Wikidata item for Sweden's democratic breakthrough 1905-1921 found."
+ },
+ {
+  "id": "nh-p0035",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Generic label; 'Sweden during World War II' covers only part of 1921-1945."
+ }
+]

@@ -1,0 +1,222 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0028/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0028",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0028",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0028",
+   "name": "Jägarstenålder",
+   "skos:prefLabel": {
+    "sv": "Jägarstenålder"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "-9999/-3999",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-9999",
+    "crm:P82b_end_of_the_end": "-3999"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q34"
+   ],
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "description": "Inlandsisen drar sig tillbaka; Hensbackakultur på Västkusten",
+   "skos:definition": {
+    "sv": "Inlandsisen drar sig tillbaka; Hensbackakultur på Västkusten"
+   },
+   "skos:closeMatch": "wd:Q104245387"
+  },
+  {
+   "@id": "nh:nh-c0068",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0068",
+    "SV01"
+   ],
+   "text": "Period 'Jägarstenålder': 10 000 f.Kr. – 4 000 f.Kr.",
+   "about": [
+    {
+     "@id": "nh:nh-p0028"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0068#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0068",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Historiska museets tidslinje anger mesolitikum 10 000–4 000 f.Kr.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://historiska.se/utforska-historien/tidsaldrar/",
+    "name": "Statens historiska museer – Tidsåldrar"
+   },
+   "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/"
+  },
+  {
+   "@id": "nh:nh-c0069",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0069",
+    "SV02"
+   ],
+   "text": "Inlandsisen drar sig tillbaka",
+   "about": [
+    {
+     "@id": "nh:nh-p0028"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0069#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0069",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Sidan beskriver hur landet blev tillgängligt när isen smälte; sista isfria områdena i södra Norrland ca 7 500 f.Kr.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/",
+    "name": "Statens historiska museer – Mesolitikum"
+   },
+   "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/"
+  },
+  {
+   "@id": "nh:nh-c0070",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0070",
+    "SV03"
+   ],
+   "text": "Hensbackakultur på Västkusten",
+   "about": [
+    {
+     "@id": "nh:nh-p0028"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0070#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0070",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Hensbackakultur nämns som en av de mesolitiska kulturerna längs västkusten.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/",
+    "name": "Statens historiska museer – Mesolitikum"
+   },
+   "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/"
+  }
+ ]
+}

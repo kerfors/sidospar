@@ -1,0 +1,229 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0004/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0004",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0004",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0004",
+   "name": "Under danska kronan",
+   "skos:prefLabel": {
+    "sv": "Under danska kronan"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1814/1918",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1814",
+    "crm:P82b_end_of_the_end": "1918"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q189"
+   ],
+   "dcterms:spatial": [
+    "wd:Q189"
+   ],
+   "description": "Alltinget sammanträder åter 1845; hemmastyre 1904",
+   "skos:definition": {
+    "sv": "Alltinget sammanträder åter 1845; hemmastyre 1904"
+   }
+  },
+  {
+   "@id": "nh:nh-c0009",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0009",
+    "IS09"
+   ],
+   "text": "Period 'Under danska kronan': 1814 – 1918",
+   "about": [
+    {
+     "@id": "nh:nh-p0004"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0009#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0009",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "lex.dk låter Island i praktiken bli del av den danska monarkin redan 1380; SNL säger att Island löstes från norska kronan 1814 och formellt blev en del av Danmark 1536.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Islands_historie",
+    "name": "Islands historie (lex.dk, Den Store Danske)"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Islands_historie",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Behållet; 1814 som gräns följer SNL."
+   }
+  },
+  {
+   "@id": "nh:nh-c0010",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0010",
+    "IS10"
+   ],
+   "text": "Alltinget återupprättas 1845",
+   "about": [
+    {
+     "@id": "nh:nh-p0004"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0010#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0010",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Alltingets egen webbplats säger att Alltinget återupprättades 1845; lex.dk säger att det beviljades 1843 och sammanträdde första gången sommaren 1845.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879",
+    "name": "Alþingi í Lærða skólanum 1845–1879 (althingi.is)"
+   },
+   "prov:wasDerivedFrom": "https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Ändrat till ”sammanträder åter 1845” (beslut 1843)."
+   }
+  },
+  {
+   "@id": "nh:nh-c0011",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0011",
+    "IS11"
+   ],
+   "text": "hemmastyre 1904",
+   "about": [
+    {
+     "@id": "nh:nh-p0004"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0011#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0011",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Regeringskansliet uppger att hemmastyret började 1 februari 1904 med Hannes Hafstein som minister.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/",
+    "name": "Heimastjórn 1904–1918 (stjornarradid.is)"
+   },
+   "prov:wasDerivedFrom": "https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/"
+  }
+ ]
+}

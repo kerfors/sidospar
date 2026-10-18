@@ -1,0 +1,226 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0021/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0021",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0021",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0021",
+   "name": "Vikingatid",
+   "skos:prefLabel": {
+    "sv": "Vikingatid"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "0793/1050",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0793",
+    "crm:P82b_end_of_the_end": "1050"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q20"
+   ],
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "description": "Hafrsfjord slutet av 800-talet; Stiklestad 1030",
+   "skos:definition": {
+    "sv": "Hafrsfjord slutet av 800-talet; Stiklestad 1030"
+   },
+   "skos:exactMatch": "wd:Q253018"
+  },
+  {
+   "@id": "nh:nh-c0047",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0047",
+    "NO05"
+   ],
+   "text": "Period 'Vikingatid': 793 – 1066",
+   "about": [
+    {
+     "@id": "nh:nh-p0021"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0047#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0047",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SNL skriver att angreppet på Lindisfarne 793 ofta räknas som vikingatidens början och Harald Hårdrådes fall 1066 som det sista vikingatåget.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Norges_historie",
+    "name": "Store norske leksikon: Norges historie"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Norges_historie"
+  },
+  {
+   "@id": "nh:nh-c0048",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0048",
+    "NO06"
+   ],
+   "text": "Hafrsfjord c. 872",
+   "about": [
+    {
+     "@id": "nh:nh-p0021"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0048#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0048",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "SNL anger slaget till slutet av 800-talet; Are Frode ger 872, Koht närmare 900 och Schreiner/Einarsdóttir 880-talet.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/slaget_i_Hafrsfjord",
+    "name": "Store norske leksikon: slaget i Hafrsfjord"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/slaget_i_Hafrsfjord",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Ändrat till ”slutet av 800-talet”."
+   }
+  },
+  {
+   "@id": "nh:nh-c0049",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0049",
+    "NO07"
+   ],
+   "text": "Stiklestad 1030",
+   "about": [
+    {
+     "@id": "nh:nh-p0021"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0049#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0049",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Slaget stod den 29 juli, sannolikt år 1030, och Olav Haraldsson stupade.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Slaget_p%C3%A5_Stiklestad",
+    "name": "Store norske leksikon: Slaget på Stiklestad"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Slaget_p%C3%A5_Stiklestad"
+  }
+ ]
+}

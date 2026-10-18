@@ -1,0 +1,282 @@
+[
+ {
+  "id": "nh-p0036",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Folkhemmet (Q957260) is a political concept, not the 1945-present Swedish welfare-state period; no period item found."
+ },
+ {
+  "id": "nh-p0037",
+  "match": "exactMatch",
+  "qid": "Q930351",
+  "wikidata_label": "Suomusjärvi culture",
+  "wikidata_description": "",
+  "reason": "Same Mesolithic culture in Finland, 87th-51st century BCE."
+ },
+ {
+  "id": "nh-p0038",
+  "match": "closeMatch",
+  "qid": "Q129385",
+  "wikidata_label": "Comb Ceramic culture",
+  "wikidata_description": "archaeological culture",
+  "reason": "Same culture, but Wikidata item covers all of Eastern Europe rather than Finland only."
+ },
+ {
+  "id": "nh-p0039",
+  "match": "closeMatch",
+  "qid": "Q18228533",
+  "wikidata_label": "Kiukainen culture",
+  "wikidata_description": "",
+  "reason": "Our period combines Battle Axe and Kiukainen cultures in Finland; item covers only the Kiukainen part."
+ },
+ {
+  "id": "nh-p0040",
+  "match": "closeMatch",
+  "qid": "Q11761",
+  "wikidata_label": "Bronze Age",
+  "wikidata_description": "prehistoric period and age studied in archaeology, part of the Holocene Epoch",
+  "reason": "General Bronze Age; ours is the Finnish regional phase."
+ },
+ {
+  "id": "nh-p0041",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No item for the Finnish Early Iron Age; general Iron Age is too broad a concept."
+ },
+ {
+  "id": "nh-p0042",
+  "match": "closeMatch",
+  "qid": "Q213649",
+  "wikidata_label": "Viking Age",
+  "wikidata_description": "the period of European history characterised by Viking raids and trading",
+  "reason": "General Viking Age; ours is its Finnish scope."
+ },
+ {
+  "id": "nh-p0043",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No Wikidata item found for the Finnish Crusade period."
+ },
+ {
+  "id": "nh-p0044",
+  "match": "closeMatch",
+  "qid": "Q12375230",
+  "wikidata_label": "Finland under Swedish rule",
+  "wikidata_description": "aspect of Swedish and Finnish history",
+  "reason": "Finland as part of the Swedish realm, but item spans 1104-1809 versus our 1300-1319."
+ },
+ {
+  "id": "nh-p0045",
+  "match": "exactMatch",
+  "qid": "Q62633",
+  "wikidata_label": "Grand Duchy of Finland",
+  "wikidata_description": "predecessor state of modern Finland",
+  "reason": "Same entity, 1809-1917 under Russia."
+ },
+ {
+  "id": "nh-p0046",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No item for interwar independent Finland 1917-1939."
+ },
+ {
+  "id": "nh-p0047",
+  "match": "exactMatch",
+  "qid": "Q3315504",
+  "wikidata_label": "Finland in World War II",
+  "wikidata_description": "military engagements regarding Finland during World War II",
+  "reason": "Same thing: Finland's Winter and Continuation Wars."
+ },
+ {
+  "id": "nh-p0048",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No item for post-1944 Finland ('Second Republic') found."
+ },
+ {
+  "id": "nh-p0049",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Generic label; Komsa culture (Q1577518) covers only part of the period."
+ },
+ {
+  "id": "nh-p0050",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Generic descriptive period label with no matching item."
+ },
+ {
+  "id": "nh-p0051",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Siida (Q1790830) is a Sami social structure, not this period."
+ },
+ {
+  "id": "nh-p0052",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Generic descriptive period label with no matching item."
+ },
+ {
+  "id": "nh-p0053",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Generic descriptive period label with no matching item."
+ },
+ {
+  "id": "nh-p0054",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Generic descriptive period label; Sami parliaments are separate institutions."
+ },
+ {
+  "id": "nh-p0055",
+  "match": "closeMatch",
+  "qid": "Q605601",
+  "wikidata_label": "Nordic Bronze Age",
+  "wikidata_description": "Bronze Age in Scandinavia",
+  "reason": "Same named period; scope differs per match rules (multi-country item)."
+ },
+ {
+  "id": "nh-p0056",
+  "match": "closeMatch",
+  "qid": "Q893307",
+  "wikidata_label": "Pre-Roman Iron Age",
+  "wikidata_description": "the earliest part of the Iron Age in Scandinavia and the North European Plain (5th/4th–1st centuries BC)",
+  "reason": "Same period, but item also covers the North European Plain."
+ },
+ {
+  "id": "nh-p0057",
+  "match": "closeMatch",
+  "qid": "Q2566630",
+  "wikidata_label": "Roman Iron Age",
+  "wikidata_description": "",
+  "reason": "Same named period, item is broader than Denmark/Norway/Sweden."
+ },
+ {
+  "id": "nh-p0058",
+  "match": "closeMatch",
+  "qid": "Q131192",
+  "wikidata_label": "Migration Period",
+  "wikidata_description": "period in European history with large migration of peoples, from the 4th to the 6th centuries",
+  "reason": "European Migration Period; ours is its Scandinavian scope."
+ },
+ {
+  "id": "nh-p0059",
+  "match": "closeMatch",
+  "qid": "Q1275225",
+  "wikidata_label": "Vendel era",
+  "wikidata_description": "period of Swedish prehistory (540–790 CE)",
+  "reason": "Vendel era is Swedish; ours covers Denmark, Norway and Sweden (Merovingian period)."
+ },
+ {
+  "id": "nh-p0060",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "No item for the 1319-1343 Swedish-Norwegian union under Magnus Eriksson."
+ },
+ {
+  "id": "nh-p0061",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Generic descriptive period label with no matching item."
+ },
+ {
+  "id": "nh-p0062",
+  "match": "none",
+  "qid": "",
+  "wikidata_label": "",
+  "wikidata_description": "",
+  "reason": "Candidate Q140592609 (union from 1380) could not be confirmed on wikidata.org; Q62651 starts 1524/1536."
+ },
+ {
+  "id": "nh-p0063",
+  "match": "exactMatch",
+  "qid": "Q62623",
+  "wikidata_label": "Kalmar Union",
+  "wikidata_description": "former country. personal union of the three kingdoms of Denmark, Sweden and Norway (1397–1523)",
+  "reason": "Same union, 1397-1523."
+ },
+ {
+  "id": "nh-p0064",
+  "match": "closeMatch",
+  "qid": "Q62651",
+  "wikidata_label": "Denmark–Norway",
+  "wikidata_description": "political union (1524–1814)",
+  "reason": "Same union, but item spans 1524-1814 versus our 1523-1660 phase."
+ },
+ {
+  "id": "nh-p0065",
+  "match": "closeMatch",
+  "qid": "Q62651",
+  "wikidata_label": "Denmark–Norway",
+  "wikidata_description": "political union (1524–1814)",
+  "reason": "Same union; our period is only its absolutist phase 1660-1814."
+ },
+ {
+  "id": "nh-p0066",
+  "match": "exactMatch",
+  "qid": "Q3290518",
+  "wikidata_label": "history of Sweden (1523–1611)",
+  "wikidata_description": "Kingdom of Sweden period",
+  "reason": "Item has alias 'Older Vasa period', 1523-1611."
+ },
+ {
+  "id": "nh-p0067",
+  "match": "exactMatch",
+  "qid": "Q215443",
+  "wikidata_label": "Swedish Empire",
+  "wikidata_description": "the years 1611–1721 in the history of Sweden",
+  "reason": "Same named period (Stormaktstiden)."
+ },
+ {
+  "id": "nh-p0068",
+  "match": "exactMatch",
+  "qid": "Q2267264",
+  "wikidata_label": "Age of Liberty",
+  "wikidata_description": "the years 1718-1772 in Swedish history",
+  "reason": "Same named period (Frihetstiden)."
+ },
+ {
+  "id": "nh-p0069",
+  "match": "exactMatch",
+  "qid": "Q3300409",
+  "wikidata_label": "history of Sweden from 1772 through 1809",
+  "wikidata_description": "Sweden from 1772 to 1809, through the reigns of Kings Gustav III, Gustav IV, and Charles XIII",
+  "reason": "Item has alias 'Gustavian era', 1772-1809."
+ },
+ {
+  "id": "nh-p0070",
+  "match": "exactMatch",
+  "qid": "Q62589",
+  "wikidata_label": "Union between Sweden and Norway",
+  "wikidata_description": "personal union between Sweden and Norway 1814–1905",
+  "reason": "Same union, 1814-1905."
+ }
+]

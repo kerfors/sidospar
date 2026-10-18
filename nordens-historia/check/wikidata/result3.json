@@ -1,0 +1,306 @@
+[
+  {
+    "id": "nh-e0001",
+    "match": "exactMatch",
+    "qid": "Q133850450",
+    "wikidata_label": "Sack of Lindisfarne",
+    "wikidata_description": "793 sack",
+    "reason": "Wikidata item for the 793 Viking looting of Lindisfarne, part of the Viking Age."
+  },
+  {
+    "id": "nh-e0002",
+    "match": "exactMatch",
+    "qid": "Q846876",
+    "wikidata_label": "Stockholm Bloodbath",
+    "wikidata_description": "massacre",
+    "reason": "Massacre at Stortorget, Stockholm, 7-9 November 1520."
+  },
+  {
+    "id": "nh-e0003",
+    "match": "exactMatch",
+    "qid": "Q212234",
+    "wikidata_label": "Treaty of Roskilde",
+    "wikidata_description": "peace treaty",
+    "reason": "Peace treaty signed 28 February 1658 by the Swedish Empire and Denmark-Norway."
+  },
+  {
+    "id": "nh-e0004",
+    "match": "exactMatch",
+    "qid": "Q2264910",
+    "wikidata_label": "Dissolution of the union between Norway and Sweden",
+    "wikidata_description": "the dissolution of the United Kingdoms of Sweden and Norway",
+    "reason": "Dissolution of the Swedish-Norwegian union, point in time 1905."
+  },
+  {
+    "id": "nh-e0005",
+    "match": "closeMatch",
+    "qid": "Q819274",
+    "wikidata_label": "German occupation of Norway",
+    "wikidata_description": "Nazi occupation of Norway during World War II",
+    "reason": "Covers Norway only (9 Apr 1940 to 8 May 1945); the Danish occupation is a separate item, Q819136 \"Denmark in World War II\"."
+  },
+  {
+    "id": "nh-e0006",
+    "match": "exactMatch",
+    "qid": "Q146165",
+    "wikidata_label": "Nordic Council",
+    "wikidata_description": "geo-political inter-parliamentary forum for co-operation between the Nordic countries",
+    "reason": "Matched to the organisation itself (inception 16 March 1952), not to a founding-event item."
+  },
+  {
+    "id": "nh-m0001",
+    "match": "exactMatch",
+    "qid": "Q131279",
+    "wikidata_label": "Althing",
+    "wikidata_description": "unicameral parliament of Iceland",
+    "reason": "The Icelandic parliament, inception 930."
+  },
+  {
+    "id": "nh-m0002",
+    "match": "exactMatch",
+    "qid": "Q21162313",
+    "wikidata_label": "Harald's runestone",
+    "wikidata_description": "the larger Jelling runestone",
+    "reason": "Harald Bluetooth's large Jelling stone (c. 965); both stones together are Q723999 Jelling stones."
+  },
+  {
+    "id": "nh-m0003",
+    "match": "exactMatch",
+    "qid": "Q215806",
+    "wikidata_label": "Heimskringla",
+    "wikidata_description": "collection of kings' sagas, written by Snorri Sturluson",
+    "reason": "Snorri Sturluson's kings' sagas, inception 1225."
+  },
+  {
+    "id": "nh-m0004",
+    "match": "exactMatch",
+    "qid": "Q185246",
+    "wikidata_label": "Uppsala University",
+    "wikidata_description": "research university in Uppsala, Sweden",
+    "reason": "The university itself."
+  },
+  {
+    "id": "nh-m0005",
+    "match": "exactMatch",
+    "qid": "Q186285",
+    "wikidata_label": "University of Copenhagen",
+    "wikidata_description": "public research university in Copenhagen, Denmark",
+    "reason": "The university itself."
+  },
+  {
+    "id": "nh-m0006",
+    "match": "exactMatch",
+    "qid": "Q79220",
+    "wikidata_label": "Uraniborg",
+    "wikidata_description": "observatory constructed by Tycho Brahe",
+    "reason": "Tycho Brahe's observatory on Ven, inception 1576."
+  },
+  {
+    "id": "nh-m0007",
+    "match": "exactMatch",
+    "qid": "Q2898393",
+    "wikidata_label": "Rømer's determination of the speed of light",
+    "wikidata_description": "1676 experiment which showed that light has finite speed",
+    "reason": "Rømer's 1676 determination of the speed of light (Wikidata gives the country as France, where the work was done)."
+  },
+  {
+    "id": "nh-m0008",
+    "match": "exactMatch",
+    "qid": "Q29270",
+    "wikidata_label": "Systema Naturae",
+    "wikidata_description": "major work by Carolus Linnaeus",
+    "reason": "The work by Linnaeus, publication date 1735."
+  },
+  {
+    "id": "nh-m0009",
+    "match": "exactMatch",
+    "qid": "Q110748751",
+    "wikidata_label": "Celsius temperature scale",
+    "wikidata_description": "temperature scale which defines the degree Celsius",
+    "reason": "The temperature scale (the unit degree Celsius is a separate item, Q25267)."
+  },
+  {
+    "id": "nh-m0010",
+    "match": "closeMatch",
+    "qid": "Q2456773",
+    "wikidata_label": "Freedom of the Press Act",
+    "wikidata_description": "One of four parts of Sweden's constitution",
+    "reason": "Wikidata models the 1766 ordinance as an edition of the constitutional Freedom of the Press Act (inception 1949); the 1766 documents are archival collection Q134479147."
+  },
+  {
+    "id": "nh-m0011",
+    "match": "exactMatch",
+    "qid": "Q107157415",
+    "wikidata_label": "Parliamentary Ombudsman",
+    "wikidata_description": "Swedish government agency",
+    "reason": "The agency Riksdagens ombudsmän (JO), inception 1809; the office of ombudsman itself is Q1774881."
+  },
+  {
+    "id": "nh-m0012",
+    "match": "exactMatch",
+    "qid": "Q130924",
+    "wikidata_label": "Kalevala",
+    "wikidata_description": "19th-century work of epic poetry compiled by Elias Lönnrot from Karelian and Finnish oral folklore and mythology",
+    "reason": "The Finnish national epic."
+  },
+  {
+    "id": "nh-m0013",
+    "match": "exactMatch",
+    "qid": "Q80728",
+    "wikidata_label": "dynamite",
+    "wikidata_description": "explosive preparation of stabilized nitroglycerin",
+    "reason": "Invented by Alfred Nobel, time of invention 1867."
+  },
+  {
+    "id": "nh-m0014",
+    "match": "exactMatch",
+    "qid": "Q4354065",
+    "wikidata_label": "Nansen's Greenland expedition",
+    "wikidata_description": "",
+    "reason": "Expedition across Greenland, May 1888 to May 1889, country Norway."
+  },
+  {
+    "id": "nh-m0015",
+    "match": "exactMatch",
+    "qid": "Q7191",
+    "wikidata_label": "Nobel Prize",
+    "wikidata_description": "set of annual international awards, primarily 5 established in 1895 by Alfred Nobel",
+    "reason": "The prize itself (first awarded 1901)."
+  },
+  {
+    "id": "nh-m0016",
+    "match": "exactMatch",
+    "qid": "Q95099079",
+    "wikidata_label": "women's suffrage in Finland",
+    "wikidata_description": "overview of women's suffrage in Finland",
+    "reason": "Item specific to women's suffrage in Finland."
+  },
+  {
+    "id": "nh-m0017",
+    "match": "exactMatch",
+    "qid": "Q8414",
+    "wikidata_label": "Amundsen's South Pole expedition",
+    "wikidata_description": "first expedition to reach the geographic South Pole",
+    "reason": "Expedition 1910 to 1912 that reached the South Pole in 1911."
+  },
+  {
+    "id": "nh-m0018",
+    "match": "exactMatch",
+    "qid": "Q172948",
+    "wikidata_label": "Bohr model",
+    "wikidata_description": "atomic model introduced by Niels Bohr in 1913",
+    "reason": "Bohr's atomic model, inception 1913."
+  },
+  {
+    "id": "nh-m0019",
+    "match": "exactMatch",
+    "qid": "Q19387464",
+    "wikidata_label": "Sami assembly of 1917",
+    "wikidata_description": "First Sámi National Assembly",
+    "reason": "First Sámi national assembly, Trondheim, 6-9 February 1917."
+  },
+  {
+    "id": "nh-m0020",
+    "match": "closeMatch",
+    "qid": "Q4050869",
+    "wikidata_label": "Tetra Classic",
+    "wikidata_description": "trademark and line of tetrahedral product packaging by Tetra Pak",
+    "reason": "There is no item for the first machine, so this links the tetrahedral package it produced; the company is Q659200."
+  },
+  {
+    "id": "nh-m0021",
+    "match": "exactMatch",
+    "qid": "Q58780590",
+    "wikidata_label": "Lego brick",
+    "wikidata_description": "specific designs manufactured by The Lego Group which can be different colors",
+    "reason": "The Lego brick itself; there is no separate item for the 1958 patent application."
+  },
+  {
+    "id": "nh-m0022",
+    "match": "closeMatch",
+    "qid": "Q372713",
+    "wikidata_label": "artificial pacemaker",
+    "wikidata_description": "medical device that uses electrical impulses to regulate the beating of the heart",
+    "reason": "Generic pacemaker device; there is no item for the first implantable pacemaker of 1958."
+  },
+  {
+    "id": "nh-m0023",
+    "match": "closeMatch",
+    "qid": "Q15883336",
+    "wikidata_label": "car seatbelt",
+    "wikidata_description": "type of product; vehicle safety equipment",
+    "reason": "Car seat belt in general; no item was found for the three-point seat belt specifically."
+  },
+  {
+    "id": "nh-m0024",
+    "match": "closeMatch",
+    "qid": "Q1323379",
+    "wikidata_label": "Ekofisk",
+    "wikidata_description": "Norwegian oil field in the North Sea",
+    "reason": "The oil field itself; there is no item for the 1969 discovery event."
+  },
+  {
+    "id": "nh-m0025",
+    "match": "exactMatch",
+    "qid": "Q14579",
+    "wikidata_label": "Linux kernel",
+    "wikidata_description": "Unix-like operating system kernel, basis for all Linux operating systems",
+    "reason": "Torvalds's kernel; the Linux OS family is Q388."
+  },
+  {
+    "id": "nh-m0026",
+    "match": "exactMatch",
+    "qid": "Q689141",
+    "wikidata_label": "Spotify",
+    "wikidata_description": "Swedish audio streaming service",
+    "reason": "The streaming service; the holding company is Q60269744."
+  },
+  {
+    "id": "place:Island",
+    "match": "exactMatch",
+    "qid": "Q189",
+    "wikidata_label": "Iceland",
+    "wikidata_description": "Nordic island country in the North Atlantic Ocean",
+    "reason": "Sovereign country Iceland."
+  },
+  {
+    "id": "place:Danmark",
+    "match": "exactMatch",
+    "qid": "Q35",
+    "wikidata_label": "Denmark",
+    "wikidata_description": "country in Northern Europe",
+    "reason": "Denmark as a country; the wider Kingdom of Denmark is Q756617."
+  },
+  {
+    "id": "place:Norge",
+    "match": "exactMatch",
+    "qid": "Q20",
+    "wikidata_label": "Norway",
+    "wikidata_description": "country in Northern Europe",
+    "reason": "Sovereign country Norway."
+  },
+  {
+    "id": "place:Sverige",
+    "match": "exactMatch",
+    "qid": "Q34",
+    "wikidata_label": "Sweden",
+    "wikidata_description": "country in Northern Europe",
+    "reason": "Sovereign country Sweden."
+  },
+  {
+    "id": "place:Finland",
+    "match": "exactMatch",
+    "qid": "Q33",
+    "wikidata_label": "Finland",
+    "wikidata_description": "country in Northern Europe",
+    "reason": "Sovereign country Finland."
+  },
+  {
+    "id": "place:Sápmi",
+    "match": "exactMatch",
+    "qid": "Q62132",
+    "wikidata_label": "Sápmi",
+    "wikidata_description": "cultural region traditionally inhabited by the Sami people",
+    "reason": "Sámi cultural region."
+  }
+]

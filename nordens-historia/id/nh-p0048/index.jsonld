@@ -1,0 +1,226 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0048/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0048",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0048",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0048",
+   "name": "Andra republiken",
+   "skos:prefLabel": {
+    "sv": "Andra republiken"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1944/2026",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1944",
+    "crm:P82b_end_of_the_end": "2026"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q33"
+   ],
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "description": "Vapenstillestånd 1944; Lapplandskriget 1944–45; EU 1995; Nato 2023",
+   "skos:definition": {
+    "sv": "Vapenstillestånd 1944; Lapplandskriget 1944–45; EU 1995; Nato 2023"
+   }
+  },
+  {
+   "@id": "nh:nh-c0112",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0112",
+    "FI24"
+   ],
+   "text": "Period 'Efterkrigstid': 1945 – 2026",
+   "about": [
+    {
+     "@id": "nh:nh-p0048"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0112#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0112",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "Uppslagsverket låter 'andra republiken' börja med vapenstilleståndet 1944, inte 1945.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
+    "name": "Uppslagsverket Finland: Finlands historia efter 1917"
+   },
+   "prov:wasDerivedFrom": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
+   "schema:correction": "1944 – (Uppslagsverket)",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Start ändrat till 1944 (”Andra republiken”)."
+   }
+  },
+  {
+   "@id": "nh:nh-c0113",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0113",
+    "FI25"
+   ],
+   "text": "EU 1995",
+   "about": [
+    {
+     "@id": "nh:nh-p0048"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0113#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0113",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Uppslagsverket anger att Finland gick med i EU vid ingången av 1995.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
+    "name": "Uppslagsverket Finland: Finlands historia efter 1917"
+   },
+   "prov:wasDerivedFrom": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917"
+  },
+  {
+   "@id": "nh:nh-c0114",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0114",
+    "FI26"
+   ],
+   "text": "Nato 2023",
+   "about": [
+    {
+     "@id": "nh:nh-p0048"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0114#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0114",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Utrikesministeriet anger att Finland blev Nato-medlem 4 april 2023.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://um.fi/finland-and-nato",
+    "name": "Finlands utrikesministerium: Finland's membership in NATO"
+   },
+   "prov:wasDerivedFrom": "https://um.fi/finland-and-nato"
+  }
+ ]
+}

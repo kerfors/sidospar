@@ -1,0 +1,192 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0020/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0020",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0020",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0020",
+   "name": "Yngre stenålder",
+   "skos:prefLabel": {
+    "sv": "Yngre stenålder"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "-3999/-1699",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-3999",
+    "crm:P82b_end_of_the_end": "-1699"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q20"
+   ],
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "description": "Jordbruket når Sydnorge",
+   "skos:definition": {
+    "sv": "Jordbruket når Sydnorge"
+   },
+   "skos:closeMatch": "wd:Q1275904"
+  },
+  {
+   "@id": "nh:nh-c0045",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0045",
+    "NO03"
+   ],
+   "text": "Period 'Yngre stenålder': 4 000 f.Kr. – 1 700 f.Kr.",
+   "about": [
+    {
+     "@id": "nh:nh-p0020"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0045#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0045",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "SNL anger yngre stenålder till 4000–cirka 1800 f.Kr.; startåret stämmer men slutåret är 1800, inte 1700.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/steinalderen_i_Norge",
+    "name": "Store norske leksikon: steinalderen i Norge"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/steinalderen_i_Norge",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Behållet 1700; SNL anger 1800, gemensamt bronsåldersblock följer 1700."
+   }
+  },
+  {
+   "@id": "nh:nh-c0046",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0046",
+    "NO04"
+   ],
+   "text": "Jordbruket når Sydnorge",
+   "about": [
+    {
+     "@id": "nh:nh-p0020"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0046#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0046",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Övergången till husdjurshållning och odling markerar yngre stenålder; de första spåren finns längs kusten i Sydnorge, främst kring Oslofjorden.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/steinalderen_i_Norge",
+    "name": "Store norske leksikon: steinalderen i Norge"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/steinalderen_i_Norge"
+  }
+ ]
+}

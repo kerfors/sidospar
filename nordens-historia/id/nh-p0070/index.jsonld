@@ -1,0 +1,224 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0070/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0070",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0070",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0070",
+   "name": "Unionen Sverige–Norge",
+   "skos:prefLabel": {
+    "sv": "Unionen Sverige–Norge"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1814/1905",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1814",
+    "crm:P82b_end_of_the_end": "1905"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q20",
+    "wd:Q34"
+   ],
+   "dcterms:spatial": [
+    "wd:Q20",
+    "wd:Q34"
+   ],
+   "description": "Två riken, en kung; Norge med egen grundlov (Eidsvoll 17 maj 1814)",
+   "skos:definition": {
+    "sv": "Två riken, en kung; Norge med egen grundlov (Eidsvoll 17 maj 1814)"
+   },
+   "skos:exactMatch": "wd:Q62589"
+  },
+  {
+   "@id": "nh:nh-c0173",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0173",
+    "GE44"
+   ],
+   "text": "Period 'Unionen Sverige–Norge': 1814 – 1905",
+   "about": [
+    {
+     "@id": "nh:nh-p0070"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0173#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0173",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SNL beskriver unionen 1814–1905 som en union med gemensam kung.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Unionsoppløsningen_i_1905",
+    "name": "Unionsoppløsningen i 1905 – Store norske leksikon"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Unionsoppløsningen_i_1905"
+  },
+  {
+   "@id": "nh:nh-c0174",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0174",
+    "GE45"
+   ],
+   "text": "Två riken, en kung",
+   "about": [
+    {
+     "@id": "nh:nh-p0070"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0174#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0174",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Gemensam kung och utrikespolitik, men Norge hade egen regering, storting, lagstiftning, armé och flotta.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Unionsoppløsningen_i_1905",
+    "name": "Unionsoppløsningen i 1905 – Store norske leksikon"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Unionsoppløsningen_i_1905"
+  },
+  {
+   "@id": "nh:nh-c0175",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0175",
+    "GE46"
+   ],
+   "text": "Norge med egen grundlov (Eidsvoll 17 maj 1814)",
+   "about": [
+    {
+     "@id": "nh:nh-p0070"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0175#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0175",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Grundlagen antogs av riksförsamlingen på Eidsvoll 16 maj och daterades/undertecknades 17 maj 1814.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Grunnloven",
+    "name": "Grunnloven – Store norske leksikon"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Grunnloven"
+  }
+ ]
+}

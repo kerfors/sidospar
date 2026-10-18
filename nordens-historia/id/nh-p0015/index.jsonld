@@ -1,0 +1,233 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0015/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0015",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0015",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0015",
+   "name": "Grundlov och 1864",
+   "skos:prefLabel": {
+    "sv": "Grundlov och 1864"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1849/1914",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1849",
+    "crm:P82b_end_of_the_end": "1914"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q35"
+   ],
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "description": "Grundloven 1849; Slesvig, Holsten och Lauenburg förloras 1864",
+   "skos:definition": {
+    "sv": "Grundloven 1849; Slesvig, Holsten och Lauenburg förloras 1864"
+   },
+   "skos:closeMatch": "wd:Q11964717"
+  },
+  {
+   "@id": "nh:nh-c0036",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0036",
+    "DA20"
+   ],
+   "text": "Period 'Konstitutionell monarki': 1849 – 1945",
+   "about": [
+    {
+     "@id": "nh:nh-p0015"
+    },
+    {
+     "@id": "nh:nh-p0016"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0036#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0036",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "Konstitutionell monarki infördes 1849 enligt Lex, men 1945 är inget slut på den; Lex periodiserar i stället 1814–1914 och 1914–1945.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Danmarks_forfatning",
+    "name": "Lex: Danmarks forfatning / periodintroduktioner"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Danmarks_forfatning",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Delat i 1849–1914 och 1914–1945 efter lex.dk."
+   }
+  },
+  {
+   "@id": "nh:nh-c0037",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0037",
+    "DA21"
+   ],
+   "text": "Grundloven 1849",
+   "about": [
+    {
+     "@id": "nh:nh-p0015"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0037#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0037",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Grundloven (Junigrundloven) är daterad 5 juni 1849 och avskaffade enväldet.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Danmarks_forfatning",
+    "name": "Lex: Danmarks forfatning"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Danmarks_forfatning"
+  },
+  {
+   "@id": "nh:nh-c0038",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0038",
+    "DA22"
+   ],
+   "text": "Slesvig förloras 1864",
+   "about": [
+    {
+     "@id": "nh:nh-p0015"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0038#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0038",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Danmark förlorade 1864 nästan hela Slesvig samt Holstein och Lauenburg (Wienfreden 30 okt 1864).",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Krigen_i_1864",
+    "name": "Lex: Krigen i 1864"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Krigen_i_1864",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Tillägg: Holsten och Lauenburg."
+   }
+  }
+ ]
+}

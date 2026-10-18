@@ -1,4 +1,4 @@
-"""Generate kallor.html from check/kallkontroll.json.
+"""Generate kallor.html from data/claims.json (and data/items.json for item labels).
 
 Run: python3 make_kallor.py  ->  writes kallor.html next to this script.
 """
@@ -8,12 +8,17 @@ from pathlib import Path
 from collections import Counter
 
 HERE = Path(__file__).parent
-CLAIMS = json.loads((HERE / "check" / "kallkontroll.json").read_text(encoding="utf-8"))
+CLAIMS = json.loads((HERE / "data" / "claims.json").read_text(encoding="utf-8"))
+_ITEMS = json.loads((HERE / "data" / "items.json").read_text(encoding="utf-8"))
+LABEL = {x["id"]: x["label"] for k in ("periods", "events", "milestones") for x in _ITEMS[k]}
+PREFIX_GROUP = {"IS": "Island", "DA": "Danmark", "NO": "Norge", "SV": "Sverige", "FI": "Finland",
+                "SÁ": "Sápmi", "GE": "Gemensamt", "MI": "Milstolpar"}
 
 GROUP_ORDER = ["Island", "Danmark", "Norge", "Sverige", "Finland", "Sápmi", "Gemensamt", "Milstolpar"]
 GROUP_TITLE = {"Gemensamt": "Gemensamma block och händelser"}
 
-# What was changed on the poster after the check (id -> text)
+# What was changed on the poster after the check (id -> text).
+# Kept for reference: copied into data/claims.json (field "action"), which is now what the page uses.
 ACTIONS = {
     "IS01": "Start 870; 874 anges som traditionellt år.",
     "IS05": "Ändrat till 999/1000.",
@@ -75,14 +80,16 @@ def strip_ctx(claim):
 
 
 def row(c):
-    ctx, text = strip_ctx(c["claim"])
-    url = c["url"]
+    ctx, text = c["context"], c["statement"]
+    url = c["source_url"]
     src = escape(c["source_title"] or url)
     link = f'<a href="{escape(url)}">{src}</a>' if url else src
-    action = ACTIONS.get(c["id"], "")
+    action = c["action"]
     v = c["verdict"]
-    return (f'<tr><td class="id">{escape(c["id"])}</td>'
-            f'<td><span class="ctx">{escape(ctx)}</span><br>{escape(text)}</td>'
+    items = ", ".join(f'<a href="id/{a}/">{escape(LABEL[a])}</a>' for a in c["about"])
+    return (f'<tr id="{c["id"]}"><td class="id"><a href="id/{c["id"]}/">{escape(c["id"])}</a>'
+            f'<br><span class="ctx">{escape(c["check_id"])}</span></td>'
+            f'<td><span class="ctx">{escape(ctx)}</span><br>{escape(text)}<br><span class="ctx">Om: {items}</span></td>'
             f'<td><span class="v {VERDICT_CLASS[v]}">{escape(v)}</span></td>'
             f'<td>{link}<div class="ev">{escape(c["evidence"])}</div></td>'
             f'<td>{escape(action)}</td></tr>')
@@ -92,7 +99,7 @@ def main():
     counts = Counter(c["verdict"] for c in CLAIMS)
     sections = []
     for g in GROUP_ORDER:
-        rows = [row(c) for c in CLAIMS if c["group"] == g]
+        rows = [row(c) for c in CLAIMS if PREFIX_GROUP[c["check_id"][:2]] == g]
         sections.append(
             f'<h2>{escape(GROUP_TITLE.get(g, g))}</h2>\n<div class="tw"><table>'
             f'<thead><tr><th>Id</th><th>Uppgift (som den stod vid kontrollen)</th><th>Utlåtande</th>'
@@ -128,6 +135,7 @@ PAGE = """<!doctype html>
   .v.ok {{ background: #d8efdc; }} .v.disp {{ background: #f7e3b5; }}
   .v.bad {{ background: #f6c9c4; }} .v.unk {{ background: #e3e3e3; }}
   .back {{ font-size: 0.9rem; }}
+  tr:target td {{ background: #fff6d6; }}
 </style>
 </head>
 <body>
@@ -147,8 +155,10 @@ som ändrades på affischen efter kontrollen.</p>
 NE ligger bakom betalvägg och kontrollerades bara mot den fria ingressen. Ett fåtal uppgifter vilar på
 svagare källor, till exempel Britannica eller en tidskriftsartikel, vilket syns i källkolumnen.
 Kontrollen gjordes 18 oktober 2026.</p>
-<p>Hela kontrollen finns också maskinläsbar: <a href="check/kallkontroll.json">kallkontroll.json</a>
-(en post per uppgift med id, uppgift, utlåtande, källa, URL och belägg).</p>
+<p>Hela kontrollen finns också maskinläsbar. <a href="data/claims.json">claims.json</a> har en post per uppgift
+med identifierare, vad uppgiften handlar om, utlåtande, källa, belägg och åtgärd. Som Linked Data finns varje uppgift
+under sin egen identifierare, se <a href="id/">identifierarna</a>. Agenternas oredigerade svar finns i
+<a href="check/kallkontroll.json">kallkontroll.json</a>.</p>
 </div>
 {sections}
 </main>

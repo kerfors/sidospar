@@ -1,0 +1,3733 @@
+[
+ {
+  "id": "nh-c0001",
+  "check_id": "IS01",
+  "kind": "period",
+  "context": "Island",
+  "statement": "Period 'Landnámstiden': 874 – 930",
+  "about": [
+   "nh-p0001"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Islands historie (Store norske leksikon)",
+  "source_url": "https://snl.no/Islands_historie",
+  "evidence": "SNL anger landnamstiden till cirka 870–930; 874 är det traditionella året för Ingólfurs bosättning, medan lex.dk säger att bosättningen började omkring 870.",
+  "correct_value": "",
+  "note": "Slutåret 930 stöds; startåret 874 är traditionellt men källorna anger också ca 870 (Íslendingabók).",
+  "action": "Start 870; 874 anges som traditionellt år.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0002",
+  "check_id": "IS02",
+  "kind": "detalj",
+  "context": "Island, inom 'Landnámstiden'",
+  "statement": "Ingólfur Arnarson i Reykjavík",
+  "about": [
+   "nh-p0001"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Ingolv Arnesson (Store norske leksikon)",
+  "source_url": "https://snl.no/Ingolv_Arnesson",
+  "evidence": "SNL beskriver Ingólfur som den förste fasta bosättaren från Norge och säger att han slog sig ned i Reykjavík.",
+  "correct_value": "",
+  "note": "SNL noterar att året är 874 enligt Landnámabók men 870 enligt Íslendingabók.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0003",
+  "check_id": "IS03",
+  "kind": "period",
+  "context": "Island",
+  "statement": "Period 'Fristaten': 930 – 1262",
+  "about": [
+   "nh-p0002"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Islands historie (lex.dk, Den Store Danske)",
+  "source_url": "https://lex.dk/Islands_historie",
+  "evidence": "Både lex.dk och SNL daterar fristatstiden till 930–1262.",
+  "correct_value": "",
+  "note": "SNL säger dock att underkastelsen skedde 1261–1264.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0004",
+  "check_id": "IS04",
+  "kind": "detalj",
+  "context": "Island, inom 'Fristaten'",
+  "statement": "Alltinget på Þingvellir",
+  "about": [
+   "nh-p0002"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Islands historie (Store norske leksikon)",
+  "source_url": "https://snl.no/Islands_historie",
+  "evidence": "SNL säger att Alltinget instiftades på Þingvellir omkring 930 (enligt traditionen).",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0005",
+  "check_id": "IS05",
+  "kind": "detalj",
+  "context": "Island, inom 'Fristaten'",
+  "statement": "kristendomen antas år 1000",
+  "about": [
+   "nh-p0002"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Islands historie (Store norske leksikon)",
+  "source_url": "https://snl.no/Islands_historie",
+  "evidence": "SNL anger att kristendomen antogs på Alltinget år 999/1000; lex.dk skriver ca 1000.",
+  "correct_value": "",
+  "note": "År 1000 är konventionellt men 999 förekommer också.",
+  "action": "Ändrat till 999/1000.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0006",
+  "check_id": "IS06",
+  "kind": "detalj",
+  "context": "Island, inom 'Fristaten'",
+  "statement": "sagalitteraturen",
+  "about": [
+   "nh-p0002"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Islendingesaga (Store norske leksikon)",
+  "source_url": "https://snl.no/islendingesaga",
+  "evidence": "SNL säger att islänningasagorna skrevs på 1200-talet, de äldsta omkring 1200.",
+  "correct_value": "",
+  "note": "Några sagor, t.ex. Njáls saga (ca 1280), skrevs efter 1262, alltså efter fristatens slut.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0007",
+  "check_id": "IS07",
+  "kind": "period",
+  "context": "Island",
+  "statement": "Period 'Under norska kronan': 1262 – 1380",
+  "about": [
+   "nh-p0003"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Islands historie (Store norske leksikon)",
+  "source_url": "https://snl.no/Islands_historie",
+  "evidence": "lex.dk säger att Island i praktiken blev del av den danska monarkin 1380, medan SNL säger att Island fick gemensam kung med Danmark 1380 men låg kvar under norska kronan till 1814.",
+  "correct_value": "",
+  "note": "Slutåret 1380 är en tolkning; enligt SNL låg Island formellt under norska kronan till 1814. Också lex.dk: https://lex.dk/Islands_historie",
+  "action": "Behållet; tillägg om gemensam kung med Danmark från 1380.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0008",
+  "check_id": "IS08",
+  "kind": "detalj",
+  "context": "Island, inom 'Under norska kronan'",
+  "statement": "Gamli sáttmáli 1262–64",
+  "about": [
+   "nh-p0003"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Islands historie (lex.dk, Den Store Danske)",
+  "source_url": "https://lex.dk/Islands_historie",
+  "evidence": "lex.dk säger att avtalet med Håkon Håkonsson godkändes på Alltinget 1262–64.",
+  "correct_value": "",
+  "note": "SNL:s artikel om Gamli sáttmáli anger bara 1262 (https://snl.no/Gamli_sáttmáli), och SNL:s historikartikel anger 1261–1264.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0009",
+  "check_id": "IS09",
+  "kind": "period",
+  "context": "Island",
+  "statement": "Period 'Under danska kronan': 1814 – 1918",
+  "about": [
+   "nh-p0004"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Islands historie (lex.dk, Den Store Danske)",
+  "source_url": "https://lex.dk/Islands_historie",
+  "evidence": "lex.dk låter Island i praktiken bli del av den danska monarkin redan 1380; SNL säger att Island löstes från norska kronan 1814 och formellt blev en del av Danmark 1536.",
+  "correct_value": "",
+  "note": "Perioden 1380–1814 saknas i tidslinjen; Island låg under danske kungen redan från 1380. Också SNL: https://snl.no/Islands_historie",
+  "action": "Behållet; 1814 som gräns följer SNL.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0010",
+  "check_id": "IS10",
+  "kind": "detalj",
+  "context": "Island, inom 'Under danska kronan'",
+  "statement": "Alltinget återupprättas 1845",
+  "about": [
+   "nh-p0004"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Alþingi í Lærða skólanum 1845–1879 (althingi.is)",
+  "source_url": "https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879",
+  "evidence": "Alltingets egen webbplats säger att Alltinget återupprättades 1845; lex.dk säger att det beviljades 1843 och sammanträdde första gången sommaren 1845.",
+  "correct_value": "",
+  "note": "SNL anger 1843, det år beslutet togs.",
+  "action": "Ändrat till ”sammanträder åter 1845” (beslut 1843).",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0011",
+  "check_id": "IS11",
+  "kind": "detalj",
+  "context": "Island, inom 'Under danska kronan'",
+  "statement": "hemmastyre 1904",
+  "about": [
+   "nh-p0004"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Heimastjórn 1904–1918 (stjornarradid.is)",
+  "source_url": "https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/",
+  "evidence": "Regeringskansliet uppger att hemmastyret började 1 februari 1904 med Hannes Hafstein som minister.",
+  "correct_value": "",
+  "note": "SNL nämner att ministeriet godkändes 1903.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0012",
+  "check_id": "IS12",
+  "kind": "period",
+  "context": "Island",
+  "statement": "Period 'Konungariket Island': 1918 – 1944",
+  "about": [
+   "nh-p0005"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Islands historie (lex.dk, Den Store Danske)",
+  "source_url": "https://lex.dk/Islands_historie",
+  "evidence": "lex.dk säger att förbundslagen trädde i kraft 1 december 1918 och att republiken upprättades 17 juni 1944.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0013",
+  "check_id": "IS13",
+  "kind": "detalj",
+  "context": "Island, inom 'Konungariket Island'",
+  "statement": "Personalunion med Danmark",
+  "about": [
+   "nh-p0005"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Islands historie (lex.dk, Den Store Danske)",
+  "source_url": "https://lex.dk/Islands_historie",
+  "evidence": "lex.dk säger att förbundslagen 1918 gjorde Island till en fri och suverän stat i personalunion med Danmark.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0014",
+  "check_id": "IS14",
+  "kind": "period",
+  "context": "Island",
+  "statement": "Period 'Republiken Island': 1944 – 2026",
+  "about": [
+   "nh-p0006"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Islands historie (lex.dk, Den Store Danske)",
+  "source_url": "https://lex.dk/Islands_historie",
+  "evidence": "lex.dk säger att republiken upprättades 17 juni 1944, och den består fortfarande.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0015",
+  "check_id": "IS15",
+  "kind": "detalj",
+  "context": "Island, inom 'Republiken Island'",
+  "statement": "Utropas 17 juni 1944",
+  "about": [
+   "nh-p0006"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Islands historie (Store norske leksikon)",
+  "source_url": "https://snl.no/Islands_historie",
+  "evidence": "SNL säger att republiken utropades 17 juni 1944 på Þingvellir; lex.dk anger samma datum.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0016",
+  "check_id": "IS16",
+  "kind": "detalj",
+  "context": "Island, inom 'Republiken Island'",
+  "statement": "Nato 1949",
+  "about": [
+   "nh-p0006"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Islands historie (lex.dk, Den Store Danske)",
+  "source_url": "https://lex.dk/Islands_historie",
+  "evidence": "lex.dk säger att Island blev Natomedlem 1949; enligt SNL godkände Alltinget medlemskapet våren 1949.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0017",
+  "check_id": "DA01",
+  "kind": "period",
+  "context": "Danmark",
+  "statement": "Period 'Jägarstenålder': 10 000 f.Kr. – 3 900 f.Kr.",
+  "about": [
+   "nh-p0007"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Lex: mesolitikum; Nationalmuseet: The Mesolithic period",
+  "source_url": "https://lex.dk/mesolitikum",
+  "evidence": "Lex anger mesolitikum i Danmark ca 9600–4000 f.Kr., Nationalmuseet anger 12 500–3900 f.Kr.; ingen av källorna använder 10 000 f.Kr. som start.",
+  "correct_value": "",
+  "note": "Slutåret 3900 f.Kr. stöds av Nationalmuseet (Lex: ca 4000). Startåret varierar; även https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/",
+  "action": "Behållet; affischens axel börjar 10 000 f.Kr.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0018",
+  "check_id": "DA02",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Jägarstenålder'",
+  "statement": "Maglemose-, Kongemose- och Ertebøllekultur",
+  "about": [
+   "nh-p0007"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: mesolitikum",
+  "source_url": "https://lex.dk/mesolitikum",
+  "evidence": "Lex anger att mesolitikum i Danmark omfattar Maglemose-, Kongemose- och Ertebøllekulturerna.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0019",
+  "check_id": "DA03",
+  "kind": "period",
+  "context": "Danmark",
+  "statement": "Period 'Bondestenålder': 3 900 f.Kr. – 1 700 f.Kr.",
+  "about": [
+   "nh-p0008"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Nationalmuseet: The Neolithic period",
+  "source_url": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period",
+  "evidence": "Nationalmuseet anger neolitikum i Danmark till 3900–1700 f.Kr.; Lex Danmarks forhistorie anger ca 3900–1700 f.Kr.",
+  "correct_value": "",
+  "note": "Lex-artikeln 'bondestenalderen' avrundar till ca 4000–1700 f.Kr. Även https://lex.dk/Danmarks_forhistorie",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0020",
+  "check_id": "DA04",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Bondestenålder'",
+  "statement": "Trattbägarkultur",
+  "about": [
+   "nh-p0008"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: tragtbægerkulturen",
+  "source_url": "https://lex.dk/tragtb%C3%A6gerkulturen",
+  "evidence": "Trattbägarkulturen (ca 4100–2800 f.Kr.) kom till Danmark omkring 4000 f.Kr. och hör till tidig och mellanneolitikum.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0021",
+  "check_id": "DA05",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Bondestenålder'",
+  "statement": "dösar och gånggrifter",
+  "about": [
+   "nh-p0008"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Nationalmuseet: The Neolithic period",
+  "source_url": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period",
+  "evidence": "Nationalmuseet anger att neolitikums bönder byggde dösar och gånggrifter över hela Danmark.",
+  "correct_value": "",
+  "note": "Lex tragtbægerkulturen nämner också dysser och jættestuer.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0022",
+  "check_id": "DA06",
+  "kind": "period",
+  "context": "Danmark",
+  "statement": "Period 'Vikingatid': 793 – 1066",
+  "about": [
+   "nh-p0009"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Lex: Danmarks historie i vikingetiden",
+  "source_url": "https://lex.dk/Danmarks_historie_i_vikingetiden",
+  "evidence": "Lex anger vikingatiden i Danmark till ca 800–mitten av 1000-talet; Lex introduktionsartikel använder 790–1050.",
+  "correct_value": "",
+  "note": "793/1066 är en engelsk-centrerad konvention; danska referensverk använder ca 800 (790)–1050. Se även https://lex.dk/Introduktion_til_vikingetiden,_790-1050",
+  "action": "Slut ändrat till 1050.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0023",
+  "check_id": "DA07",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Vikingatid'",
+  "statement": "Hedeby",
+  "about": [
+   "nh-p0009"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Hedeby",
+  "source_url": "https://lex.dk/Hedeby",
+  "evidence": "Hedeby var vikingatidens största handelsstad i Norden, knuten till det danska riket, omnämnd 804 och förstörd kring mitten av 1000-talet.",
+  "correct_value": "",
+  "note": "Ligger idag i Tyskland (Sydslesvig).",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0024",
+  "check_id": "DA08",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Vikingatid'",
+  "statement": "Jellingestenen c. 965",
+  "about": [
+   "nh-p0009"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Danmarks historie i vikingetiden",
+  "source_url": "https://lex.dk/Danmarks_historie_i_vikingetiden",
+  "evidence": "Harald Blåtand lät resa Jellingestenen omkring 965.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0025",
+  "check_id": "DA09",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Vikingatid'",
+  "statement": "Knut den stores nordsjövälde 1016–35",
+  "about": [
+   "nh-p0009"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Knud den Store",
+  "source_url": "https://lex.dk/Knud_den_Store",
+  "evidence": "Knut var kung av England 1016–1035, av Danmark ca 1018–1035 och av Norge 1028–1034; han dog 1035.",
+  "correct_value": "",
+  "note": "Danska kungatiteln från ca 1018, inte 1016.",
+  "action": "Ändrat: England 1016, Danmark c. 1018.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0026",
+  "check_id": "DA10",
+  "kind": "period",
+  "context": "Danmark",
+  "statement": "Period 'Tidig medeltid': 1066 – 1157",
+  "about": [
+   "nh-p0010"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Lex: Danmarks historie i middelalderen",
+  "source_url": "https://lex.dk/Danmarks_historie_i_middelalderen",
+  "evidence": "Lex avgränsar den tidiga medeltiden till 1047–1157, inte 1066–1157.",
+  "correct_value": "",
+  "note": "Slutåret 1157 stämmer; startåret 1047 (Sven Estridsen) i Lex.",
+  "action": "Start ändrat till 1050.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0027",
+  "check_id": "DA11",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Tidig medeltid'",
+  "statement": "Ärkesäte i Lund 1103/04",
+  "about": [
+   "nh-p0010"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Danmarks historie i middelalderen",
+  "source_url": "https://lex.dk/Danmarks_historie_i_middelalderen",
+  "evidence": "Lex anger att Lund blev självständigt ärkesäte 1103; Lex Eskil anger att Asser var ärkebiskop från 1104.",
+  "correct_value": "",
+  "note": "Se även https://lex.dk/Eskil",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0028",
+  "check_id": "DA12",
+  "kind": "period",
+  "context": "Danmark",
+  "statement": "Period 'Valdemarstiden': 1157 – 1241",
+  "about": [
+   "nh-p0011"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Danmarks historie i middelalderen",
+  "source_url": "https://lex.dk/Danmarks_historie_i_middelalderen",
+  "evidence": "Lex använder perioden 'Valdemarernes storhedstid' 1157–1241.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0029",
+  "check_id": "DA13",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Valdemarstiden'",
+  "statement": "Absalon och Köpenhamn",
+  "about": [
+   "nh-p0011"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Absalon",
+  "source_url": "https://lex.dk/Absalon",
+  "evidence": "Absalon fick 1167 Köpenhamn i gåva av kungen, byggde borgen där och kallas stadens grundare.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0030",
+  "check_id": "DA14",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Valdemarstiden'",
+  "statement": "Jyske Lov 1241",
+  "about": [
+   "nh-p0011"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Jyske Lov",
+  "source_url": "https://lex.dk/Jyske_Lov",
+  "evidence": "Jyske Lov gavs 1241 av Valdemar Sejr i Vordingborg.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0031",
+  "check_id": "DA15",
+  "kind": "period",
+  "context": "Danmark",
+  "statement": "Period 'Kris och återuppbyggnad': 1241 – 1380",
+  "about": [
+   "nh-p0012",
+   "nh-p0013"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Lex: Danmarks historie i middelalderen",
+  "source_url": "https://lex.dk/Danmarks_historie_i_middelalderen",
+  "evidence": "Lex delar in tiden i 'Strid og rigsopløsning' 1241–1340 och 'Rigets genrejsning og pesten' 1340–1387; ingen period slutar 1380.",
+  "correct_value": "",
+  "note": "Startåret 1241 stämmer; slutår i Lex 1387 (eller 1340 för krisdelen).",
+  "action": "Delat i 1241–1340 och 1340–1380 efter lex.dk.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0032",
+  "check_id": "DA16",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Kris och återuppbyggnad'",
+  "statement": "Kunglös tid 1332–40",
+  "about": [
+   "nh-p0012"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Danmarks historie i middelalderen",
+  "source_url": "https://lex.dk/Danmarks_historie_i_middelalderen",
+  "evidence": "Lex anger de kungalösa åren till 1332–1340.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0033",
+  "check_id": "DA17",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Kris och återuppbyggnad'",
+  "statement": "Valdemar Atterdag",
+  "about": [
+   "nh-p0013"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Valdemar Atterdag",
+  "source_url": "https://lex.dk/Valdemar_Atterdag",
+  "evidence": "Valdemar Atterdag regerade 1340–1375 och återförenade riket efter pantsättningarna.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0034",
+  "check_id": "DA18",
+  "kind": "period",
+  "context": "Danmark",
+  "statement": "Period 'Enväldets sista tid': 1814 – 1849",
+  "about": [
+   "nh-p0014"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Lex: Enevældens faser 1660-1848",
+  "source_url": "https://lex.dk/Enev%C3%A6ldens_faser_1660-1848",
+  "evidence": "Lex låter enväldet sluta 1848 (vissa räknar 1849) och dess sena fas börja ca 1800; Lex periodintroduktion använder 1814–1914.",
+  "correct_value": "",
+  "note": "1814 som brytpunkt stöds av https://lex.dk/Introduktion_til_perioden_'fra_enev%C3%A6ldig_helstat_til_nationalstat',_1814-1914",
+  "action": "Behållet; titeln ändrad till ”Enväldets sista decennier”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0035",
+  "check_id": "DA19",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Enväldets sista tid'",
+  "statement": "Kielfreden 1814: Norge avträds",
+  "about": [
+   "nh-p0014"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Kielerfreden",
+  "source_url": "https://lex.dk/Kielerfreden",
+  "evidence": "Kielfreden slöts natten 14–15 januari 1814 och Danmark-Norge avträdde Norge till Sveriges kung.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0036",
+  "check_id": "DA20",
+  "kind": "period",
+  "context": "Danmark",
+  "statement": "Period 'Konstitutionell monarki': 1849 – 1945",
+  "about": [
+   "nh-p0015",
+   "nh-p0016"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Lex: Danmarks forfatning / periodintroduktioner",
+  "source_url": "https://lex.dk/Danmarks_forfatning",
+  "evidence": "Konstitutionell monarki infördes 1849 enligt Lex, men 1945 är inget slut på den; Lex periodiserar i stället 1814–1914 och 1914–1945.",
+  "correct_value": "",
+  "note": "Startår 1849 bekräftat; 1945 är en allmän epokgräns (Lex: 'verdenskrigsepoken 1914-1945'), inte ett slut på statsformen.",
+  "action": "Delat i 1849–1914 och 1914–1945 efter lex.dk.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0037",
+  "check_id": "DA21",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Konstitutionell monarki'",
+  "statement": "Grundloven 1849",
+  "about": [
+   "nh-p0015"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Danmarks forfatning",
+  "source_url": "https://lex.dk/Danmarks_forfatning",
+  "evidence": "Grundloven (Junigrundloven) är daterad 5 juni 1849 och avskaffade enväldet.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0038",
+  "check_id": "DA22",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Konstitutionell monarki'",
+  "statement": "Slesvig förloras 1864",
+  "about": [
+   "nh-p0015"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Krigen i 1864",
+  "source_url": "https://lex.dk/Krigen_i_1864",
+  "evidence": "Danmark förlorade 1864 nästan hela Slesvig samt Holstein och Lauenburg (Wienfreden 30 okt 1864).",
+  "correct_value": "",
+  "note": "Holstein och Lauenburg förlorades också.",
+  "action": "Tillägg: Holsten och Lauenburg.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0039",
+  "check_id": "DA23",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Konstitutionell monarki'",
+  "statement": "Sønderjylland åter 1920",
+  "about": [
+   "nh-p0016"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Sønderjylland",
+  "source_url": "https://lex.dk/Sønderjylland",
+  "evidence": "Slesvig delades 1920 efter folkomröstningar; den danska delen kallas Sønderjylland.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0040",
+  "check_id": "DA24",
+  "kind": "period",
+  "context": "Danmark",
+  "statement": "Period 'Välfärdsstat': 1945 – 2026",
+  "about": [
+   "nh-p0017",
+   "nh-p0018"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Lex: Introduktion til efterkrigstiden, 1945-1973",
+  "source_url": "https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973",
+  "evidence": "Lex avgränsar efterkrigstiden/välfärdsstaten till 1945–1973, inte en enda period till nutid.",
+  "correct_value": "",
+  "note": "Startåret 1945 stämmer; Lex har även 'Velfærdsstaten, 1945-1973' (sett som söktitel).",
+  "action": "Delat i 1945–1973 och 1973–.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0041",
+  "check_id": "DA25",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Välfärdsstat'",
+  "statement": "EG 1973",
+  "about": [
+   "nh-p0018"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: det danske EU-medlemskab",
+  "source_url": "https://lex.dk/det_danske_EU-medlemskab",
+  "evidence": "Danmark blev medlem av EG 1 januari 1973 efter folkomröstning 2 oktober 1972.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0042",
+  "check_id": "DA26",
+  "kind": "detalj",
+  "context": "Danmark, inom 'Välfärdsstat'",
+  "statement": "Grönlands hjemmestyre 1979",
+  "about": [
+   "nh-p0018"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex: Grønlands Hjemmestyre",
+  "source_url": "https://lex.dk/Gr%C3%B8nlands_Hjemmestyre",
+  "evidence": "Grönlands hjemmestyre trädde i kraft 1 maj 1979 efter folkomröstning 17 januari 1979.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0043",
+  "check_id": "NO01",
+  "kind": "period",
+  "context": "Norge",
+  "statement": "Period 'Jägarstenålder': 9 500 f.Kr. – 4 000 f.Kr.",
+  "about": [
+   "nh-p0019"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: steinalderen i Norge",
+  "source_url": "https://snl.no/steinalderen_i_Norge",
+  "evidence": "SNL anger eldre stenålder i Norge till cirka 10 000–4000 f.Kr.; slutgränsen 4000 stämmer men startåret är 10 000, inte 9 500.",
+  "correct_value": "",
+  "note": "Startår varierar (SNL: ca 10 000 f.Kr.); slutår 4 000 f.Kr. bekräftat.",
+  "action": "Start ändrat till 10 000 f.Kr.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0044",
+  "check_id": "NO02",
+  "kind": "detalj",
+  "context": "Norge, inom 'Jägarstenålder'",
+  "statement": "Fosna- och Komsakultur längs kusten",
+  "about": [
+   "nh-p0019"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Fosnakulturen; Komsakulturen",
+  "source_url": "https://snl.no/Fosnakulturen",
+  "evidence": "Fosnakulturen var en kustbunden fångstkultur i äldre stenålder från Rogaland till Nordland, Komsakulturen motsvarande i Finnmark med boplatser på ytterkusten.",
+  "correct_value": "",
+  "note": "Även https://snl.no/Komsakulturen. Fosna äldre fas daterad 8000–6700 f.Kr.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0045",
+  "check_id": "NO03",
+  "kind": "period",
+  "context": "Norge",
+  "statement": "Period 'Yngre stenålder': 4 000 f.Kr. – 1 700 f.Kr.",
+  "about": [
+   "nh-p0020"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: steinalderen i Norge",
+  "source_url": "https://snl.no/steinalderen_i_Norge",
+  "evidence": "SNL anger yngre stenålder till 4000–cirka 1800 f.Kr.; startåret stämmer men slutåret är 1800, inte 1700.",
+  "correct_value": "",
+  "note": "Slutår enligt SNL ca 1 800 f.Kr.",
+  "action": "Behållet 1700; SNL anger 1800, gemensamt bronsåldersblock följer 1700.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0046",
+  "check_id": "NO04",
+  "kind": "detalj",
+  "context": "Norge, inom 'Yngre stenålder'",
+  "statement": "Jordbruket når Sydnorge",
+  "about": [
+   "nh-p0020"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: steinalderen i Norge",
+  "source_url": "https://snl.no/steinalderen_i_Norge",
+  "evidence": "Övergången till husdjurshållning och odling markerar yngre stenålder; de första spåren finns längs kusten i Sydnorge, främst kring Oslofjorden.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0047",
+  "check_id": "NO05",
+  "kind": "period",
+  "context": "Norge",
+  "statement": "Period 'Vikingatid': 793 – 1066",
+  "about": [
+   "nh-p0021"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Norges historie",
+  "source_url": "https://snl.no/Norges_historie",
+  "evidence": "SNL skriver att angreppet på Lindisfarne 793 ofta räknas som vikingatidens början och Harald Hårdrådes fall 1066 som det sista vikingatåget.",
+  "correct_value": "",
+  "note": "SNL:s egen periodrubrik och artikeln 'vikingtiden' använder dock ca 800–1050 (ibland från ca 750).",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0048",
+  "check_id": "NO06",
+  "kind": "detalj",
+  "context": "Norge, inom 'Vikingatid'",
+  "statement": "Hafrsfjord c. 872",
+  "about": [
+   "nh-p0021"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: slaget i Hafrsfjord",
+  "source_url": "https://snl.no/slaget_i_Hafrsfjord",
+  "evidence": "SNL anger slaget till slutet av 800-talet; Are Frode ger 872, Koht närmare 900 och Schreiner/Einarsdóttir 880-talet.",
+  "correct_value": "",
+  "note": "Dateringen osäker; 'c. 872' följer Are Frode.",
+  "action": "Ändrat till ”slutet av 800-talet”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0049",
+  "check_id": "NO07",
+  "kind": "detalj",
+  "context": "Norge, inom 'Vikingatid'",
+  "statement": "Stiklestad 1030",
+  "about": [
+   "nh-p0021"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Slaget på Stiklestad",
+  "source_url": "https://snl.no/Slaget_p%C3%A5_Stiklestad",
+  "evidence": "Slaget stod den 29 juli, sannolikt år 1030, och Olav Haraldsson stupade.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0050",
+  "check_id": "NO08",
+  "kind": "period",
+  "context": "Norge",
+  "statement": "Period 'Riket konsolideras': 1066 – 1130",
+  "about": [
+   "nh-p0022"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Norges historie",
+  "source_url": "https://snl.no/Norges_historie",
+  "evidence": "SNL beskriver en fredsperiod från mitten av 1000-talet till 1130 då Harald Hårdråde och hans ättlingar satt tryggt på tronen; inbördeskrigen började 1130.",
+  "correct_value": "",
+  "note": "SNL sätter början till 'midten av 1000-tallet'/ca 1050 snarare än exakt 1066.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0051",
+  "check_id": "NO09",
+  "kind": "detalj",
+  "context": "Norge, inom 'Riket konsolideras'",
+  "statement": "Olav Kyrre",
+  "about": [
+   "nh-p0022"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Olav 3. Kyrre",
+  "source_url": "https://snl.no/Olav_3._Kyrre",
+  "evidence": "Olav Kyrre var kung i Norge 1067–1093 och byggde ut kyrkoorganisationen och kungamakten under en fredlig regering.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0052",
+  "check_id": "NO10",
+  "kind": "detalj",
+  "context": "Norge, inom 'Riket konsolideras'",
+  "statement": "Bergen växer fram",
+  "about": [
+   "nh-p0022"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Bergen – historie",
+  "source_url": "https://snl.no/Bergen_-_historie",
+  "evidence": "Bergen fick stadsstatus under Olav Kyrres tid, enligt senare källor år 1070.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0053",
+  "check_id": "NO11",
+  "kind": "period",
+  "context": "Norge",
+  "statement": "Period 'Inbördeskrigstiden': 1130 – 1240",
+  "about": [
+   "nh-p0023"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: borgerkrigstiden",
+  "source_url": "https://snl.no/borgerkrigstiden",
+  "evidence": "SNL definierar inbördeskrigstiden som perioden 1130–1240, från Sigurd Jorsalfares död till Skule Bårdssons fall.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0054",
+  "check_id": "NO12",
+  "kind": "detalj",
+  "context": "Norge, inom 'Inbördeskrigstiden'",
+  "statement": "Ärkesäte i Nidaros 1152/53",
+  "about": [
+   "nh-p0023"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Norge i høymiddelalderen",
+  "source_url": "https://snl.no/Norge_i_h%C3%B8ymiddelalderen",
+  "evidence": "Ärkebiskopsdömet i Nidaros upprättades 1152/1153.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0055",
+  "check_id": "NO13",
+  "kind": "detalj",
+  "context": "Norge, inom 'Inbördeskrigstiden'",
+  "statement": "Sverre",
+  "about": [
+   "nh-p0023"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Sverre – norsk konge",
+  "source_url": "https://snl.no/Sverre_-_norsk_konge",
+  "evidence": "Sverre Sigurdsson var tronpretendent från 1177 och kung 1184–1202, alltså mitt i inbördeskrigstiden.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0056",
+  "check_id": "NO14",
+  "kind": "period",
+  "context": "Norge",
+  "statement": "Period 'Storhetstiden': 1240 – 1319",
+  "about": [
+   "nh-p0024"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Norges historie",
+  "source_url": "https://snl.no/Norges_historie",
+  "evidence": "SNL låter 'storhetstiden' börja 1240 med Skules fall och omfatta Håkon, Magnus Lagabøte, Eirik och Håkon V fram till 1319.",
+  "correct_value": "",
+  "note": "1319 = kungagemenskap med Sverige under Magnus Eriksson.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0057",
+  "check_id": "NO15",
+  "kind": "detalj",
+  "context": "Norge, inom 'Storhetstiden'",
+  "statement": "Håkon IV",
+  "about": [
+   "nh-p0024"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Håkon 4. Håkonsson",
+  "source_url": "https://snl.no/H%C3%A5kon_4._H%C3%A5konsson",
+  "evidence": "Håkon IV Håkonsson var norsk kung 1217–1263.",
+  "correct_value": "",
+  "note": "Regeringen började 1217, alltså före periodstarten 1240.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0058",
+  "check_id": "NO16",
+  "kind": "detalj",
+  "context": "Norge, inom 'Storhetstiden'",
+  "statement": "Grönland 1261, Island 1262–64",
+  "about": [
+   "nh-p0024"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Norge i høymiddelalderen",
+  "source_url": "https://snl.no/Norge_i_h%C3%B8ymiddelalderen",
+  "evidence": "Grönland (1261) och Island (1262–1264) erkände Håkon som härskare.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0059",
+  "check_id": "NO17",
+  "kind": "detalj",
+  "context": "Norge, inom 'Storhetstiden'",
+  "statement": "Magnus Lagabøtes landslov 1274",
+  "about": [
+   "nh-p0024"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Magnus Lagabøters landslov",
+  "source_url": "https://snl.no/Magnus_Lagab%C3%B8ters_landslov",
+  "evidence": "Landslagen trädde i kraft 1274 under Magnus Lagabøte och ersatte de fyra landskapslagarna.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0060",
+  "check_id": "NO18",
+  "kind": "period",
+  "context": "Norge",
+  "statement": "Period 'Håkon VI': 1343 – 1380",
+  "about": [
+   "nh-p0025"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: Håkon 6. Magnusson",
+  "source_url": "https://snl.no/H%C3%A5kon_6._Magnusson",
+  "evidence": "SNL anger Håkon VI som kung i Norge 1355–1380; 1343 är året då riksrådet beslöt att han skulle bli Norges kung.",
+  "correct_value": "",
+  "note": "Egen regering från 1355; 1343 = valet/utnämningen.",
+  "action": "Behållet; tillägg ”utsedd 1343, ensam kung från 1355”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0061",
+  "check_id": "NO19",
+  "kind": "detalj",
+  "context": "Norge, inom 'Håkon VI'",
+  "statement": "Digerdöden 1349",
+  "about": [
+   "nh-p0025"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: svartedauden",
+  "source_url": "https://snl.no/svartedauden",
+  "evidence": "Digerdöden härjade i Norge 1349–1350.",
+  "correct_value": "",
+  "note": "Obs: 1349 regerade Magnus Eriksson; Håkon VI tog över styret först 1355.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0062",
+  "check_id": "NO20",
+  "kind": "period",
+  "context": "Norge",
+  "statement": "Period 'Självständigt kungarike': 1905 – 1945",
+  "about": [
+   "nh-p0026"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Norges historie",
+  "source_url": "https://snl.no/Norges_historie",
+  "evidence": "SNL har unionsupplösningen 1905 som början och tyskarnas kapitulation i maj 1945 som slut, men delar in i 1905–1939 och 1939–1945.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0063",
+  "check_id": "NO21",
+  "kind": "detalj",
+  "context": "Norge, inom 'Självständigt kungarike'",
+  "statement": "Haakon VII",
+  "about": [
+   "nh-p0026"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Haakon 7.",
+  "source_url": "https://snl.no/Haakon_7.",
+  "evidence": "Haakon VII var Norges kung från 1905 till sin död 1957.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0064",
+  "check_id": "NO22",
+  "kind": "detalj",
+  "context": "Norge, inom 'Självständigt kungarike'",
+  "statement": "kvinnlig rösträtt 1913",
+  "about": [
+   "nh-p0026"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: stemmerett for kvinner i Norge",
+  "source_url": "https://snl.no/stemmerett_for_kvinner_i_Norge",
+  "evidence": "År 1913 fick kvinnor i Norge rösträtt vid stortingsval på samma villkor som män.",
+  "correct_value": "",
+  "note": "Kommunal allmän rösträtt redan 1910.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0065",
+  "check_id": "NO23",
+  "kind": "period",
+  "context": "Norge",
+  "statement": "Period 'Olja och välfärd': 1945 – 2026",
+  "about": [
+   "nh-p0027"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Norges historie",
+  "source_url": "https://snl.no/Norges_historie",
+  "evidence": "SNL låter efterkrigstiden börja 1945 med välfärdsstatens uppbyggnad och oljefynd från slutet av 1960-talet.",
+  "correct_value": "",
+  "note": "SNL delar perioden i 1945–1970, 1970–1990 och 1990–; 2026 är bara nutid.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0066",
+  "check_id": "NO24",
+  "kind": "detalj",
+  "context": "Norge, inom 'Olja och välfärd'",
+  "statement": "Ekofisk 1969",
+  "about": [
+   "nh-p0027"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Ekofisk",
+  "source_url": "https://snl.no/Ekofisk",
+  "evidence": "Ekofiskfältet upptäcktes 25 oktober 1969; produktionen startade 1971.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0067",
+  "check_id": "NO25",
+  "kind": "detalj",
+  "context": "Norge, inom 'Olja och välfärd'",
+  "statement": "nej till EG/EU 1972 och 1994",
+  "about": [
+   "nh-p0027"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: EU-kampen",
+  "source_url": "https://snl.no/EU-kampen",
+  "evidence": "Folkomröstningarna 1972 (53,5 % nej till EF) och 1994 (52,2 % nej till EU) slutade båda med nej-majoritet.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0068",
+  "check_id": "SV01",
+  "kind": "period",
+  "context": "Sverige",
+  "statement": "Period 'Jägarstenålder': 10 000 f.Kr. – 4 000 f.Kr.",
+  "about": [
+   "nh-p0028"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Statens historiska museer – Tidsåldrar",
+  "source_url": "https://historiska.se/utforska-historien/tidsaldrar/",
+  "evidence": "Historiska museets tidslinje anger mesolitikum 10 000–4 000 f.Kr.",
+  "correct_value": "",
+  "note": "Historiska museets mesolitikumsida anger dock ca 9 500–4 000 f.Kr.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0069",
+  "check_id": "SV02",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Jägarstenålder'",
+  "statement": "Inlandsisen drar sig tillbaka",
+  "about": [
+   "nh-p0028"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Statens historiska museer – Mesolitikum",
+  "source_url": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/",
+  "evidence": "Sidan beskriver hur landet blev tillgängligt när isen smälte; sista isfria områdena i södra Norrland ca 7 500 f.Kr.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0070",
+  "check_id": "SV03",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Jägarstenålder'",
+  "statement": "Hensbackakultur på Västkusten",
+  "about": [
+   "nh-p0028"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Statens historiska museer – Mesolitikum",
+  "source_url": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/",
+  "evidence": "Hensbackakultur nämns som en av de mesolitiska kulturerna längs västkusten.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0071",
+  "check_id": "SV04",
+  "kind": "period",
+  "context": "Sverige",
+  "statement": "Period 'Bondestenålder': 4 000 f.Kr. – 1 700 f.Kr.",
+  "about": [
+   "nh-p0029"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Statens historiska museer – Tidsåldrar",
+  "source_url": "https://historiska.se/utforska-historien/tidsaldrar/",
+  "evidence": "Historiska museets tidslinje anger neolitikum 4 000–1 700 f.Kr., följt av bronsålder från 1 700 f.Kr.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0072",
+  "check_id": "SV05",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Bondestenålder'",
+  "statement": "Trattbägar-, gropkeramisk och stridsyxekultur",
+  "about": [
+   "nh-p0029"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Nationalencyklopedin – neolitikum",
+  "source_url": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/neolitikum",
+  "evidence": "NE nämner trattbägarkulturen som tidigaste jordbrukskultur samt gropkeramisk kultur (ca 3200–2300 f.Kr.) och stridsyxekultur.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0073",
+  "check_id": "SV06",
+  "kind": "period",
+  "context": "Sverige",
+  "statement": "Period 'Vikingatid': 793 – 1066",
+  "about": [
+   "nh-p0030"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Statens historiska museer – Tidsåldrar",
+  "source_url": "https://historiska.se/utforska-historien/tidsaldrar/",
+  "evidence": "Historiska museet anger vikingatid 793–1050; NE anger ca 800–1050. Ingen svensk källa använder 1066 som slut.",
+  "correct_value": "793 – 1050",
+  "note": "1066 är en engelsk/norsk slutpunkt; NE (vikingatiden) säger ca 800–1050.",
+  "action": "Slut ändrat till 1050.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0074",
+  "check_id": "SV07",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Vikingatid'",
+  "statement": "Birka",
+  "about": [
+   "nh-p0030"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Nationalencyklopedin – Birka",
+  "source_url": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/birka",
+  "evidence": "NE beskriver Birka som vikingatida handelsplats på Björkö i Mälaren.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0075",
+  "check_id": "SV08",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Vikingatid'",
+  "statement": "Olof Skötkonung",
+  "about": [
+   "nh-p0030"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Svenskt biografiskt lexikon – Olof \"skötkonung\"",
+  "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749",
+  "evidence": "SBL: född senast tidigt 980-tal, död troligen vintern 1021–22; NE: kung från 990-talet.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0076",
+  "check_id": "SV09",
+  "kind": "period",
+  "context": "Sverige",
+  "statement": "Period 'Riket växer fram': 1066 – 1250",
+  "about": [
+   "nh-p0031"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt",
+  "source_url": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt",
+  "evidence": "NE talar om att riksenheten stabiliserades under äldre medeltid ca 1000–1300; Historiska museet låter medeltiden börja 1050.",
+  "correct_value": "ca 1000/1050 – 1250/1300",
+  "note": "1066 är ingen svensk periodgräns i de källor som kontrollerats.",
+  "action": "Start ändrat till 1050.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0077",
+  "check_id": "SV10",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Riket växer fram'",
+  "statement": "Erikska och sverkerska ätterna",
+  "about": [
+   "nh-p0031"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Nationalencyklopedin – sverkerska ätten",
+  "source_url": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten",
+  "evidence": "NE: sverkerska ätten kämpade under flera generationer om kungavärdigheten med Erik den heliges ättlingar (1100–1200-tal).",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0078",
+  "check_id": "SV11",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Riket växer fram'",
+  "statement": "ärkesäte i Uppsala 1164",
+  "about": [
+   "nh-p0031"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Svenska kyrkan – Ärkebiskopslängd",
+  "source_url": "https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd",
+  "evidence": "Stefan blev 1164 förste ärkebiskop i Uppsala då Sverige blev egen kyrkoprovins.",
+  "correct_value": "",
+  "note": "Ej nordiskt uppslagsverk; NE-artikeln om Uppsala stift visade inte årtalet.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0079",
+  "check_id": "SV12",
+  "kind": "period",
+  "context": "Sverige",
+  "statement": "Period 'Folkungatid': 1250 – 1319",
+  "about": [
+   "nh-p0032"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Nationalencyklopedin – folkungar",
+  "source_url": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar",
+  "evidence": "NE anger att folkungaätten styrde Sverige 1250–1363 (Norge 1319–87), inte till 1319.",
+  "correct_value": "1250 – 1363",
+  "note": "1319 markerar unionen med Norge under Magnus Eriksson; NE:s dynastigräns är 1363.",
+  "action": "Behållet; tillägg ”folkungaätten regerar 1250–1363”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0080",
+  "check_id": "SV13",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Folkungatid'",
+  "statement": "Birger jarl",
+  "about": [
+   "nh-p0032"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)",
+  "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238",
+  "evidence": "SBL: Sveriges jarl, död 21 okt 1266; NE nämner att ätten traditionellt kallas folkungaätten (egentligen Bjälboätten).",
+  "correct_value": "",
+  "note": "Benämningen folkungar är enligt NE felaktig för Bjälboätten.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0081",
+  "check_id": "SV14",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Folkungatid'",
+  "statement": "Stockholm nämns 1252",
+  "about": [
+   "nh-p0032"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Encyclopaedia Britannica – Stockholm",
+  "source_url": "https://www.britannica.com/place/Stockholm",
+  "evidence": "Stockholm nämns första gången 1252 i brev utfärdade av Birger jarl.",
+  "correct_value": "",
+  "note": "Nordisk källa (NE, Stockholmskällan) ej nåbar – Britannica som reserv.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0082",
+  "check_id": "SV15",
+  "kind": "period",
+  "context": "Sverige",
+  "statement": "Period '1809 års regeringsform': 1809 – 1814",
+  "about": [
+   "nh-p0033"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Sveriges riksdag – Regeringsformen 50 år",
+  "source_url": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/",
+  "evidence": "1809 års regeringsform antogs 6 juni 1809 och gällde till 1974 års regeringsform; NE:s avsnitt 'Nytt statsskick' omfattar 1809–1818.",
+  "correct_value": "1809 – 1818 (NE) / RF gällde 1809–1974",
+  "note": "Slutåret 1814 stöds inte som periodgräns i de källor som setts.",
+  "action": "Titeln ändrad till ”Nytt statsskick: 1809 års RF”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0083",
+  "check_id": "SV16",
+  "kind": "period",
+  "context": "Sverige",
+  "statement": "Period 'Demokratins genombrott': 1905 – 1945",
+  "about": [
+   "nh-p0034",
+   "nh-p0035"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Nationalencyklopedin – Sverige, historia: Demokratins genombrott",
+  "source_url": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott",
+  "evidence": "NE avgränsar demokratins genombrott till 1900–1920; riksdagen pekar på 1918–1921.",
+  "correct_value": "ca 1900 – 1921",
+  "note": "1945 som slut används inte; NE har egna avsnitt för mellankrigstiden och andra världskriget.",
+  "action": "Delat i 1905–1921 och 1921–1945.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0084",
+  "check_id": "SV17",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Demokratins genombrott'",
+  "statement": "Allmän rösträtt 1921",
+  "about": [
+   "nh-p0034"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Sveriges riksdag – Kampen om rösträtten",
+  "source_url": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/",
+  "evidence": "Principbeslut 1918, slutliga grundlagsbeslut 1919 och 1921; första riksdagsvalet med allmän och lika rösträtt 1921.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0085",
+  "check_id": "SV18",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Demokratins genombrott'",
+  "statement": "neutralitet under andra världskriget",
+  "about": [
+   "nh-p0035"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Nationalencyklopedin – Sverige under andra världskriget",
+  "source_url": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/sverige-under-andra-v%C3%A4rldskriget",
+  "evidence": "Sverige utfärdade neutralitetsförklaring vid krigsutbrottet 1939.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0086",
+  "check_id": "SV19",
+  "kind": "period",
+  "context": "Sverige",
+  "statement": "Period 'Välfärdsstat': 1945 – 2026",
+  "about": [
+   "nh-p0036"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Nationalencyklopedin – Sverige, historia: Välfärdssamhället",
+  "source_url": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet",
+  "evidence": "NE:s avsnitt Välfärdssamhället börjar 1945 med socialdemokratisk regering efter samlingsregeringen.",
+  "correct_value": "",
+  "note": "Slutår 2026 = nutid; NE har ett senare avsnitt 'I den globala världen'.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0087",
+  "check_id": "SV20",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Välfärdsstat'",
+  "statement": "EU 1995",
+  "about": [
+   "nh-p0036"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Regeringskansliet – Sverige i EU 30 år",
+  "source_url": "https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/",
+  "evidence": "Sverige blev EU-medlem 1 januari 1995.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0088",
+  "check_id": "SV21",
+  "kind": "detalj",
+  "context": "Sverige, inom 'Välfärdsstat'",
+  "statement": "Nato 2024",
+  "about": [
+   "nh-p0036"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Regeringskansliet – Sveriges och Natos historia",
+  "source_url": "https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/",
+  "evidence": "Sverige blev fullvärdig Natomedlem 7 mars 2024.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0089",
+  "check_id": "FI01",
+  "kind": "period",
+  "context": "Finland",
+  "statement": "Period 'Suomusjärvikultur': 8 900 f.Kr. – 5 100 f.Kr.",
+  "about": [
+   "nh-p0037"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Uppslagsverket Finland: förhistoria",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+  "evidence": "Uppslagsverket placerar Suomusjärvikulturen i mesolitikum, 8600–5000 f.Kr.; fi.wikipedia anger ca 7500–5100 (på annat ställe 8300–5300) f.Kr.",
+  "correct_value": "ca 8600–5000 f.Kr. (Uppslagsverket)",
+  "note": "Gränserna varierar mellan källor; 8900 som startår hittades inte.",
+  "action": "Ändrat till 8600–5000 f.Kr.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0090",
+  "check_id": "FI02",
+  "kind": "detalj",
+  "context": "Finland, inom 'Suomusjärvikultur'",
+  "statement": "Första bosättningen efter isen",
+  "about": [
+   "nh-p0037"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Uppslagsverket Finland: förhistoria",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+  "evidence": "Uppslagsverket daterar den äldsta bosättningen till preboreal tid efter isavsmältningen och räknar Suomusjärvikulturen till mesolitikum, men Suomusjärvi-artikeln säger inte uttryckligen att den var den första.",
+  "correct_value": "",
+  "note": "fi.wikipedia (Suomen esihistoria) skiljer en egen bosättningsfas ca 9000–7500 f.Kr. före Suomusjärvikulturen. Uppslagsverkets artikel Suomusjärvikulturen: https://www.uppslagsverket.fi/sv/sok/view-170045-Suomusjaervikulturen",
+  "action": "Beskrivningen ändrad till ”mesolitisk jägarkultur efter isavsmältningen”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0091",
+  "check_id": "FI03",
+  "kind": "period",
+  "context": "Finland",
+  "statement": "Period 'Kamkeramisk kultur': 5 100 f.Kr. – 2 800 f.Kr.",
+  "about": [
+   "nh-p0038"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Uppslagsverket Finland: förhistoria",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+  "evidence": "Uppslagsverket anger kamkeramik från 5000 f.Kr. med Pyheensiltafasen fram till 2800 f.Kr.; fi.wikipedia börjar tidig kamkeramik 5300 f.Kr.",
+  "correct_value": "ca 5000–2800 f.Kr. (Uppslagsverket)",
+  "note": "Slutåret 2800 stämmer; startåret varierar (5000/5300).",
+  "action": "Start ändrat till 5000 f.Kr.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0092",
+  "check_id": "FI04",
+  "kind": "period",
+  "context": "Finland",
+  "statement": "Period 'Stridsyxe- och Kiukaiskultur': 2 800 f.Kr. – 1 500 f.Kr.",
+  "about": [
+   "nh-p0039"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Uppslagsverket Finland: förhistoria",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+  "evidence": "Uppslagsverket daterar båtyxkulturen (stridsyxekultur) till 3200–2300 f.Kr. och Kiukaiskulturen till 2300–1500 f.Kr.",
+  "correct_value": "ca 3200–1500 f.Kr. (överlappar sen kamkeramik)",
+  "note": "Slutåret 1500 stämmer; stridsyxekulturen börjar enligt källan redan 3200, inte 2800. fi.wikipedia ger Kiukaiskultur 2300–1500/1300.",
+  "action": "Ändrat till båtyxe- och Kiukaiskultur 2800–1600 f.Kr. med not om överlappet.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0093",
+  "check_id": "FI05",
+  "kind": "period",
+  "context": "Finland",
+  "statement": "Period 'Bronsålder': 1 500 f.Kr. – 500 f.Kr.",
+  "about": [
+   "nh-p0040"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Uppslagsverket Finland: förhistoria",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+  "evidence": "Uppslagsverket anger bronsåldern i Finland till 1600–500 f.Kr.; fi.wikipedia anger både 1700 och 1500 som start.",
+  "correct_value": "1600–500 f.Kr. (Uppslagsverket)",
+  "note": "Slutåret 500 stämmer; en.wikipedia om Sammallahdenmäki använder ca 1500–500 f.Kr.",
+  "action": "Start ändrat till 1600 f.Kr.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0094",
+  "check_id": "FI06",
+  "kind": "detalj",
+  "context": "Finland, inom 'Bronsålder'",
+  "statement": "Rösen vid kusten",
+  "about": [
+   "nh-p0040"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppslagsverket Finland: förhistoria",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+  "evidence": "Uppslagsverket beskriver att röse- och kummelgravar byggdes längs kusten under bronsåldern.",
+  "correct_value": "",
+  "note": "Även artikeln Kummelgravar: https://uppslagsverket.fi/sv/sok/view-170045-Kummelgravar",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0095",
+  "check_id": "FI07",
+  "kind": "detalj",
+  "context": "Finland, inom 'Bronsålder'",
+  "statement": "Sammallahdenmäki",
+  "about": [
+   "nh-p0040"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Wikipedia (en): Sammallahdenmäki",
+  "source_url": "https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki",
+  "evidence": "Sammallahdenmäki i Rauma är ett gravfält från bronsåldern med 33 gravrösen, ca 1500–500 f.Kr., världsarv sedan 1999.",
+  "correct_value": "",
+  "note": "Wikipedia-reserv: Uppslagsverket nämner inte platsen; UNESCO-sidan kunde inte hämtas (whc.unesco.org/en/list/579 blockerad).",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0096",
+  "check_id": "FI08",
+  "kind": "period",
+  "context": "Finland",
+  "statement": "Period 'Järnålder': 500 f.Kr. – 800",
+  "about": [
+   "nh-p0041"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Uppslagsverket Finland: förhistoria",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+  "evidence": "Uppslagsverket låter järnåldern börja 500 f.Kr. men räknar vikingatid (800–1025) och korstågstid som delar av järnåldern.",
+  "correct_value": "500 f.Kr. – ca 1150/1300 (inkl. vikingatid och korstågstid)",
+  "note": "Startåret stämmer; 800 är slutet på merovingertiden, inte på järnåldern i finsk kronologi (fi.wikipedia: rautakausi 500 eKr.–1200/1300).",
+  "action": "Titeln ändrad till ”Äldre järnålder”; not om att järnåldern fortsätter.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0097",
+  "check_id": "FI09",
+  "kind": "detalj",
+  "context": "Finland, inom 'Järnålder'",
+  "statement": "Förromersk till merovingisk tid",
+  "about": [
+   "nh-p0041"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppslagsverket Finland: förhistoria",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+  "evidence": "Uppslagsverket delar in järnåldern 500 f.Kr.–800 e.Kr. i förromersk, romersk, folkvandrings- och merovingertid.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0098",
+  "check_id": "FI10",
+  "kind": "period",
+  "context": "Finland",
+  "statement": "Period 'Vikingatid': 800 – 1025",
+  "about": [
+   "nh-p0042"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppslagsverket Finland: förhistoria",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+  "evidence": "Uppslagsverket anger vikingatiden i Finland till 800–1025 e.Kr.",
+  "correct_value": "",
+  "note": "Även fi.wikipedia: viikinkiaika 800–1025.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0099",
+  "check_id": "FI11",
+  "kind": "period",
+  "context": "Finland",
+  "statement": "Period 'Korstågstid': 1025 – 1319",
+  "about": [
+   "nh-p0043",
+   "nh-p0044"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Uppslagsverket Finland: förhistoria",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+  "evidence": "Uppslagsverket anger korstågstiden till 1025–1150 i västra Finland och till ca 1300 i östra Finland; fi.wikipedia ca 1025/1050–1250/1300.",
+  "correct_value": "1025 – ca 1150 (väst) / ca 1300 (öst)",
+  "note": "Startåret stämmer; slutåret 1319 hittades inte i någon källa.",
+  "action": "Slut ändrat till 1300; not om väst/öst; nytt block 1300–1319.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0100",
+  "check_id": "FI12",
+  "kind": "detalj",
+  "context": "Finland, inom 'Korstågstid'",
+  "statement": "Svensk expansion österut",
+  "about": [
+   "nh-p0043"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppslagsverket Finland: Finlands historia – medeltiden",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoriaMedeltiden",
+  "evidence": "Uppslagsverket beskriver svenska korståg ca 1155–57 och ca 1238 och att expansionen avslutades med Viborgs grundande 1293.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0101",
+  "check_id": "FI13",
+  "kind": "detalj",
+  "context": "Finland, inom 'Korstågstid'",
+  "statement": "Åbo domkyrka invigs 1300",
+  "about": [
+   "nh-p0044"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppslagsverket Finland: Åbo domkyrka",
+  "source_url": "https://www.uppslagsverket.fi/sv/view-170045-AaboDomkyrka",
+  "evidence": "Enligt Uppslagsverket invigdes Åbo domkyrka 17 juni 1300 (enligt biskopskrönikan).",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0102",
+  "check_id": "FI14",
+  "kind": "period",
+  "context": "Finland",
+  "statement": "Period 'Storfurstendömet Finland': 1809 – 1917",
+  "about": [
+   "nh-p0045"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Finlands historie",
+  "source_url": "https://snl.no/Finlands_historie",
+  "evidence": "SNL anger att Finland blev ett autonomt storfurstendöme under Ryssland efter 1809 och förblev det till 1917.",
+  "correct_value": "",
+  "note": "Uppslagsverket (1800-talet) knyter starten till avträdelsen och Borgå lantdag 1809.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0103",
+  "check_id": "FI15",
+  "kind": "detalj",
+  "context": "Finland, inom 'Storfurstendömet Finland'",
+  "statement": "Under Ryssland efter freden i Fredrikshamn",
+  "about": [
+   "nh-p0045"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppslagsverket Finland: Finlands historia – 1800-talet",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet",
+  "evidence": "Uppslagsverket anger att Sverige avträdde Finland till Ryssland i freden i Fredrikshamn i september 1809.",
+  "correct_value": "",
+  "note": "SNL: avtalet i Hamina 17 sept 1809.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0104",
+  "check_id": "FI16",
+  "kind": "detalj",
+  "context": "Finland, inom 'Storfurstendömet Finland'",
+  "statement": "Borgå lantdag 1809",
+  "about": [
+   "nh-p0045"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppslagsverket Finland: Finlands historia – 1800-talet",
+  "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet",
+  "evidence": "Uppslagsverket anger att Alexander I öppnade lantdagen i Borgå 28 mars 1809.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0105",
+  "check_id": "FI17",
+  "kind": "detalj",
+  "context": "Finland, inom 'Storfurstendömet Finland'",
+  "statement": "enkammarlantdag och kvinnlig rösträtt 1906",
+  "about": [
+   "nh-p0045"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Riksdagen: Riksdagens historia (broschyr)",
+  "source_url": "https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf",
+  "evidence": "Riksdagen anger att ståndslantdagen ersattes av en enkammarlantdag 1906 och att både män och kvinnor fick rösträtt och valbarhet.",
+  "correct_value": "",
+  "note": "Första valet hölls 1907 (även Uppslagsverket och SNL). Ej Nordiskt uppslagsverk men officiell källa.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0106",
+  "check_id": "FI18",
+  "kind": "period",
+  "context": "Finland",
+  "statement": "Period 'Självständigt Finland': 1917 – 1939",
+  "about": [
+   "nh-p0046"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppslagsverket Finland: Finlands historia efter 1917",
+  "source_url": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
+  "evidence": "Uppslagsverket beskriver 'första republiken' från självständigheten 1917 till vinterkriget hösten 1939.",
+  "correct_value": "",
+  "note": "Källan anger inte uttryckligen periodgränserna 1917–1939, men båda ankarårtalen stöds.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0107",
+  "check_id": "FI19",
+  "kind": "detalj",
+  "context": "Finland, inom 'Självständigt Finland'",
+  "statement": "6 dec 1917",
+  "about": [
+   "nh-p0046"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppslagsverket Finland: Finlands historia efter 1917",
+  "source_url": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
+  "evidence": "Uppslagsverket anger att Finland förklarade sig självständigt 6 december 1917.",
+  "correct_value": "",
+  "note": "Riksdagen: lantdagen godkände förklaringen 6 dec 1917.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0108",
+  "check_id": "FI20",
+  "kind": "detalj",
+  "context": "Finland, inom 'Självständigt Finland'",
+  "statement": "inbördeskriget 1918",
+  "about": [
+   "nh-p0046"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Finlands historie",
+  "source_url": "https://snl.no/Finlands_historie",
+  "evidence": "SNL daterar borgerkriget i Finland till 1918 (Tammerfors föll i april, Helsingfors i maj).",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0109",
+  "check_id": "FI21",
+  "kind": "detalj",
+  "context": "Finland, inom 'Självständigt Finland'",
+  "statement": "republik 1919",
+  "about": [
+   "nh-p0046"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Finlands historie",
+  "source_url": "https://snl.no/Finlands_historie",
+  "evidence": "SNL anger att den republikanska grundlagen antogs i juli 1919.",
+  "correct_value": "",
+  "note": "Riksdagens broschyr: regeringsformen 1919 definierade Finland som självständig republik.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0110",
+  "check_id": "FI22",
+  "kind": "period",
+  "context": "Finland",
+  "statement": "Period 'Krigsåren': 1939 – 1945",
+  "about": [
+   "nh-p0047"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Finlands historie",
+  "source_url": "https://snl.no/Finlands_historie",
+  "evidence": "SNL daterar vinterkriget från 30 nov 1939; Uppslagsverket anger att striderna i Lappland pågick till april 1945.",
+  "correct_value": "",
+  "note": "Uppslagsverket (Fortsättningskriget): https://www.uppslagsverket.fi/sv/view-170045-Fortsaettningskriget",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0111",
+  "check_id": "FI23",
+  "kind": "detalj",
+  "context": "Finland, inom 'Krigsåren'",
+  "statement": "Vinter-, fortsättnings- och Lapplandskriget",
+  "about": [
+   "nh-p0047"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Finlands historie",
+  "source_url": "https://snl.no/Finlands_historie",
+  "evidence": "SNL anger vinterkriget 1939–40 och fortsättningskriget 1941–44; Uppslagsverket anger att striderna mot tyskarna i Lappland pågick till april 1945.",
+  "correct_value": "",
+  "note": "SNL använder inte namnet Lapplandskriget; namnet finns i Uppslagsverkets artikel om fortsättningskriget.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0112",
+  "check_id": "FI24",
+  "kind": "period",
+  "context": "Finland",
+  "statement": "Period 'Efterkrigstid': 1945 – 2026",
+  "about": [
+   "nh-p0048"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Uppslagsverket Finland: Finlands historia efter 1917",
+  "source_url": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
+  "evidence": "Uppslagsverket låter 'andra republiken' börja med vapenstilleståndet 1944, inte 1945.",
+  "correct_value": "1944 – (Uppslagsverket)",
+  "note": "1945 kan försvaras eftersom Lapplandskriget slutade i april 1945.",
+  "action": "Start ändrat till 1944 (”Andra republiken”).",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0113",
+  "check_id": "FI25",
+  "kind": "detalj",
+  "context": "Finland, inom 'Efterkrigstid'",
+  "statement": "EU 1995",
+  "about": [
+   "nh-p0048"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppslagsverket Finland: Finlands historia efter 1917",
+  "source_url": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
+  "evidence": "Uppslagsverket anger att Finland gick med i EU vid ingången av 1995.",
+  "correct_value": "",
+  "note": "SNL: EU-medlem 1995 efter folkomröstning okt 1994.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0114",
+  "check_id": "FI26",
+  "kind": "detalj",
+  "context": "Finland, inom 'Efterkrigstid'",
+  "statement": "Nato 2023",
+  "about": [
+   "nh-p0048"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Finlands utrikesministerium: Finland's membership in NATO",
+  "source_url": "https://um.fi/finland-and-nato",
+  "evidence": "Utrikesministeriet anger att Finland blev Nato-medlem 4 april 2023.",
+  "correct_value": "",
+  "note": "Officiell källa; ingen nordisk uppslagsverksartikel om Nato-inträdet hittades.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0115",
+  "check_id": "SÁ01",
+  "kind": "period",
+  "context": "Sápmi",
+  "statement": "Period 'Fångstkulturer i norr': 9 000 f.Kr. – 1 000 f.Kr.",
+  "about": [
+   "nh-p0049"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: samenes forhistorie",
+  "source_url": "https://snl.no/samenes_forhistorie",
+  "evidence": "SNL daterar stenåldern i Norden till 9500–1800 f.Kr. och bronsåldern till 1800–500 f.Kr.; språkbytet till ursamiska börjar under sista årtusendet f.Kr.",
+  "correct_value": "",
+  "note": "Slutgränsen 1000 f.Kr. är en tolkning (övergång till ursamiska), inte en arkeologisk periodgräns; starten ca 9500 enligt SNL. SNL betonar att det är föga meningsfullt att kalla stenålderns folk 'samer' – rubriken 'Fångstkulturer i norr' är därför väl vald så länge den inte framställs som samisk.",
+  "action": "Slut ändrat till 500 f.Kr.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0116",
+  "check_id": "SÁ02",
+  "kind": "detalj",
+  "context": "Sápmi, inom 'Fångstkulturer i norr'",
+  "statement": "Komsakultur",
+  "about": [
+   "nh-p0049"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Komsakulturen",
+  "source_url": "https://snl.no/Komsakulturen",
+  "evidence": "SNL beskriver Komsakulturen som äldre stenålder i Finnmark och på Kolahalvön, daterad till ca 8000–7000 f.Kr. på Kola.",
+  "correct_value": "",
+  "note": "NE (ne.se, Komsakulturen) ger samma bild. SNL kallar den mycket heterogen; termen är ett arkeologiskt samlingsnamn, inte en folkbeteckning.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0117",
+  "check_id": "SÁ03",
+  "kind": "detalj",
+  "context": "Sápmi, inom 'Fångstkulturer i norr'",
+  "statement": "hällkonst i Alta",
+  "about": [
+   "nh-p0049"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "UNESCO World Heritage: Rock Art of Alta",
+  "source_url": "https://whc.unesco.org/en/list/352",
+  "evidence": "Unesco anger att Alta var en mötesplats för jägar-samlare med hällkonst från ca 5000 f.Kr. till omkring år 0; världsarv sedan 1985.",
+  "correct_value": "",
+  "note": "Hällkonsten sträcker sig något förbi periodens slut (1000 f.Kr.), vilket kan anges. Unesco tillskriver den jägar-samlarsamhällen, inte uttryckligen samer – formuleringen är rimlig.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0118",
+  "check_id": "SÁ04",
+  "kind": "period",
+  "context": "Sápmi",
+  "statement": "Period 'Samisk kultur tar form': 1 000 f.Kr. – 800",
+  "about": [
+   "nh-p0050"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: samenes forhistorie",
+  "source_url": "https://snl.no/samenes_forhistorie",
+  "evidence": "SNL låter språkbytet börja sista årtusendet f.Kr. och sprida sig i Sápmi under äldre järnålder 500 f.Kr.–500 e.Kr., i sydväst kanske först 500–600-tal.",
+  "correct_value": "",
+  "note": "Startåret 1000 f.Kr. har stöd som ungefärlig början; slutåret 800 e.Kr. motsvarar ingen gräns i SNL (som delar vid 500 resp. järnålderns slut 1050). Bör markeras som ungefärligt.",
+  "action": "Ändrat till 500 f.Kr.–1050; ”ursamiska”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0119",
+  "check_id": "SÁ05",
+  "kind": "detalj",
+  "context": "Sápmi, inom 'Samisk kultur tar form'",
+  "statement": "Protosamiska språket",
+  "about": [
+   "nh-p0050"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: samenes forhistorie",
+  "source_url": "https://snl.no/samenes_forhistorie",
+  "evidence": "SNL beskriver ursamiska som ett västuraliskt språk som uppstod genom kontakt under bronsåldern/sista årtusendet f.Kr., med ca en tredjedel ordförråd från äldre europeiska språk.",
+  "correct_value": "",
+  "note": "På svenska är 'ursamiska' den gängse termen; 'protosamiska' fungerar men 'ursamiska' ligger närmare svensk/norsk facklitteratur.",
+  "action": "Ändrat till ”ursamiska”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0120",
+  "check_id": "SÁ06",
+  "kind": "detalj",
+  "context": "Sápmi, inom 'Samisk kultur tar form'",
+  "statement": "dateringen omdiskuterad",
+  "about": [
+   "nh-p0050"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: samenes forhistorie",
+  "source_url": "https://snl.no/samenes_forhistorie",
+  "evidence": "SNL varnar för säkerhet om när språkbytet skedde och säger att splittringen av ursamiskan inte är säkert känd.",
+  "correct_value": "",
+  "note": "Rimlig och ärlig formulering.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0121",
+  "check_id": "SÁ07",
+  "kind": "period",
+  "context": "Sápmi",
+  "statement": "Period 'Siidasamhällen': 800 – 1550",
+  "about": [
+   "nh-p0051"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: samenes historie",
+  "source_url": "https://snl.no/samenes_historie",
+  "evidence": "SNL beskriver siidan som en äldre samhällsform men delar perioderna som järnålder 500 f.Kr.–1050 och medeltid 1050–1550.",
+  "correct_value": "",
+  "note": "Slutåret 1550 stöds av SNL:s periodindelning; startåret 800 är en vikingatidskonvention utan stöd i SNL. Siida-systemet levde kvar långt efter 1550 (SNL: siida/sameby idag), så perioden bör inte antyda att siidan upphör 1550.",
+  "action": "Start ändrat till 1050.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0122",
+  "check_id": "SÁ08",
+  "kind": "detalj",
+  "context": "Sápmi, inom 'Siidasamhällen'",
+  "statement": "Fångst, fiske och handel",
+  "about": [
+   "nh-p0051"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: samenes historie",
+  "source_url": "https://snl.no/samenes_historie",
+  "evidence": "SNL beskriver säsongsvis flyttning mellan kust och inland med jakt, fiske och insamling samt handel med pälsar, hudar och tran.",
+  "correct_value": "",
+  "note": "Kan kompletteras med att renskötsel gradvis tillkom; snl.no/siida nämner även hantverk och jordbruk.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0123",
+  "check_id": "SÁ09",
+  "kind": "detalj",
+  "context": "Sápmi, inom 'Siidasamhällen'",
+  "statement": "skatt till flera kronor",
+  "about": [
+   "nh-p0051"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: samenes historie",
+  "source_url": "https://snl.no/samenes_historie",
+  "evidence": "SNL anger att Sápmi från 1300-talet delades i överlappande skatteområden där Norge, Sverige och Novgorod krävde skatt, i norra Finnmark alla tre.",
+  "correct_value": "",
+  "note": "'Kronor' är något anakronistiskt för Novgorod; 'flera riken/stater' är mer exakt.",
+  "action": "Ändrat till ”flera riken”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0124",
+  "check_id": "SÁ10",
+  "kind": "period",
+  "context": "Sápmi",
+  "statement": "Period 'Kolonisering och kristnande': 1550 – 1751",
+  "about": [
+   "nh-p0052"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: samenes historie",
+  "source_url": "https://snl.no/samenes_historie",
+  "evidence": "SNL låter tidigmodern tid gå 1550–1826 med kolonisation av lappmarkerna på 1600-talet och mission på 1700-talet; enligt regeringens PM blev nybyggandet utbrett först efter 1749.",
+  "correct_value": "",
+  "note": "Start 1550 har stöd (kronans skatteövertagande ca mitten av 1500-talet enligt SOU-texten). Slut 1751 är ett gränsfördrag, men kolonisering och mission fortsatte och intensifierades efter 1751 – periodnamnet kan ge intryck av att koloniseringen upphörde. Ordet 'kolonisering' motsvarar hur samiska institutioner och SNL beskriver perioden.",
+  "action": "Titeln ändrad till ”Skatt, handel och mission”; nybyggen i nästa block.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0125",
+  "check_id": "SÁ11",
+  "kind": "detalj",
+  "context": "Sápmi, inom 'Kolonisering och kristnande'",
+  "statement": "Lappmarksplakatet 1673",
+  "about": [
+   "nh-p0052"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Regeringskansliet N 2021:02 PM 1 (utdrag ur SOU 2005:116), historisk konturteckning",
+  "source_url": "https://prod.sou.gov.se/contentassets/1287a65ca66445d5ba910dcb62c4d8d0/pm-1-en-historisk-konturteckning.pdf",
+  "evidence": "Regeringskansliets historiska PM anger att Kungl. Maj:t utfärdade plakat 1673 (och 1695) för att locka nybyggare till lappmarken.",
+  "correct_value": "",
+  "note": "Källan är statlig (ej på den föredragna listan; samer.se gick ej att hämta). Kan nämnas att effekten blev begränsad fram till 1749 års förordning.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0126",
+  "check_id": "SÁ12",
+  "kind": "period",
+  "context": "Sápmi",
+  "statement": "Period 'Gränser dras genom Sápmi': 1751 – 1917",
+  "about": [
+   "nh-p0053"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: samenes historie",
+  "source_url": "https://snl.no/samenes_historie",
+  "evidence": "SNL anger gränsdragning genom inre Sápmi 1751, ny gräns 1809 och att sista gränsfria området delades 1826.",
+  "correct_value": "",
+  "note": "Gränserna 1751, 1809, 1826 och stängningar 1852 ligger inom perioden; slutet 1917 är en tematisk övergång snarare än en gränshändelse. Perioden omfattar även norskifiering och rasbiologi, som rubriken inte fångar.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0127",
+  "check_id": "SÁ13",
+  "kind": "detalj",
+  "context": "Sápmi, inom 'Gränser dras genom Sápmi'",
+  "statement": "Lappkodicillen 1751",
+  "about": [
+   "nh-p0053"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: samenes historie",
+  "source_url": "https://snl.no/samenes_historie",
+  "evidence": "SNL anger att gränsavtalet 1751 fick tillägget Lappekodisillen som erkände samiska rättigheter.",
+  "correct_value": "",
+  "note": "Lappkodicillen kallas ofta samernas Magna Charta; rättvis formulering.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0128",
+  "check_id": "SÁ14",
+  "kind": "period",
+  "context": "Sápmi",
+  "statement": "Period 'Samisk organisering': 1917 – 2026",
+  "about": [
+   "nh-p0054"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: samisk organisering i Norge",
+  "source_url": "https://snl.no/samisk_organisering_i_Norge",
+  "evidence": "SNL anger att första samiska landsmötet hölls i Trondheim i februari 1917, ihågkommet genom nationaldagen 6 februari.",
+  "correct_value": "",
+  "note": "Tidigare organisering fanns (Lapparnas Centralförbund 1904, Brurskanken 1910), så 1917 är en symbolisk startpunkt. I Sverige följde landsmötet i Östersund 1918.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0129",
+  "check_id": "SÁ15",
+  "kind": "detalj",
+  "context": "Sápmi, inom 'Samisk organisering'",
+  "statement": "Sameting: Finland 1973/1996, Norge 1989, Sverige 1993",
+  "about": [
+   "nh-p0054"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Saamelaiskäräjät: Saamelaiset Suomessa (samediggi.fi)",
+  "source_url": "https://samediggi.fi/wp-content/uploads/2016/07/saamelaisetsuomi.pdf",
+  "evidence": "Sametinget i Finland anger Samedelegationen 1973 och Sametinget från 1996, samt Norges sameting 1989 och Sveriges 1993.",
+  "correct_value": "",
+  "note": "Även SNL (samenes historie) bekräftar samma år. Finland 1973 var en delegation, inte ett sameting – formuleringen '1973/1996' bör förklaras.",
+  "action": "Ändrat till ”Finland 1996 (delegation från 1973)”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0130",
+  "check_id": "GE01",
+  "kind": "period",
+  "context": "Danmark–Norge–Sverige",
+  "statement": "Period 'Nordisk bronsålder': 1 700 f.Kr. – 500 f.Kr.",
+  "about": [
+   "nh-p0055"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: bronsealder",
+  "source_url": "https://snl.no/bronsealder",
+  "evidence": "SNL anger nordisk bronsålder till ca 1700–500 f.Kr. (äldre 1700–1100, yngre 1100–500).",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0131",
+  "check_id": "GE02",
+  "kind": "detalj",
+  "context": "Danmark–Norge–Sverige, inom 'Nordisk bronsålder'",
+  "statement": "Solvagnen från Trundholm",
+  "about": [
+   "nh-p0055"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: Solen – symbolik",
+  "source_url": "https://lex.dk/Solen_-_symbolik",
+  "evidence": "Lex.dk daterar solvagnen från Trundholm till ca 1400 f.Kr., alltså äldre bronsålder.",
+  "correct_value": "",
+  "note": "Fyndet är danskt (Själland).",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0132",
+  "check_id": "GE03",
+  "kind": "detalj",
+  "context": "Danmark–Norge–Sverige, inom 'Nordisk bronsålder'",
+  "statement": "hällristningarna i Tanum",
+  "about": [
+   "nh-p0055"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "UNESCO World Heritage: Rock Carvings in Tanum",
+  "source_url": "https://whc.unesco.org/en/list/557",
+  "evidence": "Unesco daterar hällristningarna i Tanum till nordisk bronsålder, ca 1700–500 f.Kr.",
+  "correct_value": "",
+  "note": "Unescos japanska sammanfattning anger snävare ca 1000–500 f.Kr.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0133",
+  "check_id": "GE04",
+  "kind": "period",
+  "context": "Danmark–Norge–Sverige",
+  "statement": "Period 'Förromersk järnålder': 500 f.Kr. – 1",
+  "about": [
+   "nh-p0056"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: jernalderen",
+  "source_url": "https://snl.no/jernalderen",
+  "evidence": "SNL anger förromersk järnålder (keltertid) till 500 f.Kr.–0.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0134",
+  "check_id": "GE05",
+  "kind": "detalj",
+  "context": "Danmark–Norge–Sverige, inom 'Förromersk järnålder'",
+  "statement": "Hjortspringbåten",
+  "about": [
+   "nh-p0056"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Videnskab.dk: Mystiske krigere angreb dansk ø for 2.300 år siden",
+  "source_url": "https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/",
+  "evidence": "Ny 14C-datering placerar Hjortspringbåtens byggande ca 350–300 f.Kr., i förromersk järnålder.",
+  "correct_value": "",
+  "note": "Populärvetenskaplig nyhetskälla, ej uppslagsverk; Nationalmuseets sida kunde inte nås.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0135",
+  "check_id": "GE06",
+  "kind": "period",
+  "context": "Danmark–Norge–Sverige",
+  "statement": "Period 'Romersk järnålder': 1 – 400",
+  "about": [
+   "nh-p0057"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: romersk jernalder",
+  "source_url": "https://lex.dk/romersk_jernalder",
+  "evidence": "Lex.dk definierar romersk järnålder som Kr.f.–400 e.Kr.; SNL jernalderen anger likaså 0–400.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0136",
+  "check_id": "GE07",
+  "kind": "detalj",
+  "context": "Danmark–Norge–Sverige, inom 'Romersk järnålder'",
+  "statement": "Handel med Romarriket",
+  "about": [
+   "nh-p0057"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: romersk jernalder",
+  "source_url": "https://lex.dk/romersk_jernalder",
+  "evidence": "Lex.dk beskriver att romerskt inflytande nådde Norden bl.a. via importerade lyxvaror under perioden.",
+  "correct_value": "",
+  "note": "Källan talar om import/lyxvaror snarare än handel i detalj.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0137",
+  "check_id": "GE08",
+  "kind": "detalj",
+  "context": "Danmark–Norge–Sverige, inom 'Romersk järnålder'",
+  "statement": "runskriften tas i bruk",
+  "about": [
+   "nh-p0057"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: runer",
+  "source_url": "https://snl.no/runer",
+  "evidence": "SNL anger äldsta säkra runinskriften (kammen från Vimose) till ca 160 e.Kr., inom romersk järnålder.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0138",
+  "check_id": "GE09",
+  "kind": "period",
+  "context": "Danmark–Norge–Sverige",
+  "statement": "Period 'Folkvandringstid': 400 – 550",
+  "about": [
+   "nh-p0058"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: jernalderen",
+  "source_url": "https://snl.no/jernalderen",
+  "evidence": "SNL anger folkvandringstid till 400–550 e.Kr.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0139",
+  "check_id": "GE10",
+  "kind": "detalj",
+  "context": "Danmark–Norge–Sverige, inom 'Folkvandringstid'",
+  "statement": "Guldbrakteater",
+  "about": [
+   "nh-p0058"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: gullbrakteater",
+  "source_url": "https://snl.no/gullbrakteater",
+  "evidence": "SNL anger att guldbrakteaterna tillverkades under folkvandringstid, ca 400–570 e.Kr.",
+  "correct_value": "",
+  "note": "Dateringen sträcker sig något förbi 550.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0140",
+  "check_id": "GE11",
+  "kind": "detalj",
+  "context": "Danmark–Norge–Sverige, inom 'Folkvandringstid'",
+  "statement": "guldhornen från Gallehus",
+  "about": [
+   "nh-p0058"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: Guldhornene",
+  "source_url": "https://lex.dk/Guldhornene",
+  "evidence": "Lex.dk daterar guldhornen från Gallehus till omkring 400 e.Kr.",
+  "correct_value": "",
+  "note": "Ligger precis på gränsen romersk järnålder/folkvandringstid.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0141",
+  "check_id": "GE12",
+  "kind": "period",
+  "context": "Danmark–Norge–Sverige",
+  "statement": "Period 'Vendeltid / merovingertid': 550 – 793",
+  "about": [
+   "nh-p0059"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: merovingertid",
+  "source_url": "https://snl.no/merovingertid",
+  "evidence": "SNL anger merovingertid ca 550–800; vikingatidens start knyts ofta till Lindisfarne 793 men flyttas ibland till ca 750.",
+  "correct_value": "",
+  "note": "Slutgränsen 793 följer konventionen kring Lindisfarne (snl.no/vikingtiden); SNL merovingertid använder 800.",
+  "action": "Behållet; 793 knyts till Lindisfarne.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0142",
+  "check_id": "GE13",
+  "kind": "detalj",
+  "context": "Danmark–Norge–Sverige, inom 'Vendeltid / merovingertid'",
+  "statement": "Gamla Uppsala, Vendel och Valsgärde",
+  "about": [
+   "nh-p0059"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppsala universitet/Gustavianum: Valsgärde",
+  "source_url": "https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde",
+  "evidence": "Gustavianum: Valsgärdes båtgravar är från vendel- och vikingatid, ca 3 km norr om Gamla Uppsala; SNL: vendeltid är uppkallad efter gravfältet i Vendel.",
+  "correct_value": "",
+  "note": "Gamla Uppsalas kungshögar daterade till 500–600-tal enligt Svenska kyrkan (svenskakyrkan.se/uppsalakyrkogardar/gamla-uppsala-kyrkogard).",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0143",
+  "check_id": "GE14",
+  "kind": "period",
+  "context": "Norge–Sverige–Finland",
+  "statement": "Period 'Magnus Eriksson: Sverige och Norge': 1319 – 1343",
+  "about": [
+   "nh-p0060"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: Magnus 7. Eriksson",
+  "source_url": "https://snl.no/Magnus_7._Eriksson",
+  "evidence": "SNL: Magnus hyllades i båda rikena 1319; Håkon hyllades som norsk kung 1343–44, men riket delades först 1355.",
+  "correct_value": "",
+  "note": "Slutår 1343 avser Håkons hyllning; den gemensamma kungamakten varade formellt till 1355.",
+  "action": "Behållet; delningen 1355 anges i Håkon VI-blocket.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0144",
+  "check_id": "GE15",
+  "kind": "detalj",
+  "context": "Norge–Sverige–Finland, inom 'Magnus Eriksson: Sverige och Norge'",
+  "statement": "Freden i Nöteborg 1323",
+  "about": [
+   "nh-p0060"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: Sjlisselburg",
+  "source_url": "https://lex.dk/Sjlisselburg",
+  "evidence": "Lex.dk: Novgorod och Sverige slöt fred vid fästningen Nöteborg 1323 med gräns på Karelska näset.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0145",
+  "check_id": "GE16",
+  "kind": "period",
+  "context": "Sverige–Finland",
+  "statement": "Period 'Sverige med Finland': 1343 – 1397",
+  "about": [
+   "nh-p0061"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: Magnus 7. Eriksson",
+  "source_url": "https://snl.no/Magnus_7._Eriksson",
+  "evidence": "Ingen uppslagskälla använder 'Sverige med Finland 1343–1397' som period; 1343 motsvarar Håkons hyllning i Norge, och SNL anger rikesdelning först 1355.",
+  "correct_value": "",
+  "note": "Finland var del av Sverige även före 1343; 1397 = Kalmarunionen (lex.dk/Kalmarunionen). Perioden är en affischkonstruktion.",
+  "action": "Behållet som affischens egen sammanfattning.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0146",
+  "check_id": "GE17",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Sverige med Finland'",
+  "statement": "Magnus Erikssons landslag",
+  "about": [
+   "nh-p0061"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Magnus 7. Eriksson",
+  "source_url": "https://snl.no/Magnus_7._Eriksson",
+  "evidence": "SNL anger att en landslag och en stadslag utarbetades omkring 1350, inom perioden.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0147",
+  "check_id": "GE18",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Sverige med Finland'",
+  "statement": "digerdöden 1350",
+  "about": [
+   "nh-p0061"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Läkartidningen 2003 (artikel om digerdöden)",
+  "source_url": "https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf",
+  "evidence": "Läkartidningen beskriver 1350 som det stora pestår i Sverige, något senare än Danmark 1349.",
+  "correct_value": "",
+  "note": "SNL svartedauden: pesten i Norge och Halland 1349.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0148",
+  "check_id": "GE19",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Sverige med Finland'",
+  "statement": "Albrekt av Mecklenburg 1364–89",
+  "about": [
+   "nh-p0061"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: Albrecht af Mecklenburg",
+  "source_url": "https://lex.dk/Albrecht_af_Mecklenburg",
+  "evidence": "Lex.dk anger Albrekt som kung 1363–1389, men vald först tidigt 1364 och störtad efter Falköping 1389.",
+  "correct_value": "",
+  "note": "Lex.dk:s rubrikår är 1363.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0149",
+  "check_id": "GE20",
+  "kind": "period",
+  "context": "Island–Danmark–Norge",
+  "statement": "Period 'Danmark–Norge': 1380 – 1397",
+  "about": [
+   "nh-p0062"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: Danmark-Norge",
+  "source_url": "https://lex.dk/Danmark-Norge",
+  "evidence": "Lex.dk: Danmark–Norge bestod från 1380 då Oluf ärvde norska kronan; Kalmarunionen från 1397.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0150",
+  "check_id": "GE21",
+  "kind": "period",
+  "context": "Island–Danmark–Norge–Sverige–Finland",
+  "statement": "Period 'Kalmarunionen': 1397 – 1523",
+  "about": [
+   "nh-p0063"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: Kalmarunionen",
+  "source_url": "https://lex.dk/Kalmarunionen",
+  "evidence": "Lex.dk daterar Kalmarunionen traditionellt till 1397–1523.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0151",
+  "check_id": "GE22",
+  "kind": "detalj",
+  "context": "Island–Danmark–Norge–Sverige–Finland, inom 'Kalmarunionen'",
+  "statement": "Margareta och Erik av Pommern",
+  "about": [
+   "nh-p0063"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: Kalmarunionen",
+  "source_url": "https://lex.dk/Kalmarunionen",
+  "evidence": "Lex.dk: Margareta formade unionen; Erik av Pommern kröntes i Kalmar 1397 och regerade efter hennes död 1412 till 1439.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0152",
+  "check_id": "GE23",
+  "kind": "detalj",
+  "context": "Island–Danmark–Norge–Sverige–Finland, inom 'Kalmarunionen'",
+  "statement": "Sverige bryter sig ur 1523",
+  "about": [
+   "nh-p0063"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: Kalmarunionen",
+  "source_url": "https://lex.dk/Kalmarunionen",
+  "evidence": "Lex.dk: Gustav Vasa utropades till kung 1523, vilket slutgiltigt avslutade unionen.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0153",
+  "check_id": "GE24",
+  "kind": "period",
+  "context": "Island–Danmark–Norge",
+  "statement": "Period 'Danmark–Norge': 1523 – 1660",
+  "about": [
+   "nh-p0064"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: Danmark-Norge",
+  "source_url": "https://lex.dk/Danmark-Norge",
+  "evidence": "Lex.dk har avsnittet 'Fra kongeligt fællesskab til dansk dominans 1523–1660', med enväldet 1660 som gräns.",
+  "correct_value": "",
+  "note": "Unionen Danmark–Norge varade 1380–1814; 1660 är en indelningsgräns.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0154",
+  "check_id": "GE25",
+  "kind": "detalj",
+  "context": "Island–Danmark–Norge, inom 'Danmark–Norge'",
+  "statement": "Reformationen 1536",
+  "about": [
+   "nh-p0064"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Lex.dk: Reformationen i Danmark",
+  "source_url": "https://lex.dk/Reformationen_i_Danmark",
+  "evidence": "Lex.dk: reformationen infördes i Danmark genom recessen 30 oktober 1536.",
+  "correct_value": "",
+  "note": "I Norge genomfördes den i praktiken 1537 (SNL).",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0155",
+  "check_id": "GE26",
+  "kind": "detalj",
+  "context": "Island–Danmark–Norge, inom 'Danmark–Norge'",
+  "statement": "Norges riksråd avskaffas 1537",
+  "about": [
+   "nh-p0064"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Store norske leksikon: Christian 3",
+  "source_url": "https://snl.no/Christian_3",
+  "evidence": "SNL: Norgesparagrafen i Christian III:s handfästning okt 1536 gjorde att riksrådet föll bort; i praktiken upphörde det 1537 när ärkebiskopen flydde.",
+  "correct_value": "",
+  "note": "Lex.dk Danmark-Norge anger 1536; snl.no/riksråd anger 1537. Överväg '1536/37'.",
+  "action": "Ändrat till 1536/37.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0156",
+  "check_id": "GE27",
+  "kind": "detalj",
+  "context": "Island–Danmark–Norge, inom 'Danmark–Norge'",
+  "statement": "Kristian IV",
+  "about": [
+   "nh-p0064"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Christian 4. – lex.dk",
+  "source_url": "https://lex.dk/Christian_4.",
+  "evidence": "Christian 4. var kung av Danmark och Norge 1588–1648 (självständigt styre från 1596).",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0157",
+  "check_id": "GE28",
+  "kind": "period",
+  "context": "Island–Danmark–Norge",
+  "statement": "Period 'Danmark–Norge under enväldet': 1660 – 1814",
+  "about": [
+   "nh-p0065"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Enevoldstida – Store norske leksikon",
+  "source_url": "https://snl.no/enevoldstida",
+  "evidence": "Enväldet infördes i Danmark–Norge 1660 och upphörde för Norges del vid unionsupplösningen 1814.",
+  "correct_value": "",
+  "note": "I Danmark varade enväldet till 1849; 1814 är slutår för Danmark–Norge, inte för enväldet i Danmark.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0158",
+  "check_id": "GE29",
+  "kind": "detalj",
+  "context": "Island–Danmark–Norge, inom 'Danmark–Norge under enväldet'",
+  "statement": "Kongeloven 1665",
+  "about": [
+   "nh-p0065"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Kongeloven – lex.dk",
+  "source_url": "https://lex.dk/Kongeloven",
+  "evidence": "Kongeloven är daterad 14 november 1665.",
+  "correct_value": "",
+  "note": "Publicerades i sin helhet först 1709.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0159",
+  "check_id": "GE30",
+  "kind": "period",
+  "context": "Sverige–Finland",
+  "statement": "Period 'Vasatiden': 1523 – 1611",
+  "about": [
+   "nh-p0066"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Vasatiden – Nationalencyklopedin",
+  "source_url": "https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden",
+  "evidence": "NE avgränsar Vasatiden 1521–1654 och delar den i äldre/yngre Vasatid med 1611 som skiljelinje.",
+  "correct_value": "",
+  "note": "1523–1611 motsvarar 'äldre Vasatiden'; lex.dk anger också 1521–1654. Overlappar då 'Stormaktstiden' från 1611.",
+  "action": "Titeln ändrad till ”Äldre Vasatiden”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0160",
+  "check_id": "GE31",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Vasatiden'",
+  "statement": "Gustav Vasa",
+  "about": [
+   "nh-p0066"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Gustav 1 Vasa – Store norske leksikon",
+  "source_url": "https://snl.no/Gustav_1_Vasa",
+  "evidence": "Gustav Vasa regerade 1523–1560 och räknas som grundaren av den svenska nationalstaten.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0161",
+  "check_id": "GE32",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Vasatiden'",
+  "statement": "reformationen 1527",
+  "about": [
+   "nh-p0066"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Västerås riksdag – Nationalencyklopedin",
+  "source_url": "https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag",
+  "evidence": "Västerås riksdag 1527 inledde kyrkoreduktionen och bröt biskoparnas makt, men reformationen var en process.",
+  "correct_value": "",
+  "note": "SNL (Gustav 1 Vasa) beskriver hårdare kyrkopolitik kring 1540, och luthersk bekännelse antogs först 1593. Formulering som 'reformationen inleds 1527 (Västerås riksdag)' är säkrare.",
+  "action": "Ändrat till ”reformationen inleds 1527”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0162",
+  "check_id": "GE33",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Vasatiden'",
+  "statement": "Uppsala möte 1593",
+  "about": [
+   "nh-p0066"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Bekännelseskrifter – Svenska kyrkan",
+  "source_url": "https://www.svenskakyrkan.se/kristentro/bekannelseskrifter",
+  "evidence": "Vid Uppsala möte 1593 antogs Augsburgska bekännelsen och kyrkan blev officiellt evangelisk-luthersk.",
+  "correct_value": "",
+  "note": "Även lex.dk (Vasatiden) nämner Uppsala möte 1593.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0163",
+  "check_id": "GE34",
+  "kind": "period",
+  "context": "Sverige–Finland",
+  "statement": "Period 'Stormaktstiden': 1611 – 1718",
+  "about": [
+   "nh-p0067"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Stormaktstiden – Nationalencyklopedin",
+  "source_url": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden",
+  "evidence": "NE avgränsar stormaktstiden från Gustav II Adolfs trontillträde 1611 till Karl XII:s död 1718.",
+  "correct_value": "",
+  "note": "lex.dk (Stormagtstiden) anger samma gränser.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0164",
+  "check_id": "GE35",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Stormaktstiden'",
+  "statement": "Gustav II Adolf",
+  "about": [
+   "nh-p0067"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Stormaktstiden – Nationalencyklopedin",
+  "source_url": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden",
+  "evidence": "Gustav II Adolf blev kung 1611 och hans trontillträde inleder stormaktstiden.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0165",
+  "check_id": "GE36",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Stormaktstiden'",
+  "statement": "westfaliska freden 1648",
+  "about": [
+   "nh-p0067"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Westfaliska freden – Nationalencyklopedin",
+  "source_url": "https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden",
+  "evidence": "Westfaliska freden undertecknades i oktober 1648 och avslutade trettioåriga kriget; Sverige förhandlade i Osnabrück.",
+  "correct_value": "",
+  "note": "Sidan visade inte vad Sverige vann i freden.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0166",
+  "check_id": "GE37",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Stormaktstiden'",
+  "statement": "Karl XII",
+  "about": [
+   "nh-p0067"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Stormaktstiden – Nationalencyklopedin",
+  "source_url": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden",
+  "evidence": "Karl XII:s död 1718 markerar stormaktstidens slut.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0167",
+  "check_id": "GE38",
+  "kind": "period",
+  "context": "Sverige–Finland",
+  "statement": "Period 'Frihetstiden': 1718 – 1772",
+  "about": [
+   "nh-p0068"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Frihetstiden – Nationalencyklopedin",
+  "source_url": "https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden",
+  "evidence": "NE daterar frihetstiden 1719–1772, från enväldets avskaffande till Gustav III:s statskupp.",
+  "correct_value": "",
+  "note": "SNL (hatter) anger 1720–1772; Runeberg-temat anger både 1718 och 1719. 1719 är vanligast i referensverk.",
+  "action": "Start ändrat till 1719.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0168",
+  "check_id": "GE39",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Frihetstiden'",
+  "statement": "Riksdagsstyre",
+  "about": [
+   "nh-p0068"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Besluten som förändrade Sverige – Sveriges riksdag",
+  "source_url": "https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/",
+  "evidence": "Från 1719 blev riksdagen maktcentrum och kontrollerade rådet medan kungens makt minskade.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0169",
+  "check_id": "GE40",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Frihetstiden'",
+  "statement": "hattar och mössor",
+  "about": [
+   "nh-p0068"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Hatter – Store norske leksikon",
+  "source_url": "https://snl.no/hatter",
+  "evidence": "Hattpartiet grundades 1734 i opposition mot Arvid Horns 'mössor' och upphörde efter statskuppen 1772.",
+  "correct_value": "",
+  "note": "NE nämner också hattpartiet och mösspartiet som frihetstidens partier.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0170",
+  "check_id": "GE41",
+  "kind": "period",
+  "context": "Sverige–Finland",
+  "statement": "Period 'Gustavianska tiden': 1772 – 1809",
+  "about": [
+   "nh-p0069"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Gustavianska tiden – Nationalencyklopedin",
+  "source_url": "https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden",
+  "evidence": "NE daterar perioden från Gustav III:s statskupp 1772 till Gustav IV Adolfs avsättning 1809.",
+  "correct_value": "",
+  "note": "NE nämner också en vidare avgränsning 1771–1818.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0171",
+  "check_id": "GE42",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Gustavianska tiden'",
+  "statement": "Gustav III:s statskupp 1772",
+  "about": [
+   "nh-p0069"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Gustav 3 – Store norske leksikon",
+  "source_url": "https://snl.no/Gustav_3.",
+  "evidence": "Gustav III genomförde en statskupp den 19 augusti 1772 med en ny regeringsform som stärkte kungamakten.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0172",
+  "check_id": "GE43",
+  "kind": "detalj",
+  "context": "Sverige–Finland, inom 'Gustavianska tiden'",
+  "statement": "finska kriget 1808–09",
+  "about": [
+   "nh-p0069"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)",
+  "source_url": "https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809",
+  "evidence": "Kriget mellan Sverige och Ryssland 1808–1809 slutade med freden i Fredrikshamn och att Finland blev ryskt.",
+  "correct_value": "",
+  "note": "Källan är ett läromedel från finska Utbildningsstyrelsen, inte ett uppslagsverk.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0173",
+  "check_id": "GE44",
+  "kind": "period",
+  "context": "Norge–Sverige",
+  "statement": "Period 'Unionen Sverige–Norge': 1814 – 1905",
+  "about": [
+   "nh-p0070"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Unionsoppløsningen i 1905 – Store norske leksikon",
+  "source_url": "https://snl.no/Unionsoppløsningen_i_1905",
+  "evidence": "SNL beskriver unionen 1814–1905 som en union med gemensam kung.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0174",
+  "check_id": "GE45",
+  "kind": "detalj",
+  "context": "Norge–Sverige, inom 'Unionen Sverige–Norge'",
+  "statement": "Två riken, en kung",
+  "about": [
+   "nh-p0070"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Unionsoppløsningen i 1905 – Store norske leksikon",
+  "source_url": "https://snl.no/Unionsoppløsningen_i_1905",
+  "evidence": "Gemensam kung och utrikespolitik, men Norge hade egen regering, storting, lagstiftning, armé och flotta.",
+  "correct_value": "",
+  "note": "Om det var personal- eller realunion diskuteras (snl.no/realunion).",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0175",
+  "check_id": "GE46",
+  "kind": "detalj",
+  "context": "Norge–Sverige, inom 'Unionen Sverige–Norge'",
+  "statement": "Norge med egen grundlov (Eidsvoll 17 maj 1814)",
+  "about": [
+   "nh-p0070"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Grunnloven – Store norske leksikon",
+  "source_url": "https://snl.no/Grunnloven",
+  "evidence": "Grundlagen antogs av riksförsamlingen på Eidsvoll 16 maj och daterades/undertecknades 17 maj 1814.",
+  "correct_value": "",
+  "note": "Formellt antagen 16 maj; 17 maj är dateringen och nationaldagen.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0176",
+  "check_id": "GE47",
+  "kind": "händelse",
+  "context": "Danmark–Norge–Sverige",
+  "statement": "793 Lindisfarne – vikingatiden börjar",
+  "about": [
+   "nh-e0001"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Vikingtid – Store norske leksikon",
+  "source_url": "https://snl.no/vikingtid",
+  "evidence": "Vikingatidens början knyts ofta till angreppet på Lindisfarne 793.",
+  "correct_value": "",
+  "note": "SNL anger perioden ca 800–1050 och att starten ibland förs tillbaka till ca 750.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0177",
+  "check_id": "GE48",
+  "kind": "händelse",
+  "context": "Sverige",
+  "statement": "1520 Stockholms blodbad",
+  "about": [
+   "nh-e0002"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Stockholms blodbad – Nationalencyklopedin",
+  "source_url": "https://ne.se/uppslagsverk/encyklopedi/lång/stockholms-blodbad",
+  "evidence": "Avrättningarna i Stockholm skedde 8–9 november 1520 efter Kristian II:s kröning.",
+  "correct_value": "",
+  "note": "Händelsen gäller Kalmarunionen, Sverige och Danmark (Kristian II); taggen [Sverige] kan övervägas.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0178",
+  "check_id": "GE49",
+  "kind": "händelse",
+  "context": "Danmark–Norge",
+  "statement": "1658 Roskildefreden – Skånelandskapen och Bohuslän till Sverige",
+  "about": [
+   "nh-e0003"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Tabet af Skåne i 1658-1660 – lex.dk",
+  "source_url": "https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660",
+  "evidence": "Roskildefreden 26 februari 1658 gav Sverige Skåne, Halland, Blekinge, Bornholm samt Bohus län och Trondhjems län.",
+  "correct_value": "",
+  "note": "Bornholm och Trondhjems län återgick 1660 (freden i Köpenhamn).",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0179",
+  "check_id": "GE50",
+  "kind": "händelse",
+  "context": "Norge–Sverige",
+  "statement": "1905 Unionsupplösningen",
+  "about": [
+   "nh-e0004"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Unionsoppløsningen i 1905 – Store norske leksikon",
+  "source_url": "https://snl.no/Unionsoppløsningen_i_1905",
+  "evidence": "Stortinget bröt unionen 7 juni 1905 och den upplöstes formellt med Karlstadkonventionen 26 oktober 1905.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0180",
+  "check_id": "GE51",
+  "kind": "händelse",
+  "context": "Danmark–Norge",
+  "statement": "1940–45 Tysk ockupation",
+  "about": [
+   "nh-e0005"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "5. maj 1945 – lex.dk; Samene under andre verdenskrig – SNL",
+  "source_url": "https://lex.dk/5._maj_1945",
+  "evidence": "Danmark var ockuperat 9 april 1940–5 maj 1945; SNL anger att Norge angreps 9 april 1940 och befriades 1945.",
+  "correct_value": "",
+  "note": "Norge: https://snl.no/Samene_under_andre_verdenskrig",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0181",
+  "check_id": "GE52",
+  "kind": "händelse",
+  "context": "Island–Danmark–Norge–Sverige",
+  "statement": "1952 Nordiska rådet (Finland ansluter 1955)",
+  "about": [
+   "nh-e0006"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Nordiska rådets historia – Norden.org",
+  "source_url": "https://www.norden.org/sv/information/nordiska-radets-historia",
+  "evidence": "Nordiska rådet bildades 1952 av Danmark, Island, Norge och Sverige; Finland anslöt 1955.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0182",
+  "check_id": "MI01",
+  "kind": "milstolpe",
+  "context": "Island",
+  "statement": "Alltinget instiftas: 930",
+  "about": [
+   "nh-m0001"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Alltinget",
+  "source_url": "https://snl.no/Alltinget",
+  "evidence": "SNL anger att Alltinget troligen inrättades år 930 på Þingvellir.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0183",
+  "check_id": "MI02",
+  "kind": "milstolpe",
+  "context": "Danmark",
+  "statement": "Jellingestenen: 965",
+  "about": [
+   "nh-m0002"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "lex.dk: Jellingstenene",
+  "source_url": "https://lex.dk/Jellingstenene",
+  "evidence": "Lex daterar Harald Blåtands stora sten till tiden efter hans dop ca 965.",
+  "correct_value": "",
+  "note": "Datering är ungefärlig (ca 965, senast före 987).",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0184",
+  "check_id": "MI03",
+  "kind": "milstolpe",
+  "context": "Island",
+  "statement": "Snorres Heimskringla (c.): 1230",
+  "about": [
+   "nh-m0003"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Snorre Sturlason",
+  "source_url": "https://snl.no/Snorre_Sturlason",
+  "evidence": "SNL anger att Heimskringla kom till omkring 1220–1230, ca 1230.",
+  "correct_value": "",
+  "note": "Ungefärlig datering; c. är befogat.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0185",
+  "check_id": "MI04",
+  "kind": "milstolpe",
+  "context": "Sverige",
+  "statement": "Uppsala universitet: 1477",
+  "about": [
+   "nh-m0004"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppsala universitet: Kort historik och tidigare jubileer",
+  "source_url": "https://www.uu.se/550/tidigare-jubileer-och-kort-historik",
+  "evidence": "Universitetets egen historik anger att det grundades 1477.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0186",
+  "check_id": "MI05",
+  "kind": "milstolpe",
+  "context": "Danmark",
+  "statement": "Köpenhamns universitet: 1479",
+  "about": [
+   "nh-m0005"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "lex.dk: Københavns Universitet",
+  "source_url": "https://lex.dk/Københavns_Universitet",
+  "evidence": "Lex anger att universitetet invigdes 1 juni 1479.",
+  "correct_value": "",
+  "note": "Stiftelsebrevet (påvebullan) är från 1475.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0187",
+  "check_id": "MI06",
+  "kind": "milstolpe",
+  "context": "Danmark",
+  "statement": "Tycho Brahes Uraniborg: 1576",
+  "about": [
+   "nh-m0006"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "lex.dk: Tycho Brahe",
+  "source_url": "https://lex.dk/Tycho_Brahe",
+  "evidence": "Grundstenen till Uraniborg lades 8 augusti 1576.",
+  "correct_value": "",
+  "note": "Byggnaden stod färdig först 1580.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0188",
+  "check_id": "MI07",
+  "kind": "milstolpe",
+  "context": "Danmark",
+  "statement": "Rømer mäter ljusets hastighet: 1676",
+  "about": [
+   "nh-m0007"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "lex.dk: Ole Rømer",
+  "source_url": "https://lex.dk/Ole_Rømer",
+  "evidence": "Lex anger att Rømer gjorde upptäckten om ljusets ändliga hastighet i Paris 1675–1676.",
+  "correct_value": "",
+  "note": "Lex ger spannet 1675–1676; 1676 är året resultatet lades fram.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0189",
+  "check_id": "MI08",
+  "kind": "milstolpe",
+  "context": "Sverige",
+  "statement": "Linnés Systema Naturae: 1735",
+  "about": [
+   "nh-m0008"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Nationalencyklopedin: Systema naturae",
+  "source_url": "https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae",
+  "evidence": "NE anger att verket gavs ut i Nederländerna 1735.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0190",
+  "check_id": "MI09",
+  "kind": "milstolpe",
+  "context": "Sverige",
+  "statement": "Celsiusskalan: 1742",
+  "about": [
+   "nh-m0009"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Uppsala universitet: Anders Celsius",
+  "source_url": "https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius",
+  "evidence": "Uppsala universitet anger att Celsius konstruerade sin skala 1742.",
+  "correct_value": "",
+  "note": "Originalskalan var omvänd (100 vid fryspunkten, 0 vid kokpunkten). NE-artikeln gick inte att hämta.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0191",
+  "check_id": "MI10",
+  "kind": "milstolpe",
+  "context": "Sverige",
+  "statement": "Tryckfrihetsförordningen: 1766",
+  "about": [
+   "nh-m0010"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Riksarkivet: Tryckfrihetsförordningen 1766",
+  "source_url": "https://riksarkivet.se/resurser/tryckfrihetsforordningen-1766",
+  "evidence": "Riksarkivet beskriver 1766 års tryckfrihetsförordning, möjligen världens första, nu i Unescos världsminnesregister.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0192",
+  "check_id": "MI11",
+  "kind": "milstolpe",
+  "context": "Sverige",
+  "statement": "Justitieombudsmannen: 1809",
+  "about": [
+   "nh-m0011"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "JO: JO – i riksdagens tjänst (bok, jo.se)",
+  "source_url": "https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf",
+  "evidence": "JO:s egen skrift anger att ämbetet inrättades genom 1809 års regeringsform.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0193",
+  "check_id": "MI12",
+  "kind": "milstolpe",
+  "context": "Finland",
+  "statement": "Kalevala: 1835",
+  "about": [
+   "nh-m0012"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Kalevala",
+  "source_url": "https://snl.no/Kalevala",
+  "evidence": "SNL anger att första utgåvan av Kalevala kom ut 1835.",
+  "correct_value": "",
+  "note": "Utökade Nya Kalevala kom 1849 (ej kontrollerat här).",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0194",
+  "check_id": "MI13",
+  "kind": "milstolpe",
+  "context": "Sverige",
+  "statement": "Nobels dynamit: 1867",
+  "about": [
+   "nh-m0013"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Nobelprize.org: Alfred Nobel's life and work",
+  "source_url": "https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/",
+  "evidence": "Nobelstiftelsen anger att dynamiten uppfanns 1866 och patenterades året därpå, 1867.",
+  "correct_value": "",
+  "note": "1866 = uppfinning, 1867 = patent. 1867 håller om man menar patentet.",
+  "action": "Etikett ”(patent)”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0195",
+  "check_id": "MI14",
+  "kind": "milstolpe",
+  "context": "Norge",
+  "statement": "Nansen över Grönland: 1888",
+  "about": [
+   "nh-m0014"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Fridtjof Nansen",
+  "source_url": "https://snl.no/Fridtjof_Nansen",
+  "evidence": "SNL anger att Nansens Grönlandsexpedition gav sig av 2 maj 1888.",
+  "correct_value": "",
+  "note": "Expeditionen varade 1888–1889 (övervintring); själva korsningen skedde 1888.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0196",
+  "check_id": "MI15",
+  "kind": "milstolpe",
+  "context": "Sverige",
+  "statement": "Nobelpriset: 1901",
+  "about": [
+   "nh-m0015"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Nobelprize.org: Nobel Prize facts",
+  "source_url": "https://www.nobelprize.org/prizes/facts/nobel-prize-facts/",
+  "evidence": "Nobelprisen delades ut första gången 10 december 1901 i Stockholm och Kristiania.",
+  "correct_value": "",
+  "note": "Fredspriset delas ut i Norge.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0197",
+  "check_id": "MI16",
+  "kind": "milstolpe",
+  "context": "Finland",
+  "statement": "Kvinnlig rösträtt och valbarhet: 1906",
+  "about": [
+   "nh-m0016"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet",
+  "source_url": "https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html",
+  "evidence": "Statistikcentralen anger att finska kvinnor fick rösträtt 1906 genom en ny vallag, först i Europa.",
+  "correct_value": "",
+  "note": "Valbarheten bekräftas av Utbildningsstyrelsen (oph.fi, 'Finland får en modern lantdag'): kvinnor fick ställa upp i lantdagsvalet efter 1906 års reform.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0198",
+  "check_id": "MI17",
+  "kind": "milstolpe",
+  "context": "Norge",
+  "statement": "Amundsen på Sydpolen: 1911",
+  "about": [
+   "nh-m0017"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Roald Amundsen",
+  "source_url": "https://snl.no/Roald_Amundsen",
+  "evidence": "SNL anger att Amundsen och fyra män nådde Sydpolen 14 december 1911.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0199",
+  "check_id": "MI18",
+  "kind": "milstolpe",
+  "context": "Danmark",
+  "statement": "Bohrs atommodell: 1913",
+  "about": [
+   "nh-m0018"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "lex.dk: Niels Bohr",
+  "source_url": "https://lex.dk/Niels_Bohr",
+  "evidence": "Lex anger att Bohr i april 1913 fullbordade tre artiklar i Philosophical Magazine med atommodellen.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0200",
+  "check_id": "MI19",
+  "kind": "milstolpe",
+  "context": "Sápmi",
+  "statement": "Första samiska landsmötet: 1917",
+  "about": [
+   "nh-m0019"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: samenes nasjonaldag",
+  "source_url": "https://snl.no/samenes_nasjonaldag",
+  "evidence": "SNL beskriver mötet i Trondheim 6–9 februari 1917 som det första stora gränsöverskridande samiska politiska mötet.",
+  "correct_value": "",
+  "note": "SNL formulerar det som första stora gränsöverskridande samiska politiska möte.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0201",
+  "check_id": "MI20",
+  "kind": "milstolpe",
+  "context": "Sverige",
+  "statement": "Tetra Pak: 1952",
+  "about": [
+   "nh-m0020"
+  ],
+  "verdict": "omdiskuterad",
+  "source_title": "Tetra Pak: Heritage",
+  "source_url": "https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage",
+  "evidence": "Enligt Tetra Pak grundades bolaget 1951 och första fyllningsmaskinen levererades 1952 till mejeri i Lund.",
+  "correct_value": "",
+  "note": "1951 = bolaget AB Tetra Pak grundas; 1952 = första maskinen levererad. Patentår ej kontrollerat.",
+  "action": "Etikett ”första maskinen”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0202",
+  "check_id": "MI21",
+  "kind": "milstolpe",
+  "context": "Danmark",
+  "statement": "LEGO-klossen: 1958",
+  "about": [
+   "nh-m0021"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "LEGO: The stud and tube principle",
+  "source_url": "https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle",
+  "evidence": "LEGO lämnade in patentansökan för klossen 28 januari 1958.",
+  "correct_value": "",
+  "note": "Avser patentansökan, inte beviljat patent.",
+  "action": "Etikett ”(patentansökan)”.",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0203",
+  "check_id": "MI22",
+  "kind": "milstolpe",
+  "context": "Sverige",
+  "statement": "Pacemakern: 1958",
+  "about": [
+   "nh-m0022"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "IVA: Svenska innovationer – Pacemakern",
+  "source_url": "https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf",
+  "evidence": "IVA anger att första pacemakern opererades in 8 oktober 1958 (Elmqvist, Senning, Karolinska).",
+  "correct_value": "",
+  "note": "URL är IVA:s preproduction-server.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0204",
+  "check_id": "MI23",
+  "kind": "milstolpe",
+  "context": "Sverige",
+  "statement": "Trepunktsbältet: 1959",
+  "about": [
+   "nh-m0023"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Volvo Cars pressmeddelande: trepunktsbeltet fyller 60 år",
+  "source_url": "https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/",
+  "evidence": "Volvo anger att första bilen med trepunktsbälte levererades 13 augusti 1959.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0205",
+  "check_id": "MI24",
+  "kind": "milstolpe",
+  "context": "Norge",
+  "statement": "Ekofiskfyndet: 1969",
+  "about": [
+   "nh-m0024"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Store norske leksikon: Ekofisk",
+  "source_url": "https://snl.no/Ekofisk",
+  "evidence": "SNL anger att Ekofisk upptäcktes 25 oktober 1969 av Phillips Petroleum.",
+  "correct_value": "",
+  "note": "",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0206",
+  "check_id": "MI25",
+  "kind": "milstolpe",
+  "context": "Finland",
+  "statement": "Linux: 1991",
+  "about": [
+   "nh-m0025"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Computer History Museum: Linux",
+  "source_url": "https://www.computerhistory.org/revolution/personal-computers/17/307/1235",
+  "evidence": "Museet anger att Torvalds beskrev första Linuxversionen 1991 vid Helsingfors universitet.",
+  "correct_value": "",
+  "note": "Ej nordisk källa; SNL säger bara 'tidigt 1990-tal'.",
+  "action": "",
+  "checked": "2026-10-18"
+ },
+ {
+  "id": "nh-c0207",
+  "check_id": "MI26",
+  "kind": "milstolpe",
+  "context": "Sverige",
+  "statement": "Spotify: 2008",
+  "about": [
+   "nh-m0026"
+  ],
+  "verdict": "bekräftad",
+  "source_title": "Sveriges Radio",
+  "source_url": "https://www.sverigesradio.se/artikel/5667619",
+  "evidence": "Sveriges Radio anger att Spotify lanserades 7 oktober 2008.",
+  "correct_value": "",
+  "note": "Avser lansering; företaget grundades tidigare (2006, ej verifierat i nordisk källa).",
+  "action": "",
+  "checked": "2026-10-18"
+ }
+]

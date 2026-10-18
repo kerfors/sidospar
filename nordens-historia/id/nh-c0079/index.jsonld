@@ -1,0 +1,129 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0079/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-c0079",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-c0079",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0079",
+    "SV12"
+   ],
+   "text": "Period 'Folkungatid': 1250 – 1319",
+   "about": [
+    {
+     "@id": "nh:nh-p0032"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0079#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0079",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "NE anger att folkungaätten styrde Sverige 1250–1363 (Norge 1319–87), inte till 1319.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar",
+    "name": "Nationalencyklopedin – folkungar"
+   },
+   "prov:wasDerivedFrom": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar",
+   "schema:correction": "1250 – 1363",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Behållet; tillägg ”folkungaätten regerar 1250–1363”."
+   }
+  }
+ ]
+}

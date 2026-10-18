@@ -1,0 +1,197 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0037/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0037",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0037",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0037",
+   "name": "Suomusjärvikultur",
+   "skos:prefLabel": {
+    "sv": "Suomusjärvikultur"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "-8599/-4999",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-8599",
+    "crm:P82b_end_of_the_end": "-4999"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q33"
+   ],
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "description": "Mesolitisk jägarkultur efter isavsmältningen",
+   "skos:definition": {
+    "sv": "Mesolitisk jägarkultur efter isavsmältningen"
+   },
+   "skos:exactMatch": "wd:Q930351"
+  },
+  {
+   "@id": "nh:nh-c0089",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0089",
+    "FI01"
+   ],
+   "text": "Period 'Suomusjärvikultur': 8 900 f.Kr. – 5 100 f.Kr.",
+   "about": [
+    {
+     "@id": "nh:nh-p0037"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0089#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0089",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "Uppslagsverket placerar Suomusjärvikulturen i mesolitikum, 8600–5000 f.Kr.; fi.wikipedia anger ca 7500–5100 (på annat ställe 8300–5300) f.Kr.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+    "name": "Uppslagsverket Finland: förhistoria"
+   },
+   "prov:wasDerivedFrom": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "schema:correction": "ca 8600–5000 f.Kr. (Uppslagsverket)",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Ändrat till 8600–5000 f.Kr."
+   }
+  },
+  {
+   "@id": "nh:nh-c0090",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0090",
+    "FI02"
+   ],
+   "text": "Första bosättningen efter isen",
+   "about": [
+    {
+     "@id": "nh:nh-p0037"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0090#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0090",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "Uppslagsverket daterar den äldsta bosättningen till preboreal tid efter isavsmältningen och räknar Suomusjärvikulturen till mesolitikum, men Suomusjärvi-artikeln säger inte uttryckligen att den var den första.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+    "name": "Uppslagsverket Finland: förhistoria"
+   },
+   "prov:wasDerivedFrom": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Beskrivningen ändrad till ”mesolitisk jägarkultur efter isavsmältningen”."
+   }
+  }
+ ]
+}

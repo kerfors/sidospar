@@ -1,0 +1,143 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-e0003/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-e0003",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-e0003",
+   "@type": [
+    "crm:E5_Event",
+    "Event"
+   ],
+   "dcterms:identifier": "nh-e0003",
+   "name": "1658 Roskildefreden – Skånelandskapen och Bohuslän till Sverige",
+   "startDate": "1658",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1658"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q35",
+    "wd:Q20"
+   ],
+   "skos:exactMatch": "wd:Q212234"
+  },
+  {
+   "@id": "nh:nh-c0178",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0178",
+    "GE49"
+   ],
+   "text": "1658 Roskildefreden – Skånelandskapen och Bohuslän till Sverige",
+   "about": [
+    {
+     "@id": "nh:nh-e0003"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0178#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0178",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Roskildefreden 26 februari 1658 gav Sverige Skåne, Halland, Blekinge, Bornholm samt Bohus län och Trondhjems län.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660",
+    "name": "Tabet af Skåne i 1658-1660 – lex.dk"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660"
+  }
+ ]
+}

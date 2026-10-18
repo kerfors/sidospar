@@ -1,0 +1,256 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0045/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0045",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0045",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0045",
+   "name": "Storfurstendömet Finland",
+   "skos:prefLabel": {
+    "sv": "Storfurstendömet Finland"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1809/1917",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1809",
+    "crm:P82b_end_of_the_end": "1917"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q33"
+   ],
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "description": "Under Ryssland efter freden i Fredrikshamn; Borgå lantdag 1809; enkammarlantdag och kvinnlig rösträtt 1906",
+   "skos:definition": {
+    "sv": "Under Ryssland efter freden i Fredrikshamn; Borgå lantdag 1809; enkammarlantdag och kvinnlig rösträtt 1906"
+   },
+   "skos:exactMatch": "wd:Q62633"
+  },
+  {
+   "@id": "nh:nh-c0102",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0102",
+    "FI14"
+   ],
+   "text": "Period 'Storfurstendömet Finland': 1809 – 1917",
+   "about": [
+    {
+     "@id": "nh:nh-p0045"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0102#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0102",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SNL anger att Finland blev ett autonomt storfurstendöme under Ryssland efter 1809 och förblev det till 1917.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Finlands_historie",
+    "name": "Store norske leksikon: Finlands historie"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Finlands_historie"
+  },
+  {
+   "@id": "nh:nh-c0103",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0103",
+    "FI15"
+   ],
+   "text": "Under Ryssland efter freden i Fredrikshamn",
+   "about": [
+    {
+     "@id": "nh:nh-p0045"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0103#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0103",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Uppslagsverket anger att Sverige avträdde Finland till Ryssland i freden i Fredrikshamn i september 1809.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet",
+    "name": "Uppslagsverket Finland: Finlands historia – 1800-talet"
+   },
+   "prov:wasDerivedFrom": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet"
+  },
+  {
+   "@id": "nh:nh-c0104",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0104",
+    "FI16"
+   ],
+   "text": "Borgå lantdag 1809",
+   "about": [
+    {
+     "@id": "nh:nh-p0045"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0104#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0104",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Uppslagsverket anger att Alexander I öppnade lantdagen i Borgå 28 mars 1809.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet",
+    "name": "Uppslagsverket Finland: Finlands historia – 1800-talet"
+   },
+   "prov:wasDerivedFrom": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet"
+  },
+  {
+   "@id": "nh:nh-c0105",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0105",
+    "FI17"
+   ],
+   "text": "enkammarlantdag och kvinnlig rösträtt 1906",
+   "about": [
+    {
+     "@id": "nh:nh-p0045"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0105#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0105",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Riksdagen anger att ståndslantdagen ersattes av en enkammarlantdag 1906 och att både män och kvinnor fick rösträtt och valbarhet.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf",
+    "name": "Riksdagen: Riksdagens historia (broschyr)"
+   },
+   "prov:wasDerivedFrom": "https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf"
+  }
+ ]
+}

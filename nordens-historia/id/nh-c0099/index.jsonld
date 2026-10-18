@@ -1,0 +1,132 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0099/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-c0099",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-c0099",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0099",
+    "FI11"
+   ],
+   "text": "Period 'Korstågstid': 1025 – 1319",
+   "about": [
+    {
+     "@id": "nh:nh-p0043"
+    },
+    {
+     "@id": "nh:nh-p0044"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0099#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0099",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "Uppslagsverket anger korstågstiden till 1025–1150 i västra Finland och till ca 1300 i östra Finland; fi.wikipedia ca 1025/1050–1250/1300.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+    "name": "Uppslagsverket Finland: förhistoria"
+   },
+   "prov:wasDerivedFrom": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "schema:correction": "1025 – ca 1150 (väst) / ca 1300 (öst)",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Slut ändrat till 1300; not om väst/öst; nytt block 1300–1319."
+   }
+  }
+ ]
+}

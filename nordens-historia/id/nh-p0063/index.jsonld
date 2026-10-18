@@ -1,0 +1,230 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0063/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0063",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0063",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0063",
+   "name": "Kalmarunionen",
+   "skos:prefLabel": {
+    "sv": "Kalmarunionen"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1397/1523",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1397",
+    "crm:P82b_end_of_the_end": "1523"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20",
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "dcterms:spatial": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20",
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "description": "Margareta och Erik av Pommern; Sverige bryter sig ur 1523",
+   "skos:definition": {
+    "sv": "Margareta och Erik av Pommern; Sverige bryter sig ur 1523"
+   },
+   "skos:exactMatch": "wd:Q62623"
+  },
+  {
+   "@id": "nh:nh-c0150",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0150",
+    "GE21"
+   ],
+   "text": "Period 'Kalmarunionen': 1397 – 1523",
+   "about": [
+    {
+     "@id": "nh:nh-p0063"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0150#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0150",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Lex.dk daterar Kalmarunionen traditionellt till 1397–1523.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Kalmarunionen",
+    "name": "Lex.dk: Kalmarunionen"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Kalmarunionen"
+  },
+  {
+   "@id": "nh:nh-c0151",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0151",
+    "GE22"
+   ],
+   "text": "Margareta och Erik av Pommern",
+   "about": [
+    {
+     "@id": "nh:nh-p0063"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0151#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0151",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Lex.dk: Margareta formade unionen; Erik av Pommern kröntes i Kalmar 1397 och regerade efter hennes död 1412 till 1439.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Kalmarunionen",
+    "name": "Lex.dk: Kalmarunionen"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Kalmarunionen"
+  },
+  {
+   "@id": "nh:nh-c0152",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0152",
+    "GE23"
+   ],
+   "text": "Sverige bryter sig ur 1523",
+   "about": [
+    {
+     "@id": "nh:nh-p0063"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0152#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0152",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Lex.dk: Gustav Vasa utropades till kung 1523, vilket slutgiltigt avslutade unionen.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Kalmarunionen",
+    "name": "Lex.dk: Kalmarunionen"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Kalmarunionen"
+  }
+ ]
+}

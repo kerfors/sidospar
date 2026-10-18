@@ -1,0 +1,222 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0027/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0027",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0027",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0027",
+   "name": "Olja och välfärd",
+   "skos:prefLabel": {
+    "sv": "Olja och välfärd"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1945/2026",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1945",
+    "crm:P82b_end_of_the_end": "2026"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q20"
+   ],
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "description": "Ekofisk 1969; nej till EG/EU 1972 och 1994",
+   "skos:definition": {
+    "sv": "Ekofisk 1969; nej till EG/EU 1972 och 1994"
+   },
+   "skos:closeMatch": "wd:Q10602292"
+  },
+  {
+   "@id": "nh:nh-c0065",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0065",
+    "NO23"
+   ],
+   "text": "Period 'Olja och välfärd': 1945 – 2026",
+   "about": [
+    {
+     "@id": "nh:nh-p0027"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0065#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0065",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SNL låter efterkrigstiden börja 1945 med välfärdsstatens uppbyggnad och oljefynd från slutet av 1960-talet.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Norges_historie",
+    "name": "Store norske leksikon: Norges historie"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Norges_historie"
+  },
+  {
+   "@id": "nh:nh-c0066",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0066",
+    "NO24"
+   ],
+   "text": "Ekofisk 1969",
+   "about": [
+    {
+     "@id": "nh:nh-p0027"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0066#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0066",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Ekofiskfältet upptäcktes 25 oktober 1969; produktionen startade 1971.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Ekofisk",
+    "name": "Store norske leksikon: Ekofisk"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Ekofisk"
+  },
+  {
+   "@id": "nh:nh-c0067",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0067",
+    "NO25"
+   ],
+   "text": "nej till EG/EU 1972 och 1994",
+   "about": [
+    {
+     "@id": "nh:nh-p0027"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0067#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0067",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Folkomröstningarna 1972 (53,5 % nej till EF) och 1994 (52,2 % nej till EU) slutade båda med nej-majoritet.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/EU-kampen",
+    "name": "Store norske leksikon: EU-kampen"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/EU-kampen"
+  }
+ ]
+}

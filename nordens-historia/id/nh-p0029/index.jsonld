@@ -1,0 +1,188 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0029/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0029",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0029",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0029",
+   "name": "Bondestenålder",
+   "skos:prefLabel": {
+    "sv": "Bondestenålder"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "-3999/-1699",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-3999",
+    "crm:P82b_end_of_the_end": "-1699"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q34"
+   ],
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "description": "Trattbägar-, gropkeramisk och stridsyxekultur",
+   "skos:definition": {
+    "sv": "Trattbägar-, gropkeramisk och stridsyxekultur"
+   },
+   "skos:closeMatch": "wd:Q1275904"
+  },
+  {
+   "@id": "nh:nh-c0071",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0071",
+    "SV04"
+   ],
+   "text": "Period 'Bondestenålder': 4 000 f.Kr. – 1 700 f.Kr.",
+   "about": [
+    {
+     "@id": "nh:nh-p0029"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0071#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0071",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Historiska museets tidslinje anger neolitikum 4 000–1 700 f.Kr., följt av bronsålder från 1 700 f.Kr.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://historiska.se/utforska-historien/tidsaldrar/",
+    "name": "Statens historiska museer – Tidsåldrar"
+   },
+   "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/"
+  },
+  {
+   "@id": "nh:nh-c0072",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0072",
+    "SV05"
+   ],
+   "text": "Trattbägar-, gropkeramisk och stridsyxekultur",
+   "about": [
+    {
+     "@id": "nh:nh-p0029"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0072#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0072",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "NE nämner trattbägarkulturen som tidigaste jordbrukskultur samt gropkeramisk kultur (ca 3200–2300 f.Kr.) och stridsyxekultur.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/neolitikum",
+    "name": "Nationalencyklopedin – neolitikum"
+   },
+   "prov:wasDerivedFrom": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/neolitikum"
+  }
+ ]
+}

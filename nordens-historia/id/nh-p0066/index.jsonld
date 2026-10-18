@@ -1,0 +1,266 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0066/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0066",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0066",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0066",
+   "name": "Äldre Vasatiden",
+   "skos:prefLabel": {
+    "sv": "Äldre Vasatiden"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1523/1611",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1523",
+    "crm:P82b_end_of_the_end": "1611"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "dcterms:spatial": [
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "description": "Gustav Vasa; reformationen inleds 1527; Uppsala möte 1593",
+   "skos:definition": {
+    "sv": "Gustav Vasa; reformationen inleds 1527; Uppsala möte 1593"
+   },
+   "skos:exactMatch": "wd:Q3290518"
+  },
+  {
+   "@id": "nh:nh-c0159",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0159",
+    "GE30"
+   ],
+   "text": "Period 'Vasatiden': 1523 – 1611",
+   "about": [
+    {
+     "@id": "nh:nh-p0066"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0159#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0159",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "NE avgränsar Vasatiden 1521–1654 och delar den i äldre/yngre Vasatid med 1611 som skiljelinje.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden",
+    "name": "Vasatiden – Nationalencyklopedin"
+   },
+   "prov:wasDerivedFrom": "https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Titeln ändrad till ”Äldre Vasatiden”."
+   }
+  },
+  {
+   "@id": "nh:nh-c0160",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0160",
+    "GE31"
+   ],
+   "text": "Gustav Vasa",
+   "about": [
+    {
+     "@id": "nh:nh-p0066"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0160#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0160",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Gustav Vasa regerade 1523–1560 och räknas som grundaren av den svenska nationalstaten.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/Gustav_1_Vasa",
+    "name": "Gustav 1 Vasa – Store norske leksikon"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/Gustav_1_Vasa"
+  },
+  {
+   "@id": "nh:nh-c0161",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0161",
+    "GE32"
+   ],
+   "text": "reformationen 1527",
+   "about": [
+    {
+     "@id": "nh:nh-p0066"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0161#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0161",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "Västerås riksdag 1527 inledde kyrkoreduktionen och bröt biskoparnas makt, men reformationen var en process.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag",
+    "name": "Västerås riksdag – Nationalencyklopedin"
+   },
+   "prov:wasDerivedFrom": "https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Ändrat till ”reformationen inleds 1527”."
+   }
+  },
+  {
+   "@id": "nh:nh-c0162",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0162",
+    "GE33"
+   ],
+   "text": "Uppsala möte 1593",
+   "about": [
+    {
+     "@id": "nh:nh-p0066"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0162#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0162",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Vid Uppsala möte 1593 antogs Augsburgska bekännelsen och kyrkan blev officiellt evangelisk-luthersk.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.svenskakyrkan.se/kristentro/bekannelseskrifter",
+    "name": "Bekännelseskrifter – Svenska kyrkan"
+   },
+   "prov:wasDerivedFrom": "https://www.svenskakyrkan.se/kristentro/bekannelseskrifter"
+  }
+ ]
+}

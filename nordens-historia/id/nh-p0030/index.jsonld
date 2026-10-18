@@ -1,0 +1,227 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0030/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0030",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0030",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0030",
+   "name": "Vikingatid",
+   "skos:prefLabel": {
+    "sv": "Vikingatid"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "0793/1050",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0793",
+    "crm:P82b_end_of_the_end": "1050"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q34"
+   ],
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "description": "Birka; Olof Skötkonung",
+   "skos:definition": {
+    "sv": "Birka; Olof Skötkonung"
+   },
+   "skos:exactMatch": "wd:Q10685826"
+  },
+  {
+   "@id": "nh:nh-c0073",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0073",
+    "SV06"
+   ],
+   "text": "Period 'Vikingatid': 793 – 1066",
+   "about": [
+    {
+     "@id": "nh:nh-p0030"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0073#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0073",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "Historiska museet anger vikingatid 793–1050; NE anger ca 800–1050. Ingen svensk källa använder 1066 som slut.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://historiska.se/utforska-historien/tidsaldrar/",
+    "name": "Statens historiska museer – Tidsåldrar"
+   },
+   "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/",
+   "schema:correction": "793 – 1050",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Slut ändrat till 1050."
+   }
+  },
+  {
+   "@id": "nh:nh-c0074",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0074",
+    "SV07"
+   ],
+   "text": "Birka",
+   "about": [
+    {
+     "@id": "nh:nh-p0030"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0074#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0074",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "NE beskriver Birka som vikingatida handelsplats på Björkö i Mälaren.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/birka",
+    "name": "Nationalencyklopedin – Birka"
+   },
+   "prov:wasDerivedFrom": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/birka"
+  },
+  {
+   "@id": "nh:nh-c0075",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0075",
+    "SV08"
+   ],
+   "text": "Olof Skötkonung",
+   "about": [
+    {
+     "@id": "nh:nh-p0030"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0075#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0075",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "SBL: född senast tidigt 980-tal, död troligen vintern 1021–22; NE: kung från 990-talet.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749",
+    "name": "Svenskt biografiskt lexikon – Olof \"skötkonung\""
+   },
+   "prov:wasDerivedFrom": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749"
+  }
+ ]
+}

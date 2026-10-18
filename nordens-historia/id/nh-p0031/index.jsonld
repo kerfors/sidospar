@@ -1,0 +1,226 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0031/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0031",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0031",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0031",
+   "name": "Riket växer fram",
+   "skos:prefLabel": {
+    "sv": "Riket växer fram"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1050/1250",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1050",
+    "crm:P82b_end_of_the_end": "1250"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q34"
+   ],
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "description": "Erikska och sverkerska ätterna; ärkesäte i Uppsala 1164",
+   "skos:definition": {
+    "sv": "Erikska och sverkerska ätterna; ärkesäte i Uppsala 1164"
+   }
+  },
+  {
+   "@id": "nh:nh-c0076",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0076",
+    "SV09"
+   ],
+   "text": "Period 'Riket växer fram': 1066 – 1250",
+   "about": [
+    {
+     "@id": "nh:nh-p0031"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0076#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0076",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "omdiskuterad"
+   },
+   "reviewBody": "NE talar om att riksenheten stabiliserades under äldre medeltid ca 1000–1300; Historiska museet låter medeltiden börja 1050.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt",
+    "name": "Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt"
+   },
+   "prov:wasDerivedFrom": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt",
+   "schema:correction": "ca 1000/1050 – 1250/1300",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Start ändrat till 1050."
+   }
+  },
+  {
+   "@id": "nh:nh-c0077",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0077",
+    "SV10"
+   ],
+   "text": "Erikska och sverkerska ätterna",
+   "about": [
+    {
+     "@id": "nh:nh-p0031"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0077#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0077",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "NE: sverkerska ätten kämpade under flera generationer om kungavärdigheten med Erik den heliges ättlingar (1100–1200-tal).",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten",
+    "name": "Nationalencyklopedin – sverkerska ätten"
+   },
+   "prov:wasDerivedFrom": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten"
+  },
+  {
+   "@id": "nh:nh-c0078",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0078",
+    "SV11"
+   ],
+   "text": "ärkesäte i Uppsala 1164",
+   "about": [
+    {
+     "@id": "nh:nh-p0031"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0078#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0078",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Stefan blev 1164 förste ärkebiskop i Uppsala då Sverige blev egen kyrkoprovins.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd",
+    "name": "Svenska kyrkan – Ärkebiskopslängd"
+   },
+   "prov:wasDerivedFrom": "https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd"
+  }
+ ]
+}

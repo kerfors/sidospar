@@ -1,0 +1,192 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "wd": "http://www.wikidata.org/entity/",
+  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:definition": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:spatial": {
+   "@type": "@id"
+  },
+  "crm:P7_took_place_at": {
+   "@type": "@id"
+  },
+  "crm:P82a_begin_of_the_begin": {
+   "@type": "xsd:gYear"
+  },
+  "crm:P82b_end_of_the_end": {
+   "@type": "xsd:gYear"
+  },
+  "startDate": {
+   "@type": "xsd:gYear"
+  },
+  "endDate": {
+   "@type": "xsd:gYear"
+  },
+  "about": {
+   "@type": "@id"
+  },
+  "itemReviewed": {
+   "@type": "@id"
+  },
+  "citation": {
+   "@type": "@id"
+  },
+  "isBasedOn": {
+   "@type": "@id"
+  },
+  "license": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  },
+  "prov:wasGeneratedBy": {
+   "@type": "@id"
+  },
+  "prov:wasDerivedFrom": {
+   "@type": "@id"
+  },
+  "prov:wasAssociatedWith": {
+   "@type": "@id"
+  },
+  "prov:actedOnBehalfOf": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0065/",
+   "@type": "WebPage",
+   "mainEntity": "nh:nh-p0065",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:nh-p0065",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "nh-p0065",
+   "name": "Danmark–Norge under enväldet",
+   "skos:prefLabel": {
+    "sv": "Danmark–Norge under enväldet"
+   },
+   "skos:inScheme": "nh:#perioder",
+   "temporalCoverage": "1660/1814",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1660",
+    "crm:P82b_end_of_the_end": "1814"
+   },
+   "crm:P7_took_place_at": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20"
+   ],
+   "dcterms:spatial": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20"
+   ],
+   "description": "Kongeloven 1665",
+   "skos:definition": {
+    "sv": "Kongeloven 1665"
+   },
+   "skos:closeMatch": "wd:Q62651"
+  },
+  {
+   "@id": "nh:nh-c0157",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0157",
+    "GE28"
+   ],
+   "text": "Period 'Danmark–Norge under enväldet': 1660 – 1814",
+   "about": [
+    {
+     "@id": "nh:nh-p0065"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0157#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0157",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Enväldet infördes i Danmark–Norge 1660 och upphörde för Norges del vid unionsupplösningen 1814.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://snl.no/enevoldstida",
+    "name": "Enevoldstida – Store norske leksikon"
+   },
+   "prov:wasDerivedFrom": "https://snl.no/enevoldstida"
+  },
+  {
+   "@id": "nh:nh-c0158",
+   "@type": "Claim",
+   "dcterms:identifier": [
+    "nh-c0158",
+    "GE29"
+   ],
+   "text": "Kongeloven 1665",
+   "about": [
+    {
+     "@id": "nh:nh-p0065"
+    }
+   ]
+  },
+  {
+   "@id": "nh:nh-c0158#granskning",
+   "@type": [
+    "ClaimReview",
+    "prov:Entity"
+   ],
+   "itemReviewed": "nh:nh-c0158",
+   "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "bekräftad"
+   },
+   "reviewBody": "Kongeloven är daterad 14 november 1665.",
+   "datePublished": "2026-10-18",
+   "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
+   "citation": {
+    "@id": "https://lex.dk/Kongeloven",
+    "name": "Kongeloven – lex.dk"
+   },
+   "prov:wasDerivedFrom": "https://lex.dk/Kongeloven"
+  }
+ ]
+}

@@ -2,6 +2,13 @@
 
 Personliga projekt vid sidan av arbetet. [Kerstin Forsberg](https://kerfors.github.io/)
 
+## Nordens historia: en tidslinje
+
+Hur skulle Chart Origins affisch Timeline of World History se ut för Norden? En kolumn per land och för Sápmi, med unionerna som gemensamma block. Varje uppgift kontrollerad mot nordiska uppslagsverk, oktober 2026.
+
+- [Nordens historia – tidslinjen](nordens-historia/)
+- [Nordens historia – källäget](nordens-historia/kallor.html), 207 uppgifter med källa per uppgift
+
 ## Beredskapssjukhus på Kongahälla
 
 Kunde Kongahällagymnasiet göras om till beredskapssjukhus, med syrgasuttag bakom väggpanelerna? Ett rykte från 1970-talet, prövat mot öppna webbkällor och Riksarkivets MCP-tjänst, oktober 2026.

@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -113,6 +129,38 @@
    "description": "Kunglös tid 1332–40",
    "skos:definition": {
     "sv": "Kunglös tid 1332–40"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0013"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0011"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0012#def-012",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-012",
+   "skos:prefLabel": {
+    "sv": "Strid och rikets upplösning enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0012",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1241",
+    "crm:P82b_end_of_the_end": "1340"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Danmarks_historie_i_middelalderen",
+   "prov:wasDerivedFrom": "nh:nh-c0031#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: Strid og rigsopløsning 1241–1340"
    }
   },
   {

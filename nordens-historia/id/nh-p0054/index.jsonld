@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -113,7 +129,33 @@
    "description": "Sameting: Norge 1989, Sverige 1993, Finland 1996 (delegation från 1973)",
    "skos:definition": {
     "sv": "Sameting: Norge 1989, Sverige 1993, Finland 1996 (delegation från 1973)"
-   }
+   },
+   "time:intervalMetBy": [
+    "nh:nh-p0053"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0054#def-051",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-051",
+   "skos:prefLabel": {
+    "sv": "Samisk organisering enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0054",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1917",
+    "crm:P82b_end_of_the_end": "2026"
+   },
+   "dcterms:spatial": [
+    "wd:Q62132"
+   ],
+   "dcterms:source": "https://snl.no/samisk_organisering_i_Norge",
+   "prov:wasDerivedFrom": "nh:nh-c0128#granskning"
   },
   {
    "@id": "nh:nh-c0128",

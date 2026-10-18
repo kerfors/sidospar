@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -121,7 +137,33 @@
    "description": "Sameting: Norge 1989, Sverige 1993, Finland 1996 (delegation från 1973)",
    "skos:definition": {
     "sv": "Sameting: Norge 1989, Sverige 1993, Finland 1996 (delegation från 1973)"
-   }
+   },
+   "time:intervalMetBy": [
+    "nh:nh-p0053"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0054#def-051",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-051",
+   "skos:prefLabel": {
+    "sv": "Samisk organisering enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0054",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1917",
+    "crm:P82b_end_of_the_end": "2026"
+   },
+   "dcterms:spatial": [
+    "wd:Q62132"
+   ],
+   "dcterms:source": "https://snl.no/samisk_organisering_i_Norge",
+   "prov:wasDerivedFrom": "nh:nh-c0128#granskning"
   },
   {
    "@id": "nh:nh-c0128",
@@ -230,9 +272,14 @@
 <dt>Tid</dt><dd>1917 – 2026 &nbsp;<code>1917/2026</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q62132">Sápmi</a></dd>
 <dt>Wikidata</dt><dd><em>ingen matchning</em></dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0053/">Gränser och nybyggen</a></dd><dt>Under perioden</dt><dd><a href="../nh-m0019/">Första samiska landsmötet</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0054">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1917 – 2026</td><td><code>1917/2026</code></td><td>affischens eget val</td><td></td></tr><tr id="def-051"><td><a href="https://snl.no/samisk_organisering_i_Norge">Store norske leksikon</a></td><td>1917 – 2026</td><td><code>1917/2026</code></td><td>samma</td><td><a href="../nh-c0128/">nh-c0128</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0128/">nh-c0128</a></td><td>Period &#x27;Samisk organisering&#x27;: 1917 – 2026</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/samisk_organisering_i_Norge">Store norske leksikon: samisk organisering i Norge</a></td></tr><tr><td><a href="../nh-c0129/">nh-c0129</a></td><td>Sameting: Finland 1973/1996, Norge 1989, Sverige 1993</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://samediggi.fi/wp-content/uploads/2016/07/saamelaisetsuomi.pdf">Saamelaiskäräjät: Saamelaiset Suomessa (samediggi.fi)</a></td></tr></tbody></table></div>
 

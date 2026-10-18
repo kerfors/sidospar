@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -122,7 +138,39 @@
    "skos:definition": {
     "sv": "Rösen vid kusten; Sammallahdenmäki"
    },
-   "skos:closeMatch": "wd:Q11761"
+   "skos:closeMatch": "wd:Q11761",
+   "time:intervalMeets": [
+    "nh:nh-p0041"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0039"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0040#def-038",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-038",
+   "skos:prefLabel": {
+    "sv": "Bronsålder enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:exactMatch": "nh:nh-p0040",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-1599",
+    "crm:P82b_end_of_the_end": "-0499"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "prov:wasDerivedFrom": "nh:nh-c0093#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: bronsåldern i Finland 1600–500 f.Kr."
+   }
   },
   {
    "@id": "nh:nh-c0093",
@@ -266,9 +314,14 @@
 <dt>Tid</dt><dd>1600 f.Kr. – 500 f.Kr. &nbsp;<code>-1599/-0499</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q33">Finland</a></dd>
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q11761">Q11761</a> Bronze Age (närliggande)</dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0039/">Båtyxe- och Kiukaiskultur</a></dd><dt>Följs av</dt><dd><a href="../nh-p0041/">Äldre järnålder</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0040">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1600 f.Kr. – 500 f.Kr.</td><td><code>-1599/-0499</code></td><td>affischens eget val</td><td></td></tr><tr id="def-038"><td><a href="https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria">Uppslagsverket Finland</a><br><span style="color:#6b7682">bronsåldern i Finland 1600–500 f.Kr.</span></td><td>1600 f.Kr. – 500 f.Kr.</td><td><code>-1599/-0499</code></td><td>samma</td><td><a href="../nh-c0093/">nh-c0093</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0093/">nh-c0093</a></td><td>Period &#x27;Bronsålder&#x27;: 1 500 f.Kr. – 500 f.Kr.</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria">Uppslagsverket Finland: förhistoria</a></td></tr><tr><td><a href="../nh-c0094/">nh-c0094</a></td><td>Rösen vid kusten</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria">Uppslagsverket Finland: förhistoria</a></td></tr><tr><td><a href="../nh-c0095/">nh-c0095</a></td><td>Sammallahdenmäki</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki">Wikipedia (en): Sammallahdenmäki</a></td></tr></tbody></table></div>
 

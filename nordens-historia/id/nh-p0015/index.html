@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -122,7 +138,38 @@
    "skos:definition": {
     "sv": "Grundloven 1849; Slesvig, Holsten och Lauenburg förloras 1864"
    },
-   "skos:closeMatch": "wd:Q11964717"
+   "skos:closeMatch": "wd:Q11964717",
+   "time:intervalMeets": [
+    "nh:nh-p0016"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0014"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0015#def-015",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-015",
+   "skos:prefLabel": {
+    "sv": "Grundlov och 1864 enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:closeMatch": "nh:nh-p0015",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1849"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Danmarks_forfatning",
+   "prov:wasDerivedFrom": "nh:nh-c0036#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: konstitutionell monarki från 1849"
+   }
   },
   {
    "@id": "nh:nh-c0036",
@@ -272,9 +319,14 @@
 <dt>Tid</dt><dd>1849 – 1914 &nbsp;<code>1849/1914</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q35">Danmark</a></dd>
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q11964717">Q11964717</a> history of Denmark (1848-1901) (närliggande)</dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0014/">Enväldets sista decennier</a></dd><dt>Följs av</dt><dd><a href="../nh-p0016/">Världskrigens tid</a></dd><dt>Under perioden</dt><dd><a href="../nh-m0018/">Bohrs atommodell</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0015">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1849 – 1914</td><td><code>1849/1914</code></td><td>affischens eget val</td><td></td></tr><tr id="def-015"><td><a href="https://lex.dk/Danmarks_forfatning">Lex (Den Store Danske)</a><br><span style="color:#6b7682">konstitutionell monarki från 1849</span></td><td>1849 – ?</td><td><code>1849/..</code></td><td>avviker</td><td><a href="../nh-c0036/">nh-c0036</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0036/">nh-c0036</a></td><td>Period &#x27;Konstitutionell monarki&#x27;: 1849 – 1945</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://lex.dk/Danmarks_forfatning">Lex: Danmarks forfatning / periodintroduktioner</a></td></tr><tr><td><a href="../nh-c0037/">nh-c0037</a></td><td>Grundloven 1849</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://lex.dk/Danmarks_forfatning">Lex: Danmarks forfatning</a></td></tr><tr><td><a href="../nh-c0038/">nh-c0038</a></td><td>Slesvig förloras 1864</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://lex.dk/Krigen_i_1864">Lex: Krigen i 1864</a></td></tr></tbody></table></div>
 

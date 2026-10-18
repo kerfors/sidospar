@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -123,7 +139,13 @@
    "description": "Magnus Erikssons landslag; digerdöden 1350; Albrekt av Mecklenburg 1364–89",
    "skos:definition": {
     "sv": "Magnus Erikssons landslag; digerdöden 1350; Albrekt av Mecklenburg 1364–89"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0063"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0060"
+   ]
   },
   {
    "@id": "nh:nh-c0145",
@@ -300,9 +322,11 @@
 <dt>Tid</dt><dd>1343 – 1397 &nbsp;<code>1343/1397</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q34">Sverige</a>, <a href="https://www.wikidata.org/wiki/Q33">Finland</a></dd>
 <dt>Wikidata</dt><dd><em>ingen matchning</em></dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0060/">Magnus Eriksson: Sverige och Norge</a></dd><dt>Följs av</dt><dd><a href="../nh-p0063/">Kalmarunionen</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0061">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0145/">nh-c0145</a></td><td>Period &#x27;Sverige med Finland&#x27;: 1343 – 1397</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://snl.no/Magnus_7._Eriksson">Store norske leksikon: Magnus 7. Eriksson</a></td></tr><tr><td><a href="../nh-c0146/">nh-c0146</a></td><td>Magnus Erikssons landslag</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Magnus_7._Eriksson">Store norske leksikon: Magnus 7. Eriksson</a></td></tr><tr><td><a href="../nh-c0147/">nh-c0147</a></td><td>digerdöden 1350</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf">Läkartidningen 2003 (artikel om digerdöden)</a></td></tr><tr><td><a href="../nh-c0148/">nh-c0148</a></td><td>Albrekt av Mecklenburg 1364–89</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://lex.dk/Albrecht_af_Mecklenburg">Lex.dk: Albrecht af Mecklenburg</a></td></tr></tbody></table></div>
 

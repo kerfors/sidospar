@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -124,7 +140,38 @@
    "skos:definition": {
     "sv": "Gustav III:s statskupp 1772; finska kriget 1808–09"
    },
-   "skos:exactMatch": "wd:Q3300409"
+   "skos:exactMatch": "wd:Q3300409",
+   "time:intervalMeets": [
+    "nh:nh-p0033",
+    "nh:nh-p0045"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0068"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0069#def-065",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-065",
+   "skos:prefLabel": {
+    "sv": "Gustavianska tiden enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:exactMatch": "nh:nh-p0069",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1772",
+    "crm:P82b_end_of_the_end": "1809"
+   },
+   "dcterms:spatial": [
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden",
+   "prov:wasDerivedFrom": "nh:nh-c0170#granskning"
   },
   {
    "@id": "nh:nh-c0170",
@@ -263,9 +310,14 @@
 <dt>Tid</dt><dd>1772 – 1809 &nbsp;<code>1772/1809</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q34">Sverige</a>, <a href="https://www.wikidata.org/wiki/Q33">Finland</a></dd>
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q3300409">Q3300409</a> history of Sweden from 1772 through 1809 (samma som)</dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0068/">Frihetstiden</a></dd><dt>Följs av</dt><dd><a href="../nh-p0033/">Nytt statsskick: 1809 års RF</a>, <a href="../nh-p0045/">Storfurstendömet Finland</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0069">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1772 – 1809</td><td><code>1772/1809</code></td><td>affischens eget val</td><td></td></tr><tr id="def-065"><td><a href="https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden">Nationalencyklopedin</a></td><td>1772 – 1809</td><td><code>1772/1809</code></td><td>samma</td><td><a href="../nh-c0170/">nh-c0170</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0170/">nh-c0170</a></td><td>Period &#x27;Gustavianska tiden&#x27;: 1772 – 1809</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden">Gustavianska tiden – Nationalencyklopedin</a></td></tr><tr><td><a href="../nh-c0171/">nh-c0171</a></td><td>Gustav III:s statskupp 1772</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Gustav_3.">Gustav 3 – Store norske leksikon</a></td></tr><tr><td><a href="../nh-c0172/">nh-c0172</a></td><td>finska kriget 1808–09</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809">Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)</a></td></tr></tbody></table></div>
 

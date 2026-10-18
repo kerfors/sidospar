@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -113,7 +129,40 @@
     "wd:Q189",
     "wd:Q35",
     "wd:Q20"
+   ],
+   "time:intervalMeets": [
+    "nh:nh-p0063"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0003",
+    "nh:nh-p0013",
+    "nh:nh-p0025"
    ]
+  },
+  {
+   "@id": "nh:nh-p0062#def-058",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-058",
+   "skos:prefLabel": {
+    "sv": "Danmark–Norge enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0062",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1380",
+    "crm:P82b_end_of_the_end": "1397"
+   },
+   "dcterms:spatial": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://lex.dk/Danmark-Norge",
+   "prov:wasDerivedFrom": "nh:nh-c0149#granskning"
   },
   {
    "@id": "nh:nh-c0149",

@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -114,7 +130,38 @@
    "skos:definition": {
     "sv": "Hedeby; Jellingestenen c. 965; Knut den store, kung i England 1016 och Danmark c. 1018"
    },
-   "skos:exactMatch": "wd:Q24528168"
+   "skos:exactMatch": "wd:Q24528168",
+   "time:intervalMeets": [
+    "nh:nh-p0010"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0059"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0009#def-009",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-009",
+   "skos:prefLabel": {
+    "sv": "Vikingatid enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:closeMatch": "nh:nh-p0009",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0800"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Danmarks_historie_i_vikingetiden",
+   "prov:wasDerivedFrom": "nh:nh-c0022#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: vikingatiden i Danmark ca 800 – mitten av 1000-talet. Ungefärligt årtal: start, slut"
+   }
   },
   {
    "@id": "nh:nh-c0022",

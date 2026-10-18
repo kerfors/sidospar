@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -122,7 +138,36 @@
    "skos:definition": {
     "sv": "Under Ryssland efter freden i Fredrikshamn; Borgå lantdag 1809; enkammarlantdag och kvinnlig rösträtt 1906"
    },
-   "skos:exactMatch": "wd:Q62633"
+   "skos:exactMatch": "wd:Q62633",
+   "time:intervalMeets": [
+    "nh:nh-p0046"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0069"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0045#def-042",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-042",
+   "skos:prefLabel": {
+    "sv": "Storfurstendömet Finland enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0045",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1809",
+    "crm:P82b_end_of_the_end": "1917"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://snl.no/Finlands_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0102#granskning"
   },
   {
    "@id": "nh:nh-c0102",
@@ -295,9 +340,14 @@
 <dt>Tid</dt><dd>1809 – 1917 &nbsp;<code>1809/1917</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q33">Finland</a></dd>
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q62633">Q62633</a> Grand Duchy of Finland (samma som)</dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0069/">Gustavianska tiden</a></dd><dt>Följs av</dt><dd><a href="../nh-p0046/">Självständigt Finland</a></dd><dt>Under perioden</dt><dd><a href="../nh-m0012/">Kalevala</a>, <a href="../nh-m0016/">Kvinnlig rösträtt och valbarhet</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0045">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1809 – 1917</td><td><code>1809/1917</code></td><td>affischens eget val</td><td></td></tr><tr id="def-042"><td><a href="https://snl.no/Finlands_historie">Store norske leksikon</a></td><td>1809 – 1917</td><td><code>1809/1917</code></td><td>samma</td><td><a href="../nh-c0102/">nh-c0102</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0102/">nh-c0102</a></td><td>Period &#x27;Storfurstendömet Finland&#x27;: 1809 – 1917</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Finlands_historie">Store norske leksikon: Finlands historie</a></td></tr><tr><td><a href="../nh-c0103/">nh-c0103</a></td><td>Under Ryssland efter freden i Fredrikshamn</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet">Uppslagsverket Finland: Finlands historia – 1800-talet</a></td></tr><tr><td><a href="../nh-c0104/">nh-c0104</a></td><td>Borgå lantdag 1809</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet">Uppslagsverket Finland: Finlands historia – 1800-talet</a></td></tr><tr><td><a href="../nh-c0105/">nh-c0105</a></td><td>enkammarlantdag och kvinnlig rösträtt 1906</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf">Riksdagen: Riksdagens historia (broschyr)</a></td></tr></tbody></table></div>
 

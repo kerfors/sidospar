@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -121,7 +137,36 @@
    "description": "Haakon VII; kvinnlig rösträtt 1913",
    "skos:definition": {
     "sv": "Haakon VII; kvinnlig rösträtt 1913"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0027"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0070"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0026#def-025",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-025",
+   "skos:prefLabel": {
+    "sv": "Självständigt kungarike enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0026",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1905",
+    "crm:P82b_end_of_the_end": "1945"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/Norges_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0062#granskning"
   },
   {
    "@id": "nh:nh-c0062",
@@ -260,9 +305,14 @@
 <dt>Tid</dt><dd>1905 – 1945 &nbsp;<code>1905/1945</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q20">Norge</a></dd>
 <dt>Wikidata</dt><dd><em>ingen matchning</em></dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0070/">Unionen Sverige–Norge</a></dd><dt>Följs av</dt><dd><a href="../nh-p0027/">Olja och välfärd</a></dd><dt>Under perioden</dt><dd><a href="../nh-e0004/">1905 Unionsupplösningen</a>, <a href="../nh-e0005/">1940–45 Tysk ockupation</a>, <a href="../nh-m0017/">Amundsen på Sydpolen</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0026">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1905 – 1945</td><td><code>1905/1945</code></td><td>affischens eget val</td><td></td></tr><tr id="def-025"><td><a href="https://snl.no/Norges_historie">Store norske leksikon</a></td><td>1905 – 1945</td><td><code>1905/1945</code></td><td>samma</td><td><a href="../nh-c0062/">nh-c0062</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0062/">nh-c0062</a></td><td>Period &#x27;Självständigt kungarike&#x27;: 1905 – 1945</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Norges_historie">Store norske leksikon: Norges historie</a></td></tr><tr><td><a href="../nh-c0063/">nh-c0063</a></td><td>Haakon VII</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Haakon_7.">Store norske leksikon: Haakon 7.</a></td></tr><tr><td><a href="../nh-c0064/">nh-c0064</a></td><td>kvinnlig rösträtt 1913</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/stemmerett_for_kvinner_i_Norge">Store norske leksikon: stemmerett for kvinner i Norge</a></td></tr></tbody></table></div>
 

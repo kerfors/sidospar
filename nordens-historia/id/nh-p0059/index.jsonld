@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -118,7 +134,43 @@
    "skos:definition": {
     "sv": "Gamla Uppsala, Vendel och Valsgärde"
    },
-   "skos:closeMatch": "wd:Q1275225"
+   "skos:closeMatch": "wd:Q1275225",
+   "time:intervalMeets": [
+    "nh:nh-p0009",
+    "nh:nh-p0021",
+    "nh:nh-p0030"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0058"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0059#def-056",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-056",
+   "skos:prefLabel": {
+    "sv": "Vendeltid / merovingertid enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0059",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0550",
+    "crm:P82b_end_of_the_end": "0800"
+   },
+   "dcterms:spatial": [
+    "wd:Q35",
+    "wd:Q20",
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://snl.no/merovingertid",
+   "prov:wasDerivedFrom": "nh:nh-c0141#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: merovingertid ca 550–800. Ungefärligt årtal: start, slut"
+   }
   },
   {
    "@id": "nh:nh-c0141",

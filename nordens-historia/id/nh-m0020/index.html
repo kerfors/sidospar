@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -65,6 +66,21 @@
   "license": {
    "@type": "@id"
   },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
+  },
   "mainEntity": {
    "@type": "@id"
   },
@@ -112,7 +128,10 @@
    ],
    "about": {
     "@id": "wd:Q4050869"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0036"
+   ]
   },
   {
    "@id": "nh:nh-c0201",
@@ -187,9 +206,11 @@
 <dt>Tid</dt><dd>1952 &nbsp;<code>1952</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q34">Sverige</a></dd>
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q4050869">Q4050869</a> Tetra Classic (närliggande)</dd>
+<dt>Inträffar under</dt><dd><a href="../nh-p0036/">Välfärdsstat</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-m0020">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0201/">nh-c0201</a></td><td>Tetra Pak: 1952</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage">Tetra Pak: Heritage</a></td></tr></tbody></table></div>
 

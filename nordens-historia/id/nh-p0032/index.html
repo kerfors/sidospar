@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -122,7 +138,39 @@
    "skos:definition": {
     "sv": "Folkungaätten regerar 1250–1363; Birger jarl; Stockholm nämns 1252"
    },
-   "skos:closeMatch": "wd:Q10497488"
+   "skos:closeMatch": "wd:Q10497488",
+   "time:intervalMeets": [
+    "nh:nh-p0060"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0031"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0032#def-031",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-031",
+   "skos:prefLabel": {
+    "sv": "Folkungatid enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:closeMatch": "nh:nh-p0032",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1250",
+    "crm:P82b_end_of_the_end": "1363"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar",
+   "prov:wasDerivedFrom": "nh:nh-c0079#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: folkungaätten styr Sverige 1250–1363"
+   }
   },
   {
    "@id": "nh:nh-c0079",
@@ -266,9 +314,14 @@
 <dt>Tid</dt><dd>1250 – 1319 &nbsp;<code>1250/1319</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q34">Sverige</a></dd>
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q10497488">Q10497488</a> Folkunga Dynasty (närliggande)</dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0031/">Riket växer fram</a></dd><dt>Följs av</dt><dd><a href="../nh-p0060/">Magnus Eriksson: Sverige och Norge</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0032">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1250 – 1319</td><td><code>1250/1319</code></td><td>affischens eget val</td><td></td></tr><tr id="def-031"><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar">Nationalencyklopedin</a><br><span style="color:#6b7682">folkungaätten styr Sverige 1250–1363</span></td><td>1250 – 1363</td><td><code>1250/1363</code></td><td>avviker</td><td><a href="../nh-c0079/">nh-c0079</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0079/">nh-c0079</a></td><td>Period &#x27;Folkungatid&#x27;: 1250 – 1319</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar">Nationalencyklopedin – folkungar</a></td></tr><tr><td><a href="../nh-c0080/">nh-c0080</a></td><td>Birger jarl</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238">Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)</a></td></tr><tr><td><a href="../nh-c0081/">nh-c0081</a></td><td>Stockholm nämns 1252</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.britannica.com/place/Stockholm">Encyclopaedia Britannica – Stockholm</a></td></tr></tbody></table></div>
 

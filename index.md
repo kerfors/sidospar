@@ -9,6 +9,7 @@ Hur skulle Chart Origins affisch Timeline of World History se ut för Norden? En
 - [Nordens historia – tidslinjen](nordens-historia/)
 - [Nordens historia – källäget](nordens-historia/kallor.html), 207 uppgifter med källa per uppgift
 - [Nordens historia – identifierare och länkade data](nordens-historia/id/), varje period, händelse, milstolpe och uppgift med beständig identifierare, JSON-LD och länkar till Wikidata
+- [The linked data behind the poster](nordens-historia/linked-data.html), modellen och tankarna bakom den, på engelska
 
 ## Beredskapssjukhus på Kongahälla
 

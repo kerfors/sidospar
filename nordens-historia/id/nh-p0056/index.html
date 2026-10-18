@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -126,7 +142,38 @@
    "skos:definition": {
     "sv": "Hjortspringbåten"
    },
-   "skos:closeMatch": "wd:Q893307"
+   "skos:closeMatch": "wd:Q893307",
+   "time:intervalMeets": [
+    "nh:nh-p0057"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0055"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0056#def-053",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-053",
+   "skos:prefLabel": {
+    "sv": "Förromersk järnålder enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0056",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-0499",
+    "crm:P82b_end_of_the_end": "0001"
+   },
+   "dcterms:spatial": [
+    "wd:Q35",
+    "wd:Q20",
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://snl.no/jernalderen",
+   "prov:wasDerivedFrom": "nh:nh-c0133#granskning"
   },
   {
    "@id": "nh:nh-c0133",
@@ -231,9 +278,14 @@
 <dt>Tid</dt><dd>500 f.Kr. – 1 &nbsp;<code>-0499/0001</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q35">Danmark</a>, <a href="https://www.wikidata.org/wiki/Q20">Norge</a>, <a href="https://www.wikidata.org/wiki/Q34">Sverige</a></dd>
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q893307">Q893307</a> Pre-Roman Iron Age (närliggande)</dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0055/">Nordisk bronsålder</a></dd><dt>Följs av</dt><dd><a href="../nh-p0057/">Romersk järnålder</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0056">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>500 f.Kr. – 1</td><td><code>-0499/0001</code></td><td>affischens eget val</td><td></td></tr><tr id="def-053"><td><a href="https://snl.no/jernalderen">Store norske leksikon</a></td><td>500 f.Kr. – 1</td><td><code>-0499/0001</code></td><td>samma</td><td><a href="../nh-c0133/">nh-c0133</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0133/">nh-c0133</a></td><td>Period &#x27;Förromersk järnålder&#x27;: 500 f.Kr. – 1</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/jernalderen">Store norske leksikon: jernalderen</a></td></tr><tr><td><a href="../nh-c0134/">nh-c0134</a></td><td>Hjortspringbåten</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/">Videnskab.dk: Mystiske krigere angreb dansk ø for 2.300 år siden</a></td></tr></tbody></table></div>
 

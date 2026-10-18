@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -116,7 +132,40 @@
    "skos:definition": {
     "sv": "Gustav Vasa; reformationen inleds 1527; Uppsala möte 1593"
    },
-   "skos:exactMatch": "wd:Q3290518"
+   "skos:exactMatch": "wd:Q3290518",
+   "time:intervalMeets": [
+    "nh:nh-p0067"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0063"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0066#def-062",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-062",
+   "skos:prefLabel": {
+    "sv": "Äldre Vasatiden enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:closeMatch": "nh:nh-p0066",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1521",
+    "crm:P82b_end_of_the_end": "1611"
+   },
+   "dcterms:spatial": [
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden",
+   "prov:wasDerivedFrom": "nh:nh-c0159#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: äldre Vasatiden 1521–1611 (Vasatiden 1521–1654)"
+   }
   },
   {
    "@id": "nh:nh-c0159",

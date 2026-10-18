@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -65,6 +66,21 @@
   "license": {
    "@type": "@id"
   },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
+  },
   "mainEntity": {
    "@type": "@id"
   },
@@ -112,7 +128,10 @@
    ],
    "about": {
     "@id": "wd:Q372713"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0036"
+   ]
   },
   {
    "@id": "nh:nh-c0203",
@@ -183,9 +202,11 @@
 <dt>Tid</dt><dd>1958 &nbsp;<code>1958</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q34">Sverige</a></dd>
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q372713">Q372713</a> artificial pacemaker (närliggande)</dd>
+<dt>Inträffar under</dt><dd><a href="../nh-p0036/">Välfärdsstat</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-m0022">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0203/">nh-c0203</a></td><td>Pacemakern: 1958</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf">IVA: Svenska innovationer – Pacemakern</a></td></tr></tbody></table></div>
 

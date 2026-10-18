@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -121,7 +137,13 @@
    "description": "Neutralitet under andra världskriget",
    "skos:definition": {
     "sv": "Neutralitet under andra världskriget"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0036"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0034"
+   ]
   },
   {
    "@id": "nh:nh-c0083",
@@ -234,9 +256,11 @@
 <dt>Tid</dt><dd>1921 – 1945 &nbsp;<code>1921/1945</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q34">Sverige</a></dd>
 <dt>Wikidata</dt><dd><em>ingen matchning</em></dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0034/">Demokratins genombrott</a></dd><dt>Följs av</dt><dd><a href="../nh-p0036/">Välfärdsstat</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0035">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0083/">nh-c0083</a></td><td>Period &#x27;Demokratins genombrott&#x27;: 1905 – 1945</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott">Nationalencyklopedin – Sverige, historia: Demokratins genombrott</a></td></tr><tr><td><a href="../nh-c0085/">nh-c0085</a></td><td>neutralitet under andra världskriget</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/sverige-under-andra-v%C3%A4rldskriget">Nationalencyklopedin – Sverige under andra världskriget</a></td></tr></tbody></table></div>
 

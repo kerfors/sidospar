@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -114,7 +130,38 @@
    "skos:definition": {
     "sv": "Grundloven 1849; Slesvig, Holsten och Lauenburg förloras 1864"
    },
-   "skos:closeMatch": "wd:Q11964717"
+   "skos:closeMatch": "wd:Q11964717",
+   "time:intervalMeets": [
+    "nh:nh-p0016"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0014"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0015#def-015",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-015",
+   "skos:prefLabel": {
+    "sv": "Grundlov och 1864 enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:closeMatch": "nh:nh-p0015",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1849"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Danmarks_forfatning",
+   "prov:wasDerivedFrom": "nh:nh-c0036#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: konstitutionell monarki från 1849"
+   }
   },
   {
    "@id": "nh:nh-c0036",

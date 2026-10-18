@@ -33,6 +33,7 @@ CONTEXT = {
     "prov": "http://www.w3.org/ns/prov#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "wd": "http://www.wikidata.org/entity/",
+    "time": "http://www.w3.org/2006/time#",
     "nh": ID,
     "skos:prefLabel": {"@container": "@language"},
     "skos:definition": {"@container": "@language"},
@@ -50,6 +51,11 @@ CONTEXT = {
     "citation": {"@type": "@id"},
     "isBasedOn": {"@type": "@id"},
     "license": {"@type": "@id"},
+    "time:intervalMeets": {"@type": "@id"},
+    "time:intervalMetBy": {"@type": "@id"},
+    "crm:P10_falls_within": {"@type": "@id"},
+    "dcterms:source": {"@type": "@id"},
+    "skos:scopeNote": {"@container": "@language"},
     "mainEntity": {"@type": "@id"},
     "isPartOf": {"@type": "@id"},
     "url": {"@type": "@id"},
@@ -79,7 +85,53 @@ def load():
     claims = json.loads((HERE / "data" / "claims.json").read_text(encoding="utf-8"))
     wpath = HERE / "data" / "wikidata.json"
     wd = json.loads(wpath.read_text(encoding="utf-8")) if wpath.exists() else {}
-    return items, claims, wd
+    defs = json.loads((HERE / "data" / "definitions.json").read_text(encoding="utf-8"))["definitions"]
+    return items, claims, wd, defs
+
+
+# ---------------------------------------------------------------- derived relations
+def relations(items):
+    """Derived from the poster layout, not stored:
+    meets   - period a ends the year period b starts, and they share a column
+    within  - an event or milestone lies inside a period in the same column"""
+    periods = items["periods"]
+    meets, met_by = {}, {}
+    for a in periods:
+        for b in periods:
+            if a is not b and a["end"] == b["start"] and set(a["columns"]) & set(b["columns"]):
+                meets.setdefault(a["id"], []).append(b["id"])
+                met_by.setdefault(b["id"], []).append(a["id"])
+    within, contains = {}, {}
+    for kind in ("events", "milestones"):
+        for e in items[kind]:
+            cols = e.get("columns") or [e["column"]]
+            for p in periods:
+                last = p["end"] == max(q["end"] for q in periods)
+                inside = p["start"] <= e["year"] < p["end"] or (last and e["year"] == p["end"])
+                if inside and set(cols) & set(p["columns"]):
+                    within.setdefault(e["id"], []).append(p["id"])
+                    contains.setdefault(p["id"], []).append(e["id"])
+    return {"meets": meets, "met_by": met_by, "within": within, "contains": contains}
+
+
+# ---------------------------------------------------------------- sources as schemes
+PUBLICATIONS = [
+    ("snl.no", "snl", "Store norske leksikon"),
+    ("lex.dk", "lex", "Lex (Den Store Danske)"),
+    ("uppslagsverket.fi", "uppslagsverket", "Uppslagsverket Finland"),
+    ("ne.se", "ne", "Nationalencyklopedin"),
+    ("historiska.se", "historiska", "Statens historiska museer"),
+    ("riksdagen.se", "riksdagen", "Sveriges riksdag"),
+    ("natmus.dk", "natmus", "Nationalmuseet"),
+]
+
+
+def publication(url):
+    host = url.split("/")[2] if url.startswith("http") else ""
+    for dom, key, name in PUBLICATIONS:
+        if host == dom or host.endswith("." + dom):
+            return key, name, f"https://{dom}/"
+    raise ValueError(f"no publication for source {url}")
 
 
 def place_ref(col, wd):
@@ -100,7 +152,8 @@ def wd_links(item_id, kind, wd):
 
 
 # ---------------------------------------------------------------- nodes
-def period_node(p, wd):
+def period_node(p, wd, rel=None):
+    rel = rel or {"meets": {}, "met_by": {}}
     places = [x for x in (place_ref(c, wd) for c in p["columns"]) if x]
     node = {
         "@id": "nh:" + p["id"],
@@ -122,10 +175,58 @@ def period_node(p, wd):
         node["description"] = p["description"]
         node["skos:definition"] = {"sv": p["description"]}
     node.update(wd_links(p["id"], "period", wd))
+    if rel["meets"].get(p["id"]):
+        node["time:intervalMeets"] = ["nh:" + x for x in rel["meets"][p["id"]]]
+    if rel["met_by"].get(p["id"]):
+        node["time:intervalMetBy"] = ["nh:" + x for x in rel["met_by"][p["id"]]]
     return node
 
 
-def event_node(e, wd, kind):
+def definition_node(d, p, wd):
+    """A source's definition of the period, PeriodO style: its own concept in the
+    source's scheme, matched to the poster's period."""
+    key, name, _ = publication(d["source_url"])
+    same = d["start"] == p["start"] and d["end"] == p["end"]
+    span = {"@type": "crm:E52_Time-Span"}
+    if d["start"] is not None:
+        span["crm:P82a_begin_of_the_begin"] = gyear(d["start"])
+    if d["end"] is not None:
+        span["crm:P82b_end_of_the_end"] = gyear(d["end"])
+    node = {
+        "@id": f"nh:{p['id']}#{d['id']}",
+        "@type": ["crm:E4_Period", "skos:Concept"],
+        "dcterms:identifier": d["id"],
+        "skos:prefLabel": {"sv": f"{p['label']} enligt {name}"},
+        "skos:inScheme": f"nh:#kalla-{key}",
+        ("skos:exactMatch" if same else "skos:closeMatch"): "nh:" + p["id"],
+        "crm:P4_has_time-span": span,
+        "dcterms:spatial": [x for x in (place_ref(c, wd) for c in p["columns"]) if x],
+        "dcterms:source": d["source_url"],
+        "prov:wasDerivedFrom": f"nh:{d['claim']}#granskning",
+    }
+    notes = []
+    if d["as_stated"]:
+        notes.append("Källans formulering: " + d["as_stated"])
+    if d["approx_start"] or d["approx_end"]:
+        notes.append("Ungefärligt årtal: " + ", ".join(
+            x for x, f in (("start", d["approx_start"]), ("slut", d["approx_end"])) if f))
+    if notes:
+        node["skos:scopeNote"] = {"sv": ". ".join(notes)}
+    return node
+
+
+def scheme_nodes(defs):
+    seen = {}
+    for d in defs:
+        key, name, home = publication(d["source_url"])
+        seen[key] = {"@id": f"nh:#kalla-{key}", "@type": "skos:ConceptScheme",
+                     "skos:prefLabel": {"sv": f"Periodindelning enligt {name}"},
+                     "url": home, "isPartOf": "nh:#dataset"}
+    return list(seen.values())
+
+
+def event_node(e, wd, kind, rel=None):
+    rel = rel or {"within": {}}
     cols = e["columns"] if kind == "event" else [e["column"]]
     places = [x for x in (place_ref(c, wd) for c in cols) if x]
     node = {
@@ -139,6 +240,8 @@ def event_node(e, wd, kind):
         "crm:P7_took_place_at": places,
     }
     node.update(wd_links(e["id"], kind, wd))
+    if rel["within"].get(e["id"]):
+        node["crm:P10_falls_within"] = ["nh:" + x for x in rel["within"][e["id"]]]
     return node
 
 
@@ -185,7 +288,10 @@ def shared_nodes(wd, columns):
          "distribution": {"@type": "DataDownload", "encodingFormat": "application/ld+json",
                           "contentUrl": {"@id": ID + "index.jsonld"}}},
         {"@id": "nh:#perioder", "@type": "skos:ConceptScheme",
-         "skos:prefLabel": {"sv": "Affischens periodindelning"}, "isPartOf": "nh:#dataset"},
+         "skos:prefLabel": {"sv": "Affischens periodindelning"}, "isPartOf": "nh:#dataset",
+         "dcterms:creator": {"@type": "Person", "name": "Kerstin Forsberg"},
+         "skos:scopeNote": {"sv": "Affischens egna periodgränser, valda för att blocken ska gå att läsa. "
+                                  "Källornas gränser finns som egna definitioner i separata scheman och är matchade mot affischens perioder."}},
         {"@id": "nh:#kontroll-" + CHECK_DATE, "@type": "prov:Activity",
          "name": "Källkontroll av affischens uppgifter",
          "prov:startedAtTime": {"@value": CHECK_DATE, "@type": "xsd:date"},
@@ -277,7 +383,49 @@ def claims_table(cl, show_about=False, by_id=None):
             + "".join(rows) + "</tbody></table></div>")
 
 
-def item_page(item, kind, node, cl, wd, places):
+def link_list(ids, by_id):
+    return ", ".join(f'<a href="../{i}/">{escape(by_id[i]["label"])}</a>' for i in ids)
+
+
+def related_html(item, kind, rel, by_id):
+    rows = []
+    if kind == "period":
+        if rel["met_by"].get(item["id"]):
+            rows.append(("Föregås av", link_list(rel["met_by"][item["id"]], by_id)))
+        if rel["meets"].get(item["id"]):
+            rows.append(("Följs av", link_list(rel["meets"][item["id"]], by_id)))
+        if rel["contains"].get(item["id"]):
+            rows.append(("Under perioden", link_list(rel["contains"][item["id"]], by_id)))
+    elif rel["within"].get(item["id"]):
+        rows.append(("Inträffar under", link_list(rel["within"][item["id"]], by_id)))
+    return "".join(f"<dt>{a}</dt><dd>{b}</dd>" for a, b in rows)
+
+
+def definitions_html(item, defs):
+    if not defs:
+        return ""
+    rows = []
+    rows.append(f'<tr><td><strong>Affischen</strong></td><td>{escape(yr(item["start"]))} – {escape(yr(item["end"]))}</td>'
+                f'<td><code>{gyear(item["start"])}/{gyear(item["end"])}</code></td><td>affischens eget val</td><td></td></tr>')
+    for d in defs:
+        _, name, _ = publication(d["source_url"])
+        s = (("c. " if d["approx_start"] else "") + yr(d["start"]) if d["start"] is not None else "?")
+        e = (("c. " if d["approx_end"] else "") + yr(d["end"]) if d["end"] is not None else "?")
+        iso = "/".join(gyear(v) if v is not None else ".." for v in (d["start"], d["end"]))
+        same = d["start"] == item["start"] and d["end"] == item["end"]
+        rel = "samma" if same else "avviker"
+        stated = f'<br><span style="color:#6b7682">{escape(d["as_stated"])}</span>' if d["as_stated"] else ""
+        rows.append(f'<tr id="{escape(d["id"])}"><td><a href="{escape(d["source_url"])}">{escape(name)}</a>{stated}</td>'
+                    f'<td>{escape(s)} – {escape(e)}</td><td><code>{iso}</code></td><td>{rel}</td>'
+                    f'<td><a href="../{d["claim"]}/">{d["claim"]}</a></td></tr>')
+    return ('<h2>Källornas gränser</h2>\n<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, '
+            'matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>\n'
+            '<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody>'
+            + "".join(rows) + "</tbody></table></div>\n")
+
+
+def item_page(item, kind, node, cl, wd, places, rel=None, by_id=None, defs=(), def_nodes=()):
+    rel = rel or {"meets": {}, "met_by": {}, "within": {}, "contains": {}}
     iri = ID + item["id"]
     if kind == "period":
         when = f"{yr(item['start'])} – {yr(item['end'])}"
@@ -294,15 +442,17 @@ def item_page(item, kind, node, cl, wd, places):
 <dt>Tid</dt><dd>{escape(when)} &nbsp;{iso}</dd>
 <dt>Plats</dt><dd>{places}</dd>
 <dt>Wikidata</dt><dd>{wd_html(item['id'], wd)}</dd>
+{related_html(item, kind, rel, by_id) if by_id else ""}
 <dt>På affischen</dt><dd><a href="../../#{item['id']}">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+{definitions_html(item, defs)}
 <h2>Kontrollerade uppgifter</h2>
 {claims_table(cl)}
 """
     doc = {"@context": CONTEXT, "@graph": [
         {"@id": iri + "/", "@type": "WebPage", "mainEntity": "nh:" + item["id"], "isPartOf": "nh:#dataset"},
-        node] + [n for c in cl for n in claim_nodes(c)]}
+        node] + list(def_nodes) + [n for c in cl for n in claim_nodes(c)]}
     return page(item["label"], body, doc, 2), doc
 
 
@@ -338,7 +488,8 @@ REGISTER_INTRO = """<h1>Identifierare</h1>
 <a href="../kallor.html">källäget</a> har en egen beständig identifierare under
 <code>{id}</code>. Identifieraren går att slå upp: den ger en sida för människor med
 inbäddad JSON-LD, och en <code>index.jsonld</code> bredvid för maskiner. Hela datamängden finns i
-<a href="index.jsonld">index.jsonld</a>. Den är licensierad under
+<a href="index.jsonld">index.jsonld</a>. Tankarna bakom modellen beskrivs på engelska i
+<a href="../linked-data.html">The linked data behind the poster</a>. Datamängden är licensierad under
 <a href="https://creativecommons.org/licenses/by/4.0/deed.sv">CC BY 4.0</a>.</p>
 
 <h2>Hur identifierarna är gjorda</h2>
@@ -361,6 +512,14 @@ tidsspann med <code>crm:P82a</code>/<code>P82b</code> och plats med <code>crm:P7
 (<code>skos:inScheme</code>), med <code>dcterms:spatial</code>. Periodgränser är ett val av en viss källa, inte ett faktum.</li>
 <li><strong>schema.org</strong> för det läsbara: <code>name</code>, <code>temporalCoverage</code>, och för
 källkontrollen <code>Claim</code> och <code>ClaimReview</code> med utlåtande, belägg och källa.</li>
+<li><strong>Källornas gränser</strong> i PeriodO:s anda: varje källas periodgräns är en egen definition i ett
+schema för den källan (Store norske leksikon, Lex, Uppslagsverket Finland, NE …), matchad mot affischens period med
+<code>skos:exactMatch</code> när gränserna sammanfaller och <code>skos:closeMatch</code> när de avviker, och härledd
+(<code>prov:wasDerivedFrom</code>) från källkontrollens granskning. Ungefärliga årtal är markerade, och källans
+formulering finns i <code>skos:scopeNote</code>.</li>
+<li><strong>OWL-Time och CIDOC-CRM</strong> för relationerna mellan posterna, härledda ur affischen:
+<code>time:intervalMeets</code> när en period slutar samma år som nästa börjar i samma kolumn, och
+<code>crm:P10_falls_within</code> för händelser och milstolpar som inträffar under en period.</li>
 <li><strong>PROV-O</strong> för proveniensen: varje granskning är genererad av källkontrollen den {date}, utförd av
 AI-agenter för Kerstin Forsbergs räkning, och härledd från sin källa.</li>
 <li><strong>Wikidata</strong> som länk utåt. Perioder och händelser länkas med <code>skos:exactMatch</code> eller
@@ -403,7 +562,11 @@ def write(path, text):
 
 
 def main():
-    items, claims, wd = load()
+    items, claims, wd, defs = load()
+    rel = relations(items)
+    defs_by_period = {}
+    for d in defs:
+        defs_by_period.setdefault(d["period"], []).append(d)
     out = HERE / "id"
     by_id = {}
     kinds = [("period", items["periods"]), ("event", items["events"]), ("milestone", items["milestones"])]
@@ -415,18 +578,21 @@ def main():
         for a in c["about"]:
             claims_by_item.setdefault(a, []).append(c)
 
-    graph = shared_nodes(wd, items["columns"])
+    graph = shared_nodes(wd, items["columns"]) + scheme_nodes(defs)
     sections = []
     for kind, lst in kinds:
         rows = []
         for x in lst:
-            node = period_node(x, wd) if kind == "period" else event_node(x, wd, kind)
+            node = period_node(x, wd, rel) if kind == "period" else event_node(x, wd, kind, rel)
+            dnodes = [definition_node(d, x, wd) for d in defs_by_period.get(x["id"], [])]
             graph.append(node)
+            graph += dnodes
             cols = x.get("columns") or [x["column"]]
             places = ", ".join(
                 f'<a href="https://www.wikidata.org/wiki/{wd["place:" + c]["qid"]}">{escape(c)}</a>'
                 if wd.get("place:" + c, {}).get("qid") else escape(c) for c in cols)
-            html, doc = item_page(x, kind, node, claims_by_item.get(x["id"], []), wd, places)
+            html, doc = item_page(x, kind, node, claims_by_item.get(x["id"], []), wd, places,
+                                  rel, by_id, defs_by_period.get(x["id"], []), dnodes)
             write(out / x["id"] / "index.html", html)
             write(out / x["id"] / "index.jsonld", json.dumps(doc, ensure_ascii=False, indent=1))
             when = f"{yr(x['start'])} – {yr(x['end'])}" if kind == "period" else yr(x["year"])
@@ -448,7 +614,10 @@ def main():
         {"@id": ID, "@type": "WebPage", "mainEntity": "nh:#dataset"}] + graph}
     write(out / "index.jsonld", json.dumps(full, ensure_ascii=False, indent=1))
     write(out / "index.html", register_page(sections, full))
-    print(f"wrote id/: {len(by_id)} items, {len(claims)} claims")
+    import ld_page
+    ld_page.build(out / "index.jsonld", HERE / "linked-data.html")
+    print(f"wrote id/: {len(by_id)} items, {len(claims)} claims, {len(defs)} source definitions, "
+          f"{sum(map(len, rel['meets'].values()))} meets, {sum(map(len, rel['within'].values()))} falls-within")
 
 
 if __name__ == "__main__":

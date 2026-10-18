@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -118,7 +134,40 @@
    "skos:definition": {
     "sv": "Kongeloven 1665"
    },
-   "skos:closeMatch": "wd:Q62651"
+   "skos:closeMatch": "wd:Q62651",
+   "time:intervalMeets": [
+    "nh:nh-p0004",
+    "nh:nh-p0014",
+    "nh:nh-p0070"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0064"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0065#def-061",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-061",
+   "skos:prefLabel": {
+    "sv": "Danmark–Norge under enväldet enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0065",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1660",
+    "crm:P82b_end_of_the_end": "1814"
+   },
+   "dcterms:spatial": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/enevoldstida",
+   "prov:wasDerivedFrom": "nh:nh-c0157#granskning"
   },
   {
    "@id": "nh:nh-c0157",

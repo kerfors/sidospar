@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -113,6 +129,38 @@
    "description": "Allmän och lika rösträtt 1918–21",
    "skos:definition": {
     "sv": "Allmän och lika rösträtt 1918–21"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0035"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0070"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0034#def-033",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-033",
+   "skos:prefLabel": {
+    "sv": "Demokratins genombrott enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:closeMatch": "nh:nh-p0034",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1900",
+    "crm:P82b_end_of_the_end": "1920"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott",
+   "prov:wasDerivedFrom": "nh:nh-c0083#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: demokratins genombrott 1900–1920. Ungefärligt årtal: start"
    }
   },
   {

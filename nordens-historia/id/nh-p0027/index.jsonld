@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -114,7 +130,33 @@
    "skos:definition": {
     "sv": "Ekofisk 1969; nej till EG/EU 1972 och 1994"
    },
-   "skos:closeMatch": "wd:Q10602292"
+   "skos:closeMatch": "wd:Q10602292",
+   "time:intervalMetBy": [
+    "nh:nh-p0026"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0027#def-026",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-026",
+   "skos:prefLabel": {
+    "sv": "Olja och välfärd enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0027",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1945",
+    "crm:P82b_end_of_the_end": "2026"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/Norges_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0065#granskning"
   },
   {
    "@id": "nh:nh-c0065",

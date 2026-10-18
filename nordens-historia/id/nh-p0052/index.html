@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -121,6 +137,38 @@
    "description": "Lappmarksplakatet 1673",
    "skos:definition": {
     "sv": "Lappmarksplakatet 1673"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0053"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0051"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0052#def-049",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-049",
+   "skos:prefLabel": {
+    "sv": "Skatt, handel och mission enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0052",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1550",
+    "crm:P82b_end_of_the_end": "1826"
+   },
+   "dcterms:spatial": [
+    "wd:Q62132"
+   ],
+   "dcterms:source": "https://snl.no/samenes_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0124#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: tidigmodern tid 1550–1826 (SNL:s periodindelning av samisk historia)"
    }
   },
   {
@@ -230,9 +278,14 @@
 <dt>Tid</dt><dd>1550 – 1751 &nbsp;<code>1550/1751</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q62132">Sápmi</a></dd>
 <dt>Wikidata</dt><dd><em>ingen matchning</em></dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0051/">Siidasamhällen</a></dd><dt>Följs av</dt><dd><a href="../nh-p0053/">Gränser och nybyggen</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0052">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1550 – 1751</td><td><code>1550/1751</code></td><td>affischens eget val</td><td></td></tr><tr id="def-049"><td><a href="https://snl.no/samenes_historie">Store norske leksikon</a><br><span style="color:#6b7682">tidigmodern tid 1550–1826 (SNL:s periodindelning av samisk historia)</span></td><td>1550 – 1826</td><td><code>1550/1826</code></td><td>avviker</td><td><a href="../nh-c0124/">nh-c0124</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0124/">nh-c0124</a></td><td>Period &#x27;Kolonisering och kristnande&#x27;: 1550 – 1751</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://snl.no/samenes_historie">Store norske leksikon: samenes historie</a></td></tr><tr><td><a href="../nh-c0125/">nh-c0125</a></td><td>Lappmarksplakatet 1673</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://prod.sou.gov.se/contentassets/1287a65ca66445d5ba910dcb62c4d8d0/pm-1-en-historisk-konturteckning.pdf">Regeringskansliet N 2021:02 PM 1 (utdrag ur SOU 2005:116), historisk konturteckning</a></td></tr></tbody></table></div>
 

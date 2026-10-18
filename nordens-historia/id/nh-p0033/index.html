@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -117,7 +133,39 @@
    ],
    "dcterms:spatial": [
     "wd:Q34"
+   ],
+   "time:intervalMeets": [
+    "nh:nh-p0070"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0069"
    ]
+  },
+  {
+   "@id": "nh:nh-p0033#def-032",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-032",
+   "skos:prefLabel": {
+    "sv": "Nytt statsskick: 1809 års RF enligt Sveriges riksdag"
+   },
+   "skos:inScheme": "nh:#kalla-riksdagen",
+   "skos:closeMatch": "nh:nh-p0033",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1809",
+    "crm:P82b_end_of_the_end": "1974"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/",
+   "prov:wasDerivedFrom": "nh:nh-c0082#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: 1809 års regeringsform gäller 1809–1974"
+   }
   },
   {
    "@id": "nh:nh-c0082",
@@ -193,9 +241,14 @@
 <dt>Tid</dt><dd>1809 – 1814 &nbsp;<code>1809/1814</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q34">Sverige</a></dd>
 <dt>Wikidata</dt><dd><em>ingen matchning</em></dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0069/">Gustavianska tiden</a></dd><dt>Följs av</dt><dd><a href="../nh-p0070/">Unionen Sverige–Norge</a></dd><dt>Under perioden</dt><dd><a href="../nh-m0011/">Justitieombudsmannen</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0033">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1809 – 1814</td><td><code>1809/1814</code></td><td>affischens eget val</td><td></td></tr><tr id="def-032"><td><a href="https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/">Sveriges riksdag</a><br><span style="color:#6b7682">1809 års regeringsform gäller 1809–1974</span></td><td>1809 – 1974</td><td><code>1809/1974</code></td><td>avviker</td><td><a href="../nh-c0082/">nh-c0082</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0082/">nh-c0082</a></td><td>Period &#x27;1809 års regeringsform&#x27;: 1809 – 1814</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/">Sveriges riksdag – Regeringsformen 50 år</a></td></tr></tbody></table></div>
 

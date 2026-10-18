@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -114,7 +130,36 @@
    "skos:definition": {
     "sv": "Personalunion med Danmark"
    },
-   "skos:exactMatch": "wd:Q62567"
+   "skos:exactMatch": "wd:Q62567",
+   "time:intervalMeets": [
+    "nh:nh-p0006"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0004"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0005#def-005",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-005",
+   "skos:prefLabel": {
+    "sv": "Konungariket Island enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0005",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1918",
+    "crm:P82b_end_of_the_end": "1944"
+   },
+   "dcterms:spatial": [
+    "wd:Q189"
+   ],
+   "dcterms:source": "https://lex.dk/Islands_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0012#granskning"
   },
   {
    "@id": "nh:nh-c0012",

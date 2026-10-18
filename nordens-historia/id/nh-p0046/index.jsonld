@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -113,7 +129,36 @@
    "description": "6 dec 1917; inbördeskriget 1918; republik 1919",
    "skos:definition": {
     "sv": "6 dec 1917; inbördeskriget 1918; republik 1919"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0047"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0045"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0046#def-043",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-043",
+   "skos:prefLabel": {
+    "sv": "Självständigt Finland enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:exactMatch": "nh:nh-p0046",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1917",
+    "crm:P82b_end_of_the_end": "1939"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
+   "prov:wasDerivedFrom": "nh:nh-c0106#granskning"
   },
   {
    "@id": "nh:nh-c0106",

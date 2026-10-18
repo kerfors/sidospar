@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -114,7 +130,13 @@
    "skos:definition": {
     "sv": "Åbo domkyrka invigs 1300"
    },
-   "skos:closeMatch": "wd:Q12375230"
+   "skos:closeMatch": "wd:Q12375230",
+   "time:intervalMeets": [
+    "nh:nh-p0060"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0043"
+   ]
   },
   {
    "@id": "nh:nh-c0099",

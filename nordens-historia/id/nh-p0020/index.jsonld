@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -114,7 +130,39 @@
    "skos:definition": {
     "sv": "Jordbruket når Sydnorge"
    },
-   "skos:closeMatch": "wd:Q1275904"
+   "skos:closeMatch": "wd:Q1275904",
+   "time:intervalMeets": [
+    "nh:nh-p0055"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0019"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0020#def-019",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-019",
+   "skos:prefLabel": {
+    "sv": "Yngre stenålder enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0020",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-3999",
+    "crm:P82b_end_of_the_end": "-1799"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/steinalderen_i_Norge",
+   "prov:wasDerivedFrom": "nh:nh-c0045#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: yngre steinalder 4000–ca 1800 f.Kr.. Ungefärligt årtal: slut"
+   }
   },
   {
    "@id": "nh:nh-c0045",

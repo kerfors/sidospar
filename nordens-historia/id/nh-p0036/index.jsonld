@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -113,7 +129,33 @@
    "description": "EU 1995; Nato 2024",
    "skos:definition": {
     "sv": "EU 1995; Nato 2024"
-   }
+   },
+   "time:intervalMetBy": [
+    "nh:nh-p0035"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0036#def-034",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-034",
+   "skos:prefLabel": {
+    "sv": "Välfärdsstat enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:exactMatch": "nh:nh-p0036",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1945",
+    "crm:P82b_end_of_the_end": "2026"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet",
+   "prov:wasDerivedFrom": "nh:nh-c0086#granskning"
   },
   {
    "@id": "nh:nh-c0086",

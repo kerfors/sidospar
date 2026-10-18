@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -114,7 +130,39 @@
    "skos:definition": {
     "sv": "Rösen vid kusten; Sammallahdenmäki"
    },
-   "skos:closeMatch": "wd:Q11761"
+   "skos:closeMatch": "wd:Q11761",
+   "time:intervalMeets": [
+    "nh:nh-p0041"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0039"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0040#def-038",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-038",
+   "skos:prefLabel": {
+    "sv": "Bronsålder enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:exactMatch": "nh:nh-p0040",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-1599",
+    "crm:P82b_end_of_the_end": "-0499"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "prov:wasDerivedFrom": "nh:nh-c0093#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: bronsåldern i Finland 1600–500 f.Kr."
+   }
   },
   {
    "@id": "nh:nh-c0093",

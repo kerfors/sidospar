@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -114,7 +130,39 @@
    "skos:definition": {
     "sv": "Båtyxkulturen från c. 3200 f.Kr., parallellt med sen kamkeramik"
    },
-   "skos:closeMatch": "wd:Q18228533"
+   "skos:closeMatch": "wd:Q18228533",
+   "time:intervalMeets": [
+    "nh:nh-p0040"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0038"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0039#def-037",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-037",
+   "skos:prefLabel": {
+    "sv": "Båtyxe- och Kiukaiskultur enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:closeMatch": "nh:nh-p0039",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-3199",
+    "crm:P82b_end_of_the_end": "-1499"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "prov:wasDerivedFrom": "nh:nh-c0092#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: båtyxkulturen 3200–2300 f.Kr., Kiukaiskulturen 2300–1500 f.Kr."
+   }
   },
   {
    "@id": "nh:nh-c0092",

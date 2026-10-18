@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -118,7 +134,38 @@
    "skos:definition": {
     "sv": "Handel med Romarriket; runskriften tas i bruk"
    },
-   "skos:closeMatch": "wd:Q2566630"
+   "skos:closeMatch": "wd:Q2566630",
+   "time:intervalMeets": [
+    "nh:nh-p0058"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0056"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0057#def-054",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-054",
+   "skos:prefLabel": {
+    "sv": "Romersk järnålder enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0057",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0001",
+    "crm:P82b_end_of_the_end": "0400"
+   },
+   "dcterms:spatial": [
+    "wd:Q35",
+    "wd:Q20",
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://lex.dk/romersk_jernalder",
+   "prov:wasDerivedFrom": "nh:nh-c0135#granskning"
   },
   {
    "@id": "nh:nh-c0135",

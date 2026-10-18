@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -113,7 +129,36 @@
    "description": "Lappkodicillen 1751; nybyggen breder ut sig",
    "skos:definition": {
     "sv": "Lappkodicillen 1751; nybyggen breder ut sig"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0054"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0052"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0053#def-050",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-050",
+   "skos:prefLabel": {
+    "sv": "Gränser och nybyggen enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0053",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1751",
+    "crm:P82b_end_of_the_end": "1917"
+   },
+   "dcterms:spatial": [
+    "wd:Q62132"
+   ],
+   "dcterms:source": "https://snl.no/samenes_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0126#granskning"
   },
   {
    "@id": "nh:nh-c0126",

@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -129,7 +145,14 @@
    "skos:prefLabel": {
     "sv": "Affischens periodindelning"
    },
-   "isPartOf": "nh:#dataset"
+   "isPartOf": "nh:#dataset",
+   "dcterms:creator": {
+    "@type": "Person",
+    "name": "Kerstin Forsberg"
+   },
+   "skos:scopeNote": {
+    "sv": "Affischens egna periodgränser, valda för att blocken ska gå att läsa. Källornas gränser finns som egna definitioner i separata scheman och är matchade mot affischens perioder."
+   }
   },
   {
    "@id": "nh:#kontroll-2026-10-18",
@@ -180,6 +203,69 @@
    "name": "Sápmi"
   },
   {
+   "@id": "nh:#kalla-snl",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": {
+    "sv": "Periodindelning enligt Store norske leksikon"
+   },
+   "url": "https://snl.no/",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:#kalla-lex",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": {
+    "sv": "Periodindelning enligt Lex (Den Store Danske)"
+   },
+   "url": "https://lex.dk/",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:#kalla-natmus",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": {
+    "sv": "Periodindelning enligt Nationalmuseet"
+   },
+   "url": "https://natmus.dk/",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:#kalla-historiska",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": {
+    "sv": "Periodindelning enligt Statens historiska museer"
+   },
+   "url": "https://historiska.se/",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:#kalla-ne",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": {
+    "sv": "Periodindelning enligt Nationalencyklopedin"
+   },
+   "url": "https://ne.se/",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:#kalla-riksdagen",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": {
+    "sv": "Periodindelning enligt Sveriges riksdag"
+   },
+   "url": "https://riksdagen.se/",
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:#kalla-uppslagsverket",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": {
+    "sv": "Periodindelning enligt Uppslagsverket Finland"
+   },
+   "url": "https://uppslagsverket.fi/",
+   "isPartOf": "nh:#dataset"
+  },
+  {
    "@id": "nh:nh-p0001",
    "@type": [
     "crm:E4_Period",
@@ -207,7 +293,36 @@
    "skos:definition": {
     "sv": "Traditionellt 874: Ingólfur Arnarson i Reykjavík"
    },
-   "skos:exactMatch": "wd:Q2725768"
+   "skos:exactMatch": "wd:Q2725768",
+   "time:intervalMeets": [
+    "nh:nh-p0002"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0001#def-001",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-001",
+   "skos:prefLabel": {
+    "sv": "Landnámstiden enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0001",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0870",
+    "crm:P82b_end_of_the_end": "0930"
+   },
+   "dcterms:spatial": [
+    "wd:Q189"
+   ],
+   "dcterms:source": "https://snl.no/Islands_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0001#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: landnamstiden ca 870–930. Ungefärligt årtal: start"
+   }
   },
   {
    "@id": "nh:nh-p0002",
@@ -237,7 +352,36 @@
    "skos:definition": {
     "sv": "Alltinget på Þingvellir; kristendomen antas 999/1000; sagalitteraturen"
    },
-   "skos:exactMatch": "wd:Q62389"
+   "skos:exactMatch": "wd:Q62389",
+   "time:intervalMeets": [
+    "nh:nh-p0003"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0001"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0002#def-002",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-002",
+   "skos:prefLabel": {
+    "sv": "Fristaten enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0002",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0930",
+    "crm:P82b_end_of_the_end": "1262"
+   },
+   "dcterms:spatial": [
+    "wd:Q189"
+   ],
+   "dcterms:source": "https://lex.dk/Islands_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0003#granskning"
   },
   {
    "@id": "nh:nh-p0003",
@@ -266,6 +410,38 @@
    "description": "Gamli sáttmáli 1262–64; gemensam kung med Danmark från 1380",
    "skos:definition": {
     "sv": "Gamli sáttmáli 1262–64; gemensam kung med Danmark från 1380"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0062"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0002"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0003#def-003",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-003",
+   "skos:prefLabel": {
+    "sv": "Under norska kronan enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0003",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1262",
+    "crm:P82b_end_of_the_end": "1814"
+   },
+   "dcterms:spatial": [
+    "wd:Q189"
+   ],
+   "dcterms:source": "https://snl.no/Islands_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0007#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: under norska kronan 1262 till 1814"
    }
   },
   {
@@ -295,6 +471,37 @@
    "description": "Alltinget sammanträder åter 1845; hemmastyre 1904",
    "skos:definition": {
     "sv": "Alltinget sammanträder åter 1845; hemmastyre 1904"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0005"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0065"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0004#def-004",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-004",
+   "skos:prefLabel": {
+    "sv": "Under danska kronan enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:closeMatch": "nh:nh-p0004",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1380"
+   },
+   "dcterms:spatial": [
+    "wd:Q189"
+   ],
+   "dcterms:source": "https://lex.dk/Islands_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0009#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: i praktiken del av den danska monarkin från 1380"
    }
   },
   {
@@ -325,7 +532,36 @@
    "skos:definition": {
     "sv": "Personalunion med Danmark"
    },
-   "skos:exactMatch": "wd:Q62567"
+   "skos:exactMatch": "wd:Q62567",
+   "time:intervalMeets": [
+    "nh:nh-p0006"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0004"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0005#def-005",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-005",
+   "skos:prefLabel": {
+    "sv": "Konungariket Island enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0005",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1918",
+    "crm:P82b_end_of_the_end": "1944"
+   },
+   "dcterms:spatial": [
+    "wd:Q189"
+   ],
+   "dcterms:source": "https://lex.dk/Islands_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0012#granskning"
   },
   {
    "@id": "nh:nh-p0006",
@@ -355,7 +591,33 @@
    "skos:definition": {
     "sv": "Utropas 17 juni 1944; Nato 1949"
    },
-   "skos:closeMatch": "wd:Q189"
+   "skos:closeMatch": "wd:Q189",
+   "time:intervalMetBy": [
+    "nh:nh-p0005"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0006#def-006",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-006",
+   "skos:prefLabel": {
+    "sv": "Republiken Island enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0006",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1944",
+    "crm:P82b_end_of_the_end": "2026"
+   },
+   "dcterms:spatial": [
+    "wd:Q189"
+   ],
+   "dcterms:source": "https://lex.dk/Islands_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0014#granskning"
   },
   {
    "@id": "nh:nh-p0007",
@@ -385,7 +647,36 @@
    "skos:definition": {
     "sv": "Maglemose-, Kongemose- och Ertebøllekultur"
    },
-   "skos:closeMatch": "wd:Q104245387"
+   "skos:closeMatch": "wd:Q104245387",
+   "time:intervalMeets": [
+    "nh:nh-p0008"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0007#def-007",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-007",
+   "skos:prefLabel": {
+    "sv": "Jägarstenålder enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:closeMatch": "nh:nh-p0007",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-9599",
+    "crm:P82b_end_of_the_end": "-3999"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/mesolitikum",
+   "prov:wasDerivedFrom": "nh:nh-c0017#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: mesolitikum i Danmark ca 9600–4000 f.Kr.. Ungefärligt årtal: start, slut"
+   }
   },
   {
    "@id": "nh:nh-p0008",
@@ -415,7 +706,36 @@
    "skos:definition": {
     "sv": "Trattbägarkultur; dösar och gånggrifter"
    },
-   "skos:closeMatch": "wd:Q1275904"
+   "skos:closeMatch": "wd:Q1275904",
+   "time:intervalMeets": [
+    "nh:nh-p0055"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0007"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0008#def-008",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-008",
+   "skos:prefLabel": {
+    "sv": "Bondestenålder enligt Nationalmuseet"
+   },
+   "skos:inScheme": "nh:#kalla-natmus",
+   "skos:exactMatch": "nh:nh-p0008",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-3899",
+    "crm:P82b_end_of_the_end": "-1699"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period",
+   "prov:wasDerivedFrom": "nh:nh-c0019#granskning"
   },
   {
    "@id": "nh:nh-p0009",
@@ -445,7 +765,38 @@
    "skos:definition": {
     "sv": "Hedeby; Jellingestenen c. 965; Knut den store, kung i England 1016 och Danmark c. 1018"
    },
-   "skos:exactMatch": "wd:Q24528168"
+   "skos:exactMatch": "wd:Q24528168",
+   "time:intervalMeets": [
+    "nh:nh-p0010"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0059"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0009#def-009",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-009",
+   "skos:prefLabel": {
+    "sv": "Vikingatid enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:closeMatch": "nh:nh-p0009",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0800"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Danmarks_historie_i_vikingetiden",
+   "prov:wasDerivedFrom": "nh:nh-c0022#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: vikingatiden i Danmark ca 800 – mitten av 1000-talet. Ungefärligt årtal: start, slut"
+   }
   },
   {
    "@id": "nh:nh-p0010",
@@ -474,6 +825,38 @@
    "description": "Ärkesäte i Lund 1103/04",
    "skos:definition": {
     "sv": "Ärkesäte i Lund 1103/04"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0011"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0009"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0010#def-010",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-010",
+   "skos:prefLabel": {
+    "sv": "Tidig medeltid enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:closeMatch": "nh:nh-p0010",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1047",
+    "crm:P82b_end_of_the_end": "1157"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Danmarks_historie_i_middelalderen",
+   "prov:wasDerivedFrom": "nh:nh-c0026#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: tidig medeltid 1047–1157"
    }
   },
   {
@@ -504,7 +887,36 @@
    "skos:definition": {
     "sv": "Absalon och Köpenhamn; Jyske Lov 1241"
    },
-   "skos:exactMatch": "wd:Q10712169"
+   "skos:exactMatch": "wd:Q10712169",
+   "time:intervalMeets": [
+    "nh:nh-p0012"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0010"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0011#def-011",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-011",
+   "skos:prefLabel": {
+    "sv": "Valdemarstiden enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0011",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1157",
+    "crm:P82b_end_of_the_end": "1241"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Danmarks_historie_i_middelalderen",
+   "prov:wasDerivedFrom": "nh:nh-c0028#granskning"
   },
   {
    "@id": "nh:nh-p0012",
@@ -533,6 +945,38 @@
    "description": "Kunglös tid 1332–40",
    "skos:definition": {
     "sv": "Kunglös tid 1332–40"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0013"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0011"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0012#def-012",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-012",
+   "skos:prefLabel": {
+    "sv": "Strid och rikets upplösning enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0012",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1241",
+    "crm:P82b_end_of_the_end": "1340"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Danmarks_historie_i_middelalderen",
+   "prov:wasDerivedFrom": "nh:nh-c0031#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: Strid og rigsopløsning 1241–1340"
    }
   },
   {
@@ -562,6 +1006,38 @@
    "description": "Valdemar Atterdag; digerdöden",
    "skos:definition": {
     "sv": "Valdemar Atterdag; digerdöden"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0062"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0012"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0013#def-013",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-013",
+   "skos:prefLabel": {
+    "sv": "Riket återupprättas enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:closeMatch": "nh:nh-p0013",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1340",
+    "crm:P82b_end_of_the_end": "1387"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Danmarks_historie_i_middelalderen",
+   "prov:wasDerivedFrom": "nh:nh-c0031#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: Rigets genrejsning og pesten 1340–1387"
    }
   },
   {
@@ -592,7 +1068,39 @@
    "skos:definition": {
     "sv": "Kielfreden 1814: Norge avträds"
    },
-   "skos:closeMatch": "wd:Q11964718"
+   "skos:closeMatch": "wd:Q11964718",
+   "time:intervalMeets": [
+    "nh:nh-p0015"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0065"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0014#def-014",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-014",
+   "skos:prefLabel": {
+    "sv": "Enväldets sista decennier enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:closeMatch": "nh:nh-p0014",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1800",
+    "crm:P82b_end_of_the_end": "1848"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Enev%C3%A6ldens_faser_1660-1848",
+   "prov:wasDerivedFrom": "nh:nh-c0034#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: enväldets sena fas från ca 1800, enväldet slutar 1848. Ungefärligt årtal: start"
+   }
   },
   {
    "@id": "nh:nh-p0015",
@@ -622,7 +1130,38 @@
    "skos:definition": {
     "sv": "Grundloven 1849; Slesvig, Holsten och Lauenburg förloras 1864"
    },
-   "skos:closeMatch": "wd:Q11964717"
+   "skos:closeMatch": "wd:Q11964717",
+   "time:intervalMeets": [
+    "nh:nh-p0016"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0014"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0015#def-015",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-015",
+   "skos:prefLabel": {
+    "sv": "Grundlov och 1864 enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:closeMatch": "nh:nh-p0015",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1849"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Danmarks_forfatning",
+   "prov:wasDerivedFrom": "nh:nh-c0036#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: konstitutionell monarki från 1849"
+   }
   },
   {
    "@id": "nh:nh-p0016",
@@ -651,6 +1190,38 @@
    "description": "Sønderjylland åter 1920",
    "skos:definition": {
     "sv": "Sønderjylland åter 1920"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0017"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0015"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0016#def-016",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-016",
+   "skos:prefLabel": {
+    "sv": "Världskrigens tid enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0016",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1914",
+    "crm:P82b_end_of_the_end": "1945"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Danmarks_forfatning",
+   "prov:wasDerivedFrom": "nh:nh-c0036#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: verdenskrigsepoken 1914–1945"
    }
   },
   {
@@ -676,7 +1247,39 @@
    ],
    "dcterms:spatial": [
     "wd:Q35"
+   ],
+   "time:intervalMeets": [
+    "nh:nh-p0018"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0016"
    ]
+  },
+  {
+   "@id": "nh:nh-p0017#def-017",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-017",
+   "skos:prefLabel": {
+    "sv": "Välfärdsstaten byggs enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0017",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1945",
+    "crm:P82b_end_of_the_end": "1973"
+   },
+   "dcterms:spatial": [
+    "wd:Q35"
+   ],
+   "dcterms:source": "https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973",
+   "prov:wasDerivedFrom": "nh:nh-c0040#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: efterkrigstiden 1945–1973"
+   }
   },
   {
    "@id": "nh:nh-p0018",
@@ -705,7 +1308,10 @@
    "description": "EG 1973; Grönlands hjemmestyre 1979",
    "skos:definition": {
     "sv": "EG 1973; Grönlands hjemmestyre 1979"
-   }
+   },
+   "time:intervalMetBy": [
+    "nh:nh-p0017"
+   ]
   },
   {
    "@id": "nh:nh-p0019",
@@ -735,7 +1341,36 @@
    "skos:definition": {
     "sv": "Fosna- och Komsakultur längs kusten"
    },
-   "skos:closeMatch": "wd:Q104245387"
+   "skos:closeMatch": "wd:Q104245387",
+   "time:intervalMeets": [
+    "nh:nh-p0020"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0019#def-018",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-018",
+   "skos:prefLabel": {
+    "sv": "Jägarstenålder enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0019",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-9999",
+    "crm:P82b_end_of_the_end": "-3999"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/steinalderen_i_Norge",
+   "prov:wasDerivedFrom": "nh:nh-c0043#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: eldre steinalder ca 10 000–4000 f.Kr.. Ungefärligt årtal: start"
+   }
   },
   {
    "@id": "nh:nh-p0020",
@@ -765,7 +1400,39 @@
    "skos:definition": {
     "sv": "Jordbruket når Sydnorge"
    },
-   "skos:closeMatch": "wd:Q1275904"
+   "skos:closeMatch": "wd:Q1275904",
+   "time:intervalMeets": [
+    "nh:nh-p0055"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0019"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0020#def-019",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-019",
+   "skos:prefLabel": {
+    "sv": "Yngre stenålder enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0020",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-3999",
+    "crm:P82b_end_of_the_end": "-1799"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/steinalderen_i_Norge",
+   "prov:wasDerivedFrom": "nh:nh-c0045#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: yngre steinalder 4000–ca 1800 f.Kr.. Ungefärligt årtal: slut"
+   }
   },
   {
    "@id": "nh:nh-p0021",
@@ -795,7 +1462,36 @@
    "skos:definition": {
     "sv": "Hafrsfjord slutet av 800-talet; Stiklestad 1030"
    },
-   "skos:exactMatch": "wd:Q253018"
+   "skos:exactMatch": "wd:Q253018",
+   "time:intervalMeets": [
+    "nh:nh-p0022"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0059"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0021#def-020",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-020",
+   "skos:prefLabel": {
+    "sv": "Vikingatid enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0021",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0793",
+    "crm:P82b_end_of_the_end": "1066"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/Norges_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0047#granskning"
   },
   {
    "@id": "nh:nh-p0022",
@@ -824,7 +1520,36 @@
    "description": "Olav Kyrre; Bergen växer fram",
    "skos:definition": {
     "sv": "Olav Kyrre; Bergen växer fram"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0023"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0021"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0022#def-021",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-021",
+   "skos:prefLabel": {
+    "sv": "Riket konsolideras enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0022",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1066",
+    "crm:P82b_end_of_the_end": "1130"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/Norges_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0050#granskning"
   },
   {
    "@id": "nh:nh-p0023",
@@ -854,7 +1579,36 @@
    "skos:definition": {
     "sv": "Ärkesäte i Nidaros 1152/53; Sverre"
    },
-   "skos:exactMatch": "wd:Q1760671"
+   "skos:exactMatch": "wd:Q1760671",
+   "time:intervalMeets": [
+    "nh:nh-p0024"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0022"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0023#def-022",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-022",
+   "skos:prefLabel": {
+    "sv": "Inbördeskrigstiden enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0023",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1130",
+    "crm:P82b_end_of_the_end": "1240"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/borgerkrigstiden",
+   "prov:wasDerivedFrom": "nh:nh-c0053#granskning"
   },
   {
    "@id": "nh:nh-p0024",
@@ -883,7 +1637,36 @@
    "description": "Håkon IV; Grönland 1261, Island 1262–64; Magnus Lagabøtes landslov 1274",
    "skos:definition": {
     "sv": "Håkon IV; Grönland 1261, Island 1262–64; Magnus Lagabøtes landslov 1274"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0060"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0023"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0024#def-023",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-023",
+   "skos:prefLabel": {
+    "sv": "Storhetstiden enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0024",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1240",
+    "crm:P82b_end_of_the_end": "1319"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/Norges_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0056#granskning"
   },
   {
    "@id": "nh:nh-p0025",
@@ -912,6 +1695,38 @@
    "description": "Utsedd 1343, ensam kung från 1355; digerdöden 1349",
    "skos:definition": {
     "sv": "Utsedd 1343, ensam kung från 1355; digerdöden 1349"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0062"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0060"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0025#def-024",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-024",
+   "skos:prefLabel": {
+    "sv": "Håkon VI enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0025",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1355",
+    "crm:P82b_end_of_the_end": "1380"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/H%C3%A5kon_6._Magnusson",
+   "prov:wasDerivedFrom": "nh:nh-c0060#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: Håkon VI kung i Norge 1355–1380"
    }
   },
   {
@@ -941,7 +1756,36 @@
    "description": "Haakon VII; kvinnlig rösträtt 1913",
    "skos:definition": {
     "sv": "Haakon VII; kvinnlig rösträtt 1913"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0027"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0070"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0026#def-025",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-025",
+   "skos:prefLabel": {
+    "sv": "Självständigt kungarike enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0026",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1905",
+    "crm:P82b_end_of_the_end": "1945"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/Norges_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0062#granskning"
   },
   {
    "@id": "nh:nh-p0027",
@@ -971,7 +1815,33 @@
    "skos:definition": {
     "sv": "Ekofisk 1969; nej till EG/EU 1972 och 1994"
    },
-   "skos:closeMatch": "wd:Q10602292"
+   "skos:closeMatch": "wd:Q10602292",
+   "time:intervalMetBy": [
+    "nh:nh-p0026"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0027#def-026",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-026",
+   "skos:prefLabel": {
+    "sv": "Olja och välfärd enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0027",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1945",
+    "crm:P82b_end_of_the_end": "2026"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/Norges_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0065#granskning"
   },
   {
    "@id": "nh:nh-p0028",
@@ -1001,7 +1871,33 @@
    "skos:definition": {
     "sv": "Inlandsisen drar sig tillbaka; Hensbackakultur på Västkusten"
    },
-   "skos:closeMatch": "wd:Q104245387"
+   "skos:closeMatch": "wd:Q104245387",
+   "time:intervalMeets": [
+    "nh:nh-p0029"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0028#def-027",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-027",
+   "skos:prefLabel": {
+    "sv": "Jägarstenålder enligt Statens historiska museer"
+   },
+   "skos:inScheme": "nh:#kalla-historiska",
+   "skos:exactMatch": "nh:nh-p0028",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-9999",
+    "crm:P82b_end_of_the_end": "-3999"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://historiska.se/utforska-historien/tidsaldrar/",
+   "prov:wasDerivedFrom": "nh:nh-c0068#granskning"
   },
   {
    "@id": "nh:nh-p0029",
@@ -1031,7 +1927,36 @@
    "skos:definition": {
     "sv": "Trattbägar-, gropkeramisk och stridsyxekultur"
    },
-   "skos:closeMatch": "wd:Q1275904"
+   "skos:closeMatch": "wd:Q1275904",
+   "time:intervalMeets": [
+    "nh:nh-p0055"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0028"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0029#def-028",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-028",
+   "skos:prefLabel": {
+    "sv": "Bondestenålder enligt Statens historiska museer"
+   },
+   "skos:inScheme": "nh:#kalla-historiska",
+   "skos:exactMatch": "nh:nh-p0029",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-3999",
+    "crm:P82b_end_of_the_end": "-1699"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://historiska.se/utforska-historien/tidsaldrar/",
+   "prov:wasDerivedFrom": "nh:nh-c0071#granskning"
   },
   {
    "@id": "nh:nh-p0030",
@@ -1061,7 +1986,39 @@
    "skos:definition": {
     "sv": "Birka; Olof Skötkonung"
    },
-   "skos:exactMatch": "wd:Q10685826"
+   "skos:exactMatch": "wd:Q10685826",
+   "time:intervalMeets": [
+    "nh:nh-p0031"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0059"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0030#def-029",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-029",
+   "skos:prefLabel": {
+    "sv": "Vikingatid enligt Statens historiska museer"
+   },
+   "skos:inScheme": "nh:#kalla-historiska",
+   "skos:exactMatch": "nh:nh-p0030",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0793",
+    "crm:P82b_end_of_the_end": "1050"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://historiska.se/utforska-historien/tidsaldrar/",
+   "prov:wasDerivedFrom": "nh:nh-c0073#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: vikingatid 793–1050"
+   }
   },
   {
    "@id": "nh:nh-p0031",
@@ -1090,6 +2047,38 @@
    "description": "Erikska och sverkerska ätterna; ärkesäte i Uppsala 1164",
    "skos:definition": {
     "sv": "Erikska och sverkerska ätterna; ärkesäte i Uppsala 1164"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0032"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0030"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0031#def-030",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-030",
+   "skos:prefLabel": {
+    "sv": "Riket växer fram enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:closeMatch": "nh:nh-p0031",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1000",
+    "crm:P82b_end_of_the_end": "1300"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt",
+   "prov:wasDerivedFrom": "nh:nh-c0076#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: riksenheten stabiliseras under äldre medeltid ca 1000–1300. Ungefärligt årtal: start, slut"
    }
   },
   {
@@ -1120,7 +2109,39 @@
    "skos:definition": {
     "sv": "Folkungaätten regerar 1250–1363; Birger jarl; Stockholm nämns 1252"
    },
-   "skos:closeMatch": "wd:Q10497488"
+   "skos:closeMatch": "wd:Q10497488",
+   "time:intervalMeets": [
+    "nh:nh-p0060"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0031"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0032#def-031",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-031",
+   "skos:prefLabel": {
+    "sv": "Folkungatid enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:closeMatch": "nh:nh-p0032",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1250",
+    "crm:P82b_end_of_the_end": "1363"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar",
+   "prov:wasDerivedFrom": "nh:nh-c0079#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: folkungaätten styr Sverige 1250–1363"
+   }
   },
   {
    "@id": "nh:nh-p0033",
@@ -1145,7 +2166,39 @@
    ],
    "dcterms:spatial": [
     "wd:Q34"
+   ],
+   "time:intervalMeets": [
+    "nh:nh-p0070"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0069"
    ]
+  },
+  {
+   "@id": "nh:nh-p0033#def-032",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-032",
+   "skos:prefLabel": {
+    "sv": "Nytt statsskick: 1809 års RF enligt Sveriges riksdag"
+   },
+   "skos:inScheme": "nh:#kalla-riksdagen",
+   "skos:closeMatch": "nh:nh-p0033",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1809",
+    "crm:P82b_end_of_the_end": "1974"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/",
+   "prov:wasDerivedFrom": "nh:nh-c0082#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: 1809 års regeringsform gäller 1809–1974"
+   }
   },
   {
    "@id": "nh:nh-p0034",
@@ -1174,6 +2227,38 @@
    "description": "Allmän och lika rösträtt 1918–21",
    "skos:definition": {
     "sv": "Allmän och lika rösträtt 1918–21"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0035"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0070"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0034#def-033",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-033",
+   "skos:prefLabel": {
+    "sv": "Demokratins genombrott enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:closeMatch": "nh:nh-p0034",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1900",
+    "crm:P82b_end_of_the_end": "1920"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott",
+   "prov:wasDerivedFrom": "nh:nh-c0083#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: demokratins genombrott 1900–1920. Ungefärligt årtal: start"
    }
   },
   {
@@ -1203,7 +2288,13 @@
    "description": "Neutralitet under andra världskriget",
    "skos:definition": {
     "sv": "Neutralitet under andra världskriget"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0036"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0034"
+   ]
   },
   {
    "@id": "nh:nh-p0036",
@@ -1232,7 +2323,33 @@
    "description": "EU 1995; Nato 2024",
    "skos:definition": {
     "sv": "EU 1995; Nato 2024"
-   }
+   },
+   "time:intervalMetBy": [
+    "nh:nh-p0035"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0036#def-034",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-034",
+   "skos:prefLabel": {
+    "sv": "Välfärdsstat enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:exactMatch": "nh:nh-p0036",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1945",
+    "crm:P82b_end_of_the_end": "2026"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet",
+   "prov:wasDerivedFrom": "nh:nh-c0086#granskning"
   },
   {
    "@id": "nh:nh-p0037",
@@ -1262,7 +2379,36 @@
    "skos:definition": {
     "sv": "Mesolitisk jägarkultur efter isavsmältningen"
    },
-   "skos:exactMatch": "wd:Q930351"
+   "skos:exactMatch": "wd:Q930351",
+   "time:intervalMeets": [
+    "nh:nh-p0038"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0037#def-035",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-035",
+   "skos:prefLabel": {
+    "sv": "Suomusjärvikultur enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:exactMatch": "nh:nh-p0037",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-8599",
+    "crm:P82b_end_of_the_end": "-4999"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "prov:wasDerivedFrom": "nh:nh-c0089#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: Suomusjärvikulturen 8600–5000 f.Kr."
+   }
   },
   {
    "@id": "nh:nh-p0038",
@@ -1288,7 +2434,39 @@
    "dcterms:spatial": [
     "wd:Q33"
    ],
-   "skos:closeMatch": "wd:Q129385"
+   "skos:closeMatch": "wd:Q129385",
+   "time:intervalMeets": [
+    "nh:nh-p0039"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0037"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0038#def-036",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-036",
+   "skos:prefLabel": {
+    "sv": "Kamkeramisk kultur enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:exactMatch": "nh:nh-p0038",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-4999",
+    "crm:P82b_end_of_the_end": "-2799"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "prov:wasDerivedFrom": "nh:nh-c0091#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: kamkeramik 5000–2800 f.Kr."
+   }
   },
   {
    "@id": "nh:nh-p0039",
@@ -1318,7 +2496,39 @@
    "skos:definition": {
     "sv": "Båtyxkulturen från c. 3200 f.Kr., parallellt med sen kamkeramik"
    },
-   "skos:closeMatch": "wd:Q18228533"
+   "skos:closeMatch": "wd:Q18228533",
+   "time:intervalMeets": [
+    "nh:nh-p0040"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0038"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0039#def-037",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-037",
+   "skos:prefLabel": {
+    "sv": "Båtyxe- och Kiukaiskultur enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:closeMatch": "nh:nh-p0039",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-3199",
+    "crm:P82b_end_of_the_end": "-1499"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "prov:wasDerivedFrom": "nh:nh-c0092#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: båtyxkulturen 3200–2300 f.Kr., Kiukaiskulturen 2300–1500 f.Kr."
+   }
   },
   {
    "@id": "nh:nh-p0040",
@@ -1348,7 +2558,39 @@
    "skos:definition": {
     "sv": "Rösen vid kusten; Sammallahdenmäki"
    },
-   "skos:closeMatch": "wd:Q11761"
+   "skos:closeMatch": "wd:Q11761",
+   "time:intervalMeets": [
+    "nh:nh-p0041"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0039"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0040#def-038",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-038",
+   "skos:prefLabel": {
+    "sv": "Bronsålder enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:exactMatch": "nh:nh-p0040",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-1599",
+    "crm:P82b_end_of_the_end": "-0499"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "prov:wasDerivedFrom": "nh:nh-c0093#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: bronsåldern i Finland 1600–500 f.Kr."
+   }
   },
   {
    "@id": "nh:nh-p0041",
@@ -1377,6 +2619,37 @@
    "description": "Förromersk till merovingisk tid; järnåldern fortsätter genom vikinga- och korstågstid",
    "skos:definition": {
     "sv": "Förromersk till merovingisk tid; järnåldern fortsätter genom vikinga- och korstågstid"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0042"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0040"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0041#def-039",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-039",
+   "skos:prefLabel": {
+    "sv": "Äldre järnålder enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:closeMatch": "nh:nh-p0041",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-0499"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "prov:wasDerivedFrom": "nh:nh-c0096#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: järnåldern från 500 f.Kr. till ca 1150/1300, inklusive vikingatid och korstågstid. Ungefärligt årtal: slut"
    }
   },
   {
@@ -1403,7 +2676,36 @@
    "dcterms:spatial": [
     "wd:Q33"
    ],
-   "skos:closeMatch": "wd:Q213649"
+   "skos:closeMatch": "wd:Q213649",
+   "time:intervalMeets": [
+    "nh:nh-p0043"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0041"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0042#def-040",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-040",
+   "skos:prefLabel": {
+    "sv": "Vikingatid enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:exactMatch": "nh:nh-p0042",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0800",
+    "crm:P82b_end_of_the_end": "1025"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "prov:wasDerivedFrom": "nh:nh-c0098#granskning"
   },
   {
    "@id": "nh:nh-p0043",
@@ -1432,6 +2734,37 @@
    "description": "Till c. 1150 i väster och c. 1300 i öster",
    "skos:definition": {
     "sv": "Till c. 1150 i väster och c. 1300 i öster"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0044"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0042"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0043#def-041",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-041",
+   "skos:prefLabel": {
+    "sv": "Korstågstid enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:closeMatch": "nh:nh-p0043",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1025"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "prov:wasDerivedFrom": "nh:nh-c0099#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: korstågstiden 1025 – ca 1150 i väster, ca 1300 i öster. Ungefärligt årtal: slut"
    }
   },
   {
@@ -1462,7 +2795,13 @@
    "skos:definition": {
     "sv": "Åbo domkyrka invigs 1300"
    },
-   "skos:closeMatch": "wd:Q12375230"
+   "skos:closeMatch": "wd:Q12375230",
+   "time:intervalMeets": [
+    "nh:nh-p0060"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0043"
+   ]
   },
   {
    "@id": "nh:nh-p0045",
@@ -1492,7 +2831,36 @@
    "skos:definition": {
     "sv": "Under Ryssland efter freden i Fredrikshamn; Borgå lantdag 1809; enkammarlantdag och kvinnlig rösträtt 1906"
    },
-   "skos:exactMatch": "wd:Q62633"
+   "skos:exactMatch": "wd:Q62633",
+   "time:intervalMeets": [
+    "nh:nh-p0046"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0069"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0045#def-042",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-042",
+   "skos:prefLabel": {
+    "sv": "Storfurstendömet Finland enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0045",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1809",
+    "crm:P82b_end_of_the_end": "1917"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://snl.no/Finlands_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0102#granskning"
   },
   {
    "@id": "nh:nh-p0046",
@@ -1521,7 +2889,36 @@
    "description": "6 dec 1917; inbördeskriget 1918; republik 1919",
    "skos:definition": {
     "sv": "6 dec 1917; inbördeskriget 1918; republik 1919"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0047"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0045"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0046#def-043",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-043",
+   "skos:prefLabel": {
+    "sv": "Självständigt Finland enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:exactMatch": "nh:nh-p0046",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1917",
+    "crm:P82b_end_of_the_end": "1939"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
+   "prov:wasDerivedFrom": "nh:nh-c0106#granskning"
   },
   {
    "@id": "nh:nh-p0047",
@@ -1551,7 +2948,36 @@
    "skos:definition": {
     "sv": "Vinter- och fortsättningskriget"
    },
-   "skos:exactMatch": "wd:Q3315504"
+   "skos:exactMatch": "wd:Q3315504",
+   "time:intervalMeets": [
+    "nh:nh-p0048"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0046"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0047#def-044",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-044",
+   "skos:prefLabel": {
+    "sv": "Krigsåren enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0047",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1939",
+    "crm:P82b_end_of_the_end": "1945"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://snl.no/Finlands_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0110#granskning"
   },
   {
    "@id": "nh:nh-p0048",
@@ -1580,6 +3006,34 @@
    "description": "Vapenstillestånd 1944; Lapplandskriget 1944–45; EU 1995; Nato 2023",
    "skos:definition": {
     "sv": "Vapenstillestånd 1944; Lapplandskriget 1944–45; EU 1995; Nato 2023"
+   },
+   "time:intervalMetBy": [
+    "nh:nh-p0047"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0048#def-045",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-045",
+   "skos:prefLabel": {
+    "sv": "Andra republiken enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:closeMatch": "nh:nh-p0048",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1944"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
+   "prov:wasDerivedFrom": "nh:nh-c0112#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: andra republiken från vapenstilleståndet 1944"
    }
   },
   {
@@ -1609,6 +3063,35 @@
    "description": "Komsakultur; hällkonst i Alta",
    "skos:definition": {
     "sv": "Komsakultur; hällkonst i Alta"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0050"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0049#def-046",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-046",
+   "skos:prefLabel": {
+    "sv": "Fångstkulturer i norr enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0049",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-9499",
+    "crm:P82b_end_of_the_end": "-1799"
+   },
+   "dcterms:spatial": [
+    "wd:Q62132"
+   ],
+   "dcterms:source": "https://snl.no/samenes_forhistorie",
+   "prov:wasDerivedFrom": "nh:nh-c0115#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: stenåldern i Norden 9500–1800 f.Kr."
    }
   },
   {
@@ -1638,6 +3121,38 @@
    "description": "Ursamiska sprids under äldre järnålder; dateringen omdiskuterad",
    "skos:definition": {
     "sv": "Ursamiska sprids under äldre järnålder; dateringen omdiskuterad"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0051"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0049"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0050#def-047",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-047",
+   "skos:prefLabel": {
+    "sv": "Samisk kultur tar form enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0050",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-0999",
+    "crm:P82b_end_of_the_end": "0500"
+   },
+   "dcterms:spatial": [
+    "wd:Q62132"
+   ],
+   "dcterms:source": "https://snl.no/samenes_forhistorie",
+   "prov:wasDerivedFrom": "nh:nh-c0118#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: språkbytet till ursamiska börjar under sista årtusendet f.Kr. och sprids under äldre järnålder, 500 f.Kr.–500 e.Kr.. Ungefärligt årtal: start, slut"
    }
   },
   {
@@ -1667,6 +3182,38 @@
    "description": "Fångst, fiske och handel; skatt till flera riken",
    "skos:definition": {
     "sv": "Fångst, fiske och handel; skatt till flera riken"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0052"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0050"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0051#def-048",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-048",
+   "skos:prefLabel": {
+    "sv": "Siidasamhällen enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0051",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1050",
+    "crm:P82b_end_of_the_end": "1550"
+   },
+   "dcterms:spatial": [
+    "wd:Q62132"
+   ],
+   "dcterms:source": "https://snl.no/samenes_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0121#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: medeltid 1050–1550 (SNL:s periodindelning av samisk historia)"
    }
   },
   {
@@ -1696,6 +3243,38 @@
    "description": "Lappmarksplakatet 1673",
    "skos:definition": {
     "sv": "Lappmarksplakatet 1673"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0053"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0051"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0052#def-049",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-049",
+   "skos:prefLabel": {
+    "sv": "Skatt, handel och mission enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0052",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1550",
+    "crm:P82b_end_of_the_end": "1826"
+   },
+   "dcterms:spatial": [
+    "wd:Q62132"
+   ],
+   "dcterms:source": "https://snl.no/samenes_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0124#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: tidigmodern tid 1550–1826 (SNL:s periodindelning av samisk historia)"
    }
   },
   {
@@ -1725,7 +3304,36 @@
    "description": "Lappkodicillen 1751; nybyggen breder ut sig",
    "skos:definition": {
     "sv": "Lappkodicillen 1751; nybyggen breder ut sig"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0054"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0052"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0053#def-050",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-050",
+   "skos:prefLabel": {
+    "sv": "Gränser och nybyggen enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0053",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1751",
+    "crm:P82b_end_of_the_end": "1917"
+   },
+   "dcterms:spatial": [
+    "wd:Q62132"
+   ],
+   "dcterms:source": "https://snl.no/samenes_historie",
+   "prov:wasDerivedFrom": "nh:nh-c0126#granskning"
   },
   {
    "@id": "nh:nh-p0054",
@@ -1754,7 +3362,33 @@
    "description": "Sameting: Norge 1989, Sverige 1993, Finland 1996 (delegation från 1973)",
    "skos:definition": {
     "sv": "Sameting: Norge 1989, Sverige 1993, Finland 1996 (delegation från 1973)"
-   }
+   },
+   "time:intervalMetBy": [
+    "nh:nh-p0053"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0054#def-051",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-051",
+   "skos:prefLabel": {
+    "sv": "Samisk organisering enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0054",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1917",
+    "crm:P82b_end_of_the_end": "2026"
+   },
+   "dcterms:spatial": [
+    "wd:Q62132"
+   ],
+   "dcterms:source": "https://snl.no/samisk_organisering_i_Norge",
+   "prov:wasDerivedFrom": "nh:nh-c0128#granskning"
   },
   {
    "@id": "nh:nh-p0055",
@@ -1788,7 +3422,40 @@
    "skos:definition": {
     "sv": "Solvagnen från Trundholm; hällristningarna i Tanum"
    },
-   "skos:closeMatch": "wd:Q605601"
+   "skos:closeMatch": "wd:Q605601",
+   "time:intervalMeets": [
+    "nh:nh-p0056"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0008",
+    "nh:nh-p0020",
+    "nh:nh-p0029"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0055#def-052",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-052",
+   "skos:prefLabel": {
+    "sv": "Nordisk bronsålder enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0055",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-1699",
+    "crm:P82b_end_of_the_end": "-0499"
+   },
+   "dcterms:spatial": [
+    "wd:Q35",
+    "wd:Q20",
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://snl.no/bronsealder",
+   "prov:wasDerivedFrom": "nh:nh-c0130#granskning"
   },
   {
    "@id": "nh:nh-p0056",
@@ -1822,7 +3489,38 @@
    "skos:definition": {
     "sv": "Hjortspringbåten"
    },
-   "skos:closeMatch": "wd:Q893307"
+   "skos:closeMatch": "wd:Q893307",
+   "time:intervalMeets": [
+    "nh:nh-p0057"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0055"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0056#def-053",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-053",
+   "skos:prefLabel": {
+    "sv": "Förromersk järnålder enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0056",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-0499",
+    "crm:P82b_end_of_the_end": "0001"
+   },
+   "dcterms:spatial": [
+    "wd:Q35",
+    "wd:Q20",
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://snl.no/jernalderen",
+   "prov:wasDerivedFrom": "nh:nh-c0133#granskning"
   },
   {
    "@id": "nh:nh-p0057",
@@ -1856,7 +3554,38 @@
    "skos:definition": {
     "sv": "Handel med Romarriket; runskriften tas i bruk"
    },
-   "skos:closeMatch": "wd:Q2566630"
+   "skos:closeMatch": "wd:Q2566630",
+   "time:intervalMeets": [
+    "nh:nh-p0058"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0056"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0057#def-054",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-054",
+   "skos:prefLabel": {
+    "sv": "Romersk järnålder enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0057",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0001",
+    "crm:P82b_end_of_the_end": "0400"
+   },
+   "dcterms:spatial": [
+    "wd:Q35",
+    "wd:Q20",
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://lex.dk/romersk_jernalder",
+   "prov:wasDerivedFrom": "nh:nh-c0135#granskning"
   },
   {
    "@id": "nh:nh-p0058",
@@ -1890,7 +3619,38 @@
    "skos:definition": {
     "sv": "Guldbrakteater; guldhornen från Gallehus"
    },
-   "skos:closeMatch": "wd:Q131192"
+   "skos:closeMatch": "wd:Q131192",
+   "time:intervalMeets": [
+    "nh:nh-p0059"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0057"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0058#def-055",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-055",
+   "skos:prefLabel": {
+    "sv": "Folkvandringstid enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0058",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0400",
+    "crm:P82b_end_of_the_end": "0550"
+   },
+   "dcterms:spatial": [
+    "wd:Q35",
+    "wd:Q20",
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://snl.no/jernalderen",
+   "prov:wasDerivedFrom": "nh:nh-c0138#granskning"
   },
   {
    "@id": "nh:nh-p0059",
@@ -1924,7 +3684,43 @@
    "skos:definition": {
     "sv": "Gamla Uppsala, Vendel och Valsgärde"
    },
-   "skos:closeMatch": "wd:Q1275225"
+   "skos:closeMatch": "wd:Q1275225",
+   "time:intervalMeets": [
+    "nh:nh-p0009",
+    "nh:nh-p0021",
+    "nh:nh-p0030"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0058"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0059#def-056",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-056",
+   "skos:prefLabel": {
+    "sv": "Vendeltid / merovingertid enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0059",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "0550",
+    "crm:P82b_end_of_the_end": "0800"
+   },
+   "dcterms:spatial": [
+    "wd:Q35",
+    "wd:Q20",
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://snl.no/merovingertid",
+   "prov:wasDerivedFrom": "nh:nh-c0141#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: merovingertid ca 550–800. Ungefärligt årtal: start, slut"
+   }
   },
   {
    "@id": "nh:nh-p0060",
@@ -1957,6 +3753,43 @@
    "description": "Freden i Nöteborg 1323",
    "skos:definition": {
     "sv": "Freden i Nöteborg 1323"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0025",
+    "nh:nh-p0061"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0024",
+    "nh:nh-p0032",
+    "nh:nh-p0044"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0060#def-057",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-057",
+   "skos:prefLabel": {
+    "sv": "Magnus Eriksson: Sverige och Norge enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0060",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1319",
+    "crm:P82b_end_of_the_end": "1355"
+   },
+   "dcterms:spatial": [
+    "wd:Q20",
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://snl.no/Magnus_7._Eriksson",
+   "prov:wasDerivedFrom": "nh:nh-c0143#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: Magnus Eriksson hyllad i båda rikena 1319; riket delas 1355"
    }
   },
   {
@@ -1988,7 +3821,13 @@
    "description": "Magnus Erikssons landslag; digerdöden 1350; Albrekt av Mecklenburg 1364–89",
    "skos:definition": {
     "sv": "Magnus Erikssons landslag; digerdöden 1350; Albrekt av Mecklenburg 1364–89"
-   }
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0063"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0060"
+   ]
   },
   {
    "@id": "nh:nh-p0062",
@@ -2017,7 +3856,40 @@
     "wd:Q189",
     "wd:Q35",
     "wd:Q20"
+   ],
+   "time:intervalMeets": [
+    "nh:nh-p0063"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0003",
+    "nh:nh-p0013",
+    "nh:nh-p0025"
    ]
+  },
+  {
+   "@id": "nh:nh-p0062#def-058",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-058",
+   "skos:prefLabel": {
+    "sv": "Danmark–Norge enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0062",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1380",
+    "crm:P82b_end_of_the_end": "1397"
+   },
+   "dcterms:spatial": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://lex.dk/Danmark-Norge",
+   "prov:wasDerivedFrom": "nh:nh-c0149#granskning"
   },
   {
    "@id": "nh:nh-p0063",
@@ -2055,7 +3927,42 @@
    "skos:definition": {
     "sv": "Margareta och Erik av Pommern; Sverige bryter sig ur 1523"
    },
-   "skos:exactMatch": "wd:Q62623"
+   "skos:exactMatch": "wd:Q62623",
+   "time:intervalMeets": [
+    "nh:nh-p0064",
+    "nh:nh-p0066"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0061",
+    "nh:nh-p0062"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0063#def-059",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-059",
+   "skos:prefLabel": {
+    "sv": "Kalmarunionen enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0063",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1397",
+    "crm:P82b_end_of_the_end": "1523"
+   },
+   "dcterms:spatial": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20",
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://lex.dk/Kalmarunionen",
+   "prov:wasDerivedFrom": "nh:nh-c0150#granskning"
   },
   {
    "@id": "nh:nh-p0064",
@@ -2089,7 +3996,38 @@
    "skos:definition": {
     "sv": "Reformationen 1536; Norges riksråd avskaffas 1536/37; Kristian IV"
    },
-   "skos:closeMatch": "wd:Q62651"
+   "skos:closeMatch": "wd:Q62651",
+   "time:intervalMeets": [
+    "nh:nh-p0065"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0063"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0064#def-060",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-060",
+   "skos:prefLabel": {
+    "sv": "Danmark–Norge enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0064",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1523",
+    "crm:P82b_end_of_the_end": "1660"
+   },
+   "dcterms:spatial": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://lex.dk/Danmark-Norge",
+   "prov:wasDerivedFrom": "nh:nh-c0153#granskning"
   },
   {
    "@id": "nh:nh-p0065",
@@ -2123,7 +4061,40 @@
    "skos:definition": {
     "sv": "Kongeloven 1665"
    },
-   "skos:closeMatch": "wd:Q62651"
+   "skos:closeMatch": "wd:Q62651",
+   "time:intervalMeets": [
+    "nh:nh-p0004",
+    "nh:nh-p0014",
+    "nh:nh-p0070"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0064"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0065#def-061",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-061",
+   "skos:prefLabel": {
+    "sv": "Danmark–Norge under enväldet enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0065",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1660",
+    "crm:P82b_end_of_the_end": "1814"
+   },
+   "dcterms:spatial": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/enevoldstida",
+   "prov:wasDerivedFrom": "nh:nh-c0157#granskning"
   },
   {
    "@id": "nh:nh-p0066",
@@ -2155,7 +4126,40 @@
    "skos:definition": {
     "sv": "Gustav Vasa; reformationen inleds 1527; Uppsala möte 1593"
    },
-   "skos:exactMatch": "wd:Q3290518"
+   "skos:exactMatch": "wd:Q3290518",
+   "time:intervalMeets": [
+    "nh:nh-p0067"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0063"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0066#def-062",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-062",
+   "skos:prefLabel": {
+    "sv": "Äldre Vasatiden enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:closeMatch": "nh:nh-p0066",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1521",
+    "crm:P82b_end_of_the_end": "1611"
+   },
+   "dcterms:spatial": [
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden",
+   "prov:wasDerivedFrom": "nh:nh-c0159#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: äldre Vasatiden 1521–1611 (Vasatiden 1521–1654)"
+   }
   },
   {
    "@id": "nh:nh-p0067",
@@ -2187,7 +4191,34 @@
    "skos:definition": {
     "sv": "Gustav II Adolf; westfaliska freden 1648; Karl XII"
    },
-   "skos:exactMatch": "wd:Q215443"
+   "skos:exactMatch": "wd:Q215443",
+   "time:intervalMetBy": [
+    "nh:nh-p0066"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0067#def-063",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-063",
+   "skos:prefLabel": {
+    "sv": "Stormaktstiden enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:exactMatch": "nh:nh-p0067",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1611",
+    "crm:P82b_end_of_the_end": "1718"
+   },
+   "dcterms:spatial": [
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden",
+   "prov:wasDerivedFrom": "nh:nh-c0163#granskning"
   },
   {
    "@id": "nh:nh-p0068",
@@ -2219,7 +4250,37 @@
    "skos:definition": {
     "sv": "Riksdagsstyre; hattar och mössor"
    },
-   "skos:exactMatch": "wd:Q2267264"
+   "skos:exactMatch": "wd:Q2267264",
+   "time:intervalMeets": [
+    "nh:nh-p0069"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0068#def-064",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-064",
+   "skos:prefLabel": {
+    "sv": "Frihetstiden enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:exactMatch": "nh:nh-p0068",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1719",
+    "crm:P82b_end_of_the_end": "1772"
+   },
+   "dcterms:spatial": [
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden",
+   "prov:wasDerivedFrom": "nh:nh-c0167#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: frihetstiden 1719–1772"
+   }
   },
   {
    "@id": "nh:nh-p0069",
@@ -2251,7 +4312,38 @@
    "skos:definition": {
     "sv": "Gustav III:s statskupp 1772; finska kriget 1808–09"
    },
-   "skos:exactMatch": "wd:Q3300409"
+   "skos:exactMatch": "wd:Q3300409",
+   "time:intervalMeets": [
+    "nh:nh-p0033",
+    "nh:nh-p0045"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0068"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0069#def-065",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-065",
+   "skos:prefLabel": {
+    "sv": "Gustavianska tiden enligt Nationalencyklopedin"
+   },
+   "skos:inScheme": "nh:#kalla-ne",
+   "skos:exactMatch": "nh:nh-p0069",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1772",
+    "crm:P82b_end_of_the_end": "1809"
+   },
+   "dcterms:spatial": [
+    "wd:Q34",
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden",
+   "prov:wasDerivedFrom": "nh:nh-c0170#granskning"
   },
   {
    "@id": "nh:nh-p0070",
@@ -2283,7 +4375,39 @@
    "skos:definition": {
     "sv": "Två riken, en kung; Norge med egen grundlov (Eidsvoll 17 maj 1814)"
    },
-   "skos:exactMatch": "wd:Q62589"
+   "skos:exactMatch": "wd:Q62589",
+   "time:intervalMeets": [
+    "nh:nh-p0026",
+    "nh:nh-p0034"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0033",
+    "nh:nh-p0065"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0070#def-066",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-066",
+   "skos:prefLabel": {
+    "sv": "Unionen Sverige–Norge enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0070",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1814",
+    "crm:P82b_end_of_the_end": "1905"
+   },
+   "dcterms:spatial": [
+    "wd:Q20",
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://snl.no/Unionsoppløsningen_i_1905",
+   "prov:wasDerivedFrom": "nh:nh-c0173#granskning"
   },
   {
    "@id": "nh:nh-e0001",
@@ -2303,7 +4427,12 @@
     "wd:Q20",
     "wd:Q34"
    ],
-   "skos:exactMatch": "wd:Q133850450"
+   "skos:exactMatch": "wd:Q133850450",
+   "crm:P10_falls_within": [
+    "nh:nh-p0009",
+    "nh:nh-p0021",
+    "nh:nh-p0030"
+   ]
   },
   {
    "@id": "nh:nh-e0002",
@@ -2321,7 +4450,10 @@
    "crm:P7_took_place_at": [
     "wd:Q34"
    ],
-   "skos:exactMatch": "wd:Q846876"
+   "skos:exactMatch": "wd:Q846876",
+   "crm:P10_falls_within": [
+    "nh:nh-p0063"
+   ]
   },
   {
    "@id": "nh:nh-e0003",
@@ -2340,7 +4472,10 @@
     "wd:Q35",
     "wd:Q20"
    ],
-   "skos:exactMatch": "wd:Q212234"
+   "skos:exactMatch": "wd:Q212234",
+   "crm:P10_falls_within": [
+    "nh:nh-p0064"
+   ]
   },
   {
    "@id": "nh:nh-e0004",
@@ -2359,7 +4494,11 @@
     "wd:Q20",
     "wd:Q34"
    ],
-   "skos:exactMatch": "wd:Q2264910"
+   "skos:exactMatch": "wd:Q2264910",
+   "crm:P10_falls_within": [
+    "nh:nh-p0026",
+    "nh:nh-p0034"
+   ]
   },
   {
    "@id": "nh:nh-e0005",
@@ -2378,7 +4517,11 @@
     "wd:Q35",
     "wd:Q20"
    ],
-   "skos:closeMatch": "wd:Q819274"
+   "skos:closeMatch": "wd:Q819274",
+   "crm:P10_falls_within": [
+    "nh:nh-p0016",
+    "nh:nh-p0026"
+   ]
   },
   {
    "@id": "nh:nh-e0006",
@@ -2401,7 +4544,13 @@
    ],
    "about": {
     "@id": "wd:Q146165"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0006",
+    "nh:nh-p0017",
+    "nh:nh-p0027",
+    "nh:nh-p0036"
+   ]
   },
   {
    "@id": "nh:nh-m0001",
@@ -2421,7 +4570,10 @@
    ],
    "about": {
     "@id": "wd:Q131279"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0002"
+   ]
   },
   {
    "@id": "nh:nh-m0002",
@@ -2441,7 +4593,10 @@
    ],
    "about": {
     "@id": "wd:Q21162313"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0009"
+   ]
   },
   {
    "@id": "nh:nh-m0003",
@@ -2461,7 +4616,10 @@
    ],
    "about": {
     "@id": "wd:Q215806"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0002"
+   ]
   },
   {
    "@id": "nh:nh-m0004",
@@ -2481,7 +4639,10 @@
    ],
    "about": {
     "@id": "wd:Q185246"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0063"
+   ]
   },
   {
    "@id": "nh:nh-m0005",
@@ -2501,7 +4662,10 @@
    ],
    "about": {
     "@id": "wd:Q186285"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0063"
+   ]
   },
   {
    "@id": "nh:nh-m0006",
@@ -2521,7 +4685,10 @@
    ],
    "about": {
     "@id": "wd:Q79220"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0064"
+   ]
   },
   {
    "@id": "nh:nh-m0007",
@@ -2541,7 +4708,10 @@
    ],
    "about": {
     "@id": "wd:Q2898393"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0065"
+   ]
   },
   {
    "@id": "nh:nh-m0008",
@@ -2561,7 +4731,10 @@
    ],
    "about": {
     "@id": "wd:Q29270"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0068"
+   ]
   },
   {
    "@id": "nh:nh-m0009",
@@ -2581,7 +4754,10 @@
    ],
    "about": {
     "@id": "wd:Q110748751"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0068"
+   ]
   },
   {
    "@id": "nh:nh-m0010",
@@ -2601,7 +4777,10 @@
    ],
    "about": {
     "@id": "wd:Q2456773"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0068"
+   ]
   },
   {
    "@id": "nh:nh-m0011",
@@ -2621,7 +4800,10 @@
    ],
    "about": {
     "@id": "wd:Q107157415"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0033"
+   ]
   },
   {
    "@id": "nh:nh-m0012",
@@ -2641,7 +4823,10 @@
    ],
    "about": {
     "@id": "wd:Q130924"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0045"
+   ]
   },
   {
    "@id": "nh:nh-m0013",
@@ -2661,7 +4846,10 @@
    ],
    "about": {
     "@id": "wd:Q80728"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0070"
+   ]
   },
   {
    "@id": "nh:nh-m0014",
@@ -2681,7 +4869,10 @@
    ],
    "about": {
     "@id": "wd:Q4354065"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0070"
+   ]
   },
   {
    "@id": "nh:nh-m0015",
@@ -2701,7 +4892,10 @@
    ],
    "about": {
     "@id": "wd:Q7191"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0070"
+   ]
   },
   {
    "@id": "nh:nh-m0016",
@@ -2721,7 +4915,10 @@
    ],
    "about": {
     "@id": "wd:Q95099079"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0045"
+   ]
   },
   {
    "@id": "nh:nh-m0017",
@@ -2741,7 +4938,10 @@
    ],
    "about": {
     "@id": "wd:Q8414"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0026"
+   ]
   },
   {
    "@id": "nh:nh-m0018",
@@ -2761,7 +4961,10 @@
    ],
    "about": {
     "@id": "wd:Q172948"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0015"
+   ]
   },
   {
    "@id": "nh:nh-m0019",
@@ -2781,7 +4984,10 @@
    ],
    "about": {
     "@id": "wd:Q19387464"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0054"
+   ]
   },
   {
    "@id": "nh:nh-m0020",
@@ -2801,7 +5007,10 @@
    ],
    "about": {
     "@id": "wd:Q4050869"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0036"
+   ]
   },
   {
    "@id": "nh:nh-m0021",
@@ -2821,7 +5030,10 @@
    ],
    "about": {
     "@id": "wd:Q58780590"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0017"
+   ]
   },
   {
    "@id": "nh:nh-m0022",
@@ -2841,7 +5053,10 @@
    ],
    "about": {
     "@id": "wd:Q372713"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0036"
+   ]
   },
   {
    "@id": "nh:nh-m0023",
@@ -2861,7 +5076,10 @@
    ],
    "about": {
     "@id": "wd:Q15883336"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0036"
+   ]
   },
   {
    "@id": "nh:nh-m0024",
@@ -2881,7 +5099,10 @@
    ],
    "about": {
     "@id": "wd:Q1323379"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0027"
+   ]
   },
   {
    "@id": "nh:nh-m0025",
@@ -2901,7 +5122,10 @@
    ],
    "about": {
     "@id": "wd:Q14579"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0048"
+   ]
   },
   {
    "@id": "nh:nh-m0026",
@@ -2921,7 +5145,10 @@
    ],
    "about": {
     "@id": "wd:Q689141"
-   }
+   },
+   "crm:P10_falls_within": [
+    "nh:nh-p0036"
+   ]
   },
   {
    "@id": "nh:nh-c0001",

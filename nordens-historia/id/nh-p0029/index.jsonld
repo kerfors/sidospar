@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -114,7 +130,36 @@
    "skos:definition": {
     "sv": "Trattbägar-, gropkeramisk och stridsyxekultur"
    },
-   "skos:closeMatch": "wd:Q1275904"
+   "skos:closeMatch": "wd:Q1275904",
+   "time:intervalMeets": [
+    "nh:nh-p0055"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0028"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0029#def-028",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-028",
+   "skos:prefLabel": {
+    "sv": "Bondestenålder enligt Statens historiska museer"
+   },
+   "skos:inScheme": "nh:#kalla-historiska",
+   "skos:exactMatch": "nh:nh-p0029",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-3999",
+    "crm:P82b_end_of_the_end": "-1699"
+   },
+   "dcterms:spatial": [
+    "wd:Q34"
+   ],
+   "dcterms:source": "https://historiska.se/utforska-historien/tidsaldrar/",
+   "prov:wasDerivedFrom": "nh:nh-c0071#granskning"
   },
   {
    "@id": "nh:nh-c0071",

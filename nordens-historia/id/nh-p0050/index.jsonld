@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -113,6 +129,38 @@
    "description": "Ursamiska sprids under äldre järnålder; dateringen omdiskuterad",
    "skos:definition": {
     "sv": "Ursamiska sprids under äldre järnålder; dateringen omdiskuterad"
+   },
+   "time:intervalMeets": [
+    "nh:nh-p0051"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0049"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0050#def-047",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-047",
+   "skos:prefLabel": {
+    "sv": "Samisk kultur tar form enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:closeMatch": "nh:nh-p0050",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-0999",
+    "crm:P82b_end_of_the_end": "0500"
+   },
+   "dcterms:spatial": [
+    "wd:Q62132"
+   ],
+   "dcterms:source": "https://snl.no/samenes_forhistorie",
+   "prov:wasDerivedFrom": "nh:nh-c0118#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: språkbytet till ursamiska börjar under sista årtusendet f.Kr. och sprids under äldre järnålder, 500 f.Kr.–500 e.Kr.. Ungefärligt årtal: start, slut"
    }
   },
   {

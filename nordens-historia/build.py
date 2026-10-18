@@ -405,7 +405,8 @@ Klicka på ett block, en händelse eller en siffra för datum, källor och ident
 Idén och formen är deras; innehållet här är mitt eget urval.</p>
 <p><strong>Källäget:</strong> varje uppgift är kontrollerad mot en uppslagskälla, se <a href="kallor.html">källförteckningen</a>.</p>
 <p><strong>Länkade data:</strong> varje period, händelse, milstolpe och kontrollerad uppgift har en egen beständig
-identifierare som går att slå upp, med JSON-LD och länkar till Wikidata. Se <a href="id/">identifierarna</a>.
+identifierare som går att slå upp, med JSON-LD och länkar till Wikidata. Se <a href="id/">identifierarna</a>
+och, på engelska, <a href="linked-data.html">The linked data behind the poster</a>.
 Innehåll och data är licensierade under <a href="https://creativecommons.org/licenses/by/4.0/deed.sv">CC BY 4.0</a>.</p>
 </div>
 <div class="poster">
@@ -455,6 +456,7 @@ PANEL = """<aside id="panel" hidden aria-live="polite">
 <h2 id="p-label"></h2>
 <p class="meta" id="p-meta"></p>
 <p id="p-desc"></p>
+<p id="p-defs" class="meta"></p>
 <p id="p-claims"></p>
 <p id="p-wd"></p>
 <p><a id="p-link" href="#">Öppna posten</a> · <code id="p-iri"></code></p>
@@ -473,6 +475,7 @@ SCRIPT = """<script>
     $('p-label').textContent = d.label;
     $('p-meta').textContent = d.when + ' · ' + d.where;
     $('p-desc').textContent = d.desc || '';
+    $('p-defs').textContent = d.defs && d.defs.length ? 'Källornas gränser: ' + d.defs.join('; ') : '';
     const c = $('p-claims');
     c.textContent = '';
     for (const [v, n] of Object.entries(d.verdicts)) {
@@ -529,10 +532,20 @@ ID_BASE = "https://kerfors.github.io/sidospar/nordens-historia/id/"
 
 
 def panel_data():
+    sys.dont_write_bytecode = True
     here = Path(__file__).parent
     claims = json.loads((here / "data" / "claims.json").read_text(encoding="utf-8"))
     wpath = here / "data" / "wikidata.json"
     wd = json.loads(wpath.read_text(encoding="utf-8")) if wpath.exists() else {}
+    import ld
+    _, _, _, defs = ld.load()
+    defs_by = {}
+    for d in defs:
+        p = next(x for x in DATA["periods"] if x["id"] == d["period"])
+        s = (("c. " if d["approx_start"] else "") + yr(d["start"]) if d["start"] is not None else "?")
+        e = (("c. " if d["approx_end"] else "") + yr(d["end"]) if d["end"] is not None else "?")
+        same = " (samma)" if (d["start"], d["end"]) == (p["start"], p["end"]) else ""
+        defs_by.setdefault(d["period"], []).append(f"{ld.publication(d['source_url'])[1]} {s}–{e}{same}")
     verdicts = {}
     for c in claims:
         for a in c["about"]:
@@ -548,7 +561,8 @@ def panel_data():
             link = {"qid": m["qid"], "label": m.get("wikidata_label", ""), "rel": rel}
         out[x["id"]] = {"kind": kind, "label": x["label"], "when": when, "where": where,
                         "desc": x.get("description", ""), "verdicts": verdicts.get(x["id"], {}),
-                        "wd": link, "url": "id/" + x["id"] + "/", "iri": ID_BASE + x["id"]}
+                        "wd": link, "url": "id/" + x["id"] + "/", "iri": ID_BASE + x["id"],
+                        "defs": defs_by.get(x["id"], [])}
     for x in DATA["periods"]:
         add(x, "Period", f"{yr(x['start'])} – {yr(x['end'])}", ", ".join(x["columns"]))
     for x in DATA["events"]:

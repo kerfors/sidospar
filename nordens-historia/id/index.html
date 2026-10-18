@@ -34,7 +34,8 @@
 <a href="../kallor.html">källäget</a> har en egen beständig identifierare under
 <code>https://kerfors.github.io/sidospar/nordens-historia/id/</code>. Identifieraren går att slå upp: den ger en sida för människor med
 inbäddad JSON-LD, och en <code>index.jsonld</code> bredvid för maskiner. Hela datamängden finns i
-<a href="index.jsonld">index.jsonld</a>. Den är licensierad under
+<a href="index.jsonld">index.jsonld</a>. Tankarna bakom modellen beskrivs på engelska i
+<a href="../linked-data.html">The linked data behind the poster</a>. Datamängden är licensierad under
 <a href="https://creativecommons.org/licenses/by/4.0/deed.sv">CC BY 4.0</a>.</p>
 
 <h2>Hur identifierarna är gjorda</h2>
@@ -57,6 +58,14 @@ tidsspann med <code>crm:P82a</code>/<code>P82b</code> och plats med <code>crm:P7
 (<code>skos:inScheme</code>), med <code>dcterms:spatial</code>. Periodgränser är ett val av en viss källa, inte ett faktum.</li>
 <li><strong>schema.org</strong> för det läsbara: <code>name</code>, <code>temporalCoverage</code>, och för
 källkontrollen <code>Claim</code> och <code>ClaimReview</code> med utlåtande, belägg och källa.</li>
+<li><strong>Källornas gränser</strong> i PeriodO:s anda: varje källas periodgräns är en egen definition i ett
+schema för den källan (Store norske leksikon, Lex, Uppslagsverket Finland, NE …), matchad mot affischens period med
+<code>skos:exactMatch</code> när gränserna sammanfaller och <code>skos:closeMatch</code> när de avviker, och härledd
+(<code>prov:wasDerivedFrom</code>) från källkontrollens granskning. Ungefärliga årtal är markerade, och källans
+formulering finns i <code>skos:scopeNote</code>.</li>
+<li><strong>OWL-Time och CIDOC-CRM</strong> för relationerna mellan posterna, härledda ur affischen:
+<code>time:intervalMeets</code> när en period slutar samma år som nästa börjar i samma kolumn, och
+<code>crm:P10_falls_within</code> för händelser och milstolpar som inträffar under en period.</li>
 <li><strong>PROV-O</strong> för proveniensen: varje granskning är genererad av källkontrollen den 2026-10-18, utförd av
 AI-agenter för Kerstin Forsbergs räkning, och härledd från sin källa.</li>
 <li><strong>Wikidata</strong> som länk utåt. Perioder och händelser länkas med <code>skos:exactMatch</code> eller

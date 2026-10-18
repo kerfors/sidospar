@@ -8,6 +8,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -56,6 +57,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -114,7 +130,36 @@
    "skos:definition": {
     "sv": "Fosna- och Komsakultur längs kusten"
    },
-   "skos:closeMatch": "wd:Q104245387"
+   "skos:closeMatch": "wd:Q104245387",
+   "time:intervalMeets": [
+    "nh:nh-p0020"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0019#def-018",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-018",
+   "skos:prefLabel": {
+    "sv": "Jägarstenålder enligt Store norske leksikon"
+   },
+   "skos:inScheme": "nh:#kalla-snl",
+   "skos:exactMatch": "nh:nh-p0019",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "-9999",
+    "crm:P82b_end_of_the_end": "-3999"
+   },
+   "dcterms:spatial": [
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://snl.no/steinalderen_i_Norge",
+   "prov:wasDerivedFrom": "nh:nh-c0043#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: eldre steinalder ca 10 000–4000 f.Kr.. Ungefärligt årtal: start"
+   }
   },
   {
    "@id": "nh:nh-c0043",

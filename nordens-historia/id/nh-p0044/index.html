@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -122,7 +138,13 @@
    "skos:definition": {
     "sv": "Åbo domkyrka invigs 1300"
    },
-   "skos:closeMatch": "wd:Q12375230"
+   "skos:closeMatch": "wd:Q12375230",
+   "time:intervalMeets": [
+    "nh:nh-p0060"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0043"
+   ]
   },
   {
    "@id": "nh:nh-c0099",
@@ -235,9 +257,11 @@
 <dt>Tid</dt><dd>1300 – 1319 &nbsp;<code>1300/1319</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q33">Finland</a></dd>
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q12375230">Q12375230</a> Finland under Swedish rule (närliggande)</dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0043/">Korstågstid</a></dd><dt>Följs av</dt><dd><a href="../nh-p0060/">Magnus Eriksson: Sverige och Norge</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0044">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0099/">nh-c0099</a></td><td>Period &#x27;Korstågstid&#x27;: 1025 – 1319</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria">Uppslagsverket Finland: förhistoria</a></td></tr><tr><td><a href="../nh-c0101/">nh-c0101</a></td><td>Åbo domkyrka invigs 1300</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.uppslagsverket.fi/sv/view-170045-AaboDomkyrka">Uppslagsverket Finland: Åbo domkyrka</a></td></tr></tbody></table></div>
 

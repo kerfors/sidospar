@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -121,6 +137,34 @@
    "description": "Vapenstillestånd 1944; Lapplandskriget 1944–45; EU 1995; Nato 2023",
    "skos:definition": {
     "sv": "Vapenstillestånd 1944; Lapplandskriget 1944–45; EU 1995; Nato 2023"
+   },
+   "time:intervalMetBy": [
+    "nh:nh-p0047"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0048#def-045",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-045",
+   "skos:prefLabel": {
+    "sv": "Andra republiken enligt Uppslagsverket Finland"
+   },
+   "skos:inScheme": "nh:#kalla-uppslagsverket",
+   "skos:closeMatch": "nh:nh-p0048",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1944"
+   },
+   "dcterms:spatial": [
+    "wd:Q33"
+   ],
+   "dcterms:source": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
+   "prov:wasDerivedFrom": "nh:nh-c0112#granskning",
+   "skos:scopeNote": {
+    "sv": "Källans formulering: andra republiken från vapenstilleståndet 1944"
    }
   },
   {
@@ -265,9 +309,14 @@
 <dt>Tid</dt><dd>1944 – 2026 &nbsp;<code>1944/2026</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q33">Finland</a></dd>
 <dt>Wikidata</dt><dd><em>ingen matchning</em></dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0047/">Krigsåren</a></dd><dt>Under perioden</dt><dd><a href="../nh-m0025/">Linux</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0048">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1944 – 2026</td><td><code>1944/2026</code></td><td>affischens eget val</td><td></td></tr><tr id="def-045"><td><a href="https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917">Uppslagsverket Finland</a><br><span style="color:#6b7682">andra republiken från vapenstilleståndet 1944</span></td><td>1944 – ?</td><td><code>1944/..</code></td><td>avviker</td><td><a href="../nh-c0112/">nh-c0112</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0112/">nh-c0112</a></td><td>Period &#x27;Efterkrigstid&#x27;: 1945 – 2026</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917">Uppslagsverket Finland: Finlands historia efter 1917</a></td></tr><tr><td><a href="../nh-c0113/">nh-c0113</a></td><td>EU 1995</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917">Uppslagsverket Finland: Finlands historia efter 1917</a></td></tr><tr><td><a href="../nh-c0114/">nh-c0114</a></td><td>Nato 2023</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://um.fi/finland-and-nato">Finlands utrikesministerium: Finland&#x27;s membership in NATO</a></td></tr></tbody></table></div>
 

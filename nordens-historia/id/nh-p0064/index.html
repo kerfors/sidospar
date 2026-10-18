@@ -16,6 +16,7 @@
   "prov": "http://www.w3.org/ns/prov#",
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
+  "time": "http://www.w3.org/2006/time#",
   "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
@@ -64,6 +65,21 @@
   },
   "license": {
    "@type": "@id"
+  },
+  "time:intervalMeets": {
+   "@type": "@id"
+  },
+  "time:intervalMetBy": {
+   "@type": "@id"
+  },
+  "crm:P10_falls_within": {
+   "@type": "@id"
+  },
+  "dcterms:source": {
+   "@type": "@id"
+  },
+  "skos:scopeNote": {
+   "@container": "@language"
   },
   "mainEntity": {
    "@type": "@id"
@@ -126,7 +142,38 @@
    "skos:definition": {
     "sv": "Reformationen 1536; Norges riksråd avskaffas 1536/37; Kristian IV"
    },
-   "skos:closeMatch": "wd:Q62651"
+   "skos:closeMatch": "wd:Q62651",
+   "time:intervalMeets": [
+    "nh:nh-p0065"
+   ],
+   "time:intervalMetBy": [
+    "nh:nh-p0063"
+   ]
+  },
+  {
+   "@id": "nh:nh-p0064#def-060",
+   "@type": [
+    "crm:E4_Period",
+    "skos:Concept"
+   ],
+   "dcterms:identifier": "def-060",
+   "skos:prefLabel": {
+    "sv": "Danmark–Norge enligt Lex (Den Store Danske)"
+   },
+   "skos:inScheme": "nh:#kalla-lex",
+   "skos:exactMatch": "nh:nh-p0064",
+   "crm:P4_has_time-span": {
+    "@type": "crm:E52_Time-Span",
+    "crm:P82a_begin_of_the_begin": "1523",
+    "crm:P82b_end_of_the_end": "1660"
+   },
+   "dcterms:spatial": [
+    "wd:Q189",
+    "wd:Q35",
+    "wd:Q20"
+   ],
+   "dcterms:source": "https://lex.dk/Danmark-Norge",
+   "prov:wasDerivedFrom": "nh:nh-c0153#granskning"
   },
   {
    "@id": "nh:nh-c0153",
@@ -303,9 +350,14 @@
 <dt>Tid</dt><dd>1523 – 1660 &nbsp;<code>1523/1660</code></dd>
 <dt>Plats</dt><dd><a href="https://www.wikidata.org/wiki/Q189">Island</a>, <a href="https://www.wikidata.org/wiki/Q35">Danmark</a>, <a href="https://www.wikidata.org/wiki/Q20">Norge</a></dd>
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q62651">Q62651</a> Denmark–Norway (närliggande)</dd>
+<dt>Föregås av</dt><dd><a href="../nh-p0063/">Kalmarunionen</a></dd><dt>Följs av</dt><dd><a href="../nh-p0065/">Danmark–Norge under enväldet</a></dd><dt>Under perioden</dt><dd><a href="../nh-e0003/">1658 Roskildefreden – Skånelandskapen och Bohuslän till Sverige</a>, <a href="../nh-m0006/">Tycho Brahes Uraniborg</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0064">Visa på affischen</a></dd>
 <dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
 </dl>
+<h2>Källornas gränser</h2>
+<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
+<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody><tr><td><strong>Affischen</strong></td><td>1523 – 1660</td><td><code>1523/1660</code></td><td>affischens eget val</td><td></td></tr><tr id="def-060"><td><a href="https://lex.dk/Danmark-Norge">Lex (Den Store Danske)</a></td><td>1523 – 1660</td><td><code>1523/1660</code></td><td>samma</td><td><a href="../nh-c0153/">nh-c0153</a></td></tr></tbody></table></div>
+
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0153/">nh-c0153</a></td><td>Period &#x27;Danmark–Norge&#x27;: 1523 – 1660</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://lex.dk/Danmark-Norge">Lex.dk: Danmark-Norge</a></td></tr><tr><td><a href="../nh-c0154/">nh-c0154</a></td><td>Reformationen 1536</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://lex.dk/Reformationen_i_Danmark">Lex.dk: Reformationen i Danmark</a></td></tr><tr><td><a href="../nh-c0155/">nh-c0155</a></td><td>Norges riksråd avskaffas 1537</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://snl.no/Christian_3">Store norske leksikon: Christian 3</a></td></tr><tr><td><a href="../nh-c0156/">nh-c0156</a></td><td>Kristian IV</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://lex.dk/Christian_4.">Christian 4. – lex.dk</a></td></tr></tbody></table></div>
 

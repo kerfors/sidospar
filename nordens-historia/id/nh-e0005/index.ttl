@@ -1,0 +1,45 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0180#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/5._maj_1945> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/5._maj_1945> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0180 ;
+    schema:reviewBody "Danmark var ockuperat 9 april 1940–5 maj 1945; SNL anger att Norge angreps 9 april 1940 och befriades 1945." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-e0005/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-e0005 .
+
+nh:nh-c0180 a schema:Claim ;
+    dcterms:identifier "GE51",
+        "nh-c0180" ;
+    schema:about nh:nh-e0005 ;
+    schema:text "1940–45 Tysk ockupation" .
+
+nh:nh-e0005 a crm:E5_Event,
+        schema:Event ;
+    dcterms:identifier "nh-e0005" ;
+    crm:P10_falls_within nh:nh-p0016,
+        nh:nh-p0026 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1940"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20,
+        wd:Q35 ;
+    skos:closeMatch wd:Q819274 ;
+    schema:name "1940–45 Tysk ockupation" ;
+    schema:startDate "1940"^^xsd:gYear .
+
+<https://lex.dk/5._maj_1945> schema:name "5. maj 1945 – lex.dk; Samene under andre verdenskrig – SNL" .
+

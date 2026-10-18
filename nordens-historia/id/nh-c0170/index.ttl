@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0170#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0170 ;
+    schema:reviewBody "NE daterar perioden från Gustav III:s statskupp 1772 till Gustav IV Adolfs avsättning 1809." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0170/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0170 .
+
+nh:nh-c0170 a schema:Claim ;
+    dcterms:identifier "GE41",
+        "nh-c0170" ;
+    schema:about nh:nh-p0069 ;
+    schema:text "Period 'Gustavianska tiden': 1772 – 1809" .
+
+<https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden> schema:name "Gustavianska tiden – Nationalencyklopedin" .
+

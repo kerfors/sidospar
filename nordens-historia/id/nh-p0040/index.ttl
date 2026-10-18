@@ -1,0 +1,104 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0094#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0094 ;
+    schema:reviewBody "Uppslagsverket beskriver att röse- och kummelgravar byggdes längs kusten under bronsåldern." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0095#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0095 ;
+    schema:reviewBody "Sammallahdenmäki i Rauma är ett gravfält från bronsåldern med 33 gravrösen, ca 1500–500 f.Kr., världsarv sedan 1999." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0040#def-038> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-038" ;
+    dcterms:source <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    dcterms:spatial wd:Q33 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "-1599"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "-0499"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0040 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-uppslagsverket> ;
+    skos:prefLabel "Bronsålder enligt Uppslagsverket Finland"@sv ;
+    skos:scopeNote "Källans formulering: bronsåldern i Finland 1600–500 f.Kr."@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0093#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0040/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0040 .
+
+nh:nh-c0093 a schema:Claim ;
+    dcterms:identifier "FI05",
+        "nh-c0093" ;
+    schema:about nh:nh-p0040 ;
+    schema:text "Period 'Bronsålder': 1 500 f.Kr. – 500 f.Kr." .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0093#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Start ändrat till 1600 f.Kr." ] ;
+    schema:correction "1600–500 f.Kr. (Uppslagsverket)" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0093 ;
+    schema:reviewBody "Uppslagsverket anger bronsåldern i Finland till 1600–500 f.Kr.; fi.wikipedia anger både 1700 och 1500 som start." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0094 a schema:Claim ;
+    dcterms:identifier "FI06",
+        "nh-c0094" ;
+    schema:about nh:nh-p0040 ;
+    schema:text "Rösen vid kusten" .
+
+nh:nh-c0095 a schema:Claim ;
+    dcterms:identifier "FI07",
+        "nh-c0095" ;
+    schema:about nh:nh-p0040 ;
+    schema:text "Sammallahdenmäki" .
+
+<https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki> schema:name "Wikipedia (en): Sammallahdenmäki" .
+
+nh:nh-p0040 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0040" ;
+    dcterms:spatial wd:Q33 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "-1599"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "-0499"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q33 ;
+    skos:closeMatch wd:Q11761 ;
+    skos:definition "Rösen vid kusten; Sammallahdenmäki"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Bronsålder"@sv ;
+    time:intervalMeets nh:nh-p0041 ;
+    time:intervalMetBy nh:nh-p0039 ;
+    schema:description "Rösen vid kusten; Sammallahdenmäki" ;
+    schema:name "Bronsålder" ;
+    schema:temporalCoverage "-1599/-0499" .
+
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
+

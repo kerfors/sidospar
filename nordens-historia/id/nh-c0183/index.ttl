@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0183#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Jellingstenene> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Jellingstenene> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0183 ;
+    schema:reviewBody "Lex daterar Harald Blåtands stora sten till tiden efter hans dop ca 965." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0183/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0183 .
+
+nh:nh-c0183 a schema:Claim ;
+    dcterms:identifier "MI02",
+        "nh-c0183" ;
+    schema:about nh:nh-m0002 ;
+    schema:text "Jellingestenen: 965" .
+
+<https://lex.dk/Jellingstenene> schema:name "lex.dk: Jellingstenene" .
+

@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0016#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Islands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Islands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0016 ;
+    schema:reviewBody "lex.dk säger att Island blev Natomedlem 1949; enligt SNL godkände Alltinget medlemskapet våren 1949." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0016/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0016 .
+
+nh:nh-c0016 a schema:Claim ;
+    dcterms:identifier "IS16",
+        "nh-c0016" ;
+    schema:about nh:nh-p0006 ;
+    schema:text "Nato 1949" .
+
+<https://lex.dk/Islands_historie> schema:name "Islands historie (lex.dk, Den Store Danske)" .
+

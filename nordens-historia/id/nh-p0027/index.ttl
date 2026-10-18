@@ -1,0 +1,101 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0066#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Ekofisk> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Ekofisk> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0066 ;
+    schema:reviewBody "Ekofiskfältet upptäcktes 25 oktober 1969; produktionen startade 1971." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0067#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/EU-kampen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/EU-kampen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0067 ;
+    schema:reviewBody "Folkomröstningarna 1972 (53,5 % nej till EF) och 1994 (52,2 % nej till EU) slutade båda med nej-majoritet." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0027#def-026> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-026" ;
+    dcterms:source <https://snl.no/Norges_historie> ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1945"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0027 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Olja och välfärd enligt Store norske leksikon"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0065#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0027/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0027 .
+
+nh:nh-c0065 a schema:Claim ;
+    dcterms:identifier "NO23",
+        "nh-c0065" ;
+    schema:about nh:nh-p0027 ;
+    schema:text "Period 'Olja och välfärd': 1945 – 2026" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0065#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Norges_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Norges_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0065 ;
+    schema:reviewBody "SNL låter efterkrigstiden börja 1945 med välfärdsstatens uppbyggnad och oljefynd från slutet av 1960-talet." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0066 a schema:Claim ;
+    dcterms:identifier "NO24",
+        "nh-c0066" ;
+    schema:about nh:nh-p0027 ;
+    schema:text "Ekofisk 1969" .
+
+nh:nh-c0067 a schema:Claim ;
+    dcterms:identifier "NO25",
+        "nh-c0067" ;
+    schema:about nh:nh-p0027 ;
+    schema:text "nej till EG/EU 1972 och 1994" .
+
+<https://snl.no/EU-kampen> schema:name "Store norske leksikon: EU-kampen" .
+
+<https://snl.no/Ekofisk> schema:name "Store norske leksikon: Ekofisk" .
+
+<https://snl.no/Norges_historie> schema:name "Store norske leksikon: Norges historie" .
+
+nh:nh-p0027 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0027" ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1945"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20 ;
+    skos:closeMatch wd:Q10602292 ;
+    skos:definition "Ekofisk 1969; nej till EG/EU 1972 och 1994"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Olja och välfärd"@sv ;
+    time:intervalMetBy nh:nh-p0026 ;
+    schema:description "Ekofisk 1969; nej till EG/EU 1972 och 1994" ;
+    schema:name "Olja och välfärd" ;
+    schema:temporalCoverage "1945/2026" .
+

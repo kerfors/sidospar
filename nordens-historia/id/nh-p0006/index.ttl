@@ -1,0 +1,99 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0015#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Islands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Islands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0015 ;
+    schema:reviewBody "SNL säger att republiken utropades 17 juni 1944 på Þingvellir; lex.dk anger samma datum." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0016#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Islands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Islands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0016 ;
+    schema:reviewBody "lex.dk säger att Island blev Natomedlem 1949; enligt SNL godkände Alltinget medlemskapet våren 1949." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0006#def-006> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-006" ;
+    dcterms:source <https://lex.dk/Islands_historie> ;
+    dcterms:spatial wd:Q189 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1944"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0006 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:prefLabel "Republiken Island enligt Lex (Den Store Danske)"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0014#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0006/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0006 .
+
+nh:nh-c0014 a schema:Claim ;
+    dcterms:identifier "IS14",
+        "nh-c0014" ;
+    schema:about nh:nh-p0006 ;
+    schema:text "Period 'Republiken Island': 1944 – 2026" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0014#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Islands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Islands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0014 ;
+    schema:reviewBody "lex.dk säger att republiken upprättades 17 juni 1944, och den består fortfarande." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0015 a schema:Claim ;
+    dcterms:identifier "IS15",
+        "nh-c0015" ;
+    schema:about nh:nh-p0006 ;
+    schema:text "Utropas 17 juni 1944" .
+
+nh:nh-c0016 a schema:Claim ;
+    dcterms:identifier "IS16",
+        "nh-c0016" ;
+    schema:about nh:nh-p0006 ;
+    schema:text "Nato 1949" .
+
+<https://snl.no/Islands_historie> schema:name "Islands historie (Store norske leksikon)" .
+
+nh:nh-p0006 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0006" ;
+    dcterms:spatial wd:Q189 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1944"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q189 ;
+    skos:closeMatch wd:Q189 ;
+    skos:definition "Utropas 17 juni 1944; Nato 1949"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Republiken Island"@sv ;
+    time:intervalMetBy nh:nh-p0005 ;
+    schema:description "Utropas 17 juni 1944; Nato 1949" ;
+    schema:name "Republiken Island" ;
+    schema:temporalCoverage "1944/2026" .
+
+<https://lex.dk/Islands_historie> schema:name "Islands historie (lex.dk, Den Store Danske)" .
+

@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0168#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0168 ;
+    schema:reviewBody "Från 1719 blev riksdagen maktcentrum och kontrollerade rådet medan kungens makt minskade." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0168/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0168 .
+
+nh:nh-c0168 a schema:Claim ;
+    dcterms:identifier "GE39",
+        "nh-c0168" ;
+    schema:about nh:nh-p0068 ;
+    schema:text "Riksdagsstyre" .
+
+<https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/> schema:name "Besluten som förändrade Sverige – Sveriges riksdag" .
+

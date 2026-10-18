@@ -1,0 +1,123 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0023#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Hedeby> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Hedeby> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0023 ;
+    schema:reviewBody "Hedeby var vikingatidens största handelsstad i Norden, knuten till det danska riket, omnämnd 804 och förstörd kring mitten av 1000-talet." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0024#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Danmarks_historie_i_vikingetiden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Danmarks_historie_i_vikingetiden> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0024 ;
+    schema:reviewBody "Harald Blåtand lät resa Jellingestenen omkring 965." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0025#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Knud_den_Store> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Knud_den_Store> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Ändrat: England 1016, Danmark c. 1018." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0025 ;
+    schema:reviewBody "Knut var kung av England 1016–1035, av Danmark ca 1018–1035 och av Norge 1028–1034; han dog 1035." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0009#def-009> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-009" ;
+    dcterms:source <https://lex.dk/Danmarks_historie_i_vikingetiden> ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0800"^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0009 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:prefLabel "Vikingatid enligt Lex (Den Store Danske)"@sv ;
+    skos:scopeNote "Källans formulering: vikingatiden i Danmark ca 800 – mitten av 1000-talet. Ungefärligt årtal: start, slut"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0022#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0009/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0009 .
+
+nh:nh-c0022 a schema:Claim ;
+    dcterms:identifier "DA06",
+        "nh-c0022" ;
+    schema:about nh:nh-p0009 ;
+    schema:text "Period 'Vikingatid': 793 – 1066" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0022#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Danmarks_historie_i_vikingetiden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Danmarks_historie_i_vikingetiden> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Slut ändrat till 1050." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0022 ;
+    schema:reviewBody "Lex anger vikingatiden i Danmark till ca 800–mitten av 1000-talet; Lex introduktionsartikel använder 790–1050." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0023 a schema:Claim ;
+    dcterms:identifier "DA07",
+        "nh-c0023" ;
+    schema:about nh:nh-p0009 ;
+    schema:text "Hedeby" .
+
+nh:nh-c0024 a schema:Claim ;
+    dcterms:identifier "DA08",
+        "nh-c0024" ;
+    schema:about nh:nh-p0009 ;
+    schema:text "Jellingestenen c. 965" .
+
+nh:nh-c0025 a schema:Claim ;
+    dcterms:identifier "DA09",
+        "nh-c0025" ;
+    schema:about nh:nh-p0009 ;
+    schema:text "Knut den stores nordsjövälde 1016–35" .
+
+<https://lex.dk/Hedeby> schema:name "Lex: Hedeby" .
+
+<https://lex.dk/Knud_den_Store> schema:name "Lex: Knud den Store" .
+
+<https://lex.dk/Danmarks_historie_i_vikingetiden> schema:name "Lex: Danmarks historie i vikingetiden" .
+
+nh:nh-p0009 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0009" ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0793"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1050"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q35 ;
+    skos:definition "Hedeby; Jellingestenen c. 965; Knut den store, kung i England 1016 och Danmark c. 1018"@sv ;
+    skos:exactMatch wd:Q24528168 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Vikingatid"@sv ;
+    time:intervalMeets nh:nh-p0010 ;
+    time:intervalMetBy nh:nh-p0059 ;
+    schema:description "Hedeby; Jellingestenen c. 965; Knut den store, kung i England 1016 och Danmark c. 1018" ;
+    schema:name "Vikingatid" ;
+    schema:temporalCoverage "0793/1050" .
+

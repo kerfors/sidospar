@@ -1,0 +1,30 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0010#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Ändrat till ”sammanträder åter 1845” (beslut 1843)." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0010 ;
+    schema:reviewBody "Alltingets egen webbplats säger att Alltinget återupprättades 1845; lex.dk säger att det beviljades 1843 och sammanträdde första gången sommaren 1845." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0010/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0010 .
+
+nh:nh-c0010 a schema:Claim ;
+    dcterms:identifier "IS10",
+        "nh-c0010" ;
+    schema:about nh:nh-p0004 ;
+    schema:text "Alltinget återupprättas 1845" .
+
+<https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> schema:name "Alþingi í Lærða skólanum 1845–1879 (althingi.is)" .
+

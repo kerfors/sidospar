@@ -1,0 +1,129 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0160#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Gustav_1_Vasa> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Gustav_1_Vasa> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0160 ;
+    schema:reviewBody "Gustav Vasa regerade 1523–1560 och räknas som grundaren av den svenska nationalstaten." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0161#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Ändrat till ”reformationen inleds 1527”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0161 ;
+    schema:reviewBody "Västerås riksdag 1527 inledde kyrkoreduktionen och bröt biskoparnas makt, men reformationen var en process." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0162#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0162 ;
+    schema:reviewBody "Vid Uppsala möte 1593 antogs Augsburgska bekännelsen och kyrkan blev officiellt evangelisk-luthersk." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0066#def-062> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-062" ;
+    dcterms:source <https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> ;
+    dcterms:spatial wd:Q33,
+        wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1521"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1611"^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0066 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-ne> ;
+    skos:prefLabel "Äldre Vasatiden enligt Nationalencyklopedin"@sv ;
+    skos:scopeNote "Källans formulering: äldre Vasatiden 1521–1611 (Vasatiden 1521–1654)"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0159#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0066/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0066 .
+
+nh:nh-c0159 a schema:Claim ;
+    dcterms:identifier "GE30",
+        "nh-c0159" ;
+    schema:about nh:nh-p0066 ;
+    schema:text "Period 'Vasatiden': 1523 – 1611" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0159#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Titeln ändrad till ”Äldre Vasatiden”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0159 ;
+    schema:reviewBody "NE avgränsar Vasatiden 1521–1654 och delar den i äldre/yngre Vasatid med 1611 som skiljelinje." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0160 a schema:Claim ;
+    dcterms:identifier "GE31",
+        "nh-c0160" ;
+    schema:about nh:nh-p0066 ;
+    schema:text "Gustav Vasa" .
+
+nh:nh-c0161 a schema:Claim ;
+    dcterms:identifier "GE32",
+        "nh-c0161" ;
+    schema:about nh:nh-p0066 ;
+    schema:text "reformationen 1527" .
+
+nh:nh-c0162 a schema:Claim ;
+    dcterms:identifier "GE33",
+        "nh-c0162" ;
+    schema:about nh:nh-p0066 ;
+    schema:text "Uppsala möte 1593" .
+
+<https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag> schema:name "Västerås riksdag – Nationalencyklopedin" .
+
+<https://snl.no/Gustav_1_Vasa> schema:name "Gustav 1 Vasa – Store norske leksikon" .
+
+<https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> schema:name "Bekännelseskrifter – Svenska kyrkan" .
+
+<https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> schema:name "Vasatiden – Nationalencyklopedin" .
+
+nh:nh-p0066 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0066" ;
+    dcterms:spatial wd:Q33,
+        wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1523"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1611"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q33,
+        wd:Q34 ;
+    skos:definition "Gustav Vasa; reformationen inleds 1527; Uppsala möte 1593"@sv ;
+    skos:exactMatch wd:Q3290518 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Äldre Vasatiden"@sv ;
+    time:intervalMeets nh:nh-p0067 ;
+    time:intervalMetBy nh:nh-p0063 ;
+    schema:description "Gustav Vasa; reformationen inleds 1527; Uppsala möte 1593" ;
+    schema:name "Äldre Vasatiden" ;
+    schema:temporalCoverage "1523/1611" .
+

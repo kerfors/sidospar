@@ -1,0 +1,85 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0061#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/svartedauden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/svartedauden> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0061 ;
+    schema:reviewBody "Digerdöden härjade i Norge 1349–1350." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0025#def-024> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-024" ;
+    dcterms:source <https://snl.no/H%C3%A5kon_6._Magnusson> ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1355"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1380"^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0025 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Håkon VI enligt Store norske leksikon"@sv ;
+    skos:scopeNote "Källans formulering: Håkon VI kung i Norge 1355–1380"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0060#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0025/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0025 .
+
+nh:nh-c0060 a schema:Claim ;
+    dcterms:identifier "NO18",
+        "nh-c0060" ;
+    schema:about nh:nh-p0025 ;
+    schema:text "Period 'Håkon VI': 1343 – 1380" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0060#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/H%C3%A5kon_6._Magnusson> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/H%C3%A5kon_6._Magnusson> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Behållet; tillägg ”utsedd 1343, ensam kung från 1355”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0060 ;
+    schema:reviewBody "SNL anger Håkon VI som kung i Norge 1355–1380; 1343 är året då riksrådet beslöt att han skulle bli Norges kung." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0061 a schema:Claim ;
+    dcterms:identifier "NO19",
+        "nh-c0061" ;
+    schema:about nh:nh-p0025 ;
+    schema:text "Digerdöden 1349" .
+
+<https://snl.no/svartedauden> schema:name "Store norske leksikon: svartedauden" .
+
+<https://snl.no/H%C3%A5kon_6._Magnusson> schema:name "Store norske leksikon: Håkon 6. Magnusson" .
+
+nh:nh-p0025 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0025" ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1343"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1380"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20 ;
+    skos:definition "Utsedd 1343, ensam kung från 1355; digerdöden 1349"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Håkon VI"@sv ;
+    time:intervalMeets nh:nh-p0062 ;
+    time:intervalMetBy nh:nh-p0060 ;
+    schema:description "Utsedd 1343, ensam kung från 1355; digerdöden 1349" ;
+    schema:name "Håkon VI" ;
+    schema:temporalCoverage "1343/1380" .
+

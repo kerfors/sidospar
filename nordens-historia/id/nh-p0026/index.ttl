@@ -1,0 +1,101 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0063#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Haakon_7.> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Haakon_7.> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0063 ;
+    schema:reviewBody "Haakon VII var Norges kung från 1905 till sin död 1957." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0064#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/stemmerett_for_kvinner_i_Norge> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/stemmerett_for_kvinner_i_Norge> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0064 ;
+    schema:reviewBody "År 1913 fick kvinnor i Norge rösträtt vid stortingsval på samma villkor som män." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0026#def-025> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-025" ;
+    dcterms:source <https://snl.no/Norges_historie> ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1905"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1945"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0026 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Självständigt kungarike enligt Store norske leksikon"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0062#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0026/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0026 .
+
+nh:nh-c0062 a schema:Claim ;
+    dcterms:identifier "NO20",
+        "nh-c0062" ;
+    schema:about nh:nh-p0026 ;
+    schema:text "Period 'Självständigt kungarike': 1905 – 1945" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0062#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Norges_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Norges_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0062 ;
+    schema:reviewBody "SNL har unionsupplösningen 1905 som början och tyskarnas kapitulation i maj 1945 som slut, men delar in i 1905–1939 och 1939–1945." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0063 a schema:Claim ;
+    dcterms:identifier "NO21",
+        "nh-c0063" ;
+    schema:about nh:nh-p0026 ;
+    schema:text "Haakon VII" .
+
+nh:nh-c0064 a schema:Claim ;
+    dcterms:identifier "NO22",
+        "nh-c0064" ;
+    schema:about nh:nh-p0026 ;
+    schema:text "kvinnlig rösträtt 1913" .
+
+<https://snl.no/Haakon_7.> schema:name "Store norske leksikon: Haakon 7." .
+
+<https://snl.no/stemmerett_for_kvinner_i_Norge> schema:name "Store norske leksikon: stemmerett for kvinner i Norge" .
+
+<https://snl.no/Norges_historie> schema:name "Store norske leksikon: Norges historie" .
+
+nh:nh-p0026 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0026" ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1905"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1945"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20 ;
+    skos:definition "Haakon VII; kvinnlig rösträtt 1913"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Självständigt kungarike"@sv ;
+    time:intervalMeets nh:nh-p0027 ;
+    time:intervalMetBy nh:nh-p0070 ;
+    schema:description "Haakon VII; kvinnlig rösträtt 1913" ;
+    schema:name "Självständigt kungarike" ;
+    schema:temporalCoverage "1905/1945" .
+

@@ -1,0 +1,108 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0139#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/gullbrakteater> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/gullbrakteater> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0139 ;
+    schema:reviewBody "SNL anger att guldbrakteaterna tillverkades under folkvandringstid, ca 400–570 e.Kr." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0140#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Guldhornene> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Guldhornene> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0140 ;
+    schema:reviewBody "Lex.dk daterar guldhornen från Gallehus till omkring 400 e.Kr." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0058#def-055> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-055" ;
+    dcterms:source <https://snl.no/jernalderen> ;
+    dcterms:spatial wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0400"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "0550"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0058 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Folkvandringstid enligt Store norske leksikon"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0138#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0058/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0058 .
+
+nh:nh-c0138 a schema:Claim ;
+    dcterms:identifier "GE09",
+        "nh-c0138" ;
+    schema:about nh:nh-p0058 ;
+    schema:text "Period 'Folkvandringstid': 400 – 550" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0138#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/jernalderen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/jernalderen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0138 ;
+    schema:reviewBody "SNL anger folkvandringstid till 400–550 e.Kr." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0139 a schema:Claim ;
+    dcterms:identifier "GE10",
+        "nh-c0139" ;
+    schema:about nh:nh-p0058 ;
+    schema:text "Guldbrakteater" .
+
+nh:nh-c0140 a schema:Claim ;
+    dcterms:identifier "GE11",
+        "nh-c0140" ;
+    schema:about nh:nh-p0058 ;
+    schema:text "guldhornen från Gallehus" .
+
+<https://lex.dk/Guldhornene> schema:name "Lex.dk: Guldhornene" .
+
+<https://snl.no/gullbrakteater> schema:name "Store norske leksikon: gullbrakteater" .
+
+<https://snl.no/jernalderen> schema:name "Store norske leksikon: jernalderen" .
+
+nh:nh-p0058 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0058" ;
+    dcterms:spatial wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0400"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "0550"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    skos:closeMatch wd:Q131192 ;
+    skos:definition "Guldbrakteater; guldhornen från Gallehus"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Folkvandringstid"@sv ;
+    time:intervalMeets nh:nh-p0059 ;
+    time:intervalMetBy nh:nh-p0057 ;
+    schema:description "Guldbrakteater; guldhornen från Gallehus" ;
+    schema:name "Folkvandringstid" ;
+    schema:temporalCoverage "0400/0550" .
+

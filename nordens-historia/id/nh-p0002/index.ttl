@@ -1,0 +1,121 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0004#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Islands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Islands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0004 ;
+    schema:reviewBody "SNL säger att Alltinget instiftades på Þingvellir omkring 930 (enligt traditionen)." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0005#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Islands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Islands_historie> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Ändrat till 999/1000." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0005 ;
+    schema:reviewBody "SNL anger att kristendomen antogs på Alltinget år 999/1000; lex.dk skriver ca 1000." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0006#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/islendingesaga> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/islendingesaga> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0006 ;
+    schema:reviewBody "SNL säger att islänningasagorna skrevs på 1200-talet, de äldsta omkring 1200." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0002#def-002> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-002" ;
+    dcterms:source <https://lex.dk/Islands_historie> ;
+    dcterms:spatial wd:Q189 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0930"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1262"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0002 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:prefLabel "Fristaten enligt Lex (Den Store Danske)"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0003#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0002/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0002 .
+
+nh:nh-c0003 a schema:Claim ;
+    dcterms:identifier "IS03",
+        "nh-c0003" ;
+    schema:about nh:nh-p0002 ;
+    schema:text "Period 'Fristaten': 930 – 1262" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0003#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Islands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Islands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0003 ;
+    schema:reviewBody "Både lex.dk och SNL daterar fristatstiden till 930–1262." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0004 a schema:Claim ;
+    dcterms:identifier "IS04",
+        "nh-c0004" ;
+    schema:about nh:nh-p0002 ;
+    schema:text "Alltinget på Þingvellir" .
+
+nh:nh-c0005 a schema:Claim ;
+    dcterms:identifier "IS05",
+        "nh-c0005" ;
+    schema:about nh:nh-p0002 ;
+    schema:text "kristendomen antas år 1000" .
+
+nh:nh-c0006 a schema:Claim ;
+    dcterms:identifier "IS06",
+        "nh-c0006" ;
+    schema:about nh:nh-p0002 ;
+    schema:text "sagalitteraturen" .
+
+<https://snl.no/islendingesaga> schema:name "Islendingesaga (Store norske leksikon)" .
+
+<https://lex.dk/Islands_historie> schema:name "Islands historie (lex.dk, Den Store Danske)" .
+
+<https://snl.no/Islands_historie> schema:name "Islands historie (Store norske leksikon)" .
+
+nh:nh-p0002 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0002" ;
+    dcterms:spatial wd:Q189 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0930"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1262"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q189 ;
+    skos:definition "Alltinget på Þingvellir; kristendomen antas 999/1000; sagalitteraturen"@sv ;
+    skos:exactMatch wd:Q62389 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Fristaten"@sv ;
+    time:intervalMeets nh:nh-p0003 ;
+    time:intervalMetBy nh:nh-p0001 ;
+    schema:description "Alltinget på Þingvellir; kristendomen antas 999/1000; sagalitteraturen" ;
+    schema:name "Fristaten" ;
+    schema:temporalCoverage "0930/1262" .
+

@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0107#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0107 ;
+    schema:reviewBody "Uppslagsverket anger att Finland förklarade sig självständigt 6 december 1917." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0107/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0107 .
+
+nh:nh-c0107 a schema:Claim ;
+    dcterms:identifier "FI19",
+        "nh-c0107" ;
+    schema:about nh:nh-p0046 ;
+    schema:text "6 dec 1917" .
+
+<https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> schema:name "Uppslagsverket Finland: Finlands historia efter 1917" .
+

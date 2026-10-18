@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0151#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Kalmarunionen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Kalmarunionen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0151 ;
+    schema:reviewBody "Lex.dk: Margareta formade unionen; Erik av Pommern kröntes i Kalmar 1397 och regerade efter hennes död 1412 till 1439." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0151/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0151 .
+
+nh:nh-c0151 a schema:Claim ;
+    dcterms:identifier "GE22",
+        "nh-c0151" ;
+    schema:about nh:nh-p0063 ;
+    schema:text "Margareta och Erik av Pommern" .
+
+<https://lex.dk/Kalmarunionen> schema:name "Lex.dk: Kalmarunionen" .
+

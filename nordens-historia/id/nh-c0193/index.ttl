@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0193#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Kalevala> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Kalevala> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0193 ;
+    schema:reviewBody "SNL anger att första utgåvan av Kalevala kom ut 1835." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0193/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0193 .
+
+nh:nh-c0193 a schema:Claim ;
+    dcterms:identifier "MI12",
+        "nh-c0193" ;
+    schema:about nh:nh-m0012 ;
+    schema:text "Kalevala: 1835" .
+
+<https://snl.no/Kalevala> schema:name "Store norske leksikon: Kalevala" .
+

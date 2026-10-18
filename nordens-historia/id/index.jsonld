@@ -131,13 +131,22 @@
      "description": "Signerad LinkedIn-länk, giltig till 2026-11-05."
     }
    },
-   "distribution": {
-    "@type": "DataDownload",
-    "encodingFormat": "application/ld+json",
-    "contentUrl": {
-     "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/index.jsonld"
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "encodingFormat": "application/ld+json",
+     "contentUrl": {
+      "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/index.jsonld"
+     }
+    },
+    {
+     "@type": "DataDownload",
+     "encodingFormat": "text/turtle",
+     "contentUrl": {
+      "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/index.ttl"
+     }
     }
-   }
+   ]
   },
   {
    "@id": "nh:#perioder",

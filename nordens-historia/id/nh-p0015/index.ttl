@@ -1,0 +1,106 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0037#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Danmarks_forfatning> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Danmarks_forfatning> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0037 ;
+    schema:reviewBody "Grundloven (Junigrundloven) är daterad 5 juni 1849 och avskaffade enväldet." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0038#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Krigen_i_1864> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Krigen_i_1864> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Tillägg: Holsten och Lauenburg." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0038 ;
+    schema:reviewBody "Danmark förlorade 1864 nästan hela Slesvig samt Holstein och Lauenburg (Wienfreden 30 okt 1864)." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0015#def-015> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-015" ;
+    dcterms:source <https://lex.dk/Danmarks_forfatning> ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1849"^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0015 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:prefLabel "Grundlov och 1864 enligt Lex (Den Store Danske)"@sv ;
+    skos:scopeNote "Källans formulering: konstitutionell monarki från 1849"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0036#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0015/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0015 .
+
+nh:nh-c0036 a schema:Claim ;
+    dcterms:identifier "DA20",
+        "nh-c0036" ;
+    schema:about nh:nh-p0015,
+        nh:nh-p0016 ;
+    schema:text "Period 'Konstitutionell monarki': 1849 – 1945" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0036#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Danmarks_forfatning> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Danmarks_forfatning> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Delat i 1849–1914 och 1914–1945 efter lex.dk." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0036 ;
+    schema:reviewBody "Konstitutionell monarki infördes 1849 enligt Lex, men 1945 är inget slut på den; Lex periodiserar i stället 1814–1914 och 1914–1945." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0037 a schema:Claim ;
+    dcterms:identifier "DA21",
+        "nh-c0037" ;
+    schema:about nh:nh-p0015 ;
+    schema:text "Grundloven 1849" .
+
+nh:nh-c0038 a schema:Claim ;
+    dcterms:identifier "DA22",
+        "nh-c0038" ;
+    schema:about nh:nh-p0015 ;
+    schema:text "Slesvig förloras 1864" .
+
+<https://lex.dk/Krigen_i_1864> schema:name "Lex: Krigen i 1864" .
+
+nh:nh-p0015 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0015" ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1849"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1914"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q35 ;
+    skos:closeMatch wd:Q11964717 ;
+    skos:definition "Grundloven 1849; Slesvig, Holsten och Lauenburg förloras 1864"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Grundlov och 1864"@sv ;
+    time:intervalMeets nh:nh-p0016 ;
+    time:intervalMetBy nh:nh-p0014 ;
+    schema:description "Grundloven 1849; Slesvig, Holsten och Lauenburg förloras 1864" ;
+    schema:name "Grundlov och 1864" ;
+    schema:temporalCoverage "1849/1914" .
+
+<https://lex.dk/Danmarks_forfatning> schema:name "Lex: Danmarks forfatning",
+        "Lex: Danmarks forfatning / periodintroduktioner" .
+

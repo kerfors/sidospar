@@ -1,0 +1,31 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0031#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Danmarks_historie_i_middelalderen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Danmarks_historie_i_middelalderen> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Delat i 1241–1340 och 1340–1380 efter lex.dk." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0031 ;
+    schema:reviewBody "Lex delar in tiden i 'Strid og rigsopløsning' 1241–1340 och 'Rigets genrejsning og pesten' 1340–1387; ingen period slutar 1380." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0031/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0031 .
+
+nh:nh-c0031 a schema:Claim ;
+    dcterms:identifier "DA15",
+        "nh-c0031" ;
+    schema:about nh:nh-p0012,
+        nh:nh-p0013 ;
+    schema:text "Period 'Kris och återuppbyggnad': 1241 – 1380" .
+
+<https://lex.dk/Danmarks_historie_i_middelalderen> schema:name "Lex: Danmarks historie i middelalderen" .
+

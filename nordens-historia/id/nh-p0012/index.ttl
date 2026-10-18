@@ -1,0 +1,84 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0032#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Danmarks_historie_i_middelalderen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Danmarks_historie_i_middelalderen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0032 ;
+    schema:reviewBody "Lex anger de kungalösa åren till 1332–1340." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0012#def-012> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-012" ;
+    dcterms:source <https://lex.dk/Danmarks_historie_i_middelalderen> ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1241"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1340"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0012 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:prefLabel "Strid och rikets upplösning enligt Lex (Den Store Danske)"@sv ;
+    skos:scopeNote "Källans formulering: Strid og rigsopløsning 1241–1340"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0031#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0012/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0012 .
+
+nh:nh-c0031 a schema:Claim ;
+    dcterms:identifier "DA15",
+        "nh-c0031" ;
+    schema:about nh:nh-p0012,
+        nh:nh-p0013 ;
+    schema:text "Period 'Kris och återuppbyggnad': 1241 – 1380" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0031#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Danmarks_historie_i_middelalderen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Danmarks_historie_i_middelalderen> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Delat i 1241–1340 och 1340–1380 efter lex.dk." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0031 ;
+    schema:reviewBody "Lex delar in tiden i 'Strid og rigsopløsning' 1241–1340 och 'Rigets genrejsning og pesten' 1340–1387; ingen period slutar 1380." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0032 a schema:Claim ;
+    dcterms:identifier "DA16",
+        "nh-c0032" ;
+    schema:about nh:nh-p0012 ;
+    schema:text "Kunglös tid 1332–40" .
+
+nh:nh-p0012 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0012" ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1241"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1340"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q35 ;
+    skos:definition "Kunglös tid 1332–40"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Strid och rikets upplösning"@sv ;
+    time:intervalMeets nh:nh-p0013 ;
+    time:intervalMetBy nh:nh-p0011 ;
+    schema:description "Kunglös tid 1332–40" ;
+    schema:name "Strid och rikets upplösning" ;
+    schema:temporalCoverage "1241/1340" .
+
+<https://lex.dk/Danmarks_historie_i_middelalderen> schema:name "Lex: Danmarks historie i middelalderen" .
+

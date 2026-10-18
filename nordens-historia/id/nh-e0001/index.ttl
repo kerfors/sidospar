@@ -1,0 +1,47 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0176#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/vikingtid> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/vikingtid> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0176 ;
+    schema:reviewBody "Vikingatidens början knyts ofta till angreppet på Lindisfarne 793." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-e0001/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-e0001 .
+
+nh:nh-c0176 a schema:Claim ;
+    dcterms:identifier "GE47",
+        "nh-c0176" ;
+    schema:about nh:nh-e0001 ;
+    schema:text "793 Lindisfarne – vikingatiden börjar" .
+
+nh:nh-e0001 a crm:E5_Event,
+        schema:Event ;
+    dcterms:identifier "nh-e0001" ;
+    crm:P10_falls_within nh:nh-p0009,
+        nh:nh-p0021,
+        nh:nh-p0030 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0793"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    skos:exactMatch wd:Q133850450 ;
+    schema:name "793 Lindisfarne – vikingatiden börjar" ;
+    schema:startDate "0793"^^xsd:gYear .
+
+<https://snl.no/vikingtid> schema:name "Vikingtid – Store norske leksikon" .
+

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Olja och välfärd – Nordens historia</title>
 <link rel="alternate" type="application/ld+json" href="index.jsonld">
+<link rel="alternate" type="text/turtle" href="index.ttl">
 <script type="application/ld+json">
 {
  "@context": {
@@ -289,12 +290,19 @@
   .v.bekräftad { background: #d8efdc; } .v.omdiskuterad { background: #f7e3b5; }
   .v.avvikande { background: #f6c9c4; } .v.ej { background: #e3e3e3; }
   .tw { overflow-x: auto; }
+  .formats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+             width: min(1240px, calc(100vw - 48px)); position: relative; left: 50%; transform: translateX(-50%); }
+  .formats > div { min-width: 0; }
+  .formats h3 { font-size: 0.95rem; margin: 0 0 6px; }
+  .formats pre { background: #f1eee7; padding: 10px 12px; border-radius: 4px; overflow: auto; max-height: 40em;
+                 font-size: 0.74rem; line-height: 1.4; margin: 0; }
   @media (max-width: 600px) { dl { grid-template-columns: 1fr; } dt { margin-top: 6px; } }
+  @media (max-width: 900px) { .formats { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="../../">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="../../kallor.html">Källäget</a></p>
+<p class="crumbs"><a href="../../">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="../../kallor.html">Källäget</a> · <a href="../../sparql.html">SPARQL</a></p>
 <p class="kind">Period</p>
 <h1>Olja och välfärd</h1>
 <p>Ekofisk 1969; nej till EG/EU 1972 och 1994</p>
@@ -305,7 +313,7 @@
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q10602292">Q10602292</a> history of Norway since 1945 (närliggande)</dd>
 <dt>Föregås av</dt><dd><a href="../nh-p0026/">Självständigt kungarike</a></dd><dt>Under perioden</dt><dd><a href="../nh-e0006/">1952 Nordiska rådet (Finland ansluter 1955)</a>, <a href="../nh-m0024/">Ekofiskfyndet</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0027">Visa på affischen</a></dd>
-<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
+<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
 <h2>Källornas gränser</h2>
 <p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
@@ -313,6 +321,376 @@
 
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0065/">nh-c0065</a></td><td>Period &#x27;Olja och välfärd&#x27;: 1945 – 2026</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Norges_historie">Store norske leksikon: Norges historie</a></td></tr><tr><td><a href="../nh-c0066/">nh-c0066</a></td><td>Ekofisk 1969</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Ekofisk">Store norske leksikon: Ekofisk</a></td></tr><tr><td><a href="../nh-c0067/">nh-c0067</a></td><td>nej till EG/EU 1972 och 1994</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/EU-kampen">Store norske leksikon: EU-kampen</a></td></tr></tbody></table></div>
+<h2>Data i två format</h2>
+<p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
+<div class="formats">
+<div><h3><a href="index.jsonld">index.jsonld</a></h3><pre>{
+ &quot;@context&quot;: {
+  &quot;@vocab&quot;: &quot;https://schema.org/&quot;,
+  &quot;schema&quot;: &quot;https://schema.org/&quot;,
+  &quot;crm&quot;: &quot;http://www.cidoc-crm.org/cidoc-crm/&quot;,
+  &quot;skos&quot;: &quot;http://www.w3.org/2004/02/skos/core#&quot;,
+  &quot;dcterms&quot;: &quot;http://purl.org/dc/terms/&quot;,
+  &quot;prov&quot;: &quot;http://www.w3.org/ns/prov#&quot;,
+  &quot;xsd&quot;: &quot;http://www.w3.org/2001/XMLSchema#&quot;,
+  &quot;wd&quot;: &quot;http://www.wikidata.org/entity/&quot;,
+  &quot;time&quot;: &quot;http://www.w3.org/2006/time#&quot;,
+  &quot;nh&quot;: &quot;https://kerfors.github.io/sidospar/nordens-historia/id/&quot;,
+  &quot;skos:prefLabel&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;skos:definition&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;skos:inScheme&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:exactMatch&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:closeMatch&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;dcterms:spatial&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P7_took_place_at&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P82a_begin_of_the_begin&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;crm:P82b_end_of_the_end&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;startDate&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;endDate&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;about&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;itemReviewed&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;citation&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;isBasedOn&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;license&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;time:intervalMeets&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;time:intervalMetBy&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P10_falls_within&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;dcterms:source&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:scopeNote&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;mainEntity&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;isPartOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;url&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasGeneratedBy&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasDerivedFrom&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasAssociatedWith&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:actedOnBehalfOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  }
+ },
+ &quot;@graph&quot;: [
+  {
+   &quot;@id&quot;: &quot;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0027/&quot;,
+   &quot;@type&quot;: &quot;WebPage&quot;,
+   &quot;mainEntity&quot;: &quot;nh:nh-p0027&quot;,
+   &quot;isPartOf&quot;: &quot;nh:#dataset&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-p0027&quot;,
+   &quot;@type&quot;: [
+    &quot;crm:E4_Period&quot;,
+    &quot;skos:Concept&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;nh-p0027&quot;,
+   &quot;name&quot;: &quot;Olja och välfärd&quot;,
+   &quot;skos:prefLabel&quot;: {
+    &quot;sv&quot;: &quot;Olja och välfärd&quot;
+   },
+   &quot;skos:inScheme&quot;: &quot;nh:#perioder&quot;,
+   &quot;temporalCoverage&quot;: &quot;1945/2026&quot;,
+   &quot;crm:P4_has_time-span&quot;: {
+    &quot;@type&quot;: &quot;crm:E52_Time-Span&quot;,
+    &quot;crm:P82a_begin_of_the_begin&quot;: &quot;1945&quot;,
+    &quot;crm:P82b_end_of_the_end&quot;: &quot;2026&quot;
+   },
+   &quot;crm:P7_took_place_at&quot;: [
+    &quot;wd:Q20&quot;
+   ],
+   &quot;dcterms:spatial&quot;: [
+    &quot;wd:Q20&quot;
+   ],
+   &quot;description&quot;: &quot;Ekofisk 1969; nej till EG/EU 1972 och 1994&quot;,
+   &quot;skos:definition&quot;: {
+    &quot;sv&quot;: &quot;Ekofisk 1969; nej till EG/EU 1972 och 1994&quot;
+   },
+   &quot;skos:closeMatch&quot;: &quot;wd:Q10602292&quot;,
+   &quot;time:intervalMetBy&quot;: [
+    &quot;nh:nh-p0026&quot;
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-p0027#def-026&quot;,
+   &quot;@type&quot;: [
+    &quot;crm:E4_Period&quot;,
+    &quot;skos:Concept&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;def-026&quot;,
+   &quot;skos:prefLabel&quot;: {
+    &quot;sv&quot;: &quot;Olja och välfärd enligt Store norske leksikon&quot;
+   },
+   &quot;skos:inScheme&quot;: &quot;nh:#kalla-snl&quot;,
+   &quot;skos:exactMatch&quot;: &quot;nh:nh-p0027&quot;,
+   &quot;crm:P4_has_time-span&quot;: {
+    &quot;@type&quot;: &quot;crm:E52_Time-Span&quot;,
+    &quot;crm:P82a_begin_of_the_begin&quot;: &quot;1945&quot;,
+    &quot;crm:P82b_end_of_the_end&quot;: &quot;2026&quot;
+   },
+   &quot;dcterms:spatial&quot;: [
+    &quot;wd:Q20&quot;
+   ],
+   &quot;dcterms:source&quot;: &quot;https://snl.no/Norges_historie&quot;,
+   &quot;prov:wasDerivedFrom&quot;: &quot;nh:nh-c0065#granskning&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0065&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0065&quot;,
+    &quot;NO23&quot;
+   ],
+   &quot;text&quot;: &quot;Period &#x27;Olja och välfärd&#x27;: 1945 – 2026&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0027&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0065#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0065&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SNL låter efterkrigstiden börja 1945 med välfärdsstatens uppbyggnad och oljefynd från slutet av 1960-talet.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://snl.no/Norges_historie&quot;,
+    &quot;name&quot;: &quot;Store norske leksikon: Norges historie&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://snl.no/Norges_historie&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0066&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0066&quot;,
+    &quot;NO24&quot;
+   ],
+   &quot;text&quot;: &quot;Ekofisk 1969&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0027&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0066#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0066&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;Ekofiskfältet upptäcktes 25 oktober 1969; produktionen startade 1971.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://snl.no/Ekofisk&quot;,
+    &quot;name&quot;: &quot;Store norske leksikon: Ekofisk&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://snl.no/Ekofisk&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0067&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0067&quot;,
+    &quot;NO25&quot;
+   ],
+   &quot;text&quot;: &quot;nej till EG/EU 1972 och 1994&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0027&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0067#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0067&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;Folkomröstningarna 1972 (53,5 % nej till EF) och 1994 (52,2 % nej till EU) slutade båda med nej-majoritet.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://snl.no/EU-kampen&quot;,
+    &quot;name&quot;: &quot;Store norske leksikon: EU-kampen&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://snl.no/EU-kampen&quot;
+  }
+ ]
+}</pre></div>
+<div><h3><a href="index.ttl">index.ttl</a></h3><pre>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix nh: &lt;https://kerfors.github.io/sidospar/nordens-historia/id/&gt; .
+@prefix prov: &lt;http://www.w3.org/ns/prov#&gt; .
+@prefix schema: &lt;https://schema.org/&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix time: &lt;http://www.w3.org/2006/time#&gt; .
+@prefix wd: &lt;http://www.wikidata.org/entity/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0066#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://snl.no/Ekofisk&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://snl.no/Ekofisk&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0066 ;
+    schema:reviewBody &quot;Ekofiskfältet upptäcktes 25 oktober 1969; produktionen startade 1971.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0067#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://snl.no/EU-kampen&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://snl.no/EU-kampen&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0067 ;
+    schema:reviewBody &quot;Folkomröstningarna 1972 (53,5 % nej till EF) och 1994 (52,2 % nej till EU) slutade båda med nej-majoritet.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0027#def-026&gt; a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier &quot;def-026&quot; ;
+    dcterms:source &lt;https://snl.no/Norges_historie&gt; ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin &quot;1945&quot;^^xsd:gYear ;
+            crm:P82b_end_of_the_end &quot;2026&quot;^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0027 ;
+    skos:inScheme &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl&gt; ;
+    skos:prefLabel &quot;Olja och välfärd enligt Store norske leksikon&quot;@sv ;
+    prov:wasDerivedFrom &lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0065#granskning&gt; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0027/&gt; a schema:WebPage ;
+    schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#dataset&gt; ;
+    schema:mainEntity nh:nh-p0027 .
+
+nh:nh-c0065 a schema:Claim ;
+    dcterms:identifier &quot;NO23&quot;,
+        &quot;nh-c0065&quot; ;
+    schema:about nh:nh-p0027 ;
+    schema:text &quot;Period &#x27;Olja och välfärd&#x27;: 1945 – 2026&quot; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0065#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://snl.no/Norges_historie&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://snl.no/Norges_historie&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0065 ;
+    schema:reviewBody &quot;SNL låter efterkrigstiden börja 1945 med välfärdsstatens uppbyggnad och oljefynd från slutet av 1960-talet.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+nh:nh-c0066 a schema:Claim ;
+    dcterms:identifier &quot;NO24&quot;,
+        &quot;nh-c0066&quot; ;
+    schema:about nh:nh-p0027 ;
+    schema:text &quot;Ekofisk 1969&quot; .
+
+nh:nh-c0067 a schema:Claim ;
+    dcterms:identifier &quot;NO25&quot;,
+        &quot;nh-c0067&quot; ;
+    schema:about nh:nh-p0027 ;
+    schema:text &quot;nej till EG/EU 1972 och 1994&quot; .
+
+&lt;https://snl.no/EU-kampen&gt; schema:name &quot;Store norske leksikon: EU-kampen&quot; .
+
+&lt;https://snl.no/Ekofisk&gt; schema:name &quot;Store norske leksikon: Ekofisk&quot; .
+
+&lt;https://snl.no/Norges_historie&gt; schema:name &quot;Store norske leksikon: Norges historie&quot; .
+
+nh:nh-p0027 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier &quot;nh-p0027&quot; ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin &quot;1945&quot;^^xsd:gYear ;
+            crm:P82b_end_of_the_end &quot;2026&quot;^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20 ;
+    skos:closeMatch wd:Q10602292 ;
+    skos:definition &quot;Ekofisk 1969; nej till EG/EU 1972 och 1994&quot;@sv ;
+    skos:inScheme &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#perioder&gt; ;
+    skos:prefLabel &quot;Olja och välfärd&quot;@sv ;
+    time:intervalMetBy nh:nh-p0026 ;
+    schema:description &quot;Ekofisk 1969; nej till EG/EU 1972 och 1994&quot; ;
+    schema:name &quot;Olja och välfärd&quot; ;
+    schema:temporalCoverage &quot;1945/2026&quot; .
+
+</pre></div>
+</div>
 
 </main>
 </body>

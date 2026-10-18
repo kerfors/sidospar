@@ -1,0 +1,42 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0185#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uu.se/550/tidigare-jubileer-och-kort-historik> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uu.se/550/tidigare-jubileer-och-kort-historik> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0185 ;
+    schema:reviewBody "Universitetets egen historik anger att det grundades 1477." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0004/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-m0004 .
+
+nh:nh-c0185 a schema:Claim ;
+    dcterms:identifier "MI04",
+        "nh-c0185" ;
+    schema:about nh:nh-m0004 ;
+    schema:text "Uppsala universitet: 1477" .
+
+nh:nh-m0004 a crm:E5_Event,
+        schema:Event ;
+    dcterms:identifier "nh-m0004" ;
+    crm:P10_falls_within nh:nh-p0063 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1477"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q34 ;
+    schema:about wd:Q185246 ;
+    schema:name "Uppsala universitet" ;
+    schema:startDate "1477"^^xsd:gYear .
+
+<https://www.uu.se/550/tidigare-jubileer-och-kort-historik> schema:name "Uppsala universitet: Kort historik och tidigare jubileer" .
+

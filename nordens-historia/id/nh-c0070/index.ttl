@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0070#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0070 ;
+    schema:reviewBody "Hensbackakultur nämns som en av de mesolitiska kulturerna längs västkusten." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0070/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0070 .
+
+<https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> schema:name "Statens historiska museer – Mesolitikum" .
+
+nh:nh-c0070 a schema:Claim ;
+    dcterms:identifier "SV03",
+        "nh-c0070" ;
+    schema:about nh:nh-p0028 ;
+    schema:text "Hensbackakultur på Västkusten" .
+

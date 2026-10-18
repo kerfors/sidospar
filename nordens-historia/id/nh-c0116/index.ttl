@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0116#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Komsakulturen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Komsakulturen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0116 ;
+    schema:reviewBody "SNL beskriver Komsakulturen som äldre stenålder i Finnmark och på Kolahalvön, daterad till ca 8000–7000 f.Kr. på Kola." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0116/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0116 .
+
+nh:nh-c0116 a schema:Claim ;
+    dcterms:identifier "SÁ02",
+        "nh-c0116" ;
+    schema:about nh:nh-p0049 ;
+    schema:text "Komsakultur" .
+
+<https://snl.no/Komsakulturen> schema:name "Store norske leksikon: Komsakulturen" .
+

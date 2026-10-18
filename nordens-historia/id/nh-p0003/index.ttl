@@ -1,0 +1,85 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0008#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Islands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Islands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0008 ;
+    schema:reviewBody "lex.dk säger att avtalet med Håkon Håkonsson godkändes på Alltinget 1262–64." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0003#def-003> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-003" ;
+    dcterms:source <https://snl.no/Islands_historie> ;
+    dcterms:spatial wd:Q189 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1262"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1814"^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0003 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Under norska kronan enligt Store norske leksikon"@sv ;
+    skos:scopeNote "Källans formulering: under norska kronan 1262 till 1814"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0007#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0003/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0003 .
+
+nh:nh-c0007 a schema:Claim ;
+    dcterms:identifier "IS07",
+        "nh-c0007" ;
+    schema:about nh:nh-p0003 ;
+    schema:text "Period 'Under norska kronan': 1262 – 1380" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0007#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Islands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Islands_historie> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Behållet; tillägg om gemensam kung med Danmark från 1380." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0007 ;
+    schema:reviewBody "lex.dk säger att Island i praktiken blev del av den danska monarkin 1380, medan SNL säger att Island fick gemensam kung med Danmark 1380 men låg kvar under norska kronan till 1814." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0008 a schema:Claim ;
+    dcterms:identifier "IS08",
+        "nh-c0008" ;
+    schema:about nh:nh-p0003 ;
+    schema:text "Gamli sáttmáli 1262–64" .
+
+<https://lex.dk/Islands_historie> schema:name "Islands historie (lex.dk, Den Store Danske)" .
+
+<https://snl.no/Islands_historie> schema:name "Islands historie (Store norske leksikon)" .
+
+nh:nh-p0003 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0003" ;
+    dcterms:spatial wd:Q189 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1262"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1380"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q189 ;
+    skos:definition "Gamli sáttmáli 1262–64; gemensam kung med Danmark från 1380"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Under norska kronan"@sv ;
+    time:intervalMeets nh:nh-p0062 ;
+    time:intervalMetBy nh:nh-p0002 ;
+    schema:description "Gamli sáttmáli 1262–64; gemensam kung med Danmark från 1380" ;
+    schema:name "Under norska kronan" ;
+    schema:temporalCoverage "1262/1380" .
+

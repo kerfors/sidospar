@@ -1,0 +1,110 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0131#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Solen_-_symbolik> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Solen_-_symbolik> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0131 ;
+    schema:reviewBody "Lex.dk daterar solvagnen från Trundholm till ca 1400 f.Kr., alltså äldre bronsålder." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0132#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://whc.unesco.org/en/list/557> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://whc.unesco.org/en/list/557> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0132 ;
+    schema:reviewBody "Unesco daterar hällristningarna i Tanum till nordisk bronsålder, ca 1700–500 f.Kr." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0055#def-052> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-052" ;
+    dcterms:source <https://snl.no/bronsealder> ;
+    dcterms:spatial wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "-1699"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "-0499"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0055 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Nordisk bronsålder enligt Store norske leksikon"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0130#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0055/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0055 .
+
+nh:nh-c0130 a schema:Claim ;
+    dcterms:identifier "GE01",
+        "nh-c0130" ;
+    schema:about nh:nh-p0055 ;
+    schema:text "Period 'Nordisk bronsålder': 1 700 f.Kr. – 500 f.Kr." .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0130#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/bronsealder> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/bronsealder> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0130 ;
+    schema:reviewBody "SNL anger nordisk bronsålder till ca 1700–500 f.Kr. (äldre 1700–1100, yngre 1100–500)." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0131 a schema:Claim ;
+    dcterms:identifier "GE02",
+        "nh-c0131" ;
+    schema:about nh:nh-p0055 ;
+    schema:text "Solvagnen från Trundholm" .
+
+nh:nh-c0132 a schema:Claim ;
+    dcterms:identifier "GE03",
+        "nh-c0132" ;
+    schema:about nh:nh-p0055 ;
+    schema:text "hällristningarna i Tanum" .
+
+<https://lex.dk/Solen_-_symbolik> schema:name "Lex.dk: Solen – symbolik" .
+
+<https://whc.unesco.org/en/list/557> schema:name "UNESCO World Heritage: Rock Carvings in Tanum" .
+
+<https://snl.no/bronsealder> schema:name "Store norske leksikon: bronsealder" .
+
+nh:nh-p0055 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0055" ;
+    dcterms:spatial wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "-1699"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "-0499"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    skos:closeMatch wd:Q605601 ;
+    skos:definition "Solvagnen från Trundholm; hällristningarna i Tanum"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Nordisk bronsålder"@sv ;
+    time:intervalMeets nh:nh-p0056 ;
+    time:intervalMetBy nh:nh-p0008,
+        nh:nh-p0020,
+        nh:nh-p0029 ;
+    schema:description "Solvagnen från Trundholm; hällristningarna i Tanum" ;
+    schema:name "Nordisk bronsålder" ;
+    schema:temporalCoverage "-1699/-0499" .
+

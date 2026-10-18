@@ -1,0 +1,81 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0111#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Finlands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Finlands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0111 ;
+    schema:reviewBody "SNL anger vinterkriget 1939–40 och fortsättningskriget 1941–44; Uppslagsverket anger att striderna mot tyskarna i Lappland pågick till april 1945." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0047#def-044> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-044" ;
+    dcterms:source <https://snl.no/Finlands_historie> ;
+    dcterms:spatial wd:Q33 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1939"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1945"^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0047 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Krigsåren enligt Store norske leksikon"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0110#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0047/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0047 .
+
+nh:nh-c0110 a schema:Claim ;
+    dcterms:identifier "FI22",
+        "nh-c0110" ;
+    schema:about nh:nh-p0047 ;
+    schema:text "Period 'Krigsåren': 1939 – 1945" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0110#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Finlands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Finlands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0110 ;
+    schema:reviewBody "SNL daterar vinterkriget från 30 nov 1939; Uppslagsverket anger att striderna i Lappland pågick till april 1945." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0111 a schema:Claim ;
+    dcterms:identifier "FI23",
+        "nh-c0111" ;
+    schema:about nh:nh-p0047 ;
+    schema:text "Vinter-, fortsättnings- och Lapplandskriget" .
+
+nh:nh-p0047 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0047" ;
+    dcterms:spatial wd:Q33 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1939"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1944"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q33 ;
+    skos:definition "Vinter- och fortsättningskriget"@sv ;
+    skos:exactMatch wd:Q3315504 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Krigsåren"@sv ;
+    time:intervalMeets nh:nh-p0048 ;
+    time:intervalMetBy nh:nh-p0046 ;
+    schema:description "Vinter- och fortsättningskriget" ;
+    schema:name "Krigsåren" ;
+    schema:temporalCoverage "1939/1944" .
+
+<https://snl.no/Finlands_historie> schema:name "Store norske leksikon: Finlands historie" .
+

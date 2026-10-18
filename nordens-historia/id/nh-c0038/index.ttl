@@ -1,0 +1,30 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0038#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Krigen_i_1864> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Krigen_i_1864> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Tillägg: Holsten och Lauenburg." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0038 ;
+    schema:reviewBody "Danmark förlorade 1864 nästan hela Slesvig samt Holstein och Lauenburg (Wienfreden 30 okt 1864)." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0038/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0038 .
+
+nh:nh-c0038 a schema:Claim ;
+    dcterms:identifier "DA22",
+        "nh-c0038" ;
+    schema:about nh:nh-p0015 ;
+    schema:text "Slesvig förloras 1864" .
+
+<https://lex.dk/Krigen_i_1864> schema:name "Lex: Krigen i 1864" .
+

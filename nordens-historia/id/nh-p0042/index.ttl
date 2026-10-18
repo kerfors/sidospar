@@ -1,0 +1,62 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0042#def-040> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-040" ;
+    dcterms:source <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    dcterms:spatial wd:Q33 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0800"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1025"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0042 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-uppslagsverket> ;
+    skos:prefLabel "Vikingatid enligt Uppslagsverket Finland"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0098#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0042/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0042 .
+
+nh:nh-c0098 a schema:Claim ;
+    dcterms:identifier "FI10",
+        "nh-c0098" ;
+    schema:about nh:nh-p0042 ;
+    schema:text "Period 'Vikingatid': 800 – 1025" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0098#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0098 ;
+    schema:reviewBody "Uppslagsverket anger vikingatiden i Finland till 800–1025 e.Kr." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-p0042 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0042" ;
+    dcterms:spatial wd:Q33 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0800"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1025"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q33 ;
+    skos:closeMatch wd:Q213649 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Vikingatid"@sv ;
+    time:intervalMeets nh:nh-p0043 ;
+    time:intervalMetBy nh:nh-p0041 ;
+    schema:name "Vikingatid" ;
+    schema:temporalCoverage "0800/1025" .
+
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
+

@@ -1,0 +1,105 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0077#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0077 ;
+    schema:reviewBody "NE: sverkerska ätten kämpade under flera generationer om kungavärdigheten med Erik den heliges ättlingar (1100–1200-tal)." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0078#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0078 ;
+    schema:reviewBody "Stefan blev 1164 förste ärkebiskop i Uppsala då Sverige blev egen kyrkoprovins." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0031#def-030> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-030" ;
+    dcterms:source <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt> ;
+    dcterms:spatial wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1000"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1300"^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0031 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-ne> ;
+    skos:prefLabel "Riket växer fram enligt Nationalencyklopedin"@sv ;
+    skos:scopeNote "Källans formulering: riksenheten stabiliseras under äldre medeltid ca 1000–1300. Ungefärligt årtal: start, slut"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0076#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0031/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0031 .
+
+nh:nh-c0076 a schema:Claim ;
+    dcterms:identifier "SV09",
+        "nh-c0076" ;
+    schema:about nh:nh-p0031 ;
+    schema:text "Period 'Riket växer fram': 1066 – 1250" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0076#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Start ändrat till 1050." ] ;
+    schema:correction "ca 1000/1050 – 1250/1300" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0076 ;
+    schema:reviewBody "NE talar om att riksenheten stabiliserades under äldre medeltid ca 1000–1300; Historiska museet låter medeltiden börja 1050." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0077 a schema:Claim ;
+    dcterms:identifier "SV10",
+        "nh-c0077" ;
+    schema:about nh:nh-p0031 ;
+    schema:text "Erikska och sverkerska ätterna" .
+
+nh:nh-c0078 a schema:Claim ;
+    dcterms:identifier "SV11",
+        "nh-c0078" ;
+    schema:about nh:nh-p0031 ;
+    schema:text "ärkesäte i Uppsala 1164" .
+
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten> schema:name "Nationalencyklopedin – sverkerska ätten" .
+
+<https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd> schema:name "Svenska kyrkan – Ärkebiskopslängd" .
+
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt> schema:name "Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt" .
+
+nh:nh-p0031 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0031" ;
+    dcterms:spatial wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1050"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1250"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q34 ;
+    skos:definition "Erikska och sverkerska ätterna; ärkesäte i Uppsala 1164"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Riket växer fram"@sv ;
+    time:intervalMeets nh:nh-p0032 ;
+    time:intervalMetBy nh:nh-p0030 ;
+    schema:description "Erikska och sverkerska ätterna; ärkesäte i Uppsala 1164" ;
+    schema:name "Riket växer fram" ;
+    schema:temporalCoverage "1050/1250" .
+

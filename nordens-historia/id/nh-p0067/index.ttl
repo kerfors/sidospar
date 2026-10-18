@@ -1,0 +1,119 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0164#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0164 ;
+    schema:reviewBody "Gustav II Adolf blev kung 1611 och hans trontillträde inleder stormaktstiden." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0165#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0165 ;
+    schema:reviewBody "Westfaliska freden undertecknades i oktober 1648 och avslutade trettioåriga kriget; Sverige förhandlade i Osnabrück." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0166#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0166 ;
+    schema:reviewBody "Karl XII:s död 1718 markerar stormaktstidens slut." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0067#def-063> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-063" ;
+    dcterms:source <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> ;
+    dcterms:spatial wd:Q33,
+        wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1611"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1718"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0067 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-ne> ;
+    skos:prefLabel "Stormaktstiden enligt Nationalencyklopedin"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0163#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0067/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0067 .
+
+nh:nh-c0163 a schema:Claim ;
+    dcterms:identifier "GE34",
+        "nh-c0163" ;
+    schema:about nh:nh-p0067 ;
+    schema:text "Period 'Stormaktstiden': 1611 – 1718" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0163#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0163 ;
+    schema:reviewBody "NE avgränsar stormaktstiden från Gustav II Adolfs trontillträde 1611 till Karl XII:s död 1718." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0164 a schema:Claim ;
+    dcterms:identifier "GE35",
+        "nh-c0164" ;
+    schema:about nh:nh-p0067 ;
+    schema:text "Gustav II Adolf" .
+
+nh:nh-c0165 a schema:Claim ;
+    dcterms:identifier "GE36",
+        "nh-c0165" ;
+    schema:about nh:nh-p0067 ;
+    schema:text "westfaliska freden 1648" .
+
+nh:nh-c0166 a schema:Claim ;
+    dcterms:identifier "GE37",
+        "nh-c0166" ;
+    schema:about nh:nh-p0067 ;
+    schema:text "Karl XII" .
+
+<https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden> schema:name "Westfaliska freden – Nationalencyklopedin" .
+
+nh:nh-p0067 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0067" ;
+    dcterms:spatial wd:Q33,
+        wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1611"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1718"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q33,
+        wd:Q34 ;
+    skos:definition "Gustav II Adolf; westfaliska freden 1648; Karl XII"@sv ;
+    skos:exactMatch wd:Q215443 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Stormaktstiden"@sv ;
+    time:intervalMetBy nh:nh-p0066 ;
+    schema:description "Gustav II Adolf; westfaliska freden 1648; Karl XII" ;
+    schema:name "Stormaktstiden" ;
+    schema:temporalCoverage "1611/1718" .
+
+<https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> schema:name "Stormaktstiden – Nationalencyklopedin" .
+

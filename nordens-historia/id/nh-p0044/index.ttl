@@ -1,0 +1,74 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0099#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Slut ändrat till 1300; not om väst/öst; nytt block 1300–1319." ] ;
+    schema:correction "1025 – ca 1150 (väst) / ca 1300 (öst)" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0099 ;
+    schema:reviewBody "Uppslagsverket anger korstågstiden till 1025–1150 i västra Finland och till ca 1300 i östra Finland; fi.wikipedia ca 1025/1050–1250/1300." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0101#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/view-170045-AaboDomkyrka> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/view-170045-AaboDomkyrka> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0101 ;
+    schema:reviewBody "Enligt Uppslagsverket invigdes Åbo domkyrka 17 juni 1300 (enligt biskopskrönikan)." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0044/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0044 .
+
+nh:nh-c0099 a schema:Claim ;
+    dcterms:identifier "FI11",
+        "nh-c0099" ;
+    schema:about nh:nh-p0043,
+        nh:nh-p0044 ;
+    schema:text "Period 'Korstågstid': 1025 – 1319" .
+
+nh:nh-c0101 a schema:Claim ;
+    dcterms:identifier "FI13",
+        "nh-c0101" ;
+    schema:about nh:nh-p0044 ;
+    schema:text "Åbo domkyrka invigs 1300" .
+
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
+
+<https://www.uppslagsverket.fi/sv/view-170045-AaboDomkyrka> schema:name "Uppslagsverket Finland: Åbo domkyrka" .
+
+nh:nh-p0044 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0044" ;
+    dcterms:spatial wd:Q33 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1300"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1319"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q33 ;
+    skos:closeMatch wd:Q12375230 ;
+    skos:definition "Åbo domkyrka invigs 1300"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Svenska riket"@sv ;
+    time:intervalMeets nh:nh-p0060 ;
+    time:intervalMetBy nh:nh-p0043 ;
+    schema:description "Åbo domkyrka invigs 1300" ;
+    schema:name "Svenska riket" ;
+    schema:temporalCoverage "1300/1319" .
+

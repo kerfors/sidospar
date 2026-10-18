@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Under norska kronan – Nordens historia</title>
 <link rel="alternate" type="application/ld+json" href="index.jsonld">
+<link rel="alternate" type="text/turtle" href="index.ttl">
 <script type="application/ld+json">
 {
  "@context": {
@@ -264,12 +265,19 @@
   .v.bekräftad { background: #d8efdc; } .v.omdiskuterad { background: #f7e3b5; }
   .v.avvikande { background: #f6c9c4; } .v.ej { background: #e3e3e3; }
   .tw { overflow-x: auto; }
+  .formats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+             width: min(1240px, calc(100vw - 48px)); position: relative; left: 50%; transform: translateX(-50%); }
+  .formats > div { min-width: 0; }
+  .formats h3 { font-size: 0.95rem; margin: 0 0 6px; }
+  .formats pre { background: #f1eee7; padding: 10px 12px; border-radius: 4px; overflow: auto; max-height: 40em;
+                 font-size: 0.74rem; line-height: 1.4; margin: 0; }
   @media (max-width: 600px) { dl { grid-template-columns: 1fr; } dt { margin-top: 6px; } }
+  @media (max-width: 900px) { .formats { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="../../">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="../../kallor.html">Källäget</a></p>
+<p class="crumbs"><a href="../../">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="../../kallor.html">Källäget</a> · <a href="../../sparql.html">SPARQL</a></p>
 <p class="kind">Period</p>
 <h1>Under norska kronan</h1>
 <p>Gamli sáttmáli 1262–64; gemensam kung med Danmark från 1380</p>
@@ -280,7 +288,7 @@
 <dt>Wikidata</dt><dd><em>ingen matchning</em></dd>
 <dt>Föregås av</dt><dd><a href="../nh-p0002/">Fristaten</a></dd><dt>Följs av</dt><dd><a href="../nh-p0062/">Danmark–Norge</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0003">Visa på affischen</a></dd>
-<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
+<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
 <h2>Källornas gränser</h2>
 <p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
@@ -288,6 +296,335 @@
 
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0007/">nh-c0007</a></td><td>Period &#x27;Under norska kronan&#x27;: 1262 – 1380</td><td><span class="v omdiskuterad">omdiskuterad</span></td><td><a href="https://snl.no/Islands_historie">Islands historie (Store norske leksikon)</a></td></tr><tr><td><a href="../nh-c0008/">nh-c0008</a></td><td>Gamli sáttmáli 1262–64</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://lex.dk/Islands_historie">Islands historie (lex.dk, Den Store Danske)</a></td></tr></tbody></table></div>
+<h2>Data i två format</h2>
+<p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
+<div class="formats">
+<div><h3><a href="index.jsonld">index.jsonld</a></h3><pre>{
+ &quot;@context&quot;: {
+  &quot;@vocab&quot;: &quot;https://schema.org/&quot;,
+  &quot;schema&quot;: &quot;https://schema.org/&quot;,
+  &quot;crm&quot;: &quot;http://www.cidoc-crm.org/cidoc-crm/&quot;,
+  &quot;skos&quot;: &quot;http://www.w3.org/2004/02/skos/core#&quot;,
+  &quot;dcterms&quot;: &quot;http://purl.org/dc/terms/&quot;,
+  &quot;prov&quot;: &quot;http://www.w3.org/ns/prov#&quot;,
+  &quot;xsd&quot;: &quot;http://www.w3.org/2001/XMLSchema#&quot;,
+  &quot;wd&quot;: &quot;http://www.wikidata.org/entity/&quot;,
+  &quot;time&quot;: &quot;http://www.w3.org/2006/time#&quot;,
+  &quot;nh&quot;: &quot;https://kerfors.github.io/sidospar/nordens-historia/id/&quot;,
+  &quot;skos:prefLabel&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;skos:definition&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;skos:inScheme&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:exactMatch&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:closeMatch&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;dcterms:spatial&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P7_took_place_at&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P82a_begin_of_the_begin&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;crm:P82b_end_of_the_end&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;startDate&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;endDate&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;about&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;itemReviewed&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;citation&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;isBasedOn&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;license&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;time:intervalMeets&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;time:intervalMetBy&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P10_falls_within&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;dcterms:source&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:scopeNote&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;mainEntity&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;isPartOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;url&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasGeneratedBy&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasDerivedFrom&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasAssociatedWith&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:actedOnBehalfOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  }
+ },
+ &quot;@graph&quot;: [
+  {
+   &quot;@id&quot;: &quot;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0003/&quot;,
+   &quot;@type&quot;: &quot;WebPage&quot;,
+   &quot;mainEntity&quot;: &quot;nh:nh-p0003&quot;,
+   &quot;isPartOf&quot;: &quot;nh:#dataset&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-p0003&quot;,
+   &quot;@type&quot;: [
+    &quot;crm:E4_Period&quot;,
+    &quot;skos:Concept&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;nh-p0003&quot;,
+   &quot;name&quot;: &quot;Under norska kronan&quot;,
+   &quot;skos:prefLabel&quot;: {
+    &quot;sv&quot;: &quot;Under norska kronan&quot;
+   },
+   &quot;skos:inScheme&quot;: &quot;nh:#perioder&quot;,
+   &quot;temporalCoverage&quot;: &quot;1262/1380&quot;,
+   &quot;crm:P4_has_time-span&quot;: {
+    &quot;@type&quot;: &quot;crm:E52_Time-Span&quot;,
+    &quot;crm:P82a_begin_of_the_begin&quot;: &quot;1262&quot;,
+    &quot;crm:P82b_end_of_the_end&quot;: &quot;1380&quot;
+   },
+   &quot;crm:P7_took_place_at&quot;: [
+    &quot;wd:Q189&quot;
+   ],
+   &quot;dcterms:spatial&quot;: [
+    &quot;wd:Q189&quot;
+   ],
+   &quot;description&quot;: &quot;Gamli sáttmáli 1262–64; gemensam kung med Danmark från 1380&quot;,
+   &quot;skos:definition&quot;: {
+    &quot;sv&quot;: &quot;Gamli sáttmáli 1262–64; gemensam kung med Danmark från 1380&quot;
+   },
+   &quot;time:intervalMeets&quot;: [
+    &quot;nh:nh-p0062&quot;
+   ],
+   &quot;time:intervalMetBy&quot;: [
+    &quot;nh:nh-p0002&quot;
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-p0003#def-003&quot;,
+   &quot;@type&quot;: [
+    &quot;crm:E4_Period&quot;,
+    &quot;skos:Concept&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;def-003&quot;,
+   &quot;skos:prefLabel&quot;: {
+    &quot;sv&quot;: &quot;Under norska kronan enligt Store norske leksikon&quot;
+   },
+   &quot;skos:inScheme&quot;: &quot;nh:#kalla-snl&quot;,
+   &quot;skos:closeMatch&quot;: &quot;nh:nh-p0003&quot;,
+   &quot;crm:P4_has_time-span&quot;: {
+    &quot;@type&quot;: &quot;crm:E52_Time-Span&quot;,
+    &quot;crm:P82a_begin_of_the_begin&quot;: &quot;1262&quot;,
+    &quot;crm:P82b_end_of_the_end&quot;: &quot;1814&quot;
+   },
+   &quot;dcterms:spatial&quot;: [
+    &quot;wd:Q189&quot;
+   ],
+   &quot;dcterms:source&quot;: &quot;https://snl.no/Islands_historie&quot;,
+   &quot;prov:wasDerivedFrom&quot;: &quot;nh:nh-c0007#granskning&quot;,
+   &quot;skos:scopeNote&quot;: {
+    &quot;sv&quot;: &quot;Källans formulering: under norska kronan 1262 till 1814&quot;
+   }
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0007&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0007&quot;,
+    &quot;IS07&quot;
+   ],
+   &quot;text&quot;: &quot;Period &#x27;Under norska kronan&#x27;: 1262 – 1380&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0003&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0007#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0007&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;omdiskuterad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;lex.dk säger att Island i praktiken blev del av den danska monarkin 1380, medan SNL säger att Island fick gemensam kung med Danmark 1380 men låg kvar under norska kronan till 1814.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://snl.no/Islands_historie&quot;,
+    &quot;name&quot;: &quot;Islands historie (Store norske leksikon)&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://snl.no/Islands_historie&quot;,
+   &quot;schema:comment&quot;: {
+    &quot;@type&quot;: &quot;Comment&quot;,
+    &quot;text&quot;: &quot;Åtgärd på affischen: Behållet; tillägg om gemensam kung med Danmark från 1380.&quot;
+   }
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0008&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0008&quot;,
+    &quot;IS08&quot;
+   ],
+   &quot;text&quot;: &quot;Gamli sáttmáli 1262–64&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0003&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0008#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0008&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;lex.dk säger att avtalet med Håkon Håkonsson godkändes på Alltinget 1262–64.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://lex.dk/Islands_historie&quot;,
+    &quot;name&quot;: &quot;Islands historie (lex.dk, Den Store Danske)&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://lex.dk/Islands_historie&quot;
+  }
+ ]
+}</pre></div>
+<div><h3><a href="index.ttl">index.ttl</a></h3><pre>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix nh: &lt;https://kerfors.github.io/sidospar/nordens-historia/id/&gt; .
+@prefix prov: &lt;http://www.w3.org/ns/prov#&gt; .
+@prefix schema: &lt;https://schema.org/&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix time: &lt;http://www.w3.org/2006/time#&gt; .
+@prefix wd: &lt;http://www.wikidata.org/entity/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0008#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://lex.dk/Islands_historie&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://lex.dk/Islands_historie&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0008 ;
+    schema:reviewBody &quot;lex.dk säger att avtalet med Håkon Håkonsson godkändes på Alltinget 1262–64.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0003#def-003&gt; a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier &quot;def-003&quot; ;
+    dcterms:source &lt;https://snl.no/Islands_historie&gt; ;
+    dcterms:spatial wd:Q189 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin &quot;1262&quot;^^xsd:gYear ;
+            crm:P82b_end_of_the_end &quot;1814&quot;^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0003 ;
+    skos:inScheme &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl&gt; ;
+    skos:prefLabel &quot;Under norska kronan enligt Store norske leksikon&quot;@sv ;
+    skos:scopeNote &quot;Källans formulering: under norska kronan 1262 till 1814&quot;@sv ;
+    prov:wasDerivedFrom &lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0007#granskning&gt; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0003/&gt; a schema:WebPage ;
+    schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#dataset&gt; ;
+    schema:mainEntity nh:nh-p0003 .
+
+nh:nh-c0007 a schema:Claim ;
+    dcterms:identifier &quot;IS07&quot;,
+        &quot;nh-c0007&quot; ;
+    schema:about nh:nh-p0003 ;
+    schema:text &quot;Period &#x27;Under norska kronan&#x27;: 1262 – 1380&quot; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0007#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://snl.no/Islands_historie&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://snl.no/Islands_historie&gt; ;
+    schema:comment [ a schema:Comment ;
+            schema:text &quot;Åtgärd på affischen: Behållet; tillägg om gemensam kung med Danmark från 1380.&quot; ] ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0007 ;
+    schema:reviewBody &quot;lex.dk säger att Island i praktiken blev del av den danska monarkin 1380, medan SNL säger att Island fick gemensam kung med Danmark 1380 men låg kvar under norska kronan till 1814.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;omdiskuterad&quot; ] .
+
+nh:nh-c0008 a schema:Claim ;
+    dcterms:identifier &quot;IS08&quot;,
+        &quot;nh-c0008&quot; ;
+    schema:about nh:nh-p0003 ;
+    schema:text &quot;Gamli sáttmáli 1262–64&quot; .
+
+&lt;https://lex.dk/Islands_historie&gt; schema:name &quot;Islands historie (lex.dk, Den Store Danske)&quot; .
+
+&lt;https://snl.no/Islands_historie&gt; schema:name &quot;Islands historie (Store norske leksikon)&quot; .
+
+nh:nh-p0003 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier &quot;nh-p0003&quot; ;
+    dcterms:spatial wd:Q189 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin &quot;1262&quot;^^xsd:gYear ;
+            crm:P82b_end_of_the_end &quot;1380&quot;^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q189 ;
+    skos:definition &quot;Gamli sáttmáli 1262–64; gemensam kung med Danmark från 1380&quot;@sv ;
+    skos:inScheme &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#perioder&gt; ;
+    skos:prefLabel &quot;Under norska kronan&quot;@sv ;
+    time:intervalMeets nh:nh-p0062 ;
+    time:intervalMetBy nh:nh-p0002 ;
+    schema:description &quot;Gamli sáttmáli 1262–64; gemensam kung med Danmark från 1380&quot; ;
+    schema:name &quot;Under norska kronan&quot; ;
+    schema:temporalCoverage &quot;1262/1380&quot; .
+
+</pre></div>
+</div>
 
 </main>
 </body>

@@ -1,0 +1,30 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0123#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/samenes_historie> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Ändrat till ”flera riken”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0123 ;
+    schema:reviewBody "SNL anger att Sápmi från 1300-talet delades i överlappande skatteområden där Norge, Sverige och Novgorod krävde skatt, i norra Finnmark alla tre." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0123/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0123 .
+
+nh:nh-c0123 a schema:Claim ;
+    dcterms:identifier "SÁ09",
+        "nh-c0123" ;
+    schema:about nh:nh-p0051 ;
+    schema:text "skatt till flera kronor" .
+
+<https://snl.no/samenes_historie> schema:name "Store norske leksikon: samenes historie" .
+

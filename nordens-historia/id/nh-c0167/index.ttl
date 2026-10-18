@@ -1,0 +1,30 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0167#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Start ändrat till 1719." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0167 ;
+    schema:reviewBody "NE daterar frihetstiden 1719–1772, från enväldets avskaffande till Gustav III:s statskupp." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0167/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0167 .
+
+nh:nh-c0167 a schema:Claim ;
+    dcterms:identifier "GE38",
+        "nh-c0167" ;
+    schema:about nh:nh-p0068 ;
+    schema:text "Period 'Frihetstiden': 1718 – 1772" .
+
+<https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden> schema:name "Frihetstiden – Nationalencyklopedin" .
+

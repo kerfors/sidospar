@@ -1,0 +1,129 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0154#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Reformationen_i_Danmark> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Reformationen_i_Danmark> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0154 ;
+    schema:reviewBody "Lex.dk: reformationen infördes i Danmark genom recessen 30 oktober 1536." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0155#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Christian_3> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Christian_3> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Ändrat till 1536/37." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0155 ;
+    schema:reviewBody "SNL: Norgesparagrafen i Christian III:s handfästning okt 1536 gjorde att riksrådet föll bort; i praktiken upphörde det 1537 när ärkebiskopen flydde." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0156#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Christian_4.> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Christian_4.> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0156 ;
+    schema:reviewBody "Christian 4. var kung av Danmark och Norge 1588–1648 (självständigt styre från 1596)." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0064#def-060> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-060" ;
+    dcterms:source <https://lex.dk/Danmark-Norge> ;
+    dcterms:spatial wd:Q189,
+        wd:Q20,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1523"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1660"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0064 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:prefLabel "Danmark–Norge enligt Lex (Den Store Danske)"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0153#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0064/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0064 .
+
+nh:nh-c0153 a schema:Claim ;
+    dcterms:identifier "GE24",
+        "nh-c0153" ;
+    schema:about nh:nh-p0064 ;
+    schema:text "Period 'Danmark–Norge': 1523 – 1660" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0153#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Danmark-Norge> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Danmark-Norge> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0153 ;
+    schema:reviewBody "Lex.dk har avsnittet 'Fra kongeligt fællesskab til dansk dominans 1523–1660', med enväldet 1660 som gräns." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0154 a schema:Claim ;
+    dcterms:identifier "GE25",
+        "nh-c0154" ;
+    schema:about nh:nh-p0064 ;
+    schema:text "Reformationen 1536" .
+
+nh:nh-c0155 a schema:Claim ;
+    dcterms:identifier "GE26",
+        "nh-c0155" ;
+    schema:about nh:nh-p0064 ;
+    schema:text "Norges riksråd avskaffas 1537" .
+
+nh:nh-c0156 a schema:Claim ;
+    dcterms:identifier "GE27",
+        "nh-c0156" ;
+    schema:about nh:nh-p0064 ;
+    schema:text "Kristian IV" .
+
+<https://lex.dk/Christian_4.> schema:name "Christian 4. – lex.dk" .
+
+<https://lex.dk/Reformationen_i_Danmark> schema:name "Lex.dk: Reformationen i Danmark" .
+
+<https://snl.no/Christian_3> schema:name "Store norske leksikon: Christian 3" .
+
+<https://lex.dk/Danmark-Norge> schema:name "Lex.dk: Danmark-Norge" .
+
+nh:nh-p0064 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0064" ;
+    dcterms:spatial wd:Q189,
+        wd:Q20,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1523"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1660"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q189,
+        wd:Q20,
+        wd:Q35 ;
+    skos:closeMatch wd:Q62651 ;
+    skos:definition "Reformationen 1536; Norges riksråd avskaffas 1536/37; Kristian IV"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Danmark–Norge"@sv ;
+    time:intervalMeets nh:nh-p0065 ;
+    time:intervalMetBy nh:nh-p0063 ;
+    schema:description "Reformationen 1536; Norges riksråd avskaffas 1536/37; Kristian IV" ;
+    schema:name "Danmark–Norge" ;
+    schema:temporalCoverage "1523/1660" .
+

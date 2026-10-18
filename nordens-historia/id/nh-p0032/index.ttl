@@ -1,0 +1,106 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0080#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0080 ;
+    schema:reviewBody "SBL: Sveriges jarl, död 21 okt 1266; NE nämner att ätten traditionellt kallas folkungaätten (egentligen Bjälboätten)." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0081#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.britannica.com/place/Stockholm> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.britannica.com/place/Stockholm> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0081 ;
+    schema:reviewBody "Stockholm nämns första gången 1252 i brev utfärdade av Birger jarl." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0032#def-031> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-031" ;
+    dcterms:source <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> ;
+    dcterms:spatial wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1250"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1363"^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0032 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-ne> ;
+    skos:prefLabel "Folkungatid enligt Nationalencyklopedin"@sv ;
+    skos:scopeNote "Källans formulering: folkungaätten styr Sverige 1250–1363"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0079#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0032/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0032 .
+
+nh:nh-c0079 a schema:Claim ;
+    dcterms:identifier "SV12",
+        "nh-c0079" ;
+    schema:about nh:nh-p0032 ;
+    schema:text "Period 'Folkungatid': 1250 – 1319" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0079#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Behållet; tillägg ”folkungaätten regerar 1250–1363”." ] ;
+    schema:correction "1250 – 1363" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0079 ;
+    schema:reviewBody "NE anger att folkungaätten styrde Sverige 1250–1363 (Norge 1319–87), inte till 1319." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0080 a schema:Claim ;
+    dcterms:identifier "SV13",
+        "nh-c0080" ;
+    schema:about nh:nh-p0032 ;
+    schema:text "Birger jarl" .
+
+nh:nh-c0081 a schema:Claim ;
+    dcterms:identifier "SV14",
+        "nh-c0081" ;
+    schema:about nh:nh-p0032 ;
+    schema:text "Stockholm nämns 1252" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> schema:name "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)" .
+
+<https://www.britannica.com/place/Stockholm> schema:name "Encyclopaedia Britannica – Stockholm" .
+
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> schema:name "Nationalencyklopedin – folkungar" .
+
+nh:nh-p0032 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0032" ;
+    dcterms:spatial wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1250"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1319"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q34 ;
+    skos:closeMatch wd:Q10497488 ;
+    skos:definition "Folkungaätten regerar 1250–1363; Birger jarl; Stockholm nämns 1252"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Folkungatid"@sv ;
+    time:intervalMeets nh:nh-p0060 ;
+    time:intervalMetBy nh:nh-p0031 ;
+    schema:description "Folkungaätten regerar 1250–1363; Birger jarl; Stockholm nämns 1252" ;
+    schema:name "Folkungatid" ;
+    schema:temporalCoverage "1250/1319" .
+

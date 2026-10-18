@@ -1,0 +1,104 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0048#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/slaget_i_Hafrsfjord> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/slaget_i_Hafrsfjord> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Ändrat till ”slutet av 800-talet”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0048 ;
+    schema:reviewBody "SNL anger slaget till slutet av 800-talet; Are Frode ger 872, Koht närmare 900 och Schreiner/Einarsdóttir 880-talet." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0049#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Slaget_p%C3%A5_Stiklestad> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Slaget_p%C3%A5_Stiklestad> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0049 ;
+    schema:reviewBody "Slaget stod den 29 juli, sannolikt år 1030, och Olav Haraldsson stupade." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0021#def-020> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-020" ;
+    dcterms:source <https://snl.no/Norges_historie> ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0793"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1066"^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0021 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Vikingatid enligt Store norske leksikon"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0047#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0021/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0021 .
+
+nh:nh-c0047 a schema:Claim ;
+    dcterms:identifier "NO05",
+        "nh-c0047" ;
+    schema:about nh:nh-p0021 ;
+    schema:text "Period 'Vikingatid': 793 – 1066" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0047#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Norges_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Norges_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0047 ;
+    schema:reviewBody "SNL skriver att angreppet på Lindisfarne 793 ofta räknas som vikingatidens början och Harald Hårdrådes fall 1066 som det sista vikingatåget." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0048 a schema:Claim ;
+    dcterms:identifier "NO06",
+        "nh-c0048" ;
+    schema:about nh:nh-p0021 ;
+    schema:text "Hafrsfjord c. 872" .
+
+nh:nh-c0049 a schema:Claim ;
+    dcterms:identifier "NO07",
+        "nh-c0049" ;
+    schema:about nh:nh-p0021 ;
+    schema:text "Stiklestad 1030" .
+
+<https://snl.no/Slaget_p%C3%A5_Stiklestad> schema:name "Store norske leksikon: Slaget på Stiklestad" .
+
+<https://snl.no/slaget_i_Hafrsfjord> schema:name "Store norske leksikon: slaget i Hafrsfjord" .
+
+<https://snl.no/Norges_historie> schema:name "Store norske leksikon: Norges historie" .
+
+nh:nh-p0021 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0021" ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0793"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1050"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20 ;
+    skos:definition "Hafrsfjord slutet av 800-talet; Stiklestad 1030"@sv ;
+    skos:exactMatch wd:Q253018 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Vikingatid"@sv ;
+    time:intervalMeets nh:nh-p0022 ;
+    time:intervalMetBy nh:nh-p0059 ;
+    schema:description "Hafrsfjord slutet av 800-talet; Stiklestad 1030" ;
+    schema:name "Vikingatid" ;
+    schema:temporalCoverage "0793/1050" .
+

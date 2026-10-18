@@ -1,14 +1,17 @@
 """Linked data for Nordens historia.
 
 Reads data/items.json, data/claims.json and data/wikidata.json and writes
-  id/index.html, id/index.jsonld                 register of all identifiers
-  id/<nh-id>/index.html, id/<nh-id>/index.jsonld one page per period, event,
+  id/index.html, id/index.jsonld, id/index.ttl   register of all identifiers
+  id/<nh-id>/index.html, index.jsonld, index.ttl one page per period, event,
                                                  milestone and claim
+Turtle is generated from the JSON-LD with rdflib; the build fails if the two
+do not give the same graph.
 
 URI pattern (static hosting, no content negotiation):
   thing     https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0015
   page      https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0015/
   data      https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0015/index.jsonld
+            https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0015/index.ttl
 GitHub Pages answers the thing URI with a 301 redirect to the page.
 
 Run: python3 ld.py
@@ -16,6 +19,9 @@ Run: python3 ld.py
 import json
 from html import escape
 from pathlib import Path
+
+from rdflib import Graph
+from rdflib.compare import isomorphic
 
 HERE = Path(__file__).parent
 BASE = "https://kerfors.github.io/sidospar/nordens-historia/"
@@ -65,6 +71,8 @@ CONTEXT = {
     "prov:actedOnBehalfOf": {"@type": "@id"},
 }
 
+PREFIXES = {k: v for k, v in CONTEXT.items() if isinstance(v, str) and not k.startswith("@")}
+
 TYPE_LABEL = {"period": "Period", "event": "Händelse", "milestone": "Milstolpe", "claim": "Kontrollerad uppgift"}
 
 
@@ -87,6 +95,19 @@ def load():
     wd = json.loads(wpath.read_text(encoding="utf-8")) if wpath.exists() else {}
     defs = json.loads((HERE / "data" / "definitions.json").read_text(encoding="utf-8"))["definitions"]
     return items, claims, wd, defs
+
+
+# ---------------------------------------------------------------- turtle
+def turtle(doc):
+    """Turtle serialisation of a JSON-LD document. Fails if the two do not give the same graph."""
+    g = Graph().parse(data=json.dumps(doc, ensure_ascii=False), format="json-ld")
+    for prefix, ns in PREFIXES.items():
+        g.bind(prefix, ns, override=True, replace=True)
+    ttl = g.serialize(format="turtle")
+    back = Graph().parse(data=ttl, format="turtle")
+    if len(g) == 0 or not isomorphic(g, back):
+        raise ValueError(f"JSON-LD and Turtle give different graphs: {doc['@graph'][0]['@id']}")
+    return ttl
 
 
 # ---------------------------------------------------------------- derived relations
@@ -285,8 +306,10 @@ def shared_nodes(wd, columns):
                        "url": ORIGINAL_POST,
                        "image": {"@type": "ImageObject", "contentUrl": {"@id": ORIGINAL_POSTER},
                                  "description": "Signerad LinkedIn-länk, giltig till 2026-11-05."}},
-         "distribution": {"@type": "DataDownload", "encodingFormat": "application/ld+json",
-                          "contentUrl": {"@id": ID + "index.jsonld"}}},
+         "distribution": [{"@type": "DataDownload", "encodingFormat": "application/ld+json",
+                           "contentUrl": {"@id": ID + "index.jsonld"}},
+                          {"@type": "DataDownload", "encodingFormat": "text/turtle",
+                           "contentUrl": {"@id": ID + "index.ttl"}}]},
         {"@id": "nh:#perioder", "@type": "skos:ConceptScheme",
          "skos:prefLabel": {"sv": "Affischens periodindelning"}, "isPartOf": "nh:#dataset",
          "dcterms:creator": {"@type": "Person", "name": "Kerstin Forsberg"},
@@ -326,7 +349,14 @@ CSS = """
   .v.bekräftad { background: #d8efdc; } .v.omdiskuterad { background: #f7e3b5; }
   .v.avvikande { background: #f6c9c4; } .v.ej { background: #e3e3e3; }
   .tw { overflow-x: auto; }
+  .formats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+             width: min(1240px, calc(100vw - 48px)); position: relative; left: 50%; transform: translateX(-50%); }
+  .formats > div { min-width: 0; }
+  .formats h3 { font-size: 0.95rem; margin: 0 0 6px; }
+  .formats pre { background: #f1eee7; padding: 10px 12px; border-radius: 4px; overflow: auto; max-height: 40em;
+                 font-size: 0.74rem; line-height: 1.4; margin: 0; }
   @media (max-width: 600px) { dl { grid-template-columns: 1fr; } dt { margin-top: 6px; } }
+  @media (max-width: 900px) { .formats { grid-template-columns: 1fr; } }
 """
 
 
@@ -339,6 +369,7 @@ def page(title, body, jsonld, depth):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)} – Nordens historia</title>
 <link rel="alternate" type="application/ld+json" href="index.jsonld">
+<link rel="alternate" type="text/turtle" href="index.ttl">
 <script type="application/ld+json">
 {json.dumps(jsonld, ensure_ascii=False, indent=1)}
 </script>
@@ -346,11 +377,22 @@ def page(title, body, jsonld, depth):
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="{up}">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="{up}kallor.html">Källäget</a></p>
+<p class="crumbs"><a href="{up}">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="{up}kallor.html">Källäget</a> · <a href="{up}sparql.html">SPARQL</a></p>
 {body}
 </main>
 </body>
 </html>
+"""
+
+
+def formats_html(doc, ttl):
+    """The same graph in two serialisations, side by side."""
+    return f"""<h2>Data i två format</h2>
+<p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
+<div class="formats">
+<div><h3><a href="index.jsonld">index.jsonld</a></h3><pre>{escape(json.dumps(doc, ensure_ascii=False, indent=1))}</pre></div>
+<div><h3><a href="index.ttl">index.ttl</a></h3><pre>{escape(ttl)}</pre></div>
+</div>
 """
 
 
@@ -434,6 +476,10 @@ def item_page(item, kind, node, cl, wd, places, rel=None, by_id=None, defs=(), d
         when = yr(item["year"])
         iso = f"<code>{gyear(item['year'])}</code>"
     desc = f"<p>{escape(item['description'])}</p>" if item.get("description") else ""
+    doc = {"@context": CONTEXT, "@graph": [
+        {"@id": iri + "/", "@type": "WebPage", "mainEntity": "nh:" + item["id"], "isPartOf": "nh:#dataset"},
+        node] + list(def_nodes) + [n for c in cl for n in claim_nodes(c)]}
+    ttl = turtle(doc)
     body = f"""<p class="kind">{TYPE_LABEL[kind]}</p>
 <h1>{escape(item['label'])}</h1>
 {desc}
@@ -444,16 +490,13 @@ def item_page(item, kind, node, cl, wd, places, rel=None, by_id=None, defs=(), d
 <dt>Wikidata</dt><dd>{wd_html(item['id'], wd)}</dd>
 {related_html(item, kind, rel, by_id) if by_id else ""}
 <dt>På affischen</dt><dd><a href="../../#{item['id']}">Visa på affischen</a></dd>
-<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
+<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
 {definitions_html(item, defs)}
 <h2>Kontrollerade uppgifter</h2>
 {claims_table(cl)}
-"""
-    doc = {"@context": CONTEXT, "@graph": [
-        {"@id": iri + "/", "@type": "WebPage", "mainEntity": "nh:" + item["id"], "isPartOf": "nh:#dataset"},
-        node] + list(def_nodes) + [n for c in cl for n in claim_nodes(c)]}
-    return page(item["label"], body, doc, 2), doc
+{formats_html(doc, ttl)}"""
+    return page(item["label"], body, doc, 2), doc, ttl
 
 
 def claim_page(c, by_id):
@@ -462,6 +505,9 @@ def claim_page(c, by_id):
     about = ", ".join(f'<a href="../{a}/">{escape(by_id[a]["label"])}</a> <code>{a}</code>' for a in c["about"])
     src = (f'<a href="{escape(c["source_url"])}">{escape(c["source_title"] or c["source_url"])}</a>'
            if c["source_url"] else escape(c["source_title"]))
+    doc = {"@context": CONTEXT, "@graph": [
+        {"@id": iri + "/", "@type": "WebPage", "mainEntity": "nh:" + c["id"], "isPartOf": "nh:#dataset"}] + nodes}
+    ttl = turtle(doc)
     body = f"""<p class="kind">{TYPE_LABEL['claim']}</p>
 <h1>{escape(c['statement'])}</h1>
 <dl>
@@ -475,20 +521,19 @@ def claim_page(c, by_id):
 {'<dt>Notering</dt><dd>' + escape(c['note']) + '</dd>' if c['note'] else ''}
 <dt>Åtgärd</dt><dd>{escape(c['action']) or '–'}</dd>
 <dt>Kontrollerad</dt><dd>{c['checked']}</dd>
-<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
+<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
-"""
-    doc = {"@context": CONTEXT, "@graph": [
-        {"@id": iri + "/", "@type": "WebPage", "mainEntity": "nh:" + c["id"], "isPartOf": "nh:#dataset"}] + nodes}
-    return page(c["statement"], body, doc, 2), doc
+{formats_html(doc, ttl)}"""
+    return page(c["statement"], body, doc, 2), doc, ttl
 
 
 REGISTER_INTRO = """<h1>Identifierare</h1>
 <p>Varje period, händelse och milstolpe på <a href="../">affischen</a> och varje kontrollerad uppgift i
 <a href="../kallor.html">källäget</a> har en egen beständig identifierare under
 <code>{id}</code>. Identifieraren går att slå upp: den ger en sida för människor med
-inbäddad JSON-LD, och en <code>index.jsonld</code> bredvid för maskiner. Hela datamängden finns i
-<a href="index.jsonld">index.jsonld</a>. Tankarna bakom modellen beskrivs på engelska i
+inbäddad JSON-LD, och en <code>index.jsonld</code> och en <code>index.ttl</code> (Turtle) bredvid för maskiner.
+Hela datamängden finns i <a href="index.jsonld">index.jsonld</a> och <a href="index.ttl">index.ttl</a>,
+och går att ställa frågor mot på <a href="../sparql.html">SPARQL-sidan</a>. Tankarna bakom modellen beskrivs på engelska i
 <a href="../linked-data.html">The linked data behind the poster</a>. Datamängden är licensierad under
 <a href="https://creativecommons.org/licenses/by/4.0/deed.sv">CC BY 4.0</a>.</p>
 
@@ -542,11 +587,12 @@ def register_page(sections, doc):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Identifierare – Nordens historia</title>
 <link rel="alternate" type="application/ld+json" href="index.jsonld">
+<link rel="alternate" type="text/turtle" href="index.ttl">
 <style>{CSS}</style>
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="../">Nordens historia</a> · <a href="../kallor.html">Källäget</a></p>
+<p class="crumbs"><a href="../">Nordens historia</a> · <a href="../kallor.html">Källäget</a> · <a href="../sparql.html">SPARQL</a></p>
 {body}
 </main>
 </body>
@@ -591,10 +637,11 @@ def main():
             places = ", ".join(
                 f'<a href="https://www.wikidata.org/wiki/{wd["place:" + c]["qid"]}">{escape(c)}</a>'
                 if wd.get("place:" + c, {}).get("qid") else escape(c) for c in cols)
-            html, doc = item_page(x, kind, node, claims_by_item.get(x["id"], []), wd, places,
-                                  rel, by_id, defs_by_period.get(x["id"], []), dnodes)
+            html, doc, ttl = item_page(x, kind, node, claims_by_item.get(x["id"], []), wd, places,
+                                       rel, by_id, defs_by_period.get(x["id"], []), dnodes)
             write(out / x["id"] / "index.html", html)
             write(out / x["id"] / "index.jsonld", json.dumps(doc, ensure_ascii=False, indent=1))
+            write(out / x["id"] / "index.ttl", ttl)
             when = f"{yr(x['start'])} – {yr(x['end'])}" if kind == "period" else yr(x["year"])
             rows.append(f'<tr><td><a href="{x["id"]}/">{x["id"]}</a></td><td>{escape(x["label"])}'
                         f' <span style="color:#6b7682">· {escape(", ".join(cols))}</span></td>'
@@ -604,18 +651,22 @@ def main():
     rows = []
     for c in claims:
         graph += claim_nodes(c)
-        html, doc = claim_page(c, by_id)
+        html, doc, ttl = claim_page(c, by_id)
         write(out / c["id"] / "index.html", html)
         write(out / c["id"] / "index.jsonld", json.dumps(doc, ensure_ascii=False, indent=1))
+        write(out / c["id"] / "index.ttl", ttl)
         rows.append(f'<tr><td><a href="{c["id"]}/">{c["id"]}</a></td><td>{escape(c["statement"])}</td>'
                     f'<td>{verdict_badge(c["verdict"])}</td><td><code>{escape(c["check_id"])}</code></td></tr>')
     sections.append(("Kontrollerade uppgifter", ["Id", "Uppgift", "Utlåtande", "Kontroll-id"], rows))
     full = {"@context": CONTEXT, "@graph": [
         {"@id": ID, "@type": "WebPage", "mainEntity": "nh:#dataset"}] + graph}
     write(out / "index.jsonld", json.dumps(full, ensure_ascii=False, indent=1))
+    write(out / "index.ttl", turtle(full))
     write(out / "index.html", register_page(sections, full))
     import ld_page
     ld_page.build(out / "index.jsonld", HERE / "linked-data.html")
+    import sparql_page
+    sparql_page.build(out / "index.ttl", HERE / "sparql.html")
     print(f"wrote id/: {len(by_id)} items, {len(claims)} claims, {len(defs)} source definitions, "
           f"{sum(map(len, rel['meets'].values()))} meets, {sum(map(len, rel['within'].values()))} falls-within")
 

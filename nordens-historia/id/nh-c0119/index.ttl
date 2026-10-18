@@ -1,0 +1,30 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0119#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/samenes_forhistorie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/samenes_forhistorie> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Ändrat till ”ursamiska”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0119 ;
+    schema:reviewBody "SNL beskriver ursamiska som ett västuraliskt språk som uppstod genom kontakt under bronsåldern/sista årtusendet f.Kr., med ca en tredjedel ordförråd från äldre europeiska språk." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0119/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0119 .
+
+nh:nh-c0119 a schema:Claim ;
+    dcterms:identifier "SÁ05",
+        "nh-c0119" ;
+    schema:about nh:nh-p0050 ;
+    schema:text "Protosamiska språket" .
+
+<https://snl.no/samenes_forhistorie> schema:name "Store norske leksikon: samenes forhistorie" .
+

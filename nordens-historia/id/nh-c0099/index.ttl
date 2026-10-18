@@ -1,0 +1,32 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0099#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Slut ändrat till 1300; not om väst/öst; nytt block 1300–1319." ] ;
+    schema:correction "1025 – ca 1150 (väst) / ca 1300 (öst)" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0099 ;
+    schema:reviewBody "Uppslagsverket anger korstågstiden till 1025–1150 i västra Finland och till ca 1300 i östra Finland; fi.wikipedia ca 1025/1050–1250/1300." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0099/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0099 .
+
+nh:nh-c0099 a schema:Claim ;
+    dcterms:identifier "FI11",
+        "nh-c0099" ;
+    schema:about nh:nh-p0043,
+        nh:nh-p0044 ;
+    schema:text "Period 'Korstågstid': 1025 – 1319" .
+
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
+

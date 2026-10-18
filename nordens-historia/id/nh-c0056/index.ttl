@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0056#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Norges_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Norges_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0056 ;
+    schema:reviewBody "SNL låter 'storhetstiden' börja 1240 med Skules fall och omfatta Håkon, Magnus Lagabøte, Eirik och Håkon V fram till 1319." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0056/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0056 .
+
+nh:nh-c0056 a schema:Claim ;
+    dcterms:identifier "NO14",
+        "nh-c0056" ;
+    schema:about nh:nh-p0024 ;
+    schema:text "Period 'Storhetstiden': 1240 – 1319" .
+
+<https://snl.no/Norges_historie> schema:name "Store norske leksikon: Norges historie" .
+

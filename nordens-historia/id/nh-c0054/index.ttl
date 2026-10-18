@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0054#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Norge_i_h%C3%B8ymiddelalderen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Norge_i_h%C3%B8ymiddelalderen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0054 ;
+    schema:reviewBody "Ärkebiskopsdömet i Nidaros upprättades 1152/1153." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0054/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0054 .
+
+nh:nh-c0054 a schema:Claim ;
+    dcterms:identifier "NO12",
+        "nh-c0054" ;
+    schema:about nh:nh-p0023 ;
+    schema:text "Ärkesäte i Nidaros 1152/53" .
+
+<https://snl.no/Norge_i_h%C3%B8ymiddelalderen> schema:name "Store norske leksikon: Norge i høymiddelalderen" .
+

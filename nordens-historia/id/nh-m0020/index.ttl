@@ -1,0 +1,44 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0201#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Etikett ”första maskinen”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0201 ;
+    schema:reviewBody "Enligt Tetra Pak grundades bolaget 1951 och första fyllningsmaskinen levererades 1952 till mejeri i Lund." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0020/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-m0020 .
+
+nh:nh-c0201 a schema:Claim ;
+    dcterms:identifier "MI20",
+        "nh-c0201" ;
+    schema:about nh:nh-m0020 ;
+    schema:text "Tetra Pak: 1952" .
+
+nh:nh-m0020 a crm:E5_Event,
+        schema:Event ;
+    dcterms:identifier "nh-m0020" ;
+    crm:P10_falls_within nh:nh-p0036 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1952"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q34 ;
+    schema:about wd:Q4050869 ;
+    schema:name "Tetra Pak, första maskinen" ;
+    schema:startDate "1952"^^xsd:gYear .
+
+<https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> schema:name "Tetra Pak: Heritage" .
+

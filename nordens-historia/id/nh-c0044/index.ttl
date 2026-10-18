@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0044#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Fosnakulturen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Fosnakulturen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0044 ;
+    schema:reviewBody "Fosnakulturen var en kustbunden fångstkultur i äldre stenålder från Rogaland till Nordland, Komsakulturen motsvarande i Finnmark med boplatser på ytterkusten." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0044/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0044 .
+
+nh:nh-c0044 a schema:Claim ;
+    dcterms:identifier "NO02",
+        "nh-c0044" ;
+    schema:about nh:nh-p0019 ;
+    schema:text "Fosna- och Komsakultur längs kusten" .
+
+<https://snl.no/Fosnakulturen> schema:name "Store norske leksikon: Fosnakulturen; Komsakulturen" .
+

@@ -1,0 +1,109 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0145#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Magnus_7._Eriksson> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Magnus_7._Eriksson> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Behållet som affischens egen sammanfattning." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0145 ;
+    schema:reviewBody "Ingen uppslagskälla använder 'Sverige med Finland 1343–1397' som period; 1343 motsvarar Håkons hyllning i Norge, och SNL anger rikesdelning först 1355." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0146#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Magnus_7._Eriksson> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Magnus_7._Eriksson> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0146 ;
+    schema:reviewBody "SNL anger att en landslag och en stadslag utarbetades omkring 1350, inom perioden." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0147#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0147 ;
+    schema:reviewBody "Läkartidningen beskriver 1350 som det stora pestår i Sverige, något senare än Danmark 1349." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0148#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Albrecht_af_Mecklenburg> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Albrecht_af_Mecklenburg> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0148 ;
+    schema:reviewBody "Lex.dk anger Albrekt som kung 1363–1389, men vald först tidigt 1364 och störtad efter Falköping 1389." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0061/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0061 .
+
+nh:nh-c0145 a schema:Claim ;
+    dcterms:identifier "GE16",
+        "nh-c0145" ;
+    schema:about nh:nh-p0061 ;
+    schema:text "Period 'Sverige med Finland': 1343 – 1397" .
+
+nh:nh-c0146 a schema:Claim ;
+    dcterms:identifier "GE17",
+        "nh-c0146" ;
+    schema:about nh:nh-p0061 ;
+    schema:text "Magnus Erikssons landslag" .
+
+nh:nh-c0147 a schema:Claim ;
+    dcterms:identifier "GE18",
+        "nh-c0147" ;
+    schema:about nh:nh-p0061 ;
+    schema:text "digerdöden 1350" .
+
+nh:nh-c0148 a schema:Claim ;
+    dcterms:identifier "GE19",
+        "nh-c0148" ;
+    schema:about nh:nh-p0061 ;
+    schema:text "Albrekt av Mecklenburg 1364–89" .
+
+<https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf> schema:name "Läkartidningen 2003 (artikel om digerdöden)" .
+
+<https://lex.dk/Albrecht_af_Mecklenburg> schema:name "Lex.dk: Albrecht af Mecklenburg" .
+
+<https://snl.no/Magnus_7._Eriksson> schema:name "Store norske leksikon: Magnus 7. Eriksson" .
+
+nh:nh-p0061 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0061" ;
+    dcterms:spatial wd:Q33,
+        wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1343"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1397"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q33,
+        wd:Q34 ;
+    skos:definition "Magnus Erikssons landslag; digerdöden 1350; Albrekt av Mecklenburg 1364–89"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Sverige med Finland"@sv ;
+    time:intervalMeets nh:nh-p0063 ;
+    time:intervalMetBy nh:nh-p0060 ;
+    schema:description "Magnus Erikssons landslag; digerdöden 1350; Albrekt av Mecklenburg 1364–89" ;
+    schema:name "Sverige med Finland" ;
+    schema:temporalCoverage "1343/1397" .
+

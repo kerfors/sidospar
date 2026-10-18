@@ -1,0 +1,86 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0090#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Beskrivningen ändrad till ”mesolitisk jägarkultur efter isavsmältningen”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0090 ;
+    schema:reviewBody "Uppslagsverket daterar den äldsta bosättningen till preboreal tid efter isavsmältningen och räknar Suomusjärvikulturen till mesolitikum, men Suomusjärvi-artikeln säger inte uttryckligen att den var den första." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0037#def-035> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-035" ;
+    dcterms:source <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    dcterms:spatial wd:Q33 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "-8599"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "-4999"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0037 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-uppslagsverket> ;
+    skos:prefLabel "Suomusjärvikultur enligt Uppslagsverket Finland"@sv ;
+    skos:scopeNote "Källans formulering: Suomusjärvikulturen 8600–5000 f.Kr."@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0089#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0037/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0037 .
+
+nh:nh-c0089 a schema:Claim ;
+    dcterms:identifier "FI01",
+        "nh-c0089" ;
+    schema:about nh:nh-p0037 ;
+    schema:text "Period 'Suomusjärvikultur': 8 900 f.Kr. – 5 100 f.Kr." .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0089#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Ändrat till 8600–5000 f.Kr." ] ;
+    schema:correction "ca 8600–5000 f.Kr. (Uppslagsverket)" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0089 ;
+    schema:reviewBody "Uppslagsverket placerar Suomusjärvikulturen i mesolitikum, 8600–5000 f.Kr.; fi.wikipedia anger ca 7500–5100 (på annat ställe 8300–5300) f.Kr." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0090 a schema:Claim ;
+    dcterms:identifier "FI02",
+        "nh-c0090" ;
+    schema:about nh:nh-p0037 ;
+    schema:text "Första bosättningen efter isen" .
+
+nh:nh-p0037 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0037" ;
+    dcterms:spatial wd:Q33 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "-8599"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "-4999"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q33 ;
+    skos:definition "Mesolitisk jägarkultur efter isavsmältningen"@sv ;
+    skos:exactMatch wd:Q930351 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Suomusjärvikultur"@sv ;
+    time:intervalMeets nh:nh-p0038 ;
+    schema:description "Mesolitisk jägarkultur efter isavsmältningen" ;
+    schema:name "Suomusjärvikultur" ;
+    schema:temporalCoverage "-8599/-4999" .
+
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
+

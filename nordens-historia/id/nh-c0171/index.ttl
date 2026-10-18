@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0171#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Gustav_3.> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Gustav_3.> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0171 ;
+    schema:reviewBody "Gustav III genomförde en statskupp den 19 augusti 1772 med en ny regeringsform som stärkte kungamakten." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0171/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0171 .
+
+nh:nh-c0171 a schema:Claim ;
+    dcterms:identifier "GE42",
+        "nh-c0171" ;
+    schema:about nh:nh-p0069 ;
+    schema:text "Gustav III:s statskupp 1772" .
+
+<https://snl.no/Gustav_3.> schema:name "Gustav 3 – Store norske leksikon" .
+

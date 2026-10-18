@@ -1,0 +1,119 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0103#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0103 ;
+    schema:reviewBody "Uppslagsverket anger att Sverige avträdde Finland till Ryssland i freden i Fredrikshamn i september 1809." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0104#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0104 ;
+    schema:reviewBody "Uppslagsverket anger att Alexander I öppnade lantdagen i Borgå 28 mars 1809." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0105#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0105 ;
+    schema:reviewBody "Riksdagen anger att ståndslantdagen ersattes av en enkammarlantdag 1906 och att både män och kvinnor fick rösträtt och valbarhet." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0045#def-042> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-042" ;
+    dcterms:source <https://snl.no/Finlands_historie> ;
+    dcterms:spatial wd:Q33 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1809"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1917"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0045 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Storfurstendömet Finland enligt Store norske leksikon"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0102#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0045/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0045 .
+
+nh:nh-c0102 a schema:Claim ;
+    dcterms:identifier "FI14",
+        "nh-c0102" ;
+    schema:about nh:nh-p0045 ;
+    schema:text "Period 'Storfurstendömet Finland': 1809 – 1917" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0102#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Finlands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Finlands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0102 ;
+    schema:reviewBody "SNL anger att Finland blev ett autonomt storfurstendöme under Ryssland efter 1809 och förblev det till 1917." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0103 a schema:Claim ;
+    dcterms:identifier "FI15",
+        "nh-c0103" ;
+    schema:about nh:nh-p0045 ;
+    schema:text "Under Ryssland efter freden i Fredrikshamn" .
+
+nh:nh-c0104 a schema:Claim ;
+    dcterms:identifier "FI16",
+        "nh-c0104" ;
+    schema:about nh:nh-p0045 ;
+    schema:text "Borgå lantdag 1809" .
+
+nh:nh-c0105 a schema:Claim ;
+    dcterms:identifier "FI17",
+        "nh-c0105" ;
+    schema:about nh:nh-p0045 ;
+    schema:text "enkammarlantdag och kvinnlig rösträtt 1906" .
+
+<https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> schema:name "Riksdagen: Riksdagens historia (broschyr)" .
+
+<https://snl.no/Finlands_historie> schema:name "Store norske leksikon: Finlands historie" .
+
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet> schema:name "Uppslagsverket Finland: Finlands historia – 1800-talet" .
+
+nh:nh-p0045 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0045" ;
+    dcterms:spatial wd:Q33 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1809"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1917"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q33 ;
+    skos:definition "Under Ryssland efter freden i Fredrikshamn; Borgå lantdag 1809; enkammarlantdag och kvinnlig rösträtt 1906"@sv ;
+    skos:exactMatch wd:Q62633 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Storfurstendömet Finland"@sv ;
+    time:intervalMeets nh:nh-p0046 ;
+    time:intervalMetBy nh:nh-p0069 ;
+    schema:description "Under Ryssland efter freden i Fredrikshamn; Borgå lantdag 1809; enkammarlantdag och kvinnlig rösträtt 1906" ;
+    schema:name "Storfurstendömet Finland" ;
+    schema:temporalCoverage "1809/1917" .
+

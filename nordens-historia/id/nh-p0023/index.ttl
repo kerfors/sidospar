@@ -1,0 +1,102 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0054#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Norge_i_h%C3%B8ymiddelalderen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Norge_i_h%C3%B8ymiddelalderen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0054 ;
+    schema:reviewBody "Ärkebiskopsdömet i Nidaros upprättades 1152/1153." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0055#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Sverre_-_norsk_konge> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Sverre_-_norsk_konge> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0055 ;
+    schema:reviewBody "Sverre Sigurdsson var tronpretendent från 1177 och kung 1184–1202, alltså mitt i inbördeskrigstiden." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0023#def-022> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-022" ;
+    dcterms:source <https://snl.no/borgerkrigstiden> ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1130"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1240"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0023 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Inbördeskrigstiden enligt Store norske leksikon"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0053#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0023/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0023 .
+
+nh:nh-c0053 a schema:Claim ;
+    dcterms:identifier "NO11",
+        "nh-c0053" ;
+    schema:about nh:nh-p0023 ;
+    schema:text "Period 'Inbördeskrigstiden': 1130 – 1240" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0053#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/borgerkrigstiden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/borgerkrigstiden> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0053 ;
+    schema:reviewBody "SNL definierar inbördeskrigstiden som perioden 1130–1240, från Sigurd Jorsalfares död till Skule Bårdssons fall." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0054 a schema:Claim ;
+    dcterms:identifier "NO12",
+        "nh-c0054" ;
+    schema:about nh:nh-p0023 ;
+    schema:text "Ärkesäte i Nidaros 1152/53" .
+
+nh:nh-c0055 a schema:Claim ;
+    dcterms:identifier "NO13",
+        "nh-c0055" ;
+    schema:about nh:nh-p0023 ;
+    schema:text "Sverre" .
+
+<https://snl.no/Norge_i_h%C3%B8ymiddelalderen> schema:name "Store norske leksikon: Norge i høymiddelalderen" .
+
+<https://snl.no/Sverre_-_norsk_konge> schema:name "Store norske leksikon: Sverre – norsk konge" .
+
+<https://snl.no/borgerkrigstiden> schema:name "Store norske leksikon: borgerkrigstiden" .
+
+nh:nh-p0023 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0023" ;
+    dcterms:spatial wd:Q20 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1130"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1240"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20 ;
+    skos:definition "Ärkesäte i Nidaros 1152/53; Sverre"@sv ;
+    skos:exactMatch wd:Q1760671 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Inbördeskrigstiden"@sv ;
+    time:intervalMeets nh:nh-p0024 ;
+    time:intervalMetBy nh:nh-p0022 ;
+    schema:description "Ärkesäte i Nidaros 1152/53; Sverre" ;
+    schema:name "Inbördeskrigstiden" ;
+    schema:temporalCoverage "1130/1240" .
+

@@ -1,0 +1,86 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0035#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Kielerfreden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Kielerfreden> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0035 ;
+    schema:reviewBody "Kielfreden slöts natten 14–15 januari 1814 och Danmark-Norge avträdde Norge till Sveriges kung." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0014#def-014> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-014" ;
+    dcterms:source <https://lex.dk/Enev%C3%A6ldens_faser_1660-1848> ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1800"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1848"^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0014 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:prefLabel "Enväldets sista decennier enligt Lex (Den Store Danske)"@sv ;
+    skos:scopeNote "Källans formulering: enväldets sena fas från ca 1800, enväldet slutar 1848. Ungefärligt årtal: start"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0034#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0014/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0014 .
+
+nh:nh-c0034 a schema:Claim ;
+    dcterms:identifier "DA18",
+        "nh-c0034" ;
+    schema:about nh:nh-p0014 ;
+    schema:text "Period 'Enväldets sista tid': 1814 – 1849" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0034#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Enev%C3%A6ldens_faser_1660-1848> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Enev%C3%A6ldens_faser_1660-1848> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Behållet; titeln ändrad till ”Enväldets sista decennier”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0034 ;
+    schema:reviewBody "Lex låter enväldet sluta 1848 (vissa räknar 1849) och dess sena fas börja ca 1800; Lex periodintroduktion använder 1814–1914." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0035 a schema:Claim ;
+    dcterms:identifier "DA19",
+        "nh-c0035" ;
+    schema:about nh:nh-p0014 ;
+    schema:text "Kielfreden 1814: Norge avträds" .
+
+<https://lex.dk/Kielerfreden> schema:name "Lex: Kielerfreden" .
+
+<https://lex.dk/Enev%C3%A6ldens_faser_1660-1848> schema:name "Lex: Enevældens faser 1660-1848" .
+
+nh:nh-p0014 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0014" ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1814"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1849"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q35 ;
+    skos:closeMatch wd:Q11964718 ;
+    skos:definition "Kielfreden 1814: Norge avträds"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Enväldets sista decennier"@sv ;
+    time:intervalMeets nh:nh-p0015 ;
+    time:intervalMetBy nh:nh-p0065 ;
+    schema:description "Kielfreden 1814: Norge avträds" ;
+    schema:name "Enväldets sista decennier" ;
+    schema:temporalCoverage "1814/1849" .
+

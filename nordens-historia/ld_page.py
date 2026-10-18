@@ -83,6 +83,7 @@ def yr(v):
 
 
 def build(ld_graph_path, out_path):
+    import sparql_page
     s = stats()
     v = s["verdicts"]
     periods = {p["id"]: p for p in json.loads((HERE / "data" / "items.json").read_text(encoding="utf-8"))["periods"]}
@@ -99,11 +100,12 @@ def build(ld_graph_path, out_path):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Linked data – Nordens historia</title>
 <link rel="alternate" type="application/ld+json" href="id/index.jsonld">
+<link rel="alternate" type="text/turtle" href="id/index.ttl">
 <style>{CSS}</style>
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="./">Nordens historia (poster, in Swedish)</a> · <a href="kallor.html">Source check</a> · <a href="id/">Identifiers</a></p>
+<p class="crumbs"><a href="./">Nordens historia (poster, in Swedish)</a> · <a href="kallor.html">Source check</a> · <a href="id/">Identifiers</a> · <a href="sparql.html">SPARQL</a></p>
 <h1>The linked data behind the poster</h1>
 <p class="lead">A poster is a picture. The facts behind it should be possible to look up, check and reuse.
 This page explains how the timeline <a href="./">Nordens historia</a> is published as linked data,
@@ -197,6 +199,17 @@ not the founding, so the link says "about", not "same as".</td></tr>
 <p>As it is in the data (JSON-LD, shortened to these three nodes):</p>
 <pre>{escape(example(ld_graph_path))}</pre>
 
+<h2>Turtle and SPARQL</h2>
+<p>The same graph is published in two serialisations. JSON-LD is the source: the build writes it, and it is embedded
+in every page. Turtle is generated from the JSON-LD with <a href="https://github.com/RDFLib/rdflib">rdflib</a>, and the
+build checks that the two give the same graph. The check is graph isomorphism, not text comparison, because the
+time-spans and ratings are blank nodes. Every item page shows both formats side by side.</p>
+<p>The <a href="sparql.html">SPARQL page</a> loads <code>id/index.ttl</code> into
+<a href="https://github.com/oxigraph/oxigraph">Oxigraph</a>, a SPARQL engine compiled to WebAssembly, in the browser.
+There is no server. The page has {len(sparql_page.QUERIES)} example queries, for example the disputed boundaries in
+Finland, periods without a Wikidata link, and the sources' boundaries for the Viking Age. The build runs every example
+query with rdflib and fails if one returns no rows.</p>
+
 <h2>How it was made, and the limits</h2>
 <ul>
 <li>The source check split the {s['claims']} statements by country and gave each group to an AI agent with web search.
@@ -213,21 +226,17 @@ are marked, and the source's own wording is kept.</li>
 
 <h2>Data and code</h2>
 <ul>
-<li><a href="id/index.jsonld">id/index.jsonld</a>: the whole dataset as JSON-LD. Every item also has its own
-<code>index.jsonld</code>.</li>
+<li><a href="id/index.jsonld">id/index.jsonld</a> and <a href="id/index.ttl">id/index.ttl</a>: the whole dataset
+as JSON-LD and as Turtle. Every item also has its own <code>index.jsonld</code> and <code>index.ttl</code>.</li>
 <li><code>data/items.json</code>, <code>data/claims.json</code>, <code>data/definitions.json</code>,
 <code>data/wikidata.json</code>: the source data. <code>check/</code>: the agents' unedited answers.</li>
-<li><code>build.py</code> builds everything: the poster, the source check page, the identifier pages and this page.
+<li><code>build.py</code> builds everything: the poster, the source check page, the identifier pages, the SPARQL page and this page.
 The code is in the <a href="https://github.com/kerfors/sidospar">sidospar repository</a>.</li>
 <li>License: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
 </ul>
 
 <h2>Next steps</h2>
 <ul>
-<li><strong>Turtle next to JSON-LD.</strong> The same graph in two serialisations, shown side by side on each item page.
-Turtle is the readable one and close to how SPARQL looks. The build will check that both give the same graph.</li>
-<li><strong>SPARQL in the browser.</strong> A page that loads the dataset into a SPARQL engine running in the browser,
-with example queries. For example: all disputed boundaries in Finland, or periods without a Wikidata link.</li>
 <li><strong>SHACL shapes.</strong> The model described as shapes, and the build validated against them.</li>
 <li><strong>More languages.</strong> Labels in Danish, Norwegian, Finnish, English and Northern Sami.</li>
 <li><strong>A persistent base.</strong> A <a href="https://w3id.org">w3id.org</a> redirect, so the identifiers survive

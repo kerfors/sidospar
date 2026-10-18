@@ -1,0 +1,42 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0187#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Tycho_Brahe> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Tycho_Brahe> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0187 ;
+    schema:reviewBody "Grundstenen till Uraniborg lades 8 augusti 1576." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0006/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-m0006 .
+
+nh:nh-c0187 a schema:Claim ;
+    dcterms:identifier "MI06",
+        "nh-c0187" ;
+    schema:about nh:nh-m0006 ;
+    schema:text "Tycho Brahes Uraniborg: 1576" .
+
+nh:nh-m0006 a crm:E5_Event,
+        schema:Event ;
+    dcterms:identifier "nh-m0006" ;
+    crm:P10_falls_within nh:nh-p0064 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1576"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q35 ;
+    schema:about wd:Q79220 ;
+    schema:name "Tycho Brahes Uraniborg" ;
+    schema:startDate "1576"^^xsd:gYear .
+
+<https://lex.dk/Tycho_Brahe> schema:name "lex.dk: Tycho Brahe" .
+

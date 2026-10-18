@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0075#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0075 ;
+    schema:reviewBody "SBL: född senast tidigt 980-tal, död troligen vintern 1021–22; NE: kung från 990-talet." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0075/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0075 .
+
+nh:nh-c0075 a schema:Claim ;
+    dcterms:identifier "SV08",
+        "nh-c0075" ;
+    schema:about nh:nh-p0030 ;
+    schema:text "Olof Skötkonung" .
+
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> schema:name "Svenskt biografiskt lexikon – Olof \"skötkonung\"" .
+

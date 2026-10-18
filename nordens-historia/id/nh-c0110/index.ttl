@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0110#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Finlands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Finlands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0110 ;
+    schema:reviewBody "SNL daterar vinterkriget från 30 nov 1939; Uppslagsverket anger att striderna i Lappland pågick till april 1945." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0110/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0110 .
+
+nh:nh-c0110 a schema:Claim ;
+    dcterms:identifier "FI22",
+        "nh-c0110" ;
+    schema:about nh:nh-p0047 ;
+    schema:text "Period 'Krigsåren': 1939 – 1945" .
+
+<https://snl.no/Finlands_historie> schema:name "Store norske leksikon: Finlands historie" .
+

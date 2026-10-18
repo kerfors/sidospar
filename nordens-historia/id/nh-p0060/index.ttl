@@ -1,0 +1,94 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0144#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Sjlisselburg> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Sjlisselburg> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0144 ;
+    schema:reviewBody "Lex.dk: Novgorod och Sverige slöt fred vid fästningen Nöteborg 1323 med gräns på Karelska näset." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0060#def-057> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-057" ;
+    dcterms:source <https://snl.no/Magnus_7._Eriksson> ;
+    dcterms:spatial wd:Q20,
+        wd:Q33,
+        wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1319"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1355"^^xsd:gYear ] ;
+    skos:closeMatch nh:nh-p0060 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Magnus Eriksson: Sverige och Norge enligt Store norske leksikon"@sv ;
+    skos:scopeNote "Källans formulering: Magnus Eriksson hyllad i båda rikena 1319; riket delas 1355"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0143#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0060/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0060 .
+
+nh:nh-c0143 a schema:Claim ;
+    dcterms:identifier "GE14",
+        "nh-c0143" ;
+    schema:about nh:nh-p0060 ;
+    schema:text "Period 'Magnus Eriksson: Sverige och Norge': 1319 – 1343" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0143#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Magnus_7._Eriksson> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Magnus_7._Eriksson> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Behållet; delningen 1355 anges i Håkon VI-blocket." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0143 ;
+    schema:reviewBody "SNL: Magnus hyllades i båda rikena 1319; Håkon hyllades som norsk kung 1343–44, men riket delades först 1355." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0144 a schema:Claim ;
+    dcterms:identifier "GE15",
+        "nh-c0144" ;
+    schema:about nh:nh-p0060 ;
+    schema:text "Freden i Nöteborg 1323" .
+
+<https://lex.dk/Sjlisselburg> schema:name "Lex.dk: Sjlisselburg" .
+
+<https://snl.no/Magnus_7._Eriksson> schema:name "Store norske leksikon: Magnus 7. Eriksson" .
+
+nh:nh-p0060 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0060" ;
+    dcterms:spatial wd:Q20,
+        wd:Q33,
+        wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1319"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1343"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20,
+        wd:Q33,
+        wd:Q34 ;
+    skos:definition "Freden i Nöteborg 1323"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Magnus Eriksson: Sverige och Norge"@sv ;
+    time:intervalMeets nh:nh-p0025,
+        nh:nh-p0061 ;
+    time:intervalMetBy nh:nh-p0024,
+        nh:nh-p0032,
+        nh:nh-p0044 ;
+    schema:description "Freden i Nöteborg 1323" ;
+    schema:name "Magnus Eriksson: Sverige och Norge" ;
+    schema:temporalCoverage "1319/1343" .
+

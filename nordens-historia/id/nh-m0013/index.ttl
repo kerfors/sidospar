@@ -1,0 +1,44 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0194#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Etikett ”(patent)”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0194 ;
+    schema:reviewBody "Nobelstiftelsen anger att dynamiten uppfanns 1866 och patenterades året därpå, 1867." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0013/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-m0013 .
+
+nh:nh-c0194 a schema:Claim ;
+    dcterms:identifier "MI13",
+        "nh-c0194" ;
+    schema:about nh:nh-m0013 ;
+    schema:text "Nobels dynamit: 1867" .
+
+nh:nh-m0013 a crm:E5_Event,
+        schema:Event ;
+    dcterms:identifier "nh-m0013" ;
+    crm:P10_falls_within nh:nh-p0070 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1867"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q34 ;
+    schema:about wd:Q80728 ;
+    schema:name "Nobels dynamit (patent)" ;
+    schema:startDate "1867"^^xsd:gYear .
+
+<https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> schema:name "Nobelprize.org: Alfred Nobel's life and work" .
+

@@ -1,0 +1,42 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0195#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Fridtjof_Nansen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Fridtjof_Nansen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0195 ;
+    schema:reviewBody "SNL anger att Nansens Grönlandsexpedition gav sig av 2 maj 1888." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0014/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-m0014 .
+
+nh:nh-c0195 a schema:Claim ;
+    dcterms:identifier "MI14",
+        "nh-c0195" ;
+    schema:about nh:nh-m0014 ;
+    schema:text "Nansen över Grönland: 1888" .
+
+nh:nh-m0014 a crm:E5_Event,
+        schema:Event ;
+    dcterms:identifier "nh-m0014" ;
+    crm:P10_falls_within nh:nh-p0070 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1888"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20 ;
+    schema:about wd:Q4354065 ;
+    schema:name "Nansen över Grönland" ;
+    schema:startDate "1888"^^xsd:gYear .
+
+<https://snl.no/Fridtjof_Nansen> schema:name "Store norske leksikon: Fridtjof Nansen" .
+

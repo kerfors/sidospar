@@ -1,0 +1,42 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0184#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Snorre_Sturlason> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Snorre_Sturlason> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0184 ;
+    schema:reviewBody "SNL anger att Heimskringla kom till omkring 1220–1230, ca 1230." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0003/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-m0003 .
+
+nh:nh-c0184 a schema:Claim ;
+    dcterms:identifier "MI03",
+        "nh-c0184" ;
+    schema:about nh:nh-m0003 ;
+    schema:text "Snorres Heimskringla (c.): 1230" .
+
+nh:nh-m0003 a crm:E5_Event,
+        schema:Event ;
+    dcterms:identifier "nh-m0003" ;
+    crm:P10_falls_within nh:nh-p0002 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1230"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q189 ;
+    schema:about wd:Q215806 ;
+    schema:name "Snorres Heimskringla (c.)" ;
+    schema:startDate "1230"^^xsd:gYear .
+
+<https://snl.no/Snorre_Sturlason> schema:name "Store norske leksikon: Snorre Sturlason" .
+

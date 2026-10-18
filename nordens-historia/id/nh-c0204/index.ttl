@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0204#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0204 ;
+    schema:reviewBody "Volvo anger att första bilen med trepunktsbälte levererades 13 augusti 1959." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0204/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0204 .
+
+nh:nh-c0204 a schema:Claim ;
+    dcterms:identifier "MI23",
+        "nh-c0204" ;
+    schema:about nh:nh-m0023 ;
+    schema:text "Trepunktsbältet: 1959" .
+
+<https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/> schema:name "Volvo Cars pressmeddelande: trepunktsbeltet fyller 60 år" .
+

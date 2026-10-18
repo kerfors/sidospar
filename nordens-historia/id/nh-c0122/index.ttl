@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0122#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/samenes_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0122 ;
+    schema:reviewBody "SNL beskriver säsongsvis flyttning mellan kust och inland med jakt, fiske och insamling samt handel med pälsar, hudar och tran." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0122/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0122 .
+
+nh:nh-c0122 a schema:Claim ;
+    dcterms:identifier "SÁ08",
+        "nh-c0122" ;
+    schema:about nh:nh-p0051 ;
+    schema:text "Fångst, fiske och handel" .
+
+<https://snl.no/samenes_historie> schema:name "Store norske leksikon: samenes historie" .
+

@@ -1,0 +1,30 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0159#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Titeln ändrad till ”Äldre Vasatiden”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0159 ;
+    schema:reviewBody "NE avgränsar Vasatiden 1521–1654 och delar den i äldre/yngre Vasatid med 1611 som skiljelinje." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0159/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0159 .
+
+nh:nh-c0159 a schema:Claim ;
+    dcterms:identifier "GE30",
+        "nh-c0159" ;
+    schema:about nh:nh-p0066 ;
+    schema:text "Period 'Vasatiden': 1523 – 1611" .
+
+<https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> schema:name "Vasatiden – Nationalencyklopedin" .
+

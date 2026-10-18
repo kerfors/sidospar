@@ -1,0 +1,89 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0134#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0134 ;
+    schema:reviewBody "Ny 14C-datering placerar Hjortspringbåtens byggande ca 350–300 f.Kr., i förromersk järnålder." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0056#def-053> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-053" ;
+    dcterms:source <https://snl.no/jernalderen> ;
+    dcterms:spatial wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "-0499"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "0001"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0056 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Förromersk järnålder enligt Store norske leksikon"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0133#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0056/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0056 .
+
+nh:nh-c0133 a schema:Claim ;
+    dcterms:identifier "GE04",
+        "nh-c0133" ;
+    schema:about nh:nh-p0056 ;
+    schema:text "Period 'Förromersk järnålder': 500 f.Kr. – 1" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0133#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/jernalderen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/jernalderen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0133 ;
+    schema:reviewBody "SNL anger förromersk järnålder (keltertid) till 500 f.Kr.–0." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0134 a schema:Claim ;
+    dcterms:identifier "GE05",
+        "nh-c0134" ;
+    schema:about nh:nh-p0056 ;
+    schema:text "Hjortspringbåten" .
+
+<https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/> schema:name "Videnskab.dk: Mystiske krigere angreb dansk ø for 2.300 år siden" .
+
+<https://snl.no/jernalderen> schema:name "Store norske leksikon: jernalderen" .
+
+nh:nh-p0056 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0056" ;
+    dcterms:spatial wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "-0499"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "0001"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    skos:closeMatch wd:Q893307 ;
+    skos:definition "Hjortspringbåten"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Förromersk järnålder"@sv ;
+    time:intervalMeets nh:nh-p0057 ;
+    time:intervalMetBy nh:nh-p0055 ;
+    schema:description "Hjortspringbåten" ;
+    schema:name "Förromersk järnålder" ;
+    schema:temporalCoverage "-0499/0001" .
+

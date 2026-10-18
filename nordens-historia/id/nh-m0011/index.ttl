@@ -1,0 +1,42 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0192#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0192 ;
+    schema:reviewBody "JO:s egen skrift anger att ämbetet inrättades genom 1809 års regeringsform." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0011/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-m0011 .
+
+nh:nh-c0192 a schema:Claim ;
+    dcterms:identifier "MI11",
+        "nh-c0192" ;
+    schema:about nh:nh-m0011 ;
+    schema:text "Justitieombudsmannen: 1809" .
+
+nh:nh-m0011 a crm:E5_Event,
+        schema:Event ;
+    dcterms:identifier "nh-m0011" ;
+    crm:P10_falls_within nh:nh-p0033 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1809"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q34 ;
+    schema:about wd:Q107157415 ;
+    schema:name "Justitieombudsmannen" ;
+    schema:startDate "1809"^^xsd:gYear .
+
+<https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf> schema:name "JO: JO – i riksdagens tjänst (bok, jo.se)" .
+

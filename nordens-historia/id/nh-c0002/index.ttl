@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0002#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Ingolv_Arnesson> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Ingolv_Arnesson> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0002 ;
+    schema:reviewBody "SNL beskriver Ingólfur som den förste fasta bosättaren från Norge och säger att han slog sig ned i Reykjavík." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0002/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0002 .
+
+nh:nh-c0002 a schema:Claim ;
+    dcterms:identifier "IS02",
+        "nh-c0002" ;
+    schema:about nh:nh-p0001 ;
+    schema:text "Ingólfur Arnarson i Reykjavík" .
+
+<https://snl.no/Ingolv_Arnesson> schema:name "Ingolv Arnesson (Store norske leksikon)" .
+

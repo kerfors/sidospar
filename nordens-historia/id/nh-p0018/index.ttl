@@ -1,0 +1,90 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0040#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Delat i 1945–1973 och 1973–." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0040 ;
+    schema:reviewBody "Lex avgränsar efterkrigstiden/välfärdsstaten till 1945–1973, inte en enda period till nutid." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0041#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/det_danske_EU-medlemskab> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/det_danske_EU-medlemskab> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0041 ;
+    schema:reviewBody "Danmark blev medlem av EG 1 januari 1973 efter folkomröstning 2 oktober 1972." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0042#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Gr%C3%B8nlands_Hjemmestyre> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Gr%C3%B8nlands_Hjemmestyre> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0042 ;
+    schema:reviewBody "Grönlands hjemmestyre trädde i kraft 1 maj 1979 efter folkomröstning 17 januari 1979." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0018/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0018 .
+
+nh:nh-c0040 a schema:Claim ;
+    dcterms:identifier "DA24",
+        "nh-c0040" ;
+    schema:about nh:nh-p0017,
+        nh:nh-p0018 ;
+    schema:text "Period 'Välfärdsstat': 1945 – 2026" .
+
+nh:nh-c0041 a schema:Claim ;
+    dcterms:identifier "DA25",
+        "nh-c0041" ;
+    schema:about nh:nh-p0018 ;
+    schema:text "EG 1973" .
+
+nh:nh-c0042 a schema:Claim ;
+    dcterms:identifier "DA26",
+        "nh-c0042" ;
+    schema:about nh:nh-p0018 ;
+    schema:text "Grönlands hjemmestyre 1979" .
+
+<https://lex.dk/Gr%C3%B8nlands_Hjemmestyre> schema:name "Lex: Grønlands Hjemmestyre" .
+
+<https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
+
+<https://lex.dk/det_danske_EU-medlemskab> schema:name "Lex: det danske EU-medlemskab" .
+
+nh:nh-p0018 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0018" ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1973"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q35 ;
+    skos:definition "EG 1973; Grönlands hjemmestyre 1979"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "I EG/EU"@sv ;
+    time:intervalMetBy nh:nh-p0017 ;
+    schema:description "EG 1973; Grönlands hjemmestyre 1979" ;
+    schema:name "I EG/EU" ;
+    schema:temporalCoverage "1973/2026" .
+

@@ -1,0 +1,30 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0201#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Etikett ”första maskinen”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0201 ;
+    schema:reviewBody "Enligt Tetra Pak grundades bolaget 1951 och första fyllningsmaskinen levererades 1952 till mejeri i Lund." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0201/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0201 .
+
+nh:nh-c0201 a schema:Claim ;
+    dcterms:identifier "MI20",
+        "nh-c0201" ;
+    schema:about nh:nh-m0020 ;
+    schema:text "Tetra Pak: 1952" .
+
+<https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> schema:name "Tetra Pak: Heritage" .
+

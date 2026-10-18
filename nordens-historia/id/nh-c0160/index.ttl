@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0160#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Gustav_1_Vasa> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Gustav_1_Vasa> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0160 ;
+    schema:reviewBody "Gustav Vasa regerade 1523–1560 och räknas som grundaren av den svenska nationalstaten." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0160/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0160 .
+
+nh:nh-c0160 a schema:Claim ;
+    dcterms:identifier "GE31",
+        "nh-c0160" ;
+    schema:about nh:nh-p0066 ;
+    schema:text "Gustav Vasa" .
+
+<https://snl.no/Gustav_1_Vasa> schema:name "Gustav 1 Vasa – Store norske leksikon" .
+

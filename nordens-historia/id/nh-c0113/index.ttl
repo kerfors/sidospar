@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0113#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0113 ;
+    schema:reviewBody "Uppslagsverket anger att Finland gick med i EU vid ingången av 1995." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0113/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0113 .
+
+nh:nh-c0113 a schema:Claim ;
+    dcterms:identifier "FI25",
+        "nh-c0113" ;
+    schema:about nh:nh-p0048 ;
+    schema:text "EU 1995" .
+
+<https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> schema:name "Uppslagsverket Finland: Finlands historia efter 1917" .
+

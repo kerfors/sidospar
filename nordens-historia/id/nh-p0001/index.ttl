@@ -1,0 +1,85 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0002#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Ingolv_Arnesson> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Ingolv_Arnesson> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0002 ;
+    schema:reviewBody "SNL beskriver Ingólfur som den förste fasta bosättaren från Norge och säger att han slog sig ned i Reykjavík." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0001#def-001> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-001" ;
+    dcterms:source <https://snl.no/Islands_historie> ;
+    dcterms:spatial wd:Q189 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0870"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "0930"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0001 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Landnámstiden enligt Store norske leksikon"@sv ;
+    skos:scopeNote "Källans formulering: landnamstiden ca 870–930. Ungefärligt årtal: start"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0001#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0001/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0001 .
+
+nh:nh-c0001 a schema:Claim ;
+    dcterms:identifier "IS01",
+        "nh-c0001" ;
+    schema:about nh:nh-p0001 ;
+    schema:text "Period 'Landnámstiden': 874 – 930" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0001#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Islands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Islands_historie> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Start 870; 874 anges som traditionellt år." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0001 ;
+    schema:reviewBody "SNL anger landnamstiden till cirka 870–930; 874 är det traditionella året för Ingólfurs bosättning, medan lex.dk säger att bosättningen började omkring 870." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0002 a schema:Claim ;
+    dcterms:identifier "IS02",
+        "nh-c0002" ;
+    schema:about nh:nh-p0001 ;
+    schema:text "Ingólfur Arnarson i Reykjavík" .
+
+<https://snl.no/Ingolv_Arnesson> schema:name "Ingolv Arnesson (Store norske leksikon)" .
+
+<https://snl.no/Islands_historie> schema:name "Islands historie (Store norske leksikon)" .
+
+nh:nh-p0001 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0001" ;
+    dcterms:spatial wd:Q189 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "0870"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "0930"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q189 ;
+    skos:definition "Traditionellt 874: Ingólfur Arnarson i Reykjavík"@sv ;
+    skos:exactMatch wd:Q2725768 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Landnámstiden"@sv ;
+    time:intervalMeets nh:nh-p0002 ;
+    schema:description "Traditionellt 874: Ingólfur Arnarson i Reykjavík" ;
+    schema:name "Landnámstiden" ;
+    schema:temporalCoverage "0870/0930" .
+

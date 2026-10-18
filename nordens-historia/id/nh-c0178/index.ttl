@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0178#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0178 ;
+    schema:reviewBody "Roskildefreden 26 februari 1658 gav Sverige Skåne, Halland, Blekinge, Bornholm samt Bohus län och Trondhjems län." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0178/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0178 .
+
+nh:nh-c0178 a schema:Claim ;
+    dcterms:identifier "GE49",
+        "nh-c0178" ;
+    schema:about nh:nh-e0003 ;
+    schema:text "1658 Roskildefreden – Skånelandskapen och Bohuslän till Sverige" .
+
+<https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660> schema:name "Tabet af Skåne i 1658-1660 – lex.dk" .
+

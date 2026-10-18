@@ -1,0 +1,31 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0091#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Start ändrat till 5000 f.Kr." ] ;
+    schema:correction "ca 5000–2800 f.Kr. (Uppslagsverket)" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0091 ;
+    schema:reviewBody "Uppslagsverket anger kamkeramik från 5000 f.Kr. med Pyheensiltafasen fram till 2800 f.Kr.; fi.wikipedia börjar tidig kamkeramik 5300 f.Kr." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0091/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0091 .
+
+nh:nh-c0091 a schema:Claim ;
+    dcterms:identifier "FI03",
+        "nh-c0091" ;
+    schema:about nh:nh-p0038 ;
+    schema:text "Period 'Kamkeramisk kultur': 5 100 f.Kr. – 2 800 f.Kr." .
+
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
+

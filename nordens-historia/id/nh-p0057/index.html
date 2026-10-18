@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Romersk järnålder – Nordens historia</title>
 <link rel="alternate" type="application/ld+json" href="index.jsonld">
+<link rel="alternate" type="text/turtle" href="index.ttl">
 <script type="application/ld+json">
 {
  "@context": {
@@ -298,12 +299,19 @@
   .v.bekräftad { background: #d8efdc; } .v.omdiskuterad { background: #f7e3b5; }
   .v.avvikande { background: #f6c9c4; } .v.ej { background: #e3e3e3; }
   .tw { overflow-x: auto; }
+  .formats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+             width: min(1240px, calc(100vw - 48px)); position: relative; left: 50%; transform: translateX(-50%); }
+  .formats > div { min-width: 0; }
+  .formats h3 { font-size: 0.95rem; margin: 0 0 6px; }
+  .formats pre { background: #f1eee7; padding: 10px 12px; border-radius: 4px; overflow: auto; max-height: 40em;
+                 font-size: 0.74rem; line-height: 1.4; margin: 0; }
   @media (max-width: 600px) { dl { grid-template-columns: 1fr; } dt { margin-top: 6px; } }
+  @media (max-width: 900px) { .formats { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="../../">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="../../kallor.html">Källäget</a></p>
+<p class="crumbs"><a href="../../">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="../../kallor.html">Källäget</a> · <a href="../../sparql.html">SPARQL</a></p>
 <p class="kind">Period</p>
 <h1>Romersk järnålder</h1>
 <p>Handel med Romarriket; runskriften tas i bruk</p>
@@ -314,7 +322,7 @@
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q2566630">Q2566630</a> Roman Iron Age (närliggande)</dd>
 <dt>Föregås av</dt><dd><a href="../nh-p0056/">Förromersk järnålder</a></dd><dt>Följs av</dt><dd><a href="../nh-p0058/">Folkvandringstid</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0057">Visa på affischen</a></dd>
-<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
+<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
 <h2>Källornas gränser</h2>
 <p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
@@ -322,6 +330,390 @@
 
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0135/">nh-c0135</a></td><td>Period &#x27;Romersk järnålder&#x27;: 1 – 400</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://lex.dk/romersk_jernalder">Lex.dk: romersk jernalder</a></td></tr><tr><td><a href="../nh-c0136/">nh-c0136</a></td><td>Handel med Romarriket</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://lex.dk/romersk_jernalder">Lex.dk: romersk jernalder</a></td></tr><tr><td><a href="../nh-c0137/">nh-c0137</a></td><td>runskriften tas i bruk</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/runer">Store norske leksikon: runer</a></td></tr></tbody></table></div>
+<h2>Data i två format</h2>
+<p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
+<div class="formats">
+<div><h3><a href="index.jsonld">index.jsonld</a></h3><pre>{
+ &quot;@context&quot;: {
+  &quot;@vocab&quot;: &quot;https://schema.org/&quot;,
+  &quot;schema&quot;: &quot;https://schema.org/&quot;,
+  &quot;crm&quot;: &quot;http://www.cidoc-crm.org/cidoc-crm/&quot;,
+  &quot;skos&quot;: &quot;http://www.w3.org/2004/02/skos/core#&quot;,
+  &quot;dcterms&quot;: &quot;http://purl.org/dc/terms/&quot;,
+  &quot;prov&quot;: &quot;http://www.w3.org/ns/prov#&quot;,
+  &quot;xsd&quot;: &quot;http://www.w3.org/2001/XMLSchema#&quot;,
+  &quot;wd&quot;: &quot;http://www.wikidata.org/entity/&quot;,
+  &quot;time&quot;: &quot;http://www.w3.org/2006/time#&quot;,
+  &quot;nh&quot;: &quot;https://kerfors.github.io/sidospar/nordens-historia/id/&quot;,
+  &quot;skos:prefLabel&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;skos:definition&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;skos:inScheme&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:exactMatch&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:closeMatch&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;dcterms:spatial&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P7_took_place_at&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P82a_begin_of_the_begin&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;crm:P82b_end_of_the_end&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;startDate&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;endDate&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;about&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;itemReviewed&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;citation&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;isBasedOn&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;license&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;time:intervalMeets&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;time:intervalMetBy&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P10_falls_within&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;dcterms:source&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:scopeNote&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;mainEntity&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;isPartOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;url&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasGeneratedBy&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasDerivedFrom&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasAssociatedWith&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:actedOnBehalfOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  }
+ },
+ &quot;@graph&quot;: [
+  {
+   &quot;@id&quot;: &quot;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0057/&quot;,
+   &quot;@type&quot;: &quot;WebPage&quot;,
+   &quot;mainEntity&quot;: &quot;nh:nh-p0057&quot;,
+   &quot;isPartOf&quot;: &quot;nh:#dataset&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-p0057&quot;,
+   &quot;@type&quot;: [
+    &quot;crm:E4_Period&quot;,
+    &quot;skos:Concept&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;nh-p0057&quot;,
+   &quot;name&quot;: &quot;Romersk järnålder&quot;,
+   &quot;skos:prefLabel&quot;: {
+    &quot;sv&quot;: &quot;Romersk järnålder&quot;
+   },
+   &quot;skos:inScheme&quot;: &quot;nh:#perioder&quot;,
+   &quot;temporalCoverage&quot;: &quot;0001/0400&quot;,
+   &quot;crm:P4_has_time-span&quot;: {
+    &quot;@type&quot;: &quot;crm:E52_Time-Span&quot;,
+    &quot;crm:P82a_begin_of_the_begin&quot;: &quot;0001&quot;,
+    &quot;crm:P82b_end_of_the_end&quot;: &quot;0400&quot;
+   },
+   &quot;crm:P7_took_place_at&quot;: [
+    &quot;wd:Q35&quot;,
+    &quot;wd:Q20&quot;,
+    &quot;wd:Q34&quot;
+   ],
+   &quot;dcterms:spatial&quot;: [
+    &quot;wd:Q35&quot;,
+    &quot;wd:Q20&quot;,
+    &quot;wd:Q34&quot;
+   ],
+   &quot;description&quot;: &quot;Handel med Romarriket; runskriften tas i bruk&quot;,
+   &quot;skos:definition&quot;: {
+    &quot;sv&quot;: &quot;Handel med Romarriket; runskriften tas i bruk&quot;
+   },
+   &quot;skos:closeMatch&quot;: &quot;wd:Q2566630&quot;,
+   &quot;time:intervalMeets&quot;: [
+    &quot;nh:nh-p0058&quot;
+   ],
+   &quot;time:intervalMetBy&quot;: [
+    &quot;nh:nh-p0056&quot;
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-p0057#def-054&quot;,
+   &quot;@type&quot;: [
+    &quot;crm:E4_Period&quot;,
+    &quot;skos:Concept&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;def-054&quot;,
+   &quot;skos:prefLabel&quot;: {
+    &quot;sv&quot;: &quot;Romersk järnålder enligt Lex (Den Store Danske)&quot;
+   },
+   &quot;skos:inScheme&quot;: &quot;nh:#kalla-lex&quot;,
+   &quot;skos:exactMatch&quot;: &quot;nh:nh-p0057&quot;,
+   &quot;crm:P4_has_time-span&quot;: {
+    &quot;@type&quot;: &quot;crm:E52_Time-Span&quot;,
+    &quot;crm:P82a_begin_of_the_begin&quot;: &quot;0001&quot;,
+    &quot;crm:P82b_end_of_the_end&quot;: &quot;0400&quot;
+   },
+   &quot;dcterms:spatial&quot;: [
+    &quot;wd:Q35&quot;,
+    &quot;wd:Q20&quot;,
+    &quot;wd:Q34&quot;
+   ],
+   &quot;dcterms:source&quot;: &quot;https://lex.dk/romersk_jernalder&quot;,
+   &quot;prov:wasDerivedFrom&quot;: &quot;nh:nh-c0135#granskning&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0135&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0135&quot;,
+    &quot;GE06&quot;
+   ],
+   &quot;text&quot;: &quot;Period &#x27;Romersk järnålder&#x27;: 1 – 400&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0057&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0135#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0135&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;Lex.dk definierar romersk järnålder som Kr.f.–400 e.Kr.; SNL jernalderen anger likaså 0–400.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://lex.dk/romersk_jernalder&quot;,
+    &quot;name&quot;: &quot;Lex.dk: romersk jernalder&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://lex.dk/romersk_jernalder&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0136&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0136&quot;,
+    &quot;GE07&quot;
+   ],
+   &quot;text&quot;: &quot;Handel med Romarriket&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0057&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0136#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0136&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;Lex.dk beskriver att romerskt inflytande nådde Norden bl.a. via importerade lyxvaror under perioden.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://lex.dk/romersk_jernalder&quot;,
+    &quot;name&quot;: &quot;Lex.dk: romersk jernalder&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://lex.dk/romersk_jernalder&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0137&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0137&quot;,
+    &quot;GE08&quot;
+   ],
+   &quot;text&quot;: &quot;runskriften tas i bruk&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0057&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0137#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0137&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SNL anger äldsta säkra runinskriften (kammen från Vimose) till ca 160 e.Kr., inom romersk järnålder.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://snl.no/runer&quot;,
+    &quot;name&quot;: &quot;Store norske leksikon: runer&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://snl.no/runer&quot;
+  }
+ ]
+}</pre></div>
+<div><h3><a href="index.ttl">index.ttl</a></h3><pre>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix nh: &lt;https://kerfors.github.io/sidospar/nordens-historia/id/&gt; .
+@prefix prov: &lt;http://www.w3.org/ns/prov#&gt; .
+@prefix schema: &lt;https://schema.org/&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix time: &lt;http://www.w3.org/2006/time#&gt; .
+@prefix wd: &lt;http://www.wikidata.org/entity/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0136#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://lex.dk/romersk_jernalder&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://lex.dk/romersk_jernalder&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0136 ;
+    schema:reviewBody &quot;Lex.dk beskriver att romerskt inflytande nådde Norden bl.a. via importerade lyxvaror under perioden.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0137#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://snl.no/runer&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://snl.no/runer&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0137 ;
+    schema:reviewBody &quot;SNL anger äldsta säkra runinskriften (kammen från Vimose) till ca 160 e.Kr., inom romersk järnålder.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0057#def-054&gt; a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier &quot;def-054&quot; ;
+    dcterms:source &lt;https://lex.dk/romersk_jernalder&gt; ;
+    dcterms:spatial wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin &quot;0001&quot;^^xsd:gYear ;
+            crm:P82b_end_of_the_end &quot;0400&quot;^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0057 ;
+    skos:inScheme &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex&gt; ;
+    skos:prefLabel &quot;Romersk järnålder enligt Lex (Den Store Danske)&quot;@sv ;
+    prov:wasDerivedFrom &lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0135#granskning&gt; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0057/&gt; a schema:WebPage ;
+    schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#dataset&gt; ;
+    schema:mainEntity nh:nh-p0057 .
+
+nh:nh-c0135 a schema:Claim ;
+    dcterms:identifier &quot;GE06&quot;,
+        &quot;nh-c0135&quot; ;
+    schema:about nh:nh-p0057 ;
+    schema:text &quot;Period &#x27;Romersk järnålder&#x27;: 1 – 400&quot; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0135#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://lex.dk/romersk_jernalder&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://lex.dk/romersk_jernalder&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0135 ;
+    schema:reviewBody &quot;Lex.dk definierar romersk järnålder som Kr.f.–400 e.Kr.; SNL jernalderen anger likaså 0–400.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+nh:nh-c0136 a schema:Claim ;
+    dcterms:identifier &quot;GE07&quot;,
+        &quot;nh-c0136&quot; ;
+    schema:about nh:nh-p0057 ;
+    schema:text &quot;Handel med Romarriket&quot; .
+
+nh:nh-c0137 a schema:Claim ;
+    dcterms:identifier &quot;GE08&quot;,
+        &quot;nh-c0137&quot; ;
+    schema:about nh:nh-p0057 ;
+    schema:text &quot;runskriften tas i bruk&quot; .
+
+&lt;https://snl.no/runer&gt; schema:name &quot;Store norske leksikon: runer&quot; .
+
+nh:nh-p0057 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier &quot;nh-p0057&quot; ;
+    dcterms:spatial wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin &quot;0001&quot;^^xsd:gYear ;
+            crm:P82b_end_of_the_end &quot;0400&quot;^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20,
+        wd:Q34,
+        wd:Q35 ;
+    skos:closeMatch wd:Q2566630 ;
+    skos:definition &quot;Handel med Romarriket; runskriften tas i bruk&quot;@sv ;
+    skos:inScheme &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#perioder&gt; ;
+    skos:prefLabel &quot;Romersk järnålder&quot;@sv ;
+    time:intervalMeets nh:nh-p0058 ;
+    time:intervalMetBy nh:nh-p0056 ;
+    schema:description &quot;Handel med Romarriket; runskriften tas i bruk&quot; ;
+    schema:name &quot;Romersk järnålder&quot; ;
+    schema:temporalCoverage &quot;0001/0400&quot; .
+
+&lt;https://lex.dk/romersk_jernalder&gt; schema:name &quot;Lex.dk: romersk jernalder&quot; .
+
+</pre></div>
+</div>
 
 </main>
 </body>

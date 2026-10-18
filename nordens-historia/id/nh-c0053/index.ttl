@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0053#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/borgerkrigstiden> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/borgerkrigstiden> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0053 ;
+    schema:reviewBody "SNL definierar inbördeskrigstiden som perioden 1130–1240, från Sigurd Jorsalfares död till Skule Bårdssons fall." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0053/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0053 .
+
+nh:nh-c0053 a schema:Claim ;
+    dcterms:identifier "NO11",
+        "nh-c0053" ;
+    schema:about nh:nh-p0023 ;
+    schema:text "Period 'Inbördeskrigstiden': 1130 – 1240" .
+
+<https://snl.no/borgerkrigstiden> schema:name "Store norske leksikon: borgerkrigstiden" .
+

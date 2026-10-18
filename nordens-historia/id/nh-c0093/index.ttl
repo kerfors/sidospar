@@ -1,0 +1,31 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0093#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Start ändrat till 1600 f.Kr." ] ;
+    schema:correction "1600–500 f.Kr. (Uppslagsverket)" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0093 ;
+    schema:reviewBody "Uppslagsverket anger bronsåldern i Finland till 1600–500 f.Kr.; fi.wikipedia anger både 1700 och 1500 som start." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0093/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0093 .
+
+nh:nh-c0093 a schema:Claim ;
+    dcterms:identifier "FI05",
+        "nh-c0093" ;
+    schema:about nh:nh-p0040 ;
+    schema:text "Period 'Bronsålder': 1 500 f.Kr. – 500 f.Kr." .
+
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
+

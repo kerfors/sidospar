@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0136#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/romersk_jernalder> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/romersk_jernalder> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0136 ;
+    schema:reviewBody "Lex.dk beskriver att romerskt inflytande nådde Norden bl.a. via importerade lyxvaror under perioden." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0136/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0136 .
+
+nh:nh-c0136 a schema:Claim ;
+    dcterms:identifier "GE07",
+        "nh-c0136" ;
+    schema:about nh:nh-p0057 ;
+    schema:text "Handel med Romarriket" .
+
+<https://lex.dk/romersk_jernalder> schema:name "Lex.dk: romersk jernalder" .
+

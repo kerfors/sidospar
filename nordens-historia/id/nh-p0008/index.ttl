@@ -1,0 +1,100 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0020#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/tragtb%C3%A6gerkulturen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/tragtb%C3%A6gerkulturen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0020 ;
+    schema:reviewBody "Trattbägarkulturen (ca 4100–2800 f.Kr.) kom till Danmark omkring 4000 f.Kr. och hör till tidig och mellanneolitikum." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0021#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0021 ;
+    schema:reviewBody "Nationalmuseet anger att neolitikums bönder byggde dösar och gånggrifter över hela Danmark." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0008#def-008> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-008" ;
+    dcterms:source <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "-3899"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "-1699"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0008 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-natmus> ;
+    skos:prefLabel "Bondestenålder enligt Nationalmuseet"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0019#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0008/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0008 .
+
+nh:nh-c0019 a schema:Claim ;
+    dcterms:identifier "DA03",
+        "nh-c0019" ;
+    schema:about nh:nh-p0008 ;
+    schema:text "Period 'Bondestenålder': 3 900 f.Kr. – 1 700 f.Kr." .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0019#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0019 ;
+    schema:reviewBody "Nationalmuseet anger neolitikum i Danmark till 3900–1700 f.Kr.; Lex Danmarks forhistorie anger ca 3900–1700 f.Kr." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0020 a schema:Claim ;
+    dcterms:identifier "DA04",
+        "nh-c0020" ;
+    schema:about nh:nh-p0008 ;
+    schema:text "Trattbägarkultur" .
+
+nh:nh-c0021 a schema:Claim ;
+    dcterms:identifier "DA05",
+        "nh-c0021" ;
+    schema:about nh:nh-p0008 ;
+    schema:text "dösar och gånggrifter" .
+
+<https://lex.dk/tragtb%C3%A6gerkulturen> schema:name "Lex: tragtbægerkulturen" .
+
+<https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> schema:name "Nationalmuseet: The Neolithic period" .
+
+nh:nh-p0008 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0008" ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "-3899"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "-1699"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q35 ;
+    skos:closeMatch wd:Q1275904 ;
+    skos:definition "Trattbägarkultur; dösar och gånggrifter"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Bondestenålder"@sv ;
+    time:intervalMeets nh:nh-p0055 ;
+    time:intervalMetBy nh:nh-p0007 ;
+    schema:description "Trattbägarkultur; dösar och gånggrifter" ;
+    schema:name "Bondestenålder" ;
+    schema:temporalCoverage "-3899/-1699" .
+

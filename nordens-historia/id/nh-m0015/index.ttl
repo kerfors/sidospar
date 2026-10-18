@@ -1,0 +1,42 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0196#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.nobelprize.org/prizes/facts/nobel-prize-facts/> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.nobelprize.org/prizes/facts/nobel-prize-facts/> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0196 ;
+    schema:reviewBody "Nobelprisen delades ut första gången 10 december 1901 i Stockholm och Kristiania." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0015/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-m0015 .
+
+nh:nh-c0196 a schema:Claim ;
+    dcterms:identifier "MI15",
+        "nh-c0196" ;
+    schema:about nh:nh-m0015 ;
+    schema:text "Nobelpriset: 1901" .
+
+nh:nh-m0015 a crm:E5_Event,
+        schema:Event ;
+    dcterms:identifier "nh-m0015" ;
+    crm:P10_falls_within nh:nh-p0070 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1901"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q34 ;
+    schema:about wd:Q7191 ;
+    schema:name "Nobelpriset" ;
+    schema:startDate "1901"^^xsd:gYear .
+
+<https://www.nobelprize.org/prizes/facts/nobel-prize-facts/> schema:name "Nobelprize.org: Nobel Prize facts" .
+

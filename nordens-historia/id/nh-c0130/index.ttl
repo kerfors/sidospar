@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0130#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/bronsealder> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/bronsealder> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0130 ;
+    schema:reviewBody "SNL anger nordisk bronsålder till ca 1700–500 f.Kr. (äldre 1700–1100, yngre 1100–500)." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0130/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0130 .
+
+nh:nh-c0130 a schema:Claim ;
+    dcterms:identifier "GE01",
+        "nh-c0130" ;
+    schema:about nh:nh-p0055 ;
+    schema:text "Period 'Nordisk bronsålder': 1 700 f.Kr. – 500 f.Kr." .
+
+<https://snl.no/bronsealder> schema:name "Store norske leksikon: bronsealder" .
+

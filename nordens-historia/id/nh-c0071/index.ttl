@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0071#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://historiska.se/utforska-historien/tidsaldrar/> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://historiska.se/utforska-historien/tidsaldrar/> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0071 ;
+    schema:reviewBody "Historiska museets tidslinje anger neolitikum 4 000–1 700 f.Kr., följt av bronsålder från 1 700 f.Kr." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0071/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0071 .
+
+<https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
+
+nh:nh-c0071 a schema:Claim ;
+    dcterms:identifier "SV04",
+        "nh-c0071" ;
+    schema:about nh:nh-p0029 ;
+    schema:text "Period 'Bondestenålder': 4 000 f.Kr. – 1 700 f.Kr." .
+

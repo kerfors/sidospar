@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0142#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0142 ;
+    schema:reviewBody "Gustavianum: Valsgärdes båtgravar är från vendel- och vikingatid, ca 3 km norr om Gamla Uppsala; SNL: vendeltid är uppkallad efter gravfältet i Vendel." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0142/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0142 .
+
+nh:nh-c0142 a schema:Claim ;
+    dcterms:identifier "GE13",
+        "nh-c0142" ;
+    schema:about nh:nh-p0059 ;
+    schema:text "Gamla Uppsala, Vendel och Valsgärde" .
+
+<https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde> schema:name "Uppsala universitet/Gustavianum: Valsgärde" .
+

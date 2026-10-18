@@ -1,0 +1,112 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0151#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Kalmarunionen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Kalmarunionen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0151 ;
+    schema:reviewBody "Lex.dk: Margareta formade unionen; Erik av Pommern kröntes i Kalmar 1397 och regerade efter hennes död 1412 till 1439." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0152#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Kalmarunionen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Kalmarunionen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0152 ;
+    schema:reviewBody "Lex.dk: Gustav Vasa utropades till kung 1523, vilket slutgiltigt avslutade unionen." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0063#def-059> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-059" ;
+    dcterms:source <https://lex.dk/Kalmarunionen> ;
+    dcterms:spatial wd:Q189,
+        wd:Q20,
+        wd:Q33,
+        wd:Q34,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1397"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1523"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0063 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:prefLabel "Kalmarunionen enligt Lex (Den Store Danske)"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0150#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0063/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0063 .
+
+nh:nh-c0150 a schema:Claim ;
+    dcterms:identifier "GE21",
+        "nh-c0150" ;
+    schema:about nh:nh-p0063 ;
+    schema:text "Period 'Kalmarunionen': 1397 – 1523" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0150#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Kalmarunionen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Kalmarunionen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0150 ;
+    schema:reviewBody "Lex.dk daterar Kalmarunionen traditionellt till 1397–1523." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0151 a schema:Claim ;
+    dcterms:identifier "GE22",
+        "nh-c0151" ;
+    schema:about nh:nh-p0063 ;
+    schema:text "Margareta och Erik av Pommern" .
+
+nh:nh-c0152 a schema:Claim ;
+    dcterms:identifier "GE23",
+        "nh-c0152" ;
+    schema:about nh:nh-p0063 ;
+    schema:text "Sverige bryter sig ur 1523" .
+
+nh:nh-p0063 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0063" ;
+    dcterms:spatial wd:Q189,
+        wd:Q20,
+        wd:Q33,
+        wd:Q34,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1397"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1523"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q189,
+        wd:Q20,
+        wd:Q33,
+        wd:Q34,
+        wd:Q35 ;
+    skos:definition "Margareta och Erik av Pommern; Sverige bryter sig ur 1523"@sv ;
+    skos:exactMatch wd:Q62623 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Kalmarunionen"@sv ;
+    time:intervalMeets nh:nh-p0064,
+        nh:nh-p0066 ;
+    time:intervalMetBy nh:nh-p0061,
+        nh:nh-p0062 ;
+    schema:description "Margareta och Erik av Pommern; Sverige bryter sig ur 1523" ;
+    schema:name "Kalmarunionen" ;
+    schema:temporalCoverage "1397/1523" .
+
+<https://lex.dk/Kalmarunionen> schema:name "Lex.dk: Kalmarunionen" .
+

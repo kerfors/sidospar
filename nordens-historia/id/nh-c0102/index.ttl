@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0102#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Finlands_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Finlands_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0102 ;
+    schema:reviewBody "SNL anger att Finland blev ett autonomt storfurstendöme under Ryssland efter 1809 och förblev det till 1917." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0102/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0102 .
+
+nh:nh-c0102 a schema:Claim ;
+    dcterms:identifier "FI14",
+        "nh-c0102" ;
+    schema:about nh:nh-p0045 ;
+    schema:text "Period 'Storfurstendömet Finland': 1809 – 1917" .
+
+<https://snl.no/Finlands_historie> schema:name "Store norske leksikon: Finlands historie" .
+

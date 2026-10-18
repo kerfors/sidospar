@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0169#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/hatter> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/hatter> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0169 ;
+    schema:reviewBody "Hattpartiet grundades 1734 i opposition mot Arvid Horns 'mössor' och upphörde efter statskuppen 1772." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0169/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0169 .
+
+nh:nh-c0169 a schema:Claim ;
+    dcterms:identifier "GE40",
+        "nh-c0169" ;
+    schema:about nh:nh-p0068 ;
+    schema:text "hattar och mössor" .
+
+<https://snl.no/hatter> schema:name "Hatter – Store norske leksikon" .
+

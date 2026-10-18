@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vinter-, fortsättnings- och Lapplandskriget – Nordens historia</title>
 <link rel="alternate" type="application/ld+json" href="index.jsonld">
+<link rel="alternate" type="text/turtle" href="index.ttl">
 <script type="application/ld+json">
 {
  "@context": {
@@ -165,12 +166,19 @@
   .v.bekräftad { background: #d8efdc; } .v.omdiskuterad { background: #f7e3b5; }
   .v.avvikande { background: #f6c9c4; } .v.ej { background: #e3e3e3; }
   .tw { overflow-x: auto; }
+  .formats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+             width: min(1240px, calc(100vw - 48px)); position: relative; left: 50%; transform: translateX(-50%); }
+  .formats > div { min-width: 0; }
+  .formats h3 { font-size: 0.95rem; margin: 0 0 6px; }
+  .formats pre { background: #f1eee7; padding: 10px 12px; border-radius: 4px; overflow: auto; max-height: 40em;
+                 font-size: 0.74rem; line-height: 1.4; margin: 0; }
   @media (max-width: 600px) { dl { grid-template-columns: 1fr; } dt { margin-top: 6px; } }
+  @media (max-width: 900px) { .formats { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="../../">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="../../kallor.html">Källäget</a></p>
+<p class="crumbs"><a href="../../">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="../../kallor.html">Källäget</a> · <a href="../../sparql.html">SPARQL</a></p>
 <p class="kind">Kontrollerad uppgift</p>
 <h1>Vinter-, fortsättnings- och Lapplandskriget</h1>
 <dl>
@@ -184,8 +192,181 @@
 <dt>Notering</dt><dd>SNL använder inte namnet Lapplandskriget; namnet finns i Uppslagsverkets artikel om fortsättningskriget.</dd>
 <dt>Åtgärd</dt><dd>–</dd>
 <dt>Kontrollerad</dt><dd>2026-10-18</dd>
-<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
+<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
+<h2>Data i två format</h2>
+<p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
+<div class="formats">
+<div><h3><a href="index.jsonld">index.jsonld</a></h3><pre>{
+ &quot;@context&quot;: {
+  &quot;@vocab&quot;: &quot;https://schema.org/&quot;,
+  &quot;schema&quot;: &quot;https://schema.org/&quot;,
+  &quot;crm&quot;: &quot;http://www.cidoc-crm.org/cidoc-crm/&quot;,
+  &quot;skos&quot;: &quot;http://www.w3.org/2004/02/skos/core#&quot;,
+  &quot;dcterms&quot;: &quot;http://purl.org/dc/terms/&quot;,
+  &quot;prov&quot;: &quot;http://www.w3.org/ns/prov#&quot;,
+  &quot;xsd&quot;: &quot;http://www.w3.org/2001/XMLSchema#&quot;,
+  &quot;wd&quot;: &quot;http://www.wikidata.org/entity/&quot;,
+  &quot;time&quot;: &quot;http://www.w3.org/2006/time#&quot;,
+  &quot;nh&quot;: &quot;https://kerfors.github.io/sidospar/nordens-historia/id/&quot;,
+  &quot;skos:prefLabel&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;skos:definition&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;skos:inScheme&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:exactMatch&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:closeMatch&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;dcterms:spatial&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P7_took_place_at&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P82a_begin_of_the_begin&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;crm:P82b_end_of_the_end&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;startDate&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;endDate&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;about&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;itemReviewed&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;citation&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;isBasedOn&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;license&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;time:intervalMeets&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;time:intervalMetBy&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P10_falls_within&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;dcterms:source&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:scopeNote&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;mainEntity&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;isPartOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;url&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasGeneratedBy&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasDerivedFrom&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasAssociatedWith&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:actedOnBehalfOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  }
+ },
+ &quot;@graph&quot;: [
+  {
+   &quot;@id&quot;: &quot;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0111/&quot;,
+   &quot;@type&quot;: &quot;WebPage&quot;,
+   &quot;mainEntity&quot;: &quot;nh:nh-c0111&quot;,
+   &quot;isPartOf&quot;: &quot;nh:#dataset&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0111&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0111&quot;,
+    &quot;FI23&quot;
+   ],
+   &quot;text&quot;: &quot;Vinter-, fortsättnings- och Lapplandskriget&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0047&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0111#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0111&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;SNL anger vinterkriget 1939–40 och fortsättningskriget 1941–44; Uppslagsverket anger att striderna mot tyskarna i Lappland pågick till april 1945.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://snl.no/Finlands_historie&quot;,
+    &quot;name&quot;: &quot;Store norske leksikon: Finlands historie&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://snl.no/Finlands_historie&quot;
+  }
+ ]
+}</pre></div>
+<div><h3><a href="index.ttl">index.ttl</a></h3><pre>@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix nh: &lt;https://kerfors.github.io/sidospar/nordens-historia/id/&gt; .
+@prefix prov: &lt;http://www.w3.org/ns/prov#&gt; .
+@prefix schema: &lt;https://schema.org/&gt; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0111#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://snl.no/Finlands_historie&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://snl.no/Finlands_historie&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0111 ;
+    schema:reviewBody &quot;SNL anger vinterkriget 1939–40 och fortsättningskriget 1941–44; Uppslagsverket anger att striderna mot tyskarna i Lappland pågick till april 1945.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0111/&gt; a schema:WebPage ;
+    schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#dataset&gt; ;
+    schema:mainEntity nh:nh-c0111 .
+
+nh:nh-c0111 a schema:Claim ;
+    dcterms:identifier &quot;FI23&quot;,
+        &quot;nh-c0111&quot; ;
+    schema:about nh:nh-p0047 ;
+    schema:text &quot;Vinter-, fortsättnings- och Lapplandskriget&quot; .
+
+&lt;https://snl.no/Finlands_historie&gt; schema:name &quot;Store norske leksikon: Finlands historie&quot; .
+
+</pre></div>
+</div>
 
 </main>
 </body>

@@ -1,0 +1,73 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0083#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Delat i 1905–1921 och 1921–1945." ] ;
+    schema:correction "ca 1900 – 1921" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0083 ;
+    schema:reviewBody "NE avgränsar demokratins genombrott till 1900–1920; riksdagen pekar på 1918–1921." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0085#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/sverige-under-andra-v%C3%A4rldskriget> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/sverige-under-andra-v%C3%A4rldskriget> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0085 ;
+    schema:reviewBody "Sverige utfärdade neutralitetsförklaring vid krigsutbrottet 1939." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0035/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0035 .
+
+nh:nh-c0083 a schema:Claim ;
+    dcterms:identifier "SV16",
+        "nh-c0083" ;
+    schema:about nh:nh-p0034,
+        nh:nh-p0035 ;
+    schema:text "Period 'Demokratins genombrott': 1905 – 1945" .
+
+nh:nh-c0085 a schema:Claim ;
+    dcterms:identifier "SV18",
+        "nh-c0085" ;
+    schema:about nh:nh-p0035 ;
+    schema:text "neutralitet under andra världskriget" .
+
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> schema:name "Nationalencyklopedin – Sverige, historia: Demokratins genombrott" .
+
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/sverige-under-andra-v%C3%A4rldskriget> schema:name "Nationalencyklopedin – Sverige under andra världskriget" .
+
+nh:nh-p0035 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0035" ;
+    dcterms:spatial wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1921"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1945"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q34 ;
+    skos:definition "Neutralitet under andra världskriget"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Mellankrigstid och krig"@sv ;
+    time:intervalMeets nh:nh-p0036 ;
+    time:intervalMetBy nh:nh-p0034 ;
+    schema:description "Neutralitet under andra världskriget" ;
+    schema:name "Mellankrigstid och krig" ;
+    schema:temporalCoverage "1921/1945" .
+

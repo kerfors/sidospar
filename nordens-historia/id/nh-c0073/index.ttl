@@ -1,0 +1,31 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0073#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://historiska.se/utforska-historien/tidsaldrar/> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://historiska.se/utforska-historien/tidsaldrar/> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Slut ändrat till 1050." ] ;
+    schema:correction "793 – 1050" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0073 ;
+    schema:reviewBody "Historiska museet anger vikingatid 793–1050; NE anger ca 800–1050. Ingen svensk källa använder 1066 som slut." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0073/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0073 .
+
+<https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
+
+nh:nh-c0073 a schema:Claim ;
+    dcterms:identifier "SV06",
+        "nh-c0073" ;
+    schema:about nh:nh-p0030 ;
+    schema:text "Period 'Vikingatid': 793 – 1066" .
+

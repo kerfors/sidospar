@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0157#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/enevoldstida> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/enevoldstida> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0157 ;
+    schema:reviewBody "Enväldet infördes i Danmark–Norge 1660 och upphörde för Norges del vid unionsupplösningen 1814." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0157/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0157 .
+
+nh:nh-c0157 a schema:Claim ;
+    dcterms:identifier "GE28",
+        "nh-c0157" ;
+    schema:about nh:nh-p0065 ;
+    schema:text "Period 'Danmark–Norge under enväldet': 1660 – 1814" .
+
+<https://snl.no/enevoldstida> schema:name "Enevoldstida – Store norske leksikon" .
+

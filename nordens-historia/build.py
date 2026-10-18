@@ -2,7 +2,8 @@
 Chart Origin's "Timeline of World History".
 
 Data lives in data/items.json and data/claims.json.
-Run: python3 build.py  ->  writes index.html, kallor.html and id/ (via make_kallor.py and ld.py).
+Run: python3 build.py  ->  writes index.html, kallor.html, id/, linked-data.html and sparql.html
+(via make_kallor.py, ld.py, ld_page.py and sparql_page.py).
 """
 import json
 import sys
@@ -405,8 +406,9 @@ Klicka på ett block, en händelse eller en siffra för datum, källor och ident
 Idén och formen är deras; innehållet här är mitt eget urval.</p>
 <p><strong>Källäget:</strong> varje uppgift är kontrollerad mot en uppslagskälla, se <a href="kallor.html">källförteckningen</a>.</p>
 <p><strong>Länkade data:</strong> varje period, händelse, milstolpe och kontrollerad uppgift har en egen beständig
-identifierare som går att slå upp, med JSON-LD och länkar till Wikidata. Se <a href="id/">identifierarna</a>
-och, på engelska, <a href="linked-data.html">The linked data behind the poster</a>.
+identifierare som går att slå upp, med JSON-LD, Turtle och länkar till Wikidata. Se <a href="id/">identifierarna</a>
+och, på engelska, <a href="linked-data.html">The linked data behind the poster</a>. Datan går att ställa frågor mot
+direkt i webbläsaren på <a href="sparql.html">SPARQL-sidan</a>.
 Innehåll och data är licensierade under <a href="https://creativecommons.org/licenses/by/4.0/deed.sv">CC BY 4.0</a>.</p>
 </div>
 <div class="poster">

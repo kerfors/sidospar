@@ -1,0 +1,30 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0060#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/H%C3%A5kon_6._Magnusson> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/H%C3%A5kon_6._Magnusson> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Behållet; tillägg ”utsedd 1343, ensam kung från 1355”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0060 ;
+    schema:reviewBody "SNL anger Håkon VI som kung i Norge 1355–1380; 1343 är året då riksrådet beslöt att han skulle bli Norges kung." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0060/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0060 .
+
+nh:nh-c0060 a schema:Claim ;
+    dcterms:identifier "NO18",
+        "nh-c0060" ;
+    schema:about nh:nh-p0025 ;
+    schema:text "Period 'Håkon VI': 1343 – 1380" .
+
+<https://snl.no/H%C3%A5kon_6._Magnusson> schema:name "Store norske leksikon: Håkon 6. Magnusson" .
+

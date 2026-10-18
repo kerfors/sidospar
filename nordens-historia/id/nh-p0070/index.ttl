@@ -1,0 +1,105 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0174#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Unionsoppløsningen_i_1905> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Unionsoppløsningen_i_1905> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0174 ;
+    schema:reviewBody "Gemensam kung och utrikespolitik, men Norge hade egen regering, storting, lagstiftning, armé och flotta." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0175#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Grunnloven> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Grunnloven> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0175 ;
+    schema:reviewBody "Grundlagen antogs av riksförsamlingen på Eidsvoll 16 maj och daterades/undertecknades 17 maj 1814." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0070#def-066> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-066" ;
+    dcterms:source <https://snl.no/Unionsoppløsningen_i_1905> ;
+    dcterms:spatial wd:Q20,
+        wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1814"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1905"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0070 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Unionen Sverige–Norge enligt Store norske leksikon"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0173#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0070/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0070 .
+
+nh:nh-c0173 a schema:Claim ;
+    dcterms:identifier "GE44",
+        "nh-c0173" ;
+    schema:about nh:nh-p0070 ;
+    schema:text "Period 'Unionen Sverige–Norge': 1814 – 1905" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0173#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Unionsoppløsningen_i_1905> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Unionsoppløsningen_i_1905> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0173 ;
+    schema:reviewBody "SNL beskriver unionen 1814–1905 som en union med gemensam kung." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0174 a schema:Claim ;
+    dcterms:identifier "GE45",
+        "nh-c0174" ;
+    schema:about nh:nh-p0070 ;
+    schema:text "Två riken, en kung" .
+
+nh:nh-c0175 a schema:Claim ;
+    dcterms:identifier "GE46",
+        "nh-c0175" ;
+    schema:about nh:nh-p0070 ;
+    schema:text "Norge med egen grundlov (Eidsvoll 17 maj 1814)" .
+
+<https://snl.no/Grunnloven> schema:name "Grunnloven – Store norske leksikon" .
+
+nh:nh-p0070 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0070" ;
+    dcterms:spatial wd:Q20,
+        wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1814"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1905"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q20,
+        wd:Q34 ;
+    skos:definition "Två riken, en kung; Norge med egen grundlov (Eidsvoll 17 maj 1814)"@sv ;
+    skos:exactMatch wd:Q62589 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Unionen Sverige–Norge"@sv ;
+    time:intervalMeets nh:nh-p0026,
+        nh:nh-p0034 ;
+    time:intervalMetBy nh:nh-p0033,
+        nh:nh-p0065 ;
+    schema:description "Två riken, en kung; Norge med egen grundlov (Eidsvoll 17 maj 1814)" ;
+    schema:name "Unionen Sverige–Norge" ;
+    schema:temporalCoverage "1814/1905" .
+
+<https://snl.no/Unionsoppløsningen_i_1905> schema:name "Unionsoppløsningen i 1905 – Store norske leksikon" .
+

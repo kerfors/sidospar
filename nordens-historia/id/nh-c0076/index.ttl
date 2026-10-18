@@ -1,0 +1,31 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0076#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Start ändrat till 1050." ] ;
+    schema:correction "ca 1000/1050 – 1250/1300" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0076 ;
+    schema:reviewBody "NE talar om att riksenheten stabiliserades under äldre medeltid ca 1000–1300; Historiska museet låter medeltiden börja 1050." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0076/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0076 .
+
+nh:nh-c0076 a schema:Claim ;
+    dcterms:identifier "SV09",
+        "nh-c0076" ;
+    schema:about nh:nh-p0031 ;
+    schema:text "Period 'Riket växer fram': 1066 – 1250" .
+
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt> schema:name "Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt" .
+

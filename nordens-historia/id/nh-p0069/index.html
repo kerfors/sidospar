@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gustavianska tiden – Nordens historia</title>
 <link rel="alternate" type="application/ld+json" href="index.jsonld">
+<link rel="alternate" type="text/turtle" href="index.ttl">
 <script type="application/ld+json">
 {
  "@context": {
@@ -296,12 +297,19 @@
   .v.bekräftad { background: #d8efdc; } .v.omdiskuterad { background: #f7e3b5; }
   .v.avvikande { background: #f6c9c4; } .v.ej { background: #e3e3e3; }
   .tw { overflow-x: auto; }
+  .formats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+             width: min(1240px, calc(100vw - 48px)); position: relative; left: 50%; transform: translateX(-50%); }
+  .formats > div { min-width: 0; }
+  .formats h3 { font-size: 0.95rem; margin: 0 0 6px; }
+  .formats pre { background: #f1eee7; padding: 10px 12px; border-radius: 4px; overflow: auto; max-height: 40em;
+                 font-size: 0.74rem; line-height: 1.4; margin: 0; }
   @media (max-width: 600px) { dl { grid-template-columns: 1fr; } dt { margin-top: 6px; } }
+  @media (max-width: 900px) { .formats { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="../../">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="../../kallor.html">Källäget</a></p>
+<p class="crumbs"><a href="../../">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="../../kallor.html">Källäget</a> · <a href="../../sparql.html">SPARQL</a></p>
 <p class="kind">Period</p>
 <h1>Gustavianska tiden</h1>
 <p>Gustav III:s statskupp 1772; finska kriget 1808–09</p>
@@ -312,7 +320,7 @@
 <dt>Wikidata</dt><dd><a href="https://www.wikidata.org/wiki/Q3300409">Q3300409</a> history of Sweden from 1772 through 1809 (samma som)</dd>
 <dt>Föregås av</dt><dd><a href="../nh-p0068/">Frihetstiden</a></dd><dt>Följs av</dt><dd><a href="../nh-p0033/">Nytt statsskick: 1809 års RF</a>, <a href="../nh-p0045/">Storfurstendömet Finland</a></dd>
 <dt>På affischen</dt><dd><a href="../../#nh-p0069">Visa på affischen</a></dd>
-<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a></dd>
+<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
 <h2>Källornas gränser</h2>
 <p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>
@@ -320,6 +328,388 @@
 
 <h2>Kontrollerade uppgifter</h2>
 <div class="tw"><table><thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa</th></tr></thead><tbody><tr><td><a href="../nh-c0170/">nh-c0170</a></td><td>Period &#x27;Gustavianska tiden&#x27;: 1772 – 1809</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden">Gustavianska tiden – Nationalencyklopedin</a></td></tr><tr><td><a href="../nh-c0171/">nh-c0171</a></td><td>Gustav III:s statskupp 1772</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://snl.no/Gustav_3.">Gustav 3 – Store norske leksikon</a></td></tr><tr><td><a href="../nh-c0172/">nh-c0172</a></td><td>finska kriget 1808–09</td><td><span class="v bekräftad">bekräftad</span></td><td><a href="https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809">Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)</a></td></tr></tbody></table></div>
+<h2>Data i två format</h2>
+<p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
+<div class="formats">
+<div><h3><a href="index.jsonld">index.jsonld</a></h3><pre>{
+ &quot;@context&quot;: {
+  &quot;@vocab&quot;: &quot;https://schema.org/&quot;,
+  &quot;schema&quot;: &quot;https://schema.org/&quot;,
+  &quot;crm&quot;: &quot;http://www.cidoc-crm.org/cidoc-crm/&quot;,
+  &quot;skos&quot;: &quot;http://www.w3.org/2004/02/skos/core#&quot;,
+  &quot;dcterms&quot;: &quot;http://purl.org/dc/terms/&quot;,
+  &quot;prov&quot;: &quot;http://www.w3.org/ns/prov#&quot;,
+  &quot;xsd&quot;: &quot;http://www.w3.org/2001/XMLSchema#&quot;,
+  &quot;wd&quot;: &quot;http://www.wikidata.org/entity/&quot;,
+  &quot;time&quot;: &quot;http://www.w3.org/2006/time#&quot;,
+  &quot;nh&quot;: &quot;https://kerfors.github.io/sidospar/nordens-historia/id/&quot;,
+  &quot;skos:prefLabel&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;skos:definition&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;skos:inScheme&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:exactMatch&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:closeMatch&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;dcterms:spatial&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P7_took_place_at&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P82a_begin_of_the_begin&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;crm:P82b_end_of_the_end&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;startDate&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;endDate&quot;: {
+   &quot;@type&quot;: &quot;xsd:gYear&quot;
+  },
+  &quot;about&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;itemReviewed&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;citation&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;isBasedOn&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;license&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;time:intervalMeets&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;time:intervalMetBy&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;crm:P10_falls_within&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;dcterms:source&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;skos:scopeNote&quot;: {
+   &quot;@container&quot;: &quot;@language&quot;
+  },
+  &quot;mainEntity&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;isPartOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;url&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasGeneratedBy&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasDerivedFrom&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:wasAssociatedWith&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
+  &quot;prov:actedOnBehalfOf&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  }
+ },
+ &quot;@graph&quot;: [
+  {
+   &quot;@id&quot;: &quot;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0069/&quot;,
+   &quot;@type&quot;: &quot;WebPage&quot;,
+   &quot;mainEntity&quot;: &quot;nh:nh-p0069&quot;,
+   &quot;isPartOf&quot;: &quot;nh:#dataset&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-p0069&quot;,
+   &quot;@type&quot;: [
+    &quot;crm:E4_Period&quot;,
+    &quot;skos:Concept&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;nh-p0069&quot;,
+   &quot;name&quot;: &quot;Gustavianska tiden&quot;,
+   &quot;skos:prefLabel&quot;: {
+    &quot;sv&quot;: &quot;Gustavianska tiden&quot;
+   },
+   &quot;skos:inScheme&quot;: &quot;nh:#perioder&quot;,
+   &quot;temporalCoverage&quot;: &quot;1772/1809&quot;,
+   &quot;crm:P4_has_time-span&quot;: {
+    &quot;@type&quot;: &quot;crm:E52_Time-Span&quot;,
+    &quot;crm:P82a_begin_of_the_begin&quot;: &quot;1772&quot;,
+    &quot;crm:P82b_end_of_the_end&quot;: &quot;1809&quot;
+   },
+   &quot;crm:P7_took_place_at&quot;: [
+    &quot;wd:Q34&quot;,
+    &quot;wd:Q33&quot;
+   ],
+   &quot;dcterms:spatial&quot;: [
+    &quot;wd:Q34&quot;,
+    &quot;wd:Q33&quot;
+   ],
+   &quot;description&quot;: &quot;Gustav III:s statskupp 1772; finska kriget 1808–09&quot;,
+   &quot;skos:definition&quot;: {
+    &quot;sv&quot;: &quot;Gustav III:s statskupp 1772; finska kriget 1808–09&quot;
+   },
+   &quot;skos:exactMatch&quot;: &quot;wd:Q3300409&quot;,
+   &quot;time:intervalMeets&quot;: [
+    &quot;nh:nh-p0033&quot;,
+    &quot;nh:nh-p0045&quot;
+   ],
+   &quot;time:intervalMetBy&quot;: [
+    &quot;nh:nh-p0068&quot;
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-p0069#def-065&quot;,
+   &quot;@type&quot;: [
+    &quot;crm:E4_Period&quot;,
+    &quot;skos:Concept&quot;
+   ],
+   &quot;dcterms:identifier&quot;: &quot;def-065&quot;,
+   &quot;skos:prefLabel&quot;: {
+    &quot;sv&quot;: &quot;Gustavianska tiden enligt Nationalencyklopedin&quot;
+   },
+   &quot;skos:inScheme&quot;: &quot;nh:#kalla-ne&quot;,
+   &quot;skos:exactMatch&quot;: &quot;nh:nh-p0069&quot;,
+   &quot;crm:P4_has_time-span&quot;: {
+    &quot;@type&quot;: &quot;crm:E52_Time-Span&quot;,
+    &quot;crm:P82a_begin_of_the_begin&quot;: &quot;1772&quot;,
+    &quot;crm:P82b_end_of_the_end&quot;: &quot;1809&quot;
+   },
+   &quot;dcterms:spatial&quot;: [
+    &quot;wd:Q34&quot;,
+    &quot;wd:Q33&quot;
+   ],
+   &quot;dcterms:source&quot;: &quot;https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden&quot;,
+   &quot;prov:wasDerivedFrom&quot;: &quot;nh:nh-c0170#granskning&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0170&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0170&quot;,
+    &quot;GE41&quot;
+   ],
+   &quot;text&quot;: &quot;Period &#x27;Gustavianska tiden&#x27;: 1772 – 1809&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0069&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0170#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0170&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;NE daterar perioden från Gustav III:s statskupp 1772 till Gustav IV Adolfs avsättning 1809.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden&quot;,
+    &quot;name&quot;: &quot;Gustavianska tiden – Nationalencyklopedin&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0171&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0171&quot;,
+    &quot;GE42&quot;
+   ],
+   &quot;text&quot;: &quot;Gustav III:s statskupp 1772&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0069&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0171#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0171&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;Gustav III genomförde en statskupp den 19 augusti 1772 med en ny regeringsform som stärkte kungamakten.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://snl.no/Gustav_3.&quot;,
+    &quot;name&quot;: &quot;Gustav 3 – Store norske leksikon&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://snl.no/Gustav_3.&quot;
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0172&quot;,
+   &quot;@type&quot;: &quot;Claim&quot;,
+   &quot;dcterms:identifier&quot;: [
+    &quot;nh-c0172&quot;,
+    &quot;GE43&quot;
+   ],
+   &quot;text&quot;: &quot;finska kriget 1808–09&quot;,
+   &quot;about&quot;: [
+    {
+     &quot;@id&quot;: &quot;nh:nh-p0069&quot;
+    }
+   ]
+  },
+  {
+   &quot;@id&quot;: &quot;nh:nh-c0172#granskning&quot;,
+   &quot;@type&quot;: [
+    &quot;ClaimReview&quot;,
+    &quot;prov:Entity&quot;
+   ],
+   &quot;itemReviewed&quot;: &quot;nh:nh-c0172&quot;,
+   &quot;reviewRating&quot;: {
+    &quot;@type&quot;: &quot;Rating&quot;,
+    &quot;alternateName&quot;: &quot;bekräftad&quot;
+   },
+   &quot;reviewBody&quot;: &quot;Kriget mellan Sverige och Ryssland 1808–1809 slutade med freden i Fredrikshamn och att Finland blev ryskt.&quot;,
+   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
+   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
+   &quot;citation&quot;: {
+    &quot;@id&quot;: &quot;https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809&quot;,
+    &quot;name&quot;: &quot;Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)&quot;
+   },
+   &quot;prov:wasDerivedFrom&quot;: &quot;https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809&quot;
+  }
+ ]
+}</pre></div>
+<div><h3><a href="index.ttl">index.ttl</a></h3><pre>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix nh: &lt;https://kerfors.github.io/sidospar/nordens-historia/id/&gt; .
+@prefix prov: &lt;http://www.w3.org/ns/prov#&gt; .
+@prefix schema: &lt;https://schema.org/&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix time: &lt;http://www.w3.org/2006/time#&gt; .
+@prefix wd: &lt;http://www.wikidata.org/entity/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0171#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://snl.no/Gustav_3.&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://snl.no/Gustav_3.&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0171 ;
+    schema:reviewBody &quot;Gustav III genomförde en statskupp den 19 augusti 1772 med en ny regeringsform som stärkte kungamakten.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0172#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0172 ;
+    schema:reviewBody &quot;Kriget mellan Sverige och Ryssland 1808–1809 slutade med freden i Fredrikshamn och att Finland blev ryskt.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0069#def-065&gt; a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier &quot;def-065&quot; ;
+    dcterms:source &lt;https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden&gt; ;
+    dcterms:spatial wd:Q33,
+        wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin &quot;1772&quot;^^xsd:gYear ;
+            crm:P82b_end_of_the_end &quot;1809&quot;^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0069 ;
+    skos:inScheme &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-ne&gt; ;
+    skos:prefLabel &quot;Gustavianska tiden enligt Nationalencyklopedin&quot;@sv ;
+    prov:wasDerivedFrom &lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0170#granskning&gt; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0069/&gt; a schema:WebPage ;
+    schema:isPartOf &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#dataset&gt; ;
+    schema:mainEntity nh:nh-p0069 .
+
+nh:nh-c0170 a schema:Claim ;
+    dcterms:identifier &quot;GE41&quot;,
+        &quot;nh-c0170&quot; ;
+    schema:about nh:nh-p0069 ;
+    schema:text &quot;Period &#x27;Gustavianska tiden&#x27;: 1772 – 1809&quot; .
+
+&lt;https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0170#granskning&gt; a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom &lt;https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden&gt; ;
+    prov:wasGeneratedBy &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
+    schema:citation &lt;https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden&gt; ;
+    schema:datePublished &quot;2026-10-18&quot; ;
+    schema:itemReviewed nh:nh-c0170 ;
+    schema:reviewBody &quot;NE daterar perioden från Gustav III:s statskupp 1772 till Gustav IV Adolfs avsättning 1809.&quot; ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName &quot;bekräftad&quot; ] .
+
+nh:nh-c0171 a schema:Claim ;
+    dcterms:identifier &quot;GE42&quot;,
+        &quot;nh-c0171&quot; ;
+    schema:about nh:nh-p0069 ;
+    schema:text &quot;Gustav III:s statskupp 1772&quot; .
+
+nh:nh-c0172 a schema:Claim ;
+    dcterms:identifier &quot;GE43&quot;,
+        &quot;nh-c0172&quot; ;
+    schema:about nh:nh-p0069 ;
+    schema:text &quot;finska kriget 1808–09&quot; .
+
+&lt;https://snl.no/Gustav_3.&gt; schema:name &quot;Gustav 3 – Store norske leksikon&quot; .
+
+&lt;https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809&gt; schema:name &quot;Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)&quot; .
+
+&lt;https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden&gt; schema:name &quot;Gustavianska tiden – Nationalencyklopedin&quot; .
+
+nh:nh-p0069 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier &quot;nh-p0069&quot; ;
+    dcterms:spatial wd:Q33,
+        wd:Q34 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin &quot;1772&quot;^^xsd:gYear ;
+            crm:P82b_end_of_the_end &quot;1809&quot;^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q33,
+        wd:Q34 ;
+    skos:definition &quot;Gustav III:s statskupp 1772; finska kriget 1808–09&quot;@sv ;
+    skos:exactMatch wd:Q3300409 ;
+    skos:inScheme &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#perioder&gt; ;
+    skos:prefLabel &quot;Gustavianska tiden&quot;@sv ;
+    time:intervalMeets nh:nh-p0033,
+        nh:nh-p0045 ;
+    time:intervalMetBy nh:nh-p0068 ;
+    schema:description &quot;Gustav III:s statskupp 1772; finska kriget 1808–09&quot; ;
+    schema:name &quot;Gustavianska tiden&quot; ;
+    schema:temporalCoverage &quot;1772/1809&quot; .
+
+</pre></div>
+</div>
 
 </main>
 </body>

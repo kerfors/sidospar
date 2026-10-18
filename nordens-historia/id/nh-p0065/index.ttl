@@ -1,0 +1,91 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0158#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Kongeloven> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Kongeloven> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0158 ;
+    schema:reviewBody "Kongeloven är daterad 14 november 1665." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0065#def-061> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-061" ;
+    dcterms:source <https://snl.no/enevoldstida> ;
+    dcterms:spatial wd:Q189,
+        wd:Q20,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1660"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1814"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0065 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:prefLabel "Danmark–Norge under enväldet enligt Store norske leksikon"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0157#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0065/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0065 .
+
+nh:nh-c0157 a schema:Claim ;
+    dcterms:identifier "GE28",
+        "nh-c0157" ;
+    schema:about nh:nh-p0065 ;
+    schema:text "Period 'Danmark–Norge under enväldet': 1660 – 1814" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0157#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/enevoldstida> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/enevoldstida> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0157 ;
+    schema:reviewBody "Enväldet infördes i Danmark–Norge 1660 och upphörde för Norges del vid unionsupplösningen 1814." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+nh:nh-c0158 a schema:Claim ;
+    dcterms:identifier "GE29",
+        "nh-c0158" ;
+    schema:about nh:nh-p0065 ;
+    schema:text "Kongeloven 1665" .
+
+<https://lex.dk/Kongeloven> schema:name "Kongeloven – lex.dk" .
+
+<https://snl.no/enevoldstida> schema:name "Enevoldstida – Store norske leksikon" .
+
+nh:nh-p0065 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0065" ;
+    dcterms:spatial wd:Q189,
+        wd:Q20,
+        wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1660"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1814"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q189,
+        wd:Q20,
+        wd:Q35 ;
+    skos:closeMatch wd:Q62651 ;
+    skos:definition "Kongeloven 1665"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Danmark–Norge under enväldet"@sv ;
+    time:intervalMeets nh:nh-p0004,
+        nh:nh-p0014,
+        nh:nh-p0070 ;
+    time:intervalMetBy nh:nh-p0064 ;
+    schema:description "Kongeloven 1665" ;
+    schema:name "Danmark–Norge under enväldet" ;
+    schema:temporalCoverage "1660/1814" .
+

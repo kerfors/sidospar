@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0067#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/EU-kampen> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/EU-kampen> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0067 ;
+    schema:reviewBody "Folkomröstningarna 1972 (53,5 % nej till EF) och 1994 (52,2 % nej till EU) slutade båda med nej-majoritet." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0067/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0067 .
+
+nh:nh-c0067 a schema:Claim ;
+    dcterms:identifier "NO25",
+        "nh-c0067" ;
+    schema:about nh:nh-p0027 ;
+    schema:text "nej till EG/EU 1972 och 1994" .
+
+<https://snl.no/EU-kampen> schema:name "Store norske leksikon: EU-kampen" .
+

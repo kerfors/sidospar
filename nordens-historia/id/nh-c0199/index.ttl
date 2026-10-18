@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0199#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Niels_Bohr> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Niels_Bohr> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0199 ;
+    schema:reviewBody "Lex anger att Bohr i april 1913 fullbordade tre artiklar i Philosophical Magazine med atommodellen." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0199/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0199 .
+
+nh:nh-c0199 a schema:Claim ;
+    dcterms:identifier "MI18",
+        "nh-c0199" ;
+    schema:about nh:nh-m0018 ;
+    schema:text "Bohrs atommodell: 1913" .
+
+<https://lex.dk/Niels_Bohr> schema:name "lex.dk: Niels Bohr" .
+

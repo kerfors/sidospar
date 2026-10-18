@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0047#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://snl.no/Norges_historie> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://snl.no/Norges_historie> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0047 ;
+    schema:reviewBody "SNL skriver att angreppet på Lindisfarne 793 ofta räknas som vikingatidens början och Harald Hårdrådes fall 1066 som det sista vikingatåget." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0047/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0047 .
+
+nh:nh-c0047 a schema:Claim ;
+    dcterms:identifier "NO05",
+        "nh-c0047" ;
+    schema:about nh:nh-p0021 ;
+    schema:text "Period 'Vikingatid': 793 – 1066" .
+
+<https://snl.no/Norges_historie> schema:name "Store norske leksikon: Norges historie" .
+

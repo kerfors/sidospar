@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0132#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://whc.unesco.org/en/list/557> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://whc.unesco.org/en/list/557> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0132 ;
+    schema:reviewBody "Unesco daterar hällristningarna i Tanum till nordisk bronsålder, ca 1700–500 f.Kr." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0132/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0132 .
+
+nh:nh-c0132 a schema:Claim ;
+    dcterms:identifier "GE03",
+        "nh-c0132" ;
+    schema:about nh:nh-p0055 ;
+    schema:text "hällristningarna i Tanum" .
+
+<https://whc.unesco.org/en/list/557> schema:name "UNESCO World Heritage: Rock Carvings in Tanum" .
+

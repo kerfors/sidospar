@@ -1,0 +1,86 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0039#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Sønderjylland> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Sønderjylland> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0039 ;
+    schema:reviewBody "Slesvig delades 1920 efter folkomröstningar; den danska delen kallas Sønderjylland." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0016#def-016> a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "def-016" ;
+    dcterms:source <https://lex.dk/Danmarks_forfatning> ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1914"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1945"^^xsd:gYear ] ;
+    skos:exactMatch nh:nh-p0016 ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:prefLabel "Världskrigens tid enligt Lex (Den Store Danske)"@sv ;
+    skos:scopeNote "Källans formulering: verdenskrigsepoken 1914–1945"@sv ;
+    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0036#granskning> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0016/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-p0016 .
+
+nh:nh-c0036 a schema:Claim ;
+    dcterms:identifier "DA20",
+        "nh-c0036" ;
+    schema:about nh:nh-p0015,
+        nh:nh-p0016 ;
+    schema:text "Period 'Konstitutionell monarki': 1849 – 1945" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0036#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Danmarks_forfatning> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Danmarks_forfatning> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Delat i 1849–1914 och 1914–1945 efter lex.dk." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0036 ;
+    schema:reviewBody "Konstitutionell monarki infördes 1849 enligt Lex, men 1945 är inget slut på den; Lex periodiserar i stället 1814–1914 och 1914–1945." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+nh:nh-c0039 a schema:Claim ;
+    dcterms:identifier "DA23",
+        "nh-c0039" ;
+    schema:about nh:nh-p0016 ;
+    schema:text "Sønderjylland åter 1920" .
+
+<https://lex.dk/Sønderjylland> schema:name "Lex: Sønderjylland" .
+
+<https://lex.dk/Danmarks_forfatning> schema:name "Lex: Danmarks forfatning / periodintroduktioner" .
+
+nh:nh-p0016 a crm:E4_Period,
+        skos:Concept ;
+    dcterms:identifier "nh-p0016" ;
+    dcterms:spatial wd:Q35 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1914"^^xsd:gYear ;
+            crm:P82b_end_of_the_end "1945"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q35 ;
+    skos:definition "Sønderjylland åter 1920"@sv ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:prefLabel "Världskrigens tid"@sv ;
+    time:intervalMeets nh:nh-p0017 ;
+    time:intervalMetBy nh:nh-p0015 ;
+    schema:description "Sønderjylland åter 1920" ;
+    schema:name "Världskrigens tid" ;
+    schema:temporalCoverage "1914/1945" .
+

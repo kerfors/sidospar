@@ -1,0 +1,42 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0188#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://lex.dk/Ole_Rømer> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://lex.dk/Ole_Rømer> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0188 ;
+    schema:reviewBody "Lex anger att Rømer gjorde upptäckten om ljusets ändliga hastighet i Paris 1675–1676." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0007/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-m0007 .
+
+nh:nh-c0188 a schema:Claim ;
+    dcterms:identifier "MI07",
+        "nh-c0188" ;
+    schema:about nh:nh-m0007 ;
+    schema:text "Rømer mäter ljusets hastighet: 1676" .
+
+nh:nh-m0007 a crm:E5_Event,
+        schema:Event ;
+    dcterms:identifier "nh-m0007" ;
+    crm:P10_falls_within nh:nh-p0065 ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1676"^^xsd:gYear ] ;
+    crm:P7_took_place_at wd:Q35 ;
+    schema:about wd:Q2898393 ;
+    schema:name "Rømer mäter ljusets hastighet" ;
+    schema:startDate "1676"^^xsd:gYear .
+
+<https://lex.dk/Ole_Rømer> schema:name "lex.dk: Ole Rømer" .
+

@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0074#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/birka> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/birka> ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0074 ;
+    schema:reviewBody "NE beskriver Birka som vikingatida handelsplats på Björkö i Mälaren." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0074/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0074 .
+
+nh:nh-c0074 a schema:Claim ;
+    dcterms:identifier "SV07",
+        "nh-c0074" ;
+    schema:about nh:nh-p0030 ;
+    schema:text "Birka" .
+
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/birka> schema:name "Nationalencyklopedin – Birka" .
+

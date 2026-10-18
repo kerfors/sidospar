@@ -1,0 +1,30 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0129#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://samediggi.fi/wp-content/uploads/2016/07/saamelaisetsuomi.pdf> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://samediggi.fi/wp-content/uploads/2016/07/saamelaisetsuomi.pdf> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Ändrat till ”Finland 1996 (delegation från 1973)”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0129 ;
+    schema:reviewBody "Sametinget i Finland anger Samedelegationen 1973 och Sametinget från 1996, samt Norges sameting 1989 och Sveriges 1993." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "bekräftad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0129/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0129 .
+
+nh:nh-c0129 a schema:Claim ;
+    dcterms:identifier "SÁ15",
+        "nh-c0129" ;
+    schema:about nh:nh-p0054 ;
+    schema:text "Sameting: Finland 1973/1996, Norge 1989, Sverige 1993" .
+
+<https://samediggi.fi/wp-content/uploads/2016/07/saamelaisetsuomi.pdf> schema:name "Saamelaiskäräjät: Saamelaiset Suomessa (samediggi.fi)" .
+

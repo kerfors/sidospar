@@ -1,0 +1,30 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0194#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Etikett ”(patent)”." ] ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0194 ;
+    schema:reviewBody "Nobelstiftelsen anger att dynamiten uppfanns 1866 och patenterades året därpå, 1867." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0194/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0194 .
+
+nh:nh-c0194 a schema:Claim ;
+    dcterms:identifier "MI13",
+        "nh-c0194" ;
+    schema:about nh:nh-m0013 ;
+    schema:text "Nobels dynamit: 1867" .
+
+<https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> schema:name "Nobelprize.org: Alfred Nobel's life and work" .
+

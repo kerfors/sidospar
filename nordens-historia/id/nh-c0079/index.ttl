@@ -1,0 +1,31 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0079#granskning> a prov:Entity,
+        schema:ClaimReview ;
+    prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> ;
+    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Behållet; tillägg ”folkungaätten regerar 1250–1363”." ] ;
+    schema:correction "1250 – 1363" ;
+    schema:datePublished "2026-10-18" ;
+    schema:itemReviewed nh:nh-c0079 ;
+    schema:reviewBody "NE anger att folkungaätten styrde Sverige 1250–1363 (Norge 1319–87), inte till 1319." ;
+    schema:reviewRating [ a schema:Rating ;
+            schema:alternateName "omdiskuterad" ] .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0079/> a schema:WebPage ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+    schema:mainEntity nh:nh-c0079 .
+
+nh:nh-c0079 a schema:Claim ;
+    dcterms:identifier "SV12",
+        "nh-c0079" ;
+    schema:about nh:nh-p0032 ;
+    schema:text "Period 'Folkungatid': 1250 – 1319" .
+
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> schema:name "Nationalencyklopedin – folkungar" .
+

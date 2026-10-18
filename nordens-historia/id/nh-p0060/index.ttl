@@ -42,6 +42,7 @@
 nh:nh-c0143 a schema:Claim ;
     dcterms:identifier "GE14",
         "nh-c0143" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0060 ;
     schema:text "Period 'Magnus Eriksson: Sverige och Norge': 1319 – 1343" .
 
@@ -61,6 +62,7 @@ nh:nh-c0143 a schema:Claim ;
 nh:nh-c0144 a schema:Claim ;
     dcterms:identifier "GE15",
         "nh-c0144" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0060 ;
     schema:text "Freden i Nöteborg 1323" .
 

@@ -21,6 +21,7 @@
 nh:nh-c0191 a schema:Claim ;
     dcterms:identifier "MI10",
         "nh-c0191" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0010 ;
     schema:text "Tryckfrihetsförordningen: 1766" .
 

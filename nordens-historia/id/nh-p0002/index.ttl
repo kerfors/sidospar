@@ -63,6 +63,7 @@
 nh:nh-c0003 a schema:Claim ;
     dcterms:identifier "IS03",
         "nh-c0003" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0002 ;
     schema:text "Period 'Fristaten': 930 – 1262" .
 
@@ -80,18 +81,21 @@ nh:nh-c0003 a schema:Claim ;
 nh:nh-c0004 a schema:Claim ;
     dcterms:identifier "IS04",
         "nh-c0004" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0002 ;
     schema:text "Alltinget på Þingvellir" .
 
 nh:nh-c0005 a schema:Claim ;
     dcterms:identifier "IS05",
         "nh-c0005" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0002 ;
     schema:text "kristendomen antas år 1000" .
 
 nh:nh-c0006 a schema:Claim ;
     dcterms:identifier "IS06",
         "nh-c0006" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0002 ;
     schema:text "sagalitteraturen" .
 

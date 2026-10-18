@@ -24,6 +24,7 @@
 nh:nh-c0079 a schema:Claim ;
     dcterms:identifier "SV12",
         "nh-c0079" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0032 ;
     schema:text "Period 'Folkungatid': 1250 – 1319" .
 

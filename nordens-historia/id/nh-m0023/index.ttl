@@ -24,6 +24,7 @@
 nh:nh-c0204 a schema:Claim ;
     dcterms:identifier "MI23",
         "nh-c0204" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0023 ;
     schema:text "Trepunktsbältet: 1959" .
 

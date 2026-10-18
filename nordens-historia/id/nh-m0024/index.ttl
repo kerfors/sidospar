@@ -24,6 +24,7 @@
 nh:nh-c0205 a schema:Claim ;
     dcterms:identifier "MI24",
         "nh-c0205" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0024 ;
     schema:text "Ekofiskfyndet: 1969" .
 

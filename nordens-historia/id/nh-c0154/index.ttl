@@ -21,6 +21,7 @@
 nh:nh-c0154 a schema:Claim ;
     dcterms:identifier "GE25",
         "nh-c0154" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0064 ;
     schema:text "Reformationen 1536" .
 

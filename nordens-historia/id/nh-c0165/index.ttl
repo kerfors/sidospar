@@ -21,6 +21,7 @@
 nh:nh-c0165 a schema:Claim ;
     dcterms:identifier "GE36",
         "nh-c0165" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0067 ;
     schema:text "westfaliska freden 1648" .
 

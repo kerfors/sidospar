@@ -23,6 +23,7 @@
 nh:nh-c0040 a schema:Claim ;
     dcterms:identifier "DA24",
         "nh-c0040" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0017,
         nh:nh-p0018 ;
     schema:text "Period 'Välfärdsstat': 1945 – 2026" .

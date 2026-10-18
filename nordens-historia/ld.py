@@ -61,6 +61,7 @@ CONTEXT = {
     "time:intervalMetBy": {"@type": "@id"},
     "crm:P10_falls_within": {"@type": "@id"},
     "dcterms:source": {"@type": "@id"},
+    "dcterms:type": {"@type": "@id"},
     "skos:scopeNote": {"@container": "@language"},
     "mainEntity": {"@type": "@id"},
     "isPartOf": {"@type": "@id"},
@@ -74,6 +75,14 @@ CONTEXT = {
 PREFIXES = {k: v for k, v in CONTEXT.items() if isinstance(v, str) and not k.startswith("@")}
 
 TYPE_LABEL = {"period": "Period", "event": "Händelse", "milestone": "Milstolpe", "claim": "Kontrollerad uppgift"}
+
+# claims.json "kind" -> concept in the scheme nh:#uppgiftstyper
+CLAIM_KINDS = {
+    "period": ("typ-period", "Periodens namn och gränser"),
+    "detalj": ("typ-detalj", "Detalj i en periods beskrivning"),
+    "händelse": ("typ-handelse", "Händelse och årtal"),
+    "milstolpe": ("typ-milstolpe", "Milstolpe och årtal"),
+}
 
 
 # ---------------------------------------------------------------- years
@@ -273,6 +282,7 @@ def claim_nodes(c):
         "dcterms:identifier": [c["id"], c["check_id"]],
         "text": c["statement"],
         "about": [{"@id": "nh:" + a} for a in c["about"]],
+        "dcterms:type": "nh:#" + CLAIM_KINDS[c["kind"]][0],
     }
     review = {
         "@id": "nh:" + c["id"] + "#granskning",
@@ -315,6 +325,13 @@ def shared_nodes(wd, columns):
          "dcterms:creator": {"@type": "Person", "name": "Kerstin Forsberg"},
          "skos:scopeNote": {"sv": "Affischens egna periodgränser, valda för att blocken ska gå att läsa. "
                                   "Källornas gränser finns som egna definitioner i separata scheman och är matchade mot affischens perioder."}},
+        {"@id": "nh:#uppgiftstyper", "@type": "skos:ConceptScheme",
+         "skos:prefLabel": {"sv": "Typer av kontrollerade uppgifter"}, "isPartOf": "nh:#dataset"},
+    ] + [
+        {"@id": "nh:#" + key, "@type": "skos:Concept", "skos:prefLabel": {"sv": label},
+         "skos:inScheme": "nh:#uppgiftstyper"}
+        for key, label in CLAIM_KINDS.values()
+    ] + [
         {"@id": "nh:#kontroll-" + CHECK_DATE, "@type": "prov:Activity",
          "name": "Källkontroll av affischens uppgifter",
          "prov:startedAtTime": {"@value": CHECK_DATE, "@type": "xsd:date"},
@@ -556,7 +573,8 @@ tidsspann med <code>crm:P82a</code>/<code>P82b</code> och plats med <code>crm:P7
 <li><strong>SKOS</strong> i PeriodO:s anda: varje period är ett begrepp i affischens egen periodindelning
 (<code>skos:inScheme</code>), med <code>dcterms:spatial</code>. Periodgränser är ett val av en viss källa, inte ett faktum.</li>
 <li><strong>schema.org</strong> för det läsbara: <code>name</code>, <code>temporalCoverage</code>, och för
-källkontrollen <code>Claim</code> och <code>ClaimReview</code> med utlåtande, belägg och källa.</li>
+källkontrollen <code>Claim</code> och <code>ClaimReview</code> med utlåtande, belägg och källa. Varje uppgift har en
+typ (<code>dcterms:type</code>): periodens namn och gränser, en detalj i periodens beskrivning, en händelse eller en milstolpe.</li>
 <li><strong>Källornas gränser</strong> i PeriodO:s anda: varje källas periodgräns är en egen definition i ett
 schema för den källan (Store norske leksikon, Lex, Uppslagsverket Finland, NE …), matchad mot affischens period med
 <code>skos:exactMatch</code> när gränserna sammanfaller och <code>skos:closeMatch</code> när de avviker, och härledd

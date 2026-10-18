@@ -21,6 +21,7 @@
 nh:nh-c0102 a schema:Claim ;
     dcterms:identifier "FI14",
         "nh-c0102" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0045 ;
     schema:text "Period 'Storfurstendömet Finland': 1809 – 1917" .
 

@@ -21,6 +21,7 @@
 nh:nh-c0166 a schema:Claim ;
     dcterms:identifier "GE37",
         "nh-c0166" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0067 ;
     schema:text "Karl XII" .
 

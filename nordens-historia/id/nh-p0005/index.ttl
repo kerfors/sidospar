@@ -39,6 +39,7 @@
 nh:nh-c0012 a schema:Claim ;
     dcterms:identifier "IS12",
         "nh-c0012" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0005 ;
     schema:text "Period 'Konungariket Island': 1918 – 1944" .
 
@@ -56,6 +57,7 @@ nh:nh-c0012 a schema:Claim ;
 nh:nh-c0013 a schema:Claim ;
     dcterms:identifier "IS13",
         "nh-c0013" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0005 ;
     schema:text "Personalunion med Danmark" .
 

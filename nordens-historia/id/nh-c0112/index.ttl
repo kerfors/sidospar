@@ -24,6 +24,7 @@
 nh:nh-c0112 a schema:Claim ;
     dcterms:identifier "FI24",
         "nh-c0112" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0048 ;
     schema:text "Period 'Efterkrigstid': 1945 – 2026" .
 

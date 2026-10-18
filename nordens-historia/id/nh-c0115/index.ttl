@@ -23,6 +23,7 @@
 nh:nh-c0115 a schema:Claim ;
     dcterms:identifier "SÁ01",
         "nh-c0115" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0049 ;
     schema:text "Period 'Fångstkulturer i norr': 9 000 f.Kr. – 1 000 f.Kr." .
 

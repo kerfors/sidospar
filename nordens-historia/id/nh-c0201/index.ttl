@@ -23,6 +23,7 @@
 nh:nh-c0201 a schema:Claim ;
     dcterms:identifier "MI20",
         "nh-c0201" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0020 ;
     schema:text "Tetra Pak: 1952" .
 

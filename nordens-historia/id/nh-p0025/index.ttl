@@ -40,6 +40,7 @@
 nh:nh-c0060 a schema:Claim ;
     dcterms:identifier "NO18",
         "nh-c0060" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0025 ;
     schema:text "Period 'Håkon VI': 1343 – 1380" .
 
@@ -59,6 +60,7 @@ nh:nh-c0060 a schema:Claim ;
 nh:nh-c0061 a schema:Claim ;
     dcterms:identifier "NO19",
         "nh-c0061" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0025 ;
     schema:text "Digerdöden 1349" .
 

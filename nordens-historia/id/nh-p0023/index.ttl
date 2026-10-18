@@ -50,6 +50,7 @@
 nh:nh-c0053 a schema:Claim ;
     dcterms:identifier "NO11",
         "nh-c0053" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0023 ;
     schema:text "Period 'Inbördeskrigstiden': 1130 – 1240" .
 
@@ -67,12 +68,14 @@ nh:nh-c0053 a schema:Claim ;
 nh:nh-c0054 a schema:Claim ;
     dcterms:identifier "NO12",
         "nh-c0054" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0023 ;
     schema:text "Ärkesäte i Nidaros 1152/53" .
 
 nh:nh-c0055 a schema:Claim ;
     dcterms:identifier "NO13",
         "nh-c0055" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0023 ;
     schema:text "Sverre" .
 

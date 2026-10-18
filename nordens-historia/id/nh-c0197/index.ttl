@@ -21,6 +21,7 @@
 nh:nh-c0197 a schema:Claim ;
     dcterms:identifier "MI16",
         "nh-c0197" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0016 ;
     schema:text "Kvinnlig rösträtt och valbarhet: 1906" .
 

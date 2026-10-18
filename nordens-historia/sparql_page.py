@@ -21,22 +21,28 @@ PREFIXES = "".join(f"PREFIX {p}: <{ns}>\n" for p, ns in ld.PREFIXES.items())
 # (id, title, description, query body)
 QUERIES = [
     ("finland", "Omdiskuterade periodgränser i Finland",
-     "Perioder i Finlands kolumn där källkontrollen gav utlåtandet omdiskuterad, med affischens gräns "
-     "och källans gräns bredvid varandra. Källans gräns är härledd från granskningen.",
-     f"""SELECT ?period ?namn ?affischStart ?affischSlut ?kalla ?kallStart ?kallSlut ?mot WHERE {{
+     "Uppgifter av typen periodens namn och gränser (dcterms:type) om perioder i Finlands kolumn, där källkontrollen "
+     "gav utlåtandet omdiskuterad. Affischens gräns och, där den finns, källans gräns som härletts från granskningen.",
+     f"""SELECT ?period ?namn ?affischStart ?affischSlut ?uppgift ?kalla ?kallStart ?kallSlut ?mot WHERE {{
   ?finland schema:name "Finland" .
   ?period skos:inScheme {SCHEME} ;
           schema:name ?namn ;
           crm:P7_took_place_at ?finland ;
           crm:P4_has_time-span [ crm:P82a_begin_of_the_begin ?affischStart ;
                                  crm:P82b_end_of_the_end ?affischSlut ] .
-  ?def ?match ?period ;
-       skos:inScheme/skos:prefLabel ?kalla ;
-       crm:P4_has_time-span ?tid ;
-       prov:wasDerivedFrom/schema:reviewRating/schema:alternateName "omdiskuterad" .
-  FILTER (?match IN (skos:exactMatch, skos:closeMatch))
-  OPTIONAL {{ ?tid crm:P82a_begin_of_the_begin ?kallStart }}
-  OPTIONAL {{ ?tid crm:P82b_end_of_the_end ?kallSlut }}
+  ?uppgift dcterms:type <{ld.ID}#typ-period> ;
+           schema:about ?period .
+  ?granskning schema:itemReviewed ?uppgift ;
+              schema:reviewRating/schema:alternateName "omdiskuterad" .
+  OPTIONAL {{
+    ?def prov:wasDerivedFrom ?granskning ;
+         ?match ?period ;
+         skos:inScheme/skos:prefLabel ?kalla ;
+         crm:P4_has_time-span ?tid .
+    FILTER (?match IN (skos:exactMatch, skos:closeMatch))
+    OPTIONAL {{ ?tid crm:P82a_begin_of_the_begin ?kallStart }}
+    OPTIONAL {{ ?tid crm:P82b_end_of_the_end ?kallSlut }}
+  }}
   BIND (IF(?match = skos:exactMatch, "samma", "avviker") AS ?mot)
 }}
 ORDER BY ?affischStart
@@ -109,6 +115,18 @@ ORDER BY ?ar
 GROUP BY ?kalla
 ORDER BY DESC(?granskningar) ?kalla
 """),
+    ("typer", "Utlåtanden per typ av uppgift",
+     "Hur utlåtandena fördelar sig på uppgiftens typ (dcterms:type). De omdiskuterade är till största delen periodgränser.",
+     """SELECT ?typ ?typNamn ?utlatande (COUNT(?uppgift) AS ?antal) WHERE {
+  ?uppgift a schema:Claim ;
+           dcterms:type ?typ .
+  ?typ skos:prefLabel ?typNamn .
+  ?granskning schema:itemReviewed ?uppgift ;
+              schema:reviewRating/schema:alternateName ?utlatande .
+}
+GROUP BY ?typ ?typNamn ?utlatande
+ORDER BY ?typ ?utlatande
+"""),
     ("milstolpar", "Milstolpar och vad de handlar om i Wikidata",
      "En milstolpe är en händelse, till exempel grundandet av ett universitet. Wikidata har saken, inte händelsen, "
      "så länken är schema:about och inte skos:exactMatch.",
@@ -177,7 +195,8 @@ och <code>crm:P10_falls_within</code> till perioden.</li>
 <li><strong>Källornas gränser</strong>: egna definitioner i ett schema per källa, kopplade till affischens period med
 <code>skos:exactMatch</code> (samma gräns) eller <code>skos:closeMatch</code> (avviker), och
 <code>prov:wasDerivedFrom</code> till granskningen.</li>
-<li><strong>Kontrollerade uppgifter</strong>: <code>schema:Claim</code> med <code>schema:about</code> till posten;
+<li><strong>Kontrollerade uppgifter</strong>: <code>schema:Claim</code> med <code>schema:about</code> till posten
+och typen i <code>dcterms:type</code> (begrepp i <code>&lt;{ld.ID}#uppgiftstyper&gt;</code>);
 granskningen är en <code>schema:ClaimReview</code> med <code>schema:itemReviewed</code>, utlåtandet i
 <code>schema:reviewRating/schema:alternateName</code> och källan i <code>schema:citation</code>.</li>
 </ul>
@@ -196,6 +215,8 @@ function pick(id) {
   const q = Q.find((x) => x.id === id) || Q[0];
   $("query").value = q.query;
   $("desc").textContent = q.description;
+  $("results").textContent = "";
+  status(store ? "Tryck Kör för att köra frågan." : "");
   document.querySelectorAll(".examples button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.id === q.id));
   history.replaceState(null, "", "#" + q.id);
 }
@@ -312,7 +333,7 @@ for (const q of Q) {
   b.type = "button";
   b.dataset.id = q.id;
   b.textContent = q.title;
-  b.addEventListener("click", () => { pick(q.id); if (store) run(); });
+  b.addEventListener("click", () => pick(q.id));
   $("examples").appendChild(b);
 }
 pick(location.hash.slice(1));
@@ -331,7 +352,7 @@ try {
   store.load(ttl, { format: "text/turtle", base_iri: ID + "index.ttl" });
   $("loaded").textContent = fmt.format(store.size) + " tripplar laddade från id/index.ttl.";
   $("run").disabled = false;
-  run();
+  status("Tryck Kör för att köra frågan.");
 } catch (e) {
   status("Kunde inte ladda: " + e, true);
 }

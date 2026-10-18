@@ -70,6 +70,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -178,7 +181,8 @@
     {
      "@id": "nh:nh-p0035"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0083#granskning",
@@ -217,7 +221,8 @@
     {
      "@id": "nh:nh-p0034"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0084#granskning",

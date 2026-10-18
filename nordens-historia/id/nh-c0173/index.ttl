@@ -21,6 +21,7 @@
 nh:nh-c0173 a schema:Claim ;
     dcterms:identifier "GE44",
         "nh-c0173" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0070 ;
     schema:text "Period 'Unionen Sverige–Norge': 1814 – 1905" .
 

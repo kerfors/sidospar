@@ -51,6 +51,7 @@
 nh:nh-c0073 a schema:Claim ;
     dcterms:identifier "SV06",
         "nh-c0073" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0030 ;
     schema:text "Period 'Vikingatid': 793 – 1066" .
 
@@ -71,12 +72,14 @@ nh:nh-c0073 a schema:Claim ;
 nh:nh-c0074 a schema:Claim ;
     dcterms:identifier "SV07",
         "nh-c0074" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0030 ;
     schema:text "Birka" .
 
 nh:nh-c0075 a schema:Claim ;
     dcterms:identifier "SV08",
         "nh-c0075" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0030 ;
     schema:text "Olof Skötkonung" .
 

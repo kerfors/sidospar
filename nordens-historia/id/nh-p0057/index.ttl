@@ -52,6 +52,7 @@
 nh:nh-c0135 a schema:Claim ;
     dcterms:identifier "GE06",
         "nh-c0135" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0057 ;
     schema:text "Period 'Romersk järnålder': 1 – 400" .
 
@@ -69,12 +70,14 @@ nh:nh-c0135 a schema:Claim ;
 nh:nh-c0136 a schema:Claim ;
     dcterms:identifier "GE07",
         "nh-c0136" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0057 ;
     schema:text "Handel med Romarriket" .
 
 nh:nh-c0137 a schema:Claim ;
     dcterms:identifier "GE08",
         "nh-c0137" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0057 ;
     schema:text "runskriften tas i bruk" .
 

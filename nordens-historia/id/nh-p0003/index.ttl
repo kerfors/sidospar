@@ -40,6 +40,7 @@
 nh:nh-c0007 a schema:Claim ;
     dcterms:identifier "IS07",
         "nh-c0007" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0003 ;
     schema:text "Period 'Under norska kronan': 1262 – 1380" .
 
@@ -59,6 +60,7 @@ nh:nh-c0007 a schema:Claim ;
 nh:nh-c0008 a schema:Claim ;
     dcterms:identifier "IS08",
         "nh-c0008" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0003 ;
     schema:text "Gamli sáttmáli 1262–64" .
 

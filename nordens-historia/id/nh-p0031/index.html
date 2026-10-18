@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -184,7 +187,8 @@
     {
      "@id": "nh:nh-p0031"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0076#granskning",
@@ -223,7 +227,8 @@
     {
      "@id": "nh:nh-p0031"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0077#granskning",
@@ -257,7 +262,8 @@
     {
      "@id": "nh:nh-p0031"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0078#granskning",
@@ -406,6 +412,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -511,7 +520,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0031&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0076#granskning&quot;,
@@ -550,7 +560,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0031&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0077#granskning&quot;,
@@ -584,7 +595,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0031&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0078#granskning&quot;,
@@ -661,6 +673,7 @@
 nh:nh-c0076 a schema:Claim ;
     dcterms:identifier &quot;SV09&quot;,
         &quot;nh-c0076&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0031 ;
     schema:text &quot;Period &#x27;Riket växer fram&#x27;: 1066 – 1250&quot; .
 
@@ -681,12 +694,14 @@ nh:nh-c0076 a schema:Claim ;
 nh:nh-c0077 a schema:Claim ;
     dcterms:identifier &quot;SV10&quot;,
         &quot;nh-c0077&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0031 ;
     schema:text &quot;Erikska och sverkerska ätterna&quot; .
 
 nh:nh-c0078 a schema:Claim ;
     dcterms:identifier &quot;SV11&quot;,
         &quot;nh-c0078&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0031 ;
     schema:text &quot;ärkesäte i Uppsala 1164&quot; .
 

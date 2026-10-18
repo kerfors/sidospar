@@ -40,6 +40,7 @@
 nh:nh-c0083 a schema:Claim ;
     dcterms:identifier "SV16",
         "nh-c0083" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0034,
         nh:nh-p0035 ;
     schema:text "Period 'Demokratins genombrott': 1905 – 1945" .
@@ -47,6 +48,7 @@ nh:nh-c0083 a schema:Claim ;
 nh:nh-c0085 a schema:Claim ;
     dcterms:identifier "SV18",
         "nh-c0085" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0035 ;
     schema:text "neutralitet under andra världskriget" .
 

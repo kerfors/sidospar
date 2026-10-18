@@ -21,6 +21,7 @@
 nh:nh-c0064 a schema:Claim ;
     dcterms:identifier "NO22",
         "nh-c0064" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0026 ;
     schema:text "kvinnlig rösträtt 1913" .
 

@@ -2547,6 +2547,7 @@ nh: a schema:WebPage ;
 nh:nh-c0001 a schema:Claim ;
     dcterms:identifier "IS01",
         "nh-c0001" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0001 ;
     schema:text "Period 'Landnámstiden': 874 – 930" .
 
@@ -2566,12 +2567,14 @@ nh:nh-c0001 a schema:Claim ;
 nh:nh-c0002 a schema:Claim ;
     dcterms:identifier "IS02",
         "nh-c0002" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0001 ;
     schema:text "Ingólfur Arnarson i Reykjavík" .
 
 nh:nh-c0003 a schema:Claim ;
     dcterms:identifier "IS03",
         "nh-c0003" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0002 ;
     schema:text "Period 'Fristaten': 930 – 1262" .
 
@@ -2589,24 +2592,28 @@ nh:nh-c0003 a schema:Claim ;
 nh:nh-c0004 a schema:Claim ;
     dcterms:identifier "IS04",
         "nh-c0004" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0002 ;
     schema:text "Alltinget på Þingvellir" .
 
 nh:nh-c0005 a schema:Claim ;
     dcterms:identifier "IS05",
         "nh-c0005" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0002 ;
     schema:text "kristendomen antas år 1000" .
 
 nh:nh-c0006 a schema:Claim ;
     dcterms:identifier "IS06",
         "nh-c0006" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0002 ;
     schema:text "sagalitteraturen" .
 
 nh:nh-c0007 a schema:Claim ;
     dcterms:identifier "IS07",
         "nh-c0007" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0003 ;
     schema:text "Period 'Under norska kronan': 1262 – 1380" .
 
@@ -2626,12 +2633,14 @@ nh:nh-c0007 a schema:Claim ;
 nh:nh-c0008 a schema:Claim ;
     dcterms:identifier "IS08",
         "nh-c0008" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0003 ;
     schema:text "Gamli sáttmáli 1262–64" .
 
 nh:nh-c0009 a schema:Claim ;
     dcterms:identifier "IS09",
         "nh-c0009" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0004 ;
     schema:text "Period 'Under danska kronan': 1814 – 1918" .
 
@@ -2651,18 +2660,21 @@ nh:nh-c0009 a schema:Claim ;
 nh:nh-c0010 a schema:Claim ;
     dcterms:identifier "IS10",
         "nh-c0010" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0004 ;
     schema:text "Alltinget återupprättas 1845" .
 
 nh:nh-c0011 a schema:Claim ;
     dcterms:identifier "IS11",
         "nh-c0011" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0004 ;
     schema:text "hemmastyre 1904" .
 
 nh:nh-c0012 a schema:Claim ;
     dcterms:identifier "IS12",
         "nh-c0012" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0005 ;
     schema:text "Period 'Konungariket Island': 1918 – 1944" .
 
@@ -2680,12 +2692,14 @@ nh:nh-c0012 a schema:Claim ;
 nh:nh-c0013 a schema:Claim ;
     dcterms:identifier "IS13",
         "nh-c0013" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0005 ;
     schema:text "Personalunion med Danmark" .
 
 nh:nh-c0014 a schema:Claim ;
     dcterms:identifier "IS14",
         "nh-c0014" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0006 ;
     schema:text "Period 'Republiken Island': 1944 – 2026" .
 
@@ -2703,18 +2717,21 @@ nh:nh-c0014 a schema:Claim ;
 nh:nh-c0015 a schema:Claim ;
     dcterms:identifier "IS15",
         "nh-c0015" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0006 ;
     schema:text "Utropas 17 juni 1944" .
 
 nh:nh-c0016 a schema:Claim ;
     dcterms:identifier "IS16",
         "nh-c0016" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0006 ;
     schema:text "Nato 1949" .
 
 nh:nh-c0017 a schema:Claim ;
     dcterms:identifier "DA01",
         "nh-c0017" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0007 ;
     schema:text "Period 'Jägarstenålder': 10 000 f.Kr. – 3 900 f.Kr." .
 
@@ -2734,12 +2751,14 @@ nh:nh-c0017 a schema:Claim ;
 nh:nh-c0018 a schema:Claim ;
     dcterms:identifier "DA02",
         "nh-c0018" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0007 ;
     schema:text "Maglemose-, Kongemose- och Ertebøllekultur" .
 
 nh:nh-c0019 a schema:Claim ;
     dcterms:identifier "DA03",
         "nh-c0019" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0008 ;
     schema:text "Period 'Bondestenålder': 3 900 f.Kr. – 1 700 f.Kr." .
 
@@ -2757,18 +2776,21 @@ nh:nh-c0019 a schema:Claim ;
 nh:nh-c0020 a schema:Claim ;
     dcterms:identifier "DA04",
         "nh-c0020" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0008 ;
     schema:text "Trattbägarkultur" .
 
 nh:nh-c0021 a schema:Claim ;
     dcterms:identifier "DA05",
         "nh-c0021" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0008 ;
     schema:text "dösar och gånggrifter" .
 
 nh:nh-c0022 a schema:Claim ;
     dcterms:identifier "DA06",
         "nh-c0022" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0009 ;
     schema:text "Period 'Vikingatid': 793 – 1066" .
 
@@ -2788,24 +2810,28 @@ nh:nh-c0022 a schema:Claim ;
 nh:nh-c0023 a schema:Claim ;
     dcterms:identifier "DA07",
         "nh-c0023" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0009 ;
     schema:text "Hedeby" .
 
 nh:nh-c0024 a schema:Claim ;
     dcterms:identifier "DA08",
         "nh-c0024" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0009 ;
     schema:text "Jellingestenen c. 965" .
 
 nh:nh-c0025 a schema:Claim ;
     dcterms:identifier "DA09",
         "nh-c0025" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0009 ;
     schema:text "Knut den stores nordsjövälde 1016–35" .
 
 nh:nh-c0026 a schema:Claim ;
     dcterms:identifier "DA10",
         "nh-c0026" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0010 ;
     schema:text "Period 'Tidig medeltid': 1066 – 1157" .
 
@@ -2825,12 +2851,14 @@ nh:nh-c0026 a schema:Claim ;
 nh:nh-c0027 a schema:Claim ;
     dcterms:identifier "DA11",
         "nh-c0027" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0010 ;
     schema:text "Ärkesäte i Lund 1103/04" .
 
 nh:nh-c0028 a schema:Claim ;
     dcterms:identifier "DA12",
         "nh-c0028" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0011 ;
     schema:text "Period 'Valdemarstiden': 1157 – 1241" .
 
@@ -2848,18 +2876,21 @@ nh:nh-c0028 a schema:Claim ;
 nh:nh-c0029 a schema:Claim ;
     dcterms:identifier "DA13",
         "nh-c0029" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0011 ;
     schema:text "Absalon och Köpenhamn" .
 
 nh:nh-c0030 a schema:Claim ;
     dcterms:identifier "DA14",
         "nh-c0030" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0011 ;
     schema:text "Jyske Lov 1241" .
 
 nh:nh-c0031 a schema:Claim ;
     dcterms:identifier "DA15",
         "nh-c0031" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0012,
         nh:nh-p0013 ;
     schema:text "Period 'Kris och återuppbyggnad': 1241 – 1380" .
@@ -2867,18 +2898,21 @@ nh:nh-c0031 a schema:Claim ;
 nh:nh-c0032 a schema:Claim ;
     dcterms:identifier "DA16",
         "nh-c0032" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0012 ;
     schema:text "Kunglös tid 1332–40" .
 
 nh:nh-c0033 a schema:Claim ;
     dcterms:identifier "DA17",
         "nh-c0033" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0013 ;
     schema:text "Valdemar Atterdag" .
 
 nh:nh-c0034 a schema:Claim ;
     dcterms:identifier "DA18",
         "nh-c0034" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0014 ;
     schema:text "Period 'Enväldets sista tid': 1814 – 1849" .
 
@@ -2898,12 +2932,14 @@ nh:nh-c0034 a schema:Claim ;
 nh:nh-c0035 a schema:Claim ;
     dcterms:identifier "DA19",
         "nh-c0035" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0014 ;
     schema:text "Kielfreden 1814: Norge avträds" .
 
 nh:nh-c0036 a schema:Claim ;
     dcterms:identifier "DA20",
         "nh-c0036" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0015,
         nh:nh-p0016 ;
     schema:text "Period 'Konstitutionell monarki': 1849 – 1945" .
@@ -2911,24 +2947,28 @@ nh:nh-c0036 a schema:Claim ;
 nh:nh-c0037 a schema:Claim ;
     dcterms:identifier "DA21",
         "nh-c0037" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0015 ;
     schema:text "Grundloven 1849" .
 
 nh:nh-c0038 a schema:Claim ;
     dcterms:identifier "DA22",
         "nh-c0038" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0015 ;
     schema:text "Slesvig förloras 1864" .
 
 nh:nh-c0039 a schema:Claim ;
     dcterms:identifier "DA23",
         "nh-c0039" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0016 ;
     schema:text "Sønderjylland åter 1920" .
 
 nh:nh-c0040 a schema:Claim ;
     dcterms:identifier "DA24",
         "nh-c0040" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0017,
         nh:nh-p0018 ;
     schema:text "Period 'Välfärdsstat': 1945 – 2026" .
@@ -2949,18 +2989,21 @@ nh:nh-c0040 a schema:Claim ;
 nh:nh-c0041 a schema:Claim ;
     dcterms:identifier "DA25",
         "nh-c0041" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0018 ;
     schema:text "EG 1973" .
 
 nh:nh-c0042 a schema:Claim ;
     dcterms:identifier "DA26",
         "nh-c0042" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0018 ;
     schema:text "Grönlands hjemmestyre 1979" .
 
 nh:nh-c0043 a schema:Claim ;
     dcterms:identifier "NO01",
         "nh-c0043" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0019 ;
     schema:text "Period 'Jägarstenålder': 9 500 f.Kr. – 4 000 f.Kr." .
 
@@ -2980,12 +3023,14 @@ nh:nh-c0043 a schema:Claim ;
 nh:nh-c0044 a schema:Claim ;
     dcterms:identifier "NO02",
         "nh-c0044" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0019 ;
     schema:text "Fosna- och Komsakultur längs kusten" .
 
 nh:nh-c0045 a schema:Claim ;
     dcterms:identifier "NO03",
         "nh-c0045" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0020 ;
     schema:text "Period 'Yngre stenålder': 4 000 f.Kr. – 1 700 f.Kr." .
 
@@ -3005,12 +3050,14 @@ nh:nh-c0045 a schema:Claim ;
 nh:nh-c0046 a schema:Claim ;
     dcterms:identifier "NO04",
         "nh-c0046" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0020 ;
     schema:text "Jordbruket når Sydnorge" .
 
 nh:nh-c0047 a schema:Claim ;
     dcterms:identifier "NO05",
         "nh-c0047" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0021 ;
     schema:text "Period 'Vikingatid': 793 – 1066" .
 
@@ -3028,18 +3075,21 @@ nh:nh-c0047 a schema:Claim ;
 nh:nh-c0048 a schema:Claim ;
     dcterms:identifier "NO06",
         "nh-c0048" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0021 ;
     schema:text "Hafrsfjord c. 872" .
 
 nh:nh-c0049 a schema:Claim ;
     dcterms:identifier "NO07",
         "nh-c0049" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0021 ;
     schema:text "Stiklestad 1030" .
 
 nh:nh-c0050 a schema:Claim ;
     dcterms:identifier "NO08",
         "nh-c0050" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0022 ;
     schema:text "Period 'Riket konsolideras': 1066 – 1130" .
 
@@ -3057,18 +3107,21 @@ nh:nh-c0050 a schema:Claim ;
 nh:nh-c0051 a schema:Claim ;
     dcterms:identifier "NO09",
         "nh-c0051" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0022 ;
     schema:text "Olav Kyrre" .
 
 nh:nh-c0052 a schema:Claim ;
     dcterms:identifier "NO10",
         "nh-c0052" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0022 ;
     schema:text "Bergen växer fram" .
 
 nh:nh-c0053 a schema:Claim ;
     dcterms:identifier "NO11",
         "nh-c0053" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0023 ;
     schema:text "Period 'Inbördeskrigstiden': 1130 – 1240" .
 
@@ -3086,18 +3139,21 @@ nh:nh-c0053 a schema:Claim ;
 nh:nh-c0054 a schema:Claim ;
     dcterms:identifier "NO12",
         "nh-c0054" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0023 ;
     schema:text "Ärkesäte i Nidaros 1152/53" .
 
 nh:nh-c0055 a schema:Claim ;
     dcterms:identifier "NO13",
         "nh-c0055" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0023 ;
     schema:text "Sverre" .
 
 nh:nh-c0056 a schema:Claim ;
     dcterms:identifier "NO14",
         "nh-c0056" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0024 ;
     schema:text "Period 'Storhetstiden': 1240 – 1319" .
 
@@ -3115,24 +3171,28 @@ nh:nh-c0056 a schema:Claim ;
 nh:nh-c0057 a schema:Claim ;
     dcterms:identifier "NO15",
         "nh-c0057" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0024 ;
     schema:text "Håkon IV" .
 
 nh:nh-c0058 a schema:Claim ;
     dcterms:identifier "NO16",
         "nh-c0058" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0024 ;
     schema:text "Grönland 1261, Island 1262–64" .
 
 nh:nh-c0059 a schema:Claim ;
     dcterms:identifier "NO17",
         "nh-c0059" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0024 ;
     schema:text "Magnus Lagabøtes landslov 1274" .
 
 nh:nh-c0060 a schema:Claim ;
     dcterms:identifier "NO18",
         "nh-c0060" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0025 ;
     schema:text "Period 'Håkon VI': 1343 – 1380" .
 
@@ -3152,12 +3212,14 @@ nh:nh-c0060 a schema:Claim ;
 nh:nh-c0061 a schema:Claim ;
     dcterms:identifier "NO19",
         "nh-c0061" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0025 ;
     schema:text "Digerdöden 1349" .
 
 nh:nh-c0062 a schema:Claim ;
     dcterms:identifier "NO20",
         "nh-c0062" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0026 ;
     schema:text "Period 'Självständigt kungarike': 1905 – 1945" .
 
@@ -3175,18 +3237,21 @@ nh:nh-c0062 a schema:Claim ;
 nh:nh-c0063 a schema:Claim ;
     dcterms:identifier "NO21",
         "nh-c0063" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0026 ;
     schema:text "Haakon VII" .
 
 nh:nh-c0064 a schema:Claim ;
     dcterms:identifier "NO22",
         "nh-c0064" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0026 ;
     schema:text "kvinnlig rösträtt 1913" .
 
 nh:nh-c0065 a schema:Claim ;
     dcterms:identifier "NO23",
         "nh-c0065" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0027 ;
     schema:text "Period 'Olja och välfärd': 1945 – 2026" .
 
@@ -3204,18 +3269,21 @@ nh:nh-c0065 a schema:Claim ;
 nh:nh-c0066 a schema:Claim ;
     dcterms:identifier "NO24",
         "nh-c0066" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0027 ;
     schema:text "Ekofisk 1969" .
 
 nh:nh-c0067 a schema:Claim ;
     dcterms:identifier "NO25",
         "nh-c0067" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0027 ;
     schema:text "nej till EG/EU 1972 och 1994" .
 
 nh:nh-c0068 a schema:Claim ;
     dcterms:identifier "SV01",
         "nh-c0068" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0028 ;
     schema:text "Period 'Jägarstenålder': 10 000 f.Kr. – 4 000 f.Kr." .
 
@@ -3233,18 +3301,21 @@ nh:nh-c0068 a schema:Claim ;
 nh:nh-c0069 a schema:Claim ;
     dcterms:identifier "SV02",
         "nh-c0069" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0028 ;
     schema:text "Inlandsisen drar sig tillbaka" .
 
 nh:nh-c0070 a schema:Claim ;
     dcterms:identifier "SV03",
         "nh-c0070" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0028 ;
     schema:text "Hensbackakultur på Västkusten" .
 
 nh:nh-c0071 a schema:Claim ;
     dcterms:identifier "SV04",
         "nh-c0071" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0029 ;
     schema:text "Period 'Bondestenålder': 4 000 f.Kr. – 1 700 f.Kr." .
 
@@ -3262,12 +3333,14 @@ nh:nh-c0071 a schema:Claim ;
 nh:nh-c0072 a schema:Claim ;
     dcterms:identifier "SV05",
         "nh-c0072" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0029 ;
     schema:text "Trattbägar-, gropkeramisk och stridsyxekultur" .
 
 nh:nh-c0073 a schema:Claim ;
     dcterms:identifier "SV06",
         "nh-c0073" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0030 ;
     schema:text "Period 'Vikingatid': 793 – 1066" .
 
@@ -3288,18 +3361,21 @@ nh:nh-c0073 a schema:Claim ;
 nh:nh-c0074 a schema:Claim ;
     dcterms:identifier "SV07",
         "nh-c0074" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0030 ;
     schema:text "Birka" .
 
 nh:nh-c0075 a schema:Claim ;
     dcterms:identifier "SV08",
         "nh-c0075" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0030 ;
     schema:text "Olof Skötkonung" .
 
 nh:nh-c0076 a schema:Claim ;
     dcterms:identifier "SV09",
         "nh-c0076" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0031 ;
     schema:text "Period 'Riket växer fram': 1066 – 1250" .
 
@@ -3320,18 +3396,21 @@ nh:nh-c0076 a schema:Claim ;
 nh:nh-c0077 a schema:Claim ;
     dcterms:identifier "SV10",
         "nh-c0077" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0031 ;
     schema:text "Erikska och sverkerska ätterna" .
 
 nh:nh-c0078 a schema:Claim ;
     dcterms:identifier "SV11",
         "nh-c0078" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0031 ;
     schema:text "ärkesäte i Uppsala 1164" .
 
 nh:nh-c0079 a schema:Claim ;
     dcterms:identifier "SV12",
         "nh-c0079" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0032 ;
     schema:text "Period 'Folkungatid': 1250 – 1319" .
 
@@ -3352,18 +3431,21 @@ nh:nh-c0079 a schema:Claim ;
 nh:nh-c0080 a schema:Claim ;
     dcterms:identifier "SV13",
         "nh-c0080" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0032 ;
     schema:text "Birger jarl" .
 
 nh:nh-c0081 a schema:Claim ;
     dcterms:identifier "SV14",
         "nh-c0081" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0032 ;
     schema:text "Stockholm nämns 1252" .
 
 nh:nh-c0082 a schema:Claim ;
     dcterms:identifier "SV15",
         "nh-c0082" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0033 ;
     schema:text "Period '1809 års regeringsform': 1809 – 1814" .
 
@@ -3384,6 +3466,7 @@ nh:nh-c0082 a schema:Claim ;
 nh:nh-c0083 a schema:Claim ;
     dcterms:identifier "SV16",
         "nh-c0083" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0034,
         nh:nh-p0035 ;
     schema:text "Period 'Demokratins genombrott': 1905 – 1945" .
@@ -3405,18 +3488,21 @@ nh:nh-c0083 a schema:Claim ;
 nh:nh-c0084 a schema:Claim ;
     dcterms:identifier "SV17",
         "nh-c0084" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0034 ;
     schema:text "Allmän rösträtt 1921" .
 
 nh:nh-c0085 a schema:Claim ;
     dcterms:identifier "SV18",
         "nh-c0085" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0035 ;
     schema:text "neutralitet under andra världskriget" .
 
 nh:nh-c0086 a schema:Claim ;
     dcterms:identifier "SV19",
         "nh-c0086" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0036 ;
     schema:text "Period 'Välfärdsstat': 1945 – 2026" .
 
@@ -3434,18 +3520,21 @@ nh:nh-c0086 a schema:Claim ;
 nh:nh-c0087 a schema:Claim ;
     dcterms:identifier "SV20",
         "nh-c0087" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0036 ;
     schema:text "EU 1995" .
 
 nh:nh-c0088 a schema:Claim ;
     dcterms:identifier "SV21",
         "nh-c0088" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0036 ;
     schema:text "Nato 2024" .
 
 nh:nh-c0089 a schema:Claim ;
     dcterms:identifier "FI01",
         "nh-c0089" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0037 ;
     schema:text "Period 'Suomusjärvikultur': 8 900 f.Kr. – 5 100 f.Kr." .
 
@@ -3466,12 +3555,14 @@ nh:nh-c0089 a schema:Claim ;
 nh:nh-c0090 a schema:Claim ;
     dcterms:identifier "FI02",
         "nh-c0090" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0037 ;
     schema:text "Första bosättningen efter isen" .
 
 nh:nh-c0091 a schema:Claim ;
     dcterms:identifier "FI03",
         "nh-c0091" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0038 ;
     schema:text "Period 'Kamkeramisk kultur': 5 100 f.Kr. – 2 800 f.Kr." .
 
@@ -3492,6 +3583,7 @@ nh:nh-c0091 a schema:Claim ;
 nh:nh-c0092 a schema:Claim ;
     dcterms:identifier "FI04",
         "nh-c0092" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0039 ;
     schema:text "Period 'Stridsyxe- och Kiukaiskultur': 2 800 f.Kr. – 1 500 f.Kr." .
 
@@ -3512,6 +3604,7 @@ nh:nh-c0092 a schema:Claim ;
 nh:nh-c0093 a schema:Claim ;
     dcterms:identifier "FI05",
         "nh-c0093" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0040 ;
     schema:text "Period 'Bronsålder': 1 500 f.Kr. – 500 f.Kr." .
 
@@ -3532,18 +3625,21 @@ nh:nh-c0093 a schema:Claim ;
 nh:nh-c0094 a schema:Claim ;
     dcterms:identifier "FI06",
         "nh-c0094" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0040 ;
     schema:text "Rösen vid kusten" .
 
 nh:nh-c0095 a schema:Claim ;
     dcterms:identifier "FI07",
         "nh-c0095" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0040 ;
     schema:text "Sammallahdenmäki" .
 
 nh:nh-c0096 a schema:Claim ;
     dcterms:identifier "FI08",
         "nh-c0096" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0041 ;
     schema:text "Period 'Järnålder': 500 f.Kr. – 800" .
 
@@ -3564,12 +3660,14 @@ nh:nh-c0096 a schema:Claim ;
 nh:nh-c0097 a schema:Claim ;
     dcterms:identifier "FI09",
         "nh-c0097" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0041 ;
     schema:text "Förromersk till merovingisk tid" .
 
 nh:nh-c0098 a schema:Claim ;
     dcterms:identifier "FI10",
         "nh-c0098" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0042 ;
     schema:text "Period 'Vikingatid': 800 – 1025" .
 
@@ -3587,6 +3685,7 @@ nh:nh-c0098 a schema:Claim ;
 nh:nh-c0099 a schema:Claim ;
     dcterms:identifier "FI11",
         "nh-c0099" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0043,
         nh:nh-p0044 ;
     schema:text "Period 'Korstågstid': 1025 – 1319" .
@@ -3608,18 +3707,21 @@ nh:nh-c0099 a schema:Claim ;
 nh:nh-c0100 a schema:Claim ;
     dcterms:identifier "FI12",
         "nh-c0100" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0043 ;
     schema:text "Svensk expansion österut" .
 
 nh:nh-c0101 a schema:Claim ;
     dcterms:identifier "FI13",
         "nh-c0101" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0044 ;
     schema:text "Åbo domkyrka invigs 1300" .
 
 nh:nh-c0102 a schema:Claim ;
     dcterms:identifier "FI14",
         "nh-c0102" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0045 ;
     schema:text "Period 'Storfurstendömet Finland': 1809 – 1917" .
 
@@ -3637,24 +3739,28 @@ nh:nh-c0102 a schema:Claim ;
 nh:nh-c0103 a schema:Claim ;
     dcterms:identifier "FI15",
         "nh-c0103" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0045 ;
     schema:text "Under Ryssland efter freden i Fredrikshamn" .
 
 nh:nh-c0104 a schema:Claim ;
     dcterms:identifier "FI16",
         "nh-c0104" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0045 ;
     schema:text "Borgå lantdag 1809" .
 
 nh:nh-c0105 a schema:Claim ;
     dcterms:identifier "FI17",
         "nh-c0105" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0045 ;
     schema:text "enkammarlantdag och kvinnlig rösträtt 1906" .
 
 nh:nh-c0106 a schema:Claim ;
     dcterms:identifier "FI18",
         "nh-c0106" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0046 ;
     schema:text "Period 'Självständigt Finland': 1917 – 1939" .
 
@@ -3672,24 +3778,28 @@ nh:nh-c0106 a schema:Claim ;
 nh:nh-c0107 a schema:Claim ;
     dcterms:identifier "FI19",
         "nh-c0107" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0046 ;
     schema:text "6 dec 1917" .
 
 nh:nh-c0108 a schema:Claim ;
     dcterms:identifier "FI20",
         "nh-c0108" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0046 ;
     schema:text "inbördeskriget 1918" .
 
 nh:nh-c0109 a schema:Claim ;
     dcterms:identifier "FI21",
         "nh-c0109" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0046 ;
     schema:text "republik 1919" .
 
 nh:nh-c0110 a schema:Claim ;
     dcterms:identifier "FI22",
         "nh-c0110" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0047 ;
     schema:text "Period 'Krigsåren': 1939 – 1945" .
 
@@ -3707,12 +3817,14 @@ nh:nh-c0110 a schema:Claim ;
 nh:nh-c0111 a schema:Claim ;
     dcterms:identifier "FI23",
         "nh-c0111" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0047 ;
     schema:text "Vinter-, fortsättnings- och Lapplandskriget" .
 
 nh:nh-c0112 a schema:Claim ;
     dcterms:identifier "FI24",
         "nh-c0112" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0048 ;
     schema:text "Period 'Efterkrigstid': 1945 – 2026" .
 
@@ -3733,18 +3845,21 @@ nh:nh-c0112 a schema:Claim ;
 nh:nh-c0113 a schema:Claim ;
     dcterms:identifier "FI25",
         "nh-c0113" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0048 ;
     schema:text "EU 1995" .
 
 nh:nh-c0114 a schema:Claim ;
     dcterms:identifier "FI26",
         "nh-c0114" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0048 ;
     schema:text "Nato 2023" .
 
 nh:nh-c0115 a schema:Claim ;
     dcterms:identifier "SÁ01",
         "nh-c0115" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0049 ;
     schema:text "Period 'Fångstkulturer i norr': 9 000 f.Kr. – 1 000 f.Kr." .
 
@@ -3764,18 +3879,21 @@ nh:nh-c0115 a schema:Claim ;
 nh:nh-c0116 a schema:Claim ;
     dcterms:identifier "SÁ02",
         "nh-c0116" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0049 ;
     schema:text "Komsakultur" .
 
 nh:nh-c0117 a schema:Claim ;
     dcterms:identifier "SÁ03",
         "nh-c0117" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0049 ;
     schema:text "hällkonst i Alta" .
 
 nh:nh-c0118 a schema:Claim ;
     dcterms:identifier "SÁ04",
         "nh-c0118" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0050 ;
     schema:text "Period 'Samisk kultur tar form': 1 000 f.Kr. – 800" .
 
@@ -3795,18 +3913,21 @@ nh:nh-c0118 a schema:Claim ;
 nh:nh-c0119 a schema:Claim ;
     dcterms:identifier "SÁ05",
         "nh-c0119" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0050 ;
     schema:text "Protosamiska språket" .
 
 nh:nh-c0120 a schema:Claim ;
     dcterms:identifier "SÁ06",
         "nh-c0120" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0050 ;
     schema:text "dateringen omdiskuterad" .
 
 nh:nh-c0121 a schema:Claim ;
     dcterms:identifier "SÁ07",
         "nh-c0121" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0051 ;
     schema:text "Period 'Siidasamhällen': 800 – 1550" .
 
@@ -3826,18 +3947,21 @@ nh:nh-c0121 a schema:Claim ;
 nh:nh-c0122 a schema:Claim ;
     dcterms:identifier "SÁ08",
         "nh-c0122" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0051 ;
     schema:text "Fångst, fiske och handel" .
 
 nh:nh-c0123 a schema:Claim ;
     dcterms:identifier "SÁ09",
         "nh-c0123" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0051 ;
     schema:text "skatt till flera kronor" .
 
 nh:nh-c0124 a schema:Claim ;
     dcterms:identifier "SÁ10",
         "nh-c0124" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0052 ;
     schema:text "Period 'Kolonisering och kristnande': 1550 – 1751" .
 
@@ -3857,12 +3981,14 @@ nh:nh-c0124 a schema:Claim ;
 nh:nh-c0125 a schema:Claim ;
     dcterms:identifier "SÁ11",
         "nh-c0125" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0052 ;
     schema:text "Lappmarksplakatet 1673" .
 
 nh:nh-c0126 a schema:Claim ;
     dcterms:identifier "SÁ12",
         "nh-c0126" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0053 ;
     schema:text "Period 'Gränser dras genom Sápmi': 1751 – 1917" .
 
@@ -3880,12 +4006,14 @@ nh:nh-c0126 a schema:Claim ;
 nh:nh-c0127 a schema:Claim ;
     dcterms:identifier "SÁ13",
         "nh-c0127" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0053 ;
     schema:text "Lappkodicillen 1751" .
 
 nh:nh-c0128 a schema:Claim ;
     dcterms:identifier "SÁ14",
         "nh-c0128" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0054 ;
     schema:text "Period 'Samisk organisering': 1917 – 2026" .
 
@@ -3903,12 +4031,14 @@ nh:nh-c0128 a schema:Claim ;
 nh:nh-c0129 a schema:Claim ;
     dcterms:identifier "SÁ15",
         "nh-c0129" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0054 ;
     schema:text "Sameting: Finland 1973/1996, Norge 1989, Sverige 1993" .
 
 nh:nh-c0130 a schema:Claim ;
     dcterms:identifier "GE01",
         "nh-c0130" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0055 ;
     schema:text "Period 'Nordisk bronsålder': 1 700 f.Kr. – 500 f.Kr." .
 
@@ -3926,18 +4056,21 @@ nh:nh-c0130 a schema:Claim ;
 nh:nh-c0131 a schema:Claim ;
     dcterms:identifier "GE02",
         "nh-c0131" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0055 ;
     schema:text "Solvagnen från Trundholm" .
 
 nh:nh-c0132 a schema:Claim ;
     dcterms:identifier "GE03",
         "nh-c0132" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0055 ;
     schema:text "hällristningarna i Tanum" .
 
 nh:nh-c0133 a schema:Claim ;
     dcterms:identifier "GE04",
         "nh-c0133" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0056 ;
     schema:text "Period 'Förromersk järnålder': 500 f.Kr. – 1" .
 
@@ -3955,12 +4088,14 @@ nh:nh-c0133 a schema:Claim ;
 nh:nh-c0134 a schema:Claim ;
     dcterms:identifier "GE05",
         "nh-c0134" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0056 ;
     schema:text "Hjortspringbåten" .
 
 nh:nh-c0135 a schema:Claim ;
     dcterms:identifier "GE06",
         "nh-c0135" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0057 ;
     schema:text "Period 'Romersk järnålder': 1 – 400" .
 
@@ -3978,18 +4113,21 @@ nh:nh-c0135 a schema:Claim ;
 nh:nh-c0136 a schema:Claim ;
     dcterms:identifier "GE07",
         "nh-c0136" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0057 ;
     schema:text "Handel med Romarriket" .
 
 nh:nh-c0137 a schema:Claim ;
     dcterms:identifier "GE08",
         "nh-c0137" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0057 ;
     schema:text "runskriften tas i bruk" .
 
 nh:nh-c0138 a schema:Claim ;
     dcterms:identifier "GE09",
         "nh-c0138" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0058 ;
     schema:text "Period 'Folkvandringstid': 400 – 550" .
 
@@ -4007,18 +4145,21 @@ nh:nh-c0138 a schema:Claim ;
 nh:nh-c0139 a schema:Claim ;
     dcterms:identifier "GE10",
         "nh-c0139" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0058 ;
     schema:text "Guldbrakteater" .
 
 nh:nh-c0140 a schema:Claim ;
     dcterms:identifier "GE11",
         "nh-c0140" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0058 ;
     schema:text "guldhornen från Gallehus" .
 
 nh:nh-c0141 a schema:Claim ;
     dcterms:identifier "GE12",
         "nh-c0141" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0059 ;
     schema:text "Period 'Vendeltid / merovingertid': 550 – 793" .
 
@@ -4038,12 +4179,14 @@ nh:nh-c0141 a schema:Claim ;
 nh:nh-c0142 a schema:Claim ;
     dcterms:identifier "GE13",
         "nh-c0142" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0059 ;
     schema:text "Gamla Uppsala, Vendel och Valsgärde" .
 
 nh:nh-c0143 a schema:Claim ;
     dcterms:identifier "GE14",
         "nh-c0143" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0060 ;
     schema:text "Period 'Magnus Eriksson: Sverige och Norge': 1319 – 1343" .
 
@@ -4063,36 +4206,42 @@ nh:nh-c0143 a schema:Claim ;
 nh:nh-c0144 a schema:Claim ;
     dcterms:identifier "GE15",
         "nh-c0144" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0060 ;
     schema:text "Freden i Nöteborg 1323" .
 
 nh:nh-c0145 a schema:Claim ;
     dcterms:identifier "GE16",
         "nh-c0145" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0061 ;
     schema:text "Period 'Sverige med Finland': 1343 – 1397" .
 
 nh:nh-c0146 a schema:Claim ;
     dcterms:identifier "GE17",
         "nh-c0146" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "Magnus Erikssons landslag" .
 
 nh:nh-c0147 a schema:Claim ;
     dcterms:identifier "GE18",
         "nh-c0147" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "digerdöden 1350" .
 
 nh:nh-c0148 a schema:Claim ;
     dcterms:identifier "GE19",
         "nh-c0148" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "Albrekt av Mecklenburg 1364–89" .
 
 nh:nh-c0149 a schema:Claim ;
     dcterms:identifier "GE20",
         "nh-c0149" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0062 ;
     schema:text "Period 'Danmark–Norge': 1380 – 1397" .
 
@@ -4110,6 +4259,7 @@ nh:nh-c0149 a schema:Claim ;
 nh:nh-c0150 a schema:Claim ;
     dcterms:identifier "GE21",
         "nh-c0150" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0063 ;
     schema:text "Period 'Kalmarunionen': 1397 – 1523" .
 
@@ -4127,18 +4277,21 @@ nh:nh-c0150 a schema:Claim ;
 nh:nh-c0151 a schema:Claim ;
     dcterms:identifier "GE22",
         "nh-c0151" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0063 ;
     schema:text "Margareta och Erik av Pommern" .
 
 nh:nh-c0152 a schema:Claim ;
     dcterms:identifier "GE23",
         "nh-c0152" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0063 ;
     schema:text "Sverige bryter sig ur 1523" .
 
 nh:nh-c0153 a schema:Claim ;
     dcterms:identifier "GE24",
         "nh-c0153" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0064 ;
     schema:text "Period 'Danmark–Norge': 1523 – 1660" .
 
@@ -4156,24 +4309,28 @@ nh:nh-c0153 a schema:Claim ;
 nh:nh-c0154 a schema:Claim ;
     dcterms:identifier "GE25",
         "nh-c0154" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0064 ;
     schema:text "Reformationen 1536" .
 
 nh:nh-c0155 a schema:Claim ;
     dcterms:identifier "GE26",
         "nh-c0155" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0064 ;
     schema:text "Norges riksråd avskaffas 1537" .
 
 nh:nh-c0156 a schema:Claim ;
     dcterms:identifier "GE27",
         "nh-c0156" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0064 ;
     schema:text "Kristian IV" .
 
 nh:nh-c0157 a schema:Claim ;
     dcterms:identifier "GE28",
         "nh-c0157" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0065 ;
     schema:text "Period 'Danmark–Norge under enväldet': 1660 – 1814" .
 
@@ -4191,12 +4348,14 @@ nh:nh-c0157 a schema:Claim ;
 nh:nh-c0158 a schema:Claim ;
     dcterms:identifier "GE29",
         "nh-c0158" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0065 ;
     schema:text "Kongeloven 1665" .
 
 nh:nh-c0159 a schema:Claim ;
     dcterms:identifier "GE30",
         "nh-c0159" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0066 ;
     schema:text "Period 'Vasatiden': 1523 – 1611" .
 
@@ -4216,24 +4375,28 @@ nh:nh-c0159 a schema:Claim ;
 nh:nh-c0160 a schema:Claim ;
     dcterms:identifier "GE31",
         "nh-c0160" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0066 ;
     schema:text "Gustav Vasa" .
 
 nh:nh-c0161 a schema:Claim ;
     dcterms:identifier "GE32",
         "nh-c0161" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0066 ;
     schema:text "reformationen 1527" .
 
 nh:nh-c0162 a schema:Claim ;
     dcterms:identifier "GE33",
         "nh-c0162" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0066 ;
     schema:text "Uppsala möte 1593" .
 
 nh:nh-c0163 a schema:Claim ;
     dcterms:identifier "GE34",
         "nh-c0163" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0067 ;
     schema:text "Period 'Stormaktstiden': 1611 – 1718" .
 
@@ -4251,24 +4414,28 @@ nh:nh-c0163 a schema:Claim ;
 nh:nh-c0164 a schema:Claim ;
     dcterms:identifier "GE35",
         "nh-c0164" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0067 ;
     schema:text "Gustav II Adolf" .
 
 nh:nh-c0165 a schema:Claim ;
     dcterms:identifier "GE36",
         "nh-c0165" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0067 ;
     schema:text "westfaliska freden 1648" .
 
 nh:nh-c0166 a schema:Claim ;
     dcterms:identifier "GE37",
         "nh-c0166" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0067 ;
     schema:text "Karl XII" .
 
 nh:nh-c0167 a schema:Claim ;
     dcterms:identifier "GE38",
         "nh-c0167" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0068 ;
     schema:text "Period 'Frihetstiden': 1718 – 1772" .
 
@@ -4288,18 +4455,21 @@ nh:nh-c0167 a schema:Claim ;
 nh:nh-c0168 a schema:Claim ;
     dcterms:identifier "GE39",
         "nh-c0168" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0068 ;
     schema:text "Riksdagsstyre" .
 
 nh:nh-c0169 a schema:Claim ;
     dcterms:identifier "GE40",
         "nh-c0169" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0068 ;
     schema:text "hattar och mössor" .
 
 nh:nh-c0170 a schema:Claim ;
     dcterms:identifier "GE41",
         "nh-c0170" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0069 ;
     schema:text "Period 'Gustavianska tiden': 1772 – 1809" .
 
@@ -4317,18 +4487,21 @@ nh:nh-c0170 a schema:Claim ;
 nh:nh-c0171 a schema:Claim ;
     dcterms:identifier "GE42",
         "nh-c0171" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0069 ;
     schema:text "Gustav III:s statskupp 1772" .
 
 nh:nh-c0172 a schema:Claim ;
     dcterms:identifier "GE43",
         "nh-c0172" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0069 ;
     schema:text "finska kriget 1808–09" .
 
 nh:nh-c0173 a schema:Claim ;
     dcterms:identifier "GE44",
         "nh-c0173" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0070 ;
     schema:text "Period 'Unionen Sverige–Norge': 1814 – 1905" .
 
@@ -4346,204 +4519,238 @@ nh:nh-c0173 a schema:Claim ;
 nh:nh-c0174 a schema:Claim ;
     dcterms:identifier "GE45",
         "nh-c0174" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0070 ;
     schema:text "Två riken, en kung" .
 
 nh:nh-c0175 a schema:Claim ;
     dcterms:identifier "GE46",
         "nh-c0175" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0070 ;
     schema:text "Norge med egen grundlov (Eidsvoll 17 maj 1814)" .
 
 nh:nh-c0176 a schema:Claim ;
     dcterms:identifier "GE47",
         "nh-c0176" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> ;
     schema:about nh:nh-e0001 ;
     schema:text "793 Lindisfarne – vikingatiden börjar" .
 
 nh:nh-c0177 a schema:Claim ;
     dcterms:identifier "GE48",
         "nh-c0177" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> ;
     schema:about nh:nh-e0002 ;
     schema:text "1520 Stockholms blodbad" .
 
 nh:nh-c0178 a schema:Claim ;
     dcterms:identifier "GE49",
         "nh-c0178" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> ;
     schema:about nh:nh-e0003 ;
     schema:text "1658 Roskildefreden – Skånelandskapen och Bohuslän till Sverige" .
 
 nh:nh-c0179 a schema:Claim ;
     dcterms:identifier "GE50",
         "nh-c0179" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> ;
     schema:about nh:nh-e0004 ;
     schema:text "1905 Unionsupplösningen" .
 
 nh:nh-c0180 a schema:Claim ;
     dcterms:identifier "GE51",
         "nh-c0180" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> ;
     schema:about nh:nh-e0005 ;
     schema:text "1940–45 Tysk ockupation" .
 
 nh:nh-c0181 a schema:Claim ;
     dcterms:identifier "GE52",
         "nh-c0181" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> ;
     schema:about nh:nh-e0006 ;
     schema:text "1952 Nordiska rådet (Finland ansluter 1955)" .
 
 nh:nh-c0182 a schema:Claim ;
     dcterms:identifier "MI01",
         "nh-c0182" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0001 ;
     schema:text "Alltinget instiftas: 930" .
 
 nh:nh-c0183 a schema:Claim ;
     dcterms:identifier "MI02",
         "nh-c0183" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0002 ;
     schema:text "Jellingestenen: 965" .
 
 nh:nh-c0184 a schema:Claim ;
     dcterms:identifier "MI03",
         "nh-c0184" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0003 ;
     schema:text "Snorres Heimskringla (c.): 1230" .
 
 nh:nh-c0185 a schema:Claim ;
     dcterms:identifier "MI04",
         "nh-c0185" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0004 ;
     schema:text "Uppsala universitet: 1477" .
 
 nh:nh-c0186 a schema:Claim ;
     dcterms:identifier "MI05",
         "nh-c0186" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0005 ;
     schema:text "Köpenhamns universitet: 1479" .
 
 nh:nh-c0187 a schema:Claim ;
     dcterms:identifier "MI06",
         "nh-c0187" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0006 ;
     schema:text "Tycho Brahes Uraniborg: 1576" .
 
 nh:nh-c0188 a schema:Claim ;
     dcterms:identifier "MI07",
         "nh-c0188" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0007 ;
     schema:text "Rømer mäter ljusets hastighet: 1676" .
 
 nh:nh-c0189 a schema:Claim ;
     dcterms:identifier "MI08",
         "nh-c0189" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0008 ;
     schema:text "Linnés Systema Naturae: 1735" .
 
 nh:nh-c0190 a schema:Claim ;
     dcterms:identifier "MI09",
         "nh-c0190" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0009 ;
     schema:text "Celsiusskalan: 1742" .
 
 nh:nh-c0191 a schema:Claim ;
     dcterms:identifier "MI10",
         "nh-c0191" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0010 ;
     schema:text "Tryckfrihetsförordningen: 1766" .
 
 nh:nh-c0192 a schema:Claim ;
     dcterms:identifier "MI11",
         "nh-c0192" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0011 ;
     schema:text "Justitieombudsmannen: 1809" .
 
 nh:nh-c0193 a schema:Claim ;
     dcterms:identifier "MI12",
         "nh-c0193" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0012 ;
     schema:text "Kalevala: 1835" .
 
 nh:nh-c0194 a schema:Claim ;
     dcterms:identifier "MI13",
         "nh-c0194" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0013 ;
     schema:text "Nobels dynamit: 1867" .
 
 nh:nh-c0195 a schema:Claim ;
     dcterms:identifier "MI14",
         "nh-c0195" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0014 ;
     schema:text "Nansen över Grönland: 1888" .
 
 nh:nh-c0196 a schema:Claim ;
     dcterms:identifier "MI15",
         "nh-c0196" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0015 ;
     schema:text "Nobelpriset: 1901" .
 
 nh:nh-c0197 a schema:Claim ;
     dcterms:identifier "MI16",
         "nh-c0197" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0016 ;
     schema:text "Kvinnlig rösträtt och valbarhet: 1906" .
 
 nh:nh-c0198 a schema:Claim ;
     dcterms:identifier "MI17",
         "nh-c0198" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0017 ;
     schema:text "Amundsen på Sydpolen: 1911" .
 
 nh:nh-c0199 a schema:Claim ;
     dcterms:identifier "MI18",
         "nh-c0199" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0018 ;
     schema:text "Bohrs atommodell: 1913" .
 
 nh:nh-c0200 a schema:Claim ;
     dcterms:identifier "MI19",
         "nh-c0200" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0019 ;
     schema:text "Första samiska landsmötet: 1917" .
 
 nh:nh-c0201 a schema:Claim ;
     dcterms:identifier "MI20",
         "nh-c0201" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0020 ;
     schema:text "Tetra Pak: 1952" .
 
 nh:nh-c0202 a schema:Claim ;
     dcterms:identifier "MI21",
         "nh-c0202" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0021 ;
     schema:text "LEGO-klossen: 1958" .
 
 nh:nh-c0203 a schema:Claim ;
     dcterms:identifier "MI22",
         "nh-c0203" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0022 ;
     schema:text "Pacemakern: 1958" .
 
 nh:nh-c0204 a schema:Claim ;
     dcterms:identifier "MI23",
         "nh-c0204" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0023 ;
     schema:text "Trepunktsbältet: 1959" .
 
 nh:nh-c0205 a schema:Claim ;
     dcterms:identifier "MI24",
         "nh-c0205" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0024 ;
     schema:text "Ekofiskfyndet: 1969" .
 
 nh:nh-c0206 a schema:Claim ;
     dcterms:identifier "MI25",
         "nh-c0206" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0025 ;
     schema:text "Linux: 1991" .
 
 nh:nh-c0207 a schema:Claim ;
     dcterms:identifier "MI26",
         "nh-c0207" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0026 ;
     schema:text "Spotify: 2008" .
 
@@ -5179,6 +5386,10 @@ nh:nh-m0026 a crm:E5_Event,
 
 <https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> schema:name "Statens historiska museer – Mesolitikum" .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/#uppgiftstyper> a skos:ConceptScheme ;
+    skos:prefLabel "Typer av kontrollerade uppgifter"@sv ;
+    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> .
+
 nh:nh-p0001 a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "nh-p0001" ;
@@ -5691,6 +5902,10 @@ nh:nh-p0056 a crm:E4_Period,
         "Lex: mesolitikum; Nationalmuseet: The Mesolithic period" .
 
 <https://lex.dk/romersk_jernalder> schema:name "Lex.dk: romersk jernalder" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> a skos:Concept ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#uppgiftstyper> ;
+    skos:prefLabel "Händelse och årtal"@sv .
 
 nh:nh-p0004 a crm:E4_Period,
         skos:Concept ;
@@ -6337,31 +6552,6 @@ nh:nh-p0068 a crm:E4_Period,
 
 <https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> a schema:Dataset ;
-    schema:creator [ a schema:Person ;
-            schema:name "Kerstin Forsberg" ;
-            schema:url <https://kerfors.github.io/> ] ;
-    schema:description "Perioder, händelser och milstolpar i Nordens historia, med en källkontroll per uppgift." ;
-    schema:distribution [ a schema:DataDownload ;
-            schema:contentUrl nh:index.ttl ;
-            schema:encodingFormat "text/turtle" ],
-        [ a schema:DataDownload ;
-            schema:contentUrl nh:index.jsonld ;
-            schema:encodingFormat "application/ld+json" ] ;
-    schema:inLanguage "sv" ;
-    schema:isBasedOn [ a schema:CreativeWork ;
-            schema:creator [ a schema:Organization ;
-                    schema:name "Chart Origin" ;
-                    schema:url <https://chartorigin.com> ] ;
-            schema:image [ a schema:ImageObject ;
-                    schema:contentUrl <https://media.licdn.com/dms/image/v2/D4E22AQHrvGeeC1Ylvg/feedshare-shrink_480/B4EaFEPazcKoAg-/0/1792146255419?e=1793836800&v=beta&t=dkVaqlOlNRKleqIJVH9ou7Dd-xSD3iDiva5qpIxfqi4> ;
-                    schema:description "Signerad LinkedIn-länk, giltig till 2026-11-05." ] ;
-            schema:name "Timeline of World History" ;
-            schema:url <https://lnkd.in/p/ePw54Bpe> ] ;
-    schema:license <https://creativecommons.org/licenses/by/4.0/> ;
-    schema:name "Nordens historia – en tidslinje" ;
-    schema:url <https://kerfors.github.io/sidospar/nordens-historia/> .
-
 <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-uppslagsverket> a skos:ConceptScheme ;
     skos:prefLabel "Periodindelning enligt Uppslagsverket Finland"@sv ;
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
@@ -6460,6 +6650,31 @@ nh:nh-p0064 a crm:E4_Period,
     schema:name "Danmark–Norge" ;
     schema:temporalCoverage "1523/1660" .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> a schema:Dataset ;
+    schema:creator [ a schema:Person ;
+            schema:name "Kerstin Forsberg" ;
+            schema:url <https://kerfors.github.io/> ] ;
+    schema:description "Perioder, händelser och milstolpar i Nordens historia, med en källkontroll per uppgift." ;
+    schema:distribution [ a schema:DataDownload ;
+            schema:contentUrl nh:index.jsonld ;
+            schema:encodingFormat "application/ld+json" ],
+        [ a schema:DataDownload ;
+            schema:contentUrl nh:index.ttl ;
+            schema:encodingFormat "text/turtle" ] ;
+    schema:inLanguage "sv" ;
+    schema:isBasedOn [ a schema:CreativeWork ;
+            schema:creator [ a schema:Organization ;
+                    schema:name "Chart Origin" ;
+                    schema:url <https://chartorigin.com> ] ;
+            schema:image [ a schema:ImageObject ;
+                    schema:contentUrl <https://media.licdn.com/dms/image/v2/D4E22AQHrvGeeC1Ylvg/feedshare-shrink_480/B4EaFEPazcKoAg-/0/1792146255419?e=1793836800&v=beta&t=dkVaqlOlNRKleqIJVH9ou7Dd-xSD3iDiva5qpIxfqi4> ;
+                    schema:description "Signerad LinkedIn-länk, giltig till 2026-11-05." ] ;
+            schema:name "Timeline of World History" ;
+            schema:url <https://lnkd.in/p/ePw54Bpe> ] ;
+    schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+    schema:name "Nordens historia – en tidslinje" ;
+    schema:url <https://kerfors.github.io/sidospar/nordens-historia/> .
+
 nh:nh-p0036 a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "nh-p0036" ;
@@ -6554,11 +6769,19 @@ wd:Q62132 schema:name "Sápmi" .
     schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
     schema:url <https://snl.no/> .
 
+<https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> a skos:Concept ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#uppgiftstyper> ;
+    skos:prefLabel "Milstolpe och årtal"@sv .
+
 <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
 
 wd:Q189 schema:name "Island" .
 
 wd:Q33 schema:name "Finland" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> a skos:Concept ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#uppgiftstyper> ;
+    skos:prefLabel "Periodens namn och gränser"@sv .
 
 wd:Q20 schema:name "Norge" .
 
@@ -6572,6 +6795,10 @@ wd:Q20 schema:name "Norge" .
 wd:Q35 schema:name "Danmark" .
 
 wd:Q34 schema:name "Sverige" .
+
+<https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> a skos:Concept ;
+    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#uppgiftstyper> ;
+    skos:prefLabel "Detalj i en periods beskrivning"@sv .
 
 <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> a prov:Activity ;
     prov:startedAtTime "2026-10-18"^^xsd:date ;

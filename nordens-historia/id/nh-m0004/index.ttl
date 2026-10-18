@@ -24,6 +24,7 @@
 nh:nh-c0185 a schema:Claim ;
     dcterms:identifier "MI04",
         "nh-c0185" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0004 ;
     schema:text "Uppsala universitet: 1477" .
 

@@ -50,6 +50,7 @@
 nh:nh-c0050 a schema:Claim ;
     dcterms:identifier "NO08",
         "nh-c0050" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0022 ;
     schema:text "Period 'Riket konsolideras': 1066 – 1130" .
 
@@ -67,12 +68,14 @@ nh:nh-c0050 a schema:Claim ;
 nh:nh-c0051 a schema:Claim ;
     dcterms:identifier "NO09",
         "nh-c0051" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0022 ;
     schema:text "Olav Kyrre" .
 
 nh:nh-c0052 a schema:Claim ;
     dcterms:identifier "NO10",
         "nh-c0052" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0022 ;
     schema:text "Bergen växer fram" .
 

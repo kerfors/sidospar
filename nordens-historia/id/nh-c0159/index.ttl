@@ -23,6 +23,7 @@
 nh:nh-c0159 a schema:Claim ;
     dcterms:identifier "GE30",
         "nh-c0159" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0066 ;
     schema:text "Period 'Vasatiden': 1523 – 1611" .
 

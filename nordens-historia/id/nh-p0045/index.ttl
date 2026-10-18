@@ -61,6 +61,7 @@
 nh:nh-c0102 a schema:Claim ;
     dcterms:identifier "FI14",
         "nh-c0102" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0045 ;
     schema:text "Period 'Storfurstendömet Finland': 1809 – 1917" .
 
@@ -78,18 +79,21 @@ nh:nh-c0102 a schema:Claim ;
 nh:nh-c0103 a schema:Claim ;
     dcterms:identifier "FI15",
         "nh-c0103" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0045 ;
     schema:text "Under Ryssland efter freden i Fredrikshamn" .
 
 nh:nh-c0104 a schema:Claim ;
     dcterms:identifier "FI16",
         "nh-c0104" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0045 ;
     schema:text "Borgå lantdag 1809" .
 
 nh:nh-c0105 a schema:Claim ;
     dcterms:identifier "FI17",
         "nh-c0105" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0045 ;
     schema:text "enkammarlantdag och kvinnlig rösträtt 1906" .
 

@@ -21,6 +21,7 @@
 nh:nh-c0054 a schema:Claim ;
     dcterms:identifier "NO12",
         "nh-c0054" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0023 ;
     schema:text "Ärkesäte i Nidaros 1152/53" .
 

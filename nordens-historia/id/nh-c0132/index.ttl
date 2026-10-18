@@ -21,6 +21,7 @@
 nh:nh-c0132 a schema:Claim ;
     dcterms:identifier "GE03",
         "nh-c0132" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0055 ;
     schema:text "hällristningarna i Tanum" .
 

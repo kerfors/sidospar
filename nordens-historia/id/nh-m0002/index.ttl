@@ -24,6 +24,7 @@
 nh:nh-c0183 a schema:Claim ;
     dcterms:identifier "MI02",
         "nh-c0183" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0002 ;
     schema:text "Jellingestenen: 965" .
 

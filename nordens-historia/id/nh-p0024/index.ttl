@@ -61,6 +61,7 @@
 nh:nh-c0056 a schema:Claim ;
     dcterms:identifier "NO14",
         "nh-c0056" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0024 ;
     schema:text "Period 'Storhetstiden': 1240 – 1319" .
 
@@ -78,18 +79,21 @@ nh:nh-c0056 a schema:Claim ;
 nh:nh-c0057 a schema:Claim ;
     dcterms:identifier "NO15",
         "nh-c0057" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0024 ;
     schema:text "Håkon IV" .
 
 nh:nh-c0058 a schema:Claim ;
     dcterms:identifier "NO16",
         "nh-c0058" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0024 ;
     schema:text "Grönland 1261, Island 1262–64" .
 
 nh:nh-c0059 a schema:Claim ;
     dcterms:identifier "NO17",
         "nh-c0059" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0024 ;
     schema:text "Magnus Lagabøtes landslov 1274" .
 

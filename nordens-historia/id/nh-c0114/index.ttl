@@ -21,6 +21,7 @@
 nh:nh-c0114 a schema:Claim ;
     dcterms:identifier "FI26",
         "nh-c0114" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0048 ;
     schema:text "Nato 2023" .
 

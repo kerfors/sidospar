@@ -51,6 +51,7 @@
 nh:nh-c0170 a schema:Claim ;
     dcterms:identifier "GE41",
         "nh-c0170" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0069 ;
     schema:text "Period 'Gustavianska tiden': 1772 – 1809" .
 
@@ -68,12 +69,14 @@ nh:nh-c0170 a schema:Claim ;
 nh:nh-c0171 a schema:Claim ;
     dcterms:identifier "GE42",
         "nh-c0171" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0069 ;
     schema:text "Gustav III:s statskupp 1772" .
 
 nh:nh-c0172 a schema:Claim ;
     dcterms:identifier "GE43",
         "nh-c0172" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0069 ;
     schema:text "finska kriget 1808–09" .
 

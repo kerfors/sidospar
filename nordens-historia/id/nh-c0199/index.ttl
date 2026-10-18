@@ -21,6 +21,7 @@
 nh:nh-c0199 a schema:Claim ;
     dcterms:identifier "MI18",
         "nh-c0199" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0018 ;
     schema:text "Bohrs atommodell: 1913" .
 

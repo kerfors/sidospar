@@ -50,6 +50,7 @@
 nh:nh-c0065 a schema:Claim ;
     dcterms:identifier "NO23",
         "nh-c0065" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0027 ;
     schema:text "Period 'Olja och välfärd': 1945 – 2026" .
 
@@ -67,12 +68,14 @@ nh:nh-c0065 a schema:Claim ;
 nh:nh-c0066 a schema:Claim ;
     dcterms:identifier "NO24",
         "nh-c0066" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0027 ;
     schema:text "Ekofisk 1969" .
 
 nh:nh-c0067 a schema:Claim ;
     dcterms:identifier "NO25",
         "nh-c0067" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0027 ;
     schema:text "nej till EG/EU 1972 och 1994" .
 

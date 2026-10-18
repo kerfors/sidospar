@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -182,7 +185,8 @@
     {
      "@id": "nh:nh-p0011"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0028#granskning",
@@ -216,7 +220,8 @@
     {
      "@id": "nh:nh-p0011"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0029#granskning",
@@ -250,7 +255,8 @@
     {
      "@id": "nh:nh-p0011"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0030#granskning",
@@ -399,6 +405,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -502,7 +511,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0011&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0028#granskning&quot;,
@@ -536,7 +546,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0011&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0029#granskning&quot;,
@@ -570,7 +581,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0011&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0030#granskning&quot;,
@@ -646,6 +658,7 @@
 nh:nh-c0028 a schema:Claim ;
     dcterms:identifier &quot;DA12&quot;,
         &quot;nh-c0028&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0011 ;
     schema:text &quot;Period &#x27;Valdemarstiden&#x27;: 1157 – 1241&quot; .
 
@@ -663,12 +676,14 @@ nh:nh-c0028 a schema:Claim ;
 nh:nh-c0029 a schema:Claim ;
     dcterms:identifier &quot;DA13&quot;,
         &quot;nh-c0029&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0011 ;
     schema:text &quot;Absalon och Köpenhamn&quot; .
 
 nh:nh-c0030 a schema:Claim ;
     dcterms:identifier &quot;DA14&quot;,
         &quot;nh-c0030&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0011 ;
     schema:text &quot;Jyske Lov 1241&quot; .
 

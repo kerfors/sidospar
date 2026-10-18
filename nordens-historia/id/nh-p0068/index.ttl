@@ -52,6 +52,7 @@
 nh:nh-c0167 a schema:Claim ;
     dcterms:identifier "GE38",
         "nh-c0167" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0068 ;
     schema:text "Period 'Frihetstiden': 1718 – 1772" .
 
@@ -71,12 +72,14 @@ nh:nh-c0167 a schema:Claim ;
 nh:nh-c0168 a schema:Claim ;
     dcterms:identifier "GE39",
         "nh-c0168" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0068 ;
     schema:text "Riksdagsstyre" .
 
 nh:nh-c0169 a schema:Claim ;
     dcterms:identifier "GE40",
         "nh-c0169" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0068 ;
     schema:text "hattar och mössor" .
 

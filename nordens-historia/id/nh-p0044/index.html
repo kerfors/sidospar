@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -162,7 +165,8 @@
     {
      "@id": "nh:nh-p0044"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0099#granskning",
@@ -201,7 +205,8 @@
     {
      "@id": "nh:nh-p0044"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0101#granskning",
@@ -347,6 +352,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -430,7 +438,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0044&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0099#granskning&quot;,
@@ -469,7 +478,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0044&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0101#granskning&quot;,
@@ -535,6 +545,7 @@
 nh:nh-c0099 a schema:Claim ;
     dcterms:identifier &quot;FI11&quot;,
         &quot;nh-c0099&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0043,
         nh:nh-p0044 ;
     schema:text &quot;Period &#x27;Korstågstid&#x27;: 1025 – 1319&quot; .
@@ -542,6 +553,7 @@ nh:nh-c0099 a schema:Claim ;
 nh:nh-c0101 a schema:Claim ;
     dcterms:identifier &quot;FI13&quot;,
         &quot;nh-c0101&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0044 ;
     schema:text &quot;Åbo domkyrka invigs 1300&quot; .
 

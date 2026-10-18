@@ -24,6 +24,7 @@
 nh:nh-c0203 a schema:Claim ;
     dcterms:identifier "MI22",
         "nh-c0203" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0022 ;
     schema:text "Pacemakern: 1958" .
 

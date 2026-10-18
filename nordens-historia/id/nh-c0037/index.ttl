@@ -21,6 +21,7 @@
 nh:nh-c0037 a schema:Claim ;
     dcterms:identifier "DA21",
         "nh-c0037" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0015 ;
     schema:text "Grundloven 1849" .
 

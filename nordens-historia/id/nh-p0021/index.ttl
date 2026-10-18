@@ -52,6 +52,7 @@
 nh:nh-c0047 a schema:Claim ;
     dcterms:identifier "NO05",
         "nh-c0047" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0021 ;
     schema:text "Period 'Vikingatid': 793 – 1066" .
 
@@ -69,12 +70,14 @@ nh:nh-c0047 a schema:Claim ;
 nh:nh-c0048 a schema:Claim ;
     dcterms:identifier "NO06",
         "nh-c0048" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0021 ;
     schema:text "Hafrsfjord c. 872" .
 
 nh:nh-c0049 a schema:Claim ;
     dcterms:identifier "NO07",
         "nh-c0049" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0021 ;
     schema:text "Stiklestad 1030" .
 

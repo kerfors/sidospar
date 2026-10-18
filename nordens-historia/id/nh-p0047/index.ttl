@@ -39,6 +39,7 @@
 nh:nh-c0110 a schema:Claim ;
     dcterms:identifier "FI22",
         "nh-c0110" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0047 ;
     schema:text "Period 'Krigsåren': 1939 – 1945" .
 
@@ -56,6 +57,7 @@ nh:nh-c0110 a schema:Claim ;
 nh:nh-c0111 a schema:Claim ;
     dcterms:identifier "FI23",
         "nh-c0111" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0047 ;
     schema:text "Vinter-, fortsättnings- och Lapplandskriget" .
 

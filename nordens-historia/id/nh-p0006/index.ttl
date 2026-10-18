@@ -50,6 +50,7 @@
 nh:nh-c0014 a schema:Claim ;
     dcterms:identifier "IS14",
         "nh-c0014" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0006 ;
     schema:text "Period 'Republiken Island': 1944 – 2026" .
 
@@ -67,12 +68,14 @@ nh:nh-c0014 a schema:Claim ;
 nh:nh-c0015 a schema:Claim ;
     dcterms:identifier "IS15",
         "nh-c0015" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0006 ;
     schema:text "Utropas 17 juni 1944" .
 
 nh:nh-c0016 a schema:Claim ;
     dcterms:identifier "IS16",
         "nh-c0016" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0006 ;
     schema:text "Nato 1949" .
 

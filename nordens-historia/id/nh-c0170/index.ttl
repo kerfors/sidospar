@@ -21,6 +21,7 @@
 nh:nh-c0170 a schema:Claim ;
     dcterms:identifier "GE41",
         "nh-c0170" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0069 ;
     schema:text "Period 'Gustavianska tiden': 1772 – 1809" .
 

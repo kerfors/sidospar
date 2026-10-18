@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -182,7 +185,8 @@
     {
      "@id": "nh:nh-p0008"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0019#granskning",
@@ -216,7 +220,8 @@
     {
      "@id": "nh:nh-p0008"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0020#granskning",
@@ -250,7 +255,8 @@
     {
      "@id": "nh:nh-p0008"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0021#granskning",
@@ -399,6 +405,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -502,7 +511,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0008&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0019#granskning&quot;,
@@ -536,7 +546,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0008&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0020#granskning&quot;,
@@ -570,7 +581,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0008&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0021#granskning&quot;,
@@ -646,6 +658,7 @@
 nh:nh-c0019 a schema:Claim ;
     dcterms:identifier &quot;DA03&quot;,
         &quot;nh-c0019&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0008 ;
     schema:text &quot;Period &#x27;Bondestenålder&#x27;: 3 900 f.Kr. – 1 700 f.Kr.&quot; .
 
@@ -663,12 +676,14 @@ nh:nh-c0019 a schema:Claim ;
 nh:nh-c0020 a schema:Claim ;
     dcterms:identifier &quot;DA04&quot;,
         &quot;nh-c0020&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0008 ;
     schema:text &quot;Trattbägarkultur&quot; .
 
 nh:nh-c0021 a schema:Claim ;
     dcterms:identifier &quot;DA05&quot;,
         &quot;nh-c0021&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0008 ;
     schema:text &quot;dösar och gånggrifter&quot; .
 

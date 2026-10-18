@@ -40,6 +40,7 @@
 nh:nh-c0026 a schema:Claim ;
     dcterms:identifier "DA10",
         "nh-c0026" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0010 ;
     schema:text "Period 'Tidig medeltid': 1066 – 1157" .
 
@@ -59,6 +60,7 @@ nh:nh-c0026 a schema:Claim ;
 nh:nh-c0027 a schema:Claim ;
     dcterms:identifier "DA11",
         "nh-c0027" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0010 ;
     schema:text "Ärkesäte i Lund 1103/04" .
 

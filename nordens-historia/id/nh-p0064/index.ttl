@@ -65,6 +65,7 @@
 nh:nh-c0153 a schema:Claim ;
     dcterms:identifier "GE24",
         "nh-c0153" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0064 ;
     schema:text "Period 'Danmark–Norge': 1523 – 1660" .
 
@@ -82,18 +83,21 @@ nh:nh-c0153 a schema:Claim ;
 nh:nh-c0154 a schema:Claim ;
     dcterms:identifier "GE25",
         "nh-c0154" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0064 ;
     schema:text "Reformationen 1536" .
 
 nh:nh-c0155 a schema:Claim ;
     dcterms:identifier "GE26",
         "nh-c0155" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0064 ;
     schema:text "Norges riksråd avskaffas 1537" .
 
 nh:nh-c0156 a schema:Claim ;
     dcterms:identifier "GE27",
         "nh-c0156" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0064 ;
     schema:text "Kristian IV" .
 

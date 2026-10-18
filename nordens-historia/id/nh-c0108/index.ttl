@@ -21,6 +21,7 @@
 nh:nh-c0108 a schema:Claim ;
     dcterms:identifier "FI20",
         "nh-c0108" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0046 ;
     schema:text "inbördeskriget 1918" .
 

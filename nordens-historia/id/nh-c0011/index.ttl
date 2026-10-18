@@ -21,6 +21,7 @@
 nh:nh-c0011 a schema:Claim ;
     dcterms:identifier "IS11",
         "nh-c0011" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0004 ;
     schema:text "hemmastyre 1904" .
 

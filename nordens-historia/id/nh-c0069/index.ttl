@@ -23,6 +23,7 @@
 nh:nh-c0069 a schema:Claim ;
     dcterms:identifier "SV02",
         "nh-c0069" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0028 ;
     schema:text "Inlandsisen drar sig tillbaka" .
 

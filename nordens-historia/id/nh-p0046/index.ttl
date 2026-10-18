@@ -61,6 +61,7 @@
 nh:nh-c0106 a schema:Claim ;
     dcterms:identifier "FI18",
         "nh-c0106" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0046 ;
     schema:text "Period 'Självständigt Finland': 1917 – 1939" .
 
@@ -78,18 +79,21 @@ nh:nh-c0106 a schema:Claim ;
 nh:nh-c0107 a schema:Claim ;
     dcterms:identifier "FI19",
         "nh-c0107" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0046 ;
     schema:text "6 dec 1917" .
 
 nh:nh-c0108 a schema:Claim ;
     dcterms:identifier "FI20",
         "nh-c0108" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0046 ;
     schema:text "inbördeskriget 1918" .
 
 nh:nh-c0109 a schema:Claim ;
     dcterms:identifier "FI21",
         "nh-c0109" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0046 ;
     schema:text "republik 1919" .
 

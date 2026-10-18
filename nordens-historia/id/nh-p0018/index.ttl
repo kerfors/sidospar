@@ -50,6 +50,7 @@
 nh:nh-c0040 a schema:Claim ;
     dcterms:identifier "DA24",
         "nh-c0040" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0017,
         nh:nh-p0018 ;
     schema:text "Period 'Välfärdsstat': 1945 – 2026" .
@@ -57,12 +58,14 @@ nh:nh-c0040 a schema:Claim ;
 nh:nh-c0041 a schema:Claim ;
     dcterms:identifier "DA25",
         "nh-c0041" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0018 ;
     schema:text "EG 1973" .
 
 nh:nh-c0042 a schema:Claim ;
     dcterms:identifier "DA26",
         "nh-c0042" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0018 ;
     schema:text "Grönlands hjemmestyre 1979" .
 

@@ -21,6 +21,7 @@
 nh:nh-c0085 a schema:Claim ;
     dcterms:identifier "SV18",
         "nh-c0085" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0035 ;
     schema:text "neutralitet under andra världskriget" .
 

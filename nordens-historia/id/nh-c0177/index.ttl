@@ -21,6 +21,7 @@
 nh:nh-c0177 a schema:Claim ;
     dcterms:identifier "GE48",
         "nh-c0177" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> ;
     schema:about nh:nh-e0002 ;
     schema:text "1520 Stockholms blodbad" .
 

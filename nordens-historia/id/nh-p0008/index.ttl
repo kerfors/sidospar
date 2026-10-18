@@ -50,6 +50,7 @@
 nh:nh-c0019 a schema:Claim ;
     dcterms:identifier "DA03",
         "nh-c0019" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0008 ;
     schema:text "Period 'Bondestenålder': 3 900 f.Kr. – 1 700 f.Kr." .
 
@@ -67,12 +68,14 @@ nh:nh-c0019 a schema:Claim ;
 nh:nh-c0020 a schema:Claim ;
     dcterms:identifier "DA04",
         "nh-c0020" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0008 ;
     schema:text "Trattbägarkultur" .
 
 nh:nh-c0021 a schema:Claim ;
     dcterms:identifier "DA05",
         "nh-c0021" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0008 ;
     schema:text "dösar och gånggrifter" .
 

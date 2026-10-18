@@ -21,6 +21,7 @@
 nh:nh-c0131 a schema:Claim ;
     dcterms:identifier "GE02",
         "nh-c0131" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0055 ;
     schema:text "Solvagnen från Trundholm" .
 

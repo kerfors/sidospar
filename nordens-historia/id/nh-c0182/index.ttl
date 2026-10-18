@@ -21,6 +21,7 @@
 nh:nh-c0182 a schema:Claim ;
     dcterms:identifier "MI01",
         "nh-c0182" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0001 ;
     schema:text "Alltinget instiftas: 930" .
 

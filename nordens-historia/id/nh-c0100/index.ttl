@@ -21,6 +21,7 @@
 nh:nh-c0100 a schema:Claim ;
     dcterms:identifier "FI12",
         "nh-c0100" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0043 ;
     schema:text "Svensk expansion österut" .
 

@@ -23,6 +23,7 @@
 nh:nh-c0005 a schema:Claim ;
     dcterms:identifier "IS05",
         "nh-c0005" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0002 ;
     schema:text "kristendomen antas år 1000" .
 

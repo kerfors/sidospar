@@ -61,24 +61,28 @@
 nh:nh-c0145 a schema:Claim ;
     dcterms:identifier "GE16",
         "nh-c0145" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0061 ;
     schema:text "Period 'Sverige med Finland': 1343 – 1397" .
 
 nh:nh-c0146 a schema:Claim ;
     dcterms:identifier "GE17",
         "nh-c0146" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "Magnus Erikssons landslag" .
 
 nh:nh-c0147 a schema:Claim ;
     dcterms:identifier "GE18",
         "nh-c0147" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "digerdöden 1350" .
 
 nh:nh-c0148 a schema:Claim ;
     dcterms:identifier "GE19",
         "nh-c0148" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "Albrekt av Mecklenburg 1364–89" .
 

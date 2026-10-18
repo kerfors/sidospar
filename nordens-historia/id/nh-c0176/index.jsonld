@@ -70,6 +70,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -114,7 +117,8 @@
     {
      "@id": "nh:nh-e0001"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-handelse"
   },
   {
    "@id": "nh:nh-c0176#granskning",

@@ -50,6 +50,7 @@
 nh:nh-c0112 a schema:Claim ;
     dcterms:identifier "FI24",
         "nh-c0112" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0048 ;
     schema:text "Period 'Efterkrigstid': 1945 – 2026" .
 
@@ -70,12 +71,14 @@ nh:nh-c0112 a schema:Claim ;
 nh:nh-c0113 a schema:Claim ;
     dcterms:identifier "FI25",
         "nh-c0113" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0048 ;
     schema:text "EU 1995" .
 
 nh:nh-c0114 a schema:Claim ;
     dcterms:identifier "FI26",
         "nh-c0114" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0048 ;
     schema:text "Nato 2023" .
 

@@ -23,6 +23,7 @@
 nh:nh-c0070 a schema:Claim ;
     dcterms:identifier "SV03",
         "nh-c0070" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0028 ;
     schema:text "Hensbackakultur på Västkusten" .
 

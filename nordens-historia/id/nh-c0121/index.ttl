@@ -23,6 +23,7 @@
 nh:nh-c0121 a schema:Claim ;
     dcterms:identifier "SÁ07",
         "nh-c0121" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0051 ;
     schema:text "Period 'Siidasamhällen': 800 – 1550" .
 

@@ -52,6 +52,7 @@
 nh:nh-c0009 a schema:Claim ;
     dcterms:identifier "IS09",
         "nh-c0009" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0004 ;
     schema:text "Period 'Under danska kronan': 1814 – 1918" .
 
@@ -71,12 +72,14 @@ nh:nh-c0009 a schema:Claim ;
 nh:nh-c0010 a schema:Claim ;
     dcterms:identifier "IS10",
         "nh-c0010" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0004 ;
     schema:text "Alltinget återupprättas 1845" .
 
 nh:nh-c0011 a schema:Claim ;
     dcterms:identifier "IS11",
         "nh-c0011" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0004 ;
     schema:text "hemmastyre 1904" .
 

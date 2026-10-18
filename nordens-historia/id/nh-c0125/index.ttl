@@ -21,6 +21,7 @@
 nh:nh-c0125 a schema:Claim ;
     dcterms:identifier "SÁ11",
         "nh-c0125" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0052 ;
     schema:text "Lappmarksplakatet 1673" .
 

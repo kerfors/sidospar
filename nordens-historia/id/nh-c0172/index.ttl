@@ -21,6 +21,7 @@
 nh:nh-c0172 a schema:Claim ;
     dcterms:identifier "GE43",
         "nh-c0172" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0069 ;
     schema:text "finska kriget 1808–09" .
 

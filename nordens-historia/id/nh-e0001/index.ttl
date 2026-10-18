@@ -25,6 +25,7 @@
 nh:nh-c0176 a schema:Claim ;
     dcterms:identifier "GE47",
         "nh-c0176" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> ;
     schema:about nh:nh-e0001 ;
     schema:text "793 Lindisfarne – vikingatiden börjar" .
 

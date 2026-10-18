@@ -21,6 +21,7 @@
 nh:nh-c0200 a schema:Claim ;
     dcterms:identifier "MI19",
         "nh-c0200" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0019 ;
     schema:text "Första samiska landsmötet: 1917" .
 

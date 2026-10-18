@@ -24,6 +24,7 @@
 nh:nh-c0089 a schema:Claim ;
     dcterms:identifier "FI01",
         "nh-c0089" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0037 ;
     schema:text "Period 'Suomusjärvikultur': 8 900 f.Kr. – 5 100 f.Kr." .
 

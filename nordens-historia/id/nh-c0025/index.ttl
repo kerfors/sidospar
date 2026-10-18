@@ -23,6 +23,7 @@
 nh:nh-c0025 a schema:Claim ;
     dcterms:identifier "DA09",
         "nh-c0025" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0009 ;
     schema:text "Knut den stores nordsjövälde 1016–35" .
 

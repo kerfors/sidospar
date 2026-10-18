@@ -21,6 +21,7 @@
 nh:nh-c0144 a schema:Claim ;
     dcterms:identifier "GE15",
         "nh-c0144" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0060 ;
     schema:text "Freden i Nöteborg 1323" .
 

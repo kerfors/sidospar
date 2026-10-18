@@ -24,6 +24,7 @@
 nh:nh-c0198 a schema:Claim ;
     dcterms:identifier "MI17",
         "nh-c0198" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0017 ;
     schema:text "Amundsen på Sydpolen: 1911" .
 

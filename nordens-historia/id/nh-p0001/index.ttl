@@ -40,6 +40,7 @@
 nh:nh-c0001 a schema:Claim ;
     dcterms:identifier "IS01",
         "nh-c0001" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0001 ;
     schema:text "Period 'Landnámstiden': 874 – 930" .
 
@@ -59,6 +60,7 @@ nh:nh-c0001 a schema:Claim ;
 nh:nh-c0002 a schema:Claim ;
     dcterms:identifier "IS02",
         "nh-c0002" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0001 ;
     schema:text "Ingólfur Arnarson i Reykjavík" .
 

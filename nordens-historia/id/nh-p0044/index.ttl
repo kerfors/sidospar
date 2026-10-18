@@ -40,6 +40,7 @@
 nh:nh-c0099 a schema:Claim ;
     dcterms:identifier "FI11",
         "nh-c0099" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0043,
         nh:nh-p0044 ;
     schema:text "Period 'Korstågstid': 1025 – 1319" .
@@ -47,6 +48,7 @@ nh:nh-c0099 a schema:Claim ;
 nh:nh-c0101 a schema:Claim ;
     dcterms:identifier "FI13",
         "nh-c0101" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0044 ;
     schema:text "Åbo domkyrka invigs 1300" .
 

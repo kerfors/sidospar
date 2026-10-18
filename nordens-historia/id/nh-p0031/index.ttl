@@ -51,6 +51,7 @@
 nh:nh-c0076 a schema:Claim ;
     dcterms:identifier "SV09",
         "nh-c0076" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0031 ;
     schema:text "Period 'Riket växer fram': 1066 – 1250" .
 
@@ -71,12 +72,14 @@ nh:nh-c0076 a schema:Claim ;
 nh:nh-c0077 a schema:Claim ;
     dcterms:identifier "SV10",
         "nh-c0077" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0031 ;
     schema:text "Erikska och sverkerska ätterna" .
 
 nh:nh-c0078 a schema:Claim ;
     dcterms:identifier "SV11",
         "nh-c0078" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0031 ;
     schema:text "ärkesäte i Uppsala 1164" .
 

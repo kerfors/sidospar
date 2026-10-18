@@ -23,6 +23,7 @@
 nh:nh-c0043 a schema:Claim ;
     dcterms:identifier "NO01",
         "nh-c0043" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0019 ;
     schema:text "Period 'Jägarstenålder': 9 500 f.Kr. – 4 000 f.Kr." .
 

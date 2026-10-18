@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -196,7 +199,8 @@
     {
      "@id": "nh:nh-p0063"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0150#granskning",
@@ -230,7 +234,8 @@
     {
      "@id": "nh:nh-p0063"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0151#granskning",
@@ -264,7 +269,8 @@
     {
      "@id": "nh:nh-p0063"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0152#granskning",
@@ -413,6 +419,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -530,7 +539,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0063&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0150#granskning&quot;,
@@ -564,7 +574,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0063&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0151#granskning&quot;,
@@ -598,7 +609,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0063&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0152#granskning&quot;,
@@ -678,6 +690,7 @@
 nh:nh-c0150 a schema:Claim ;
     dcterms:identifier &quot;GE21&quot;,
         &quot;nh-c0150&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0063 ;
     schema:text &quot;Period &#x27;Kalmarunionen&#x27;: 1397 – 1523&quot; .
 
@@ -695,12 +708,14 @@ nh:nh-c0150 a schema:Claim ;
 nh:nh-c0151 a schema:Claim ;
     dcterms:identifier &quot;GE22&quot;,
         &quot;nh-c0151&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0063 ;
     schema:text &quot;Margareta och Erik av Pommern&quot; .
 
 nh:nh-c0152 a schema:Claim ;
     dcterms:identifier &quot;GE23&quot;,
         &quot;nh-c0152&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0063 ;
     schema:text &quot;Sverige bryter sig ur 1523&quot; .
 

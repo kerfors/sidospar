@@ -21,6 +21,7 @@
 nh:nh-c0066 a schema:Claim ;
     dcterms:identifier "NO24",
         "nh-c0066" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0027 ;
     schema:text "Ekofisk 1969" .
 

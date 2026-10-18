@@ -21,6 +21,7 @@
 nh:nh-c0135 a schema:Claim ;
     dcterms:identifier "GE06",
         "nh-c0135" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0057 ;
     schema:text "Period 'Romersk järnålder': 1 – 400" .
 

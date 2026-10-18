@@ -40,6 +40,7 @@
 nh:nh-c0036 a schema:Claim ;
     dcterms:identifier "DA20",
         "nh-c0036" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0015,
         nh:nh-p0016 ;
     schema:text "Period 'Konstitutionell monarki': 1849 – 1945" .
@@ -60,6 +61,7 @@ nh:nh-c0036 a schema:Claim ;
 nh:nh-c0039 a schema:Claim ;
     dcterms:identifier "DA23",
         "nh-c0039" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0016 ;
     schema:text "Sønderjylland åter 1920" .
 

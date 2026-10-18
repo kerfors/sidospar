@@ -21,6 +21,7 @@
 nh:nh-c0058 a schema:Claim ;
     dcterms:identifier "NO16",
         "nh-c0058" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0024 ;
     schema:text "Grönland 1261, Island 1262–64" .
 

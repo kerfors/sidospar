@@ -25,6 +25,7 @@
 nh:nh-c0178 a schema:Claim ;
     dcterms:identifier "GE49",
         "nh-c0178" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> ;
     schema:about nh:nh-e0003 ;
     schema:text "1658 Roskildefreden – Skånelandskapen och Bohuslän till Sverige" .
 

@@ -21,6 +21,7 @@
 nh:nh-c0207 a schema:Claim ;
     dcterms:identifier "MI26",
         "nh-c0207" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0026 ;
     schema:text "Spotify: 2008" .
 

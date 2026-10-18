@@ -23,6 +23,7 @@
 nh:nh-c0145 a schema:Claim ;
     dcterms:identifier "GE16",
         "nh-c0145" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0061 ;
     schema:text "Period 'Sverige med Finland': 1343 – 1397" .
 

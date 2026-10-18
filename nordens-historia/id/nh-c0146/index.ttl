@@ -21,6 +21,7 @@
 nh:nh-c0146 a schema:Claim ;
     dcterms:identifier "GE17",
         "nh-c0146" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "Magnus Erikssons landslag" .
 

@@ -23,6 +23,7 @@
 nh:nh-c0034 a schema:Claim ;
     dcterms:identifier "DA18",
         "nh-c0034" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0014 ;
     schema:text "Period 'Enväldets sista tid': 1814 – 1849" .
 

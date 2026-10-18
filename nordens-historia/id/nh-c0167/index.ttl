@@ -23,6 +23,7 @@
 nh:nh-c0167 a schema:Claim ;
     dcterms:identifier "GE38",
         "nh-c0167" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0068 ;
     schema:text "Period 'Frihetstiden': 1718 – 1772" .
 

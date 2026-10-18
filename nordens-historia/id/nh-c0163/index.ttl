@@ -21,6 +21,7 @@
 nh:nh-c0163 a schema:Claim ;
     dcterms:identifier "GE34",
         "nh-c0163" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0067 ;
     schema:text "Period 'Stormaktstiden': 1611 – 1718" .
 

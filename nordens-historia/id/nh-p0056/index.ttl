@@ -41,6 +41,7 @@
 nh:nh-c0133 a schema:Claim ;
     dcterms:identifier "GE04",
         "nh-c0133" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0056 ;
     schema:text "Period 'Förromersk järnålder': 500 f.Kr. – 1" .
 
@@ -58,6 +59,7 @@ nh:nh-c0133 a schema:Claim ;
 nh:nh-c0134 a schema:Claim ;
     dcterms:identifier "GE05",
         "nh-c0134" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0056 ;
     schema:text "Hjortspringbåten" .
 

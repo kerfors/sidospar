@@ -21,6 +21,7 @@
 nh:nh-c0171 a schema:Claim ;
     dcterms:identifier "GE42",
         "nh-c0171" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0069 ;
     schema:text "Gustav III:s statskupp 1772" .
 

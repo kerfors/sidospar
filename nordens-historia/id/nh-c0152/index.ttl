@@ -21,6 +21,7 @@
 nh:nh-c0152 a schema:Claim ;
     dcterms:identifier "GE23",
         "nh-c0152" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0063 ;
     schema:text "Sverige bryter sig ur 1523" .
 

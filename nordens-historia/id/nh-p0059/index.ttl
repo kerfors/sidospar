@@ -42,6 +42,7 @@
 nh:nh-c0141 a schema:Claim ;
     dcterms:identifier "GE12",
         "nh-c0141" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0059 ;
     schema:text "Period 'Vendeltid / merovingertid': 550 – 793" .
 
@@ -61,6 +62,7 @@ nh:nh-c0141 a schema:Claim ;
 nh:nh-c0142 a schema:Claim ;
     dcterms:identifier "GE13",
         "nh-c0142" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0059 ;
     schema:text "Gamla Uppsala, Vendel och Valsgärde" .
 

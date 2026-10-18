@@ -23,6 +23,7 @@
 nh:nh-c0161 a schema:Claim ;
     dcterms:identifier "GE32",
         "nh-c0161" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0066 ;
     schema:text "reformationen 1527" .
 

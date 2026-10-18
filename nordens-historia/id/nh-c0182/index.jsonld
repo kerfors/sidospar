@@ -70,6 +70,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -114,7 +117,8 @@
     {
      "@id": "nh:nh-m0001"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0182#granskning",

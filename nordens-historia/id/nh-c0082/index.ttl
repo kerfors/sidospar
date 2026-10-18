@@ -24,6 +24,7 @@
 nh:nh-c0082 a schema:Claim ;
     dcterms:identifier "SV15",
         "nh-c0082" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0033 ;
     schema:text "Period '1809 års regeringsform': 1809 – 1814" .
 

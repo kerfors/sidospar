@@ -21,6 +21,7 @@
 nh:nh-c0106 a schema:Claim ;
     dcterms:identifier "FI18",
         "nh-c0106" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0046 ;
     schema:text "Period 'Självständigt Finland': 1917 – 1939" .
 

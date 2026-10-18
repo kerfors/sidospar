@@ -51,6 +51,7 @@
 nh:nh-c0093 a schema:Claim ;
     dcterms:identifier "FI05",
         "nh-c0093" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0040 ;
     schema:text "Period 'Bronsålder': 1 500 f.Kr. – 500 f.Kr." .
 
@@ -71,12 +72,14 @@ nh:nh-c0093 a schema:Claim ;
 nh:nh-c0094 a schema:Claim ;
     dcterms:identifier "FI06",
         "nh-c0094" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0040 ;
     schema:text "Rösen vid kusten" .
 
 nh:nh-c0095 a schema:Claim ;
     dcterms:identifier "FI07",
         "nh-c0095" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0040 ;
     schema:text "Sammallahdenmäki" .
 

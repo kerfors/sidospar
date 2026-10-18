@@ -21,6 +21,7 @@
 nh:nh-c0030 a schema:Claim ;
     dcterms:identifier "DA14",
         "nh-c0030" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0011 ;
     schema:text "Jyske Lov 1241" .
 

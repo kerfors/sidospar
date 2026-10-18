@@ -40,6 +40,7 @@
 nh:nh-c0031 a schema:Claim ;
     dcterms:identifier "DA15",
         "nh-c0031" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0012,
         nh:nh-p0013 ;
     schema:text "Period 'Kris och återuppbyggnad': 1241 – 1380" .
@@ -60,6 +61,7 @@ nh:nh-c0031 a schema:Claim ;
 nh:nh-c0032 a schema:Claim ;
     dcterms:identifier "DA16",
         "nh-c0032" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0012 ;
     schema:text "Kunglös tid 1332–40" .
 

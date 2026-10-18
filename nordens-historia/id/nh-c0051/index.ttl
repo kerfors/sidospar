@@ -21,6 +21,7 @@
 nh:nh-c0051 a schema:Claim ;
     dcterms:identifier "NO09",
         "nh-c0051" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0022 ;
     schema:text "Olav Kyrre" .
 

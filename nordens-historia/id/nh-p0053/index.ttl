@@ -39,6 +39,7 @@
 nh:nh-c0126 a schema:Claim ;
     dcterms:identifier "SÁ12",
         "nh-c0126" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0053 ;
     schema:text "Period 'Gränser dras genom Sápmi': 1751 – 1917" .
 
@@ -56,6 +57,7 @@ nh:nh-c0126 a schema:Claim ;
 nh:nh-c0127 a schema:Claim ;
     dcterms:identifier "SÁ13",
         "nh-c0127" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0053 ;
     schema:text "Lappkodicillen 1751" .
 

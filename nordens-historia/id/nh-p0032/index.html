@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -185,7 +188,8 @@
     {
      "@id": "nh:nh-p0032"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0079#granskning",
@@ -224,7 +228,8 @@
     {
      "@id": "nh:nh-p0032"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0080#granskning",
@@ -258,7 +263,8 @@
     {
      "@id": "nh:nh-p0032"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0081#granskning",
@@ -407,6 +413,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -513,7 +522,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0032&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0079#granskning&quot;,
@@ -552,7 +562,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0032&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0080#granskning&quot;,
@@ -586,7 +597,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0032&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0081#granskning&quot;,
@@ -663,6 +675,7 @@
 nh:nh-c0079 a schema:Claim ;
     dcterms:identifier &quot;SV12&quot;,
         &quot;nh-c0079&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0032 ;
     schema:text &quot;Period &#x27;Folkungatid&#x27;: 1250 – 1319&quot; .
 
@@ -683,12 +696,14 @@ nh:nh-c0079 a schema:Claim ;
 nh:nh-c0080 a schema:Claim ;
     dcterms:identifier &quot;SV13&quot;,
         &quot;nh-c0080&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0032 ;
     schema:text &quot;Birger jarl&quot; .
 
 nh:nh-c0081 a schema:Claim ;
     dcterms:identifier &quot;SV14&quot;,
         &quot;nh-c0081&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0032 ;
     schema:text &quot;Stockholm nämns 1252&quot; .
 

@@ -23,6 +23,7 @@
 nh:nh-c0009 a schema:Claim ;
     dcterms:identifier "IS09",
         "nh-c0009" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0004 ;
     schema:text "Period 'Under danska kronan': 1814 – 1918" .
 

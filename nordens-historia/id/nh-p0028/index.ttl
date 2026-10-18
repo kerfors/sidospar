@@ -50,6 +50,7 @@
 nh:nh-c0068 a schema:Claim ;
     dcterms:identifier "SV01",
         "nh-c0068" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0028 ;
     schema:text "Period 'Jägarstenålder': 10 000 f.Kr. – 4 000 f.Kr." .
 
@@ -67,12 +68,14 @@ nh:nh-c0068 a schema:Claim ;
 nh:nh-c0069 a schema:Claim ;
     dcterms:identifier "SV02",
         "nh-c0069" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0028 ;
     schema:text "Inlandsisen drar sig tillbaka" .
 
 nh:nh-c0070 a schema:Claim ;
     dcterms:identifier "SV03",
         "nh-c0070" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0028 ;
     schema:text "Hensbackakultur på Västkusten" .
 

@@ -52,6 +52,7 @@
 nh:nh-c0138 a schema:Claim ;
     dcterms:identifier "GE09",
         "nh-c0138" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0058 ;
     schema:text "Period 'Folkvandringstid': 400 – 550" .
 
@@ -69,12 +70,14 @@ nh:nh-c0138 a schema:Claim ;
 nh:nh-c0139 a schema:Claim ;
     dcterms:identifier "GE10",
         "nh-c0139" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0058 ;
     schema:text "Guldbrakteater" .
 
 nh:nh-c0140 a schema:Claim ;
     dcterms:identifier "GE11",
         "nh-c0140" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0058 ;
     schema:text "guldhornen från Gallehus" .
 

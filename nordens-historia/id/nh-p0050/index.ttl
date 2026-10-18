@@ -53,6 +53,7 @@
 nh:nh-c0118 a schema:Claim ;
     dcterms:identifier "SÁ04",
         "nh-c0118" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0050 ;
     schema:text "Period 'Samisk kultur tar form': 1 000 f.Kr. – 800" .
 
@@ -72,12 +73,14 @@ nh:nh-c0118 a schema:Claim ;
 nh:nh-c0119 a schema:Claim ;
     dcterms:identifier "SÁ05",
         "nh-c0119" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0050 ;
     schema:text "Protosamiska språket" .
 
 nh:nh-c0120 a schema:Claim ;
     dcterms:identifier "SÁ06",
         "nh-c0120" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0050 ;
     schema:text "dateringen omdiskuterad" .
 

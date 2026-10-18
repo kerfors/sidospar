@@ -24,6 +24,7 @@
 nh:nh-c0196 a schema:Claim ;
     dcterms:identifier "MI15",
         "nh-c0196" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0015 ;
     schema:text "Nobelpriset: 1901" .
 

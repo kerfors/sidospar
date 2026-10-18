@@ -21,6 +21,7 @@
 nh:nh-c0193 a schema:Claim ;
     dcterms:identifier "MI12",
         "nh-c0193" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0012 ;
     schema:text "Kalevala: 1835" .
 

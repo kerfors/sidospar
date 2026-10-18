@@ -21,6 +21,7 @@
 nh:nh-c0179 a schema:Claim ;
     dcterms:identifier "GE50",
         "nh-c0179" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> ;
     schema:about nh:nh-e0004 ;
     schema:text "1905 Unionsupplösningen" .
 

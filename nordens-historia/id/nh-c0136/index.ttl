@@ -21,6 +21,7 @@
 nh:nh-c0136 a schema:Claim ;
     dcterms:identifier "GE07",
         "nh-c0136" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0057 ;
     schema:text "Handel med Romarriket" .
 

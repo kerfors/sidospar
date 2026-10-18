@@ -21,6 +21,7 @@
 nh:nh-c0139 a schema:Claim ;
     dcterms:identifier "GE10",
         "nh-c0139" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0058 ;
     schema:text "Guldbrakteater" .
 

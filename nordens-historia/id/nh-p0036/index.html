@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -178,7 +181,8 @@
     {
      "@id": "nh:nh-p0036"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0086#granskning",
@@ -212,7 +216,8 @@
     {
      "@id": "nh:nh-p0036"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0087#granskning",
@@ -246,7 +251,8 @@
     {
      "@id": "nh:nh-p0036"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0088#granskning",
@@ -395,6 +401,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -494,7 +503,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0036&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0086#granskning&quot;,
@@ -528,7 +538,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0036&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0087#granskning&quot;,
@@ -562,7 +573,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0036&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0088#granskning&quot;,
@@ -638,6 +650,7 @@
 nh:nh-c0086 a schema:Claim ;
     dcterms:identifier &quot;SV19&quot;,
         &quot;nh-c0086&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0036 ;
     schema:text &quot;Period &#x27;Välfärdsstat&#x27;: 1945 – 2026&quot; .
 
@@ -655,12 +668,14 @@ nh:nh-c0086 a schema:Claim ;
 nh:nh-c0087 a schema:Claim ;
     dcterms:identifier &quot;SV20&quot;,
         &quot;nh-c0087&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0036 ;
     schema:text &quot;EU 1995&quot; .
 
 nh:nh-c0088 a schema:Claim ;
     dcterms:identifier &quot;SV21&quot;,
         &quot;nh-c0088&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0036 ;
     schema:text &quot;Nato 2024&quot; .
 

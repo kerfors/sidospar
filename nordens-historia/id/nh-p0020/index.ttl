@@ -40,6 +40,7 @@
 nh:nh-c0045 a schema:Claim ;
     dcterms:identifier "NO03",
         "nh-c0045" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0020 ;
     schema:text "Period 'Yngre stenålder': 4 000 f.Kr. – 1 700 f.Kr." .
 
@@ -59,6 +60,7 @@ nh:nh-c0045 a schema:Claim ;
 nh:nh-c0046 a schema:Claim ;
     dcterms:identifier "NO04",
         "nh-c0046" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0020 ;
     schema:text "Jordbruket når Sydnorge" .
 

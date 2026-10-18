@@ -24,6 +24,7 @@
 nh:nh-c0189 a schema:Claim ;
     dcterms:identifier "MI08",
         "nh-c0189" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0008 ;
     schema:text "Linnés Systema Naturae: 1735" .
 

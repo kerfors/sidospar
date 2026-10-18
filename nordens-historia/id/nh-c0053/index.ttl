@@ -21,6 +21,7 @@
 nh:nh-c0053 a schema:Claim ;
     dcterms:identifier "NO11",
         "nh-c0053" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0023 ;
     schema:text "Period 'Inbördeskrigstiden': 1130 – 1240" .
 

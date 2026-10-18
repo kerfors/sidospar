@@ -21,6 +21,7 @@
 nh:nh-c0116 a schema:Claim ;
     dcterms:identifier "SÁ02",
         "nh-c0116" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0049 ;
     schema:text "Komsakultur" .
 

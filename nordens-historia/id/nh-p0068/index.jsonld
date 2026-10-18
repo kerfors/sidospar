@@ -70,6 +70,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -176,7 +179,8 @@
     {
      "@id": "nh:nh-p0068"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0167#granskning",
@@ -214,7 +218,8 @@
     {
      "@id": "nh:nh-p0068"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0168#granskning",
@@ -248,7 +253,8 @@
     {
      "@id": "nh:nh-p0068"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0169#granskning",

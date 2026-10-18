@@ -51,6 +51,7 @@
 nh:nh-c0115 a schema:Claim ;
     dcterms:identifier "SÁ01",
         "nh-c0115" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0049 ;
     schema:text "Period 'Fångstkulturer i norr': 9 000 f.Kr. – 1 000 f.Kr." .
 
@@ -70,12 +71,14 @@ nh:nh-c0115 a schema:Claim ;
 nh:nh-c0116 a schema:Claim ;
     dcterms:identifier "SÁ02",
         "nh-c0116" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0049 ;
     schema:text "Komsakultur" .
 
 nh:nh-c0117 a schema:Claim ;
     dcterms:identifier "SÁ03",
         "nh-c0117" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0049 ;
     schema:text "hällkonst i Alta" .
 

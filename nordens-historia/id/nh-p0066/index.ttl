@@ -65,6 +65,7 @@
 nh:nh-c0159 a schema:Claim ;
     dcterms:identifier "GE30",
         "nh-c0159" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0066 ;
     schema:text "Period 'Vasatiden': 1523 – 1611" .
 
@@ -84,18 +85,21 @@ nh:nh-c0159 a schema:Claim ;
 nh:nh-c0160 a schema:Claim ;
     dcterms:identifier "GE31",
         "nh-c0160" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0066 ;
     schema:text "Gustav Vasa" .
 
 nh:nh-c0161 a schema:Claim ;
     dcterms:identifier "GE32",
         "nh-c0161" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0066 ;
     schema:text "reformationen 1527" .
 
 nh:nh-c0162 a schema:Claim ;
     dcterms:identifier "GE33",
         "nh-c0162" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0066 ;
     schema:text "Uppsala möte 1593" .
 

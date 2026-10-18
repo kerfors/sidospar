@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -160,7 +163,8 @@
     {
      "@id": "nh:nh-p0061"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0145#granskning",
@@ -198,7 +202,8 @@
     {
      "@id": "nh:nh-p0061"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0146#granskning",
@@ -232,7 +237,8 @@
     {
      "@id": "nh:nh-p0061"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0147#granskning",
@@ -266,7 +272,8 @@
     {
      "@id": "nh:nh-p0061"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0148#granskning",
@@ -412,6 +419,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -493,7 +503,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0061&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0145#granskning&quot;,
@@ -531,7 +542,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0061&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0146#granskning&quot;,
@@ -565,7 +577,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0061&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0147#granskning&quot;,
@@ -599,7 +612,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0061&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0148#granskning&quot;,
@@ -686,24 +700,28 @@
 nh:nh-c0145 a schema:Claim ;
     dcterms:identifier &quot;GE16&quot;,
         &quot;nh-c0145&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0061 ;
     schema:text &quot;Period &#x27;Sverige med Finland&#x27;: 1343 – 1397&quot; .
 
 nh:nh-c0146 a schema:Claim ;
     dcterms:identifier &quot;GE17&quot;,
         &quot;nh-c0146&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0061 ;
     schema:text &quot;Magnus Erikssons landslag&quot; .
 
 nh:nh-c0147 a schema:Claim ;
     dcterms:identifier &quot;GE18&quot;,
         &quot;nh-c0147&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0061 ;
     schema:text &quot;digerdöden 1350&quot; .
 
 nh:nh-c0148 a schema:Claim ;
     dcterms:identifier &quot;GE19&quot;,
         &quot;nh-c0148&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0061 ;
     schema:text &quot;Albrekt av Mecklenburg 1364–89&quot; .
 

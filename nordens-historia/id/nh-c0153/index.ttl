@@ -21,6 +21,7 @@
 nh:nh-c0153 a schema:Claim ;
     dcterms:identifier "GE24",
         "nh-c0153" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0064 ;
     schema:text "Period 'Danmark–Norge': 1523 – 1660" .
 

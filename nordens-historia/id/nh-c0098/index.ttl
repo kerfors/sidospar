@@ -21,6 +21,7 @@
 nh:nh-c0098 a schema:Claim ;
     dcterms:identifier "FI10",
         "nh-c0098" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0042 ;
     schema:text "Period 'Vikingatid': 800 – 1025" .
 

@@ -21,6 +21,7 @@
 nh:nh-c0148 a schema:Claim ;
     dcterms:identifier "GE19",
         "nh-c0148" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "Albrekt av Mecklenburg 1364–89" .
 

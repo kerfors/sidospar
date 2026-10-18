@@ -21,6 +21,7 @@
 nh:nh-c0150 a schema:Claim ;
     dcterms:identifier "GE21",
         "nh-c0150" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0063 ;
     schema:text "Period 'Kalmarunionen': 1397 – 1523" .
 

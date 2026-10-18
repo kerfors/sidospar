@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -182,7 +185,8 @@
     {
      "@id": "nh:nh-p0021"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0047#granskning",
@@ -216,7 +220,8 @@
     {
      "@id": "nh:nh-p0021"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0048#granskning",
@@ -254,7 +259,8 @@
     {
      "@id": "nh:nh-p0021"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0049#granskning",
@@ -403,6 +409,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -506,7 +515,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0021&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0047#granskning&quot;,
@@ -540,7 +550,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0021&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0048#granskning&quot;,
@@ -578,7 +589,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0021&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0049#granskning&quot;,
@@ -656,6 +668,7 @@
 nh:nh-c0047 a schema:Claim ;
     dcterms:identifier &quot;NO05&quot;,
         &quot;nh-c0047&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0021 ;
     schema:text &quot;Period &#x27;Vikingatid&#x27;: 793 – 1066&quot; .
 
@@ -673,12 +686,14 @@ nh:nh-c0047 a schema:Claim ;
 nh:nh-c0048 a schema:Claim ;
     dcterms:identifier &quot;NO06&quot;,
         &quot;nh-c0048&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0021 ;
     schema:text &quot;Hafrsfjord c. 872&quot; .
 
 nh:nh-c0049 a schema:Claim ;
     dcterms:identifier &quot;NO07&quot;,
         &quot;nh-c0049&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0021 ;
     schema:text &quot;Stiklestad 1030&quot; .
 

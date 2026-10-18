@@ -21,6 +21,7 @@
 nh:nh-c0122 a schema:Claim ;
     dcterms:identifier "SÁ08",
         "nh-c0122" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0051 ;
     schema:text "Fångst, fiske och handel" .
 

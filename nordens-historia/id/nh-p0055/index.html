@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -190,7 +193,8 @@
     {
      "@id": "nh:nh-p0055"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0130#granskning",
@@ -224,7 +228,8 @@
     {
      "@id": "nh:nh-p0055"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0131#granskning",
@@ -258,7 +263,8 @@
     {
      "@id": "nh:nh-p0055"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0132#granskning",
@@ -407,6 +413,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -518,7 +527,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0055&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0130#granskning&quot;,
@@ -552,7 +562,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0055&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0131#granskning&quot;,
@@ -586,7 +597,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0055&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0132#granskning&quot;,
@@ -664,6 +676,7 @@
 nh:nh-c0130 a schema:Claim ;
     dcterms:identifier &quot;GE01&quot;,
         &quot;nh-c0130&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0055 ;
     schema:text &quot;Period &#x27;Nordisk bronsålder&#x27;: 1 700 f.Kr. – 500 f.Kr.&quot; .
 
@@ -681,12 +694,14 @@ nh:nh-c0130 a schema:Claim ;
 nh:nh-c0131 a schema:Claim ;
     dcterms:identifier &quot;GE02&quot;,
         &quot;nh-c0131&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0055 ;
     schema:text &quot;Solvagnen från Trundholm&quot; .
 
 nh:nh-c0132 a schema:Claim ;
     dcterms:identifier &quot;GE03&quot;,
         &quot;nh-c0132&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0055 ;
     schema:text &quot;hällristningarna i Tanum&quot; .
 

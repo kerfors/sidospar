@@ -21,6 +21,7 @@
 nh:nh-c0147 a schema:Claim ;
     dcterms:identifier "GE18",
         "nh-c0147" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "digerdöden 1350" .
 

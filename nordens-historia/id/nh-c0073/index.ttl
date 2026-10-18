@@ -26,6 +26,7 @@
 nh:nh-c0073 a schema:Claim ;
     dcterms:identifier "SV06",
         "nh-c0073" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0030 ;
     schema:text "Period 'Vikingatid': 793 – 1066" .
 

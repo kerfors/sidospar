@@ -21,6 +21,7 @@
 nh:nh-c0130 a schema:Claim ;
     dcterms:identifier "GE01",
         "nh-c0130" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0055 ;
     schema:text "Period 'Nordisk bronsålder': 1 700 f.Kr. – 500 f.Kr." .
 

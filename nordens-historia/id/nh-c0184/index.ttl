@@ -21,6 +21,7 @@
 nh:nh-c0184 a schema:Claim ;
     dcterms:identifier "MI03",
         "nh-c0184" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0003 ;
     schema:text "Snorres Heimskringla (c.): 1230" .
 

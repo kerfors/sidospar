@@ -54,6 +54,7 @@
 nh:nh-c0150 a schema:Claim ;
     dcterms:identifier "GE21",
         "nh-c0150" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0063 ;
     schema:text "Period 'Kalmarunionen': 1397 – 1523" .
 
@@ -71,12 +72,14 @@ nh:nh-c0150 a schema:Claim ;
 nh:nh-c0151 a schema:Claim ;
     dcterms:identifier "GE22",
         "nh-c0151" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0063 ;
     schema:text "Margareta och Erik av Pommern" .
 
 nh:nh-c0152 a schema:Claim ;
     dcterms:identifier "GE23",
         "nh-c0152" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0063 ;
     schema:text "Sverige bryter sig ur 1523" .
 

@@ -21,6 +21,7 @@
 nh:nh-c0101 a schema:Claim ;
     dcterms:identifier "FI13",
         "nh-c0101" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0044 ;
     schema:text "Åbo domkyrka invigs 1300" .
 

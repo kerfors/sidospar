@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -181,7 +184,8 @@
     {
      "@id": "nh:nh-p0022"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0050#granskning",
@@ -215,7 +219,8 @@
     {
      "@id": "nh:nh-p0022"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0051#granskning",
@@ -249,7 +254,8 @@
     {
      "@id": "nh:nh-p0022"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0052#granskning",
@@ -398,6 +404,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -500,7 +509,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0022&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0050#granskning&quot;,
@@ -534,7 +544,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0022&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0051#granskning&quot;,
@@ -568,7 +579,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0022&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0052#granskning&quot;,
@@ -644,6 +656,7 @@
 nh:nh-c0050 a schema:Claim ;
     dcterms:identifier &quot;NO08&quot;,
         &quot;nh-c0050&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0022 ;
     schema:text &quot;Period &#x27;Riket konsolideras&#x27;: 1066 – 1130&quot; .
 
@@ -661,12 +674,14 @@ nh:nh-c0050 a schema:Claim ;
 nh:nh-c0051 a schema:Claim ;
     dcterms:identifier &quot;NO09&quot;,
         &quot;nh-c0051&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0022 ;
     schema:text &quot;Olav Kyrre&quot; .
 
 nh:nh-c0052 a schema:Claim ;
     dcterms:identifier &quot;NO10&quot;,
         &quot;nh-c0052&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0022 ;
     schema:text &quot;Bergen växer fram&quot; .
 

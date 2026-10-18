@@ -70,6 +70,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -162,6 +165,46 @@
    "skos:scopeNote": {
     "sv": "Affischens egna periodgränser, valda för att blocken ska gå att läsa. Källornas gränser finns som egna definitioner i separata scheman och är matchade mot affischens perioder."
    }
+  },
+  {
+   "@id": "nh:#uppgiftstyper",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": {
+    "sv": "Typer av kontrollerade uppgifter"
+   },
+   "isPartOf": "nh:#dataset"
+  },
+  {
+   "@id": "nh:#typ-period",
+   "@type": "skos:Concept",
+   "skos:prefLabel": {
+    "sv": "Periodens namn och gränser"
+   },
+   "skos:inScheme": "nh:#uppgiftstyper"
+  },
+  {
+   "@id": "nh:#typ-detalj",
+   "@type": "skos:Concept",
+   "skos:prefLabel": {
+    "sv": "Detalj i en periods beskrivning"
+   },
+   "skos:inScheme": "nh:#uppgiftstyper"
+  },
+  {
+   "@id": "nh:#typ-handelse",
+   "@type": "skos:Concept",
+   "skos:prefLabel": {
+    "sv": "Händelse och årtal"
+   },
+   "skos:inScheme": "nh:#uppgiftstyper"
+  },
+  {
+   "@id": "nh:#typ-milstolpe",
+   "@type": "skos:Concept",
+   "skos:prefLabel": {
+    "sv": "Milstolpe och årtal"
+   },
+   "skos:inScheme": "nh:#uppgiftstyper"
   },
   {
    "@id": "nh:#kontroll-2026-10-18",
@@ -5171,7 +5214,8 @@
     {
      "@id": "nh:nh-p0001"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0001#granskning",
@@ -5209,7 +5253,8 @@
     {
      "@id": "nh:nh-p0001"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0002#granskning",
@@ -5243,7 +5288,8 @@
     {
      "@id": "nh:nh-p0002"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0003#granskning",
@@ -5277,7 +5323,8 @@
     {
      "@id": "nh:nh-p0002"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0004#granskning",
@@ -5311,7 +5358,8 @@
     {
      "@id": "nh:nh-p0002"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0005#granskning",
@@ -5349,7 +5397,8 @@
     {
      "@id": "nh:nh-p0002"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0006#granskning",
@@ -5383,7 +5432,8 @@
     {
      "@id": "nh:nh-p0003"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0007#granskning",
@@ -5421,7 +5471,8 @@
     {
      "@id": "nh:nh-p0003"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0008#granskning",
@@ -5455,7 +5506,8 @@
     {
      "@id": "nh:nh-p0004"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0009#granskning",
@@ -5493,7 +5545,8 @@
     {
      "@id": "nh:nh-p0004"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0010#granskning",
@@ -5531,7 +5584,8 @@
     {
      "@id": "nh:nh-p0004"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0011#granskning",
@@ -5565,7 +5619,8 @@
     {
      "@id": "nh:nh-p0005"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0012#granskning",
@@ -5599,7 +5654,8 @@
     {
      "@id": "nh:nh-p0005"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0013#granskning",
@@ -5633,7 +5689,8 @@
     {
      "@id": "nh:nh-p0006"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0014#granskning",
@@ -5667,7 +5724,8 @@
     {
      "@id": "nh:nh-p0006"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0015#granskning",
@@ -5701,7 +5759,8 @@
     {
      "@id": "nh:nh-p0006"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0016#granskning",
@@ -5735,7 +5794,8 @@
     {
      "@id": "nh:nh-p0007"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0017#granskning",
@@ -5773,7 +5833,8 @@
     {
      "@id": "nh:nh-p0007"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0018#granskning",
@@ -5807,7 +5868,8 @@
     {
      "@id": "nh:nh-p0008"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0019#granskning",
@@ -5841,7 +5903,8 @@
     {
      "@id": "nh:nh-p0008"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0020#granskning",
@@ -5875,7 +5938,8 @@
     {
      "@id": "nh:nh-p0008"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0021#granskning",
@@ -5909,7 +5973,8 @@
     {
      "@id": "nh:nh-p0009"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0022#granskning",
@@ -5947,7 +6012,8 @@
     {
      "@id": "nh:nh-p0009"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0023#granskning",
@@ -5981,7 +6047,8 @@
     {
      "@id": "nh:nh-p0009"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0024#granskning",
@@ -6015,7 +6082,8 @@
     {
      "@id": "nh:nh-p0009"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0025#granskning",
@@ -6053,7 +6121,8 @@
     {
      "@id": "nh:nh-p0010"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0026#granskning",
@@ -6091,7 +6160,8 @@
     {
      "@id": "nh:nh-p0010"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0027#granskning",
@@ -6125,7 +6195,8 @@
     {
      "@id": "nh:nh-p0011"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0028#granskning",
@@ -6159,7 +6230,8 @@
     {
      "@id": "nh:nh-p0011"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0029#granskning",
@@ -6193,7 +6265,8 @@
     {
      "@id": "nh:nh-p0011"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0030#granskning",
@@ -6230,7 +6303,8 @@
     {
      "@id": "nh:nh-p0013"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0031#granskning",
@@ -6268,7 +6342,8 @@
     {
      "@id": "nh:nh-p0012"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0032#granskning",
@@ -6302,7 +6377,8 @@
     {
      "@id": "nh:nh-p0013"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0033#granskning",
@@ -6336,7 +6412,8 @@
     {
      "@id": "nh:nh-p0014"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0034#granskning",
@@ -6374,7 +6451,8 @@
     {
      "@id": "nh:nh-p0014"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0035#granskning",
@@ -6411,7 +6489,8 @@
     {
      "@id": "nh:nh-p0016"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0036#granskning",
@@ -6449,7 +6528,8 @@
     {
      "@id": "nh:nh-p0015"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0037#granskning",
@@ -6483,7 +6563,8 @@
     {
      "@id": "nh:nh-p0015"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0038#granskning",
@@ -6521,7 +6602,8 @@
     {
      "@id": "nh:nh-p0016"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0039#granskning",
@@ -6558,7 +6640,8 @@
     {
      "@id": "nh:nh-p0018"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0040#granskning",
@@ -6596,7 +6679,8 @@
     {
      "@id": "nh:nh-p0018"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0041#granskning",
@@ -6630,7 +6714,8 @@
     {
      "@id": "nh:nh-p0018"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0042#granskning",
@@ -6664,7 +6749,8 @@
     {
      "@id": "nh:nh-p0019"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0043#granskning",
@@ -6702,7 +6788,8 @@
     {
      "@id": "nh:nh-p0019"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0044#granskning",
@@ -6736,7 +6823,8 @@
     {
      "@id": "nh:nh-p0020"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0045#granskning",
@@ -6774,7 +6862,8 @@
     {
      "@id": "nh:nh-p0020"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0046#granskning",
@@ -6808,7 +6897,8 @@
     {
      "@id": "nh:nh-p0021"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0047#granskning",
@@ -6842,7 +6932,8 @@
     {
      "@id": "nh:nh-p0021"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0048#granskning",
@@ -6880,7 +6971,8 @@
     {
      "@id": "nh:nh-p0021"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0049#granskning",
@@ -6914,7 +7006,8 @@
     {
      "@id": "nh:nh-p0022"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0050#granskning",
@@ -6948,7 +7041,8 @@
     {
      "@id": "nh:nh-p0022"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0051#granskning",
@@ -6982,7 +7076,8 @@
     {
      "@id": "nh:nh-p0022"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0052#granskning",
@@ -7016,7 +7111,8 @@
     {
      "@id": "nh:nh-p0023"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0053#granskning",
@@ -7050,7 +7146,8 @@
     {
      "@id": "nh:nh-p0023"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0054#granskning",
@@ -7084,7 +7181,8 @@
     {
      "@id": "nh:nh-p0023"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0055#granskning",
@@ -7118,7 +7216,8 @@
     {
      "@id": "nh:nh-p0024"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0056#granskning",
@@ -7152,7 +7251,8 @@
     {
      "@id": "nh:nh-p0024"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0057#granskning",
@@ -7186,7 +7286,8 @@
     {
      "@id": "nh:nh-p0024"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0058#granskning",
@@ -7220,7 +7321,8 @@
     {
      "@id": "nh:nh-p0024"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0059#granskning",
@@ -7254,7 +7356,8 @@
     {
      "@id": "nh:nh-p0025"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0060#granskning",
@@ -7292,7 +7395,8 @@
     {
      "@id": "nh:nh-p0025"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0061#granskning",
@@ -7326,7 +7430,8 @@
     {
      "@id": "nh:nh-p0026"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0062#granskning",
@@ -7360,7 +7465,8 @@
     {
      "@id": "nh:nh-p0026"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0063#granskning",
@@ -7394,7 +7500,8 @@
     {
      "@id": "nh:nh-p0026"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0064#granskning",
@@ -7428,7 +7535,8 @@
     {
      "@id": "nh:nh-p0027"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0065#granskning",
@@ -7462,7 +7570,8 @@
     {
      "@id": "nh:nh-p0027"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0066#granskning",
@@ -7496,7 +7605,8 @@
     {
      "@id": "nh:nh-p0027"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0067#granskning",
@@ -7530,7 +7640,8 @@
     {
      "@id": "nh:nh-p0028"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0068#granskning",
@@ -7564,7 +7675,8 @@
     {
      "@id": "nh:nh-p0028"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0069#granskning",
@@ -7598,7 +7710,8 @@
     {
      "@id": "nh:nh-p0028"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0070#granskning",
@@ -7632,7 +7745,8 @@
     {
      "@id": "nh:nh-p0029"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0071#granskning",
@@ -7666,7 +7780,8 @@
     {
      "@id": "nh:nh-p0029"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0072#granskning",
@@ -7700,7 +7815,8 @@
     {
      "@id": "nh:nh-p0030"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0073#granskning",
@@ -7739,7 +7855,8 @@
     {
      "@id": "nh:nh-p0030"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0074#granskning",
@@ -7773,7 +7890,8 @@
     {
      "@id": "nh:nh-p0030"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0075#granskning",
@@ -7807,7 +7925,8 @@
     {
      "@id": "nh:nh-p0031"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0076#granskning",
@@ -7846,7 +7965,8 @@
     {
      "@id": "nh:nh-p0031"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0077#granskning",
@@ -7880,7 +8000,8 @@
     {
      "@id": "nh:nh-p0031"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0078#granskning",
@@ -7914,7 +8035,8 @@
     {
      "@id": "nh:nh-p0032"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0079#granskning",
@@ -7953,7 +8075,8 @@
     {
      "@id": "nh:nh-p0032"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0080#granskning",
@@ -7987,7 +8110,8 @@
     {
      "@id": "nh:nh-p0032"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0081#granskning",
@@ -8021,7 +8145,8 @@
     {
      "@id": "nh:nh-p0033"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0082#granskning",
@@ -8063,7 +8188,8 @@
     {
      "@id": "nh:nh-p0035"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0083#granskning",
@@ -8102,7 +8228,8 @@
     {
      "@id": "nh:nh-p0034"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0084#granskning",
@@ -8136,7 +8263,8 @@
     {
      "@id": "nh:nh-p0035"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0085#granskning",
@@ -8170,7 +8298,8 @@
     {
      "@id": "nh:nh-p0036"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0086#granskning",
@@ -8204,7 +8333,8 @@
     {
      "@id": "nh:nh-p0036"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0087#granskning",
@@ -8238,7 +8368,8 @@
     {
      "@id": "nh:nh-p0036"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0088#granskning",
@@ -8272,7 +8403,8 @@
     {
      "@id": "nh:nh-p0037"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0089#granskning",
@@ -8311,7 +8443,8 @@
     {
      "@id": "nh:nh-p0037"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0090#granskning",
@@ -8349,7 +8482,8 @@
     {
      "@id": "nh:nh-p0038"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0091#granskning",
@@ -8388,7 +8522,8 @@
     {
      "@id": "nh:nh-p0039"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0092#granskning",
@@ -8427,7 +8562,8 @@
     {
      "@id": "nh:nh-p0040"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0093#granskning",
@@ -8466,7 +8602,8 @@
     {
      "@id": "nh:nh-p0040"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0094#granskning",
@@ -8500,7 +8637,8 @@
     {
      "@id": "nh:nh-p0040"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0095#granskning",
@@ -8534,7 +8672,8 @@
     {
      "@id": "nh:nh-p0041"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0096#granskning",
@@ -8573,7 +8712,8 @@
     {
      "@id": "nh:nh-p0041"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0097#granskning",
@@ -8607,7 +8747,8 @@
     {
      "@id": "nh:nh-p0042"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0098#granskning",
@@ -8644,7 +8785,8 @@
     {
      "@id": "nh:nh-p0044"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0099#granskning",
@@ -8683,7 +8825,8 @@
     {
      "@id": "nh:nh-p0043"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0100#granskning",
@@ -8717,7 +8860,8 @@
     {
      "@id": "nh:nh-p0044"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0101#granskning",
@@ -8751,7 +8895,8 @@
     {
      "@id": "nh:nh-p0045"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0102#granskning",
@@ -8785,7 +8930,8 @@
     {
      "@id": "nh:nh-p0045"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0103#granskning",
@@ -8819,7 +8965,8 @@
     {
      "@id": "nh:nh-p0045"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0104#granskning",
@@ -8853,7 +9000,8 @@
     {
      "@id": "nh:nh-p0045"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0105#granskning",
@@ -8887,7 +9035,8 @@
     {
      "@id": "nh:nh-p0046"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0106#granskning",
@@ -8921,7 +9070,8 @@
     {
      "@id": "nh:nh-p0046"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0107#granskning",
@@ -8955,7 +9105,8 @@
     {
      "@id": "nh:nh-p0046"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0108#granskning",
@@ -8989,7 +9140,8 @@
     {
      "@id": "nh:nh-p0046"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0109#granskning",
@@ -9023,7 +9175,8 @@
     {
      "@id": "nh:nh-p0047"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0110#granskning",
@@ -9057,7 +9210,8 @@
     {
      "@id": "nh:nh-p0047"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0111#granskning",
@@ -9091,7 +9245,8 @@
     {
      "@id": "nh:nh-p0048"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0112#granskning",
@@ -9130,7 +9285,8 @@
     {
      "@id": "nh:nh-p0048"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0113#granskning",
@@ -9164,7 +9320,8 @@
     {
      "@id": "nh:nh-p0048"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0114#granskning",
@@ -9198,7 +9355,8 @@
     {
      "@id": "nh:nh-p0049"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0115#granskning",
@@ -9236,7 +9394,8 @@
     {
      "@id": "nh:nh-p0049"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0116#granskning",
@@ -9270,7 +9429,8 @@
     {
      "@id": "nh:nh-p0049"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0117#granskning",
@@ -9304,7 +9464,8 @@
     {
      "@id": "nh:nh-p0050"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0118#granskning",
@@ -9342,7 +9503,8 @@
     {
      "@id": "nh:nh-p0050"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0119#granskning",
@@ -9380,7 +9542,8 @@
     {
      "@id": "nh:nh-p0050"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0120#granskning",
@@ -9414,7 +9577,8 @@
     {
      "@id": "nh:nh-p0051"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0121#granskning",
@@ -9452,7 +9616,8 @@
     {
      "@id": "nh:nh-p0051"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0122#granskning",
@@ -9486,7 +9651,8 @@
     {
      "@id": "nh:nh-p0051"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0123#granskning",
@@ -9524,7 +9690,8 @@
     {
      "@id": "nh:nh-p0052"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0124#granskning",
@@ -9562,7 +9729,8 @@
     {
      "@id": "nh:nh-p0052"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0125#granskning",
@@ -9596,7 +9764,8 @@
     {
      "@id": "nh:nh-p0053"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0126#granskning",
@@ -9630,7 +9799,8 @@
     {
      "@id": "nh:nh-p0053"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0127#granskning",
@@ -9664,7 +9834,8 @@
     {
      "@id": "nh:nh-p0054"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0128#granskning",
@@ -9698,7 +9869,8 @@
     {
      "@id": "nh:nh-p0054"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0129#granskning",
@@ -9736,7 +9908,8 @@
     {
      "@id": "nh:nh-p0055"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0130#granskning",
@@ -9770,7 +9943,8 @@
     {
      "@id": "nh:nh-p0055"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0131#granskning",
@@ -9804,7 +9978,8 @@
     {
      "@id": "nh:nh-p0055"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0132#granskning",
@@ -9838,7 +10013,8 @@
     {
      "@id": "nh:nh-p0056"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0133#granskning",
@@ -9872,7 +10048,8 @@
     {
      "@id": "nh:nh-p0056"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0134#granskning",
@@ -9906,7 +10083,8 @@
     {
      "@id": "nh:nh-p0057"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0135#granskning",
@@ -9940,7 +10118,8 @@
     {
      "@id": "nh:nh-p0057"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0136#granskning",
@@ -9974,7 +10153,8 @@
     {
      "@id": "nh:nh-p0057"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0137#granskning",
@@ -10008,7 +10188,8 @@
     {
      "@id": "nh:nh-p0058"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0138#granskning",
@@ -10042,7 +10223,8 @@
     {
      "@id": "nh:nh-p0058"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0139#granskning",
@@ -10076,7 +10258,8 @@
     {
      "@id": "nh:nh-p0058"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0140#granskning",
@@ -10110,7 +10293,8 @@
     {
      "@id": "nh:nh-p0059"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0141#granskning",
@@ -10148,7 +10332,8 @@
     {
      "@id": "nh:nh-p0059"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0142#granskning",
@@ -10182,7 +10367,8 @@
     {
      "@id": "nh:nh-p0060"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0143#granskning",
@@ -10220,7 +10406,8 @@
     {
      "@id": "nh:nh-p0060"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0144#granskning",
@@ -10254,7 +10441,8 @@
     {
      "@id": "nh:nh-p0061"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0145#granskning",
@@ -10292,7 +10480,8 @@
     {
      "@id": "nh:nh-p0061"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0146#granskning",
@@ -10326,7 +10515,8 @@
     {
      "@id": "nh:nh-p0061"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0147#granskning",
@@ -10360,7 +10550,8 @@
     {
      "@id": "nh:nh-p0061"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0148#granskning",
@@ -10394,7 +10585,8 @@
     {
      "@id": "nh:nh-p0062"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0149#granskning",
@@ -10428,7 +10620,8 @@
     {
      "@id": "nh:nh-p0063"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0150#granskning",
@@ -10462,7 +10655,8 @@
     {
      "@id": "nh:nh-p0063"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0151#granskning",
@@ -10496,7 +10690,8 @@
     {
      "@id": "nh:nh-p0063"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0152#granskning",
@@ -10530,7 +10725,8 @@
     {
      "@id": "nh:nh-p0064"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0153#granskning",
@@ -10564,7 +10760,8 @@
     {
      "@id": "nh:nh-p0064"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0154#granskning",
@@ -10598,7 +10795,8 @@
     {
      "@id": "nh:nh-p0064"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0155#granskning",
@@ -10636,7 +10834,8 @@
     {
      "@id": "nh:nh-p0064"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0156#granskning",
@@ -10670,7 +10869,8 @@
     {
      "@id": "nh:nh-p0065"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0157#granskning",
@@ -10704,7 +10904,8 @@
     {
      "@id": "nh:nh-p0065"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0158#granskning",
@@ -10738,7 +10939,8 @@
     {
      "@id": "nh:nh-p0066"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0159#granskning",
@@ -10776,7 +10978,8 @@
     {
      "@id": "nh:nh-p0066"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0160#granskning",
@@ -10810,7 +11013,8 @@
     {
      "@id": "nh:nh-p0066"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0161#granskning",
@@ -10848,7 +11052,8 @@
     {
      "@id": "nh:nh-p0066"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0162#granskning",
@@ -10882,7 +11087,8 @@
     {
      "@id": "nh:nh-p0067"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0163#granskning",
@@ -10916,7 +11122,8 @@
     {
      "@id": "nh:nh-p0067"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0164#granskning",
@@ -10950,7 +11157,8 @@
     {
      "@id": "nh:nh-p0067"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0165#granskning",
@@ -10984,7 +11192,8 @@
     {
      "@id": "nh:nh-p0067"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0166#granskning",
@@ -11018,7 +11227,8 @@
     {
      "@id": "nh:nh-p0068"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0167#granskning",
@@ -11056,7 +11266,8 @@
     {
      "@id": "nh:nh-p0068"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0168#granskning",
@@ -11090,7 +11301,8 @@
     {
      "@id": "nh:nh-p0068"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0169#granskning",
@@ -11124,7 +11336,8 @@
     {
      "@id": "nh:nh-p0069"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0170#granskning",
@@ -11158,7 +11371,8 @@
     {
      "@id": "nh:nh-p0069"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0171#granskning",
@@ -11192,7 +11406,8 @@
     {
      "@id": "nh:nh-p0069"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0172#granskning",
@@ -11226,7 +11441,8 @@
     {
      "@id": "nh:nh-p0070"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0173#granskning",
@@ -11260,7 +11476,8 @@
     {
      "@id": "nh:nh-p0070"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0174#granskning",
@@ -11294,7 +11511,8 @@
     {
      "@id": "nh:nh-p0070"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0175#granskning",
@@ -11328,7 +11546,8 @@
     {
      "@id": "nh:nh-e0001"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-handelse"
   },
   {
    "@id": "nh:nh-c0176#granskning",
@@ -11362,7 +11581,8 @@
     {
      "@id": "nh:nh-e0002"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-handelse"
   },
   {
    "@id": "nh:nh-c0177#granskning",
@@ -11396,7 +11616,8 @@
     {
      "@id": "nh:nh-e0003"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-handelse"
   },
   {
    "@id": "nh:nh-c0178#granskning",
@@ -11430,7 +11651,8 @@
     {
      "@id": "nh:nh-e0004"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-handelse"
   },
   {
    "@id": "nh:nh-c0179#granskning",
@@ -11464,7 +11686,8 @@
     {
      "@id": "nh:nh-e0005"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-handelse"
   },
   {
    "@id": "nh:nh-c0180#granskning",
@@ -11498,7 +11721,8 @@
     {
      "@id": "nh:nh-e0006"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-handelse"
   },
   {
    "@id": "nh:nh-c0181#granskning",
@@ -11532,7 +11756,8 @@
     {
      "@id": "nh:nh-m0001"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0182#granskning",
@@ -11566,7 +11791,8 @@
     {
      "@id": "nh:nh-m0002"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0183#granskning",
@@ -11600,7 +11826,8 @@
     {
      "@id": "nh:nh-m0003"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0184#granskning",
@@ -11634,7 +11861,8 @@
     {
      "@id": "nh:nh-m0004"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0185#granskning",
@@ -11668,7 +11896,8 @@
     {
      "@id": "nh:nh-m0005"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0186#granskning",
@@ -11702,7 +11931,8 @@
     {
      "@id": "nh:nh-m0006"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0187#granskning",
@@ -11736,7 +11966,8 @@
     {
      "@id": "nh:nh-m0007"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0188#granskning",
@@ -11770,7 +12001,8 @@
     {
      "@id": "nh:nh-m0008"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0189#granskning",
@@ -11804,7 +12036,8 @@
     {
      "@id": "nh:nh-m0009"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0190#granskning",
@@ -11838,7 +12071,8 @@
     {
      "@id": "nh:nh-m0010"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0191#granskning",
@@ -11872,7 +12106,8 @@
     {
      "@id": "nh:nh-m0011"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0192#granskning",
@@ -11906,7 +12141,8 @@
     {
      "@id": "nh:nh-m0012"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0193#granskning",
@@ -11940,7 +12176,8 @@
     {
      "@id": "nh:nh-m0013"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0194#granskning",
@@ -11978,7 +12215,8 @@
     {
      "@id": "nh:nh-m0014"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0195#granskning",
@@ -12012,7 +12250,8 @@
     {
      "@id": "nh:nh-m0015"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0196#granskning",
@@ -12046,7 +12285,8 @@
     {
      "@id": "nh:nh-m0016"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0197#granskning",
@@ -12080,7 +12320,8 @@
     {
      "@id": "nh:nh-m0017"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0198#granskning",
@@ -12114,7 +12355,8 @@
     {
      "@id": "nh:nh-m0018"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0199#granskning",
@@ -12148,7 +12390,8 @@
     {
      "@id": "nh:nh-m0019"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0200#granskning",
@@ -12182,7 +12425,8 @@
     {
      "@id": "nh:nh-m0020"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0201#granskning",
@@ -12220,7 +12464,8 @@
     {
      "@id": "nh:nh-m0021"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0202#granskning",
@@ -12258,7 +12503,8 @@
     {
      "@id": "nh:nh-m0022"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0203#granskning",
@@ -12292,7 +12538,8 @@
     {
      "@id": "nh:nh-m0023"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0204#granskning",
@@ -12326,7 +12573,8 @@
     {
      "@id": "nh:nh-m0024"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0205#granskning",
@@ -12360,7 +12608,8 @@
     {
      "@id": "nh:nh-m0025"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0206#granskning",
@@ -12394,7 +12643,8 @@
     {
      "@id": "nh:nh-m0026"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-milstolpe"
   },
   {
    "@id": "nh:nh-c0207#granskning",

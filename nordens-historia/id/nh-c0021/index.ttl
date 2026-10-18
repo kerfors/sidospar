@@ -23,6 +23,7 @@
 nh:nh-c0021 a schema:Claim ;
     dcterms:identifier "DA05",
         "nh-c0021" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0008 ;
     schema:text "dösar och gånggrifter" .
 

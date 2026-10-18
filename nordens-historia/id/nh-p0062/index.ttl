@@ -30,6 +30,7 @@
 nh:nh-c0149 a schema:Claim ;
     dcterms:identifier "GE20",
         "nh-c0149" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0062 ;
     schema:text "Period 'Danmark–Norge': 1380 – 1397" .
 

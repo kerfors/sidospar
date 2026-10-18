@@ -24,6 +24,7 @@
 nh:nh-c0186 a schema:Claim ;
     dcterms:identifier "MI05",
         "nh-c0186" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0005 ;
     schema:text "Köpenhamns universitet: 1479" .
 

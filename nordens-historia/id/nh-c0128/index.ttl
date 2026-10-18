@@ -21,6 +21,7 @@
 nh:nh-c0128 a schema:Claim ;
     dcterms:identifier "SÁ14",
         "nh-c0128" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0054 ;
     schema:text "Period 'Samisk organisering': 1917 – 2026" .
 

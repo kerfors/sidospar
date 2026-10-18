@@ -24,6 +24,7 @@
 nh:nh-c0195 a schema:Claim ;
     dcterms:identifier "MI14",
         "nh-c0195" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0014 ;
     schema:text "Nansen över Grönland: 1888" .
 

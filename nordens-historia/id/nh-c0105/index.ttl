@@ -21,6 +21,7 @@
 nh:nh-c0105 a schema:Claim ;
     dcterms:identifier "FI17",
         "nh-c0105" ;
+    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0045 ;
     schema:text "enkammarlantdag och kvinnlig rösträtt 1906" .
 

@@ -79,6 +79,9 @@
   "dcterms:source": {
    "@type": "@id"
   },
+  "dcterms:type": {
+   "@type": "@id"
+  },
   "skos:scopeNote": {
    "@container": "@language"
   },
@@ -184,7 +187,8 @@
     {
      "@id": "nh:nh-p0003"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-period"
   },
   {
    "@id": "nh:nh-c0007#granskning",
@@ -222,7 +226,8 @@
     {
      "@id": "nh:nh-p0003"
     }
-   ]
+   ],
+   "dcterms:type": "nh:#typ-detalj"
   },
   {
    "@id": "nh:nh-c0008#granskning",
@@ -371,6 +376,9 @@
   &quot;dcterms:source&quot;: {
    &quot;@type&quot;: &quot;@id&quot;
   },
+  &quot;dcterms:type&quot;: {
+   &quot;@type&quot;: &quot;@id&quot;
+  },
   &quot;skos:scopeNote&quot;: {
    &quot;@container&quot;: &quot;@language&quot;
   },
@@ -476,7 +484,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0003&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-period&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0007#granskning&quot;,
@@ -514,7 +523,8 @@
     {
      &quot;@id&quot;: &quot;nh:nh-p0003&quot;
     }
-   ]
+   ],
+   &quot;dcterms:type&quot;: &quot;nh:#typ-detalj&quot;
   },
   {
    &quot;@id&quot;: &quot;nh:nh-c0008#granskning&quot;,
@@ -580,6 +590,7 @@
 nh:nh-c0007 a schema:Claim ;
     dcterms:identifier &quot;IS07&quot;,
         &quot;nh-c0007&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period&gt; ;
     schema:about nh:nh-p0003 ;
     schema:text &quot;Period &#x27;Under norska kronan&#x27;: 1262 – 1380&quot; .
 
@@ -599,6 +610,7 @@ nh:nh-c0007 a schema:Claim ;
 nh:nh-c0008 a schema:Claim ;
     dcterms:identifier &quot;IS08&quot;,
         &quot;nh-c0008&quot; ;
+    dcterms:type &lt;https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj&gt; ;
     schema:about nh:nh-p0003 ;
     schema:text &quot;Gamli sáttmáli 1262–64&quot; .
 

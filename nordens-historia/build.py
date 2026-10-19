@@ -410,6 +410,7 @@ identifierare som går att slå upp, med JSON-LD, Turtle och länkar till Wikida
 och, på engelska, <a href="linked-data.html">The linked data behind the poster</a>. Datan går att ställa frågor mot
 direkt i webbläsaren på <a href="sparql.html">SPARQL-sidan</a>.
 Innehåll och data är licensierade under <a href="https://creativecommons.org/licenses/by/4.0/deed.sv">CC BY 4.0</a>.</p>
+<p><strong>Som bild:</strong> affischen finns också som <a href="nordens-historia-affisch.png">PNG-fil</a> (1200 px bred).</p>
 </div>
 <div class="poster">
 {svg}

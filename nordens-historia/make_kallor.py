@@ -11,6 +11,8 @@ HERE = Path(__file__).parent
 CLAIMS = json.loads((HERE / "data" / "claims.json").read_text(encoding="utf-8"))
 _ITEMS = json.loads((HERE / "data" / "items.json").read_text(encoding="utf-8"))
 LABEL = {x["id"]: x["label"] for k in ("periods", "events", "milestones") for x in _ITEMS[k]}
+RA = json.loads((HERE / "data" / "riksarkivet.json").read_text(encoding="utf-8"))
+RA_BY_CLAIM = {r["claim"]: r for r in RA["checks"]}
 PREFIX_GROUP = {"IS": "Island", "DA": "Danmark", "NO": "Norge", "SV": "Sverige", "FI": "Finland",
                 "SÁ": "Sápmi", "GE": "Gemensamt", "MI": "Milstolpar"}
 
@@ -87,12 +89,42 @@ def row(c):
     action = c["action"]
     v = c["verdict"]
     items = ", ".join(f'<a href="id/{a}/">{escape(LABEL[a])}</a>' for a in c["about"])
+    ra = RA_BY_CLAIM.get(c["id"])
+    second = (f'<br><span class="ctx">Riksarkivet: <a href="#{ra["id"]}">{escape(ra["verdict"])}</a></span>'
+              if ra else "")
     return (f'<tr id="{c["id"]}"><td class="id"><a href="id/{c["id"]}/">{escape(c["id"])}</a>'
             f'<br><span class="ctx">{escape(c["check_id"])}</span></td>'
             f'<td><span class="ctx">{escape(ctx)}</span><br>{escape(text)}<br><span class="ctx">Om: {items}</span></td>'
-            f'<td><span class="v {VERDICT_CLASS[v]}">{escape(v)}</span></td>'
+            f'<td><span class="v {VERDICT_CLASS[v]}">{escape(v)}</span>{second}</td>'
             f'<td>{link}<div class="ev">{escape(c["evidence"])}</div></td>'
             f'<td>{escape(action)}</td></tr>')
+
+
+def ra_row(r):
+    c = next(x for x in CLAIMS if x["id"] == r["claim"])
+    records = "<br>".join(f'<a href="{escape(x["url"])}">{escape(x["title"])}</a>' for x in r["records"])
+    note = f'<div class="ev">{escape(r["note"])}</div>' if r["note"] else ""
+    return (f'<tr id="{r["id"]}"><td class="id"><a href="#{c["id"]}">{escape(c["id"])}</a>'
+            f'<br><span class="ctx">{escape(r["id"])}</span></td>'
+            f'<td>{escape(c["statement"])}</td>'
+            f'<td><span class="v {VERDICT_CLASS[r["verdict"]]}">{escape(r["verdict"])}</span></td>'
+            f'<td>{records}<div class="ev">{escape(r["evidence"])}</div>{note}</td></tr>')
+
+
+def ra_section():
+    counts = Counter(r["verdict"] for r in RA["checks"])
+    registers = Counter(x["register"] for r in RA["checks"] for x in r["records"])
+    rows = "\n".join(ra_row(r) for r in RA["checks"])
+    return RA_SECTION.format(n=len(RA["checks"]), ok=counts["bekräftad"], unk=counts["ej verifierad"],
+                             sbl=registers["SBL"], sdhk=registers["SDHK"], rows=rows,
+                             checked=swedish_date(RA["checked"]))
+
+
+def swedish_date(iso):
+    months = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti",
+              "september", "oktober", "november", "december"]
+    y, m, d = iso.split("-")
+    return f"{int(d)} {months[int(m) - 1]} {y}"
 
 
 def main():
@@ -106,7 +138,8 @@ def main():
             f'<th>Källa och belägg</th><th>Åtgärd på affischen</th></tr></thead><tbody>\n'
             + "\n".join(rows) + "\n</tbody></table></div>")
     summary = ", ".join(f"{counts[k]} {k}" for k in ("bekräftad", "omdiskuterad", "avvikande", "ej verifierad") if counts[k])
-    page = PAGE.format(n=len(CLAIMS), summary=summary, sections="\n".join(sections))
+    page = PAGE.format(n=len(CLAIMS), summary=summary, n_ra=len(RA["checks"]),
+                       sections="\n".join(sections) + "\n" + ra_section())
     (HERE / "kallor.html").write_text(page, encoding="utf-8")
     print("wrote kallor.html", summary)
 
@@ -155,16 +188,48 @@ som ändrades på affischen efter kontrollen.</p>
 NE ligger bakom betalvägg och kontrollerades bara mot den fria ingressen. Ett fåtal uppgifter vilar på
 svagare källor, till exempel Britannica eller en tidskriftsartikel, vilket syns i källkolumnen.
 Kontrollen gjordes 18 oktober 2026.</p>
+<p>För {n_ra} av uppgifterna, om svenska personer och medeltida brev, gjordes en andra kontroll mot
+Riksarkivets register. Den redovisas i ett eget avsnitt, <a href="#riksarkivet">Andra kontrollen, mot
+Riksarkivet</a>, och vid varje berörd uppgift nedan.</p>
 <p>Hela kontrollen finns också maskinläsbar. <a href="data/claims.json">claims.json</a> har en post per uppgift
 med identifierare, vad uppgiften handlar om, utlåtande, källa, belägg och åtgärd. Som Linked Data finns varje uppgift
 under sin egen identifierare, se <a href="id/">identifierarna</a>. Agenternas oredigerade svar finns i
-<a href="check/kallkontroll.json">kallkontroll.json</a>.</p>
+<a href="check/kallkontroll.json">kallkontroll.json</a>. Den andra kontrollen finns i
+<a href="data/riksarkivet.json">riksarkivet.json</a>.</p>
 </div>
 {sections}
 </main>
 </body>
 </html>
 """
+
+RA_SECTION = """<h2 id="riksarkivet">Andra kontrollen, mot Riksarkivet</h2>
+<div class="intro">
+<p>Den första kontrollen använde uppslagsverk och museisidor, källor som sammanfattar andra källor. För {n}
+uppgifter om svenska personer och medeltida brev gick en andra kontroll ett steg närmare källorna, till två
+register hos Riksarkivet: Svenskt biografiskt lexikon (SBL) och Diplomatarium Suecanum (SDHK), registret över
+Sveriges medeltidsbrev. De nåddes genom Riksarkivets MCP-tjänst (beta), som låter en AI-agent söka direkt i
+registren. Kontrollen hänvisar till {sbl} SBL-artiklar och {sdhk} SDHK-brev.</p>
+<p>{ok} uppgifter bekräftades och {unk} gick inte att pröva, eftersom tjänsten ger SBL:s sammanfattning och
+litteraturlista, inte hela levnadsteckningen. Ingen uppgift motsades. Men registren tillför detaljer som
+uppslagsverken utelämnar:</p>
+<ul>
+<li>Årtalet 1164 för ärkebiskopsstolen i Uppsala står inte i påvebrevet. SDHK anger att utgivarna har lagt till det.</li>
+<li>Freden i Nöteborg dateras till 12 augusti 1323 av utgivarna, och SDHK markerar en av de medeltida avskrifterna
+som förfalskning.</li>
+<li>Erik av Pommern kröntes i Kalmar 17 juni 1397 enligt SBL. SDHK daterar kröningsbrevet 13 juli 1397.
+Samma år, olika dag.</li>
+<li>Stockholm finns i två brev daterade i Stockholm 1252. Att de är de första omnämnandena är historikernas
+slutsats, inte något registret säger.</li>
+</ul>
+<p>Det är samma lärdom som med periodgränserna, en nivå ner: också ett datum kan vara ett val, gjort av en
+utgivare. Den första kontrollens utlåtanden ovan är oförändrade. Kontrollen gjordes {checked}.</p>
+</div>
+<div class="tw"><table>
+<thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Register och belägg</th></tr></thead><tbody>
+{rows}
+</tbody></table></div>"""
+
 
 if __name__ == "__main__":
     main()

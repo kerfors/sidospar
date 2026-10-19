@@ -6442,9 +6442,6 @@ nh:nh-p0064 a crm:E4_Period,
             schema:creator [ a schema:Organization ;
                     schema:name "Chart Origin" ;
                     schema:url <https://chartorigin.com> ] ;
-            schema:image [ a schema:ImageObject ;
-                    schema:contentUrl <https://media.licdn.com/dms/image/v2/D4E22AQHrvGeeC1Ylvg/feedshare-shrink_480/B4EaFEPazcKoAg-/0/1792146255419?e=1793836800&v=beta&t=dkVaqlOlNRKleqIJVH9ou7Dd-xSD3iDiva5qpIxfqi4> ;
-                    schema:description "Signerad LinkedIn-länk, giltig till 2026-11-05." ] ;
             schema:name "Timeline of World History" ;
             schema:url <https://lnkd.in/p/ePw54Bpe> ] ;
     schema:license <https://creativecommons.org/licenses/by/4.0/> ;

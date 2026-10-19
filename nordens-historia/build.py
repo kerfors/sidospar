@@ -530,7 +530,7 @@ SCRIPT = """<script>
 </script>
 """
 
-ID_BASE = "https://kerfors.github.io/sidospar/nordens-historia/id/"
+ID_BASE = "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/"
 
 
 def panel_data():

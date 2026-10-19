@@ -1,15 +1,15 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0200#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0200#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/samenes_nasjonaldag> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/samenes_nasjonaldag> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0200 ;
@@ -17,16 +17,18 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0019/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-m0019/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-m0019 .
 
 nh:nh-c0200 a schema:Claim ;
     dcterms:identifier "MI19",
         "nh-c0200" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0019 ;
     schema:text "Första samiska landsmötet: 1917" .
+
+<https://snl.no/samenes_nasjonaldag> schema:name "Store norske leksikon: samenes nasjonaldag" .
 
 nh:nh-m0019 a crm:E5_Event,
         schema:Event ;
@@ -38,6 +40,4 @@ nh:nh-m0019 a crm:E5_Event,
     schema:about wd:Q19387464 ;
     schema:name "Första samiska landsmötet" ;
     schema:startDate "1917"^^xsd:gYear .
-
-<https://snl.no/samenes_nasjonaldag> schema:name "Store norske leksikon: samenes nasjonaldag" .
 

@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0046#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0046#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/steinalderen_i_Norge> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/steinalderen_i_Norge> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0046 ;
@@ -19,7 +19,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0020#def-019> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0020#def-019> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-019" ;
     dcterms:source <https://snl.no/steinalderen_i_Norge> ;
@@ -28,26 +28,26 @@
             crm:P82a_begin_of_the_begin "-3999"^^xsd:gYear ;
             crm:P82b_end_of_the_end "-1799"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0020 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
     skos:prefLabel "Yngre stenålder enligt Store norske leksikon"@sv ;
     skos:scopeNote "Källans formulering: yngre steinalder 4000–ca 1800 f.Kr.. Ungefärligt årtal: slut"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0045#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0045#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0020/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0020/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0020 .
 
 nh:nh-c0045 a schema:Claim ;
     dcterms:identifier "NO03",
         "nh-c0045" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0020 ;
     schema:text "Period 'Yngre stenålder': 4 000 f.Kr. – 1 700 f.Kr." .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0045#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0045#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/steinalderen_i_Norge> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/steinalderen_i_Norge> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Behållet 1700; SNL anger 1800, gemensamt bronsåldersblock följer 1700." ] ;
@@ -60,7 +60,7 @@ nh:nh-c0045 a schema:Claim ;
 nh:nh-c0046 a schema:Claim ;
     dcterms:identifier "NO04",
         "nh-c0046" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0020 ;
     schema:text "Jordbruket når Sydnorge" .
 
@@ -74,7 +74,7 @@ nh:nh-p0020 a crm:E4_Period,
     crm:P7_took_place_at wd:Q20 ;
     skos:closeMatch wd:Q1275904 ;
     skos:definition "Jordbruket når Sydnorge"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Yngre stenålder"@sv ;
     time:intervalMeets nh:nh-p0055 ;
     time:intervalMetBy nh:nh-p0019 ;

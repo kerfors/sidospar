@@ -1,12 +1,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0202#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0202#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Etikett ”(patentansökan)”." ] ;
@@ -16,16 +16,16 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0202/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0202/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0202 .
+
+<https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle> schema:name "LEGO: The stud and tube principle" .
 
 nh:nh-c0202 a schema:Claim ;
     dcterms:identifier "MI21",
         "nh-c0202" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0021 ;
     schema:text "LEGO-klossen: 1958" .
-
-<https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle> schema:name "LEGO: The stud and tube principle" .
 

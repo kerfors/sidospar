@@ -1,12 +1,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0043#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0043#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/steinalderen_i_Norge> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/steinalderen_i_Norge> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Start ändrat till 10 000 f.Kr." ] ;
@@ -16,16 +16,16 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0043/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0043/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0043 .
+
+<https://snl.no/steinalderen_i_Norge> schema:name "Store norske leksikon: steinalderen i Norge" .
 
 nh:nh-c0043 a schema:Claim ;
     dcterms:identifier "NO01",
         "nh-c0043" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0019 ;
     schema:text "Period 'Jägarstenålder': 9 500 f.Kr. – 4 000 f.Kr." .
-
-<https://snl.no/steinalderen_i_Norge> schema:name "Store norske leksikon: steinalderen i Norge" .
 

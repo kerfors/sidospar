@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0051#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0051#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Olav_3._Kyrre> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Olav_3._Kyrre> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0051 ;
@@ -19,10 +19,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0052#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0052#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Bergen_-_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Bergen_-_historie> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0052 ;
@@ -30,7 +30,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0022#def-021> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0022#def-021> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-021" ;
     dcterms:source <https://snl.no/Norges_historie> ;
@@ -39,25 +39,25 @@
             crm:P82a_begin_of_the_begin "1066"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1130"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0022 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
     skos:prefLabel "Riket konsolideras enligt Store norske leksikon"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0050#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0050#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0022/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0022/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0022 .
 
 nh:nh-c0050 a schema:Claim ;
     dcterms:identifier "NO08",
         "nh-c0050" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0022 ;
     schema:text "Period 'Riket konsolideras': 1066 – 1130" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0050#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0050#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Norges_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Norges_historie> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0050 ;
@@ -68,14 +68,14 @@ nh:nh-c0050 a schema:Claim ;
 nh:nh-c0051 a schema:Claim ;
     dcterms:identifier "NO09",
         "nh-c0051" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0022 ;
     schema:text "Olav Kyrre" .
 
 nh:nh-c0052 a schema:Claim ;
     dcterms:identifier "NO10",
         "nh-c0052" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0022 ;
     schema:text "Bergen växer fram" .
 
@@ -94,7 +94,7 @@ nh:nh-p0022 a crm:E4_Period,
             crm:P82b_end_of_the_end "1130"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q20 ;
     skos:definition "Olav Kyrre; Bergen växer fram"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Riket konsolideras"@sv ;
     time:intervalMeets nh:nh-p0023 ;
     time:intervalMetBy nh:nh-p0021 ;

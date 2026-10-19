@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0032#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0032#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Danmarks_historie_i_middelalderen> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Danmarks_historie_i_middelalderen> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0032 ;
@@ -19,7 +19,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0012#def-012> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0012#def-012> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-012" ;
     dcterms:source <https://lex.dk/Danmarks_historie_i_middelalderen> ;
@@ -28,27 +28,27 @@
             crm:P82a_begin_of_the_begin "1241"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1340"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0012 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
     skos:prefLabel "Strid och rikets upplösning enligt Lex (Den Store Danske)"@sv ;
     skos:scopeNote "Källans formulering: Strid og rigsopløsning 1241–1340"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0031#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0031#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0012/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0012/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0012 .
 
 nh:nh-c0031 a schema:Claim ;
     dcterms:identifier "DA15",
         "nh-c0031" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0012,
         nh:nh-p0013 ;
     schema:text "Period 'Kris och återuppbyggnad': 1241 – 1380" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0031#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0031#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Danmarks_historie_i_middelalderen> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Danmarks_historie_i_middelalderen> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Delat i 1241–1340 och 1340–1380 efter lex.dk." ] ;
@@ -61,7 +61,7 @@ nh:nh-c0031 a schema:Claim ;
 nh:nh-c0032 a schema:Claim ;
     dcterms:identifier "DA16",
         "nh-c0032" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0012 ;
     schema:text "Kunglös tid 1332–40" .
 
@@ -74,7 +74,7 @@ nh:nh-p0012 a crm:E4_Period,
             crm:P82b_end_of_the_end "1340"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q35 ;
     skos:definition "Kunglös tid 1332–40"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Strid och rikets upplösning"@sv ;
     time:intervalMeets nh:nh-p0013 ;
     time:intervalMetBy nh:nh-p0011 ;

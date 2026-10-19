@@ -1,12 +1,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0144#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0144#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Sjlisselburg> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Sjlisselburg> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0144 ;
@@ -14,12 +14,12 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0144#riksarkivet> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0144#riksarkivet> a prov:Entity,
         schema:ClaimReview ;
     dcterms:identifier "ra-005" ;
     prov:wasDerivedFrom <https://sok.riksarkivet.se/sdhk?SDHK=3228>,
         <https://sok.riksarkivet.se/sdhk?SDHK=39886> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
     schema:citation <https://sok.riksarkivet.se/sdhk?SDHK=3228>,
         <https://sok.riksarkivet.se/sdhk?SDHK=39886> ;
     schema:comment [ a schema:Comment ;
@@ -30,22 +30,22 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0144/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0144/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0144 .
 
 <https://lex.dk/Sjlisselburg> schema:name "Lex.dk: Sjlisselburg" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=3228> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=3228> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
     schema:name "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=39886> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=39886> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
     schema:name "SDHK nr 39886: samma fred, i en annan medeltida avskrift" .
 
 nh:nh-c0144 a schema:Claim ;
     dcterms:identifier "GE15",
         "nh-c0144" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0060 ;
     schema:text "Freden i Nöteborg 1323" .
 

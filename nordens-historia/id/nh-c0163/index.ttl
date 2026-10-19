@@ -1,12 +1,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0163#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0163#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0163 ;
@@ -14,16 +14,16 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0163/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0163/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0163 .
+
+<https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> schema:name "Stormaktstiden – Nationalencyklopedin" .
 
 nh:nh-c0163 a schema:Claim ;
     dcterms:identifier "GE34",
         "nh-c0163" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0067 ;
     schema:text "Period 'Stormaktstiden': 1611 – 1718" .
-
-<https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> schema:name "Stormaktstiden – Nationalencyklopedin" .
 

@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0069#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0069#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0069 ;
@@ -19,10 +19,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0070#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0070#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0070 ;
@@ -30,7 +30,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0028#def-027> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0028#def-027> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-027" ;
     dcterms:source <https://historiska.se/utforska-historien/tidsaldrar/> ;
@@ -39,25 +39,25 @@
             crm:P82a_begin_of_the_begin "-9999"^^xsd:gYear ;
             crm:P82b_end_of_the_end "-3999"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0028 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-historiska> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-historiska> ;
     skos:prefLabel "Jägarstenålder enligt Statens historiska museer"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0068#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0068#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0028/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0028/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0028 .
 
 nh:nh-c0068 a schema:Claim ;
     dcterms:identifier "SV01",
         "nh-c0068" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0028 ;
     schema:text "Period 'Jägarstenålder': 10 000 f.Kr. – 4 000 f.Kr." .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0068#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0068#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://historiska.se/utforska-historien/tidsaldrar/> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://historiska.se/utforska-historien/tidsaldrar/> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0068 ;
@@ -68,14 +68,14 @@ nh:nh-c0068 a schema:Claim ;
 nh:nh-c0069 a schema:Claim ;
     dcterms:identifier "SV02",
         "nh-c0069" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0028 ;
     schema:text "Inlandsisen drar sig tillbaka" .
 
 nh:nh-c0070 a schema:Claim ;
     dcterms:identifier "SV03",
         "nh-c0070" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0028 ;
     schema:text "Hensbackakultur på Västkusten" .
 
@@ -93,7 +93,7 @@ nh:nh-p0028 a crm:E4_Period,
     crm:P7_took_place_at wd:Q34 ;
     skos:closeMatch wd:Q104245387 ;
     skos:definition "Inlandsisen drar sig tillbaka; Hensbackakultur på Västkusten"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Jägarstenålder"@sv ;
     time:intervalMeets nh:nh-p0029 ;
     schema:description "Inlandsisen drar sig tillbaka; Hensbackakultur på Västkusten" ;

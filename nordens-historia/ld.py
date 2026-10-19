@@ -7,12 +7,16 @@ Reads data/items.json, data/claims.json and data/wikidata.json and writes
 Turtle is generated from the JSON-LD with rdflib; the build fails if the two
 do not give the same graph.
 
-URI pattern (static hosting, no content negotiation):
-  thing     https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0015
-  page      https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0015/
-  data      https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0015/index.jsonld
-            https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0015/index.ttl
-GitHub Pages answers the thing URI with a 301 redirect to the page.
+URI pattern (minted under w3id.org, hosted on GitHub Pages):
+  thing     https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0015
+  page      https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0015/
+  data      https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0015/index.jsonld
+            https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0015/index.ttl
+w3id.org answers the thing URI with a 303 to a document about it: index.ttl
+for text/turtle, index.jsonld for application/ld+json, otherwise the page.
+The page and data URIs get a 302 to the same path under
+https://kerfors.github.io/sidospar/. Rules: ids/people/kerfors/.htaccess in
+perma-id/w3id.org.
 
 Run: python3 ld.py
 """
@@ -25,7 +29,7 @@ from rdflib.compare import isomorphic
 
 HERE = Path(__file__).parent
 BASE = "https://kerfors.github.io/sidospar/nordens-historia/"
-ID = BASE + "id/"
+ID = "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/"
 CHECK_DATE = "2026-10-18"
 ORIGINAL_POST = "https://lnkd.in/p/ePw54Bpe"
 ORIGINAL_POSTER = "https://media.licdn.com/dms/image/v2/D4E22AQHrvGeeC1Ylvg/feedshare-shrink_480/B4EaFEPazcKoAg-/0/1792146255419?e=1793836800&v=beta&t=dkVaqlOlNRKleqIJVH9ou7Dd-xSD3iDiva5qpIxfqi4"
@@ -624,8 +628,8 @@ och går att ställa frågor mot på <a href="../sparql.html">SPARQL-sidan</a>. 
 <code>nh-c</code> kontrollerad uppgift. Namnet ingår inte, så en period kan byta namn utan att identifieraren ändras.
 Numren delas ut en gång och återanvänds aldrig.</li>
 <li><strong>Sak och dokument.</strong> <code>…/id/nh-p0015</code> är perioden, <code>…/id/nh-p0015/</code> sidan om den.
-GitHub Pages svarar på den förra med en 301-omdirigering till den senare, inte den 303 som Linked Data-praxis
-föreskriver. Sidan säger uttryckligen vad den handlar om (<code>schema:mainEntity</code>).</li>
+w3id.org svarar på den förra med en 303-omdirigering till ett dokument om perioden: <code>index.ttl</code> för
+den som ber om Turtle, <code>index.jsonld</code> för JSON-LD, annars sidan. Sidan säger uttryckligen vad den handlar om (<code>schema:mainEntity</code>).</li>
 <li><strong>Årtal.</strong> Affischen skriver 500 f.Kr.; datan använder astronomisk årsnumrering enligt
 <code>xsd:gYear</code>, där 1 f.Kr. är år 0. 500 f.Kr. blir alltså <code>-0499</code>.</li>
 </ul>

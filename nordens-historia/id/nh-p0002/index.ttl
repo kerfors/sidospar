@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0004#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0004#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Islands_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Islands_historie> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0004 ;
@@ -19,10 +19,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0005#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0005#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Islands_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Islands_historie> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Ändrat till 999/1000." ] ;
@@ -32,10 +32,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0006#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0006#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/islendingesaga> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/islendingesaga> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0006 ;
@@ -43,7 +43,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0002#def-002> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0002#def-002> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-002" ;
     dcterms:source <https://lex.dk/Islands_historie> ;
@@ -52,25 +52,25 @@
             crm:P82a_begin_of_the_begin "0930"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1262"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0002 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
     skos:prefLabel "Fristaten enligt Lex (Den Store Danske)"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0003#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0003#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0002/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0002/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0002 .
 
 nh:nh-c0003 a schema:Claim ;
     dcterms:identifier "IS03",
         "nh-c0003" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0002 ;
     schema:text "Period 'Fristaten': 930 – 1262" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0003#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0003#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Islands_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Islands_historie> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0003 ;
@@ -81,21 +81,21 @@ nh:nh-c0003 a schema:Claim ;
 nh:nh-c0004 a schema:Claim ;
     dcterms:identifier "IS04",
         "nh-c0004" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0002 ;
     schema:text "Alltinget på Þingvellir" .
 
 nh:nh-c0005 a schema:Claim ;
     dcterms:identifier "IS05",
         "nh-c0005" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0002 ;
     schema:text "kristendomen antas år 1000" .
 
 nh:nh-c0006 a schema:Claim ;
     dcterms:identifier "IS06",
         "nh-c0006" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0002 ;
     schema:text "sagalitteraturen" .
 
@@ -115,7 +115,7 @@ nh:nh-p0002 a crm:E4_Period,
     crm:P7_took_place_at wd:Q189 ;
     skos:definition "Alltinget på Þingvellir; kristendomen antas 999/1000; sagalitteraturen"@sv ;
     skos:exactMatch wd:Q62389 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Fristaten"@sv ;
     time:intervalMeets nh:nh-p0003 ;
     time:intervalMetBy nh:nh-p0001 ;

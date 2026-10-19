@@ -1,12 +1,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0008#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0008#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Islands_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Islands_historie> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0008 ;
@@ -14,16 +14,16 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0008/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0008/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0008 .
+
+<https://lex.dk/Islands_historie> schema:name "Islands historie (lex.dk, Den Store Danske)" .
 
 nh:nh-c0008 a schema:Claim ;
     dcterms:identifier "IS08",
         "nh-c0008" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0003 ;
     schema:text "Gamli sáttmáli 1262–64" .
-
-<https://lex.dk/Islands_historie> schema:name "Islands historie (lex.dk, Den Store Danske)" .
 

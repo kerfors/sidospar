@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0013#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0013#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Islands_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Islands_historie> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0013 ;
@@ -19,7 +19,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0005#def-005> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0005#def-005> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-005" ;
     dcterms:source <https://lex.dk/Islands_historie> ;
@@ -28,25 +28,25 @@
             crm:P82a_begin_of_the_begin "1918"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1944"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0005 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
     skos:prefLabel "Konungariket Island enligt Lex (Den Store Danske)"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0012#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0012#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0005/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0005/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0005 .
 
 nh:nh-c0012 a schema:Claim ;
     dcterms:identifier "IS12",
         "nh-c0012" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0005 ;
     schema:text "Period 'Konungariket Island': 1918 – 1944" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0012#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0012#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Islands_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Islands_historie> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0012 ;
@@ -57,7 +57,7 @@ nh:nh-c0012 a schema:Claim ;
 nh:nh-c0013 a schema:Claim ;
     dcterms:identifier "IS13",
         "nh-c0013" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0005 ;
     schema:text "Personalunion med Danmark" .
 
@@ -71,7 +71,7 @@ nh:nh-p0005 a crm:E4_Period,
     crm:P7_took_place_at wd:Q189 ;
     skos:definition "Personalunion med Danmark"@sv ;
     skos:exactMatch wd:Q62567 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Konungariket Island"@sv ;
     time:intervalMeets nh:nh-p0006 ;
     time:intervalMetBy nh:nh-p0004 ;

@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0107#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0107#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0107 ;
@@ -19,10 +19,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0108#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0108#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Finlands_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Finlands_historie> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0108 ;
@@ -30,10 +30,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0109#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0109#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Finlands_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Finlands_historie> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0109 ;
@@ -41,7 +41,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0046#def-043> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0046#def-043> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-043" ;
     dcterms:source <https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> ;
@@ -50,25 +50,25 @@
             crm:P82a_begin_of_the_begin "1917"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1939"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0046 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-uppslagsverket> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-uppslagsverket> ;
     skos:prefLabel "Självständigt Finland enligt Uppslagsverket Finland"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0106#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0106#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0046/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0046/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0046 .
 
 nh:nh-c0106 a schema:Claim ;
     dcterms:identifier "FI18",
         "nh-c0106" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0046 ;
     schema:text "Period 'Självständigt Finland': 1917 – 1939" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0106#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0106#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0106 ;
@@ -79,21 +79,21 @@ nh:nh-c0106 a schema:Claim ;
 nh:nh-c0107 a schema:Claim ;
     dcterms:identifier "FI19",
         "nh-c0107" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0046 ;
     schema:text "6 dec 1917" .
 
 nh:nh-c0108 a schema:Claim ;
     dcterms:identifier "FI20",
         "nh-c0108" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0046 ;
     schema:text "inbördeskriget 1918" .
 
 nh:nh-c0109 a schema:Claim ;
     dcterms:identifier "FI21",
         "nh-c0109" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0046 ;
     schema:text "republik 1919" .
 
@@ -110,7 +110,7 @@ nh:nh-p0046 a crm:E4_Period,
             crm:P82b_end_of_the_end "1939"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q33 ;
     skos:definition "6 dec 1917; inbördeskriget 1918; republik 1919"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Självständigt Finland"@sv ;
     time:intervalMeets nh:nh-p0047 ;
     time:intervalMetBy nh:nh-p0045 ;

@@ -1,12 +1,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0185#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0185#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.uu.se/550/tidigare-jubileer-och-kort-historik> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.uu.se/550/tidigare-jubileer-och-kort-historik> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0185 ;
@@ -14,12 +14,12 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0185#riksarkivet> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0185#riksarkivet> a prov:Entity,
         schema:ClaimReview ;
     dcterms:identifier "ra-012" ;
     prov:wasDerivedFrom <https://sok.riksarkivet.se/sdhk?SDHK=30221>,
         <https://sok.riksarkivet.se/sdhk?SDHK=30290> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
     schema:citation <https://sok.riksarkivet.se/sdhk?SDHK=30221>,
         <https://sok.riksarkivet.se/sdhk?SDHK=30290> ;
     schema:datePublished "2026-10-18" ;
@@ -28,14 +28,14 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0185/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0185/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0185 .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=30221> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=30221> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
     schema:name "SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=30290> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=30290> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
     schema:name "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala" .
 
 <https://www.uu.se/550/tidigare-jubileer-och-kort-historik> schema:name "Uppsala universitet: Kort historik och tidigare jubileer" .
@@ -43,7 +43,7 @@
 nh:nh-c0185 a schema:Claim ;
     dcterms:identifier "MI04",
         "nh-c0185" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0004 ;
     schema:text "Uppsala universitet: 1477" .
 

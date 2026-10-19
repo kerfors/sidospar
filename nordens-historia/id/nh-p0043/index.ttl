@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0100#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0100#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoriaMedeltiden> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoriaMedeltiden> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0100 ;
@@ -19,7 +19,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0043#def-041> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0043#def-041> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-041" ;
     dcterms:source <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
@@ -27,27 +27,27 @@
     crm:P4_has_time-span [ a crm:E52_Time-Span ;
             crm:P82a_begin_of_the_begin "1025"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0043 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-uppslagsverket> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-uppslagsverket> ;
     skos:prefLabel "Korstågstid enligt Uppslagsverket Finland"@sv ;
     skos:scopeNote "Källans formulering: korstågstiden 1025 – ca 1150 i väster, ca 1300 i öster. Ungefärligt årtal: slut"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0099#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0099#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0043/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0043/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0043 .
 
 nh:nh-c0099 a schema:Claim ;
     dcterms:identifier "FI11",
         "nh-c0099" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0043,
         nh:nh-p0044 ;
     schema:text "Period 'Korstågstid': 1025 – 1319" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0099#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0099#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Slut ändrat till 1300; not om väst/öst; nytt block 1300–1319." ] ;
@@ -61,7 +61,7 @@ nh:nh-c0099 a schema:Claim ;
 nh:nh-c0100 a schema:Claim ;
     dcterms:identifier "FI12",
         "nh-c0100" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0043 ;
     schema:text "Svensk expansion österut" .
 
@@ -78,7 +78,7 @@ nh:nh-p0043 a crm:E4_Period,
             crm:P82b_end_of_the_end "1300"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q33 ;
     skos:definition "Till c. 1150 i väster och c. 1300 i öster"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Korstågstid"@sv ;
     time:intervalMeets nh:nh-p0044 ;
     time:intervalMetBy nh:nh-p0042 ;

@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0072#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0072#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/neolitikum> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/neolitikum> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0072 ;
@@ -19,7 +19,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0029#def-028> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0029#def-028> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-028" ;
     dcterms:source <https://historiska.se/utforska-historien/tidsaldrar/> ;
@@ -28,25 +28,25 @@
             crm:P82a_begin_of_the_begin "-3999"^^xsd:gYear ;
             crm:P82b_end_of_the_end "-1699"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0029 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-historiska> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-historiska> ;
     skos:prefLabel "Bondestenålder enligt Statens historiska museer"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0071#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0071#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0029/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0029/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0029 .
 
 nh:nh-c0071 a schema:Claim ;
     dcterms:identifier "SV04",
         "nh-c0071" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0029 ;
     schema:text "Period 'Bondestenålder': 4 000 f.Kr. – 1 700 f.Kr." .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0071#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0071#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://historiska.se/utforska-historien/tidsaldrar/> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://historiska.se/utforska-historien/tidsaldrar/> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0071 ;
@@ -57,7 +57,7 @@ nh:nh-c0071 a schema:Claim ;
 nh:nh-c0072 a schema:Claim ;
     dcterms:identifier "SV05",
         "nh-c0072" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0029 ;
     schema:text "Trattbägar-, gropkeramisk och stridsyxekultur" .
 
@@ -75,7 +75,7 @@ nh:nh-p0029 a crm:E4_Period,
     crm:P7_took_place_at wd:Q34 ;
     skos:closeMatch wd:Q1275904 ;
     skos:definition "Trattbägar-, gropkeramisk och stridsyxekultur"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Bondestenålder"@sv ;
     time:intervalMeets nh:nh-p0055 ;
     time:intervalMetBy nh:nh-p0028 ;

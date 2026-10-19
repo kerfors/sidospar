@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0040#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0040#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Delat i 1945–1973 och 1973–." ] ;
@@ -21,10 +21,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0041#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0041#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/det_danske_EU-medlemskab> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/det_danske_EU-medlemskab> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0041 ;
@@ -32,10 +32,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0042#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0042#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Gr%C3%B8nlands_Hjemmestyre> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Gr%C3%B8nlands_Hjemmestyre> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0042 ;
@@ -43,14 +43,14 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0018/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0018/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0018 .
 
 nh:nh-c0040 a schema:Claim ;
     dcterms:identifier "DA24",
         "nh-c0040" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0017,
         nh:nh-p0018 ;
     schema:text "Period 'Välfärdsstat': 1945 – 2026" .
@@ -58,14 +58,14 @@ nh:nh-c0040 a schema:Claim ;
 nh:nh-c0041 a schema:Claim ;
     dcterms:identifier "DA25",
         "nh-c0041" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0018 ;
     schema:text "EG 1973" .
 
 nh:nh-c0042 a schema:Claim ;
     dcterms:identifier "DA26",
         "nh-c0042" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0018 ;
     schema:text "Grönlands hjemmestyre 1979" .
 
@@ -84,7 +84,7 @@ nh:nh-p0018 a crm:E4_Period,
             crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q35 ;
     skos:definition "EG 1973; Grönlands hjemmestyre 1979"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "I EG/EU"@sv ;
     time:intervalMetBy nh:nh-p0017 ;
     schema:description "EG 1973; Grönlands hjemmestyre 1979" ;

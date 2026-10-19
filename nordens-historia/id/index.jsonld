@@ -9,7 +9,7 @@
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
   "time": "http://www.w3.org/2006/time#",
-  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "nh": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
   },
@@ -103,7 +103,7 @@
  },
  "@graph": [
   {
-   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+   "@id": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/",
    "@type": "WebPage",
    "mainEntity": "nh:#dataset"
   },
@@ -142,14 +142,14 @@
      "@type": "DataDownload",
      "encodingFormat": "application/ld+json",
      "contentUrl": {
-      "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/index.jsonld"
+      "@id": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/index.jsonld"
      }
     },
     {
      "@type": "DataDownload",
      "encodingFormat": "text/turtle",
      "contentUrl": {
-      "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/index.ttl"
+      "@id": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/index.ttl"
      }
     }
    ]

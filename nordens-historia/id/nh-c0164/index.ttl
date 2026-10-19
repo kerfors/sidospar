@@ -1,12 +1,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0164#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0164#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0164 ;
@@ -14,11 +14,11 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0164#riksarkivet> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0164#riksarkivet> a prov:Entity,
         schema:ClaimReview ;
     dcterms:identifier "ra-009" ;
     prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
     schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0164 ;
@@ -26,19 +26,19 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0164/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0164/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0164 .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> schema:name "Stormaktstiden – Nationalencyklopedin" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
     schema:name "SBL: Gustav II Adolf" .
 
 nh:nh-c0164 a schema:Claim ;
     dcterms:identifier "GE35",
         "nh-c0164" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0067 ;
     schema:text "Gustav II Adolf" .
 

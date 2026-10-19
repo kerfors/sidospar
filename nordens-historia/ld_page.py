@@ -149,14 +149,15 @@ The data shows this openly:</p>
 <ul>{moved}</ul>
 
 <h2>Identifiers</h2>
-<p>Every item has an identifier under <code>https://kerfors.github.io/sidospar/nordens-historia/id/</code>.</p>
+<p>Every item has an identifier under <code>https://w3id.org/people/kerfors/sidospar/nordens-historia/id/</code>.</p>
 <ul>
 <li><strong>Opaque numbers.</strong> <code>nh-p</code> period, <code>nh-e</code> event, <code>nh-m</code> milestone,
 <code>nh-c</code> checked statement. The name is not part of the identifier, so a period can be renamed or re-dated
 without breaking links. Numbers are never reused. They are stored in the data, not generated at build time.</li>
 <li><strong>Thing and page.</strong> <code>…/id/nh-p0030</code> is the period. <code>…/id/nh-p0030/</code> is the page
-about it, with embedded JSON-LD, and <code>index.jsonld</code> next to it. GitHub Pages answers the first with a 301
-redirect to the second. Linked data practice says 303. The page states what it is about (<code>schema:mainEntity</code>).</li>
+about it, with embedded JSON-LD, and <code>index.jsonld</code> next to it. w3id.org answers the first with a 303
+redirect to a document about it: <code>index.ttl</code> for Turtle, <code>index.jsonld</code> for JSON-LD, otherwise the page.
+The page states what it is about (<code>schema:mainEntity</code>).</li>
 <li><strong>Years.</strong> The poster writes "500 f.Kr." (500 BCE). The data uses <code>xsd:gYear</code> with
 astronomical numbering, where 1 BCE is year 0. So 500 BCE is <code>-0499</code>.</li>
 </ul>
@@ -267,8 +268,6 @@ The code is in the <a href="https://github.com/kerfors/sidospar">sidospar reposi
 <ul>
 <li><strong>SHACL shapes.</strong> The model described as shapes, and the build validated against them.</li>
 <li><strong>More languages.</strong> Labels in Danish, Norwegian, Finnish, English and Northern Sami.</li>
-<li><strong>A persistent base.</strong> A <a href="https://w3id.org">w3id.org</a> redirect, so the identifiers survive
-a change of host and can answer with 303.</li>
 </ul>
 <p style="color:#6b7682; font-size:0.9rem">Kerstin Forsberg, October 2026.</p>
 </main>

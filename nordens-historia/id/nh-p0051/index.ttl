@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0122#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0122#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/samenes_historie> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0122 ;
@@ -19,10 +19,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0123#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0123#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/samenes_historie> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Ändrat till ”flera riken”." ] ;
@@ -32,7 +32,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0051#def-048> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0051#def-048> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-048" ;
     dcterms:source <https://snl.no/samenes_historie> ;
@@ -41,26 +41,26 @@
             crm:P82a_begin_of_the_begin "1050"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1550"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0051 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
     skos:prefLabel "Siidasamhällen enligt Store norske leksikon"@sv ;
     skos:scopeNote "Källans formulering: medeltid 1050–1550 (SNL:s periodindelning av samisk historia)"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0121#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0121#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0051/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0051/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0051 .
 
 nh:nh-c0121 a schema:Claim ;
     dcterms:identifier "SÁ07",
         "nh-c0121" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0051 ;
     schema:text "Period 'Siidasamhällen': 800 – 1550" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0121#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0121#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/samenes_historie> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Start ändrat till 1050." ] ;
@@ -73,14 +73,14 @@ nh:nh-c0121 a schema:Claim ;
 nh:nh-c0122 a schema:Claim ;
     dcterms:identifier "SÁ08",
         "nh-c0122" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0051 ;
     schema:text "Fångst, fiske och handel" .
 
 nh:nh-c0123 a schema:Claim ;
     dcterms:identifier "SÁ09",
         "nh-c0123" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0051 ;
     schema:text "skatt till flera kronor" .
 
@@ -93,7 +93,7 @@ nh:nh-p0051 a crm:E4_Period,
             crm:P82b_end_of_the_end "1550"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q62132 ;
     skos:definition "Fångst, fiske och handel; skatt till flera riken"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Siidasamhällen"@sv ;
     time:intervalMeets nh:nh-p0052 ;
     time:intervalMetBy nh:nh-p0050 ;

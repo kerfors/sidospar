@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,7 +8,7 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0039#def-037> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0039#def-037> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-037" ;
     dcterms:source <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
@@ -17,26 +17,26 @@
             crm:P82a_begin_of_the_begin "-3199"^^xsd:gYear ;
             crm:P82b_end_of_the_end "-1499"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0039 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-uppslagsverket> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-uppslagsverket> ;
     skos:prefLabel "Båtyxe- och Kiukaiskultur enligt Uppslagsverket Finland"@sv ;
     skos:scopeNote "Källans formulering: båtyxkulturen 3200–2300 f.Kr., Kiukaiskulturen 2300–1500 f.Kr."@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0092#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0092#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0039/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0039/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0039 .
 
 nh:nh-c0092 a schema:Claim ;
     dcterms:identifier "FI04",
         "nh-c0092" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0039 ;
     schema:text "Period 'Stridsyxe- och Kiukaiskultur': 2 800 f.Kr. – 1 500 f.Kr." .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0092#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0092#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Ändrat till båtyxe- och Kiukaiskultur 2800–1600 f.Kr. med not om överlappet." ] ;
@@ -57,7 +57,7 @@ nh:nh-p0039 a crm:E4_Period,
     crm:P7_took_place_at wd:Q33 ;
     skos:closeMatch wd:Q18228533 ;
     skos:definition "Båtyxkulturen från c. 3200 f.Kr., parallellt med sen kamkeramik"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Båtyxe- och Kiukaiskultur"@sv ;
     time:intervalMeets nh:nh-p0040 ;
     time:intervalMetBy nh:nh-p0038 ;

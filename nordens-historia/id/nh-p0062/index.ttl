@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,7 +8,7 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0062#def-058> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0062#def-058> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-058" ;
     dcterms:source <https://lex.dk/Danmark-Norge> ;
@@ -19,31 +19,33 @@
             crm:P82a_begin_of_the_begin "1380"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1397"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0062 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
     skos:prefLabel "Danmark–Norge enligt Lex (Den Store Danske)"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0149#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0149#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0062/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0062/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0062 .
 
 nh:nh-c0149 a schema:Claim ;
     dcterms:identifier "GE20",
         "nh-c0149" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0062 ;
     schema:text "Period 'Danmark–Norge': 1380 – 1397" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0149#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0149#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Danmark-Norge> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Danmark-Norge> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0149 ;
     schema:reviewBody "Lex.dk: Danmark–Norge bestod från 1380 då Oluf ärvde norska kronan; Kalmarunionen från 1397." ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
+
+<https://lex.dk/Danmark-Norge> schema:name "Lex.dk: Danmark-Norge" .
 
 nh:nh-p0062 a crm:E4_Period,
         skos:Concept ;
@@ -57,7 +59,7 @@ nh:nh-p0062 a crm:E4_Period,
     crm:P7_took_place_at wd:Q189,
         wd:Q20,
         wd:Q35 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Danmark–Norge"@sv ;
     time:intervalMeets nh:nh-p0063 ;
     time:intervalMetBy nh:nh-p0003,
@@ -65,6 +67,4 @@ nh:nh-p0062 a crm:E4_Period,
         nh:nh-p0025 ;
     schema:name "Danmark–Norge" ;
     schema:temporalCoverage "1380/1397" .
-
-<https://lex.dk/Danmark-Norge> schema:name "Lex.dk: Danmark-Norge" .
 

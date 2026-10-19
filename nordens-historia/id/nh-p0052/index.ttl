@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0125#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0125#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://prod.sou.gov.se/contentassets/1287a65ca66445d5ba910dcb62c4d8d0/pm-1-en-historisk-konturteckning.pdf> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://prod.sou.gov.se/contentassets/1287a65ca66445d5ba910dcb62c4d8d0/pm-1-en-historisk-konturteckning.pdf> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0125 ;
@@ -19,7 +19,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0052#def-049> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0052#def-049> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-049" ;
     dcterms:source <https://snl.no/samenes_historie> ;
@@ -28,26 +28,26 @@
             crm:P82a_begin_of_the_begin "1550"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1826"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0052 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
     skos:prefLabel "Skatt, handel och mission enligt Store norske leksikon"@sv ;
     skos:scopeNote "Källans formulering: tidigmodern tid 1550–1826 (SNL:s periodindelning av samisk historia)"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0124#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0124#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0052/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0052/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0052 .
 
 nh:nh-c0124 a schema:Claim ;
     dcterms:identifier "SÁ10",
         "nh-c0124" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0052 ;
     schema:text "Period 'Kolonisering och kristnande': 1550 – 1751" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0124#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0124#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/samenes_historie> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Titeln ändrad till ”Skatt, handel och mission”; nybyggen i nästa block." ] ;
@@ -60,7 +60,7 @@ nh:nh-c0124 a schema:Claim ;
 nh:nh-c0125 a schema:Claim ;
     dcterms:identifier "SÁ11",
         "nh-c0125" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0052 ;
     schema:text "Lappmarksplakatet 1673" .
 
@@ -77,7 +77,7 @@ nh:nh-p0052 a crm:E4_Period,
             crm:P82b_end_of_the_end "1751"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q62132 ;
     skos:definition "Lappmarksplakatet 1673"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Skatt, handel och mission"@sv ;
     time:intervalMeets nh:nh-p0053 ;
     time:intervalMetBy nh:nh-p0051 ;

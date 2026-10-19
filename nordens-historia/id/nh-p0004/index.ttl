@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0010#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0010#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Ändrat till ”sammanträder åter 1845” (beslut 1843)." ] ;
@@ -21,10 +21,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0011#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0011#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0011 ;
@@ -32,7 +32,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0004#def-004> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0004#def-004> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-004" ;
     dcterms:source <https://lex.dk/Islands_historie> ;
@@ -40,26 +40,26 @@
     crm:P4_has_time-span [ a crm:E52_Time-Span ;
             crm:P82a_begin_of_the_begin "1380"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0004 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
     skos:prefLabel "Under danska kronan enligt Lex (Den Store Danske)"@sv ;
     skos:scopeNote "Källans formulering: i praktiken del av den danska monarkin från 1380"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0009#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0009#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0004/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0004/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0004 .
 
 nh:nh-c0009 a schema:Claim ;
     dcterms:identifier "IS09",
         "nh-c0009" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0004 ;
     schema:text "Period 'Under danska kronan': 1814 – 1918" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0009#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0009#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Islands_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Islands_historie> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Behållet; 1814 som gräns följer SNL." ] ;
@@ -72,14 +72,14 @@ nh:nh-c0009 a schema:Claim ;
 nh:nh-c0010 a schema:Claim ;
     dcterms:identifier "IS10",
         "nh-c0010" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0004 ;
     schema:text "Alltinget återupprättas 1845" .
 
 nh:nh-c0011 a schema:Claim ;
     dcterms:identifier "IS11",
         "nh-c0011" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0004 ;
     schema:text "hemmastyre 1904" .
 
@@ -98,7 +98,7 @@ nh:nh-p0004 a crm:E4_Period,
             crm:P82b_end_of_the_end "1918"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q189 ;
     skos:definition "Alltinget sammanträder åter 1845; hemmastyre 1904"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Under danska kronan"@sv ;
     time:intervalMeets nh:nh-p0005 ;
     time:intervalMetBy nh:nh-p0065 ;

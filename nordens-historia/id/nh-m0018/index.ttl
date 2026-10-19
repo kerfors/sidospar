@@ -1,15 +1,15 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0199#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0199#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Niels_Bohr> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Niels_Bohr> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0199 ;
@@ -17,16 +17,18 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0018/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-m0018/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-m0018 .
 
 nh:nh-c0199 a schema:Claim ;
     dcterms:identifier "MI18",
         "nh-c0199" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0018 ;
     schema:text "Bohrs atommodell: 1913" .
+
+<https://lex.dk/Niels_Bohr> schema:name "lex.dk: Niels Bohr" .
 
 nh:nh-m0018 a crm:E5_Event,
         schema:Event ;
@@ -38,6 +40,4 @@ nh:nh-m0018 a crm:E5_Event,
     schema:about wd:Q172948 ;
     schema:name "Bohrs atommodell" ;
     schema:startDate "1913"^^xsd:gYear .
-
-<https://lex.dk/Niels_Bohr> schema:name "lex.dk: Niels Bohr" .
 

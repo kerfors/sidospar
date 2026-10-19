@@ -1,12 +1,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0125#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0125#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://prod.sou.gov.se/contentassets/1287a65ca66445d5ba910dcb62c4d8d0/pm-1-en-historisk-konturteckning.pdf> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://prod.sou.gov.se/contentassets/1287a65ca66445d5ba910dcb62c4d8d0/pm-1-en-historisk-konturteckning.pdf> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0125 ;
@@ -14,16 +14,16 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0125/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0125/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0125 .
+
+<https://prod.sou.gov.se/contentassets/1287a65ca66445d5ba910dcb62c4d8d0/pm-1-en-historisk-konturteckning.pdf> schema:name "Regeringskansliet N 2021:02 PM 1 (utdrag ur SOU 2005:116), historisk konturteckning" .
 
 nh:nh-c0125 a schema:Claim ;
     dcterms:identifier "SÁ11",
         "nh-c0125" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0052 ;
     schema:text "Lappmarksplakatet 1673" .
-
-<https://prod.sou.gov.se/contentassets/1287a65ca66445d5ba910dcb62c4d8d0/pm-1-en-historisk-konturteckning.pdf> schema:name "Regeringskansliet N 2021:02 PM 1 (utdrag ur SOU 2005:116), historisk konturteckning" .
 

@@ -1,16 +1,16 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0180#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0180#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/5._maj_1945> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/5._maj_1945> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0180 ;
@@ -18,16 +18,18 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-e0005/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-e0005/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-e0005 .
 
 nh:nh-c0180 a schema:Claim ;
     dcterms:identifier "GE51",
         "nh-c0180" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-handelse> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-handelse> ;
     schema:about nh:nh-e0005 ;
     schema:text "1940–45 Tysk ockupation" .
+
+<https://lex.dk/5._maj_1945> schema:name "5. maj 1945 – lex.dk; Samene under andre verdenskrig – SNL" .
 
 nh:nh-e0005 a crm:E5_Event,
         schema:Event ;
@@ -41,6 +43,4 @@ nh:nh-e0005 a crm:E5_Event,
     skos:closeMatch wd:Q819274 ;
     schema:name "1940–45 Tysk ockupation" ;
     schema:startDate "1940"^^xsd:gYear .
-
-<https://lex.dk/5._maj_1945> schema:name "5. maj 1945 – lex.dk; Samene under andre verdenskrig – SNL" .
 

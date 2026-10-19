@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,7 +8,7 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0017#def-017> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0017#def-017> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-017" ;
     dcterms:source <https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> ;
@@ -17,27 +17,27 @@
             crm:P82a_begin_of_the_begin "1945"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1973"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0017 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
     skos:prefLabel "Välfärdsstaten byggs enligt Lex (Den Store Danske)"@sv ;
     skos:scopeNote "Källans formulering: efterkrigstiden 1945–1973"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0040#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0040#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0017/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0017/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0017 .
 
 nh:nh-c0040 a schema:Claim ;
     dcterms:identifier "DA24",
         "nh-c0040" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0017,
         nh:nh-p0018 ;
     schema:text "Period 'Välfärdsstat': 1945 – 2026" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0040#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0040#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Delat i 1945–1973 och 1973–." ] ;
@@ -47,6 +47,8 @@ nh:nh-c0040 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
 
+<https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
+
 nh:nh-p0017 a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "nh-p0017" ;
@@ -55,12 +57,10 @@ nh:nh-p0017 a crm:E4_Period,
             crm:P82a_begin_of_the_begin "1945"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1973"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q35 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Välfärdsstaten byggs"@sv ;
     time:intervalMeets nh:nh-p0018 ;
     time:intervalMetBy nh:nh-p0016 ;
     schema:name "Välfärdsstaten byggs" ;
     schema:temporalCoverage "1945/1973" .
-
-<https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
 

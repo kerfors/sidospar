@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0084#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0084#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0084 ;
@@ -19,7 +19,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0034#def-033> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0034#def-033> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-033" ;
     dcterms:source <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> ;
@@ -28,27 +28,27 @@
             crm:P82a_begin_of_the_begin "1900"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1920"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0034 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-ne> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-ne> ;
     skos:prefLabel "Demokratins genombrott enligt Nationalencyklopedin"@sv ;
     skos:scopeNote "Källans formulering: demokratins genombrott 1900–1920. Ungefärligt årtal: start"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0083#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0083#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0034/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0034/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0034 .
 
 nh:nh-c0083 a schema:Claim ;
     dcterms:identifier "SV16",
         "nh-c0083" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0034,
         nh:nh-p0035 ;
     schema:text "Period 'Demokratins genombrott': 1905 – 1945" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0083#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0083#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Delat i 1905–1921 och 1921–1945." ] ;
@@ -62,7 +62,7 @@ nh:nh-c0083 a schema:Claim ;
 nh:nh-c0084 a schema:Claim ;
     dcterms:identifier "SV17",
         "nh-c0084" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0034 ;
     schema:text "Allmän rösträtt 1921" .
 
@@ -79,7 +79,7 @@ nh:nh-p0034 a crm:E4_Period,
             crm:P82b_end_of_the_end "1921"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q34 ;
     skos:definition "Allmän och lika rösträtt 1918–21"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Demokratins genombrott"@sv ;
     time:intervalMeets nh:nh-p0035 ;
     time:intervalMetBy nh:nh-p0070 ;

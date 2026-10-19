@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0136#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0136#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/romersk_jernalder> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/romersk_jernalder> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0136 ;
@@ -19,10 +19,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0137#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0137#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/runer> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/runer> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0137 ;
@@ -30,7 +30,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0057#def-054> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0057#def-054> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-054" ;
     dcterms:source <https://lex.dk/romersk_jernalder> ;
@@ -41,25 +41,25 @@
             crm:P82a_begin_of_the_begin "0001"^^xsd:gYear ;
             crm:P82b_end_of_the_end "0400"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0057 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-lex> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
     skos:prefLabel "Romersk järnålder enligt Lex (Den Store Danske)"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0135#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0135#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0057/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0057/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0057 .
 
 nh:nh-c0135 a schema:Claim ;
     dcterms:identifier "GE06",
         "nh-c0135" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0057 ;
     schema:text "Period 'Romersk järnålder': 1 – 400" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0135#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0135#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/romersk_jernalder> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/romersk_jernalder> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0135 ;
@@ -70,18 +70,20 @@ nh:nh-c0135 a schema:Claim ;
 nh:nh-c0136 a schema:Claim ;
     dcterms:identifier "GE07",
         "nh-c0136" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0057 ;
     schema:text "Handel med Romarriket" .
 
 nh:nh-c0137 a schema:Claim ;
     dcterms:identifier "GE08",
         "nh-c0137" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0057 ;
     schema:text "runskriften tas i bruk" .
 
 <https://snl.no/runer> schema:name "Store norske leksikon: runer" .
+
+<https://lex.dk/romersk_jernalder> schema:name "Lex.dk: romersk jernalder" .
 
 nh:nh-p0057 a crm:E4_Period,
         skos:Concept ;
@@ -97,13 +99,11 @@ nh:nh-p0057 a crm:E4_Period,
         wd:Q35 ;
     skos:closeMatch wd:Q2566630 ;
     skos:definition "Handel med Romarriket; runskriften tas i bruk"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Romersk järnålder"@sv ;
     time:intervalMeets nh:nh-p0058 ;
     time:intervalMetBy nh:nh-p0056 ;
     schema:description "Handel med Romarriket; runskriften tas i bruk" ;
     schema:name "Romersk järnålder" ;
     schema:temporalCoverage "0001/0400" .
-
-<https://lex.dk/romersk_jernalder> schema:name "Lex.dk: romersk jernalder" .
 

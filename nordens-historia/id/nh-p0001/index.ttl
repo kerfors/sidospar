@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0002#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0002#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Ingolv_Arnesson> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Ingolv_Arnesson> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0002 ;
@@ -19,7 +19,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0001#def-001> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0001#def-001> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-001" ;
     dcterms:source <https://snl.no/Islands_historie> ;
@@ -28,26 +28,26 @@
             crm:P82a_begin_of_the_begin "0870"^^xsd:gYear ;
             crm:P82b_end_of_the_end "0930"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0001 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
     skos:prefLabel "Landnámstiden enligt Store norske leksikon"@sv ;
     skos:scopeNote "Källans formulering: landnamstiden ca 870–930. Ungefärligt årtal: start"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0001#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0001#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0001/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0001/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0001 .
 
 nh:nh-c0001 a schema:Claim ;
     dcterms:identifier "IS01",
         "nh-c0001" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0001 ;
     schema:text "Period 'Landnámstiden': 874 – 930" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0001#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0001#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Islands_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Islands_historie> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Start 870; 874 anges som traditionellt år." ] ;
@@ -60,7 +60,7 @@ nh:nh-c0001 a schema:Claim ;
 nh:nh-c0002 a schema:Claim ;
     dcterms:identifier "IS02",
         "nh-c0002" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0001 ;
     schema:text "Ingólfur Arnarson i Reykjavík" .
 
@@ -78,7 +78,7 @@ nh:nh-p0001 a crm:E4_Period,
     crm:P7_took_place_at wd:Q189 ;
     skos:definition "Traditionellt 874: Ingólfur Arnarson i Reykjavík"@sv ;
     skos:exactMatch wd:Q2725768 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Landnámstiden"@sv ;
     time:intervalMeets nh:nh-p0002 ;
     schema:description "Traditionellt 874: Ingólfur Arnarson i Reykjavík" ;

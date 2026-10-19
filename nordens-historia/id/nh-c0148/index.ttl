@@ -1,12 +1,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0148#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0148#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Albrecht_af_Mecklenburg> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Albrecht_af_Mecklenburg> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0148 ;
@@ -14,11 +14,11 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0148#riksarkivet> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0148#riksarkivet> a prov:Entity,
         schema:ClaimReview ;
     dcterms:identifier "ra-006" ;
     prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
     schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> ;
     schema:comment [ a schema:Comment ;
             schema:text "Samma år som affischen. Lex.dk, som den första kontrollen använde, har 1363 som rubrikår." ] ;
@@ -28,19 +28,19 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0148/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0148/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0148 .
 
 <https://lex.dk/Albrecht_af_Mecklenburg> schema:name "Lex.dk: Albrecht af Mecklenburg" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
     schema:name "SBL: Albrekt av Mecklenburg" .
 
 nh:nh-c0148 a schema:Claim ;
     dcterms:identifier "GE19",
         "nh-c0148" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0061 ;
     schema:text "Albrekt av Mecklenburg 1364–89" .
 

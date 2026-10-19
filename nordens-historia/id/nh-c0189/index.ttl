@@ -1,12 +1,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0189#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0189#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0189 ;
@@ -14,11 +14,11 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0189#riksarkivet> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0189#riksarkivet> a prov:Entity,
         schema:ClaimReview ;
     dcterms:identifier "ra-013" ;
     prov:wasDerivedFrom <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
     schema:citation <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> ;
     schema:comment [ a schema:Comment ;
             schema:text "Sammanfattningen stämmer med att han var i Nederländerna 1735 men nämner inte verket." ] ;
@@ -28,11 +28,11 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "ej verifierad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0189/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0189/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0189 .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
     schema:name "SBL: Carl (von) Linné" .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae> schema:name "Nationalencyklopedin: Systema naturae" .
@@ -40,7 +40,7 @@
 nh:nh-c0189 a schema:Claim ;
     dcterms:identifier "MI08",
         "nh-c0189" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-milstolpe> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-milstolpe> ;
     schema:about nh:nh-m0008 ;
     schema:text "Linnés Systema Naturae: 1735" .
 

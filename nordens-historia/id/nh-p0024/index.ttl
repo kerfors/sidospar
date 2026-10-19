@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0057#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0057#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/H%C3%A5kon_4._H%C3%A5konsson> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/H%C3%A5kon_4._H%C3%A5konsson> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0057 ;
@@ -19,10 +19,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0058#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0058#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Norge_i_h%C3%B8ymiddelalderen> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Norge_i_h%C3%B8ymiddelalderen> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0058 ;
@@ -30,10 +30,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0059#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0059#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Magnus_Lagab%C3%B8ters_landslov> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Magnus_Lagab%C3%B8ters_landslov> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0059 ;
@@ -41,7 +41,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0024#def-023> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0024#def-023> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-023" ;
     dcterms:source <https://snl.no/Norges_historie> ;
@@ -50,25 +50,25 @@
             crm:P82a_begin_of_the_begin "1240"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1319"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0024 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
     skos:prefLabel "Storhetstiden enligt Store norske leksikon"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0056#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0056#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0024/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0024/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0024 .
 
 nh:nh-c0056 a schema:Claim ;
     dcterms:identifier "NO14",
         "nh-c0056" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0024 ;
     schema:text "Period 'Storhetstiden': 1240 – 1319" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0056#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0056#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Norges_historie> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Norges_historie> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0056 ;
@@ -79,21 +79,21 @@ nh:nh-c0056 a schema:Claim ;
 nh:nh-c0057 a schema:Claim ;
     dcterms:identifier "NO15",
         "nh-c0057" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0024 ;
     schema:text "Håkon IV" .
 
 nh:nh-c0058 a schema:Claim ;
     dcterms:identifier "NO16",
         "nh-c0058" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0024 ;
     schema:text "Grönland 1261, Island 1262–64" .
 
 nh:nh-c0059 a schema:Claim ;
     dcterms:identifier "NO17",
         "nh-c0059" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0024 ;
     schema:text "Magnus Lagabøtes landslov 1274" .
 
@@ -114,7 +114,7 @@ nh:nh-p0024 a crm:E4_Period,
             crm:P82b_end_of_the_end "1319"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q20 ;
     skos:definition "Håkon IV; Grönland 1261, Island 1262–64; Magnus Lagabøtes landslov 1274"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Storhetstiden"@sv ;
     time:intervalMeets nh:nh-p0060 ;
     time:intervalMetBy nh:nh-p0023 ;

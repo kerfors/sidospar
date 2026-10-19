@@ -9,7 +9,7 @@
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "wd": "http://www.wikidata.org/entity/",
   "time": "http://www.w3.org/2006/time#",
-  "nh": "https://kerfors.github.io/sidospar/nordens-historia/id/",
+  "nh": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/",
   "skos:prefLabel": {
    "@container": "@language"
   },
@@ -103,7 +103,7 @@
  },
  "@graph": [
   {
-   "@id": "https://kerfors.github.io/sidospar/nordens-historia/id/nh-m0011/",
+   "@id": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-m0011/",
    "@type": "WebPage",
    "mainEntity": "nh:nh-m0011",
    "isPartOf": "nh:#dataset"

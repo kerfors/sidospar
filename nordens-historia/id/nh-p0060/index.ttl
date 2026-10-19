@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0144#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0144#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Sjlisselburg> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://lex.dk/Sjlisselburg> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0144 ;
@@ -19,12 +19,12 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0144#riksarkivet> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0144#riksarkivet> a prov:Entity,
         schema:ClaimReview ;
     dcterms:identifier "ra-005" ;
     prov:wasDerivedFrom <https://sok.riksarkivet.se/sdhk?SDHK=3228>,
         <https://sok.riksarkivet.se/sdhk?SDHK=39886> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> ;
     schema:citation <https://sok.riksarkivet.se/sdhk?SDHK=3228>,
         <https://sok.riksarkivet.se/sdhk?SDHK=39886> ;
     schema:comment [ a schema:Comment ;
@@ -35,7 +35,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0060#def-057> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0060#def-057> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-057" ;
     dcterms:source <https://snl.no/Magnus_7._Eriksson> ;
@@ -46,26 +46,26 @@
             crm:P82a_begin_of_the_begin "1319"^^xsd:gYear ;
             crm:P82b_end_of_the_end "1355"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0060 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-snl> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
     skos:prefLabel "Magnus Eriksson: Sverige och Norge enligt Store norske leksikon"@sv ;
     skos:scopeNote "Källans formulering: Magnus Eriksson hyllad i båda rikena 1319; riket delas 1355"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0143#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0143#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0060/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0060/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0060 .
 
 nh:nh-c0143 a schema:Claim ;
     dcterms:identifier "GE14",
         "nh-c0143" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0060 ;
     schema:text "Period 'Magnus Eriksson: Sverige och Norge': 1319 – 1343" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0143#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0143#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://snl.no/Magnus_7._Eriksson> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Magnus_7._Eriksson> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Behållet; delningen 1355 anges i Håkon VI-blocket." ] ;
@@ -75,20 +75,20 @@ nh:nh-c0143 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
 
+<https://lex.dk/Sjlisselburg> schema:name "Lex.dk: Sjlisselburg" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=3228> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus" .
+
+<https://sok.riksarkivet.se/sdhk?SDHK=39886> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+    schema:name "SDHK nr 39886: samma fred, i en annan medeltida avskrift" .
+
 nh:nh-c0144 a schema:Claim ;
     dcterms:identifier "GE15",
         "nh-c0144" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0060 ;
     schema:text "Freden i Nöteborg 1323" .
-
-<https://lex.dk/Sjlisselburg> schema:name "Lex.dk: Sjlisselburg" .
-
-<https://sok.riksarkivet.se/sdhk?SDHK=3228> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
-    schema:name "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus" .
-
-<https://sok.riksarkivet.se/sdhk?SDHK=39886> schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#register-sdhk> ;
-    schema:name "SDHK nr 39886: samma fred, i en annan medeltida avskrift" .
 
 <https://snl.no/Magnus_7._Eriksson> schema:name "Store norske leksikon: Magnus 7. Eriksson" .
 
@@ -105,7 +105,7 @@ nh:nh-p0060 a crm:E4_Period,
         wd:Q33,
         wd:Q34 ;
     skos:definition "Freden i Nöteborg 1323"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Magnus Eriksson: Sverige och Norge"@sv ;
     time:intervalMeets nh:nh-p0025,
         nh:nh-p0061 ;

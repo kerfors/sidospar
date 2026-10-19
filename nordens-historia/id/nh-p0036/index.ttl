@@ -1,6 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix nh: <https://kerfors.github.io/sidospar/nordens-historia/id/> .
+@prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -8,10 +8,10 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0087#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0087#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0087 ;
@@ -19,10 +19,10 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0088#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0088#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0088 ;
@@ -30,7 +30,7 @@
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0036#def-034> a crm:E4_Period,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0036#def-034> a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "def-034" ;
     dcterms:source <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet> ;
@@ -39,25 +39,25 @@
             crm:P82a_begin_of_the_begin "1945"^^xsd:gYear ;
             crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0036 ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#kalla-ne> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-ne> ;
     skos:prefLabel "Välfärdsstat enligt Nationalencyklopedin"@sv ;
-    prov:wasDerivedFrom <https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0086#granskning> .
+    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0086#granskning> .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-p0036/> a schema:WebPage ;
-    schema:isPartOf <https://kerfors.github.io/sidospar/nordens-historia/id/#dataset> ;
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0036/> a schema:WebPage ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-p0036 .
 
 nh:nh-c0086 a schema:Claim ;
     dcterms:identifier "SV19",
         "nh-c0086" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-period> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
     schema:about nh:nh-p0036 ;
     schema:text "Period 'Välfärdsstat': 1945 – 2026" .
 
-<https://kerfors.github.io/sidospar/nordens-historia/id/nh-c0086#granskning> a prov:Entity,
+<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0086#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet> ;
-    prov:wasGeneratedBy <https://kerfors.github.io/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
+    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0086 ;
@@ -68,14 +68,14 @@ nh:nh-c0086 a schema:Claim ;
 nh:nh-c0087 a schema:Claim ;
     dcterms:identifier "SV20",
         "nh-c0087" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0036 ;
     schema:text "EU 1995" .
 
 nh:nh-c0088 a schema:Claim ;
     dcterms:identifier "SV21",
         "nh-c0088" ;
-    dcterms:type <https://kerfors.github.io/sidospar/nordens-historia/id/#typ-detalj> ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0036 ;
     schema:text "Nato 2024" .
 
@@ -94,7 +94,7 @@ nh:nh-p0036 a crm:E4_Period,
             crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
     crm:P7_took_place_at wd:Q34 ;
     skos:definition "EU 1995; Nato 2024"@sv ;
-    skos:inScheme <https://kerfors.github.io/sidospar/nordens-historia/id/#perioder> ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
     skos:prefLabel "Välfärdsstat"@sv ;
     time:intervalMetBy nh:nh-p0035 ;
     schema:description "EU 1995; Nato 2024" ;

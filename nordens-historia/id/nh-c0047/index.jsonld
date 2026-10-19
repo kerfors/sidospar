@@ -141,7 +141,11 @@
     "@id": "https://snl.no/Norges_historie",
     "name": "Store norske leksikon: Norges historie"
    },
-   "prov:wasDerivedFrom": "https://snl.no/Norges_historie"
+   "prov:wasDerivedFrom": "https://snl.no/Norges_historie",
+   "schema:comment": {
+    "@type": "Comment",
+    "text": "Åtgärd på affischen: Slut 1050, som SNL:s periodindelning och grannländerna; artikeln Norges historie anger 1066."
+   }
   }
  ]
 }

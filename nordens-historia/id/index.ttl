@@ -3077,6 +3077,8 @@ nh:nh-c0047 a schema:Claim ;
     prov:wasDerivedFrom <https://snl.no/Norges_historie> ;
     prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
     schema:citation <https://snl.no/Norges_historie> ;
+    schema:comment [ a schema:Comment ;
+            schema:text "Åtgärd på affischen: Slut 1050, som SNL:s periodindelning och grannländerna; artikeln Norges historie anger 1066." ] ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0047 ;
     schema:reviewBody "SNL skriver att angreppet på Lindisfarne 793 ofta räknas som vikingatidens början och Harald Hårdrådes fall 1066 som det sista vikingatåget." ;
@@ -6430,11 +6432,11 @@ nh:nh-p0064 a crm:E4_Period,
             schema:url <https://kerfors.github.io/> ] ;
     schema:description "Perioder, händelser och milstolpar i Nordens historia, med en källkontroll per uppgift." ;
     schema:distribution [ a schema:DataDownload ;
-            schema:contentUrl nh:index.ttl ;
-            schema:encodingFormat "text/turtle" ],
-        [ a schema:DataDownload ;
             schema:contentUrl nh:index.jsonld ;
-            schema:encodingFormat "application/ld+json" ] ;
+            schema:encodingFormat "application/ld+json" ],
+        [ a schema:DataDownload ;
+            schema:contentUrl nh:index.ttl ;
+            schema:encodingFormat "text/turtle" ] ;
     schema:inLanguage "sv" ;
     schema:isBasedOn [ a schema:CreativeWork ;
             schema:creator [ a schema:Organization ;

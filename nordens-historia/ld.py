@@ -412,14 +412,7 @@ CSS = """
   .v.bekräftad { background: #d8efdc; } .v.omdiskuterad { background: #f7e3b5; }
   .v.avvikande { background: #f6c9c4; } .v.ej { background: #e3e3e3; }
   .tw { overflow-x: auto; }
-  .formats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
-             width: min(1240px, calc(100vw - 48px)); position: relative; left: 50%; transform: translateX(-50%); }
-  .formats > div { min-width: 0; }
-  .formats h3 { font-size: 0.95rem; margin: 0 0 6px; }
-  .formats pre { background: #f1eee7; padding: 10px 12px; border-radius: 4px; overflow: auto; max-height: 40em;
-                 font-size: 0.74rem; line-height: 1.4; margin: 0; }
   @media (max-width: 600px) { dl { grid-template-columns: 1fr; } dt { margin-top: 6px; } }
-  @media (max-width: 900px) { .formats { grid-template-columns: 1fr; } }
 """
 
 
@@ -445,17 +438,6 @@ def page(title, body, jsonld, depth):
 </main>
 </body>
 </html>
-"""
-
-
-def formats_html(doc, ttl):
-    """The same graph in two serialisations, side by side."""
-    return f"""<h2>Data i två format</h2>
-<p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
-<div class="formats">
-<div><h3><a href="index.jsonld">index.jsonld</a></h3><pre>{escape(json.dumps(doc, ensure_ascii=False, indent=1))}</pre></div>
-<div><h3><a href="index.ttl">index.ttl</a></h3><pre>{escape(ttl)}</pre></div>
-</div>
 """
 
 
@@ -544,7 +526,6 @@ def definitions_html(item, defs):
         _, name, _ = publication(d["source_url"])
         s = (("c. " if d["approx_start"] else "") + yr(d["start"]) if d["start"] is not None else "?")
         e = (("c. " if d["approx_end"] else "") + yr(d["end"]) if d["end"] is not None else "?")
-        iso = "/".join(gyear(v) if v is not None else ".." for v in (d["start"], d["end"]))
         same = d["start"] == item["start"] and d["end"] == item["end"]
         rel = "samma" if same else "avviker"
         stated = f'<br><span style="color:#6b7682">{escape(d["as_stated"])}</span>' if d["as_stated"] else ""
@@ -562,10 +543,8 @@ def item_page(item, kind, node, cl, wd, places, ra, rel=None, by_id=None, defs=(
     iri = ID + item["id"]
     if kind == "period":
         when = f"{yr(item['start'])} – {yr(item['end'])}"
-        iso = f"<code>{gyear(item['start'])}/{gyear(item['end'])}</code>"
     else:
         when = yr(item["year"])
-        iso = f"<code>{gyear(item['year'])}</code>"
     desc = f"<p>{escape(item['description'])}</p>" if item.get("description") else ""
     doc = {"@context": CONTEXT, "@graph": [
         {"@id": iri + "/", "@type": "WebPage", "mainEntity": "nh:" + item["id"], "isPartOf": "nh:#dataset"},

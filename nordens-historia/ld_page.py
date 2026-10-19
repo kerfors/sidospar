@@ -20,7 +20,6 @@ CSS = """
   h2 { margin-top: 1.8em; font-size: 1.25rem; }
   .lead { font-size: 1.08rem; color: #33404d; }
   code { font-size: 0.85em; background: #f1eee7; padding: 1px 4px; border-radius: 3px; overflow-wrap: anywhere; }
-  pre { background: #f1eee7; padding: 12px 14px; border-radius: 4px; overflow-x: auto; font-size: 0.8rem; line-height: 1.45; }
   table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
   th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #e3e0d8; }
   th { background: #f1eee7; }
@@ -65,20 +64,6 @@ def stats():
         "ra": len(ra), "ra_verdicts": Counter(r["verdict"] for r in ra),
         "ra_records": Counter(x["register"] for r in ra for x in r["records"]),
     }
-
-
-def example(ld_graph_path):
-    """The Swedish Viking Age, its source definition and the review it came from, as they are in the data."""
-    g = json.loads(ld_graph_path.read_text(encoding="utf-8"))["@graph"]
-    by = {n.get("@id"): n for n in g}
-    period = next(n for n in g if n.get("name") == "Vikingatid" and "wd:Q34" in n.get("crm:P7_took_place_at", []))
-    pid = period["@id"]
-    dfn = next(n for n in g if str(n.get("@id", "")).startswith(pid + "#def-"))
-    review = by[dfn["prov:wasDerivedFrom"]]
-    keep_p = {k: period[k] for k in ("@id", "@type", "name", "skos:inScheme", "crm:P4_has_time-span",
-                                     "crm:P7_took_place_at", "skos:exactMatch", "time:intervalMeets",
-                                     "time:intervalMetBy") if k in period}
-    return json.dumps([keep_p, dfn, review], ensure_ascii=False, indent=1)
 
 
 def yr(v):

@@ -401,8 +401,7 @@ en kolumn per land, ett block per riksbildning eller period, och sammanslagna bl
 där länderna delat rike – Kalmarunionen, Danmark–Norge, Sverige med Finland och unionen Sverige–Norge.
 Klicka på ett block, en händelse eller en siffra för datum, källor och identifierare.</p>
 <p><strong>Originalet:</strong> <a href="{post}">Timeline of World History</a> av
-<a href="https://chartorigin.com">Chart Origin</a>, delat på LinkedIn
-(<a href="{img}">bilden</a>, en tidsbegränsad länk från LinkedIn).
+<a href="https://chartorigin.com">Chart Origin</a>.
 Idén och formen är deras; innehållet här är mitt eget urval.</p>
 <p><strong>Källäget:</strong> varje uppgift är kontrollerad mot en uppslagskälla, se <a href="kallor.html">källförteckningen</a>.</p>
 <p><strong>Länkade data:</strong> varje period, händelse, milstolpe och kontrollerad uppgift har en egen beständig

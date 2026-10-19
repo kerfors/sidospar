@@ -271,30 +271,6 @@
   "match": "none",
   "reason": "No item for post-1944 Finland ('Second Republic') found."
  },
- "nh-p0049": {
-  "match": "none",
-  "reason": "Generic label; Komsa culture (Q1577518) covers only part of the period."
- },
- "nh-p0050": {
-  "match": "none",
-  "reason": "Generic descriptive period label with no matching item."
- },
- "nh-p0051": {
-  "match": "none",
-  "reason": "Siida (Q1790830) is a Sami social structure, not this period."
- },
- "nh-p0052": {
-  "match": "none",
-  "reason": "Generic descriptive period label with no matching item."
- },
- "nh-p0053": {
-  "match": "none",
-  "reason": "Generic descriptive period label with no matching item."
- },
- "nh-p0054": {
-  "match": "none",
-  "reason": "Generic descriptive period label; Sami parliaments are separate institutions."
- },
  "nh-p0055": {
   "match": "closeMatch",
   "qid": "Q605601",
@@ -566,13 +542,6 @@
   "wikidata_description": "atomic model introduced by Niels Bohr in 1913",
   "reason": "Bohr's atomic model, inception 1913."
  },
- "nh-m0019": {
-  "match": "exactMatch",
-  "qid": "Q19387464",
-  "wikidata_label": "Sami assembly of 1917",
-  "wikidata_description": "First Sámi National Assembly",
-  "reason": "First Sámi national assembly, Trondheim, 6-9 February 1917."
- },
  "nh-m0020": {
   "match": "closeMatch",
   "qid": "Q4050869",
@@ -656,12 +625,5 @@
   "wikidata_label": "Finland",
   "wikidata_description": "country in Northern Europe",
   "reason": "Sovereign country Finland."
- },
- "place:Sápmi": {
-  "match": "exactMatch",
-  "qid": "Q62132",
-  "wikidata_label": "Sápmi",
-  "wikidata_description": "cultural region traditionally inhabited by the Sami people",
-  "reason": "Sámi cultural region."
  }
 }

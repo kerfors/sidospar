@@ -125,8 +125,8 @@ what we learned on the way, and what comes next. The poster and the other pages 
 <p>The poster is a Nordic version of <em>Timeline of World History</em> by
 <a href="https://chartorigin.com">Chart Origin</a>, <a href="https://lnkd.in/p/ePw54Bpe">shared on LinkedIn</a>.
 The idea and the form are theirs. The content is my own selection: {s['periods']} periods,
-{s['events']} cross-border events and {s['milestones']} milestones in six columns, Iceland, Denmark, Norway, Sweden,
-Finland and Sápmi.</p>
+{s['events']} cross-border events and {s['milestones']} milestones in five columns, Iceland, Denmark, Norway, Sweden
+and Finland.</p>
 <p>I made it together with Claude. The first version was written from general knowledge, without sources.
 Then every statement on the poster was checked against a reference source by AI agents with web search.
 After that, every item got a persistent identifier and was described as linked data.</p>
@@ -247,7 +247,7 @@ The most used sources: {hosts}.</li>
 behind a paywall and were checked only against the free introduction.</li>
 <li>Each Wikidata link was found with Wikidata's own search service and then checked against wikidata.org.
 {s['wd_items']} of {s['items']} items are linked, and all {s['places']} columns point to their place.
-Most items without a link are my own descriptive period names, and the six Sápmi periods, where no matching Wikidata item was found.</li>
+Most items without a link are my own descriptive period names, where no matching Wikidata item was found.</li>
 <li>Boundaries from disputed statements were read from the evidence text, for the cited source only. Approximate years
 are marked, and the source's own wording is kept.</li>
 </ul>

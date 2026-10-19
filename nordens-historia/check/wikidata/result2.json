@@ -104,54 +104,6 @@
   "reason": "No item for post-1944 Finland ('Second Republic') found."
  },
  {
-  "id": "nh-p0049",
-  "match": "none",
-  "qid": "",
-  "wikidata_label": "",
-  "wikidata_description": "",
-  "reason": "Generic label; Komsa culture (Q1577518) covers only part of the period."
- },
- {
-  "id": "nh-p0050",
-  "match": "none",
-  "qid": "",
-  "wikidata_label": "",
-  "wikidata_description": "",
-  "reason": "Generic descriptive period label with no matching item."
- },
- {
-  "id": "nh-p0051",
-  "match": "none",
-  "qid": "",
-  "wikidata_label": "",
-  "wikidata_description": "",
-  "reason": "Siida (Q1790830) is a Sami social structure, not this period."
- },
- {
-  "id": "nh-p0052",
-  "match": "none",
-  "qid": "",
-  "wikidata_label": "",
-  "wikidata_description": "",
-  "reason": "Generic descriptive period label with no matching item."
- },
- {
-  "id": "nh-p0053",
-  "match": "none",
-  "qid": "",
-  "wikidata_label": "",
-  "wikidata_description": "",
-  "reason": "Generic descriptive period label with no matching item."
- },
- {
-  "id": "nh-p0054",
-  "match": "none",
-  "qid": "",
-  "wikidata_label": "",
-  "wikidata_description": "",
-  "reason": "Generic descriptive period label; Sami parliaments are separate institutions."
- },
- {
   "id": "nh-p0055",
   "match": "closeMatch",
   "qid": "Q605601",

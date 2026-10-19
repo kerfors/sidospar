@@ -192,14 +192,6 @@
     "reason": "Bohr's atomic model, inception 1913."
   },
   {
-    "id": "nh-m0019",
-    "match": "exactMatch",
-    "qid": "Q19387464",
-    "wikidata_label": "Sami assembly of 1917",
-    "wikidata_description": "First Sámi National Assembly",
-    "reason": "First Sámi national assembly, Trondheim, 6-9 February 1917."
-  },
-  {
     "id": "nh-m0020",
     "match": "closeMatch",
     "qid": "Q4050869",
@@ -294,13 +286,5 @@
     "wikidata_label": "Finland",
     "wikidata_description": "country in Northern Europe",
     "reason": "Sovereign country Finland."
-  },
-  {
-    "id": "place:Sápmi",
-    "match": "exactMatch",
-    "qid": "Q62132",
-    "wikidata_label": "Sápmi",
-    "wikidata_description": "cultural region traditionally inhabited by the Sami people",
-    "reason": "Sámi cultural region."
   }
 ]

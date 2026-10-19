@@ -860,111 +860,6 @@ nh: a schema:WebPage ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0116#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/Komsakulturen> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/Komsakulturen> ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0116 ;
-    schema:reviewBody "SNL beskriver Komsakulturen som äldre stenålder i Finnmark och på Kolahalvön, daterad till ca 8000–7000 f.Kr. på Kola." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0117#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://whc.unesco.org/en/list/352> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://whc.unesco.org/en/list/352> ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0117 ;
-    schema:reviewBody "Unesco anger att Alta var en mötesplats för jägar-samlare med hällkonst från ca 5000 f.Kr. till omkring år 0; världsarv sedan 1985." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0119#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samenes_forhistorie> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samenes_forhistorie> ;
-    schema:comment [ a schema:Comment ;
-            schema:text "Åtgärd på affischen: Ändrat till ”ursamiska”." ] ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0119 ;
-    schema:reviewBody "SNL beskriver ursamiska som ett västuraliskt språk som uppstod genom kontakt under bronsåldern/sista årtusendet f.Kr., med ca en tredjedel ordförråd från äldre europeiska språk." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0120#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samenes_forhistorie> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samenes_forhistorie> ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0120 ;
-    schema:reviewBody "SNL varnar för säkerhet om när språkbytet skedde och säger att splittringen av ursamiskan inte är säkert känd." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0122#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samenes_historie> ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0122 ;
-    schema:reviewBody "SNL beskriver säsongsvis flyttning mellan kust och inland med jakt, fiske och insamling samt handel med pälsar, hudar och tran." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0123#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samenes_historie> ;
-    schema:comment [ a schema:Comment ;
-            schema:text "Åtgärd på affischen: Ändrat till ”flera riken”." ] ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0123 ;
-    schema:reviewBody "SNL anger att Sápmi från 1300-talet delades i överlappande skatteområden där Norge, Sverige och Novgorod krävde skatt, i norra Finnmark alla tre." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0125#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://prod.sou.gov.se/contentassets/1287a65ca66445d5ba910dcb62c4d8d0/pm-1-en-historisk-konturteckning.pdf> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://prod.sou.gov.se/contentassets/1287a65ca66445d5ba910dcb62c4d8d0/pm-1-en-historisk-konturteckning.pdf> ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0125 ;
-    schema:reviewBody "Regeringskansliets historiska PM anger att Kungl. Maj:t utfärdade plakat 1673 (och 1695) för att locka nybyggare till lappmarken." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0127#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samenes_historie> ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0127 ;
-    schema:reviewBody "SNL anger att gränsavtalet 1751 fick tillägget Lappekodisillen som erkände samiska rättigheter." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0129#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://samediggi.fi/wp-content/uploads/2016/07/saamelaisetsuomi.pdf> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://samediggi.fi/wp-content/uploads/2016/07/saamelaisetsuomi.pdf> ;
-    schema:comment [ a schema:Comment ;
-            schema:text "Åtgärd på affischen: Ändrat till ”Finland 1996 (delegation från 1973)”." ] ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0129 ;
-    schema:reviewBody "Sametinget i Finland anger Samedelegationen 1973 och Sametinget från 1996, samt Norges sameting 1989 och Sveriges 1993." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0131#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://lex.dk/Solen_-_symbolik> ;
@@ -1730,17 +1625,6 @@ nh: a schema:WebPage ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0200#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samenes_nasjonaldag> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samenes_nasjonaldag> ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0200 ;
-    schema:reviewBody "SNL beskriver mötet i Trondheim 6–9 februari 1917 som det första stora gränsöverskridande samiska politiska mötet." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0201#granskning> a prov:Entity,
         schema:ClaimReview ;
     prov:wasDerivedFrom <https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> ;
@@ -2427,88 +2311,6 @@ nh: a schema:WebPage ;
     skos:prefLabel "Andra republiken enligt Uppslagsverket Finland"@sv ;
     skos:scopeNote "Källans formulering: andra republiken från vapenstilleståndet 1944"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0112#granskning> .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0049#def-046> a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "def-046" ;
-    dcterms:source <https://snl.no/samenes_forhistorie> ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "-9499"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "-1799"^^xsd:gYear ] ;
-    skos:closeMatch nh:nh-p0049 ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
-    skos:prefLabel "Fångstkulturer i norr enligt Store norske leksikon"@sv ;
-    skos:scopeNote "Källans formulering: stenåldern i Norden 9500–1800 f.Kr."@sv ;
-    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0115#granskning> .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0050#def-047> a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "def-047" ;
-    dcterms:source <https://snl.no/samenes_forhistorie> ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "-0999"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "0500"^^xsd:gYear ] ;
-    skos:closeMatch nh:nh-p0050 ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
-    skos:prefLabel "Samisk kultur tar form enligt Store norske leksikon"@sv ;
-    skos:scopeNote "Källans formulering: språkbytet till ursamiska börjar under sista årtusendet f.Kr. och sprids under äldre järnålder, 500 f.Kr.–500 e.Kr.. Ungefärligt årtal: start, slut"@sv ;
-    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0118#granskning> .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0051#def-048> a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "def-048" ;
-    dcterms:source <https://snl.no/samenes_historie> ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "1050"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "1550"^^xsd:gYear ] ;
-    skos:exactMatch nh:nh-p0051 ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
-    skos:prefLabel "Siidasamhällen enligt Store norske leksikon"@sv ;
-    skos:scopeNote "Källans formulering: medeltid 1050–1550 (SNL:s periodindelning av samisk historia)"@sv ;
-    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0121#granskning> .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0052#def-049> a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "def-049" ;
-    dcterms:source <https://snl.no/samenes_historie> ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "1550"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "1826"^^xsd:gYear ] ;
-    skos:closeMatch nh:nh-p0052 ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
-    skos:prefLabel "Skatt, handel och mission enligt Store norske leksikon"@sv ;
-    skos:scopeNote "Källans formulering: tidigmodern tid 1550–1826 (SNL:s periodindelning av samisk historia)"@sv ;
-    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0124#granskning> .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0053#def-050> a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "def-050" ;
-    dcterms:source <https://snl.no/samenes_historie> ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "1751"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "1917"^^xsd:gYear ] ;
-    skos:exactMatch nh:nh-p0053 ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
-    skos:prefLabel "Gränser och nybyggen enligt Store norske leksikon"@sv ;
-    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0126#granskning> .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0054#def-051> a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "def-051" ;
-    dcterms:source <https://snl.no/samisk_organisering_i_Norge> ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "1917"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
-    skos:exactMatch nh:nh-p0054 ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> ;
-    skos:prefLabel "Samisk organisering enligt Store norske leksikon"@sv ;
-    prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0128#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0055#def-052> a crm:E4_Period,
         skos:Concept ;
@@ -4037,185 +3839,6 @@ nh:nh-c0114 a schema:Claim ;
     schema:about nh:nh-p0048 ;
     schema:text "Nato 2023" .
 
-nh:nh-c0115 a schema:Claim ;
-    dcterms:identifier "SÁ01",
-        "nh-c0115" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
-    schema:about nh:nh-p0049 ;
-    schema:text "Period 'Fångstkulturer i norr': 9 000 f.Kr. – 1 000 f.Kr." .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0115#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samenes_forhistorie> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samenes_forhistorie> ;
-    schema:comment [ a schema:Comment ;
-            schema:text "Åtgärd på affischen: Slut ändrat till 500 f.Kr." ] ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0115 ;
-    schema:reviewBody "SNL daterar stenåldern i Norden till 9500–1800 f.Kr. och bronsåldern till 1800–500 f.Kr.; språkbytet till ursamiska börjar under sista årtusendet f.Kr." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "omdiskuterad" ] .
-
-nh:nh-c0116 a schema:Claim ;
-    dcterms:identifier "SÁ02",
-        "nh-c0116" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0049 ;
-    schema:text "Komsakultur" .
-
-nh:nh-c0117 a schema:Claim ;
-    dcterms:identifier "SÁ03",
-        "nh-c0117" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0049 ;
-    schema:text "hällkonst i Alta" .
-
-nh:nh-c0118 a schema:Claim ;
-    dcterms:identifier "SÁ04",
-        "nh-c0118" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
-    schema:about nh:nh-p0050 ;
-    schema:text "Period 'Samisk kultur tar form': 1 000 f.Kr. – 800" .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0118#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samenes_forhistorie> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samenes_forhistorie> ;
-    schema:comment [ a schema:Comment ;
-            schema:text "Åtgärd på affischen: Ändrat till 500 f.Kr.–1050; ”ursamiska”." ] ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0118 ;
-    schema:reviewBody "SNL låter språkbytet börja sista årtusendet f.Kr. och sprida sig i Sápmi under äldre järnålder 500 f.Kr.–500 e.Kr., i sydväst kanske först 500–600-tal." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "omdiskuterad" ] .
-
-nh:nh-c0119 a schema:Claim ;
-    dcterms:identifier "SÁ05",
-        "nh-c0119" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0050 ;
-    schema:text "Protosamiska språket" .
-
-nh:nh-c0120 a schema:Claim ;
-    dcterms:identifier "SÁ06",
-        "nh-c0120" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0050 ;
-    schema:text "dateringen omdiskuterad" .
-
-nh:nh-c0121 a schema:Claim ;
-    dcterms:identifier "SÁ07",
-        "nh-c0121" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
-    schema:about nh:nh-p0051 ;
-    schema:text "Period 'Siidasamhällen': 800 – 1550" .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0121#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samenes_historie> ;
-    schema:comment [ a schema:Comment ;
-            schema:text "Åtgärd på affischen: Start ändrat till 1050." ] ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0121 ;
-    schema:reviewBody "SNL beskriver siidan som en äldre samhällsform men delar perioderna som järnålder 500 f.Kr.–1050 och medeltid 1050–1550." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "omdiskuterad" ] .
-
-nh:nh-c0122 a schema:Claim ;
-    dcterms:identifier "SÁ08",
-        "nh-c0122" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0051 ;
-    schema:text "Fångst, fiske och handel" .
-
-nh:nh-c0123 a schema:Claim ;
-    dcterms:identifier "SÁ09",
-        "nh-c0123" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0051 ;
-    schema:text "skatt till flera kronor" .
-
-nh:nh-c0124 a schema:Claim ;
-    dcterms:identifier "SÁ10",
-        "nh-c0124" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
-    schema:about nh:nh-p0052 ;
-    schema:text "Period 'Kolonisering och kristnande': 1550 – 1751" .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0124#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samenes_historie> ;
-    schema:comment [ a schema:Comment ;
-            schema:text "Åtgärd på affischen: Titeln ändrad till ”Skatt, handel och mission”; nybyggen i nästa block." ] ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0124 ;
-    schema:reviewBody "SNL låter tidigmodern tid gå 1550–1826 med kolonisation av lappmarkerna på 1600-talet och mission på 1700-talet; enligt regeringens PM blev nybyggandet utbrett först efter 1749." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "omdiskuterad" ] .
-
-nh:nh-c0125 a schema:Claim ;
-    dcterms:identifier "SÁ11",
-        "nh-c0125" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0052 ;
-    schema:text "Lappmarksplakatet 1673" .
-
-nh:nh-c0126 a schema:Claim ;
-    dcterms:identifier "SÁ12",
-        "nh-c0126" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
-    schema:about nh:nh-p0053 ;
-    schema:text "Period 'Gränser dras genom Sápmi': 1751 – 1917" .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0126#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samenes_historie> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samenes_historie> ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0126 ;
-    schema:reviewBody "SNL anger gränsdragning genom inre Sápmi 1751, ny gräns 1809 och att sista gränsfria området delades 1826." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
-nh:nh-c0127 a schema:Claim ;
-    dcterms:identifier "SÁ13",
-        "nh-c0127" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0053 ;
-    schema:text "Lappkodicillen 1751" .
-
-nh:nh-c0128 a schema:Claim ;
-    dcterms:identifier "SÁ14",
-        "nh-c0128" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-period> ;
-    schema:about nh:nh-p0054 ;
-    schema:text "Period 'Samisk organisering': 1917 – 2026" .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0128#granskning> a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/samisk_organisering_i_Norge> ;
-    prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/samisk_organisering_i_Norge> ;
-    schema:datePublished "2026-10-18" ;
-    schema:itemReviewed nh:nh-c0128 ;
-    schema:reviewBody "SNL anger att första samiska landsmötet hölls i Trondheim i februari 1917, ihågkommet genom nationaldagen 6 februari." ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName "bekräftad" ] .
-
-nh:nh-c0129 a schema:Claim ;
-    dcterms:identifier "SÁ15",
-        "nh-c0129" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
-    schema:about nh:nh-p0054 ;
-    schema:text "Sameting: Finland 1973/1996, Norge 1989, Sverige 1993" .
-
 nh:nh-c0130 a schema:Claim ;
     dcterms:identifier "GE01",
         "nh-c0130" ;
@@ -4802,13 +4425,6 @@ nh:nh-c0199 a schema:Claim ;
     schema:about nh:nh-m0018 ;
     schema:text "Bohrs atommodell: 1913" .
 
-nh:nh-c0200 a schema:Claim ;
-    dcterms:identifier "MI19",
-        "nh-c0200" ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-milstolpe> ;
-    schema:about nh:nh-m0019 ;
-    schema:text "Första samiska landsmötet: 1917" .
-
 nh:nh-c0201 a schema:Claim ;
     dcterms:identifier "MI20",
         "nh-c0201" ;
@@ -5137,17 +4753,6 @@ nh:nh-m0018 a crm:E5_Event,
     schema:name "Bohrs atommodell" ;
     schema:startDate "1913"^^xsd:gYear .
 
-nh:nh-m0019 a crm:E5_Event,
-        schema:Event ;
-    dcterms:identifier "nh-m0019" ;
-    crm:P10_falls_within nh:nh-p0054 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "1917"^^xsd:gYear ] ;
-    crm:P7_took_place_at wd:Q62132 ;
-    schema:about wd:Q19387464 ;
-    schema:name "Första samiska landsmötet" ;
-    schema:startDate "1917"^^xsd:gYear .
-
 nh:nh-m0020 a crm:E5_Event,
         schema:Event ;
     dcterms:identifier "nh-m0020" ;
@@ -5289,13 +4894,9 @@ nh:nh-m0026 a crm:E5_Event,
 
 <https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf> schema:name "IVA: Svenska innovationer – Pacemakern" .
 
-<https://prod.sou.gov.se/contentassets/1287a65ca66445d5ba910dcb62c4d8d0/pm-1-en-historisk-konturteckning.pdf> schema:name "Regeringskansliet N 2021:02 PM 1 (utdrag ur SOU 2005:116), historisk konturteckning" .
-
 <https://riksarkivet.se/resurser/tryckfrihetsforordningen-1766> schema:name "Riksarkivet: Tryckfrihetsförordningen 1766" .
 
 <https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> schema:name "Riksdagen: Riksdagens historia (broschyr)" .
-
-<https://samediggi.fi/wp-content/uploads/2016/07/saamelaisetsuomi.pdf> schema:name "Saamelaiskäräjät: Saamelaiset Suomessa (samediggi.fi)" .
 
 <https://snl.no/Alltinget> schema:name "Store norske leksikon: Alltinget" .
 
@@ -5323,8 +4924,6 @@ nh:nh-m0026 a crm:E5_Event,
 
 <https://snl.no/Kalevala> schema:name "Store norske leksikon: Kalevala" .
 
-<https://snl.no/Komsakulturen> schema:name "Store norske leksikon: Komsakulturen" .
-
 <https://snl.no/Magnus_Lagab%C3%B8ters_landslov> schema:name "Store norske leksikon: Magnus Lagabøters landslov" .
 
 <https://snl.no/Olav_3._Kyrre> schema:name "Store norske leksikon: Olav 3. Kyrre" .
@@ -5344,8 +4943,6 @@ nh:nh-m0026 a crm:E5_Event,
 <https://snl.no/islendingesaga> schema:name "Islendingesaga (Store norske leksikon)" .
 
 <https://snl.no/runer> schema:name "Store norske leksikon: runer" .
-
-<https://snl.no/samenes_nasjonaldag> schema:name "Store norske leksikon: samenes nasjonaldag" .
 
 <https://snl.no/slaget_i_Hafrsfjord> schema:name "Store norske leksikon: slaget i Hafrsfjord" .
 
@@ -5557,8 +5154,6 @@ nh:nh-c0194 a schema:Claim ;
     schema:about nh:nh-m0013 ;
     schema:text "Nobels dynamit: 1867" .
 
-<https://whc.unesco.org/en/list/352> schema:name "UNESCO World Heritage: Rock Art of Alta" .
-
 <https://whc.unesco.org/en/list/557> schema:name "UNESCO World Heritage: Rock Carvings in Tanum" .
 
 <https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> schema:name "Alþingi í Lærða skólanum 1845–1879 (althingi.is)" .
@@ -5634,8 +5229,6 @@ nh:nh-c0194 a schema:Claim ;
 <https://snl.no/enevoldstida> schema:name "Enevoldstida – Store norske leksikon" .
 
 <https://snl.no/merovingertid> schema:name "Store norske leksikon: merovingertid" .
-
-<https://snl.no/samisk_organisering_i_Norge> schema:name "Store norske leksikon: samisk organisering i Norge" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-historiska> a skos:ConceptScheme ;
     skos:prefLabel "Periodindelning enligt Statens historiska museer"@sv ;
@@ -6091,72 +5684,6 @@ nh:nh-p0047 a crm:E4_Period,
     schema:name "Krigsåren" ;
     schema:temporalCoverage "1939/1944" .
 
-nh:nh-p0049 a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "nh-p0049" ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "-8999"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "-0499"^^xsd:gYear ] ;
-    crm:P7_took_place_at wd:Q62132 ;
-    skos:definition "Komsakultur; hällkonst i Alta"@sv ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
-    skos:prefLabel "Fångstkulturer i norr"@sv ;
-    time:intervalMeets nh:nh-p0050 ;
-    schema:description "Komsakultur; hällkonst i Alta" ;
-    schema:name "Fångstkulturer i norr" ;
-    schema:temporalCoverage "-8999/-0499" .
-
-nh:nh-p0052 a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "nh-p0052" ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "1550"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "1751"^^xsd:gYear ] ;
-    crm:P7_took_place_at wd:Q62132 ;
-    skos:definition "Lappmarksplakatet 1673"@sv ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
-    skos:prefLabel "Skatt, handel och mission"@sv ;
-    time:intervalMeets nh:nh-p0053 ;
-    time:intervalMetBy nh:nh-p0051 ;
-    schema:description "Lappmarksplakatet 1673" ;
-    schema:name "Skatt, handel och mission" ;
-    schema:temporalCoverage "1550/1751" .
-
-nh:nh-p0053 a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "nh-p0053" ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "1751"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "1917"^^xsd:gYear ] ;
-    crm:P7_took_place_at wd:Q62132 ;
-    skos:definition "Lappkodicillen 1751; nybyggen breder ut sig"@sv ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
-    skos:prefLabel "Gränser och nybyggen"@sv ;
-    time:intervalMeets nh:nh-p0054 ;
-    time:intervalMetBy nh:nh-p0052 ;
-    schema:description "Lappkodicillen 1751; nybyggen breder ut sig" ;
-    schema:name "Gränser och nybyggen" ;
-    schema:temporalCoverage "1751/1917" .
-
-nh:nh-p0054 a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "nh-p0054" ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "1917"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
-    crm:P7_took_place_at wd:Q62132 ;
-    skos:definition "Sameting: Norge 1989, Sverige 1993, Finland 1996 (delegation från 1973)"@sv ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
-    skos:prefLabel "Samisk organisering"@sv ;
-    time:intervalMetBy nh:nh-p0053 ;
-    schema:description "Sameting: Norge 1989, Sverige 1993, Finland 1996 (delegation från 1973)" ;
-    schema:name "Samisk organisering" ;
-    schema:temporalCoverage "1917/2026" .
-
 nh:nh-p0056 a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "nh-p0056" ;
@@ -6412,40 +5939,6 @@ nh:nh-p0048 a crm:E4_Period,
     schema:description "Vapenstillestånd 1944; Lapplandskriget 1944–45; EU 1995; Nato 2023" ;
     schema:name "Andra republiken" ;
     schema:temporalCoverage "1944/2026" .
-
-nh:nh-p0050 a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "nh-p0050" ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "-0499"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "1050"^^xsd:gYear ] ;
-    crm:P7_took_place_at wd:Q62132 ;
-    skos:definition "Ursamiska sprids under äldre järnålder; dateringen omdiskuterad"@sv ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
-    skos:prefLabel "Samisk kultur tar form"@sv ;
-    time:intervalMeets nh:nh-p0051 ;
-    time:intervalMetBy nh:nh-p0049 ;
-    schema:description "Ursamiska sprids under äldre järnålder; dateringen omdiskuterad" ;
-    schema:name "Samisk kultur tar form" ;
-    schema:temporalCoverage "-0499/1050" .
-
-nh:nh-p0051 a crm:E4_Period,
-        skos:Concept ;
-    dcterms:identifier "nh-p0051" ;
-    dcterms:spatial wd:Q62132 ;
-    crm:P4_has_time-span [ a crm:E52_Time-Span ;
-            crm:P82a_begin_of_the_begin "1050"^^xsd:gYear ;
-            crm:P82b_end_of_the_end "1550"^^xsd:gYear ] ;
-    crm:P7_took_place_at wd:Q62132 ;
-    skos:definition "Fångst, fiske och handel; skatt till flera riken"@sv ;
-    skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> ;
-    skos:prefLabel "Siidasamhällen"@sv ;
-    time:intervalMeets nh:nh-p0052 ;
-    time:intervalMetBy nh:nh-p0050 ;
-    schema:description "Fångst, fiske och handel; skatt till flera riken" ;
-    schema:name "Siidasamhällen" ;
-    schema:temporalCoverage "1050/1550" .
 
 nh:nh-p0057 a crm:E4_Period,
         skos:Concept ;
@@ -6931,19 +6424,17 @@ nh:nh-p0064 a crm:E4_Period,
     schema:name "Danmark–Norge" ;
     schema:temporalCoverage "1523/1660" .
 
-<https://snl.no/samenes_forhistorie> schema:name "Store norske leksikon: samenes forhistorie" .
-
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> a schema:Dataset ;
     schema:creator [ a schema:Person ;
             schema:name "Kerstin Forsberg" ;
             schema:url <https://kerfors.github.io/> ] ;
     schema:description "Perioder, händelser och milstolpar i Nordens historia, med en källkontroll per uppgift." ;
     schema:distribution [ a schema:DataDownload ;
-            schema:contentUrl nh:index.ttl ;
-            schema:encodingFormat "text/turtle" ],
-        [ a schema:DataDownload ;
             schema:contentUrl nh:index.jsonld ;
-            schema:encodingFormat "application/ld+json" ] ;
+            schema:encodingFormat "application/ld+json" ],
+        [ a schema:DataDownload ;
+            schema:contentUrl nh:index.ttl ;
+            schema:encodingFormat "text/turtle" ] ;
     schema:inLanguage "sv" ;
     schema:isBasedOn [ a schema:CreativeWork ;
             schema:creator [ a schema:Organization ;
@@ -7039,8 +6530,6 @@ nh:nh-p0070 a crm:E4_Period,
 
 <https://snl.no/Norges_historie> schema:name "Store norske leksikon: Norges historie" .
 
-<https://snl.no/samenes_historie> schema:name "Store norske leksikon: samenes historie" .
-
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> a prov:Activity ;
     prov:startedAtTime "2026-10-18"^^xsd:date ;
     prov:used <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#riksarkivets-mcp> ;
@@ -7053,8 +6542,6 @@ nh:nh-p0070 a crm:E4_Period,
     skos:prefLabel "Periodindelning enligt Lex (Den Store Danske)"@sv ;
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:url <https://lex.dk/> .
-
-wd:Q62132 schema:name "Sápmi" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> a skos:ConceptScheme ;
     skos:prefLabel "Periodindelning enligt Store norske leksikon"@sv ;
@@ -7075,14 +6562,14 @@ wd:Q33 schema:name "Finland" .
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#uppgiftstyper> ;
     skos:prefLabel "Periodens namn och gränser"@sv .
 
-wd:Q20 schema:name "Norge" .
-
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#perioder> a skos:ConceptScheme ;
     dcterms:creator [ a schema:Person ;
             schema:name "Kerstin Forsberg" ] ;
     skos:prefLabel "Affischens periodindelning"@sv ;
     skos:scopeNote "Affischens egna periodgränser, valda för att blocken ska gå att läsa. Källornas gränser finns som egna definitioner i separata scheman och är matchade mot affischens perioder."@sv ;
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> .
+
+wd:Q20 schema:name "Norge" .
 
 wd:Q35 schema:name "Danmark" .
 

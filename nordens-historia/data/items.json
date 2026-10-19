@@ -4,8 +4,7 @@
   "Danmark",
   "Norge",
   "Sverige",
-  "Finland",
-  "Sápmi"
+  "Finland"
  ],
  "palette": {
   "stone": "#c9b79c",
@@ -28,8 +27,6 @@
   "seno": "#c7b3e6",
   "modern": "#86c99a",
   "war": "#9aa7b4",
-  "sapmi": "#c8a2c8",
-  "sapmi2": "#e3b7cf",
   "green": "#6cc08b",
   "teal": "#5bc0be",
   "pink": "#f2b5c4",
@@ -567,72 +564,6 @@
    "colour": "modern"
   },
   {
-   "id": "nh-p0049",
-   "label": "Fångstkulturer i norr",
-   "description": "Komsakultur; hällkonst i Alta",
-   "columns": [
-    "Sápmi"
-   ],
-   "start": -9000,
-   "end": -500,
-   "colour": "sapmi2"
-  },
-  {
-   "id": "nh-p0050",
-   "label": "Samisk kultur tar form",
-   "description": "Ursamiska sprids under äldre järnålder; dateringen omdiskuterad",
-   "columns": [
-    "Sápmi"
-   ],
-   "start": -500,
-   "end": 1050,
-   "colour": "sapmi"
-  },
-  {
-   "id": "nh-p0051",
-   "label": "Siidasamhällen",
-   "description": "Fångst, fiske och handel; skatt till flera riken",
-   "columns": [
-    "Sápmi"
-   ],
-   "start": 1050,
-   "end": 1550,
-   "colour": "sapmi2"
-  },
-  {
-   "id": "nh-p0052",
-   "label": "Skatt, handel och mission",
-   "description": "Lappmarksplakatet 1673",
-   "columns": [
-    "Sápmi"
-   ],
-   "start": 1550,
-   "end": 1751,
-   "colour": "sapmi"
-  },
-  {
-   "id": "nh-p0053",
-   "label": "Gränser och nybyggen",
-   "description": "Lappkodicillen 1751; nybyggen breder ut sig",
-   "columns": [
-    "Sápmi"
-   ],
-   "start": 1751,
-   "end": 1917,
-   "colour": "sapmi2"
-  },
-  {
-   "id": "nh-p0054",
-   "label": "Samisk organisering",
-   "description": "Sameting: Norge 1989, Sverige 1993, Finland 1996 (delegation från 1973)",
-   "columns": [
-    "Sápmi"
-   ],
-   "start": 1917,
-   "end": 2026,
-   "colour": "sapmi"
-  },
-  {
    "id": "nh-p0055",
    "label": "Nordisk bronsålder",
    "description": "Solvagnen från Trundholm; hällristningarna i Tanum",
@@ -1003,12 +934,6 @@
    "label": "Bohrs atommodell",
    "column": "Danmark",
    "year": 1913
-  },
-  {
-   "id": "nh-m0019",
-   "label": "Första samiska landsmötet",
-   "column": "Sápmi",
-   "year": 1917
   },
   {
    "id": "nh-m0020",

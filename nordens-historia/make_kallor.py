@@ -14,9 +14,9 @@ LABEL = {x["id"]: x["label"] for k in ("periods", "events", "milestones") for x 
 RA = json.loads((HERE / "data" / "riksarkivet.json").read_text(encoding="utf-8"))
 RA_BY_CLAIM = {r["claim"]: r for r in RA["checks"]}
 PREFIX_GROUP = {"IS": "Island", "DA": "Danmark", "NO": "Norge", "SV": "Sverige", "FI": "Finland",
-                "SÁ": "Sápmi", "GE": "Gemensamt", "MI": "Milstolpar"}
+                "GE": "Gemensamt", "MI": "Milstolpar"}
 
-GROUP_ORDER = ["Island", "Danmark", "Norge", "Sverige", "Finland", "Sápmi", "Gemensamt", "Milstolpar"]
+GROUP_ORDER = ["Island", "Danmark", "Norge", "Sverige", "Finland", "Gemensamt", "Milstolpar"]
 GROUP_TITLE = {"Gemensamt": "Gemensamma block och händelser"}
 
 # What was changed on the poster after the check (id -> text).
@@ -53,13 +53,6 @@ ACTIONS = {
     "FI08": "Titeln ändrad till ”Äldre järnålder”; not om att järnåldern fortsätter.",
     "FI11": "Slut ändrat till 1300; not om väst/öst; nytt block 1300–1319.",
     "FI24": "Start ändrat till 1944 (”Andra republiken”).",
-    "SÁ01": "Slut ändrat till 500 f.Kr.",
-    "SÁ04": "Ändrat till 500 f.Kr.–1050; ”ursamiska”.",
-    "SÁ05": "Ändrat till ”ursamiska”.",
-    "SÁ07": "Start ändrat till 1050.",
-    "SÁ09": "Ändrat till ”flera riken”.",
-    "SÁ10": "Titeln ändrad till ”Skatt, handel och mission”; nybyggen i nästa block.",
-    "SÁ15": "Ändrat till ”Finland 1996 (delegation från 1973)”.",
     "GE12": "Behållet; 793 knyts till Lindisfarne.",
     "GE14": "Behållet; delningen 1355 anges i Håkon VI-blocket.",
     "GE16": "Behållet som affischens egen sammanfattning.",
@@ -180,7 +173,7 @@ PAGE = """<!doctype html>
 uppgifter (perioder, detaljer, händelser och milstolpar) upp per land, och AI-agenter med webbsökning
 fick leta en källa per uppgift. Kravet var att uppgiften faktiskt skulle synas på en hämtad sida.
 Nordiska uppslagsverk hade företräde: Store norske leksikon, lex.dk, Uppslagsverket Finland och
-Nationalencyklopedin, samt myndigheter, museer och sametingen.</p>
+Nationalencyklopedin, samt myndigheter och museer.</p>
 <p>Resultat: {summary}. Ingen uppgift visade sig direkt fel. De omdiskuterade är nästan alla
 periodgränser, där uppslagsverken i olika länder drar gränserna olika. Kolumnen ”Åtgärd” visar vad
 som ändrades på affischen efter kontrollen.</p>

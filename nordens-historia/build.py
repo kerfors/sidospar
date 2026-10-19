@@ -11,7 +11,7 @@ from pathlib import Path
 from html import escape
 
 # ---------------------------------------------------------------- layout
-COLUMNS = ["Island", "Danmark", "Norge", "Sverige", "Finland", "Sápmi"]
+COLUMNS = ["Island", "Danmark", "Norge", "Sverige", "Finland"]
 X0 = 120          # left edge of first column (axis to the left)
 COL_W = 158
 GAP = 2
@@ -336,7 +336,7 @@ def build_svg():
          f'aria-label="Nordens historia – en tidslinje">',
          f'<rect width="{WIDTH}" height="{HEIGHT}" fill="#fbfaf7"/>',
          f'<text x="{WIDTH/2}" y="62" font-size="44" font-weight="900" fill="{INK}" text-anchor="middle" letter-spacing="1">NORDENS HISTORIA</text>',
-         f'<text x="{WIDTH/2}" y="88" font-size="15" fill="#4a5764" text-anchor="middle">En tidslinje över Island, Danmark, Norge, Sverige, Finland och Sápmi</text>']
+         f'<text x="{WIDTH/2}" y="88" font-size="15" fill="#4a5764" text-anchor="middle">En tidslinje över Island, Danmark, Norge, Sverige och Finland</text>']
     # milestone legend
     s.append(f'<text x="40" y="122" font-size="11" font-weight="800" fill="{INK}">Milstolpar</text>')
     per_col = 9
@@ -418,9 +418,8 @@ Innehåll och data är licensierade under <a href="https://creativecommons.org/l
 <h2>Om urvalet</h2>
 <ul>
 <li>Tidsaxeln är inte linjär: stenåldern är hårt komprimerad och de senaste femhundra åren utdragna, som i originalet.</li>
-<li>Kolumnerna står i ordningen Island, Danmark, Norge, Sverige, Finland, Sápmi. Det är inte geografi utan ett sätt att få varje union att bli ett sammanhängande block.</li>
+<li>Kolumnerna står i ordningen Island, Danmark, Norge, Sverige, Finland. Det är inte geografi utan ett sätt att få varje union att bli ett sammanhängande block.</li>
 <li>Förhistoriska perioder och kulturnamn följer konventionell skandinavisk arkeologisk periodindelning. Gränserna är glidande och skiljer sig mellan regioner.</li>
-<li>Sápmi är ingen stat utan ett kulturområde som delas av Norge, Sverige, Finland och Ryssland. Kolumnen visar samisk historia vid sidan av riksbildningarna; dateringen av de tidiga perioderna är omdiskuterad.</li>
 <li>Grönland, Färöarna och Åland har ingen egen kolumn.</li>
 </ul>
 </div>

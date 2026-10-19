@@ -6430,11 +6430,11 @@ nh:nh-p0064 a crm:E4_Period,
             schema:url <https://kerfors.github.io/> ] ;
     schema:description "Perioder, händelser och milstolpar i Nordens historia, med en källkontroll per uppgift." ;
     schema:distribution [ a schema:DataDownload ;
-            schema:contentUrl nh:index.jsonld ;
-            schema:encodingFormat "application/ld+json" ],
-        [ a schema:DataDownload ;
             schema:contentUrl nh:index.ttl ;
-            schema:encodingFormat "text/turtle" ] ;
+            schema:encodingFormat "text/turtle" ],
+        [ a schema:DataDownload ;
+            schema:contentUrl nh:index.jsonld ;
+            schema:encodingFormat "application/ld+json" ] ;
     schema:inLanguage "sv" ;
     schema:isBasedOn [ a schema:CreativeWork ;
             schema:creator [ a schema:Organization ;

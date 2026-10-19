@@ -232,7 +232,7 @@ The first review is unchanged.</p>
 <p>The same graph is published in two serialisations. JSON-LD is the source: the build writes it, and it is embedded
 in every page. Turtle is generated from the JSON-LD with <a href="https://github.com/RDFLib/rdflib">rdflib</a>, and the
 build checks that the two give the same graph. The check is graph isomorphism, not text comparison, because the
-time-spans and ratings are blank nodes. Every item page shows both formats side by side.</p>
+time-spans and ratings are blank nodes.</p>
 <p>The <a href="sparql.html">SPARQL page</a> loads <code>id/index.ttl</code> into
 <a href="https://github.com/oxigraph/oxigraph">Oxigraph</a>, a SPARQL engine compiled to WebAssembly, in the browser.
 There is no server. The page has 9 example queries, for example the disputed boundaries in

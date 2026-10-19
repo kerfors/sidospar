@@ -165,6 +165,7 @@
   h1 { margin: 0.1em 0 0.4em; }
   dl { display: grid; grid-template-columns: 11em 1fr; gap: 4px 12px; }
   dt { color: #6b7682; } dd { margin: 0; overflow-wrap: anywhere; }
+  .ids { margin-top: 3em; color: #6b7682; font-size: 0.8rem; overflow-wrap: anywhere; }
   code { font-size: 0.85em; background: #f1eee7; padding: 1px 4px; border-radius: 3px; }
   table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
   th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #e3e0d8; }
@@ -189,7 +190,6 @@
 <p class="kind">Kontrollerad uppgift</p>
 <h1>Linux: 1991</h1>
 <dl>
-<dt>Identifierare</dt><dd><code>https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0206</code></dd>
 <dt>Kontroll-id</dt><dd><code>MI25</code> i <a href="../../kallor.html#nh-c0206">källäget</a></dd>
 <dt>Om</dt><dd><a href="../nh-m0025/">Linux</a> <code>nh-m0025</code></dd>
 <dt>Utlåtande</dt><dd><span class="v bekräftad">bekräftad</span></dd>
@@ -199,191 +199,9 @@
 <dt>Notering</dt><dd>Ej nordisk källa; SNL säger bara &#x27;tidigt 1990-tal&#x27;.</dd>
 <dt>Åtgärd</dt><dd>–</dd>
 <dt>Kontrollerad</dt><dd>2026-10-18</dd>
-<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
 
-<h2>Data i två format</h2>
-<p>Samma graf som JSON-LD och som Turtle. Bygget kontrollerar att de två ger samma graf.</p>
-<div class="formats">
-<div><h3><a href="index.jsonld">index.jsonld</a></h3><pre>{
- &quot;@context&quot;: {
-  &quot;@vocab&quot;: &quot;https://schema.org/&quot;,
-  &quot;schema&quot;: &quot;https://schema.org/&quot;,
-  &quot;crm&quot;: &quot;http://www.cidoc-crm.org/cidoc-crm/&quot;,
-  &quot;skos&quot;: &quot;http://www.w3.org/2004/02/skos/core#&quot;,
-  &quot;dcterms&quot;: &quot;http://purl.org/dc/terms/&quot;,
-  &quot;prov&quot;: &quot;http://www.w3.org/ns/prov#&quot;,
-  &quot;xsd&quot;: &quot;http://www.w3.org/2001/XMLSchema#&quot;,
-  &quot;wd&quot;: &quot;http://www.wikidata.org/entity/&quot;,
-  &quot;time&quot;: &quot;http://www.w3.org/2006/time#&quot;,
-  &quot;nh&quot;: &quot;https://w3id.org/people/kerfors/sidospar/nordens-historia/id/&quot;,
-  &quot;skos:prefLabel&quot;: {
-   &quot;@container&quot;: &quot;@language&quot;
-  },
-  &quot;skos:definition&quot;: {
-   &quot;@container&quot;: &quot;@language&quot;
-  },
-  &quot;skos:inScheme&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;skos:exactMatch&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;skos:closeMatch&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;dcterms:spatial&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;crm:P7_took_place_at&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;crm:P82a_begin_of_the_begin&quot;: {
-   &quot;@type&quot;: &quot;xsd:gYear&quot;
-  },
-  &quot;crm:P82b_end_of_the_end&quot;: {
-   &quot;@type&quot;: &quot;xsd:gYear&quot;
-  },
-  &quot;startDate&quot;: {
-   &quot;@type&quot;: &quot;xsd:gYear&quot;
-  },
-  &quot;endDate&quot;: {
-   &quot;@type&quot;: &quot;xsd:gYear&quot;
-  },
-  &quot;about&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;itemReviewed&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;citation&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;isBasedOn&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;license&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;time:intervalMeets&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;time:intervalMetBy&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;crm:P10_falls_within&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;dcterms:source&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;dcterms:type&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;skos:scopeNote&quot;: {
-   &quot;@container&quot;: &quot;@language&quot;
-  },
-  &quot;mainEntity&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;isPartOf&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;url&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;prov:wasGeneratedBy&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;prov:wasDerivedFrom&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;prov:wasAssociatedWith&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;prov:actedOnBehalfOf&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  },
-  &quot;prov:used&quot;: {
-   &quot;@type&quot;: &quot;@id&quot;
-  }
- },
- &quot;@graph&quot;: [
-  {
-   &quot;@id&quot;: &quot;https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0206/&quot;,
-   &quot;@type&quot;: &quot;WebPage&quot;,
-   &quot;mainEntity&quot;: &quot;nh:nh-c0206&quot;,
-   &quot;isPartOf&quot;: &quot;nh:#dataset&quot;
-  },
-  {
-   &quot;@id&quot;: &quot;nh:nh-c0206&quot;,
-   &quot;@type&quot;: &quot;Claim&quot;,
-   &quot;dcterms:identifier&quot;: [
-    &quot;nh-c0206&quot;,
-    &quot;MI25&quot;
-   ],
-   &quot;text&quot;: &quot;Linux: 1991&quot;,
-   &quot;about&quot;: [
-    {
-     &quot;@id&quot;: &quot;nh:nh-m0025&quot;
-    }
-   ],
-   &quot;dcterms:type&quot;: &quot;nh:#typ-milstolpe&quot;
-  },
-  {
-   &quot;@id&quot;: &quot;nh:nh-c0206#granskning&quot;,
-   &quot;@type&quot;: [
-    &quot;ClaimReview&quot;,
-    &quot;prov:Entity&quot;
-   ],
-   &quot;itemReviewed&quot;: &quot;nh:nh-c0206&quot;,
-   &quot;reviewRating&quot;: {
-    &quot;@type&quot;: &quot;Rating&quot;,
-    &quot;alternateName&quot;: &quot;bekräftad&quot;
-   },
-   &quot;reviewBody&quot;: &quot;Museet anger att Torvalds beskrev första Linuxversionen 1991 vid Helsingfors universitet.&quot;,
-   &quot;datePublished&quot;: &quot;2026-10-18&quot;,
-   &quot;prov:wasGeneratedBy&quot;: &quot;nh:#kontroll-2026-10-18&quot;,
-   &quot;citation&quot;: {
-    &quot;@id&quot;: &quot;https://www.computerhistory.org/revolution/personal-computers/17/307/1235&quot;,
-    &quot;name&quot;: &quot;Computer History Museum: Linux&quot;
-   },
-   &quot;prov:wasDerivedFrom&quot;: &quot;https://www.computerhistory.org/revolution/personal-computers/17/307/1235&quot;
-  }
- ]
-}</pre></div>
-<div><h3><a href="index.ttl">index.ttl</a></h3><pre>@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
-@prefix nh: &lt;https://w3id.org/people/kerfors/sidospar/nordens-historia/id/&gt; .
-@prefix prov: &lt;http://www.w3.org/ns/prov#&gt; .
-@prefix schema: &lt;https://schema.org/&gt; .
-
-&lt;https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0206#granskning&gt; a prov:Entity,
-        schema:ClaimReview ;
-    prov:wasDerivedFrom &lt;https://www.computerhistory.org/revolution/personal-computers/17/307/1235&gt; ;
-    prov:wasGeneratedBy &lt;https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt; ;
-    schema:citation &lt;https://www.computerhistory.org/revolution/personal-computers/17/307/1235&gt; ;
-    schema:datePublished &quot;2026-10-18&quot; ;
-    schema:itemReviewed nh:nh-c0206 ;
-    schema:reviewBody &quot;Museet anger att Torvalds beskrev första Linuxversionen 1991 vid Helsingfors universitet.&quot; ;
-    schema:reviewRating [ a schema:Rating ;
-            schema:alternateName &quot;bekräftad&quot; ] .
-
-&lt;https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0206/&gt; a schema:WebPage ;
-    schema:isPartOf &lt;https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset&gt; ;
-    schema:mainEntity nh:nh-c0206 .
-
-nh:nh-c0206 a schema:Claim ;
-    dcterms:identifier &quot;MI25&quot;,
-        &quot;nh-c0206&quot; ;
-    dcterms:type &lt;https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-milstolpe&gt; ;
-    schema:about nh:nh-m0025 ;
-    schema:text &quot;Linux: 1991&quot; .
-
-&lt;https://www.computerhistory.org/revolution/personal-computers/17/307/1235&gt; schema:name &quot;Computer History Museum: Linux&quot; .
-
-</pre></div>
-</div>
-
+<p class="ids">Identifierare <code>https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0206</code> · Data: <a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></p>
 </main>
 </body>
 </html>

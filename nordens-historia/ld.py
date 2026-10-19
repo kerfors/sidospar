@@ -403,6 +403,7 @@ CSS = """
   h1 { margin: 0.1em 0 0.4em; }
   dl { display: grid; grid-template-columns: 11em 1fr; gap: 4px 12px; }
   dt { color: #6b7682; } dd { margin: 0; overflow-wrap: anywhere; }
+  .ids { margin-top: 3em; color: #6b7682; font-size: 0.8rem; overflow-wrap: anywhere; }
   code { font-size: 0.85em; background: #f1eee7; padding: 1px 4px; border-radius: 3px; }
   table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
   th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #e3e0d8; }
@@ -456,6 +457,12 @@ def formats_html(doc, ttl):
 <div><h3><a href="index.ttl">index.ttl</a></h3><pre>{escape(ttl)}</pre></div>
 </div>
 """
+
+
+def ids_html(iri):
+    """Identifier and data links, as a small line at the foot of an item or claim page."""
+    return (f'<p class="ids">Identifierare <code>{iri}</code> · '
+            f'Data: <a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></p>')
 
 
 def verdict_badge(v):
@@ -532,7 +539,7 @@ def definitions_html(item, defs):
         return ""
     rows = []
     rows.append(f'<tr><td><strong>Affischen</strong></td><td>{escape(yr(item["start"]))} – {escape(yr(item["end"]))}</td>'
-                f'<td><code>{gyear(item["start"])}/{gyear(item["end"])}</code></td><td>affischens eget val</td><td></td></tr>')
+                f'<td>affischens eget val</td><td></td></tr>')
     for d in defs:
         _, name, _ = publication(d["source_url"])
         s = (("c. " if d["approx_start"] else "") + yr(d["start"]) if d["start"] is not None else "?")
@@ -542,11 +549,11 @@ def definitions_html(item, defs):
         rel = "samma" if same else "avviker"
         stated = f'<br><span style="color:#6b7682">{escape(d["as_stated"])}</span>' if d["as_stated"] else ""
         rows.append(f'<tr id="{escape(d["id"])}"><td><a href="{escape(d["source_url"])}">{escape(name)}</a>{stated}</td>'
-                    f'<td>{escape(s)} – {escape(e)}</td><td><code>{iso}</code></td><td>{rel}</td>'
+                    f'<td>{escape(s)} – {escape(e)}</td><td>{rel}</td>'
                     f'<td><a href="../{d["claim"]}/">{d["claim"]}</a></td></tr>')
-    return ('<h2>Källornas gränser</h2>\n<p>Affischens gräns är ett val. Källornas egna gränser är egna definitioner, '
-            'matchade mot perioden med <code>skos:exactMatch</code> när de sammanfaller och <code>skos:closeMatch</code> när de avviker.</p>\n'
-            '<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>ISO</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody>'
+    return ('<h2>Källornas gränser</h2>\n<p>Affischens gräns är ett val. Här är de gränser källorna själva drar, '
+            'och om de sammanfaller med affischens eller avviker.</p>\n'
+            '<div class="tw"><table><thead><tr><th>Källa</th><th>Gräns</th><th>Mot affischen</th><th>Uppgift</th></tr></thead><tbody>'
             + "".join(rows) + "</tbody></table></div>\n")
 
 
@@ -568,18 +575,16 @@ def item_page(item, kind, node, cl, wd, places, ra, rel=None, by_id=None, defs=(
 <h1>{escape(item['label'])}</h1>
 {desc}
 <dl>
-<dt>Identifierare</dt><dd><code>{iri}</code></dd>
-<dt>Tid</dt><dd>{escape(when)} &nbsp;{iso}</dd>
+<dt>Tid</dt><dd>{escape(when)}</dd>
 <dt>Plats</dt><dd>{places}</dd>
 <dt>Wikidata</dt><dd>{wd_html(item['id'], wd)}</dd>
 {related_html(item, kind, rel, by_id) if by_id else ""}
 <dt>På affischen</dt><dd><a href="../../#{item['id']}">Visa på affischen</a></dd>
-<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
 {definitions_html(item, defs)}
 <h2>Kontrollerade uppgifter</h2>
 {claims_table(cl, ra)}
-{formats_html(doc, ttl)}"""
+{ids_html(iri)}"""
     return page(item["label"], body, doc, 2), doc, ttl
 
 
@@ -595,7 +600,6 @@ def claim_page(c, by_id, ra):
     body = f"""<p class="kind">{TYPE_LABEL['claim']}</p>
 <h1>{escape(c['statement'])}</h1>
 <dl>
-<dt>Identifierare</dt><dd><code>{iri}</code></dd>
 <dt>Kontroll-id</dt><dd><code>{escape(c['check_id'])}</code> i <a href="../../kallor.html#{c['id']}">källäget</a></dd>
 <dt>Om</dt><dd>{about}</dd>
 <dt>Utlåtande</dt><dd>{verdict_badge(c['verdict'])}</dd>
@@ -605,10 +609,9 @@ def claim_page(c, by_id, ra):
 {'<dt>Notering</dt><dd>' + escape(c['note']) + '</dd>' if c['note'] else ''}
 <dt>Åtgärd</dt><dd>{escape(c['action']) or '–'}</dd>
 <dt>Kontrollerad</dt><dd>{c['checked']}</dd>
-<dt>Data</dt><dd><a href="index.jsonld">index.jsonld</a> · <a href="index.ttl">index.ttl</a></dd>
 </dl>
 {ra_html(ra["by_claim"][c["id"]], ra["checked"]) if c["id"] in ra["by_claim"] else ""}
-{formats_html(doc, ttl)}"""
+{ids_html(iri)}"""
     return page(c["statement"], body, doc, 2), doc, ttl
 
 

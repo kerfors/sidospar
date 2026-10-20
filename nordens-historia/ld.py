@@ -559,7 +559,7 @@ def page(title, body, jsonld, depth):
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="{up}">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="{up}kallor.html">Källäget</a> · <a href="{up}sparql.html">SPARQL</a></p>
+<p class="crumbs"><a href="{up}">Nordens historia</a> · <a href="../">Identifierare</a> · <a href="{up}kallor.html">Källäget</a> · <a href="{up}kallkatalog.html">Källorna</a> · <a href="{up}sparql.html">SPARQL</a></p>
 {body}
 </main>
 </body>
@@ -799,7 +799,7 @@ def register_page(sections, doc):
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="../">Nordens historia</a> · <a href="../kallor.html">Källäget</a> · <a href="../sparql.html">SPARQL</a></p>
+<p class="crumbs"><a href="../">Nordens historia</a> · <a href="../kallor.html">Källäget</a> · <a href="../kallkatalog.html">Källorna</a> · <a href="../sparql.html">SPARQL</a></p>
 {body}
 </main>
 </body>

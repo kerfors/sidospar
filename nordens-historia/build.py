@@ -2,8 +2,8 @@
 Chart Origin's "Timeline of World History".
 
 Data lives in data/items.json and data/claims.json.
-Run: python3 build.py  ->  writes index.html, kallor.html, id/, linked-data.html and sparql.html
-(via make_kallor.py, ld.py, ld_page.py and sparql_page.py).
+Run: python3 build.py  ->  writes index.html, kallor.html, kallkatalog.html, id/, linked-data.html and sparql.html
+(via make_kallor.py, make_kallkatalog.py, ld.py, ld_page.py and sparql_page.py).
 
 nordens-historia-affisch.png is a snapshot of the poster (1200 px wide, rendered
 from the SVG with cairosvg). This script does not re-render it: render it again
@@ -406,7 +406,7 @@ Klicka på ett block, en händelse eller en siffra för datum, källor och ident
 <p><strong>Originalet:</strong> <a href="{post}">Timeline of World History</a> av
 <a href="https://chartorigin.com">Chart Origin</a>.
 Idén och formen är deras; innehållet här är mitt eget urval.</p>
-<p><strong>Källäget:</strong> varje uppgift är kontrollerad mot en uppslagskälla, se <a href="kallor.html">källförteckningen</a>.</p>
+<p><strong>Källäget:</strong> varje uppgift är kontrollerad mot en uppslagskälla, se <a href="kallor.html">källförteckningen</a>, och alla källor samlade per uppslagsverk och utgivare finns i <a href="kallkatalog.html">källorna</a>.</p>
 <p><strong>Länkade data:</strong> varje period, händelse, milstolpe och kontrollerad uppgift har en egen beständig
 identifierare som går att slå upp, med JSON-LD, Turtle och länkar till Wikidata. Se <a href="id/">identifierarna</a>
 och, på engelska, <a href="linked-data.html">The linked data behind the poster</a>. Datan går att ställa frågor mot
@@ -587,8 +587,10 @@ def main():
     print(f"wrote {out}")
     sys.dont_write_bytecode = True
     import make_kallor
+    import make_kallkatalog
     import ld
     make_kallor.main()
+    make_kallkatalog.main()
     ld.main()
 
 

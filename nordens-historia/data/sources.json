@@ -3,30 +3,37 @@
  "types": {
   "uppslagsverk": {
    "iri": "kallor:#uppslagsverk",
+   "label": "Uppslagsverk",
    "schema": "CreativeWork"
   },
   "register": {
    "iri": "kallor:#register",
+   "label": "Register",
    "schema": "Dataset"
   },
   "artikel": {
    "iri": "kallor:#artikel",
+   "label": "Artikel i ett uppslagsverk",
    "schema": "Article"
   },
   "registerpost": {
    "iri": "kallor:#registerpost",
+   "label": "Post i ett register",
    "schema": "CreativeWork"
   },
   "periodikum": {
    "iri": "kallor:#periodikum",
+   "label": "Tidskrift eller tidning",
    "schema": "Periodical"
   },
   "periodikumartikel": {
    "iri": "kallor:#periodikumartikel",
+   "label": "Artikel i en tidskrift eller tidning",
    "schema": "Article"
   },
   "webbsida": {
    "iri": "kallor:#webbsida",
+   "label": "Webbsida",
    "schema": "WebPage"
   }
  },

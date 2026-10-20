@@ -416,7 +416,7 @@ def build(ttl_path, out_path):
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="./">Nordens historia</a> · <a href="id/">Identifierare</a> · <a href="kallor.html">Källäget</a> · <a href="linked-data.html">Linked data (English)</a></p>
+<p class="crumbs"><a href="./">Nordens historia</a> · <a href="id/">Identifierare</a> · <a href="kallor.html">Källäget</a> · <a href="kallkatalog.html">Källorna</a> · <a href="linked-data.html">Linked data (English)</a></p>
 {INTRO}
 <h2>Exempelfrågor</h2>
 <div class="examples" id="examples"></div>

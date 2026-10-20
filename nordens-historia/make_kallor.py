@@ -180,6 +180,7 @@ som ändrades på affischen efter kontrollen.</p>
 <p>Begränsningar: beläggen är agenternas egna sammanfattningar av källsidan, inte citat. Några sidor i
 NE ligger bakom betalvägg och kontrollerades bara mot den fria ingressen. Ett fåtal uppgifter vilar på
 svagare källor, till exempel Britannica eller en tidskriftsartikel, vilket syns i källkolumnen.
+Alla källor, samlade per uppslagsverk och utgivare, finns på sidan <a href="kallkatalog.html">källorna</a>.
 Kontrollen gjordes 18 oktober 2026.</p>
 <p>För {n_ra} av uppgifterna, om svenska personer och medeltida brev, gjordes en andra kontroll mot
 två källor hos Riksarkivet, SBL och SDHK. Den redovisas i ett eget avsnitt, <a href="#riksarkivet">Andra kontrollen, mot

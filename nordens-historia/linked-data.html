@@ -32,7 +32,7 @@
 </head>
 <body>
 <main>
-<p class="crumbs"><a href="./">Nordens historia (poster, in Swedish)</a> · <a href="kallor.html">Source check</a> · <a href="id/">Identifiers</a> · <a href="sparql.html">SPARQL</a></p>
+<p class="crumbs"><a href="./">Nordens historia (poster, in Swedish)</a> · <a href="kallor.html">Source check</a> · <a href="kallkatalog.html">Sources</a> · <a href="id/">Identifiers</a> · <a href="sparql.html">SPARQL</a></p>
 <h1>The linked data behind the poster</h1>
 <p class="lead">A poster is a picture. The facts behind it should be possible to look up, check and reuse.
 This page explains how the timeline <a href="./">Nordens historia</a> is published as linked data,
@@ -42,7 +42,7 @@ what we learned on the way, and what comes next. The poster and the other pages 
 <div><strong>95</strong><span>periods, events and milestones, each with its own identifier</span></div>
 <div><strong>191</strong><span>checked statements, each with a source</span></div>
 <div><strong>60</strong><span>period boundaries as stated by a source</span></div>
-<div><strong>156</strong><span>sources, each with what it is and its work or publisher</span></div>
+<div><strong>156</strong><span><a href="kallkatalog.html">sources</a>, each with what it is and its work or publisher</span></div>
 <div><strong>71</strong><span>items linked to Wikidata</span></div>
 </div>
 
@@ -130,7 +130,8 @@ also be a choice. All 15 are listed, in Swedish, on the <a href="kallor.html#rik
 <p>At first a source was mostly a web address with a title. Now each of the 156 sources says what it is, and which
 work it is part of or who publishes it, with Wikidata's identifiers. An article also has its number in the work, with
 the property Wikidata uses for that work, so the same article can be found from Wikidata. The same thing happened as
-with the periods: the questions came early.</p>
+with the periods: the questions came early. All 156 are listed, in Swedish, on the
+<a href="kallkatalog.html">sources page</a>, by work and publisher.</p>
 <ul>
 <li>Svenskt biografiskt lexikon is a reference work, not a register. SDHK is a register, and Diplomatarium Suecanum is
 the printed edition, not the register.</li>
@@ -149,7 +150,7 @@ The <a href="sparql.html">SPARQL page</a> runs queries in the browser, with 9 ex
 <h2>How it was made, and the limits</h2>
 <ul>
 <li>The 191 statements were split by country and checked by AI agents with web search. Each statement needed
-a source where the agent had actually seen the fact, with Nordic reference works first. The most used sources: Store norske leksikon (64), Lex (52), Nationalencyklopedin (18), Uppslagsverket Finland (18), Historiska museet (5), Nationalmuseet (3).</li>
+a source where the agent had actually seen the fact, with Nordic reference works first. The most used sources, by number of citations: Store norske leksikon (64), Lex (52), Nationalencyklopedin (18), Uppslagsverket Finland (18), Historiska museet (5), Nationalmuseet (3).</li>
 <li>The evidence texts are the agents' own summaries, not quotes. Some Nationalencyklopedin pages were checked only
 against the free introduction.</li>
 <li>71 of 95 items link to Wikidata. Most of the others are my own descriptive period names.</li>

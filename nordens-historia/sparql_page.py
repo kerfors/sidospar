@@ -130,8 +130,8 @@ GROUP BY ?typ ?typNamn ?utlatande
 ORDER BY ?typ ?utlatande
 """),
     ("riksarkivet", "Två kontroller av samma uppgift",
-     "Uppgifter som också är kontrollerade mot Riksarkivets register (SBL och SDHK), med utlåtandet från båda kontrollerna.",
-     f"""SELECT ?uppgift ?text ?forsta ?riksarkivet (GROUP_CONCAT(DISTINCT ?registerNamn; separator=", ") AS ?register) WHERE {{
+     "Uppgifter som också är kontrollerade mot Riksarkivets SBL och SDHK, med utlåtandet från båda kontrollerna.",
+     f"""SELECT ?uppgift ?text ?forsta ?riksarkivet (GROUP_CONCAT(DISTINCT ?kallNamn; separator=", ") AS ?kallor) WHERE {{
   ?uppgift a schema:Claim ;
            schema:text ?text .
   ?g1 schema:itemReviewed ?uppgift ;
@@ -140,7 +140,7 @@ ORDER BY ?typ ?utlatande
   ?g2 schema:itemReviewed ?uppgift ;
       prov:wasGeneratedBy/prov:used <{ld.ID}#riksarkivets-mcp> ;
       schema:reviewRating/schema:alternateName ?riksarkivet ;
-      schema:citation/schema:isPartOf/schema:name ?registerNamn .
+      schema:citation/schema:isPartOf/schema:name ?kallNamn .
 }}
 GROUP BY ?uppgift ?text ?forsta ?riksarkivet
 ORDER BY ?uppgift
@@ -218,7 +218,7 @@ och typen i <code>dcterms:type</code> (begrepp i <code>&lt;{ld.ID}#uppgiftstyper
 granskningen är en <code>schema:ClaimReview</code> med <code>schema:itemReviewed</code>, utlåtandet i
 <code>schema:reviewRating/schema:alternateName</code> och källan i <code>schema:citation</code>.</li>
 <li><strong>Två kontroller</strong>: granskningarna skiljs åt av <code>prov:wasGeneratedBy</code>. Den första kontrollen
-är <code>&lt;{ld.ID}#kontroll-{ld.CHECK_DATE}&gt;</code>; den andra, mot Riksarkivets register, använde
+är <code>&lt;{ld.ID}#kontroll-{ld.CHECK_DATE}&gt;</code>; den andra, mot Riksarkivets SBL och SDHK, använde
 (<code>prov:used</code>) <code>&lt;{ld.ID}#riksarkivets-mcp&gt;</code>.</li>
 </ul>
 """

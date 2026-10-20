@@ -1060,7 +1060,7 @@ nh: a schema:WebPage ;
         <https://sok.riksarkivet.se/sdhk?SDHK=14836>,
         <https://sok.riksarkivet.se/sdhk?SDHK=14837> ;
     schema:comment [ a schema:Comment ;
-            schema:text "Året stämmer i båda registren, men dagen skiljer: SBL anger kröningen 17 juni 1397, SDHK daterar kröningsbrevet 13 juli 1397." ] ;
+            schema:text "Året stämmer i båda källorna, men dagen skiljer: SBL anger kröningen 17 juni 1397, SDHK daterar kröningsbrevet 13 juli 1397." ] ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0151 ;
     schema:reviewBody "SBL: Erik av Pommern krönt till konung i de tre rikena i Kalmar 17 juni 1397, ensamregent vid Margaretas död i oktober 1412, avsatt i Sverige omkring 29 september 1439. Margareta död 28 oktober 1412. SDHK registrerar kröningsbrevet och Kalmardokumentet från juli 1397." ;
@@ -6655,7 +6655,7 @@ wd:Q379406 schema:name "Svenskt biografiskt lexikon (SBL)" .
     prov:startedAtTime "2026-10-18"^^xsd:date ;
     prov:used <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#riksarkivets-mcp> ;
     prov:wasAssociatedWith <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#claude-agenter> ;
-    schema:name "Kontroll mot Riksarkivets register" .
+    schema:name "Kontroll mot Riksarkivets SBL och SDHK" .
 
 <https://lex.dk/Islands_historie> schema:name "Islands historie (lex.dk, Den Store Danske)" .
 

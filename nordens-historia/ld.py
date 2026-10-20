@@ -422,7 +422,7 @@ def shared_nodes(wd, columns, ra):
          "name": "Claude, AI-agenter med webbsökning",
          "prov:actedOnBehalfOf": {"@type": ["prov:Person", "Person"], "name": "Kerstin Forsberg"}},
         {"@id": "nh:#kontroll-riksarkivet-" + ra["checked"], "@type": "prov:Activity",
-         "name": "Kontroll mot Riksarkivets register",
+         "name": "Kontroll mot Riksarkivets SBL och SDHK",
          "prov:startedAtTime": {"@value": ra["checked"], "@type": "xsd:date"},
          "prov:wasAssociatedWith": "nh:#claude-agenter",
          "prov:used": "nh:#riksarkivets-mcp"},
@@ -531,11 +531,11 @@ def ra_html(r, checked):
         for x in r["records"])
     note = f'<dt>Notering</dt><dd>{escape(r["note"])}</dd>' if r["note"] else ""
     return f"""<h2>Andra kontrollen: Riksarkivet</h2>
-<p>Uppgiften är också kontrollerad mot Riksarkivets register, Svenskt biografiskt lexikon (SBL) och
-Diplomatarium Suecanum (SDHK), genom Riksarkivets MCP-tjänst (beta). Det är en egen granskning bredvid den första.</p>
+<p>Uppgiften är också kontrollerad mot två källor hos Riksarkivet, uppslagsverket Svenskt biografiskt lexikon (SBL) och
+registret Svenskt Diplomatariums huvudkartotek (SDHK), genom Riksarkivets MCP-tjänst (beta). Det är en egen granskning bredvid den första.</p>
 <dl>
 <dt>Utlåtande</dt><dd>{verdict_badge(r["verdict"])}</dd>
-<dt>Registerposter</dt><dd>{recs}</dd>
+<dt>Artiklar och registerposter</dt><dd>{recs}</dd>
 <dt>Belägg</dt><dd>{escape(r["evidence"])}</dd>
 {note}
 <dt>Kontrollerad</dt><dd>{checked}</dd>
@@ -680,7 +680,7 @@ formulering finns i <code>skos:scopeNote</code>.</li>
 <code>crm:P10_falls_within</code> för händelser och milstolpar som inträffar under en period.</li>
 <li><strong>PROV-O</strong> för proveniensen: varje granskning är genererad av källkontrollen den {date}, utförd av
 AI-agenter för Kerstin Forsbergs räkning, och härledd från sin källa. En del uppgifter har också en andra granskning,
-mot Riksarkivets register SBL och SDHK, genererad av en egen aktivitet som använde Riksarkivets MCP-tjänst.</li>
+mot Riksarkivets SBL och SDHK, genererad av en egen aktivitet som använde Riksarkivets MCP-tjänst.</li>
 <li><strong>Wikidata</strong> som länk utåt. Perioder och händelser länkas med <code>skos:exactMatch</code> eller
 <code>skos:closeMatch</code>. Milstolpar är händelser (grundandet, uppfinningen) och pekar på saken med
 <code>schema:about</code>. Varje länk är hittad med Wikidatas sökverktyg och kontrollerad mot wikidata.org.</li>

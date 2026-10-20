@@ -182,7 +182,7 @@ NE ligger bakom betalvägg och kontrollerades bara mot den fria ingressen. Ett f
 svagare källor, till exempel Britannica eller en tidskriftsartikel, vilket syns i källkolumnen.
 Kontrollen gjordes 18 oktober 2026.</p>
 <p>För {n_ra} av uppgifterna, om svenska personer och medeltida brev, gjordes en andra kontroll mot
-Riksarkivets register. Den redovisas i ett eget avsnitt, <a href="#riksarkivet">Andra kontrollen, mot
+två källor hos Riksarkivet, SBL och SDHK. Den redovisas i ett eget avsnitt, <a href="#riksarkivet">Andra kontrollen, mot
 Riksarkivet</a>, och vid varje berörd uppgift nedan.</p>
 <p>Hela kontrollen finns också maskinläsbar. <a href="data/claims.json">claims.json</a> har en post per uppgift
 med identifierare, vad uppgiften handlar om, utlåtande, källa, belägg och åtgärd. Som Linked Data finns varje uppgift
@@ -200,11 +200,11 @@ RA_SECTION = """<h2 id="riksarkivet">Andra kontrollen, mot Riksarkivet</h2>
 <div class="intro">
 <p>Den första kontrollen använde uppslagsverk och museisidor, källor som sammanfattar andra källor. För {n}
 uppgifter om svenska personer och medeltida brev gick en andra kontroll ett steg närmare källorna, till två
-register hos Riksarkivet: Svenskt biografiskt lexikon (SBL) och Diplomatarium Suecanum (SDHK), registret över
+källor hos Riksarkivet: uppslagsverket Svenskt biografiskt lexikon (SBL) och Svenskt Diplomatariums huvudkartotek (SDHK), registret över
 Sveriges medeltidsbrev. De nåddes genom Riksarkivets MCP-tjänst (beta), som låter en AI-agent söka direkt i
-registren. Kontrollen hänvisar till {sbl} SBL-artiklar och {sdhk} SDHK-brev.</p>
+dem. Kontrollen hänvisar till {sbl} SBL-artiklar och {sdhk} SDHK-brev.</p>
 <p>{ok} uppgifter bekräftades och {unk} gick inte att pröva, eftersom tjänsten ger SBL:s sammanfattning och
-litteraturlista, inte hela levnadsteckningen. Ingen uppgift motsades. Men registren tillför detaljer som
+litteraturlista, inte hela levnadsteckningen. Ingen uppgift motsades. Men SBL och SDHK tillför detaljer som
 uppslagsverken utelämnar:</p>
 <ul>
 <li>Årtalet 1164 för ärkebiskopsstolen i Uppsala står inte i påvebrevet. SDHK anger att utgivarna har lagt till det.</li>
@@ -219,7 +219,7 @@ slutsats, inte något registret säger.</li>
 utgivare. Den första kontrollens utlåtanden ovan är oförändrade. Kontrollen gjordes {checked}.</p>
 </div>
 <div class="tw"><table>
-<thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Register och belägg</th></tr></thead><tbody>
+<thead><tr><th>Id</th><th>Uppgift</th><th>Utlåtande</th><th>Källa och belägg</th></tr></thead><tbody>
 {rows}
 </tbody></table></div>"""
 

@@ -173,9 +173,9 @@ evidence and source</td>
 
 <h2>A second check, against the archives</h2>
 <p>For {s['ra']} statements about Swedish persons and medieval documents, a second check went one step closer to the
-sources: Svenskt biografiskt lexikon and Diplomatarium Suecanum at Riksarkivet, the Swedish National Archives, searched
+sources: the biographical dictionary Svenskt biografiskt lexikon (SBL) and the register Svenskt Diplomatariums huvudkartotek (SDHK) at Riksarkivet, the Swedish National Archives, searched
 through Riksarkivet's MCP service (beta). {s['ra_verdicts']['bekräftad']} were confirmed, {s['ra_verdicts']['ej verifierad']}
-could not be checked, and none was contradicted. But the registers add details the reference works leave out. The year
+could not be checked, and none was contradicted. But SBL and SDHK add details the reference works leave out. The year
 1164 for the archbishopric in Uppsala, for example, is not in the papal letter; the editors supplied it. A date can
 also be a choice. All {s['ra']} are listed, in Swedish, on the <a href="kallor.html#riksarkivet">source check page</a>.</p>
 

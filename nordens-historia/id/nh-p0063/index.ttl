@@ -33,7 +33,7 @@
         <https://sok.riksarkivet.se/sdhk?SDHK=14836>,
         <https://sok.riksarkivet.se/sdhk?SDHK=14837> ;
     schema:comment [ a schema:Comment ;
-            schema:text "Året stämmer i båda registren, men dagen skiljer: SBL anger kröningen 17 juni 1397, SDHK daterar kröningsbrevet 13 juli 1397." ] ;
+            schema:text "Året stämmer i båda källorna, men dagen skiljer: SBL anger kröningen 17 juni 1397, SDHK daterar kröningsbrevet 13 juli 1397." ] ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0151 ;
     schema:reviewBody "SBL: Erik av Pommern krönt till konung i de tre rikena i Kalmar 17 juni 1397, ensamregent vid Margaretas död i oktober 1412, avsatt i Sverige omkring 29 september 1439. Margareta död 28 oktober 1412. SDHK registrerar kröningsbrevet och Kalmardokumentet från juli 1397." ;

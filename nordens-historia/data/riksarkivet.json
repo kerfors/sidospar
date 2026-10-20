@@ -1,5 +1,5 @@
 {
- "note": "Andra kontrollen, mot Riksarkivet: Svenskt biografiskt lexikon (SBL) och Diplomatarium Suecanum (SDHK), hämtade genom Riksarkivets MCP-tjänst (beta). Beläggen är egna sammanfattningar av registrens uppgifter, inte citat. 'ej verifierad' betyder att det tjänsten ger inte räcker för att pröva uppgiften.",
+ "note": "Andra kontrollen, mot Riksarkivet: Svenskt biografiskt lexikon (SBL) och Svenskt Diplomatariums huvudkartotek (SDHK), hämtade genom Riksarkivets MCP-tjänst (beta). Beläggen är egna sammanfattningar av källornas uppgifter, inte citat. 'ej verifierad' betyder att det tjänsten ger inte räcker för att pröva uppgiften.",
  "checked": "2026-10-18",
  "service": {
   "name": "Riksarkivets MCP-tjänst (beta)",
@@ -150,7 +150,7 @@
     }
    ],
    "evidence": "SBL: Erik av Pommern krönt till konung i de tre rikena i Kalmar 17 juni 1397, ensamregent vid Margaretas död i oktober 1412, avsatt i Sverige omkring 29 september 1439. Margareta död 28 oktober 1412. SDHK registrerar kröningsbrevet och Kalmardokumentet från juli 1397.",
-   "note": "Året stämmer i båda registren, men dagen skiljer: SBL anger kröningen 17 juni 1397, SDHK daterar kröningsbrevet 13 juli 1397."
+   "note": "Året stämmer i båda källorna, men dagen skiljer: SBL anger kröningen 17 juni 1397, SDHK daterar kröningsbrevet 13 juli 1397."
   },
   {
    "id": "ra-008",

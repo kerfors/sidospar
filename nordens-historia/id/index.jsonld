@@ -236,7 +236,7 @@
   {
    "@id": "nh:#kontroll-riksarkivet-2026-10-18",
    "@type": "prov:Activity",
-   "name": "Kontroll mot Riksarkivets register",
+   "name": "Kontroll mot Riksarkivets SBL och SDHK",
    "prov:startedAtTime": {
     "@value": "2026-10-18",
     "@type": "xsd:date"
@@ -10120,7 +10120,7 @@
    ],
    "schema:comment": {
     "@type": "Comment",
-    "text": "Året stämmer i båda registren, men dagen skiljer: SBL anger kröningen 17 juni 1397, SDHK daterar kröningsbrevet 13 juli 1397."
+    "text": "Året stämmer i båda källorna, men dagen skiljer: SBL anger kröningen 17 juni 1397, SDHK daterar kröningsbrevet 13 juli 1397."
    }
   },
   {

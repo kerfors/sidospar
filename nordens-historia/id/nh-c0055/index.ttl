@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0055#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -18,7 +19,13 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0055 .
 
-<https://snl.no/Sverre_-_norsk_konge> schema:name "Store norske leksikon: Sverre – norsk konge" .
+<https://snl.no/Sverre_-_norsk_konge> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Sverre_-_norsk_konge" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Sverre – norsk konge" .
 
 nh:nh-c0055 a schema:Claim ;
     dcterms:identifier "NO13",

@@ -62,5 +62,11 @@ nh:nh-m0008 a crm:E5_Event,
     schema:name "Linnés Systema Naturae" ;
     schema:startDate "1735"^^xsd:gYear .
 
-<https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae> schema:name "Nationalencyklopedin: Systema naturae" .
+<https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3222 ;
+            schema:value "systema-naturae" ] ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Nationalencyklopedin: Systema naturae" .
 

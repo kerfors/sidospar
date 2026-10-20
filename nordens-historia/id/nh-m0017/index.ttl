@@ -28,7 +28,13 @@ nh:nh-c0198 a schema:Claim ;
     schema:about nh:nh-m0017 ;
     schema:text "Amundsen på Sydpolen: 1911" .
 
-<https://snl.no/Roald_Amundsen> schema:name "Store norske leksikon: Roald Amundsen" .
+<https://snl.no/Roald_Amundsen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Roald_Amundsen" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Roald Amundsen" .
 
 nh:nh-m0017 a crm:E5_Event,
         schema:Event ;

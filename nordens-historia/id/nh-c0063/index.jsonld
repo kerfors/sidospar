@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Haakon_7.",
-    "name": "Store norske leksikon: Haakon 7."
+    "name": "Store norske leksikon: Haakon 7.",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/Haakon_7."
+  },
+  {
+   "@id": "https://snl.no/Haakon_7.",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "Haakon_7."
+   }
   }
  ]
 }

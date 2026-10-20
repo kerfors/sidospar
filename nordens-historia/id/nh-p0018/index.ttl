@@ -69,11 +69,29 @@ nh:nh-c0042 a schema:Claim ;
     schema:about nh:nh-p0018 ;
     schema:text "Grönlands hjemmestyre 1979" .
 
-<https://lex.dk/Gr%C3%B8nlands_Hjemmestyre> schema:name "Lex: Grønlands Hjemmestyre" .
+<https://lex.dk/Gr%C3%B8nlands_Hjemmestyre> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Grønlands_Hjemmestyre" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Grønlands Hjemmestyre" .
 
-<https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
+<https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Introduktion_til_efterkrigstiden,_1945-1973" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
 
-<https://lex.dk/det_danske_EU-medlemskab> schema:name "Lex: det danske EU-medlemskab" .
+<https://lex.dk/det_danske_EU-medlemskab> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "det_danske_EU-medlemskab" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: det danske EU-medlemskab" .
 
 nh:nh-p0018 a crm:E4_Period,
         skos:Concept ;

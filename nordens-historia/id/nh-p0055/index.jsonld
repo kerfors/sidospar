@@ -213,7 +213,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/bronsealder",
-    "name": "Store norske leksikon: bronsealder"
+    "name": "Store norske leksikon: bronsealder",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/bronsealder"
   },
@@ -248,7 +251,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Solen_-_symbolik",
-    "name": "Lex.dk: Solen – symbolik"
+    "name": "Lex.dk: Solen – symbolik",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Solen_-_symbolik"
   },
@@ -286,6 +292,22 @@
     "name": "UNESCO World Heritage: Rock Carvings in Tanum"
    },
    "prov:wasDerivedFrom": "https://whc.unesco.org/en/list/557"
+  },
+  {
+   "@id": "https://snl.no/bronsealder",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "bronsealder"
+   }
+  },
+  {
+   "@id": "https://lex.dk/Solen_-_symbolik",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Solen_-_symbolik"
+   }
   }
  ]
 }

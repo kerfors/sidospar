@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0047#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -20,7 +21,13 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0047 .
 
-<https://snl.no/Norges_historie> schema:name "Store norske leksikon: Norges historie" .
+<https://snl.no/Norges_historie> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Norges_historie" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Norges historie" .
 
 nh:nh-c0047 a schema:Claim ;
     dcterms:identifier "NO05",

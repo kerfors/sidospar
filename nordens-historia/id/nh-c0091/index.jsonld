@@ -146,13 +146,24 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
-    "name": "Uppslagsverket Finland: förhistoria"
+    "name": "Uppslagsverket Finland: förhistoria",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q3503516"
    },
    "prov:wasDerivedFrom": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
    "schema:correction": "ca 5000–2800 f.Kr. (Uppslagsverket)",
    "schema:comment": {
     "@type": "Comment",
     "text": "Åtgärd på affischen: Start ändrat till 5000 f.Kr."
+   }
+  },
+  {
+   "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4854",
+    "value": "FiFoerHistoria"
    }
   }
  ]

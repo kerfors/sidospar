@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet",
-    "name": "Uppslagsverket Finland: Finlands historia – 1800-talet"
+    "name": "Uppslagsverket Finland: Finlands historia – 1800-talet",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q3503516"
    },
    "prov:wasDerivedFrom": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet"
+  },
+  {
+   "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4854",
+    "value": "FinlandsHistoria1800Talet"
+   }
   }
  ]
 }

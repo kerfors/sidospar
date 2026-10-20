@@ -65,7 +65,13 @@ nh:nh-c0134 a schema:Claim ;
 
 <https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/> schema:name "Videnskab.dk: Mystiske krigere angreb dansk ø for 2.300 år siden" .
 
-<https://snl.no/jernalderen> schema:name "Store norske leksikon: jernalderen" .
+<https://snl.no/jernalderen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "jernalderen" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: jernalderen" .
 
 nh:nh-p0056 a crm:E4_Period,
         skos:Concept ;

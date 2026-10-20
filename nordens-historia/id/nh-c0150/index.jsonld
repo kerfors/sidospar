@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Kalmarunionen",
-    "name": "Lex.dk: Kalmarunionen"
+    "name": "Lex.dk: Kalmarunionen",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Kalmarunionen"
+  },
+  {
+   "@id": "https://lex.dk/Kalmarunionen",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Kalmarunionen"
+   }
   }
  ]
 }

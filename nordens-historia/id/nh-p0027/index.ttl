@@ -79,11 +79,29 @@ nh:nh-c0067 a schema:Claim ;
     schema:about nh:nh-p0027 ;
     schema:text "nej till EG/EU 1972 och 1994" .
 
-<https://snl.no/EU-kampen> schema:name "Store norske leksikon: EU-kampen" .
+<https://snl.no/EU-kampen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "EU-kampen" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: EU-kampen" .
 
-<https://snl.no/Ekofisk> schema:name "Store norske leksikon: Ekofisk" .
+<https://snl.no/Ekofisk> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Ekofisk" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Ekofisk" .
 
-<https://snl.no/Norges_historie> schema:name "Store norske leksikon: Norges historie" .
+<https://snl.no/Norges_historie> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Norges_historie" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Norges historie" .
 
 nh:nh-p0027 a crm:E4_Period,
         skos:Concept ;

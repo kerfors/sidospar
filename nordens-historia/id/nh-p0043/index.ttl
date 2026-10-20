@@ -65,9 +65,21 @@ nh:nh-c0100 a schema:Claim ;
     schema:about nh:nh-p0043 ;
     schema:text "Svensk expansion österut" .
 
-<https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoriaMedeltiden> schema:name "Uppslagsverket Finland: Finlands historia – medeltiden" .
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoriaMedeltiden> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4854 ;
+            schema:value "FinlandsHistoriaMedeltiden" ] ;
+    schema:isPartOf wd:Q3503516 ;
+    schema:name "Uppslagsverket Finland: Finlands historia – medeltiden" .
 
-<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4854 ;
+            schema:value "FiFoerHistoria" ] ;
+    schema:isPartOf wd:Q3503516 ;
+    schema:name "Uppslagsverket Finland: förhistoria" .
 
 nh:nh-p0043 a crm:E4_Period,
         skos:Concept ;

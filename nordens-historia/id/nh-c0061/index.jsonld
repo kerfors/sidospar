@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/svartedauden",
-    "name": "Store norske leksikon: svartedauden"
+    "name": "Store norske leksikon: svartedauden",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/svartedauden"
+  },
+  {
+   "@id": "https://snl.no/svartedauden",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "svartedauden"
+   }
   }
  ]
 }

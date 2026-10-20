@@ -204,7 +204,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Norges_historie",
-    "name": "Store norske leksikon: Norges historie"
+    "name": "Store norske leksikon: Norges historie",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/Norges_historie"
   },
@@ -239,7 +242,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Haakon_7.",
-    "name": "Store norske leksikon: Haakon 7."
+    "name": "Store norske leksikon: Haakon 7.",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/Haakon_7."
   },
@@ -274,9 +280,36 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/stemmerett_for_kvinner_i_Norge",
-    "name": "Store norske leksikon: stemmerett for kvinner i Norge"
+    "name": "Store norske leksikon: stemmerett for kvinner i Norge",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/stemmerett_for_kvinner_i_Norge"
+  },
+  {
+   "@id": "https://snl.no/Norges_historie",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "Norges_historie"
+   }
+  },
+  {
+   "@id": "https://snl.no/Haakon_7.",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "Haakon_7."
+   }
+  },
+  {
+   "@id": "https://snl.no/stemmerett_for_kvinner_i_Norge",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "stemmerett_for_kvinner_i_Norge"
+   }
   }
  ]
 }

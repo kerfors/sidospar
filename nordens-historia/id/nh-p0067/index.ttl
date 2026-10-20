@@ -108,7 +108,13 @@ nh:nh-c0165 a schema:Claim ;
     schema:about nh:nh-p0067 ;
     schema:text "westfaliska freden 1648" .
 
-<https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden> schema:name "Westfaliska freden – Nationalencyklopedin" .
+<https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3222 ;
+            schema:value "westfaliska-freden" ] ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Westfaliska freden – Nationalencyklopedin" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> a schema:Article ;
     dcterms:identifier "SBL 12357" ;
@@ -161,5 +167,11 @@ nh:nh-p0067 a crm:E4_Period,
     schema:name "Stormaktstiden" ;
     schema:temporalCoverage "1611/1718" .
 
-<https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> schema:name "Stormaktstiden – Nationalencyklopedin" .
+<https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3222 ;
+            schema:value "stormaktstiden" ] ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Stormaktstiden – Nationalencyklopedin" .
 

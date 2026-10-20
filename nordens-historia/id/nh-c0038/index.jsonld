@@ -146,12 +146,23 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Krigen_i_1864",
-    "name": "Lex: Krigen i 1864"
+    "name": "Lex: Krigen i 1864",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Krigen_i_1864",
    "schema:comment": {
     "@type": "Comment",
     "text": "Åtgärd på affischen: Tillägg: Holsten och Lauenburg."
+   }
+  },
+  {
+   "@id": "https://lex.dk/Krigen_i_1864",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Krigen_i_1864"
    }
   }
  ]

@@ -95,7 +95,13 @@ nh:nh-c0075 a schema:Claim ;
     schema:about nh:nh-p0030 ;
     schema:text "Olof Skötkonung" .
 
-<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/birka> schema:name "Nationalencyklopedin – Birka" .
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/birka> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3222 ;
+            schema:value "birka" ] ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Nationalencyklopedin – Birka" .
 
 <https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
 

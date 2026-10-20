@@ -134,7 +134,13 @@ nh:nh-c0081 a schema:Claim ;
 
 <https://www.britannica.com/place/Stockholm> schema:name "Encyclopaedia Britannica – Stockholm" .
 
-<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> schema:name "Nationalencyklopedin – folkungar" .
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3222 ;
+            schema:value "folkungar" ] ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Nationalencyklopedin – folkungar" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> a schema:Article ;
     dcterms:identifier "SBL 18238" ;

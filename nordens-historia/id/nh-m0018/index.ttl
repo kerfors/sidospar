@@ -28,7 +28,13 @@ nh:nh-c0199 a schema:Claim ;
     schema:about nh:nh-m0018 ;
     schema:text "Bohrs atommodell: 1913" .
 
-<https://lex.dk/Niels_Bohr> schema:name "lex.dk: Niels Bohr" .
+<https://lex.dk/Niels_Bohr> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Niels_Bohr" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "lex.dk: Niels Bohr" .
 
 nh:nh-m0018 a crm:E5_Event,
         schema:Event ;

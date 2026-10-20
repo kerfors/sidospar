@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0058#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -18,7 +19,13 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0058 .
 
-<https://snl.no/Norge_i_h%C3%B8ymiddelalderen> schema:name "Store norske leksikon: Norge i høymiddelalderen" .
+<https://snl.no/Norge_i_h%C3%B8ymiddelalderen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Norge_i_høymiddelalderen" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Norge i høymiddelalderen" .
 
 nh:nh-c0058 a schema:Claim ;
     dcterms:identifier "NO16",

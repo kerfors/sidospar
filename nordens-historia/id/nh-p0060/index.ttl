@@ -76,7 +76,13 @@ nh:nh-c0143 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
 
-<https://lex.dk/Sjlisselburg> schema:name "Lex.dk: Sjlisselburg" .
+<https://lex.dk/Sjlisselburg> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Sjlisselburg" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex.dk: Sjlisselburg" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=3228> a schema:CreativeWork ;
     dcterms:identifier "SDHK 3228" ;
@@ -103,7 +109,13 @@ nh:nh-c0144 a schema:Claim ;
     schema:about nh:nh-p0060 ;
     schema:text "Freden i Nöteborg 1323" .
 
-<https://snl.no/Magnus_7._Eriksson> schema:name "Store norske leksikon: Magnus 7. Eriksson" .
+<https://snl.no/Magnus_7._Eriksson> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Magnus_7._Eriksson" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Magnus 7. Eriksson" .
 
 nh:nh-p0060 a crm:E4_Period,
         skos:Concept ;

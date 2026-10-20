@@ -101,13 +101,37 @@ nh:nh-c0156 a schema:Claim ;
     schema:about nh:nh-p0064 ;
     schema:text "Kristian IV" .
 
-<https://lex.dk/Christian_4.> schema:name "Christian 4. – lex.dk" .
+<https://lex.dk/Christian_4.> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Christian_4." ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Christian 4. – lex.dk" .
 
-<https://lex.dk/Reformationen_i_Danmark> schema:name "Lex.dk: Reformationen i Danmark" .
+<https://lex.dk/Reformationen_i_Danmark> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Reformationen_i_Danmark" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex.dk: Reformationen i Danmark" .
 
-<https://snl.no/Christian_3> schema:name "Store norske leksikon: Christian 3" .
+<https://snl.no/Christian_3> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Christian_3" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Christian 3" .
 
-<https://lex.dk/Danmark-Norge> schema:name "Lex.dk: Danmark-Norge" .
+<https://lex.dk/Danmark-Norge> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Danmark-Norge" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex.dk: Danmark-Norge" .
 
 nh:nh-p0064 a crm:E4_Period,
         skos:Concept ;

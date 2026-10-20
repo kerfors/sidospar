@@ -169,9 +169,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Ole_Rømer",
-    "name": "lex.dk: Ole Rømer"
+    "name": "lex.dk: Ole Rømer",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Ole_Rømer"
+  },
+  {
+   "@id": "https://lex.dk/Ole_Rømer",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Ole_Rømer"
+   }
   }
  ]
 }

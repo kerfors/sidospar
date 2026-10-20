@@ -216,7 +216,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Magnus_7._Eriksson",
-    "name": "Store norske leksikon: Magnus 7. Eriksson"
+    "name": "Store norske leksikon: Magnus 7. Eriksson",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/Magnus_7._Eriksson",
    "schema:comment": {
@@ -255,7 +258,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Sjlisselburg",
-    "name": "Lex.dk: Sjlisselburg"
+    "name": "Lex.dk: Sjlisselburg",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Sjlisselburg"
   },
@@ -309,6 +315,22 @@
    "schema:comment": {
     "@type": "Comment",
     "text": "Dagen är utgivarnas datering (DS nr 2418 not). SDHK markerar en av de medeltida avskrifterna (nr 39886) som förfalskning."
+   }
+  },
+  {
+   "@id": "https://snl.no/Magnus_7._Eriksson",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "Magnus_7._Eriksson"
+   }
+  },
+  {
+   "@id": "https://lex.dk/Sjlisselburg",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Sjlisselburg"
    }
   }
  ]

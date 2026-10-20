@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Snorre_Sturlason",
-    "name": "Store norske leksikon: Snorre Sturlason"
+    "name": "Store norske leksikon: Snorre Sturlason",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/Snorre_Sturlason"
+  },
+  {
+   "@id": "https://snl.no/Snorre_Sturlason",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "Snorre_Sturlason"
+   }
   }
  ]
 }

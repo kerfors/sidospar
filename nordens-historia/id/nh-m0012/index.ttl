@@ -28,7 +28,13 @@ nh:nh-c0193 a schema:Claim ;
     schema:about nh:nh-m0012 ;
     schema:text "Kalevala: 1835" .
 
-<https://snl.no/Kalevala> schema:name "Store norske leksikon: Kalevala" .
+<https://snl.no/Kalevala> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Kalevala" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Kalevala" .
 
 nh:nh-m0012 a crm:E5_Event,
         schema:Event ;

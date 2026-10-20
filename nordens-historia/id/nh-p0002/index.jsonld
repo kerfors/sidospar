@@ -205,7 +205,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Islands_historie",
-    "name": "Islands historie (lex.dk, Den Store Danske)"
+    "name": "Islands historie (lex.dk, Den Store Danske)",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Islands_historie"
   },
@@ -240,7 +243,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Islands_historie",
-    "name": "Islands historie (Store norske leksikon)"
+    "name": "Islands historie (Store norske leksikon)",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/Islands_historie"
   },
@@ -275,7 +281,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Islands_historie",
-    "name": "Islands historie (Store norske leksikon)"
+    "name": "Islands historie (Store norske leksikon)",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/Islands_historie",
    "schema:comment": {
@@ -314,9 +323,36 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/islendingesaga",
-    "name": "Islendingesaga (Store norske leksikon)"
+    "name": "Islendingesaga (Store norske leksikon)",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/islendingesaga"
+  },
+  {
+   "@id": "https://lex.dk/Islands_historie",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Islands_historie"
+   }
+  },
+  {
+   "@id": "https://snl.no/Islands_historie",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "Islands_historie"
+   }
+  },
+  {
+   "@id": "https://snl.no/islendingesaga",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "islendingesaga"
+   }
   }
  ]
 }

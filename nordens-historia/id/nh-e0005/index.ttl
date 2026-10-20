@@ -29,7 +29,13 @@ nh:nh-c0180 a schema:Claim ;
     schema:about nh:nh-e0005 ;
     schema:text "1940–45 Tysk ockupation" .
 
-<https://lex.dk/5._maj_1945> schema:name "5. maj 1945 – lex.dk; Samene under andre verdenskrig – SNL" .
+<https://lex.dk/5._maj_1945> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "5._maj_1945" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "5. maj 1945 – lex.dk; Samene under andre verdenskrig – SNL" .
 
 nh:nh-e0005 a crm:E5_Event,
         schema:Event ;

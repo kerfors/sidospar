@@ -79,7 +79,13 @@ nh:nh-c0021 a schema:Claim ;
     schema:about nh:nh-p0008 ;
     schema:text "dösar och gånggrifter" .
 
-<https://lex.dk/tragtb%C3%A6gerkulturen> schema:name "Lex: tragtbægerkulturen" .
+<https://lex.dk/tragtb%C3%A6gerkulturen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "tragtbægerkulturen" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: tragtbægerkulturen" .
 
 <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> schema:name "Nationalmuseet: The Neolithic period" .
 

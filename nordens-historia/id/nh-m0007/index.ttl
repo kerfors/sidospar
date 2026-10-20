@@ -28,7 +28,13 @@ nh:nh-c0188 a schema:Claim ;
     schema:about nh:nh-m0007 ;
     schema:text "Rømer mäter ljusets hastighet: 1676" .
 
-<https://lex.dk/Ole_Rømer> schema:name "lex.dk: Ole Rømer" .
+<https://lex.dk/Ole_Rømer> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Ole_Rømer" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "lex.dk: Ole Rømer" .
 
 nh:nh-m0007 a crm:E5_Event,
         schema:Event ;

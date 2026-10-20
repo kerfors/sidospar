@@ -168,5 +168,11 @@ nh:nh-p0063 a crm:E4_Period,
     schema:name "Kalmarunionen" ;
     schema:temporalCoverage "1397/1523" .
 
-<https://lex.dk/Kalmarunionen> schema:name "Lex.dk: Kalmarunionen" .
+<https://lex.dk/Kalmarunionen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Kalmarunionen" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex.dk: Kalmarunionen" .
 

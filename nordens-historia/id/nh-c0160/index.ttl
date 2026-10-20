@@ -31,7 +31,13 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0160 .
 
-<https://snl.no/Gustav_1_Vasa> schema:name "Gustav 1 Vasa – Store norske leksikon" .
+<https://snl.no/Gustav_1_Vasa> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Gustav_1_Vasa" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Gustav 1 Vasa – Store norske leksikon" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> a schema:Article ;
     dcterms:identifier "SBL 13315" ;

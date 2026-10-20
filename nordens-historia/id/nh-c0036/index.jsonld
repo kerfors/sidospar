@@ -149,12 +149,23 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_forfatning",
-    "name": "Lex: Danmarks forfatning / periodintroduktioner"
+    "name": "Lex: Danmarks forfatning / periodintroduktioner",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Danmarks_forfatning",
    "schema:comment": {
     "@type": "Comment",
     "text": "Åtgärd på affischen: Delat i 1849–1914 och 1914–1945 efter lex.dk."
+   }
+  },
+  {
+   "@id": "https://lex.dk/Danmarks_forfatning",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Danmarks_forfatning"
    }
   }
  ]

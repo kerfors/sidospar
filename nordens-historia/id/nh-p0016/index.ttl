@@ -65,9 +65,21 @@ nh:nh-c0039 a schema:Claim ;
     schema:about nh:nh-p0016 ;
     schema:text "Sønderjylland åter 1920" .
 
-<https://lex.dk/Sønderjylland> schema:name "Lex: Sønderjylland" .
+<https://lex.dk/Sønderjylland> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Sønderjylland" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Sønderjylland" .
 
-<https://lex.dk/Danmarks_forfatning> schema:name "Lex: Danmarks forfatning / periodintroduktioner" .
+<https://lex.dk/Danmarks_forfatning> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Danmarks_forfatning" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Danmarks forfatning / periodintroduktioner" .
 
 nh:nh-p0016 a crm:E4_Period,
         skos:Concept ;

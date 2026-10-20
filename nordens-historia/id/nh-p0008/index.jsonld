@@ -240,7 +240,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/tragtb%C3%A6gerkulturen",
-    "name": "Lex: tragtbægerkulturen"
+    "name": "Lex: tragtbægerkulturen",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/tragtb%C3%A6gerkulturen"
   },
@@ -278,6 +281,14 @@
     "name": "Nationalmuseet: The Neolithic period"
    },
    "prov:wasDerivedFrom": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period"
+  },
+  {
+   "@id": "https://lex.dk/tragtb%C3%A6gerkulturen",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "tragtbægerkulturen"
+   }
   }
  ]
 }

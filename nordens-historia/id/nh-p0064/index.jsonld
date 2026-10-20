@@ -211,7 +211,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmark-Norge",
-    "name": "Lex.dk: Danmark-Norge"
+    "name": "Lex.dk: Danmark-Norge",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Danmark-Norge"
   },
@@ -246,7 +249,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Reformationen_i_Danmark",
-    "name": "Lex.dk: Reformationen i Danmark"
+    "name": "Lex.dk: Reformationen i Danmark",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Reformationen_i_Danmark"
   },
@@ -281,7 +287,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Christian_3",
-    "name": "Store norske leksikon: Christian 3"
+    "name": "Store norske leksikon: Christian 3",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/Christian_3",
    "schema:comment": {
@@ -320,9 +329,44 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Christian_4.",
-    "name": "Christian 4. – lex.dk"
+    "name": "Christian 4. – lex.dk",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Christian_4."
+  },
+  {
+   "@id": "https://lex.dk/Danmark-Norge",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Danmark-Norge"
+   }
+  },
+  {
+   "@id": "https://lex.dk/Reformationen_i_Danmark",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Reformationen_i_Danmark"
+   }
+  },
+  {
+   "@id": "https://snl.no/Christian_3",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "Christian_3"
+   }
+  },
+  {
+   "@id": "https://lex.dk/Christian_4.",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Christian_4."
+   }
   }
  ]
 }

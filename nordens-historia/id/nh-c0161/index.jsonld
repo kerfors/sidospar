@@ -146,12 +146,23 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag",
-    "name": "Västerås riksdag – Nationalencyklopedin"
+    "name": "Västerås riksdag – Nationalencyklopedin",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q1165538"
    },
    "prov:wasDerivedFrom": "https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag",
    "schema:comment": {
     "@type": "Comment",
     "text": "Åtgärd på affischen: Ändrat till ”reformationen inleds 1527”."
+   }
+  },
+  {
+   "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P3222",
+    "value": "västerås-riksdag"
    }
   }
  ]

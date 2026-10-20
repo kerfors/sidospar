@@ -59,5 +59,11 @@ nh:nh-p0042 a crm:E4_Period,
     schema:name "Vikingatid" ;
     schema:temporalCoverage "0800/1025" .
 
-<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4854 ;
+            schema:value "FiFoerHistoria" ] ;
+    schema:isPartOf wd:Q3503516 ;
+    schema:name "Uppslagsverket Finland: förhistoria" .
 

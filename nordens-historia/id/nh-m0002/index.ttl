@@ -28,7 +28,13 @@ nh:nh-c0183 a schema:Claim ;
     schema:about nh:nh-m0002 ;
     schema:text "Jellingestenen: 965" .
 
-<https://lex.dk/Jellingstenene> schema:name "lex.dk: Jellingstenene" .
+<https://lex.dk/Jellingstenene> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Jellingstenene" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "lex.dk: Jellingstenene" .
 
 nh:nh-m0002 a crm:E5_Event,
         schema:Event ;

@@ -108,9 +108,21 @@ nh:nh-c0162 a schema:Claim ;
     schema:about nh:nh-p0066 ;
     schema:text "Uppsala möte 1593" .
 
-<https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag> schema:name "Västerås riksdag – Nationalencyklopedin" .
+<https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3222 ;
+            schema:value "västerås-riksdag" ] ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Västerås riksdag – Nationalencyklopedin" .
 
-<https://snl.no/Gustav_1_Vasa> schema:name "Gustav 1 Vasa – Store norske leksikon" .
+<https://snl.no/Gustav_1_Vasa> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Gustav_1_Vasa" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Gustav 1 Vasa – Store norske leksikon" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> a schema:Article ;
     dcterms:identifier "SBL 13315" ;
@@ -130,7 +142,13 @@ nh:nh-c0160 a schema:Claim ;
 
 <https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> schema:name "Bekännelseskrifter – Svenska kyrkan" .
 
-<https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> schema:name "Vasatiden – Nationalencyklopedin" .
+<https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3222 ;
+            schema:value "vasatiden" ] ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Vasatiden – Nationalencyklopedin" .
 
 nh:nh-p0066 a crm:E4_Period,
         skos:Concept ;

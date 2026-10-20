@@ -201,7 +201,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet",
-    "name": "Nationalencyklopedin – Sverige, historia: Välfärdssamhället"
+    "name": "Nationalencyklopedin – Sverige, historia: Välfärdssamhället",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q1165538"
    },
    "prov:wasDerivedFrom": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet"
   },

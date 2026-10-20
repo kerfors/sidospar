@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Kielerfreden",
-    "name": "Lex: Kielerfreden"
+    "name": "Lex: Kielerfreden",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Kielerfreden"
+  },
+  {
+   "@id": "https://lex.dk/Kielerfreden",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Kielerfreden"
+   }
   }
  ]
 }

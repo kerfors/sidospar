@@ -47,7 +47,13 @@ nh:nh-c0040 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "omdiskuterad" ] .
 
-<https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
+<https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Introduktion_til_efterkrigstiden,_1945-1973" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
 
 nh:nh-p0017 a crm:E4_Period,
         skos:Concept ;

@@ -81,6 +81,12 @@ nh:nh-p0007 a crm:E4_Period,
     schema:name "Jägarstenålder" ;
     schema:temporalCoverage "-9999/-3899" .
 
-<https://lex.dk/mesolitikum> schema:name "Lex: mesolitikum",
+<https://lex.dk/mesolitikum> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "mesolitikum" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: mesolitikum",
         "Lex: mesolitikum; Nationalmuseet: The Mesolithic period" .
 

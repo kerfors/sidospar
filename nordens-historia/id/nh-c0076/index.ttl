@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0076#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -28,5 +29,8 @@ nh:nh-c0076 a schema:Claim ;
     schema:about nh:nh-p0031 ;
     schema:text "Period 'Riket växer fram': 1066 – 1250" .
 
-<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt> schema:name "Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt" .
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt" .
 

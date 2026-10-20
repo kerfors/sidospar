@@ -79,11 +79,29 @@ nh:nh-c0052 a schema:Claim ;
     schema:about nh:nh-p0022 ;
     schema:text "Bergen växer fram" .
 
-<https://snl.no/Bergen_-_historie> schema:name "Store norske leksikon: Bergen – historie" .
+<https://snl.no/Bergen_-_historie> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Bergen_-_historie" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Bergen – historie" .
 
-<https://snl.no/Olav_3._Kyrre> schema:name "Store norske leksikon: Olav 3. Kyrre" .
+<https://snl.no/Olav_3._Kyrre> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Olav_3._Kyrre" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Olav 3. Kyrre" .
 
-<https://snl.no/Norges_historie> schema:name "Store norske leksikon: Norges historie" .
+<https://snl.no/Norges_historie> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Norges_historie" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Norges historie" .
 
 nh:nh-p0022 a crm:E4_Period,
         skos:Concept ;

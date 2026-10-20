@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0104#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -25,5 +26,11 @@ nh:nh-c0104 a schema:Claim ;
     schema:about nh:nh-p0045 ;
     schema:text "Borgå lantdag 1809" .
 
-<https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet> schema:name "Uppslagsverket Finland: Finlands historia – 1800-talet" .
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4854 ;
+            schema:value "FinlandsHistoria1800Talet" ] ;
+    schema:isPartOf wd:Q3503516 ;
+    schema:name "Uppslagsverket Finland: Finlands historia – 1800-talet" .
 

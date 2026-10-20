@@ -61,7 +61,13 @@ nh:nh-c0072 a schema:Claim ;
     schema:about nh:nh-p0029 ;
     schema:text "Trattbägar-, gropkeramisk och stridsyxekultur" .
 
-<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/neolitikum> schema:name "Nationalencyklopedin – neolitikum" .
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/neolitikum> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3222 ;
+            schema:value "neolitikum" ] ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Nationalencyklopedin – neolitikum" .
 
 <https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
 

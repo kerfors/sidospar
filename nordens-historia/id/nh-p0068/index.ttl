@@ -83,11 +83,23 @@ nh:nh-c0169 a schema:Claim ;
     schema:about nh:nh-p0068 ;
     schema:text "hattar och mössor" .
 
-<https://snl.no/hatter> schema:name "Hatter – Store norske leksikon" .
+<https://snl.no/hatter> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "hatter" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Hatter – Store norske leksikon" .
 
 <https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/> schema:name "Besluten som förändrade Sverige – Sveriges riksdag" .
 
-<https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden> schema:name "Frihetstiden – Nationalencyklopedin" .
+<https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3222 ;
+            schema:value "frihetstiden" ] ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Frihetstiden – Nationalencyklopedin" .
 
 nh:nh-p0068 a crm:E4_Period,
         skos:Concept ;

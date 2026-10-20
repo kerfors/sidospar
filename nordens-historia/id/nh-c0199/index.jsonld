@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Niels_Bohr",
-    "name": "lex.dk: Niels Bohr"
+    "name": "lex.dk: Niels Bohr",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Niels_Bohr"
+  },
+  {
+   "@id": "https://lex.dk/Niels_Bohr",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Niels_Bohr"
+   }
   }
  ]
 }

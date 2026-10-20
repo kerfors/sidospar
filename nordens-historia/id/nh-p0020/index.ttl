@@ -82,5 +82,11 @@ nh:nh-p0020 a crm:E4_Period,
     schema:name "Yngre stenålder" ;
     schema:temporalCoverage "-3999/-1699" .
 
-<https://snl.no/steinalderen_i_Norge> schema:name "Store norske leksikon: steinalderen i Norge" .
+<https://snl.no/steinalderen_i_Norge> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "steinalderen_i_Norge" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: steinalderen i Norge" .
 

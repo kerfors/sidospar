@@ -28,7 +28,13 @@ nh:nh-c0182 a schema:Claim ;
     schema:about nh:nh-m0001 ;
     schema:text "Alltinget instiftas: 930" .
 
-<https://snl.no/Alltinget> schema:name "Store norske leksikon: Alltinget" .
+<https://snl.no/Alltinget> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Alltinget" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Alltinget" .
 
 nh:nh-m0001 a crm:E5_Event,
         schema:Event ;

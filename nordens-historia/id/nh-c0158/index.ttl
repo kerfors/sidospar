@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0158#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -18,7 +19,13 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0158 .
 
-<https://lex.dk/Kongeloven> schema:name "Kongeloven – lex.dk" .
+<https://lex.dk/Kongeloven> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Kongeloven" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Kongeloven – lex.dk" .
 
 nh:nh-c0158 a schema:Claim ;
     dcterms:identifier "GE29",

@@ -79,11 +79,29 @@ nh:nh-c0030 a schema:Claim ;
     schema:about nh:nh-p0011 ;
     schema:text "Jyske Lov 1241" .
 
-<https://lex.dk/Absalon> schema:name "Lex: Absalon" .
+<https://lex.dk/Absalon> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Absalon" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Absalon" .
 
-<https://lex.dk/Jyske_Lov> schema:name "Lex: Jyske Lov" .
+<https://lex.dk/Jyske_Lov> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Jyske_Lov" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Jyske Lov" .
 
-<https://lex.dk/Danmarks_historie_i_middelalderen> schema:name "Lex: Danmarks historie i middelalderen" .
+<https://lex.dk/Danmarks_historie_i_middelalderen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Danmarks_historie_i_middelalderen" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Danmarks historie i middelalderen" .
 
 nh:nh-p0011 a crm:E4_Period,
         skos:Concept ;

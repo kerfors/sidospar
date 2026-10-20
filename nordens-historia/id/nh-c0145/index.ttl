@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0145#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -20,7 +21,13 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0145 .
 
-<https://snl.no/Magnus_7._Eriksson> schema:name "Store norske leksikon: Magnus 7. Eriksson" .
+<https://snl.no/Magnus_7._Eriksson> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Magnus_7._Eriksson" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Magnus 7. Eriksson" .
 
 nh:nh-c0145 a schema:Claim ;
     dcterms:identifier "GE16",

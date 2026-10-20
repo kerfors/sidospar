@@ -81,11 +81,29 @@ nh:nh-c0140 a schema:Claim ;
     schema:about nh:nh-p0058 ;
     schema:text "guldhornen från Gallehus" .
 
-<https://lex.dk/Guldhornene> schema:name "Lex.dk: Guldhornene" .
+<https://lex.dk/Guldhornene> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Guldhornene" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex.dk: Guldhornene" .
 
-<https://snl.no/gullbrakteater> schema:name "Store norske leksikon: gullbrakteater" .
+<https://snl.no/gullbrakteater> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "gullbrakteater" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: gullbrakteater" .
 
-<https://snl.no/jernalderen> schema:name "Store norske leksikon: jernalderen" .
+<https://snl.no/jernalderen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "jernalderen" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: jernalderen" .
 
 nh:nh-p0058 a crm:E4_Period,
         skos:Concept ;

@@ -64,9 +64,21 @@ nh:nh-c0002 a schema:Claim ;
     schema:about nh:nh-p0001 ;
     schema:text "Ingólfur Arnarson i Reykjavík" .
 
-<https://snl.no/Ingolv_Arnesson> schema:name "Ingolv Arnesson (Store norske leksikon)" .
+<https://snl.no/Ingolv_Arnesson> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Ingolv_Arnesson" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Ingolv Arnesson (Store norske leksikon)" .
 
-<https://snl.no/Islands_historie> schema:name "Islands historie (Store norske leksikon)" .
+<https://snl.no/Islands_historie> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Islands_historie" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Islands historie (Store norske leksikon)" .
 
 nh:nh-p0001 a crm:E4_Period,
         skos:Concept ;

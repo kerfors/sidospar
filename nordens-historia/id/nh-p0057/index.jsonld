@@ -211,7 +211,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/romersk_jernalder",
-    "name": "Lex.dk: romersk jernalder"
+    "name": "Lex.dk: romersk jernalder",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/romersk_jernalder"
   },
@@ -246,7 +249,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/romersk_jernalder",
-    "name": "Lex.dk: romersk jernalder"
+    "name": "Lex.dk: romersk jernalder",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/romersk_jernalder"
   },
@@ -281,9 +287,28 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/runer",
-    "name": "Store norske leksikon: runer"
+    "name": "Store norske leksikon: runer",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/runer"
+  },
+  {
+   "@id": "https://lex.dk/romersk_jernalder",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "romersk_jernalder"
+   }
+  },
+  {
+   "@id": "https://snl.no/runer",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "runer"
+   }
   }
  ]
 }

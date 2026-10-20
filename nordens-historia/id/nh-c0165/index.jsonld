@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden",
-    "name": "Westfaliska freden – Nationalencyklopedin"
+    "name": "Westfaliska freden – Nationalencyklopedin",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q1165538"
    },
    "prov:wasDerivedFrom": "https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden"
+  },
+  {
+   "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P3222",
+    "value": "westfaliska-freden"
+   }
   }
  ]
 }

@@ -1,17 +1,43 @@
 {
- "note": "Vad källorna är och vem som ger ut dem, för det här projektet. Läses bara av ld.py här; projektet är fristående. IRI:erna är gemensamma: Wikidatas där verket eller utgivaren finns där, annars de publicerade under https://w3id.org/people/kerfors/sidospar/kallor/id/ (SDHK och källtyperna). Namnen är kopior för läsbarheten. En källa (URL) hör till ett verk om den börjar med verkets url_prefix, annars till en utgivare via webbplatsen (hosts). Steg 1: bara Riksarkivet.",
+ "note": "Vad källorna är och vem som ger ut dem, för det här projektet. Läses bara av ld.py här; projektet är fristående. IRI:erna är gemensamma: Wikidatas där verket eller utgivaren finns där, annars de publicerade under https://w3id.org/people/kerfors/sidospar/kallor/id/ (SDHK och källtyperna). Namnen är kopior för läsbarheten. En källa (URL) hör till ett verk om den börjar med ett av verkets url_prefixes, annars till en utgivare via webbplatsen (hosts). Artikelnumret tas ur adressen med Wikidatas URL-mönster (P8966) för verkets egenskap, med två tillägg: www. i värdnamnet räknas som samma webbplats, och mönstret måste täcka hela adressen. Adresser som inte följer mönstret får inget nummer. Uppslagsverken och utgivarna är kontrollerade i Wikidata 2026-10-20. Nationalencyklopedin har ingen utgivare i Wikidata och står utan utgivare här.",
  "types": {
+  "uppslagsverk": {"iri": "kallor:#uppslagsverk", "schema": "CreativeWork"},
+  "register": {"iri": "kallor:#register", "schema": "Dataset"},
   "artikel": {"iri": "kallor:#artikel", "schema": "Article"},
   "registerpost": {"iri": "kallor:#registerpost", "schema": "CreativeWork"},
   "webbsida": {"iri": "kallor:#webbsida", "schema": "WebPage"}
  },
  "publishers": [
-  {"iri": "wd:Q1724971", "name": "Riksarkivet", "hosts": ["riksarkivet.se"]}
+  {"iri": "wd:Q1724971", "name": "Riksarkivet", "hosts": ["riksarkivet.se"]},
+  {"iri": "wd:Q11992497", "name": "Store norske leksikon", "hosts": [],
+   "basis": "Wikidata: Q746368 owned by (P127) Q11992497; Q11992497 product or material produced (P1056) Q746368"},
+  {"iri": "wd:Q90681275", "name": "Foreningen lex.dk", "hosts": [],
+   "basis": "Wikidata: Q136450325 publisher (P123) Q90681275"},
+  {"iri": "wd:Q3431677", "name": "Svenska folkskolans vänner", "hosts": [],
+   "basis": "Wikidata: Q3503516 publisher (P123) Q3431677"}
  ],
  "works": [
   {"register": "SBL", "iri": "wd:Q379406", "name": "Svenskt biografiskt lexikon (SBL)",
-   "part_type": "artikel", "url_prefix": "https://sok.riksarkivet.se/sbl/", "id_property": "wd:P3217"},
+   "type": "uppslagsverk", "publisher": "wd:Q1724971",
+   "part_type": "artikel", "url_prefixes": ["https://sok.riksarkivet.se/sbl/"], "id_property": "wd:P3217"},
   {"register": "SDHK", "iri": "kallor:sdhk", "name": "Svenskt Diplomatariums huvudkartotek (SDHK)",
-   "part_type": "registerpost", "url_prefix": "https://sok.riksarkivet.se/sdhk", "id_property": "kallor:sdhk"}
+   "type": "register", "publisher": "wd:Q1724971",
+   "part_type": "registerpost", "url_prefixes": ["https://sok.riksarkivet.se/sdhk"], "id_property": "kallor:sdhk"},
+  {"iri": "wd:Q746368", "name": "Store norske leksikon",
+   "type": "uppslagsverk", "publisher": "wd:Q11992497",
+   "part_type": "artikel", "url_prefixes": ["https://snl.no/"],
+   "id_property": "wd:P4342", "id_pattern": "^https?://snl\\.no/(.+)$"},
+  {"iri": "wd:Q136450325", "name": "Lex",
+   "type": "uppslagsverk", "publisher": "wd:Q90681275",
+   "part_type": "artikel", "url_prefixes": ["https://lex.dk/"],
+   "id_property": "wd:P8313", "id_pattern": "^https?://lex\\.dk/(.+)$"},
+  {"iri": "wd:Q3503516", "name": "Uppslagsverket Finland",
+   "type": "uppslagsverk", "publisher": "wd:Q3431677",
+   "part_type": "artikel", "url_prefixes": ["https://www.uppslagsverket.fi/", "https://uppslagsverket.fi/"],
+   "id_property": "wd:P4854", "id_pattern": "^https?://(?:www\\.)?uppslagsverket\\.fi/sv/sok/view-170045-(\\w+)$"},
+  {"iri": "wd:Q1165538", "name": "Nationalencyklopedin",
+   "type": "uppslagsverk", "publisher": null,
+   "part_type": "artikel", "url_prefixes": ["https://www.ne.se/", "https://ne.se/"],
+   "id_property": "wd:P3222", "id_pattern": "^https?://(?:www\\.)?ne\\.se/uppslagsverk/encyklopedi/lång/([0-9a-zäöå-][0-9a-zäöå()-]*)$"}
  ]
 }

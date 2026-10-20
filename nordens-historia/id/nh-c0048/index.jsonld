@@ -146,12 +146,23 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/slaget_i_Hafrsfjord",
-    "name": "Store norske leksikon: slaget i Hafrsfjord"
+    "name": "Store norske leksikon: slaget i Hafrsfjord",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/slaget_i_Hafrsfjord",
    "schema:comment": {
     "@type": "Comment",
     "text": "Åtgärd på affischen: Ändrat till ”slutet av 800-talet”."
+   }
+  },
+  {
+   "@id": "https://snl.no/slaget_i_Hafrsfjord",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "slaget_i_Hafrsfjord"
    }
   }
  ]

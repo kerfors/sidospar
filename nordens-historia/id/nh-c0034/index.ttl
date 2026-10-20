@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0034#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -20,7 +21,13 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0034 .
 
-<https://lex.dk/Enev%C3%A6ldens_faser_1660-1848> schema:name "Lex: Enevældens faser 1660-1848" .
+<https://lex.dk/Enev%C3%A6ldens_faser_1660-1848> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Enevældens_faser_1660-1848" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Enevældens faser 1660-1848" .
 
 nh:nh-c0034 a schema:Claim ;
     dcterms:identifier "DA18",

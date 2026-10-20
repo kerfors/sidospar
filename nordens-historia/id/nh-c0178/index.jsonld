@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660",
-    "name": "Tabet af Skåne i 1658-1660 – lex.dk"
+    "name": "Tabet af Skåne i 1658-1660 – lex.dk",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660"
+  },
+  {
+   "@id": "https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Tabet_af_Skåne_i_1658-1660"
+   }
   }
  ]
 }

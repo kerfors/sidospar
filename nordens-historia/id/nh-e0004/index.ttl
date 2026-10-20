@@ -29,7 +29,13 @@ nh:nh-c0179 a schema:Claim ;
     schema:about nh:nh-e0004 ;
     schema:text "1905 Unionsupplösningen" .
 
-<https://snl.no/Unionsoppløsningen_i_1905> schema:name "Unionsoppløsningen i 1905 – Store norske leksikon" .
+<https://snl.no/Unionsoppløsningen_i_1905> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Unionsoppløsningen_i_1905" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Unionsoppløsningen i 1905 – Store norske leksikon" .
 
 nh:nh-e0004 a crm:E5_Event,
         schema:Event ;

@@ -63,9 +63,21 @@ nh:nh-c0158 a schema:Claim ;
     schema:about nh:nh-p0065 ;
     schema:text "Kongeloven 1665" .
 
-<https://lex.dk/Kongeloven> schema:name "Kongeloven – lex.dk" .
+<https://lex.dk/Kongeloven> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Kongeloven" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Kongeloven – lex.dk" .
 
-<https://snl.no/enevoldstida> schema:name "Enevoldstida – Store norske leksikon" .
+<https://snl.no/enevoldstida> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "enevoldstida" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Enevoldstida – Store norske leksikon" .
 
 nh:nh-p0065 a crm:E4_Period,
         skos:Concept ;

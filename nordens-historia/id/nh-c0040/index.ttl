@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0040#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -20,7 +21,13 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0040 .
 
-<https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
+<https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Introduktion_til_efterkrigstiden,_1945-1973" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
 
 nh:nh-c0040 a schema:Claim ;
     dcterms:identifier "DA24",

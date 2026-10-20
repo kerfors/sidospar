@@ -29,7 +29,13 @@ nh:nh-c0178 a schema:Claim ;
     schema:about nh:nh-e0003 ;
     schema:text "1658 Roskildefreden – Skånelandskapen och Bohuslän till Sverige" .
 
-<https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660> schema:name "Tabet af Skåne i 1658-1660 – lex.dk" .
+<https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Tabet_af_Skåne_i_1658-1660" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Tabet af Skåne i 1658-1660 – lex.dk" .
 
 nh:nh-e0003 a crm:E5_Event,
         schema:Event ;

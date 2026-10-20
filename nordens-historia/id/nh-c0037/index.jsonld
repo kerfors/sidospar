@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_forfatning",
-    "name": "Lex: Danmarks forfatning"
+    "name": "Lex: Danmarks forfatning",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Danmarks_forfatning"
+  },
+  {
+   "@id": "https://lex.dk/Danmarks_forfatning",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Danmarks_forfatning"
+   }
   }
  ]
 }

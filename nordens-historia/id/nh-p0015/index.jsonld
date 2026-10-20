@@ -210,7 +210,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_forfatning",
-    "name": "Lex: Danmarks forfatning / periodintroduktioner"
+    "name": "Lex: Danmarks forfatning / periodintroduktioner",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Danmarks_forfatning",
    "schema:comment": {
@@ -249,7 +252,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_forfatning",
-    "name": "Lex: Danmarks forfatning"
+    "name": "Lex: Danmarks forfatning",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Danmarks_forfatning"
   },
@@ -284,12 +290,31 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Krigen_i_1864",
-    "name": "Lex: Krigen i 1864"
+    "name": "Lex: Krigen i 1864",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Krigen_i_1864",
    "schema:comment": {
     "@type": "Comment",
     "text": "Åtgärd på affischen: Tillägg: Holsten och Lauenburg."
+   }
+  },
+  {
+   "@id": "https://lex.dk/Danmarks_forfatning",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Danmarks_forfatning"
+   }
+  },
+  {
+   "@id": "https://lex.dk/Krigen_i_1864",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Krigen_i_1864"
    }
   }
  ]

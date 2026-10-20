@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Gr%C3%B8nlands_Hjemmestyre",
-    "name": "Lex: Grønlands Hjemmestyre"
+    "name": "Lex: Grønlands Hjemmestyre",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Gr%C3%B8nlands_Hjemmestyre"
+  },
+  {
+   "@id": "https://lex.dk/Gr%C3%B8nlands_Hjemmestyre",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Grønlands_Hjemmestyre"
+   }
   }
  ]
 }

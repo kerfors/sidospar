@@ -210,7 +210,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_middelalderen",
-    "name": "Lex: Danmarks historie i middelalderen"
+    "name": "Lex: Danmarks historie i middelalderen",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Danmarks_historie_i_middelalderen",
    "schema:comment": {
@@ -249,9 +252,28 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Valdemar_Atterdag",
-    "name": "Lex: Valdemar Atterdag"
+    "name": "Lex: Valdemar Atterdag",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Valdemar_Atterdag"
+  },
+  {
+   "@id": "https://lex.dk/Danmarks_historie_i_middelalderen",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Danmarks_historie_i_middelalderen"
+   }
+  },
+  {
+   "@id": "https://lex.dk/Valdemar_Atterdag",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Valdemar_Atterdag"
+   }
   }
  ]
 }

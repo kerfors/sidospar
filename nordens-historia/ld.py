@@ -21,8 +21,10 @@ perma-id/w3id.org.
 Run: python3 ld.py
 """
 import json
+import re
 from html import escape
 from pathlib import Path
+from urllib.parse import unquote
 
 from rdflib import Graph
 from rdflib.compare import isomorphic
@@ -127,9 +129,18 @@ SOURCES = load_sources()
 def source_work(url):
     """The work a source URL is part of (an article in SBL, an entry in SDHK), or None."""
     for w in SOURCES["works"]:
-        if url.startswith(w["url_prefix"]):
+        if any(url.startswith(p) for p in w["url_prefixes"]):
             return w
     return None
+
+
+def article_id(w, url):
+    """The article's number in its work, from the address, by the work's id_pattern
+    (Wikidata's URL match pattern for the work's property). None if the address does not follow it."""
+    if not w.get("id_pattern"):
+        return None
+    m = re.match(w["id_pattern"], unquote(url))
+    return m.group(1) if m else None
 
 
 def source_desc(url):
@@ -148,9 +159,36 @@ def source_desc(url):
     return {}
 
 
+def article_id_nodes(nodes):
+    """The article number of each cited source, once per source and document. Kept out of the
+    citations themselves: a source cited by several claims would otherwise get one blank
+    PropertyValue node per citation."""
+    urls = []
+    for n in nodes:
+        cit = n.get("citation")
+        for x in (cit if isinstance(cit, list) else [cit] if cit else []):
+            if x["@id"] not in urls:
+                urls.append(x["@id"])
+    out = []
+    for url in urls:
+        w = source_work(url)
+        aid = article_id(w, url) if w else None
+        if aid:
+            out.append({"@id": url, "identifier": {"@type": "PropertyValue",
+                                                   "propertyID": w["id_property"], "value": aid}})
+    return out
+
+
 def source_label_nodes():
-    """Names of the works and publishers, so the data reads on its own."""
-    return [{"@id": x["iri"], "name": x["name"]} for x in SOURCES["publishers"] + SOURCES["works"]]
+    """The works and publishers: what they are, their names, and who publishes each work."""
+    nodes = [{"@id": o["iri"], "@type": "Organization", "name": o["name"]} for o in SOURCES["publishers"]]
+    for w in SOURCES["works"]:
+        t = SOURCES["types"][w["type"]]
+        node = {"@id": w["iri"], "@type": t["schema"], "dcterms:type": t["iri"], "name": w["name"]}
+        if w["publisher"]:
+            node["publisher"] = w["publisher"]
+        nodes.append(node)
+    return nodes
 
 
 def load_riksarkivet():
@@ -594,6 +632,7 @@ def item_page(item, kind, node, cl, wd, places, ra, rel=None, by_id=None, defs=(
     doc = {"@context": CONTEXT, "@graph": [
         {"@id": iri + "/", "@type": "WebPage", "mainEntity": "nh:" + item["id"], "isPartOf": "nh:#dataset"},
         node] + list(def_nodes) + [n for c in cl for n in claim_nodes(c, ra)]}
+    doc["@graph"] += article_id_nodes(doc["@graph"])
     ttl = turtle(doc)
     body = f"""<p class="kind">{TYPE_LABEL[kind]}</p>
 <h1>{escape(item['label'])}</h1>
@@ -620,6 +659,7 @@ def claim_page(c, by_id, ra):
            if c["source_url"] else escape(c["source_title"]))
     doc = {"@context": CONTEXT, "@graph": [
         {"@id": iri + "/", "@type": "WebPage", "mainEntity": "nh:" + c["id"], "isPartOf": "nh:#dataset"}] + nodes}
+    doc["@graph"] += article_id_nodes(doc["@graph"])
     ttl = turtle(doc)
     body = f"""<p class="kind">{TYPE_LABEL['claim']}</p>
 <h1>{escape(c['statement'])}</h1>
@@ -775,6 +815,7 @@ def main():
     sections.append(("Kontrollerade uppgifter", ["Id", "Uppgift", "Utlåtande", "Kontroll-id"], rows))
     full = {"@context": CONTEXT, "@graph": [
         {"@id": ID, "@type": "WebPage", "mainEntity": "nh:#dataset"}] + graph}
+    full["@graph"] += article_id_nodes(full["@graph"])
     write(out / "index.jsonld", json.dumps(full, ensure_ascii=False, indent=1))
     write(out / "index.ttl", turtle(full))
     write(out / "index.html", register_page(sections, full))

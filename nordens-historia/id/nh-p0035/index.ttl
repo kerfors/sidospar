@@ -52,9 +52,15 @@ nh:nh-c0085 a schema:Claim ;
     schema:about nh:nh-p0035 ;
     schema:text "neutralitet under andra världskriget" .
 
-<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> schema:name "Nationalencyklopedin – Sverige, historia: Demokratins genombrott" .
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Nationalencyklopedin – Sverige, historia: Demokratins genombrott" .
 
-<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/sverige-under-andra-v%C3%A4rldskriget> schema:name "Nationalencyklopedin – Sverige under andra världskriget" .
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/sverige-under-andra-v%C3%A4rldskriget> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Nationalencyklopedin – Sverige under andra världskriget" .
 
 nh:nh-p0035 a crm:E4_Period,
         skos:Concept ;

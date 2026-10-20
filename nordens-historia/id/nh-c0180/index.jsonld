@@ -146,9 +146,20 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/5._maj_1945",
-    "name": "5. maj 1945 – lex.dk; Samene under andre verdenskrig – SNL"
+    "name": "5. maj 1945 – lex.dk; Samene under andre verdenskrig – SNL",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/5._maj_1945"
+  },
+  {
+   "@id": "https://lex.dk/5._maj_1945",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "5._maj_1945"
+   }
   }
  ]
 }

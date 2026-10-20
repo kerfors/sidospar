@@ -45,7 +45,13 @@ nh:nh-c0149 a schema:Claim ;
     schema:reviewRating [ a schema:Rating ;
             schema:alternateName "bekräftad" ] .
 
-<https://lex.dk/Danmark-Norge> schema:name "Lex.dk: Danmark-Norge" .
+<https://lex.dk/Danmark-Norge> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Danmark-Norge" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex.dk: Danmark-Norge" .
 
 nh:nh-p0062 a crm:E4_Period,
         skos:Concept ;

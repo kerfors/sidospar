@@ -84,9 +84,21 @@ nh:nh-c0038 a schema:Claim ;
     schema:about nh:nh-p0015 ;
     schema:text "Slesvig förloras 1864" .
 
-<https://lex.dk/Krigen_i_1864> schema:name "Lex: Krigen i 1864" .
+<https://lex.dk/Krigen_i_1864> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Krigen_i_1864" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Krigen i 1864" .
 
-<https://lex.dk/Danmarks_forfatning> schema:name "Lex: Danmarks forfatning",
+<https://lex.dk/Danmarks_forfatning> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Danmarks_forfatning" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Danmarks forfatning",
         "Lex: Danmarks forfatning / periodintroduktioner" .
 
 nh:nh-p0015 a crm:E4_Period,

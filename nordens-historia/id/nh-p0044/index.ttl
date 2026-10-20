@@ -52,9 +52,18 @@ nh:nh-c0101 a schema:Claim ;
     schema:about nh:nh-p0044 ;
     schema:text "Åbo domkyrka invigs 1300" .
 
-<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4854 ;
+            schema:value "FiFoerHistoria" ] ;
+    schema:isPartOf wd:Q3503516 ;
+    schema:name "Uppslagsverket Finland: förhistoria" .
 
-<https://www.uppslagsverket.fi/sv/view-170045-AaboDomkyrka> schema:name "Uppslagsverket Finland: Åbo domkyrka" .
+<https://www.uppslagsverket.fi/sv/view-170045-AaboDomkyrka> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:isPartOf wd:Q3503516 ;
+    schema:name "Uppslagsverket Finland: Åbo domkyrka" .
 
 nh:nh-p0044 a crm:E4_Period,
         skos:Concept ;

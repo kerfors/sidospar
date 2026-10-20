@@ -95,7 +95,13 @@ nh:nh-c0147 a schema:Claim ;
 
 <https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf> schema:name "Läkartidningen 2003 (artikel om digerdöden)" .
 
-<https://lex.dk/Albrecht_af_Mecklenburg> schema:name "Lex.dk: Albrecht af Mecklenburg" .
+<https://lex.dk/Albrecht_af_Mecklenburg> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Albrecht_af_Mecklenburg" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex.dk: Albrecht af Mecklenburg" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> a schema:Article ;
     dcterms:identifier "SBL 5648" ;
@@ -113,7 +119,13 @@ nh:nh-c0148 a schema:Claim ;
     schema:about nh:nh-p0061 ;
     schema:text "Albrekt av Mecklenburg 1364–89" .
 
-<https://snl.no/Magnus_7._Eriksson> schema:name "Store norske leksikon: Magnus 7. Eriksson" .
+<https://snl.no/Magnus_7._Eriksson> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Magnus_7._Eriksson" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Magnus 7. Eriksson" .
 
 nh:nh-p0061 a crm:E4_Period,
         skos:Concept ;

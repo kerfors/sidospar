@@ -101,11 +101,29 @@ nh:nh-c0025 a schema:Claim ;
     schema:about nh:nh-p0009 ;
     schema:text "Knut den stores nordsjövälde 1016–35" .
 
-<https://lex.dk/Hedeby> schema:name "Lex: Hedeby" .
+<https://lex.dk/Hedeby> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Hedeby" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Hedeby" .
 
-<https://lex.dk/Knud_den_Store> schema:name "Lex: Knud den Store" .
+<https://lex.dk/Knud_den_Store> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Knud_den_Store" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Knud den Store" .
 
-<https://lex.dk/Danmarks_historie_i_vikingetiden> schema:name "Lex: Danmarks historie i vikingetiden" .
+<https://lex.dk/Danmarks_historie_i_vikingetiden> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Danmarks_historie_i_vikingetiden" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Danmarks historie i vikingetiden" .
 
 nh:nh-p0009 a crm:E4_Period,
         skos:Concept ;

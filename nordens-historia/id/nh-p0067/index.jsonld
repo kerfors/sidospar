@@ -205,7 +205,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden",
-    "name": "Stormaktstiden – Nationalencyklopedin"
+    "name": "Stormaktstiden – Nationalencyklopedin",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q1165538"
    },
    "prov:wasDerivedFrom": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden"
   },
@@ -240,7 +243,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden",
-    "name": "Stormaktstiden – Nationalencyklopedin"
+    "name": "Stormaktstiden – Nationalencyklopedin",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q1165538"
    },
    "prov:wasDerivedFrom": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden"
   },
@@ -309,7 +315,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden",
-    "name": "Westfaliska freden – Nationalencyklopedin"
+    "name": "Westfaliska freden – Nationalencyklopedin",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q1165538"
    },
    "prov:wasDerivedFrom": "https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden"
   },
@@ -344,7 +353,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden",
-    "name": "Stormaktstiden – Nationalencyklopedin"
+    "name": "Stormaktstiden – Nationalencyklopedin",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q1165538"
    },
    "prov:wasDerivedFrom": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden"
   },
@@ -381,6 +393,22 @@
    "prov:wasDerivedFrom": [
     "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357"
    ]
+  },
+  {
+   "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P3222",
+    "value": "stormaktstiden"
+   }
+  },
+  {
+   "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P3222",
+    "value": "westfaliska-freden"
+   }
   }
  ]
 }

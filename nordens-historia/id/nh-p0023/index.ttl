@@ -79,11 +79,29 @@ nh:nh-c0055 a schema:Claim ;
     schema:about nh:nh-p0023 ;
     schema:text "Sverre" .
 
-<https://snl.no/Norge_i_h%C3%B8ymiddelalderen> schema:name "Store norske leksikon: Norge i høymiddelalderen" .
+<https://snl.no/Norge_i_h%C3%B8ymiddelalderen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Norge_i_høymiddelalderen" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Norge i høymiddelalderen" .
 
-<https://snl.no/Sverre_-_norsk_konge> schema:name "Store norske leksikon: Sverre – norsk konge" .
+<https://snl.no/Sverre_-_norsk_konge> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Sverre_-_norsk_konge" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: Sverre – norsk konge" .
 
-<https://snl.no/borgerkrigstiden> schema:name "Store norske leksikon: borgerkrigstiden" .
+<https://snl.no/borgerkrigstiden> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "borgerkrigstiden" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Store norske leksikon: borgerkrigstiden" .
 
 nh:nh-p0023 a crm:E4_Period,
         skos:Concept ;

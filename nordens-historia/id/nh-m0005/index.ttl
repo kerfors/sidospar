@@ -28,7 +28,13 @@ nh:nh-c0186 a schema:Claim ;
     schema:about nh:nh-m0005 ;
     schema:text "Köpenhamns universitet: 1479" .
 
-<https://lex.dk/Københavns_Universitet> schema:name "lex.dk: Københavns Universitet" .
+<https://lex.dk/Københavns_Universitet> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Københavns_Universitet" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "lex.dk: Københavns Universitet" .
 
 nh:nh-m0005 a crm:E5_Event,
         schema:Event ;

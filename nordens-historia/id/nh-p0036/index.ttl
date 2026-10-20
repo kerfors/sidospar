@@ -83,7 +83,10 @@ nh:nh-c0088 a schema:Claim ;
 
 <https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/> schema:name "Regeringskansliet – Sveriges och Natos historia" .
 
-<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet> schema:name "Nationalencyklopedin – Sverige, historia: Välfärdssamhället" .
+<https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Nationalencyklopedin – Sverige, historia: Välfärdssamhället" .
 
 nh:nh-p0036 a crm:E4_Period,
         skos:Concept ;

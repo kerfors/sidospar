@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0096#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -28,5 +29,11 @@ nh:nh-c0096 a schema:Claim ;
     schema:about nh:nh-p0041 ;
     schema:text "Period 'Järnålder': 500 f.Kr. – 800" .
 
-<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> schema:name "Uppslagsverket Finland: förhistoria" .
+<https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4854 ;
+            schema:value "FiFoerHistoria" ] ;
+    schema:isPartOf wd:Q3503516 ;
+    schema:name "Uppslagsverket Finland: förhistoria" .
 

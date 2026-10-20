@@ -29,7 +29,13 @@ nh:nh-c0177 a schema:Claim ;
     schema:about nh:nh-e0002 ;
     schema:text "1520 Stockholms blodbad" .
 
-<https://ne.se/uppslagsverk/encyklopedi/lång/stockholms-blodbad> schema:name "Stockholms blodbad – Nationalencyklopedin" .
+<https://ne.se/uppslagsverk/encyklopedi/lång/stockholms-blodbad> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3222 ;
+            schema:value "stockholms-blodbad" ] ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Stockholms blodbad – Nationalencyklopedin" .
 
 nh:nh-e0002 a crm:E5_Event,
         schema:Event ;

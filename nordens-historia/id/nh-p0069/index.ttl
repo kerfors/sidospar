@@ -87,7 +87,13 @@ nh:nh-c0172 a schema:Claim ;
     schema:about nh:nh-p0069 ;
     schema:text "finska kriget 1808–09" .
 
-<https://snl.no/Gustav_3.> schema:name "Gustav 3 – Store norske leksikon" .
+<https://snl.no/Gustav_3.> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Gustav_3." ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Gustav 3 – Store norske leksikon" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317> a schema:Article ;
     dcterms:identifier "SBL 13317" ;
@@ -107,7 +113,13 @@ nh:nh-c0171 a schema:Claim ;
 
 <https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809> schema:name "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)" .
 
-<https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden> schema:name "Gustavianska tiden – Nationalencyklopedin" .
+<https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3222 ;
+            schema:value "gustavianska-tiden" ] ;
+    schema:isPartOf wd:Q1165538 ;
+    schema:name "Gustavianska tiden – Nationalencyklopedin" .
 
 nh:nh-p0069 a crm:E4_Period,
         skos:Concept ;

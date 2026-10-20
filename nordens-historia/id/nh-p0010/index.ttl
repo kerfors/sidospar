@@ -81,5 +81,11 @@ nh:nh-p0010 a crm:E4_Period,
     schema:name "Tidig medeltid" ;
     schema:temporalCoverage "1050/1157" .
 
-<https://lex.dk/Danmarks_historie_i_middelalderen> schema:name "Lex: Danmarks historie i middelalderen" .
+<https://lex.dk/Danmarks_historie_i_middelalderen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P8313 ;
+            schema:value "Danmarks_historie_i_middelalderen" ] ;
+    schema:isPartOf wd:Q136450325 ;
+    schema:name "Lex: Danmarks historie i middelalderen" .
 

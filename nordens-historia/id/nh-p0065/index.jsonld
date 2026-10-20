@@ -213,7 +213,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/enevoldstida",
-    "name": "Enevoldstida – Store norske leksikon"
+    "name": "Enevoldstida – Store norske leksikon",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q746368"
    },
    "prov:wasDerivedFrom": "https://snl.no/enevoldstida"
   },
@@ -248,9 +251,28 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Kongeloven",
-    "name": "Kongeloven – lex.dk"
+    "name": "Kongeloven – lex.dk",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q136450325"
    },
    "prov:wasDerivedFrom": "https://lex.dk/Kongeloven"
+  },
+  {
+   "@id": "https://snl.no/enevoldstida",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "enevoldstida"
+   }
+  },
+  {
+   "@id": "https://lex.dk/Kongeloven",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P8313",
+    "value": "Kongeloven"
+   }
   }
  ]
 }

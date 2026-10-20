@@ -85,7 +85,7 @@ nh:nh-c0030 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Absalon" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Absalon" .
+    schema:name "Absalon" .
 
 <https://lex.dk/Jyske_Lov> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -93,7 +93,7 @@ nh:nh-c0030 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Jyske_Lov" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Jyske Lov" .
+    schema:name "Jyske Lov" .
 
 <https://lex.dk/Danmarks_historie_i_middelalderen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -101,7 +101,7 @@ nh:nh-c0030 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Danmarks_historie_i_middelalderen" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Danmarks historie i middelalderen" .
+    schema:name "Danmarks historie i middelalderen" .
 
 nh:nh-p0011 a crm:E4_Period,
         skos:Concept ;

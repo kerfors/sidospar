@@ -21,7 +21,7 @@
 
 <https://historiska.se/utforska-historien/tidsaldrar/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Statens historiska museer – Tidsåldrar" ;
+    schema:name "Tidsåldrar" ;
     schema:publisher wd:Q1726607 .
 
 nh:nh-c0068 a schema:Claim ;

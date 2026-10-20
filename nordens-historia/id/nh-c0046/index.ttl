@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "steinalderen_i_Norge" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: steinalderen i Norge" .
+    schema:name "steinalderen i Norge" .
 
 nh:nh-c0046 a schema:Claim ;
     dcterms:identifier "NO04",

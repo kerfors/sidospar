@@ -89,11 +89,11 @@ nh:nh-c0169 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "hatter" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Hatter – Store norske leksikon" .
+    schema:name "Hatter" .
 
 <https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Besluten som förändrade Sverige – Sveriges riksdag" ;
+    schema:name "Besluten som förändrade Sverige" ;
     schema:publisher wd:Q272930 .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden> a schema:Article ;
@@ -102,7 +102,7 @@ nh:nh-c0169 a schema:Claim ;
             schema:propertyID wd:P3222 ;
             schema:value "frihetstiden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Frihetstiden – Nationalencyklopedin" .
+    schema:name "Frihetstiden" .
 
 nh:nh-p0068 a crm:E4_Period,
         skos:Concept ;

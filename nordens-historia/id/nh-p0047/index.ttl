@@ -85,5 +85,5 @@ nh:nh-p0047 a crm:E4_Period,
             schema:propertyID wd:P4342 ;
             schema:value "Finlands_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Finlands historie" .
+    schema:name "Finlands historie" .
 

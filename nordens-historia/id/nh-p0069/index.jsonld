@@ -209,7 +209,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden",
-    "name": "Gustavianska tiden – Nationalencyklopedin",
+    "name": "Gustavianska tiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -247,7 +247,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Gustav_3.",
-    "name": "Gustav 3 – Store norske leksikon",
+    "name": "Gustav 3",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -272,7 +272,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317",
-     "name": "SBL: Gustav III",
+     "name": "Gustav III",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -323,7 +323,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809",
-    "name": "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)",
+    "name": "Finska kriget 1808–1809",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q11885692"

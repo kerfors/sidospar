@@ -27,7 +27,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Danmarks_forfatning" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Danmarks forfatning / periodintroduktioner" .
+    schema:name "Danmarks forfatning" .
 
 nh:nh-c0036 a schema:Claim ;
     dcterms:identifier "DA20",

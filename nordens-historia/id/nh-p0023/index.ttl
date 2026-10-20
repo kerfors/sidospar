@@ -85,7 +85,7 @@ nh:nh-c0055 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Norge_i_høymiddelalderen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Norge i høymiddelalderen" .
+    schema:name "Norge i høymiddelalderen" .
 
 <https://snl.no/Sverre_-_norsk_konge> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -93,7 +93,7 @@ nh:nh-c0055 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Sverre_-_norsk_konge" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Sverre – norsk konge" .
+    schema:name "Sverre – norsk konge" .
 
 <https://snl.no/borgerkrigstiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -101,7 +101,7 @@ nh:nh-c0055 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "borgerkrigstiden" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: borgerkrigstiden" .
+    schema:name "borgerkrigstiden" .
 
 nh:nh-p0023 a crm:E4_Period,
         skos:Concept ;

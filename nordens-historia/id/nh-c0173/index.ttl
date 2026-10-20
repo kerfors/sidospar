@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Unionsoppløsningen_i_1905" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Unionsoppløsningen i 1905 – Store norske leksikon" .
+    schema:name "Unionsoppløsningen i 1905" .
 
 nh:nh-c0173 a schema:Claim ;
     dcterms:identifier "GE44",

@@ -25,7 +25,7 @@
             schema:propertyID wd:P3222 ;
             schema:value "stormaktstiden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Stormaktstiden – Nationalencyklopedin" .
+    schema:name "Stormaktstiden" .
 
 nh:nh-c0163 a schema:Claim ;
     dcterms:identifier "GE34",

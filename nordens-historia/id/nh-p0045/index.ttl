@@ -99,7 +99,7 @@ nh:nh-c0105 a schema:Claim ;
 
 <https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Riksdagen: Riksdagens historia (broschyr)" ;
+    schema:name "Riksdagens historia (broschyr)" ;
     schema:publisher wd:Q643412 .
 
 <https://snl.no/Finlands_historie> a schema:Article ;
@@ -108,7 +108,7 @@ nh:nh-c0105 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Finlands_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Finlands historie" .
+    schema:name "Finlands historie" .
 
 <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -116,7 +116,7 @@ nh:nh-c0105 a schema:Claim ;
             schema:propertyID wd:P4854 ;
             schema:value "FinlandsHistoria1800Talet" ] ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: Finlands historia – 1800-talet" .
+    schema:name "Finlands historia – 1800-talet" .
 
 nh:nh-p0045 a crm:E4_Period,
         skos:Concept ;

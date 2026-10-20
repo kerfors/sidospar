@@ -114,7 +114,7 @@ nh:nh-c0162 a schema:Claim ;
             schema:propertyID wd:P3222 ;
             schema:value "västerås-riksdag" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Västerås riksdag – Nationalencyklopedin" .
+    schema:name "Västerås riksdag" .
 
 <https://snl.no/Gustav_1_Vasa> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -122,7 +122,7 @@ nh:nh-c0162 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Gustav_1_Vasa" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Gustav 1 Vasa – Store norske leksikon" .
+    schema:name "Gustav 1 Vasa" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> a schema:Article ;
     dcterms:identifier "SBL 13315" ;
@@ -131,7 +131,7 @@ nh:nh-c0162 a schema:Claim ;
             schema:propertyID wd:P3217 ;
             schema:value "13315" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Gustav I" .
+    schema:name "Gustav I" .
 
 nh:nh-c0160 a schema:Claim ;
     dcterms:identifier "GE31",
@@ -142,7 +142,7 @@ nh:nh-c0160 a schema:Claim ;
 
 <https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Bekännelseskrifter – Svenska kyrkan" ;
+    schema:name "Bekännelseskrifter" ;
     schema:publisher wd:Q749243 .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> a schema:Article ;
@@ -151,7 +151,7 @@ nh:nh-c0160 a schema:Claim ;
             schema:propertyID wd:P3222 ;
             schema:value "vasatiden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Vasatiden – Nationalencyklopedin" .
+    schema:name "Vasatiden" .
 
 nh:nh-p0066 a crm:E4_Period,
         skos:Concept ;

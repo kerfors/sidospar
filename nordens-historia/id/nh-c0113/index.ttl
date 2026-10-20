@@ -29,5 +29,5 @@ nh:nh-c0113 a schema:Claim ;
 <https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: Finlands historia efter 1917" .
+    schema:name "Finlands historia efter 1917" .
 

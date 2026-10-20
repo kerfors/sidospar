@@ -32,7 +32,7 @@ nh:nh-c0202 a schema:Claim ;
 
 <https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "LEGO: The stud and tube principle" ;
+    schema:name "The stud and tube principle" ;
     schema:publisher wd:Q1063455 .
 
 nh:nh-m0021 a crm:E5_Event,

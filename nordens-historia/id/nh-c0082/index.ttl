@@ -31,6 +31,6 @@ nh:nh-c0082 a schema:Claim ;
 
 <https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Sveriges riksdag – Regeringsformen 50 år" ;
+    schema:name "Regeringsformen 50 år" ;
     schema:publisher wd:Q272930 .
 

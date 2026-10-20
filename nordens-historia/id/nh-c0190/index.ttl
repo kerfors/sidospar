@@ -38,11 +38,11 @@
             schema:propertyID wd:P3217 ;
             schema:value "14758" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Anders Celsius" .
+    schema:name "Anders Celsius" .
 
 <https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Uppsala universitet: Anders Celsius" ;
+    schema:name "Anders Celsius" ;
     schema:publisher wd:Q185246 .
 
 nh:nh-c0190 a schema:Claim ;

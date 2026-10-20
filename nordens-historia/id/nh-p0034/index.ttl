@@ -68,13 +68,13 @@ nh:nh-c0084 a schema:Claim ;
 
 <https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Sveriges riksdag – Kampen om rösträtten" ;
+    schema:name "Kampen om rösträtten" ;
     schema:publisher wd:Q272930 .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – Sverige, historia: Demokratins genombrott" .
+    schema:name "Sverige, historia: Demokratins genombrott" .
 
 nh:nh-p0034 a crm:E4_Period,
         skos:Concept ;

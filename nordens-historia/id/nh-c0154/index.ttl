@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Reformationen_i_Danmark" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Reformationen i Danmark" .
+    schema:name "Reformationen i Danmark" .
 
 nh:nh-c0154 a schema:Claim ;
     dcterms:identifier "GE25",

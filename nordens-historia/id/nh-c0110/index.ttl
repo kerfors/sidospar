@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Finlands_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Finlands historie" .
+    schema:name "Finlands historie" .
 
 nh:nh-c0110 a schema:Claim ;
     dcterms:identifier "FI22",

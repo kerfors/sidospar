@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Knud_den_Store",
-    "name": "Lex: Knud den Store",
+    "name": "Knud den Store",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"

@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Kalevala" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Kalevala" .
+    schema:name "Kalevala" .
 
 nh:nh-c0193 a schema:Claim ;
     dcterms:identifier "MI12",

@@ -85,7 +85,7 @@ nh:nh-c0064 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Haakon_7." ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Haakon 7." .
+    schema:name "Haakon 7." .
 
 <https://snl.no/stemmerett_for_kvinner_i_Norge> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -93,7 +93,7 @@ nh:nh-c0064 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "stemmerett_for_kvinner_i_Norge" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: stemmerett for kvinner i Norge" .
+    schema:name "stemmerett for kvinner i Norge" .
 
 <https://snl.no/Norges_historie> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -101,7 +101,7 @@ nh:nh-c0064 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Norges_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Norges historie" .
+    schema:name "Norges historie" .
 
 nh:nh-p0026 a crm:E4_Period,
         skos:Concept ;

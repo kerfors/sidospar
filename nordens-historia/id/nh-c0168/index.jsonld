@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/",
-    "name": "Besluten som förändrade Sverige – Sveriges riksdag",
+    "name": "Besluten som förändrade Sverige",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q272930"

@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Kielerfreden" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Kielerfreden" .
+    schema:name "Kielerfreden" .
 
 nh:nh-c0035 a schema:Claim ;
     dcterms:identifier "DA19",

@@ -69,7 +69,7 @@ nh:nh-c0158 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Kongeloven" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Kongeloven – lex.dk" .
+    schema:name "Kongeloven" .
 
 <https://snl.no/enevoldstida> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -77,7 +77,7 @@ nh:nh-c0158 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "enevoldstida" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Enevoldstida – Store norske leksikon" .
+    schema:name "Enevoldstida" .
 
 nh:nh-p0065 a crm:E4_Period,
         skos:Concept ;

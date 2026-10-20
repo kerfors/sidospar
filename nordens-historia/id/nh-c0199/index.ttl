@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Niels_Bohr" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "lex.dk: Niels Bohr" .
+    schema:name "Niels Bohr" .
 
 nh:nh-c0199 a schema:Claim ;
     dcterms:identifier "MI18",

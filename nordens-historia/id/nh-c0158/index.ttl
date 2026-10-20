@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Kongeloven" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Kongeloven – lex.dk" .
+    schema:name "Kongeloven" .
 
 nh:nh-c0158 a schema:Claim ;
     dcterms:identifier "GE29",

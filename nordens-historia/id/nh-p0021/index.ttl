@@ -89,7 +89,7 @@ nh:nh-c0049 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Slaget_på_Stiklestad" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Slaget på Stiklestad" .
+    schema:name "Slaget på Stiklestad" .
 
 <https://snl.no/slaget_i_Hafrsfjord> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -97,7 +97,7 @@ nh:nh-c0049 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "slaget_i_Hafrsfjord" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: slaget i Hafrsfjord" .
+    schema:name "slaget i Hafrsfjord" .
 
 <https://snl.no/Norges_historie> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -105,7 +105,7 @@ nh:nh-c0049 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Norges_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Norges historie" .
+    schema:name "Norges historie" .
 
 nh:nh-p0021 a crm:E4_Period,
         skos:Concept ;

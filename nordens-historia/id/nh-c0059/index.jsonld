@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Magnus_Lagab%C3%B8ters_landslov",
-    "name": "Store norske leksikon: Magnus Lagabøters landslov",
+    "name": "Magnus Lagabøters landslov",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"

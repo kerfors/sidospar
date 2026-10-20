@@ -87,7 +87,7 @@ nh:nh-c0137 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "runer" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: runer" .
+    schema:name "runer" .
 
 <https://lex.dk/romersk_jernalder> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -95,7 +95,7 @@ nh:nh-c0137 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "romersk_jernalder" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: romersk jernalder" .
+    schema:name "romersk jernalder" .
 
 nh:nh-p0057 a crm:E4_Period,
         skos:Concept ;

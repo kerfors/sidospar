@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Valdemar_Atterdag" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Valdemar Atterdag" .
+    schema:name "Valdemar Atterdag" .
 
 nh:nh-c0033 a schema:Claim ;
     dcterms:identifier "DA17",

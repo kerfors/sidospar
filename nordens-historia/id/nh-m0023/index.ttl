@@ -41,6 +41,6 @@ nh:nh-m0023 a crm:E5_Event,
 
 <https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Volvo Cars pressmeddelande: trepunktsbeltet fyller 60 år" ;
+    schema:name "Pressmeddelande: trepunktsbeltet fyller 60 år" ;
     schema:publisher wd:Q215293 .
 

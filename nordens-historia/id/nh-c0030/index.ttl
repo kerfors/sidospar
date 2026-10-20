@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Jyske_Lov" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Jyske Lov" .
+    schema:name "Jyske Lov" .
 
 nh:nh-c0030 a schema:Claim ;
     dcterms:identifier "DA14",

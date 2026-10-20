@@ -107,7 +107,7 @@ nh:nh-c0025 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Hedeby" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Hedeby" .
+    schema:name "Hedeby" .
 
 <https://lex.dk/Knud_den_Store> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -115,7 +115,7 @@ nh:nh-c0025 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Knud_den_Store" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Knud den Store" .
+    schema:name "Knud den Store" .
 
 <https://lex.dk/Danmarks_historie_i_vikingetiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -123,7 +123,7 @@ nh:nh-c0025 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Danmarks_historie_i_vikingetiden" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Danmarks historie i vikingetiden" .
+    schema:name "Danmarks historie i vikingetiden" .
 
 nh:nh-p0009 a crm:E4_Period,
         skos:Concept ;

@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Solen_-_symbolik" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Solen – symbolik" .
+    schema:name "Solen – symbolik" .
 
 nh:nh-c0131 a schema:Claim ;
     dcterms:identifier "GE02",

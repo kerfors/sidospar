@@ -210,7 +210,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_middelalderen",
-    "name": "Lex: Danmarks historie i middelalderen",
+    "name": "Danmarks historie i middelalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -252,7 +252,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_middelalderen",
-    "name": "Lex: Danmarks historie i middelalderen",
+    "name": "Danmarks historie i middelalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"

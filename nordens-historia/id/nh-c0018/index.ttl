@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "mesolitikum" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: mesolitikum" .
+    schema:name "mesolitikum" .
 
 nh:nh-c0018 a schema:Claim ;
     dcterms:identifier "DA02",

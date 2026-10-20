@@ -21,7 +21,7 @@
 
 <https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "IVA: Svenska innovationer – Pacemakern" ;
+    schema:name "Svenska innovationer – Pacemakern" ;
     schema:publisher wd:Q3394637 .
 
 nh:nh-c0203 a schema:Claim ;

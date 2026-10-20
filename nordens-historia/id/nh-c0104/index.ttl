@@ -32,5 +32,5 @@ nh:nh-c0104 a schema:Claim ;
             schema:propertyID wd:P4854 ;
             schema:value "FinlandsHistoria1800Talet" ] ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: Finlands historia – 1800-talet" .
+    schema:name "Finlands historia – 1800-talet" .
 

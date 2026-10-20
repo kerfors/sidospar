@@ -27,7 +27,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Introduktion_til_efterkrigstiden,_1945-1973" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
+    schema:name "Introduktion til efterkrigstiden, 1945-1973" .
 
 nh:nh-c0040 a schema:Claim ;
     dcterms:identifier "DA24",

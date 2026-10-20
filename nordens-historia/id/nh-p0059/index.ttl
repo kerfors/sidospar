@@ -68,7 +68,7 @@ nh:nh-c0142 a schema:Claim ;
 
 <https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Uppsala universitet/Gustavianum: Valsgärde" ;
+    schema:name "Valsgärde" ;
     schema:publisher wd:Q185246 .
 
 <https://snl.no/merovingertid> a schema:Article ;
@@ -77,7 +77,7 @@ nh:nh-c0142 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "merovingertid" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: merovingertid" .
+    schema:name "merovingertid" .
 
 nh:nh-p0059 a crm:E4_Period,
         skos:Concept ;

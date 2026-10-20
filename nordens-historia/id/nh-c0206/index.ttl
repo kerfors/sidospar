@@ -28,6 +28,6 @@ nh:nh-c0206 a schema:Claim ;
 
 <https://www.computerhistory.org/revolution/personal-computers/17/307/1235> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Computer History Museum: Linux" ;
+    schema:name "Linux" ;
     schema:publisher wd:Q964035 .
 

@@ -69,5 +69,5 @@ nh:nh-p0038 a crm:E4_Period,
             schema:propertyID wd:P4854 ;
             schema:value "FiFoerHistoria" ] ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: förhistoria" .
+    schema:name "förhistoria" .
 

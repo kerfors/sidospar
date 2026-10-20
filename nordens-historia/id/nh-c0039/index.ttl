@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Sønderjylland" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Sønderjylland" .
+    schema:name "Sønderjylland" .
 
 nh:nh-c0039 a schema:Claim ;
     dcterms:identifier "DA23",

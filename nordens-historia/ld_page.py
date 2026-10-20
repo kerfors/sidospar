@@ -49,7 +49,7 @@ def stats():
     same = sum(1 for d in defs if (d["start"], d["end"]) == (periods[d["period"]]["start"], periods[d["period"]]["end"]))
     moved = [d for d in defs if d["basis"].startswith("bekräftad")
              and (d["start"], d["end"]) != (periods[d["period"]]["start"], periods[d["period"]]["end"])]
-    hosts = Counter(c["source_url"].split("/")[2].removeprefix("www.") for c in claims if c["source_url"])
+    hosts = Counter(ld.source_name(u) for c in claims if c["source_url"] for u in [c["source_url"]] + c["also_sources"])
     ra = json.loads((HERE / "data" / "riksarkivet.json").read_text(encoding="utf-8"))["checks"]
     return {
         "periods": len(items["periods"]), "events": len(items["events"]), "milestones": len(items["milestones"]),

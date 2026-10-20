@@ -21,7 +21,7 @@
 
 <https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Riksdagen: Riksdagens historia (broschyr)" ;
+    schema:name "Riksdagens historia (broschyr)" ;
     schema:publisher wd:Q643412 .
 
 nh:nh-c0105 a schema:Claim ;

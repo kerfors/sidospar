@@ -107,7 +107,7 @@ nh:nh-c0156 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Christian_4." ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Christian 4. – lex.dk" .
+    schema:name "Christian 4." .
 
 <https://lex.dk/Reformationen_i_Danmark> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -115,7 +115,7 @@ nh:nh-c0156 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Reformationen_i_Danmark" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Reformationen i Danmark" .
+    schema:name "Reformationen i Danmark" .
 
 <https://snl.no/Christian_3> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -123,7 +123,7 @@ nh:nh-c0156 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Christian_3" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Christian 3" .
+    schema:name "Christian 3" .
 
 <https://lex.dk/Danmark-Norge> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -131,7 +131,7 @@ nh:nh-c0156 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Danmark-Norge" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Danmark-Norge" .
+    schema:name "Danmark-Norge" .
 
 nh:nh-p0064 a crm:E4_Period,
         skos:Concept ;

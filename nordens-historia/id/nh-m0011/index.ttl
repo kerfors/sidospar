@@ -41,6 +41,6 @@ nh:nh-m0011 a crm:E5_Event,
 
 <https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "JO: JO – i riksdagens tjänst (bok, jo.se)" ;
+    schema:name "JO – i riksdagens tjänst (bok)" ;
     schema:publisher wd:Q107157415 .
 

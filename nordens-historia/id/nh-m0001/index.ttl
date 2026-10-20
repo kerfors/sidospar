@@ -34,7 +34,7 @@ nh:nh-c0182 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Alltinget" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Alltinget" .
+    schema:name "Alltinget" .
 
 nh:nh-m0001 a crm:E5_Event,
         schema:Event ;

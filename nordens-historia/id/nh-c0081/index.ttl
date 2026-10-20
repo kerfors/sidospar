@@ -43,7 +43,7 @@
             schema:propertyID kallor:sdhk ;
             schema:value "664" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm" .
+    schema:name "kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=665> a schema:CreativeWork ;
     dcterms:identifier "SDHK 665" ;
@@ -52,7 +52,7 @@
             schema:propertyID kallor:sdhk ;
             schema:value "665" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
+    schema:name "Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
 
 <https://www.britannica.com/place/Stockholm> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -60,7 +60,7 @@
             schema:propertyID wd:P1417 ;
             schema:value "place/Stockholm" ] ;
     schema:isPartOf wd:Q5375741 ;
-    schema:name "Encyclopaedia Britannica – Stockholm" .
+    schema:name "Stockholm" .
 
 nh:nh-c0081 a schema:Claim ;
     dcterms:identifier "SV14",

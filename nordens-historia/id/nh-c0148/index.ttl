@@ -39,7 +39,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Albrecht_af_Mecklenburg" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Albrecht af Mecklenburg" .
+    schema:name "Albrecht af Mecklenburg" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> a schema:Article ;
     dcterms:identifier "SBL 5648" ;
@@ -48,7 +48,7 @@
             schema:propertyID wd:P3217 ;
             schema:value "5648" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Albrekt av Mecklenburg" .
+    schema:name "Albrekt av Mecklenburg" .
 
 nh:nh-c0148 a schema:Claim ;
     dcterms:identifier "GE19",

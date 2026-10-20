@@ -68,9 +68,13 @@ schema för den källan (Store norske leksikon, Lex, Uppslagsverket Finland, NE 
 (<code>prov:wasDerivedFrom</code>) från källkontrollens granskning. Ungefärliga årtal är markerade, och källans
 formulering finns i <code>skos:scopeNote</code>. Schemat pekar på verket med <code>dcterms:source</code>.</li>
 <li><strong>Källorna</strong>: varje källa i en granskning (<code>schema:citation</code>) säger vad den är
-(<code>dcterms:type</code>: artikel i ett uppslagsverk, post i ett register eller webbsida) och vilket verk den ingår i
-(<code>schema:isPartOf</code>). Verken och deras utgivare (<code>schema:publisher</code>) har Wikidatas identifierare:
-Store norske leksikon, Lex, Uppslagsverket Finland, Nationalencyklopedin och Svenskt biografiskt lexikon. En artikel har
+(<code>dcterms:type</code>: artikel i ett uppslagsverk, artikel i en tidskrift eller tidning, post i ett register eller
+webbsida) och vilket verk den ingår i
+(<code>schema:isPartOf</code>), med sin egen titel i <code>schema:name</code>. Verken och utgivarna
+(<code>schema:publisher</code>) har Wikidatas identifierare: uppslagsverken (Store norske leksikon, Lex, Uppslagsverket
+Finland, Nationalencyklopedin, Svenskt biografiskt lexikon med flera), två tidskrifter, och de museer, myndigheter och
+andra organisationer vars webbsidor är källor. Utgivaren av en webbplats är den post i Wikidata vars officiella
+webbplats den är. En artikel har
 sitt nummer i verket (<code>schema:identifier</code>) med den egenskap Wikidata använder för verket, till exempel
 <code>wd:P4342</code> för Store norske leksikon, så att samma artikel går att hitta från Wikidata. Registret SDHK och
 typerna av källor saknas i Wikidata och har egna identifierare under

@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Norges_historie",
-    "name": "Store norske leksikon: Norges historie",
+    "name": "Norges historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"

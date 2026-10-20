@@ -208,7 +208,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Enev%C3%A6ldens_faser_1660-1848",
-    "name": "Lex: Enevældens faser 1660-1848",
+    "name": "Enevældens faser 1660-1848",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -250,7 +250,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Kielerfreden",
-    "name": "Lex: Kielerfreden",
+    "name": "Kielerfreden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"

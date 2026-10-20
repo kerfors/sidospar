@@ -28,6 +28,6 @@ nh:nh-c0181 a schema:Claim ;
 
 <https://www.norden.org/sv/information/nordiska-radets-historia> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Nordiska rådets historia – Norden.org" ;
+    schema:name "Nordiska rådets historia" ;
     schema:publisher wd:Q146165 .
 

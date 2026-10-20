@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/",
-    "name": "Statens historiska museer – Mesolitikum",
+    "name": "Mesolitikum",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1726607"

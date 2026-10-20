@@ -42,7 +42,7 @@
             schema:propertyID wd:P3217 ;
             schema:value "10735" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Carl (von) Linné" .
+    schema:name "Carl (von) Linné" .
 
 nh:nh-c0189 a schema:Claim ;
     dcterms:identifier "MI08",
@@ -68,5 +68,5 @@ nh:nh-m0008 a crm:E5_Event,
             schema:propertyID wd:P3222 ;
             schema:value "systema-naturae" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin: Systema naturae" .
+    schema:name "Systema naturae" .
 

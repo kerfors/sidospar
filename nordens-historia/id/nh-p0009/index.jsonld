@@ -207,7 +207,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_vikingetiden",
-    "name": "Lex: Danmarks historie i vikingetiden",
+    "name": "Danmarks historie i vikingetiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -249,7 +249,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Hedeby",
-    "name": "Lex: Hedeby",
+    "name": "Hedeby",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -287,7 +287,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_vikingetiden",
-    "name": "Lex: Danmarks historie i vikingetiden",
+    "name": "Danmarks historie i vikingetiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -325,7 +325,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Knud_den_Store",
-    "name": "Lex: Knud den Store",
+    "name": "Knud den Store",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"

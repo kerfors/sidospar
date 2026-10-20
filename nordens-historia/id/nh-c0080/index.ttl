@@ -47,6 +47,5 @@ nh:nh-c0080 a schema:Claim ;
             schema:propertyID wd:P3217 ;
             schema:value "18238" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Birger Magnusson (Birger jarl)",
-        "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)" .
+    schema:name "Birger Magnusson (Birger jarl)" .
 

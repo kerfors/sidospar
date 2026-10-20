@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Absalon" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Absalon" .
+    schema:name "Absalon" .
 
 nh:nh-c0029 a schema:Claim ;
     dcterms:identifier "DA13",

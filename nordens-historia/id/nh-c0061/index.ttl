@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "svartedauden" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: svartedauden" .
+    schema:name "svartedauden" .
 
 nh:nh-c0061 a schema:Claim ;
     dcterms:identifier "NO19",

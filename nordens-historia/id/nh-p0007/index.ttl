@@ -46,9 +46,11 @@ nh:nh-c0017 a schema:Claim ;
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0017#granskning> a prov:Entity,
         schema:ClaimReview ;
-    prov:wasDerivedFrom <https://lex.dk/mesolitikum> ;
+    prov:wasDerivedFrom <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/>,
+        <https://lex.dk/mesolitikum> ;
     prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://lex.dk/mesolitikum> ;
+    schema:citation <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/>,
+        <https://lex.dk/mesolitikum> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Behållet; affischens axel börjar 10 000 f.Kr." ] ;
     schema:datePublished "2026-10-18" ;
@@ -63,6 +65,11 @@ nh:nh-c0018 a schema:Claim ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-detalj> ;
     schema:about nh:nh-p0007 ;
     schema:text "Maglemose-, Kongemose- och Ertebøllekultur" .
+
+<https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "The Mesolithic period" ;
+    schema:publisher wd:Q648166 .
 
 nh:nh-p0007 a crm:E4_Period,
         skos:Concept ;
@@ -87,6 +94,5 @@ nh:nh-p0007 a crm:E4_Period,
             schema:propertyID wd:P8313 ;
             schema:value "mesolitikum" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: mesolitikum",
-        "Lex: mesolitikum; Nationalmuseet: The Mesolithic period" .
+    schema:name "mesolitikum" .
 

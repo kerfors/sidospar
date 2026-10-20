@@ -35,7 +35,7 @@ nh:nh-c0176 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "vikingtid" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Vikingtid – Store norske leksikon" .
+    schema:name "Vikingtid" .
 
 nh:nh-e0001 a crm:E5_Event,
         schema:Event ;

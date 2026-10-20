@@ -28,6 +28,6 @@ nh:nh-c0084 a schema:Claim ;
 
 <https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Sveriges riksdag – Kampen om rösträtten" ;
+    schema:name "Kampen om rösträtten" ;
     schema:publisher wd:Q272930 .
 

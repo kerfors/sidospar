@@ -6,9 +6,11 @@
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0017#granskning> a prov:Entity,
         schema:ClaimReview ;
-    prov:wasDerivedFrom <https://lex.dk/mesolitikum> ;
+    prov:wasDerivedFrom <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/>,
+        <https://lex.dk/mesolitikum> ;
     prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://lex.dk/mesolitikum> ;
+    schema:citation <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/>,
+        <https://lex.dk/mesolitikum> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Behållet; affischens axel börjar 10 000 f.Kr." ] ;
     schema:datePublished "2026-10-18" ;
@@ -21,13 +23,18 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0017 .
 
+<https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "The Mesolithic period" ;
+    schema:publisher wd:Q648166 .
+
 <https://lex.dk/mesolitikum> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:identifier [ a schema:PropertyValue ;
             schema:propertyID wd:P8313 ;
             schema:value "mesolitikum" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: mesolitikum; Nationalmuseet: The Mesolithic period" .
+    schema:name "mesolitikum" .
 
 nh:nh-c0017 a schema:Claim ;
     dcterms:identifier "DA01",

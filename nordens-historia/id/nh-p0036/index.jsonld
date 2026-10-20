@@ -201,7 +201,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet",
-    "name": "Nationalencyklopedin – Sverige, historia: Välfärdssamhället",
+    "name": "Sverige, historia: Välfärdssamhället",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -239,7 +239,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/",
-    "name": "Regeringskansliet – Sverige i EU 30 år",
+    "name": "Sverige i EU 30 år",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q10650489"
@@ -277,7 +277,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/",
-    "name": "Regeringskansliet – Sveriges och Natos historia",
+    "name": "Sveriges och Natos historia",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q10650489"

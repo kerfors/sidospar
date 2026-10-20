@@ -39,7 +39,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Gustav_3." ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Gustav 3 – Store norske leksikon" .
+    schema:name "Gustav 3" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317> a schema:Article ;
     dcterms:identifier "SBL 13317" ;
@@ -48,7 +48,7 @@
             schema:propertyID wd:P3217 ;
             schema:value "13317" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Gustav III" .
+    schema:name "Gustav III" .
 
 nh:nh-c0171 a schema:Claim ;
     dcterms:identifier "GE42",

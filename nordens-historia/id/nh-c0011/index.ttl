@@ -28,6 +28,6 @@ nh:nh-c0011 a schema:Claim ;
 
 <https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Heimastjórn 1904–1918 (stjornarradid.is)" ;
+    schema:name "Heimastjórn 1904–1918" ;
     schema:publisher wd:Q3354110 .
 

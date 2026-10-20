@@ -207,7 +207,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt",
-    "name": "Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt",
+    "name": "Sverige, historia: Kristnandet och rikets framväxt",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -250,7 +250,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten",
-    "name": "Nationalencyklopedin – sverkerska ätten",
+    "name": "sverkerska ätten",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -288,7 +288,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd",
-    "name": "Svenska kyrkan – Ärkebiskopslängd",
+    "name": "Ärkebiskopslängd",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q749243"
@@ -313,7 +313,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=203",
-     "name": "SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens",
+     "name": "påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",

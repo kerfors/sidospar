@@ -27,7 +27,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Islands_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Islands historie (Store norske leksikon)" .
+    schema:name "Islands historie" .
 
 nh:nh-c0005 a schema:Claim ;
     dcterms:identifier "IS05",

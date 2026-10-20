@@ -53,7 +53,7 @@ nh:nh-c0040 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Introduktion_til_efterkrigstiden,_1945-1973" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
+    schema:name "Introduktion til efterkrigstiden, 1945-1973" .
 
 nh:nh-p0017 a crm:E4_Period,
         skos:Concept ;

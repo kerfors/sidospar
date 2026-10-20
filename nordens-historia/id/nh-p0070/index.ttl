@@ -86,7 +86,7 @@ nh:nh-c0175 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Grunnloven" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Grunnloven – Store norske leksikon" .
+    schema:name "Grunnloven" .
 
 <https://snl.no/Unionsoppløsningen_i_1905> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -94,7 +94,7 @@ nh:nh-c0175 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Unionsoppløsningen_i_1905" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Unionsoppløsningen i 1905 – Store norske leksikon" .
+    schema:name "Unionsoppløsningen i 1905" .
 
 nh:nh-p0070 a crm:E4_Period,
         skos:Concept ;

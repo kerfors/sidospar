@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "borgerkrigstiden" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: borgerkrigstiden" .
+    schema:name "borgerkrigstiden" .
 
 nh:nh-c0053 a schema:Claim ;
     dcterms:identifier "NO11",

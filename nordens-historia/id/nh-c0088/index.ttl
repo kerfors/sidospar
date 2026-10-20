@@ -28,6 +28,6 @@ nh:nh-c0088 a schema:Claim ;
 
 <https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Regeringskansliet – Sveriges och Natos historia" ;
+    schema:name "Sveriges och Natos historia" ;
     schema:publisher wd:Q10650489 .
 

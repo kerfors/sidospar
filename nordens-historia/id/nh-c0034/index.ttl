@@ -27,7 +27,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Enevældens_faser_1660-1848" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Enevældens faser 1660-1848" .
+    schema:name "Enevældens faser 1660-1848" .
 
 nh:nh-c0034 a schema:Claim ;
     dcterms:identifier "DA18",

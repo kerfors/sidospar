@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Danmarks_historie_i_vikingetiden" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Danmarks historie i vikingetiden" .
+    schema:name "Danmarks historie i vikingetiden" .
 
 nh:nh-c0024 a schema:Claim ;
     dcterms:identifier "DA08",

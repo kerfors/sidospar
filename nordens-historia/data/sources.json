@@ -1,5 +1,5 @@
 {
- "note": "Vad källorna är och vem som ger ut dem, för det här projektet. Läses bara av ld.py här; projektet är fristående. IRI:erna är gemensamma: Wikidatas där verket eller utgivaren finns där, annars de publicerade under https://w3id.org/people/kerfors/sidospar/kallor/id/ (SDHK och källtyperna). Namnen är kopior för läsbarheten. En källa (URL) hör till ett verk om den börjar med ett av verkets url_prefixes, annars till en utgivare via webbplatsen (hosts). Artikelnumret tas ur adressen med Wikidatas URL-mönster (P8966) för verkets egenskap, med två tillägg: www. i värdnamnet räknas som samma webbplats, och mönstret måste täcka hela adressen. Adresser som inte följer mönstret får inget nummer. Uppslagsverken och utgivarna är kontrollerade i Wikidata 2026-10-20. Nationalencyklopedin har ingen utgivare i Wikidata och står utan utgivare här. En utgivare på en webbplats är den post i Wikidata vars officiella webbplats (P856) är webbplatsen; grunden står i basis. scheme är nyckeln för verkets eller utgivarens periodindelning i datan (nh:#kalla-<scheme>).",
+ "note": "Vad källorna är och vem som ger ut dem, för det här projektet. Läses bara av ld.py här; projektet är fristående. IRI:erna är gemensamma: Wikidatas där verket eller utgivaren finns där, annars de publicerade under https://w3id.org/people/kerfors/sidospar/kallor/id/ (SDHK och källtyperna). Namnen är kopior för läsbarheten. En källa (URL) hör till ett verk om den börjar med ett av verkets url_prefixes, annars till en utgivare via webbplatsen (hosts). Artikelnumret tas ur adressen med Wikidatas URL-mönster (P8966) för verkets egenskap, med två tillägg: www. i värdnamnet räknas som samma webbplats, och mönstret måste täcka hela adressen. Adresser som inte följer mönstret får inget nummer. Uppslagsverken och utgivarna är kontrollerade i Wikidata 2026-10-20. Nationalencyklopedin, Läkartidningen och Videnskab.dk har ingen utgivare i Wikidata och står utan utgivare här. En utgivare på en webbplats är den post i Wikidata vars officiella webbplats (P856) är webbplatsen; grunden står i basis. scheme är nyckeln för verkets eller utgivarens periodindelning i datan (nh:#kalla-<scheme>).",
  "types": {
   "uppslagsverk": {
    "iri": "kallor:#uppslagsverk",
@@ -16,6 +16,14 @@
   "registerpost": {
    "iri": "kallor:#registerpost",
    "schema": "CreativeWork"
+  },
+  "periodikum": {
+   "iri": "kallor:#periodikum",
+   "schema": "Periodical"
+  },
+  "periodikumartikel": {
+   "iri": "kallor:#periodikumartikel",
+   "schema": "Article"
   },
   "webbsida": {
    "iri": "kallor:#webbsida",
@@ -340,6 +348,28 @@
    "part_type": "artikel",
    "url_prefixes": [
     "https://en.wikipedia.org/"
+   ]
+  },
+  {
+   "iri": "wd:Q1350069",
+   "name": "Läkartidningen",
+   "type": "periodikum",
+   "publisher": null,
+   "part_type": "periodikumartikel",
+   "url_prefixes": [
+    "https://lakartidningen.se/",
+    "https://www.lakartidningen.se/"
+   ]
+  },
+  {
+   "iri": "wd:Q12340941",
+   "name": "Videnskab.dk",
+   "type": "periodikum",
+   "publisher": null,
+   "part_type": "periodikumartikel",
+   "url_prefixes": [
+    "https://videnskab.dk/",
+    "https://www.videnskab.dk/"
    ]
   }
  ]

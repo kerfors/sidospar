@@ -70,7 +70,7 @@ nh:nh-c0035 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Kielerfreden" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Kielerfreden" .
+    schema:name "Kielerfreden" .
 
 <https://lex.dk/Enev%C3%A6ldens_faser_1660-1848> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -78,7 +78,7 @@ nh:nh-c0035 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Enevældens_faser_1660-1848" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Enevældens faser 1660-1848" .
+    schema:name "Enevældens faser 1660-1848" .
 
 nh:nh-p0014 a crm:E4_Period,
         skos:Concept ;

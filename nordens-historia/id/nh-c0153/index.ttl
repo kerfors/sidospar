@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Danmark-Norge" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Danmark-Norge" .
+    schema:name "Danmark-Norge" .
 
 nh:nh-c0153 a schema:Claim ;
     dcterms:identifier "GE24",

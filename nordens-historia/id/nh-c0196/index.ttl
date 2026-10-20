@@ -28,6 +28,6 @@ nh:nh-c0196 a schema:Claim ;
 
 <https://www.nobelprize.org/prizes/facts/nobel-prize-facts/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Nobelprize.org: Nobel Prize facts" ;
+    schema:name "Nobel Prize facts" ;
     schema:publisher wd:Q1781959 .
 

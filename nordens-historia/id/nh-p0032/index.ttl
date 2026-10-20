@@ -107,7 +107,7 @@ nh:nh-c0079 a schema:Claim ;
             schema:propertyID kallor:sdhk ;
             schema:value "664" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm" .
+    schema:name "kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=665> a schema:CreativeWork ;
     dcterms:identifier "SDHK 665" ;
@@ -116,7 +116,7 @@ nh:nh-c0079 a schema:Claim ;
             schema:propertyID kallor:sdhk ;
             schema:value "665" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
+    schema:name "Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
 
 nh:nh-c0080 a schema:Claim ;
     dcterms:identifier "SV13",
@@ -138,7 +138,7 @@ nh:nh-c0081 a schema:Claim ;
             schema:propertyID wd:P1417 ;
             schema:value "place/Stockholm" ] ;
     schema:isPartOf wd:Q5375741 ;
-    schema:name "Encyclopaedia Britannica – Stockholm" .
+    schema:name "Stockholm" .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -146,7 +146,7 @@ nh:nh-c0081 a schema:Claim ;
             schema:propertyID wd:P3222 ;
             schema:value "folkungar" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – folkungar" .
+    schema:name "folkungar" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> a schema:Article ;
     dcterms:identifier "SBL 18238" ;
@@ -155,8 +155,7 @@ nh:nh-c0081 a schema:Claim ;
             schema:propertyID wd:P3217 ;
             schema:value "18238" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Birger Magnusson (Birger jarl)",
-        "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)" .
+    schema:name "Birger Magnusson (Birger jarl)" .
 
 nh:nh-p0032 a crm:E4_Period,
         skos:Concept ;

@@ -75,7 +75,7 @@ nh:nh-c0042 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Grønlands_Hjemmestyre" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Grønlands Hjemmestyre" .
+    schema:name "Grønlands Hjemmestyre" .
 
 <https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -83,7 +83,7 @@ nh:nh-c0042 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Introduktion_til_efterkrigstiden,_1945-1973" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
+    schema:name "Introduktion til efterkrigstiden, 1945-1973" .
 
 <https://lex.dk/det_danske_EU-medlemskab> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -91,7 +91,7 @@ nh:nh-c0042 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "det_danske_EU-medlemskab" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: det danske EU-medlemskab" .
+    schema:name "det danske EU-medlemskab" .
 
 nh:nh-p0018 a crm:E4_Period,
         skos:Concept ;

@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Guldhornene" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Guldhornene" .
+    schema:name "Guldhornene" .
 
 nh:nh-c0140 a schema:Claim ;
     dcterms:identifier "GE11",

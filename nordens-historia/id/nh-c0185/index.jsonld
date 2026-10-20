@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uu.se/550/tidigare-jubileer-och-kort-historik",
-    "name": "Uppsala universitet: Kort historik och tidigare jubileer",
+    "name": "Kort historik och tidigare jubileer",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q185246"
@@ -171,7 +171,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=30221",
-     "name": "SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom",
+     "name": "påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",
@@ -184,7 +184,7 @@
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=30290",
-     "name": "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala",
+     "name": "ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",

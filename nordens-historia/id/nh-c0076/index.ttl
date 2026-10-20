@@ -32,5 +32,5 @@ nh:nh-c0076 a schema:Claim ;
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt" .
+    schema:name "Sverige, historia: Kristnandet och rikets framväxt" .
 

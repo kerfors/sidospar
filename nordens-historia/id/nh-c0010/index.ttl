@@ -30,6 +30,6 @@ nh:nh-c0010 a schema:Claim ;
 
 <https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Alþingi í Lærða skólanum 1845–1879 (althingi.is)" ;
+    schema:name "Alþingi í Lærða skólanum 1845–1879" ;
     schema:publisher wd:Q131279 .
 

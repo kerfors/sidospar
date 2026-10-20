@@ -211,7 +211,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/romersk_jernalder",
-    "name": "Lex.dk: romersk jernalder",
+    "name": "romersk jernalder",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -249,7 +249,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/romersk_jernalder",
-    "name": "Lex.dk: romersk jernalder",
+    "name": "romersk jernalder",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -287,7 +287,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/runer",
-    "name": "Store norske leksikon: runer",
+    "name": "runer",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"

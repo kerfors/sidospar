@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/steinalderen_i_Norge",
-    "name": "Store norske leksikon: steinalderen i Norge",
+    "name": "steinalderen i Norge",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"

@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "hatter" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Hatter – Store norske leksikon" .
+    schema:name "Hatter" .
 
 nh:nh-c0169 a schema:Claim ;
     dcterms:identifier "GE40",

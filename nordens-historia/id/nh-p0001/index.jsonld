@@ -205,7 +205,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Islands_historie",
-    "name": "Islands historie (Store norske leksikon)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -247,7 +247,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Ingolv_Arnesson",
-    "name": "Ingolv Arnesson (Store norske leksikon)",
+    "name": "Ingolv Arnesson",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"

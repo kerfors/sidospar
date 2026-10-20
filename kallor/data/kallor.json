@@ -9,6 +9,10 @@
    "match": "closeMatch", "qid": "Q2352616", "wikidata_label": "catalog"},
   {"id": "registerpost", "label": "Post i ett register", "schema": "CreativeWork",
    "match": null, "qid": null, "wikidata_label": null},
+  {"id": "periodikum", "label": "Tidskrift eller tidning", "schema": "Periodical",
+   "match": "exactMatch", "qid": "Q1002697", "wikidata_label": "periodical"},
+  {"id": "periodikumartikel", "label": "Artikel i en tidskrift eller tidning", "schema": "Article",
+   "match": "exactMatch", "qid": "Q191067", "wikidata_label": "article"},
   {"id": "webbsida", "label": "Webbsida", "schema": "WebPage",
    "match": "exactMatch", "qid": "Q36774", "wikidata_label": "web page"}
  ],

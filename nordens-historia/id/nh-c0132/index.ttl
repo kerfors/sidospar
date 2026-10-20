@@ -28,6 +28,6 @@ nh:nh-c0132 a schema:Claim ;
 
 <https://whc.unesco.org/en/list/557> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "UNESCO World Heritage: Rock Carvings in Tanum" ;
+    schema:name "Rock Carvings in Tanum" ;
     schema:publisher wd:Q7809 .
 

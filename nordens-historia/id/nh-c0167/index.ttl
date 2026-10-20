@@ -27,7 +27,7 @@
             schema:propertyID wd:P3222 ;
             schema:value "frihetstiden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Frihetstiden – Nationalencyklopedin" .
+    schema:name "Frihetstiden" .
 
 nh:nh-c0167 a schema:Claim ;
     dcterms:identifier "GE38",

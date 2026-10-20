@@ -319,9 +319,11 @@ nh: a schema:WebPage ;
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0044#granskning> a prov:Entity,
         schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/Fosnakulturen> ;
+    prov:wasDerivedFrom <https://snl.no/Fosnakulturen>,
+        <https://snl.no/Komsakulturen> ;
     prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/Fosnakulturen> ;
+    schema:citation <https://snl.no/Fosnakulturen>,
+        <https://snl.no/Komsakulturen> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0044 ;
     schema:reviewBody "Fosnakulturen var en kustbunden fångstkultur i äldre stenålder från Rogaland till Nordland, Komsakulturen motsvarande i Finnmark med boplatser på ytterkusten." ;
@@ -1354,9 +1356,11 @@ nh: a schema:WebPage ;
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0180#granskning> a prov:Entity,
         schema:ClaimReview ;
-    prov:wasDerivedFrom <https://lex.dk/5._maj_1945> ;
+    prov:wasDerivedFrom <https://lex.dk/5._maj_1945>,
+        <https://snl.no/Samene_under_andre_verdenskrig> ;
     prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://lex.dk/5._maj_1945> ;
+    schema:citation <https://lex.dk/5._maj_1945>,
+        <https://snl.no/Samene_under_andre_verdenskrig> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0180 ;
     schema:reviewBody "Danmark var ockuperat 9 april 1940–5 maj 1945; SNL anger att Norge angreps 9 april 1940 och befriades 1945." ;
@@ -2548,6 +2552,14 @@ wd:Q11885692 a schema:Organization ;
 wd:Q11992497 a schema:Organization ;
     schema:name "Store norske leksikon" .
 
+wd:Q12340941 a schema:Periodical ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#periodikum> ;
+    schema:name "Videnskab.dk" .
+
+wd:Q1350069 a schema:Periodical ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#periodikum> ;
+    schema:name "Läkartidningen" .
+
 wd:Q1543058 a schema:Organization ;
     schema:name "Sveriges Radio" .
 
@@ -2584,9 +2596,6 @@ wd:Q5375741 a schema:CreativeWork ;
 
 wd:Q643412 a schema:Organization ;
     schema:name "Finlands riksdag" .
-
-wd:Q648166 a schema:Organization ;
-    schema:name "Nationalmuseet" .
 
 wd:Q659200 a schema:Organization ;
     schema:name "Tetra Pak" .
@@ -2811,9 +2820,11 @@ nh:nh-c0017 a schema:Claim ;
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0017#granskning> a prov:Entity,
         schema:ClaimReview ;
-    prov:wasDerivedFrom <https://lex.dk/mesolitikum> ;
+    prov:wasDerivedFrom <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/>,
+        <https://lex.dk/mesolitikum> ;
     prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://lex.dk/mesolitikum> ;
+    schema:citation <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/>,
+        <https://lex.dk/mesolitikum> ;
     schema:comment [ a schema:Comment ;
             schema:text "Åtgärd på affischen: Behållet; affischens axel börjar 10 000 f.Kr." ] ;
     schema:datePublished "2026-10-18" ;
@@ -4913,19 +4924,30 @@ wd:Q1726607 a schema:Organization ;
 wd:Q1781959 a schema:Organization ;
     schema:name "Nobelstiftelsen" .
 
+wd:Q648166 a schema:Organization ;
+    schema:name "Nationalmuseet" .
+
 wd:Q749243 a schema:Organization ;
     schema:name "Svenska kyrkan" .
+
+<https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "The Mesolithic period" ;
+    schema:publisher wd:Q648166 .
 
 <https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q328 ;
-    schema:name "Wikipedia (en): Sammallahdenmäki" .
+    schema:name "Sammallahdenmäki" .
 
-<https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf> schema:name "Läkartidningen 2003 (artikel om digerdöden)" .
+<https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#periodikumartikel> ;
+    schema:isPartOf wd:Q1350069 ;
+    schema:name "Artikel om digerdöden, 2003" .
 
 <https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "LEGO: The stud and tube principle" ;
+    schema:name "The stud and tube principle" ;
     schema:publisher wd:Q1063455 .
 
 <https://lex.dk/5._maj_1945> a schema:Article ;
@@ -4934,7 +4956,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "5._maj_1945" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "5. maj 1945 – lex.dk; Samene under andre verdenskrig – SNL" .
+    schema:name "5. maj 1945" .
 
 <https://lex.dk/Absalon> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -4942,7 +4964,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Absalon" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Absalon" .
+    schema:name "Absalon" .
 
 <https://lex.dk/Albrecht_af_Mecklenburg> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -4950,7 +4972,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Albrecht_af_Mecklenburg" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Albrecht af Mecklenburg" .
+    schema:name "Albrecht af Mecklenburg" .
 
 <https://lex.dk/Christian_4.> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -4958,7 +4980,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Christian_4." ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Christian 4. – lex.dk" .
+    schema:name "Christian 4." .
 
 <https://lex.dk/Gr%C3%B8nlands_Hjemmestyre> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -4966,7 +4988,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Grønlands_Hjemmestyre" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Grønlands Hjemmestyre" .
+    schema:name "Grønlands Hjemmestyre" .
 
 <https://lex.dk/Guldhornene> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -4974,7 +4996,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Guldhornene" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Guldhornene" .
+    schema:name "Guldhornene" .
 
 <https://lex.dk/Hedeby> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -4982,7 +5004,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Hedeby" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Hedeby" .
+    schema:name "Hedeby" .
 
 <https://lex.dk/Jellingstenene> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -4990,7 +5012,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Jellingstenene" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "lex.dk: Jellingstenene" .
+    schema:name "Jellingstenene" .
 
 <https://lex.dk/Jyske_Lov> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -4998,7 +5020,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Jyske_Lov" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Jyske Lov" .
+    schema:name "Jyske Lov" .
 
 <https://lex.dk/Kielerfreden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5006,7 +5028,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Kielerfreden" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Kielerfreden" .
+    schema:name "Kielerfreden" .
 
 <https://lex.dk/Knud_den_Store> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5014,7 +5036,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Knud_den_Store" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Knud den Store" .
+    schema:name "Knud den Store" .
 
 <https://lex.dk/Kongeloven> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5022,7 +5044,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Kongeloven" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Kongeloven – lex.dk" .
+    schema:name "Kongeloven" .
 
 <https://lex.dk/Krigen_i_1864> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5030,7 +5052,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Krigen_i_1864" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Krigen i 1864" .
+    schema:name "Krigen i 1864" .
 
 <https://lex.dk/Københavns_Universitet> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5038,7 +5060,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Københavns_Universitet" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "lex.dk: Københavns Universitet" .
+    schema:name "Københavns Universitet" .
 
 <https://lex.dk/Niels_Bohr> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5046,7 +5068,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Niels_Bohr" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "lex.dk: Niels Bohr" .
+    schema:name "Niels Bohr" .
 
 <https://lex.dk/Ole_Rømer> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5054,7 +5076,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Ole_Rømer" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "lex.dk: Ole Rømer" .
+    schema:name "Ole Rømer" .
 
 <https://lex.dk/Reformationen_i_Danmark> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5062,7 +5084,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Reformationen_i_Danmark" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Reformationen i Danmark" .
+    schema:name "Reformationen i Danmark" .
 
 <https://lex.dk/Sjlisselburg> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5070,7 +5092,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Sjlisselburg" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Sjlisselburg" .
+    schema:name "Sjlisselburg" .
 
 <https://lex.dk/Solen_-_symbolik> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5078,7 +5100,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Solen_-_symbolik" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Solen – symbolik" .
+    schema:name "Solen – symbolik" .
 
 <https://lex.dk/Sønderjylland> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5086,7 +5108,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Sønderjylland" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Sønderjylland" .
+    schema:name "Sønderjylland" .
 
 <https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5094,7 +5116,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Tabet_af_Skåne_i_1658-1660" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Tabet af Skåne i 1658-1660 – lex.dk" .
+    schema:name "Tabet af Skåne i 1658-1660" .
 
 <https://lex.dk/Tycho_Brahe> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5102,7 +5124,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Tycho_Brahe" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "lex.dk: Tycho Brahe" .
+    schema:name "Tycho Brahe" .
 
 <https://lex.dk/Valdemar_Atterdag> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5110,7 +5132,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Valdemar_Atterdag" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Valdemar Atterdag" .
+    schema:name "Valdemar Atterdag" .
 
 <https://lex.dk/det_danske_EU-medlemskab> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5118,7 +5140,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "det_danske_EU-medlemskab" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: det danske EU-medlemskab" .
+    schema:name "det danske EU-medlemskab" .
 
 <https://lex.dk/tragtb%C3%A6gerkulturen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5126,7 +5148,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "tragtbægerkulturen" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: tragtbægerkulturen" .
+    schema:name "tragtbægerkulturen" .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/stockholms-blodbad> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5134,7 +5156,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3222 ;
             schema:value "stockholms-blodbad" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Stockholms blodbad – Nationalencyklopedin" .
+    schema:name "Stockholms blodbad" .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5142,7 +5164,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3222 ;
             schema:value "västerås-riksdag" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Västerås riksdag – Nationalencyklopedin" .
+    schema:name "Västerås riksdag" .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5150,21 +5172,21 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3222 ;
             schema:value "westfaliska-freden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Westfaliska freden – Nationalencyklopedin" .
+    schema:name "Westfaliska freden" .
 
 <https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "IVA: Svenska innovationer – Pacemakern" ;
+    schema:name "Svenska innovationer – Pacemakern" ;
     schema:publisher wd:Q3394637 .
 
 <https://riksarkivet.se/resurser/tryckfrihetsforordningen-1766> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Riksarkivet: Tryckfrihetsförordningen 1766" ;
+    schema:name "Tryckfrihetsförordningen 1766" ;
     schema:publisher wd:Q1724971 .
 
 <https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Riksdagen: Riksdagens historia (broschyr)" ;
+    schema:name "Riksdagens historia (broschyr)" ;
     schema:publisher wd:Q643412 .
 
 <https://snl.no/Alltinget> a schema:Article ;
@@ -5173,7 +5195,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Alltinget" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Alltinget" .
+    schema:name "Alltinget" .
 
 <https://snl.no/Bergen_-_historie> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5181,7 +5203,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Bergen_-_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Bergen – historie" .
+    schema:name "Bergen – historie" .
 
 <https://snl.no/Christian_3> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5189,7 +5211,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Christian_3" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Christian 3" .
+    schema:name "Christian 3" .
 
 <https://snl.no/EU-kampen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5197,7 +5219,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "EU-kampen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: EU-kampen" .
+    schema:name "EU-kampen" .
 
 <https://snl.no/Fosnakulturen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5205,7 +5227,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Fosnakulturen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Fosnakulturen; Komsakulturen" .
+    schema:name "Fosnakulturen" .
 
 <https://snl.no/Fridtjof_Nansen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5213,7 +5235,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Fridtjof_Nansen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Fridtjof Nansen" .
+    schema:name "Fridtjof Nansen" .
 
 <https://snl.no/Grunnloven> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5221,7 +5243,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Grunnloven" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Grunnloven – Store norske leksikon" .
+    schema:name "Grunnloven" .
 
 <https://snl.no/Gustav_1_Vasa> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5229,7 +5251,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Gustav_1_Vasa" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Gustav 1 Vasa – Store norske leksikon" .
+    schema:name "Gustav 1 Vasa" .
 
 <https://snl.no/Gustav_3.> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5237,7 +5259,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Gustav_3." ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Gustav 3 – Store norske leksikon" .
+    schema:name "Gustav 3" .
 
 <https://snl.no/H%C3%A5kon_4._H%C3%A5konsson> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5245,7 +5267,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Håkon_4._Håkonsson" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Håkon 4. Håkonsson" .
+    schema:name "Håkon 4. Håkonsson" .
 
 <https://snl.no/Haakon_7.> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5253,7 +5275,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Haakon_7." ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Haakon 7." .
+    schema:name "Haakon 7." .
 
 <https://snl.no/Ingolv_Arnesson> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5261,7 +5283,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Ingolv_Arnesson" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Ingolv Arnesson (Store norske leksikon)" .
+    schema:name "Ingolv Arnesson" .
 
 <https://snl.no/Kalevala> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5269,7 +5291,15 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Kalevala" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Kalevala" .
+    schema:name "Kalevala" .
+
+<https://snl.no/Komsakulturen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Komsakulturen" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Komsakulturen" .
 
 <https://snl.no/Magnus_Lagab%C3%B8ters_landslov> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5277,7 +5307,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Magnus_Lagabøters_landslov" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Magnus Lagabøters landslov" .
+    schema:name "Magnus Lagabøters landslov" .
 
 <https://snl.no/Olav_3._Kyrre> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5285,7 +5315,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Olav_3._Kyrre" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Olav 3. Kyrre" .
+    schema:name "Olav 3. Kyrre" .
 
 <https://snl.no/Roald_Amundsen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5293,7 +5323,15 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Roald_Amundsen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Roald Amundsen" .
+    schema:name "Roald Amundsen" .
+
+<https://snl.no/Samene_under_andre_verdenskrig> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Samene_under_andre_verdenskrig" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Samene under andre verdenskrig" .
 
 <https://snl.no/Slaget_p%C3%A5_Stiklestad> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5301,7 +5339,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Slaget_på_Stiklestad" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Slaget på Stiklestad" .
+    schema:name "Slaget på Stiklestad" .
 
 <https://snl.no/Snorre_Sturlason> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5309,7 +5347,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Snorre_Sturlason" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Snorre Sturlason" .
+    schema:name "Snorre Sturlason" .
 
 <https://snl.no/Sverre_-_norsk_konge> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5317,7 +5355,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Sverre_-_norsk_konge" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Sverre – norsk konge" .
+    schema:name "Sverre – norsk konge" .
 
 <https://snl.no/gullbrakteater> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5325,7 +5363,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "gullbrakteater" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: gullbrakteater" .
+    schema:name "gullbrakteater" .
 
 <https://snl.no/hatter> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5333,7 +5371,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "hatter" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Hatter – Store norske leksikon" .
+    schema:name "Hatter" .
 
 <https://snl.no/islendingesaga> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5341,7 +5379,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "islendingesaga" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Islendingesaga (Store norske leksikon)" .
+    schema:name "Islendingesaga" .
 
 <https://snl.no/runer> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5349,7 +5387,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "runer" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: runer" .
+    schema:name "runer" .
 
 <https://snl.no/slaget_i_Hafrsfjord> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5357,7 +5395,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "slaget_i_Hafrsfjord" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: slaget i Hafrsfjord" .
+    schema:name "slaget i Hafrsfjord" .
 
 <https://snl.no/stemmerett_for_kvinner_i_Norge> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5365,7 +5403,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "stemmerett_for_kvinner_i_Norge" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: stemmerett for kvinner i Norge" .
+    schema:name "stemmerett for kvinner i Norge" .
 
 <https://snl.no/svartedauden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5373,7 +5411,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "svartedauden" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: svartedauden" .
+    schema:name "svartedauden" .
 
 <https://snl.no/vikingtid> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5381,7 +5419,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "vikingtid" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Vikingtid – Store norske leksikon" .
+    schema:name "Vikingtid" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> a schema:Article ;
     dcterms:identifier "SBL 10735" ;
@@ -5390,7 +5428,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "10735" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Carl (von) Linné" .
+    schema:name "Carl (von) Linné" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> a schema:Article ;
     dcterms:identifier "SBL 12357" ;
@@ -5399,7 +5437,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "12357" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Karl XII" .
+    schema:name "Karl XII" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> a schema:Article ;
     dcterms:identifier "SBL 13315" ;
@@ -5408,7 +5446,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "13315" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Gustav I" .
+    schema:name "Gustav I" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> a schema:Article ;
     dcterms:identifier "SBL 13316" ;
@@ -5417,7 +5455,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "13316" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Gustav II Adolf" .
+    schema:name "Gustav II Adolf" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317> a schema:Article ;
     dcterms:identifier "SBL 13317" ;
@@ -5426,7 +5464,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "13317" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Gustav III" .
+    schema:name "Gustav III" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758> a schema:Article ;
     dcterms:identifier "SBL 14758" ;
@@ -5435,7 +5473,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "14758" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Anders Celsius" .
+    schema:name "Anders Celsius" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392> a schema:Article ;
     dcterms:identifier "SBL 15392" ;
@@ -5444,7 +5482,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "15392" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Erik av Pommern" .
+    schema:name "Erik av Pommern" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> a schema:Article ;
     dcterms:identifier "SBL 5648" ;
@@ -5453,7 +5491,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "5648" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Albrekt av Mecklenburg" .
+    schema:name "Albrekt av Mecklenburg" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143> a schema:Article ;
     dcterms:identifier "SBL 8143" ;
@@ -5462,7 +5500,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "8143" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Alfred B Nobel" .
+    schema:name "Alfred B Nobel" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097> a schema:Article ;
     dcterms:identifier "SBL 9097" ;
@@ -5471,7 +5509,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "9097" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Margareta" .
+    schema:name "Margareta" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=14836> a schema:CreativeWork ;
     dcterms:identifier "SDHK 14836" ;
@@ -5480,7 +5518,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID kallor:sdhk ;
             schema:value "14836" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 14836: kung Eriks kröningsbrev, Kalmar" .
+    schema:name "kung Eriks kröningsbrev, Kalmar" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=14837> a schema:CreativeWork ;
     dcterms:identifier "SDHK 14837" ;
@@ -5489,7 +5527,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID kallor:sdhk ;
             schema:value "14837" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 14837: Kalmardokumentet: de tre rikenas råd om en kung, Kalmar" .
+    schema:name "Kalmardokumentet: de tre rikenas råd om en kung, Kalmar" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=203> a schema:CreativeWork ;
     dcterms:identifier "SDHK 203" ;
@@ -5498,7 +5536,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID kallor:sdhk ;
             schema:value "203" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens" .
+    schema:name "påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=30221> a schema:CreativeWork ;
     dcterms:identifier "SDHK 30221" ;
@@ -5507,7 +5545,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID kallor:sdhk ;
             schema:value "30221" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom" .
+    schema:name "påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=30290> a schema:CreativeWork ;
     dcterms:identifier "SDHK 30290" ;
@@ -5516,7 +5554,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID kallor:sdhk ;
             schema:value "30290" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala" .
+    schema:name "ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=3228> a schema:CreativeWork ;
     dcterms:identifier "SDHK 3228" ;
@@ -5525,7 +5563,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID kallor:sdhk ;
             schema:value "3228" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus" .
+    schema:name "storfursten Jurij Danielowitsch sluter fred med kung Magnus" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=39886> a schema:CreativeWork ;
     dcterms:identifier "SDHK 39886" ;
@@ -5534,7 +5572,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID kallor:sdhk ;
             schema:value "39886" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 39886: samma fred, i en annan medeltida avskrift" .
+    schema:name "samma fred, i en annan medeltida avskrift" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=664> a schema:CreativeWork ;
     dcterms:identifier "SDHK 664" ;
@@ -5543,7 +5581,7 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID kallor:sdhk ;
             schema:value "664" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm" .
+    schema:name "kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=665> a schema:CreativeWork ;
     dcterms:identifier "SDHK 665" ;
@@ -5552,24 +5590,27 @@ wd:Q749243 a schema:Organization ;
             schema:propertyID kallor:sdhk ;
             schema:value "665" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
+    schema:name "Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
 
 <https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet" ;
+    schema:name "Kvinnor i riksdagsvalet" ;
     schema:publisher wd:Q798557 .
 
 <https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Tetra Pak: Heritage" ;
+    schema:name "Heritage" ;
     schema:publisher wd:Q659200 .
 
 <https://um.fi/finland-and-nato> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Finlands utrikesministerium: Finland's membership in NATO" ;
+    schema:name "Finland's membership in NATO" ;
     schema:publisher wd:Q2639539 .
 
-<https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/> schema:name "Videnskab.dk: Mystiske krigere angreb dansk ø for 2.300 år siden" .
+<https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#periodikumartikel> ;
+    schema:isPartOf wd:Q12340941 ;
+    schema:name "Mystiske krigere angreb dansk ø for 2.300 år siden" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#claude-agenter> a prov:SoftwareAgent ;
     prov:actedOnBehalfOf [ a prov:Person,
@@ -5710,12 +5751,12 @@ nh:nh-c0194 a schema:Claim ;
 
 <https://whc.unesco.org/en/list/557> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "UNESCO World Heritage: Rock Carvings in Tanum" ;
+    schema:name "Rock Carvings in Tanum" ;
     schema:publisher wd:Q7809 .
 
 <https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Alþingi í Lærða skólanum 1845–1879 (althingi.is)" ;
+    schema:name "Alþingi í Lærða skólanum 1845–1879" ;
     schema:publisher wd:Q131279 .
 
 <https://www.britannica.com/place/Stockholm> a schema:Article ;
@@ -5724,16 +5765,16 @@ nh:nh-c0194 a schema:Claim ;
             schema:propertyID wd:P1417 ;
             schema:value "place/Stockholm" ] ;
     schema:isPartOf wd:Q5375741 ;
-    schema:name "Encyclopaedia Britannica – Stockholm" .
+    schema:name "Stockholm" .
 
 <https://www.computerhistory.org/revolution/personal-computers/17/307/1235> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Computer History Museum: Linux" ;
+    schema:name "Linux" ;
     schema:publisher wd:Q964035 .
 
 <https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "JO: JO – i riksdagens tjänst (bok, jo.se)" ;
+    schema:name "JO – i riksdagens tjänst (bok)" ;
     schema:publisher wd:Q107157415 .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/birka> a schema:Article ;
@@ -5742,7 +5783,7 @@ nh:nh-c0194 a schema:Claim ;
             schema:propertyID wd:P3222 ;
             schema:value "birka" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – Birka" .
+    schema:name "Birka" .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/neolitikum> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5750,12 +5791,12 @@ nh:nh-c0194 a schema:Claim ;
             schema:propertyID wd:P3222 ;
             schema:value "neolitikum" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – neolitikum" .
+    schema:name "neolitikum" .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/sverige-under-andra-v%C3%A4rldskriget> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – Sverige under andra världskriget" .
+    schema:name "Sverige under andra världskriget" .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5763,7 +5804,7 @@ nh:nh-c0194 a schema:Claim ;
             schema:propertyID wd:P3222 ;
             schema:value "sverkerska-ätten" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – sverkerska ätten" .
+    schema:name "sverkerska ätten" .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5771,66 +5812,66 @@ nh:nh-c0194 a schema:Claim ;
             schema:propertyID wd:P3222 ;
             schema:value "systema-naturae" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin: Systema naturae" .
+    schema:name "Systema naturae" .
 
 <https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Nobelprize.org: Alfred Nobel's life and work" ;
+    schema:name "Alfred Nobel's life and work" ;
     schema:publisher wd:Q1781959 .
 
 <https://www.nobelprize.org/prizes/facts/nobel-prize-facts/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Nobelprize.org: Nobel Prize facts" ;
+    schema:name "Nobel Prize facts" ;
     schema:publisher wd:Q1781959 .
 
 <https://www.norden.org/sv/information/nordiska-radets-historia> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Nordiska rådets historia – Norden.org" ;
+    schema:name "Nordiska rådets historia" ;
     schema:publisher wd:Q146165 .
 
 <https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)" ;
+    schema:name "Finska kriget 1808–1809" ;
     schema:publisher wd:Q11885692 .
 
 <https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Regeringskansliet – Sverige i EU 30 år" ;
+    schema:name "Sverige i EU 30 år" ;
     schema:publisher wd:Q10650489 .
 
 <https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Regeringskansliet – Sveriges och Natos historia" ;
+    schema:name "Sveriges och Natos historia" ;
     schema:publisher wd:Q10650489 .
 
 <https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Besluten som förändrade Sverige – Sveriges riksdag" ;
+    schema:name "Besluten som förändrade Sverige" ;
     schema:publisher wd:Q272930 .
 
 <https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Sveriges riksdag – Kampen om rösträtten" ;
+    schema:name "Kampen om rösträtten" ;
     schema:publisher wd:Q272930 .
 
 <https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Heimastjórn 1904–1918 (stjornarradid.is)" ;
+    schema:name "Heimastjórn 1904–1918" ;
     schema:publisher wd:Q3354110 .
 
 <https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Svenska kyrkan – Ärkebiskopslängd" ;
+    schema:name "Ärkebiskopslängd" ;
     schema:publisher wd:Q749243 .
 
 <https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Bekännelseskrifter – Svenska kyrkan" ;
+    schema:name "Bekännelseskrifter" ;
     schema:publisher wd:Q749243 .
 
 <https://www.sverigesradio.se/artikel/5667619> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Sveriges Radio" ;
+    schema:name "Artikel hos Sveriges Radio" ;
     schema:publisher wd:Q1543058 .
 
 <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoriaMedeltiden> a schema:Article ;
@@ -5839,31 +5880,31 @@ nh:nh-c0194 a schema:Claim ;
             schema:propertyID wd:P4854 ;
             schema:value "FinlandsHistoriaMedeltiden" ] ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: Finlands historia – medeltiden" .
+    schema:name "Finlands historia – medeltiden" .
 
 <https://www.uppslagsverket.fi/sv/view-170045-AaboDomkyrka> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: Åbo domkyrka" .
+    schema:name "Åbo domkyrka" .
 
 <https://www.uu.se/550/tidigare-jubileer-och-kort-historik> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Uppsala universitet: Kort historik och tidigare jubileer" ;
+    schema:name "Kort historik och tidigare jubileer" ;
     schema:publisher wd:Q185246 .
 
 <https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Uppsala universitet/Gustavianum: Valsgärde" ;
+    schema:name "Valsgärde" ;
     schema:publisher wd:Q185246 .
 
 <https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Uppsala universitet: Anders Celsius" ;
+    schema:name "Anders Celsius" ;
     schema:publisher wd:Q185246 .
 
 <https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Volvo Cars pressmeddelande: trepunktsbeltet fyller 60 år" ;
+    schema:name "Pressmeddelande: trepunktsbeltet fyller 60 år" ;
     schema:publisher wd:Q215293 .
 
 wd:Q272930 a schema:Organization ;
@@ -5875,7 +5916,7 @@ wd:Q272930 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Enevældens_faser_1660-1848" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Enevældens faser 1660-1848" .
+    schema:name "Enevældens faser 1660-1848" .
 
 <https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5883,7 +5924,7 @@ wd:Q272930 a schema:Organization ;
             schema:propertyID wd:P8313 ;
             schema:value "Introduktion_til_efterkrigstiden,_1945-1973" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Introduktion til efterkrigstiden, 1945-1973" .
+    schema:name "Introduktion til efterkrigstiden, 1945-1973" .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5891,7 +5932,7 @@ wd:Q272930 a schema:Organization ;
             schema:propertyID wd:P3222 ;
             schema:value "frihetstiden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Frihetstiden – Nationalencyklopedin" .
+    schema:name "Frihetstiden" .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5899,7 +5940,7 @@ wd:Q272930 a schema:Organization ;
             schema:propertyID wd:P3222 ;
             schema:value "gustavianska-tiden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Gustavianska tiden – Nationalencyklopedin" .
+    schema:name "Gustavianska tiden" .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5907,7 +5948,7 @@ wd:Q272930 a schema:Organization ;
             schema:propertyID wd:P3222 ;
             schema:value "vasatiden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Vasatiden – Nationalencyklopedin" .
+    schema:name "Vasatiden" .
 
 <https://snl.no/H%C3%A5kon_6._Magnusson> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5915,7 +5956,7 @@ wd:Q272930 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Håkon_6._Magnusson" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Håkon 6. Magnusson" .
+    schema:name "Håkon 6. Magnusson" .
 
 <https://snl.no/borgerkrigstiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5923,7 +5964,7 @@ wd:Q272930 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "borgerkrigstiden" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: borgerkrigstiden" .
+    schema:name "borgerkrigstiden" .
 
 <https://snl.no/bronsealder> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5931,7 +5972,7 @@ wd:Q272930 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "bronsealder" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: bronsealder" .
+    schema:name "bronsealder" .
 
 <https://snl.no/enevoldstida> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5939,7 +5980,7 @@ wd:Q272930 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "enevoldstida" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Enevoldstida – Store norske leksikon" .
+    schema:name "Enevoldstida" .
 
 <https://snl.no/merovingertid> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5947,7 +5988,7 @@ wd:Q272930 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "merovingertid" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: merovingertid" .
+    schema:name "merovingertid" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-historiska> a skos:ConceptScheme ;
     dcterms:source <https://historiska.se/utforska-historien/tidsaldrar/> ;
@@ -5960,22 +6001,22 @@ wd:Q272930 a schema:Organization ;
             schema:propertyID wd:P3222 ;
             schema:value "folkungar" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – folkungar" .
+    schema:name "folkungar" .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – Sverige, historia: Demokratins genombrott" .
+    schema:name "Sverige, historia: Demokratins genombrott" .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt" .
+    schema:name "Sverige, historia: Kristnandet och rikets framväxt" .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – Sverige, historia: Välfärdssamhället" .
+    schema:name "Sverige, historia: Välfärdssamhället" .
 
 wd:Q1724971 a schema:Organization ;
     schema:name "Riksarkivet" .
@@ -5985,7 +6026,7 @@ wd:Q185246 a schema:Organization ;
 
 <https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Statens historiska museer – Mesolitikum" ;
+    schema:name "Mesolitikum" ;
     schema:publisher wd:Q1726607 .
 
 <https://snl.no/Ekofisk> a schema:Article ;
@@ -5994,7 +6035,7 @@ wd:Q185246 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Ekofisk" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Ekofisk" .
+    schema:name "Ekofisk" .
 
 <https://snl.no/Norge_i_h%C3%B8ymiddelalderen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6002,7 +6043,7 @@ wd:Q185246 a schema:Organization ;
             schema:propertyID wd:P4342 ;
             schema:value "Norge_i_høymiddelalderen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Norge i høymiddelalderen" .
+    schema:name "Norge i høymiddelalderen" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> a schema:Article ;
     dcterms:identifier "SBL 18238" ;
@@ -6011,8 +6052,7 @@ wd:Q185246 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "18238" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Birger Magnusson (Birger jarl)",
-        "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)" .
+    schema:name "Birger Magnusson (Birger jarl)" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> a schema:Article ;
     dcterms:identifier "SBL 7749" ;
@@ -6021,8 +6061,7 @@ wd:Q185246 a schema:Organization ;
             schema:propertyID wd:P3217 ;
             schema:value "7749" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Olof \"skötkonung\"",
-        "Svenskt biografiskt lexikon – Olof \"skötkonung\"" .
+    schema:name "Olof \"skötkonung\"" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#uppgiftstyper> a skos:ConceptScheme ;
     skos:prefLabel "Typer av kontrollerade uppgifter"@sv ;
@@ -6199,7 +6238,7 @@ nh:nh-p0044 a crm:E4_Period,
 
 <https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Sveriges riksdag – Regeringsformen 50 år" ;
+    schema:name "Regeringsformen 50 år" ;
     schema:publisher wd:Q272930 .
 
 <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet> a schema:Article ;
@@ -6208,7 +6247,7 @@ nh:nh-p0044 a crm:E4_Period,
             schema:propertyID wd:P4854 ;
             schema:value "FinlandsHistoria1800Talet" ] ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: Finlands historia – 1800-talet" .
+    schema:name "Finlands historia – 1800-talet" .
 
 <https://lex.dk/Danmarks_historie_i_vikingetiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6216,7 +6255,7 @@ nh:nh-p0044 a crm:E4_Period,
             schema:propertyID wd:P8313 ;
             schema:value "Danmarks_historie_i_vikingetiden" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Danmarks historie i vikingetiden" .
+    schema:name "Danmarks historie i vikingetiden" .
 
 <https://lex.dk/mesolitikum> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6224,8 +6263,7 @@ nh:nh-p0044 a crm:E4_Period,
             schema:propertyID wd:P8313 ;
             schema:value "mesolitikum" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: mesolitikum",
-        "Lex: mesolitikum; Nationalmuseet: The Mesolithic period" .
+    schema:name "mesolitikum" .
 
 <https://lex.dk/romersk_jernalder> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6233,7 +6271,7 @@ nh:nh-p0044 a crm:E4_Period,
             schema:propertyID wd:P8313 ;
             schema:value "romersk_jernalder" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: romersk jernalder" .
+    schema:name "romersk jernalder" .
 
 nh:nh-p0003 a crm:E4_Period,
         skos:Concept ;
@@ -6505,7 +6543,7 @@ wd:Q3503516 a schema:CreativeWork ;
 
 <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Nationalmuseet: The Neolithic period" ;
+    schema:name "The Neolithic period" ;
     schema:publisher wd:Q648166 .
 
 <https://lex.dk/Danmark-Norge> a schema:Article ;
@@ -6514,7 +6552,7 @@ wd:Q3503516 a schema:CreativeWork ;
             schema:propertyID wd:P8313 ;
             schema:value "Danmark-Norge" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Danmark-Norge" .
+    schema:name "Danmark-Norge" .
 
 <https://lex.dk/Danmarks_forfatning> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6522,8 +6560,7 @@ wd:Q3503516 a schema:CreativeWork ;
             schema:propertyID wd:P8313 ;
             schema:value "Danmarks_forfatning" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Danmarks forfatning",
-        "Lex: Danmarks forfatning / periodintroduktioner" .
+    schema:name "Danmarks forfatning" .
 
 <https://snl.no/jernalderen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6531,7 +6568,7 @@ wd:Q3503516 a schema:CreativeWork ;
             schema:propertyID wd:P4342 ;
             schema:value "jernalderen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: jernalderen" .
+    schema:name "jernalderen" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-handelse> a skos:Concept ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#uppgiftstyper> ;
@@ -6869,7 +6906,7 @@ nh:nh-p0067 a crm:E4_Period,
             schema:propertyID wd:P8313 ;
             schema:value "Kalmarunionen" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Kalmarunionen" .
+    schema:name "Kalmarunionen" .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6877,7 +6914,7 @@ nh:nh-p0067 a crm:E4_Period,
             schema:propertyID wd:P3222 ;
             schema:value "stormaktstiden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Stormaktstiden – Nationalencyklopedin" .
+    schema:name "Stormaktstiden" .
 
 <https://snl.no/Magnus_7._Eriksson> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6885,7 +6922,7 @@ nh:nh-p0067 a crm:E4_Period,
             schema:propertyID wd:P4342 ;
             schema:value "Magnus_7._Eriksson" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Magnus 7. Eriksson" .
+    schema:name "Magnus 7. Eriksson" .
 
 <https://snl.no/Unionsoppløsningen_i_1905> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6893,7 +6930,7 @@ nh:nh-p0067 a crm:E4_Period,
             schema:propertyID wd:P4342 ;
             schema:value "Unionsoppløsningen_i_1905" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Unionsoppløsningen i 1905 – Store norske leksikon" .
+    schema:name "Unionsoppløsningen i 1905" .
 
 nh:nh-p0015 a crm:E4_Period,
         skos:Concept ;
@@ -7071,7 +7108,7 @@ nh:nh-p0069 a crm:E4_Period,
             schema:propertyID wd:P4342 ;
             schema:value "steinalderen_i_Norge" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: steinalderen i Norge" .
+    schema:name "steinalderen i Norge" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-ne> a skos:ConceptScheme ;
     dcterms:source wd:Q1165538 ;
@@ -7269,7 +7306,7 @@ nh:nh-p0064 a crm:E4_Period,
 
 <https://historiska.se/utforska-historien/tidsaldrar/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Statens historiska museer – Tidsåldrar" ;
+    schema:name "Tidsåldrar" ;
     schema:publisher wd:Q1726607 .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> a schema:Dataset ;
@@ -7313,7 +7350,7 @@ nh:nh-p0036 a crm:E4_Period,
 <https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: Finlands historia efter 1917" .
+    schema:name "Finlands historia efter 1917" .
 
 nh:nh-p0063 a crm:E4_Period,
         skos:Concept ;
@@ -7376,7 +7413,7 @@ wd:Q379406 a schema:CreativeWork ;
             schema:propertyID wd:P4342 ;
             schema:value "Finlands_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Finlands historie" .
+    schema:name "Finlands historie" .
 
 <https://snl.no/Islands_historie> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -7384,7 +7421,7 @@ wd:Q379406 a schema:CreativeWork ;
             schema:propertyID wd:P4342 ;
             schema:value "Islands_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Islands historie (Store norske leksikon)" .
+    schema:name "Islands historie" .
 
 <https://lex.dk/Danmarks_historie_i_middelalderen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -7392,7 +7429,7 @@ wd:Q379406 a schema:CreativeWork ;
             schema:propertyID wd:P8313 ;
             schema:value "Danmarks_historie_i_middelalderen" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Danmarks historie i middelalderen" .
+    schema:name "Danmarks historie i middelalderen" .
 
 <https://snl.no/Norges_historie> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -7400,7 +7437,7 @@ wd:Q379406 a schema:CreativeWork ;
             schema:propertyID wd:P4342 ;
             schema:value "Norges_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Norges historie" .
+    schema:name "Norges historie" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-riksarkivet-2026-10-18> a prov:Activity ;
     prov:startedAtTime "2026-10-18"^^xsd:date ;
@@ -7418,7 +7455,7 @@ wd:Q1165538 a schema:CreativeWork ;
             schema:propertyID wd:P8313 ;
             schema:value "Islands_historie" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Islands historie (lex.dk, Den Store Danske)" .
+    schema:name "Islands historie" .
 
 kallor:sdhk a schema:Dataset ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#register> ;
@@ -7445,7 +7482,7 @@ kallor:sdhk a schema:Dataset ;
             schema:propertyID wd:P4854 ;
             schema:value "FiFoerHistoria" ] ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: förhistoria" .
+    schema:name "förhistoria" .
 
 wd:Q189 schema:name "Island" .
 

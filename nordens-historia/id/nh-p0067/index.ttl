@@ -114,7 +114,7 @@ nh:nh-c0165 a schema:Claim ;
             schema:propertyID wd:P3222 ;
             schema:value "westfaliska-freden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Westfaliska freden – Nationalencyklopedin" .
+    schema:name "Westfaliska freden" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> a schema:Article ;
     dcterms:identifier "SBL 12357" ;
@@ -123,7 +123,7 @@ nh:nh-c0165 a schema:Claim ;
             schema:propertyID wd:P3217 ;
             schema:value "12357" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Karl XII" .
+    schema:name "Karl XII" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> a schema:Article ;
     dcterms:identifier "SBL 13316" ;
@@ -132,7 +132,7 @@ nh:nh-c0165 a schema:Claim ;
             schema:propertyID wd:P3217 ;
             schema:value "13316" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Gustav II Adolf" .
+    schema:name "Gustav II Adolf" .
 
 nh:nh-c0164 a schema:Claim ;
     dcterms:identifier "GE35",
@@ -173,5 +173,5 @@ nh:nh-p0067 a crm:E4_Period,
             schema:propertyID wd:P3222 ;
             schema:value "stormaktstiden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Stormaktstiden – Nationalencyklopedin" .
+    schema:name "Stormaktstiden" .
 

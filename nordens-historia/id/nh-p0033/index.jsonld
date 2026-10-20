@@ -203,7 +203,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/",
-    "name": "Sveriges riksdag – Regeringsformen 50 år",
+    "name": "Regeringsformen 50 år",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q272930"

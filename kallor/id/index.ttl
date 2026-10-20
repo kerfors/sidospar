@@ -19,6 +19,16 @@ kallor: a schema:WebPage ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/kallor/id/#kalltyper> ;
     skos:prefLabel "Artikel i ett uppslagsverk"@sv .
 
+<https://w3id.org/people/kerfors/sidospar/kallor/id/#periodikum> a skos:Concept ;
+    skos:exactMatch wd:Q1002697 ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/kallor/id/#kalltyper> ;
+    skos:prefLabel "Tidskrift eller tidning"@sv .
+
+<https://w3id.org/people/kerfors/sidospar/kallor/id/#periodikumartikel> a skos:Concept ;
+    skos:exactMatch wd:Q191067 ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/kallor/id/#kalltyper> ;
+    skos:prefLabel "Artikel i en tidskrift eller tidning"@sv .
+
 <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> a skos:Concept ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/kallor/id/#kalltyper> ;
     skos:prefLabel "Post i ett register"@sv .

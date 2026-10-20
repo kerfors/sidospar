@@ -34,7 +34,7 @@ nh:nh-c0186 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Københavns_Universitet" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "lex.dk: Københavns Universitet" .
+    schema:name "Københavns Universitet" .
 
 nh:nh-m0005 a crm:E5_Event,
         schema:Event ;

@@ -27,7 +27,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Knud_den_Store" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Knud den Store" .
+    schema:name "Knud den Store" .
 
 nh:nh-c0025 a schema:Claim ;
     dcterms:identifier "DA09",

@@ -103,7 +103,7 @@ nh:nh-c0059 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Håkon_4._Håkonsson" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Håkon 4. Håkonsson" .
+    schema:name "Håkon 4. Håkonsson" .
 
 <https://snl.no/Magnus_Lagab%C3%B8ters_landslov> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -111,7 +111,7 @@ nh:nh-c0059 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Magnus_Lagabøters_landslov" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Magnus Lagabøters landslov" .
+    schema:name "Magnus Lagabøters landslov" .
 
 <https://snl.no/Norge_i_h%C3%B8ymiddelalderen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -119,7 +119,7 @@ nh:nh-c0059 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Norge_i_høymiddelalderen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Norge i høymiddelalderen" .
+    schema:name "Norge i høymiddelalderen" .
 
 <https://snl.no/Norges_historie> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -127,7 +127,7 @@ nh:nh-c0059 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Norges_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Norges historie" .
+    schema:name "Norges historie" .
 
 nh:nh-p0024 a crm:E4_Period,
         skos:Concept ;

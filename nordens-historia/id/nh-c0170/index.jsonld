@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden",
-    "name": "Gustavianska tiden – Nationalencyklopedin",
+    "name": "Gustavianska tiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"

@@ -101,11 +101,11 @@ nh:nh-c0075 a schema:Claim ;
             schema:propertyID wd:P3222 ;
             schema:value "birka" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – Birka" .
+    schema:name "Birka" .
 
 <https://historiska.se/utforska-historien/tidsaldrar/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Statens historiska museer – Tidsåldrar" ;
+    schema:name "Tidsåldrar" ;
     schema:publisher wd:Q1726607 .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> a schema:Article ;
@@ -115,8 +115,7 @@ nh:nh-c0075 a schema:Claim ;
             schema:propertyID wd:P3217 ;
             schema:value "7749" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Olof \"skötkonung\"",
-        "Svenskt biografiskt lexikon – Olof \"skötkonung\"" .
+    schema:name "Olof \"skötkonung\"" .
 
 nh:nh-p0030 a crm:E4_Period,
         skos:Concept ;

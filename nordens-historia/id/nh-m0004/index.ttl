@@ -43,7 +43,7 @@
             schema:propertyID kallor:sdhk ;
             schema:value "30221" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom" .
+    schema:name "påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=30290> a schema:CreativeWork ;
     dcterms:identifier "SDHK 30290" ;
@@ -52,7 +52,7 @@
             schema:propertyID kallor:sdhk ;
             schema:value "30290" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala" .
+    schema:name "ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala" .
 
 nh:nh-c0185 a schema:Claim ;
     dcterms:identifier "MI04",
@@ -74,6 +74,6 @@ nh:nh-m0004 a crm:E5_Event,
 
 <https://www.uu.se/550/tidigare-jubileer-och-kort-historik> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Uppsala universitet: Kort historik och tidigare jubileer" ;
+    schema:name "Kort historik och tidigare jubileer" ;
     schema:publisher wd:Q185246 .
 

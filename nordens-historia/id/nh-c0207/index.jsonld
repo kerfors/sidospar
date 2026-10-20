@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.sverigesradio.se/artikel/5667619",
-    "name": "Sveriges Radio",
+    "name": "Artikel hos Sveriges Radio",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1543058"

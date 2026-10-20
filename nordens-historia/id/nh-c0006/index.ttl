@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "islendingesaga" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Islendingesaga (Store norske leksikon)" .
+    schema:name "Islendingesaga" .
 
 nh:nh-c0006 a schema:Claim ;
     dcterms:identifier "IS06",

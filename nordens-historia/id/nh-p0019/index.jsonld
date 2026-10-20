@@ -205,7 +205,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/steinalderen_i_Norge",
-    "name": "Store norske leksikon: steinalderen i Norge",
+    "name": "steinalderen i Norge",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -245,14 +245,26 @@
    "reviewBody": "Fosnakulturen var en kustbunden fångstkultur i äldre stenålder från Rogaland till Nordland, Komsakulturen motsvarande i Finnmark med boplatser på ytterkusten.",
    "datePublished": "2026-10-18",
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
-   "citation": {
-    "@id": "https://snl.no/Fosnakulturen",
-    "name": "Store norske leksikon: Fosnakulturen; Komsakulturen",
-    "@type": "Article",
-    "dcterms:type": "kallor:#artikel",
-    "isPartOf": "wd:Q746368"
-   },
-   "prov:wasDerivedFrom": "https://snl.no/Fosnakulturen"
+   "citation": [
+    {
+     "@id": "https://snl.no/Fosnakulturen",
+     "name": "Fosnakulturen",
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q746368"
+    },
+    {
+     "@id": "https://snl.no/Komsakulturen",
+     "name": "Komsakulturen",
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q746368"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://snl.no/Fosnakulturen",
+    "https://snl.no/Komsakulturen"
+   ]
   },
   {
    "@id": "https://snl.no/steinalderen_i_Norge",
@@ -268,6 +280,14 @@
     "@type": "PropertyValue",
     "propertyID": "wd:P4342",
     "value": "Fosnakulturen"
+   }
+  },
+  {
+   "@id": "https://snl.no/Komsakulturen",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "Komsakulturen"
    }
   }
  ]

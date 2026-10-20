@@ -42,7 +42,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Sjlisselburg" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Sjlisselburg" .
+    schema:name "Sjlisselburg" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=3228> a schema:CreativeWork ;
     dcterms:identifier "SDHK 3228" ;
@@ -51,7 +51,7 @@
             schema:propertyID kallor:sdhk ;
             schema:value "3228" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus" .
+    schema:name "storfursten Jurij Danielowitsch sluter fred med kung Magnus" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=39886> a schema:CreativeWork ;
     dcterms:identifier "SDHK 39886" ;
@@ -60,7 +60,7 @@
             schema:propertyID kallor:sdhk ;
             schema:value "39886" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 39886: samma fred, i en annan medeltida avskrift" .
+    schema:name "samma fred, i en annan medeltida avskrift" .
 
 nh:nh-c0144 a schema:Claim ;
     dcterms:identifier "GE15",

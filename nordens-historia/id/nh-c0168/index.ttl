@@ -28,6 +28,6 @@ nh:nh-c0168 a schema:Claim ;
 
 <https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Besluten som förändrade Sverige – Sveriges riksdag" ;
+    schema:name "Besluten som förändrade Sverige" ;
     schema:publisher wd:Q272930 .
 

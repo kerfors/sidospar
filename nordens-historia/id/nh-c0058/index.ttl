@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Norge_i_høymiddelalderen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Norge i høymiddelalderen" .
+    schema:name "Norge i høymiddelalderen" .
 
 nh:nh-c0058 a schema:Claim ;
     dcterms:identifier "NO16",

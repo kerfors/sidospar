@@ -33,5 +33,5 @@ nh:nh-c0083 a schema:Claim ;
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – Sverige, historia: Demokratins genombrott" .
+    schema:name "Sverige, historia: Demokratins genombrott" .
 

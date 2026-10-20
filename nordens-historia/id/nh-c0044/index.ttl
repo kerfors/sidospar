@@ -6,9 +6,11 @@
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0044#granskning> a prov:Entity,
         schema:ClaimReview ;
-    prov:wasDerivedFrom <https://snl.no/Fosnakulturen> ;
+    prov:wasDerivedFrom <https://snl.no/Fosnakulturen>,
+        <https://snl.no/Komsakulturen> ;
     prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://snl.no/Fosnakulturen> ;
+    schema:citation <https://snl.no/Fosnakulturen>,
+        <https://snl.no/Komsakulturen> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0044 ;
     schema:reviewBody "Fosnakulturen var en kustbunden fångstkultur i äldre stenålder från Rogaland till Nordland, Komsakulturen motsvarande i Finnmark med boplatser på ytterkusten." ;
@@ -25,7 +27,15 @@
             schema:propertyID wd:P4342 ;
             schema:value "Fosnakulturen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Fosnakulturen; Komsakulturen" .
+    schema:name "Fosnakulturen" .
+
+<https://snl.no/Komsakulturen> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Komsakulturen" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Komsakulturen" .
 
 nh:nh-c0044 a schema:Claim ;
     dcterms:identifier "NO02",

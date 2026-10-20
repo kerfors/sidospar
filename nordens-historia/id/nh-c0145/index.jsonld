@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Magnus_7._Eriksson",
-    "name": "Store norske leksikon: Magnus 7. Eriksson",
+    "name": "Magnus 7. Eriksson",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"

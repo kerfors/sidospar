@@ -105,7 +105,7 @@ nh:nh-c0006 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "islendingesaga" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Islendingesaga (Store norske leksikon)" .
+    schema:name "Islendingesaga" .
 
 <https://lex.dk/Islands_historie> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -113,7 +113,7 @@ nh:nh-c0006 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Islands_historie" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Islands historie (lex.dk, Den Store Danske)" .
+    schema:name "Islands historie" .
 
 <https://snl.no/Islands_historie> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -121,7 +121,7 @@ nh:nh-c0006 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Islands_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Islands historie (Store norske leksikon)" .
+    schema:name "Islands historie" .
 
 nh:nh-p0002 a crm:E4_Period,
         skos:Concept ;

@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Norges_historie" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Norges historie" .
+    schema:name "Norges historie" .
 
 nh:nh-c0050 a schema:Claim ;
     dcterms:identifier "NO08",

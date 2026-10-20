@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879",
-    "name": "Alþingi í Lærða skólanum 1845–1879 (althingi.is)",
+    "name": "Alþingi í Lærða skólanum 1845–1879",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q131279"

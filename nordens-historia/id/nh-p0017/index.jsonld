@@ -206,7 +206,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973",
-    "name": "Lex: Introduktion til efterkrigstiden, 1945-1973",
+    "name": "Introduktion til efterkrigstiden, 1945-1973",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"

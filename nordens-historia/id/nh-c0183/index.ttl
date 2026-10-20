@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Jellingstenene" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "lex.dk: Jellingstenene" .
+    schema:name "Jellingstenene" .
 
 nh:nh-c0183 a schema:Claim ;
     dcterms:identifier "MI02",

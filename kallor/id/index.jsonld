@@ -86,6 +86,24 @@
    "skos:inScheme": "kallor:#kalltyper"
   },
   {
+   "@id": "kallor:#periodikum",
+   "@type": "skos:Concept",
+   "skos:prefLabel": {
+    "sv": "Tidskrift eller tidning"
+   },
+   "skos:inScheme": "kallor:#kalltyper",
+   "skos:exactMatch": "wd:Q1002697"
+  },
+  {
+   "@id": "kallor:#periodikumartikel",
+   "@type": "skos:Concept",
+   "skos:prefLabel": {
+    "sv": "Artikel i en tidskrift eller tidning"
+   },
+   "skos:inScheme": "kallor:#kalltyper",
+   "skos:exactMatch": "wd:Q191067"
+  },
+  {
    "@id": "kallor:#webbsida",
    "@type": "skos:Concept",
    "skos:prefLabel": {

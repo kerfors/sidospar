@@ -71,7 +71,7 @@ nh:nh-c0039 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Sønderjylland" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Sønderjylland" .
+    schema:name "Sønderjylland" .
 
 <https://lex.dk/Danmarks_forfatning> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -79,7 +79,7 @@ nh:nh-c0039 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Danmarks_forfatning" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Danmarks forfatning / periodintroduktioner" .
+    schema:name "Danmarks forfatning" .
 
 nh:nh-p0016 a crm:E4_Period,
         skos:Concept ;

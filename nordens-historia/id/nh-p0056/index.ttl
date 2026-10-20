@@ -63,7 +63,10 @@ nh:nh-c0134 a schema:Claim ;
     schema:about nh:nh-p0056 ;
     schema:text "Hjortspringbåten" .
 
-<https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/> schema:name "Videnskab.dk: Mystiske krigere angreb dansk ø for 2.300 år siden" .
+<https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#periodikumartikel> ;
+    schema:isPartOf wd:Q12340941 ;
+    schema:name "Mystiske krigere angreb dansk ø for 2.300 år siden" .
 
 <https://snl.no/jernalderen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -71,7 +74,7 @@ nh:nh-c0134 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "jernalderen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: jernalderen" .
+    schema:name "jernalderen" .
 
 nh:nh-p0056 a crm:E4_Period,
         skos:Concept ;

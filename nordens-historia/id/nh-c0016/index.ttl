@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Islands_historie" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Islands historie (lex.dk, Den Store Danske)" .
+    schema:name "Islands historie" .
 
 nh:nh-c0016 a schema:Claim ;
     dcterms:identifier "IS16",

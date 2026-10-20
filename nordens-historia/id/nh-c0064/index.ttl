@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "stemmerett_for_kvinner_i_Norge" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: stemmerett for kvinner i Norge" .
+    schema:name "stemmerett for kvinner i Norge" .
 
 nh:nh-c0064 a schema:Claim ;
     dcterms:identifier "NO22",

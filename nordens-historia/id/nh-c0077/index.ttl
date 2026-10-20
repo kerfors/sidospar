@@ -32,5 +32,5 @@ nh:nh-c0077 a schema:Claim ;
             schema:propertyID wd:P3222 ;
             schema:value "sverkerska-ätten" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – sverkerska ätten" .
+    schema:name "sverkerska ätten" .
 

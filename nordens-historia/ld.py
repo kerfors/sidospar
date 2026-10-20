@@ -1,7 +1,7 @@
 """Linked data for Nordens historia.
 
 Reads data/items.json, data/claims.json, data/wikidata.json, data/definitions.json,
-data/riksarkivet.json and data/sources.json and writes
+data/riksarkivet.json, data/sources.json and data/source_titles.json and writes
   id/index.html, id/index.jsonld, id/index.ttl   register of all identifiers
   id/<nh-id>/index.html, index.jsonld, index.ttl one page per period, event,
                                                  milestone and claim
@@ -14,6 +14,8 @@ from the address (Wikidata's URL match pattern, P8966, for the work's property;
 www. counts as the same site, and the pattern must cover the whole address).
 The file is this project's own and the folder builds on its own; the IRIs are
 shared: Wikidata's, or kallor/id/ for SDHK and the source types.
+data/source_titles.json gives each source its own title (schema:name), one per
+address; the build fails if a cited address has none.
 
 URI pattern (minted under w3id.org, hosted on GitHub Pages):
   thing     https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0015
@@ -132,6 +134,12 @@ def load_sources():
 
 
 SOURCES = load_sources()
+SOURCE_TITLES = json.loads((HERE / "data" / "source_titles.json").read_text(encoding="utf-8"))["titles"]
+
+
+def source_title(url):
+    """The source's own title (the article or page), one per address; the work is given by isPartOf."""
+    return SOURCE_TITLES[url]
 
 
 def source_work(url):
@@ -173,6 +181,15 @@ def source_publisher(url):
         if any(host == h or host.endswith("." + h) for h in o["hosts"]):
             return o
     return None
+
+
+def source_name(url):
+    """The work a source is part of, or the publisher of its site, by name; the site if neither is known."""
+    w = source_work(url)
+    if w:
+        return w["name"]
+    o = source_publisher(url)
+    return o["name"] if o else url.split("/")[2].removeprefix("www.")
 
 
 def article_id_nodes(nodes):
@@ -383,7 +400,7 @@ def ra_citation(x):
     w = source_work(x["url"])
     if not w or w["register"] != x["register"]:
         raise ValueError(f"record {x['url']} is not in work {x['register']} according to data/sources.json")
-    return {"@id": x["url"], "name": x["title"], **source_desc(x["url"]),
+    return {"@id": x["url"], "name": source_title(x["url"]), **source_desc(x["url"]),
             "dcterms:identifier": x["register"] + " " + x["id"],
             "identifier": {"@type": "PropertyValue", "propertyID": w["id_property"], "value": x["id"]}}
 
@@ -426,8 +443,10 @@ def claim_nodes(c, ra):
         "prov:wasGeneratedBy": "nh:#kontroll-" + CHECK_DATE,
     }
     if c["source_url"]:
-        review["citation"] = {"@id": c["source_url"], "name": c["source_title"], **source_desc(c["source_url"])}
-        review["prov:wasDerivedFrom"] = c["source_url"]
+        urls = [c["source_url"]] + c["also_sources"]
+        cites = [{"@id": u, "name": source_title(u), **source_desc(u)} for u in urls]
+        review["citation"] = cites if len(cites) > 1 else cites[0]
+        review["prov:wasDerivedFrom"] = urls if len(urls) > 1 else urls[0]
     if c["correct_value"]:
         review["schema:correction"] = c["correct_value"]
     if c["action"]:
@@ -728,9 +747,13 @@ schema för den källan (Store norske leksikon, Lex, Uppslagsverket Finland, NE 
 (<code>prov:wasDerivedFrom</code>) från källkontrollens granskning. Ungefärliga årtal är markerade, och källans
 formulering finns i <code>skos:scopeNote</code>. Schemat pekar på verket med <code>dcterms:source</code>.</li>
 <li><strong>Källorna</strong>: varje källa i en granskning (<code>schema:citation</code>) säger vad den är
-(<code>dcterms:type</code>: artikel i ett uppslagsverk, post i ett register eller webbsida) och vilket verk den ingår i
-(<code>schema:isPartOf</code>). Verken och deras utgivare (<code>schema:publisher</code>) har Wikidatas identifierare:
-Store norske leksikon, Lex, Uppslagsverket Finland, Nationalencyklopedin och Svenskt biografiskt lexikon. En artikel har
+(<code>dcterms:type</code>: artikel i ett uppslagsverk, artikel i en tidskrift eller tidning, post i ett register eller
+webbsida) och vilket verk den ingår i
+(<code>schema:isPartOf</code>), med sin egen titel i <code>schema:name</code>. Verken och utgivarna
+(<code>schema:publisher</code>) har Wikidatas identifierare: uppslagsverken (Store norske leksikon, Lex, Uppslagsverket
+Finland, Nationalencyklopedin, Svenskt biografiskt lexikon med flera), två tidskrifter, och de museer, myndigheter och
+andra organisationer vars webbsidor är källor. Utgivaren av en webbplats är den post i Wikidata vars officiella
+webbplats den är. En artikel har
 sitt nummer i verket (<code>schema:identifier</code>) med den egenskap Wikidata använder för verket, till exempel
 <code>wd:P4342</code> för Store norske leksikon, så att samma artikel går att hitta från Wikidata. Registret SDHK och
 typerna av källor saknas i Wikidata och har egna identifierare under

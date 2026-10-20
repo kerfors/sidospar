@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Slaget_på_Stiklestad" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Slaget på Stiklestad" .
+    schema:name "Slaget på Stiklestad" .
 
 nh:nh-c0049 a schema:Claim ;
     dcterms:identifier "NO07",

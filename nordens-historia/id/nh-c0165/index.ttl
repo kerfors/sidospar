@@ -25,7 +25,7 @@
             schema:propertyID wd:P3222 ;
             schema:value "westfaliska-freden" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Westfaliska freden – Nationalencyklopedin" .
+    schema:name "Westfaliska freden" .
 
 nh:nh-c0165 a schema:Claim ;
     dcterms:identifier "GE36",

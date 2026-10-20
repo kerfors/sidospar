@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf",
-    "name": "IVA: Svenska innovationer – Pacemakern",
+    "name": "Svenska innovationer – Pacemakern",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q3394637"

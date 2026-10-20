@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Tabet_af_Skåne_i_1658-1660" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Tabet af Skåne i 1658-1660 – lex.dk" .
+    schema:name "Tabet af Skåne i 1658-1660" .
 
 nh:nh-c0178 a schema:Claim ;
     dcterms:identifier "GE49",

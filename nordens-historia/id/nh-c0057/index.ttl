@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Håkon_4._Håkonsson" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Håkon 4. Håkonsson" .
+    schema:name "Håkon 4. Håkonsson" .
 
 nh:nh-c0057 a schema:Claim ;
     dcterms:identifier "NO15",

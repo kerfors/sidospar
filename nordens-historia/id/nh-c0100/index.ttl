@@ -32,5 +32,5 @@ nh:nh-c0100 a schema:Claim ;
             schema:propertyID wd:P4854 ;
             schema:value "FinlandsHistoriaMedeltiden" ] ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: Finlands historia – medeltiden" .
+    schema:name "Finlands historia – medeltiden" .
 

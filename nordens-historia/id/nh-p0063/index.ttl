@@ -104,7 +104,7 @@ nh:nh-c0152 a schema:Claim ;
             schema:propertyID wd:P3217 ;
             schema:value "15392" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Erik av Pommern" .
+    schema:name "Erik av Pommern" .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097> a schema:Article ;
     dcterms:identifier "SBL 9097" ;
@@ -113,7 +113,7 @@ nh:nh-c0152 a schema:Claim ;
             schema:propertyID wd:P3217 ;
             schema:value "9097" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Margareta" .
+    schema:name "Margareta" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=14836> a schema:CreativeWork ;
     dcterms:identifier "SDHK 14836" ;
@@ -122,7 +122,7 @@ nh:nh-c0152 a schema:Claim ;
             schema:propertyID kallor:sdhk ;
             schema:value "14836" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 14836: kung Eriks kröningsbrev, Kalmar" .
+    schema:name "kung Eriks kröningsbrev, Kalmar" .
 
 <https://sok.riksarkivet.se/sdhk?SDHK=14837> a schema:CreativeWork ;
     dcterms:identifier "SDHK 14837" ;
@@ -131,7 +131,7 @@ nh:nh-c0152 a schema:Claim ;
             schema:propertyID kallor:sdhk ;
             schema:value "14837" ] ;
     schema:isPartOf kallor:sdhk ;
-    schema:name "SDHK nr 14837: Kalmardokumentet: de tre rikenas råd om en kung, Kalmar" .
+    schema:name "Kalmardokumentet: de tre rikenas råd om en kung, Kalmar" .
 
 nh:nh-c0151 a schema:Claim ;
     dcterms:identifier "GE22",
@@ -174,5 +174,5 @@ nh:nh-p0063 a crm:E4_Period,
             schema:propertyID wd:P8313 ;
             schema:value "Kalmarunionen" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: Kalmarunionen" .
+    schema:name "Kalmarunionen" .
 

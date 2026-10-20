@@ -81,12 +81,12 @@ nh:nh-c0070 a schema:Claim ;
 
 <https://historiska.se/utforska-historien/tidsaldrar/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Statens historiska museer – Tidsåldrar" ;
+    schema:name "Tidsåldrar" ;
     schema:publisher wd:Q1726607 .
 
 <https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Statens historiska museer – Mesolitikum" ;
+    schema:name "Mesolitikum" ;
     schema:publisher wd:Q1726607 .
 
 nh:nh-p0028 a crm:E4_Period,

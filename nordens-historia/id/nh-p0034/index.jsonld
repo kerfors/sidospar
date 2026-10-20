@@ -210,7 +210,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott",
-    "name": "Nationalencyklopedin – Sverige, historia: Demokratins genombrott",
+    "name": "Sverige, historia: Demokratins genombrott",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -253,7 +253,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/",
-    "name": "Sveriges riksdag – Kampen om rösträtten",
+    "name": "Kampen om rösträtten",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q272930"

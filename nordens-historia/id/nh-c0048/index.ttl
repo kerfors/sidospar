@@ -27,7 +27,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "slaget_i_Hafrsfjord" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: slaget i Hafrsfjord" .
+    schema:name "slaget i Hafrsfjord" .
 
 nh:nh-c0048 a schema:Claim ;
     dcterms:identifier "NO06",

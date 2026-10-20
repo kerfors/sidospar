@@ -9,9 +9,11 @@
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0180#granskning> a prov:Entity,
         schema:ClaimReview ;
-    prov:wasDerivedFrom <https://lex.dk/5._maj_1945> ;
+    prov:wasDerivedFrom <https://lex.dk/5._maj_1945>,
+        <https://snl.no/Samene_under_andre_verdenskrig> ;
     prov:wasGeneratedBy <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18> ;
-    schema:citation <https://lex.dk/5._maj_1945> ;
+    schema:citation <https://lex.dk/5._maj_1945>,
+        <https://snl.no/Samene_under_andre_verdenskrig> ;
     schema:datePublished "2026-10-18" ;
     schema:itemReviewed nh:nh-c0180 ;
     schema:reviewBody "Danmark var ockuperat 9 april 1940–5 maj 1945; SNL anger att Norge angreps 9 april 1940 och befriades 1945." ;
@@ -35,7 +37,15 @@ nh:nh-c0180 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "5._maj_1945" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "5. maj 1945 – lex.dk; Samene under andre verdenskrig – SNL" .
+    schema:name "5. maj 1945" .
+
+<https://snl.no/Samene_under_andre_verdenskrig> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P4342 ;
+            schema:value "Samene_under_andre_verdenskrig" ] ;
+    schema:isPartOf wd:Q746368 ;
+    schema:name "Samene under andre verdenskrig" .
 
 nh:nh-e0005 a crm:E5_Event,
         schema:Event ;

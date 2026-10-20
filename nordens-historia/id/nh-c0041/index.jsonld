@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/det_danske_EU-medlemskab",
-    "name": "Lex: det danske EU-medlemskab",
+    "name": "det danske EU-medlemskab",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"

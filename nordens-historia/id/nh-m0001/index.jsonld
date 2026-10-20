@@ -169,7 +169,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Alltinget",
-    "name": "Store norske leksikon: Alltinget",
+    "name": "Alltinget",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"

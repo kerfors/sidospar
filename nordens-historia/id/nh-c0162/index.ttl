@@ -28,6 +28,6 @@ nh:nh-c0162 a schema:Claim ;
 
 <https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Bekännelseskrifter – Svenska kyrkan" ;
+    schema:name "Bekännelseskrifter" ;
     schema:publisher wd:Q749243 .
 

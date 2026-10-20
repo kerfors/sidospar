@@ -23,7 +23,7 @@
 
 <https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Tetra Pak: Heritage" ;
+    schema:name "Heritage" ;
     schema:publisher wd:Q659200 .
 
 nh:nh-c0201 a schema:Claim ;

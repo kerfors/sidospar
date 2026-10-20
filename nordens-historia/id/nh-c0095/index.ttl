@@ -22,7 +22,7 @@
 <https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q328 ;
-    schema:name "Wikipedia (en): Sammallahdenmäki" .
+    schema:name "Sammallahdenmäki" .
 
 nh:nh-c0095 a schema:Claim ;
     dcterms:identifier "FI07",

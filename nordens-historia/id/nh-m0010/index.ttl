@@ -30,7 +30,7 @@ nh:nh-c0191 a schema:Claim ;
 
 <https://riksarkivet.se/resurser/tryckfrihetsforordningen-1766> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Riksarkivet: Tryckfrihetsförordningen 1766" ;
+    schema:name "Tryckfrihetsförordningen 1766" ;
     schema:publisher wd:Q1724971 .
 
 nh:nh-m0010 a crm:E5_Event,

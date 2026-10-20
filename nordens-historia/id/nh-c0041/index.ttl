@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "det_danske_EU-medlemskab" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: det danske EU-medlemskab" .
+    schema:name "det danske EU-medlemskab" .
 
 nh:nh-c0041 a schema:Claim ;
     dcterms:identifier "DA25",

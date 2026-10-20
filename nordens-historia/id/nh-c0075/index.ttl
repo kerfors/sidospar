@@ -45,6 +45,5 @@ nh:nh-c0075 a schema:Claim ;
             schema:propertyID wd:P3217 ;
             schema:value "7749" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Olof \"skötkonung\"",
-        "Svenskt biografiskt lexikon – Olof \"skötkonung\"" .
+    schema:name "Olof \"skötkonung\"" .
 

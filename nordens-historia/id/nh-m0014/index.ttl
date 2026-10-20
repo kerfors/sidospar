@@ -34,7 +34,7 @@ nh:nh-c0195 a schema:Claim ;
             schema:propertyID wd:P4342 ;
             schema:value "Fridtjof_Nansen" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Fridtjof Nansen" .
+    schema:name "Fridtjof Nansen" .
 
 nh:nh-m0014 a crm:E5_Event,
         schema:Event ;

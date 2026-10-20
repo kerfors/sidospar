@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "tragtbægerkulturen" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: tragtbægerkulturen" .
+    schema:name "tragtbægerkulturen" .
 
 nh:nh-c0020 a schema:Claim ;
     dcterms:identifier "DA04",

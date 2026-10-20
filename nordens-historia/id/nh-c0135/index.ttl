@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "romersk_jernalder" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex.dk: romersk jernalder" .
+    schema:name "romersk jernalder" .
 
 nh:nh-c0135 a schema:Claim ;
     dcterms:identifier "GE06",

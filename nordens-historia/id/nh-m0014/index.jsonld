@@ -169,7 +169,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Fridtjof_Nansen",
-    "name": "Store norske leksikon: Fridtjof Nansen",
+    "name": "Fridtjof Nansen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"

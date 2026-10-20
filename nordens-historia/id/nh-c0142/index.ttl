@@ -28,6 +28,6 @@ nh:nh-c0142 a schema:Claim ;
 
 <https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Uppsala universitet/Gustavianum: Valsgärde" ;
+    schema:name "Valsgärde" ;
     schema:publisher wd:Q185246 .
 

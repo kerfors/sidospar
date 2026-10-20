@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Haakon_7." ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Haakon 7." .
+    schema:name "Haakon 7." .
 
 nh:nh-c0063 a schema:Claim ;
     dcterms:identifier "NO21",

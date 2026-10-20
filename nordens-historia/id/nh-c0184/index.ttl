@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Snorre_Sturlason" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Snorre Sturlason" .
+    schema:name "Snorre Sturlason" .
 
 nh:nh-c0184 a schema:Claim ;
     dcterms:identifier "MI03",

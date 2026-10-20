@@ -451,6 +451,18 @@
    "publisher": "wd:Q180"
   },
   {
+   "@id": "wd:Q1350069",
+   "@type": "Periodical",
+   "dcterms:type": "kallor:#periodikum",
+   "name": "Läkartidningen"
+  },
+  {
+   "@id": "wd:Q12340941",
+   "@type": "Periodical",
+   "dcterms:type": "kallor:#periodikum",
+   "name": "Videnskab.dk"
+  },
+  {
    "@id": "wd:Q189",
    "name": "Island"
   },
@@ -5086,7 +5098,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Islands_historie",
-    "name": "Islands historie (Store norske leksikon)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -5128,7 +5140,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Ingolv_Arnesson",
-    "name": "Ingolv Arnesson (Store norske leksikon)",
+    "name": "Ingolv Arnesson",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -5166,7 +5178,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Islands_historie",
-    "name": "Islands historie (lex.dk, Den Store Danske)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -5204,7 +5216,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Islands_historie",
-    "name": "Islands historie (Store norske leksikon)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -5242,7 +5254,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Islands_historie",
-    "name": "Islands historie (Store norske leksikon)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -5284,7 +5296,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/islendingesaga",
-    "name": "Islendingesaga (Store norske leksikon)",
+    "name": "Islendingesaga",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -5322,7 +5334,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Islands_historie",
-    "name": "Islands historie (Store norske leksikon)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -5364,7 +5376,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Islands_historie",
-    "name": "Islands historie (lex.dk, Den Store Danske)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -5402,7 +5414,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Islands_historie",
-    "name": "Islands historie (lex.dk, Den Store Danske)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -5444,7 +5456,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879",
-    "name": "Alþingi í Lærða skólanum 1845–1879 (althingi.is)",
+    "name": "Alþingi í Lærða skólanum 1845–1879",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q131279"
@@ -5486,7 +5498,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/",
-    "name": "Heimastjórn 1904–1918 (stjornarradid.is)",
+    "name": "Heimastjórn 1904–1918",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q3354110"
@@ -5524,7 +5536,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Islands_historie",
-    "name": "Islands historie (lex.dk, Den Store Danske)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -5562,7 +5574,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Islands_historie",
-    "name": "Islands historie (lex.dk, Den Store Danske)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -5600,7 +5612,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Islands_historie",
-    "name": "Islands historie (lex.dk, Den Store Danske)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -5638,7 +5650,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Islands_historie",
-    "name": "Islands historie (Store norske leksikon)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -5676,7 +5688,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Islands_historie",
-    "name": "Islands historie (lex.dk, Den Store Danske)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -5712,14 +5724,26 @@
    "reviewBody": "Lex anger mesolitikum i Danmark ca 9600–4000 f.Kr., Nationalmuseet anger 12 500–3900 f.Kr.; ingen av källorna använder 10 000 f.Kr. som start.",
    "datePublished": "2026-10-18",
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
-   "citation": {
-    "@id": "https://lex.dk/mesolitikum",
-    "name": "Lex: mesolitikum; Nationalmuseet: The Mesolithic period",
-    "@type": "Article",
-    "dcterms:type": "kallor:#artikel",
-    "isPartOf": "wd:Q136450325"
-   },
-   "prov:wasDerivedFrom": "https://lex.dk/mesolitikum",
+   "citation": [
+    {
+     "@id": "https://lex.dk/mesolitikum",
+     "name": "mesolitikum",
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q136450325"
+    },
+    {
+     "@id": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/",
+     "name": "The Mesolithic period",
+     "@type": "WebPage",
+     "dcterms:type": "kallor:#webbsida",
+     "publisher": "wd:Q648166"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://lex.dk/mesolitikum",
+    "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-mesolithic-period/"
+   ],
    "schema:comment": {
     "@type": "Comment",
     "text": "Åtgärd på affischen: Behållet; affischens axel börjar 10 000 f.Kr."
@@ -5756,7 +5780,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/mesolitikum",
-    "name": "Lex: mesolitikum",
+    "name": "mesolitikum",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -5794,7 +5818,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period",
-    "name": "Nationalmuseet: The Neolithic period",
+    "name": "The Neolithic period",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q648166"
@@ -5832,7 +5856,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/tragtb%C3%A6gerkulturen",
-    "name": "Lex: tragtbægerkulturen",
+    "name": "tragtbægerkulturen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -5870,7 +5894,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period",
-    "name": "Nationalmuseet: The Neolithic period",
+    "name": "The Neolithic period",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q648166"
@@ -5908,7 +5932,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_vikingetiden",
-    "name": "Lex: Danmarks historie i vikingetiden",
+    "name": "Danmarks historie i vikingetiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -5950,7 +5974,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Hedeby",
-    "name": "Lex: Hedeby",
+    "name": "Hedeby",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -5988,7 +6012,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_vikingetiden",
-    "name": "Lex: Danmarks historie i vikingetiden",
+    "name": "Danmarks historie i vikingetiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6026,7 +6050,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Knud_den_Store",
-    "name": "Lex: Knud den Store",
+    "name": "Knud den Store",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6068,7 +6092,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_middelalderen",
-    "name": "Lex: Danmarks historie i middelalderen",
+    "name": "Danmarks historie i middelalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6110,7 +6134,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_middelalderen",
-    "name": "Lex: Danmarks historie i middelalderen",
+    "name": "Danmarks historie i middelalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6148,7 +6172,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_middelalderen",
-    "name": "Lex: Danmarks historie i middelalderen",
+    "name": "Danmarks historie i middelalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6186,7 +6210,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Absalon",
-    "name": "Lex: Absalon",
+    "name": "Absalon",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6224,7 +6248,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Jyske_Lov",
-    "name": "Lex: Jyske Lov",
+    "name": "Jyske Lov",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6265,7 +6289,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_middelalderen",
-    "name": "Lex: Danmarks historie i middelalderen",
+    "name": "Danmarks historie i middelalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6307,7 +6331,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_historie_i_middelalderen",
-    "name": "Lex: Danmarks historie i middelalderen",
+    "name": "Danmarks historie i middelalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6345,7 +6369,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Valdemar_Atterdag",
-    "name": "Lex: Valdemar Atterdag",
+    "name": "Valdemar Atterdag",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6383,7 +6407,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Enev%C3%A6ldens_faser_1660-1848",
-    "name": "Lex: Enevældens faser 1660-1848",
+    "name": "Enevældens faser 1660-1848",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6425,7 +6449,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Kielerfreden",
-    "name": "Lex: Kielerfreden",
+    "name": "Kielerfreden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6466,7 +6490,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_forfatning",
-    "name": "Lex: Danmarks forfatning / periodintroduktioner",
+    "name": "Danmarks forfatning",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6508,7 +6532,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmarks_forfatning",
-    "name": "Lex: Danmarks forfatning",
+    "name": "Danmarks forfatning",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6546,7 +6570,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Krigen_i_1864",
-    "name": "Lex: Krigen i 1864",
+    "name": "Krigen i 1864",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6588,7 +6612,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Sønderjylland",
-    "name": "Lex: Sønderjylland",
+    "name": "Sønderjylland",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6629,7 +6653,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Introduktion_til_efterkrigstiden,_1945-1973",
-    "name": "Lex: Introduktion til efterkrigstiden, 1945-1973",
+    "name": "Introduktion til efterkrigstiden, 1945-1973",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6671,7 +6695,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/det_danske_EU-medlemskab",
-    "name": "Lex: det danske EU-medlemskab",
+    "name": "det danske EU-medlemskab",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6709,7 +6733,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Gr%C3%B8nlands_Hjemmestyre",
-    "name": "Lex: Grønlands Hjemmestyre",
+    "name": "Grønlands Hjemmestyre",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -6747,7 +6771,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/steinalderen_i_Norge",
-    "name": "Store norske leksikon: steinalderen i Norge",
+    "name": "steinalderen i Norge",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -6787,14 +6811,26 @@
    "reviewBody": "Fosnakulturen var en kustbunden fångstkultur i äldre stenålder från Rogaland till Nordland, Komsakulturen motsvarande i Finnmark med boplatser på ytterkusten.",
    "datePublished": "2026-10-18",
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
-   "citation": {
-    "@id": "https://snl.no/Fosnakulturen",
-    "name": "Store norske leksikon: Fosnakulturen; Komsakulturen",
-    "@type": "Article",
-    "dcterms:type": "kallor:#artikel",
-    "isPartOf": "wd:Q746368"
-   },
-   "prov:wasDerivedFrom": "https://snl.no/Fosnakulturen"
+   "citation": [
+    {
+     "@id": "https://snl.no/Fosnakulturen",
+     "name": "Fosnakulturen",
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q746368"
+    },
+    {
+     "@id": "https://snl.no/Komsakulturen",
+     "name": "Komsakulturen",
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q746368"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://snl.no/Fosnakulturen",
+    "https://snl.no/Komsakulturen"
+   ]
   },
   {
    "@id": "nh:nh-c0045",
@@ -6827,7 +6863,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/steinalderen_i_Norge",
-    "name": "Store norske leksikon: steinalderen i Norge",
+    "name": "steinalderen i Norge",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -6869,7 +6905,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/steinalderen_i_Norge",
-    "name": "Store norske leksikon: steinalderen i Norge",
+    "name": "steinalderen i Norge",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -6907,7 +6943,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Norges_historie",
-    "name": "Store norske leksikon: Norges historie",
+    "name": "Norges historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -6949,7 +6985,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/slaget_i_Hafrsfjord",
-    "name": "Store norske leksikon: slaget i Hafrsfjord",
+    "name": "slaget i Hafrsfjord",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -6991,7 +7027,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Slaget_p%C3%A5_Stiklestad",
-    "name": "Store norske leksikon: Slaget på Stiklestad",
+    "name": "Slaget på Stiklestad",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7029,7 +7065,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Norges_historie",
-    "name": "Store norske leksikon: Norges historie",
+    "name": "Norges historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7067,7 +7103,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Olav_3._Kyrre",
-    "name": "Store norske leksikon: Olav 3. Kyrre",
+    "name": "Olav 3. Kyrre",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7105,7 +7141,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Bergen_-_historie",
-    "name": "Store norske leksikon: Bergen – historie",
+    "name": "Bergen – historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7143,7 +7179,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/borgerkrigstiden",
-    "name": "Store norske leksikon: borgerkrigstiden",
+    "name": "borgerkrigstiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7181,7 +7217,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Norge_i_h%C3%B8ymiddelalderen",
-    "name": "Store norske leksikon: Norge i høymiddelalderen",
+    "name": "Norge i høymiddelalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7219,7 +7255,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Sverre_-_norsk_konge",
-    "name": "Store norske leksikon: Sverre – norsk konge",
+    "name": "Sverre – norsk konge",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7257,7 +7293,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Norges_historie",
-    "name": "Store norske leksikon: Norges historie",
+    "name": "Norges historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7295,7 +7331,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/H%C3%A5kon_4._H%C3%A5konsson",
-    "name": "Store norske leksikon: Håkon 4. Håkonsson",
+    "name": "Håkon 4. Håkonsson",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7333,7 +7369,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Norge_i_h%C3%B8ymiddelalderen",
-    "name": "Store norske leksikon: Norge i høymiddelalderen",
+    "name": "Norge i høymiddelalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7371,7 +7407,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Magnus_Lagab%C3%B8ters_landslov",
-    "name": "Store norske leksikon: Magnus Lagabøters landslov",
+    "name": "Magnus Lagabøters landslov",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7409,7 +7445,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/H%C3%A5kon_6._Magnusson",
-    "name": "Store norske leksikon: Håkon 6. Magnusson",
+    "name": "Håkon 6. Magnusson",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7451,7 +7487,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/svartedauden",
-    "name": "Store norske leksikon: svartedauden",
+    "name": "svartedauden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7489,7 +7525,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Norges_historie",
-    "name": "Store norske leksikon: Norges historie",
+    "name": "Norges historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7527,7 +7563,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Haakon_7.",
-    "name": "Store norske leksikon: Haakon 7.",
+    "name": "Haakon 7.",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7565,7 +7601,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/stemmerett_for_kvinner_i_Norge",
-    "name": "Store norske leksikon: stemmerett for kvinner i Norge",
+    "name": "stemmerett for kvinner i Norge",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7603,7 +7639,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Norges_historie",
-    "name": "Store norske leksikon: Norges historie",
+    "name": "Norges historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7641,7 +7677,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Ekofisk",
-    "name": "Store norske leksikon: Ekofisk",
+    "name": "Ekofisk",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7679,7 +7715,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/EU-kampen",
-    "name": "Store norske leksikon: EU-kampen",
+    "name": "EU-kampen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -7717,7 +7753,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/",
-    "name": "Statens historiska museer – Tidsåldrar",
+    "name": "Tidsåldrar",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1726607"
@@ -7755,7 +7791,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/",
-    "name": "Statens historiska museer – Mesolitikum",
+    "name": "Mesolitikum",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1726607"
@@ -7793,7 +7829,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/",
-    "name": "Statens historiska museer – Mesolitikum",
+    "name": "Mesolitikum",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1726607"
@@ -7831,7 +7867,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/",
-    "name": "Statens historiska museer – Tidsåldrar",
+    "name": "Tidsåldrar",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1726607"
@@ -7869,7 +7905,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/neolitikum",
-    "name": "Nationalencyklopedin – neolitikum",
+    "name": "neolitikum",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -7907,7 +7943,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/",
-    "name": "Statens historiska museer – Tidsåldrar",
+    "name": "Tidsåldrar",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1726607"
@@ -7950,7 +7986,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/birka",
-    "name": "Nationalencyklopedin – Birka",
+    "name": "Birka",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -7988,7 +8024,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749",
-    "name": "Svenskt biografiskt lexikon – Olof \"skötkonung\"",
+    "name": "Olof \"skötkonung\"",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q379406"
@@ -8013,7 +8049,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749",
-     "name": "SBL: Olof \"skötkonung\"",
+     "name": "Olof \"skötkonung\"",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -8060,7 +8096,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/kristnandet-och-rikets-framv%C3%A4xt",
-    "name": "Nationalencyklopedin – Sverige, historia: Kristnandet och rikets framväxt",
+    "name": "Sverige, historia: Kristnandet och rikets framväxt",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -8103,7 +8139,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverkerska-%C3%A4tten",
-    "name": "Nationalencyklopedin – sverkerska ätten",
+    "name": "sverkerska ätten",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -8141,7 +8177,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd",
-    "name": "Svenska kyrkan – Ärkebiskopslängd",
+    "name": "Ärkebiskopslängd",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q749243"
@@ -8166,7 +8202,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=203",
-     "name": "SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens",
+     "name": "påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",
@@ -8217,7 +8253,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar",
-    "name": "Nationalencyklopedin – folkungar",
+    "name": "folkungar",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -8260,7 +8296,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238",
-    "name": "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)",
+    "name": "Birger Magnusson (Birger jarl)",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q379406"
@@ -8285,7 +8321,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238",
-     "name": "SBL: Birger Magnusson (Birger jarl)",
+     "name": "Birger Magnusson (Birger jarl)",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -8336,7 +8372,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.britannica.com/place/Stockholm",
-    "name": "Encyclopaedia Britannica – Stockholm",
+    "name": "Stockholm",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q5375741"
@@ -8361,7 +8397,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=664",
-     "name": "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm",
+     "name": "kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",
@@ -8374,7 +8410,7 @@
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=665",
-     "name": "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm",
+     "name": "Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",
@@ -8426,7 +8462,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/",
-    "name": "Sveriges riksdag – Regeringsformen 50 år",
+    "name": "Regeringsformen 50 år",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q272930"
@@ -8472,7 +8508,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott",
-    "name": "Nationalencyklopedin – Sverige, historia: Demokratins genombrott",
+    "name": "Sverige, historia: Demokratins genombrott",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -8515,7 +8551,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/",
-    "name": "Sveriges riksdag – Kampen om rösträtten",
+    "name": "Kampen om rösträtten",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q272930"
@@ -8553,7 +8589,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/sverige-under-andra-v%C3%A4rldskriget",
-    "name": "Nationalencyklopedin – Sverige under andra världskriget",
+    "name": "Sverige under andra världskriget",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -8591,7 +8627,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet",
-    "name": "Nationalencyklopedin – Sverige, historia: Välfärdssamhället",
+    "name": "Sverige, historia: Välfärdssamhället",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -8629,7 +8665,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/",
-    "name": "Regeringskansliet – Sverige i EU 30 år",
+    "name": "Sverige i EU 30 år",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q10650489"
@@ -8667,7 +8703,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/",
-    "name": "Regeringskansliet – Sveriges och Natos historia",
+    "name": "Sveriges och Natos historia",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q10650489"
@@ -8705,7 +8741,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
-    "name": "Uppslagsverket Finland: förhistoria",
+    "name": "förhistoria",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -8748,7 +8784,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
-    "name": "Uppslagsverket Finland: förhistoria",
+    "name": "förhistoria",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -8790,7 +8826,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
-    "name": "Uppslagsverket Finland: förhistoria",
+    "name": "förhistoria",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -8833,7 +8869,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
-    "name": "Uppslagsverket Finland: förhistoria",
+    "name": "förhistoria",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -8876,7 +8912,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
-    "name": "Uppslagsverket Finland: förhistoria",
+    "name": "förhistoria",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -8919,7 +8955,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
-    "name": "Uppslagsverket Finland: förhistoria",
+    "name": "förhistoria",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -8957,7 +8993,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki",
-    "name": "Wikipedia (en): Sammallahdenmäki",
+    "name": "Sammallahdenmäki",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q328"
@@ -8995,7 +9031,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
-    "name": "Uppslagsverket Finland: förhistoria",
+    "name": "förhistoria",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9038,7 +9074,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
-    "name": "Uppslagsverket Finland: förhistoria",
+    "name": "förhistoria",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9076,7 +9112,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
-    "name": "Uppslagsverket Finland: förhistoria",
+    "name": "förhistoria",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9117,7 +9153,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FiFoerHistoria",
-    "name": "Uppslagsverket Finland: förhistoria",
+    "name": "förhistoria",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9160,7 +9196,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoriaMedeltiden",
-    "name": "Uppslagsverket Finland: Finlands historia – medeltiden",
+    "name": "Finlands historia – medeltiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9198,7 +9234,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/view-170045-AaboDomkyrka",
-    "name": "Uppslagsverket Finland: Åbo domkyrka",
+    "name": "Åbo domkyrka",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9236,7 +9272,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Finlands_historie",
-    "name": "Store norske leksikon: Finlands historie",
+    "name": "Finlands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -9274,7 +9310,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet",
-    "name": "Uppslagsverket Finland: Finlands historia – 1800-talet",
+    "name": "Finlands historia – 1800-talet",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9312,7 +9348,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet",
-    "name": "Uppslagsverket Finland: Finlands historia – 1800-talet",
+    "name": "Finlands historia – 1800-talet",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9350,7 +9386,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf",
-    "name": "Riksdagen: Riksdagens historia (broschyr)",
+    "name": "Riksdagens historia (broschyr)",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q643412"
@@ -9388,7 +9424,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
-    "name": "Uppslagsverket Finland: Finlands historia efter 1917",
+    "name": "Finlands historia efter 1917",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9426,7 +9462,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
-    "name": "Uppslagsverket Finland: Finlands historia efter 1917",
+    "name": "Finlands historia efter 1917",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9464,7 +9500,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Finlands_historie",
-    "name": "Store norske leksikon: Finlands historie",
+    "name": "Finlands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -9502,7 +9538,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Finlands_historie",
-    "name": "Store norske leksikon: Finlands historie",
+    "name": "Finlands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -9540,7 +9576,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Finlands_historie",
-    "name": "Store norske leksikon: Finlands historie",
+    "name": "Finlands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -9578,7 +9614,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Finlands_historie",
-    "name": "Store norske leksikon: Finlands historie",
+    "name": "Finlands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -9616,7 +9652,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
-    "name": "Uppslagsverket Finland: Finlands historia efter 1917",
+    "name": "Finlands historia efter 1917",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9659,7 +9695,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uppslagsverket.fi/sv/view-170045-FinlandsHistoriaEfter1917",
-    "name": "Uppslagsverket Finland: Finlands historia efter 1917",
+    "name": "Finlands historia efter 1917",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q3503516"
@@ -9697,7 +9733,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://um.fi/finland-and-nato",
-    "name": "Finlands utrikesministerium: Finland's membership in NATO",
+    "name": "Finland's membership in NATO",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q2639539"
@@ -9735,7 +9771,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/bronsealder",
-    "name": "Store norske leksikon: bronsealder",
+    "name": "bronsealder",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -9773,7 +9809,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Solen_-_symbolik",
-    "name": "Lex.dk: Solen – symbolik",
+    "name": "Solen – symbolik",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -9811,7 +9847,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://whc.unesco.org/en/list/557",
-    "name": "UNESCO World Heritage: Rock Carvings in Tanum",
+    "name": "Rock Carvings in Tanum",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q7809"
@@ -9849,7 +9885,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/jernalderen",
-    "name": "Store norske leksikon: jernalderen",
+    "name": "jernalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -9887,7 +9923,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/",
-    "name": "Videnskab.dk: Mystiske krigere angreb dansk ø for 2.300 år siden"
+    "name": "Mystiske krigere angreb dansk ø for 2.300 år siden",
+    "@type": "Article",
+    "dcterms:type": "kallor:#periodikumartikel",
+    "isPartOf": "wd:Q12340941"
    },
    "prov:wasDerivedFrom": "https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/"
   },
@@ -9922,7 +9961,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/romersk_jernalder",
-    "name": "Lex.dk: romersk jernalder",
+    "name": "romersk jernalder",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -9960,7 +9999,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/romersk_jernalder",
-    "name": "Lex.dk: romersk jernalder",
+    "name": "romersk jernalder",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -9998,7 +10037,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/runer",
-    "name": "Store norske leksikon: runer",
+    "name": "runer",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -10036,7 +10075,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/jernalderen",
-    "name": "Store norske leksikon: jernalderen",
+    "name": "jernalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -10074,7 +10113,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/gullbrakteater",
-    "name": "Store norske leksikon: gullbrakteater",
+    "name": "gullbrakteater",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -10112,7 +10151,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Guldhornene",
-    "name": "Lex.dk: Guldhornene",
+    "name": "Guldhornene",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -10150,7 +10189,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/merovingertid",
-    "name": "Store norske leksikon: merovingertid",
+    "name": "merovingertid",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -10192,7 +10231,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde",
-    "name": "Uppsala universitet/Gustavianum: Valsgärde",
+    "name": "Valsgärde",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q185246"
@@ -10230,7 +10269,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Magnus_7._Eriksson",
-    "name": "Store norske leksikon: Magnus 7. Eriksson",
+    "name": "Magnus 7. Eriksson",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -10272,7 +10311,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Sjlisselburg",
-    "name": "Lex.dk: Sjlisselburg",
+    "name": "Sjlisselburg",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -10297,7 +10336,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=3228",
-     "name": "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus",
+     "name": "storfursten Jurij Danielowitsch sluter fred med kung Magnus",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",
@@ -10310,7 +10349,7 @@
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=39886",
-     "name": "SDHK nr 39886: samma fred, i en annan medeltida avskrift",
+     "name": "samma fred, i en annan medeltida avskrift",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",
@@ -10362,7 +10401,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Magnus_7._Eriksson",
-    "name": "Store norske leksikon: Magnus 7. Eriksson",
+    "name": "Magnus 7. Eriksson",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -10404,7 +10443,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Magnus_7._Eriksson",
-    "name": "Store norske leksikon: Magnus 7. Eriksson",
+    "name": "Magnus 7. Eriksson",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -10442,7 +10481,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf",
-    "name": "Läkartidningen 2003 (artikel om digerdöden)"
+    "name": "Artikel om digerdöden, 2003",
+    "@type": "Article",
+    "dcterms:type": "kallor:#periodikumartikel",
+    "isPartOf": "wd:Q1350069"
    },
    "prov:wasDerivedFrom": "https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf"
   },
@@ -10477,7 +10519,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Albrecht_af_Mecklenburg",
-    "name": "Lex.dk: Albrecht af Mecklenburg",
+    "name": "Albrecht af Mecklenburg",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -10502,7 +10544,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648",
-     "name": "SBL: Albrekt av Mecklenburg",
+     "name": "Albrekt av Mecklenburg",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -10553,7 +10595,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmark-Norge",
-    "name": "Lex.dk: Danmark-Norge",
+    "name": "Danmark-Norge",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -10591,7 +10633,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Kalmarunionen",
-    "name": "Lex.dk: Kalmarunionen",
+    "name": "Kalmarunionen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -10629,7 +10671,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Kalmarunionen",
-    "name": "Lex.dk: Kalmarunionen",
+    "name": "Kalmarunionen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -10654,7 +10696,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392",
-     "name": "SBL: Erik av Pommern",
+     "name": "Erik av Pommern",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -10667,7 +10709,7 @@
     },
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097",
-     "name": "SBL: Margareta",
+     "name": "Margareta",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -10680,7 +10722,7 @@
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=14836",
-     "name": "SDHK nr 14836: kung Eriks kröningsbrev, Kalmar",
+     "name": "kung Eriks kröningsbrev, Kalmar",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",
@@ -10693,7 +10735,7 @@
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=14837",
-     "name": "SDHK nr 14837: Kalmardokumentet: de tre rikenas råd om en kung, Kalmar",
+     "name": "Kalmardokumentet: de tre rikenas råd om en kung, Kalmar",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",
@@ -10747,7 +10789,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Kalmarunionen",
-    "name": "Lex.dk: Kalmarunionen",
+    "name": "Kalmarunionen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -10785,7 +10827,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Danmark-Norge",
-    "name": "Lex.dk: Danmark-Norge",
+    "name": "Danmark-Norge",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -10823,7 +10865,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Reformationen_i_Danmark",
-    "name": "Lex.dk: Reformationen i Danmark",
+    "name": "Reformationen i Danmark",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -10861,7 +10903,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Christian_3",
-    "name": "Store norske leksikon: Christian 3",
+    "name": "Christian 3",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -10903,7 +10945,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Christian_4.",
-    "name": "Christian 4. – lex.dk",
+    "name": "Christian 4.",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -10941,7 +10983,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/enevoldstida",
-    "name": "Enevoldstida – Store norske leksikon",
+    "name": "Enevoldstida",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -10979,7 +11021,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Kongeloven",
-    "name": "Kongeloven – lex.dk",
+    "name": "Kongeloven",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -11017,7 +11059,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden",
-    "name": "Vasatiden – Nationalencyklopedin",
+    "name": "Vasatiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -11059,7 +11101,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Gustav_1_Vasa",
-    "name": "Gustav 1 Vasa – Store norske leksikon",
+    "name": "Gustav 1 Vasa",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -11084,7 +11126,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315",
-     "name": "SBL: Gustav I",
+     "name": "Gustav I",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -11131,7 +11173,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/västerås-riksdag",
-    "name": "Västerås riksdag – Nationalencyklopedin",
+    "name": "Västerås riksdag",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -11173,7 +11215,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.svenskakyrkan.se/kristentro/bekannelseskrifter",
-    "name": "Bekännelseskrifter – Svenska kyrkan",
+    "name": "Bekännelseskrifter",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q749243"
@@ -11211,7 +11253,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden",
-    "name": "Stormaktstiden – Nationalencyklopedin",
+    "name": "Stormaktstiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -11249,7 +11291,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden",
-    "name": "Stormaktstiden – Nationalencyklopedin",
+    "name": "Stormaktstiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -11274,7 +11316,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316",
-     "name": "SBL: Gustav II Adolf",
+     "name": "Gustav II Adolf",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -11321,7 +11363,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/westfaliska-freden",
-    "name": "Westfaliska freden – Nationalencyklopedin",
+    "name": "Westfaliska freden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -11359,7 +11401,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden",
-    "name": "Stormaktstiden – Nationalencyklopedin",
+    "name": "Stormaktstiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -11384,7 +11426,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357",
-     "name": "SBL: Karl XII",
+     "name": "Karl XII",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -11431,7 +11473,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/frihetstiden",
-    "name": "Frihetstiden – Nationalencyklopedin",
+    "name": "Frihetstiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -11473,7 +11515,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/",
-    "name": "Besluten som förändrade Sverige – Sveriges riksdag",
+    "name": "Besluten som förändrade Sverige",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q272930"
@@ -11511,7 +11553,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/hatter",
-    "name": "Hatter – Store norske leksikon",
+    "name": "Hatter",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -11549,7 +11591,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden",
-    "name": "Gustavianska tiden – Nationalencyklopedin",
+    "name": "Gustavianska tiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -11587,7 +11629,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Gustav_3.",
-    "name": "Gustav 3 – Store norske leksikon",
+    "name": "Gustav 3",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -11612,7 +11654,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317",
-     "name": "SBL: Gustav III",
+     "name": "Gustav III",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -11663,7 +11705,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809",
-    "name": "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)",
+    "name": "Finska kriget 1808–1809",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q11885692"
@@ -11701,7 +11743,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Unionsoppløsningen_i_1905",
-    "name": "Unionsoppløsningen i 1905 – Store norske leksikon",
+    "name": "Unionsoppløsningen i 1905",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -11739,7 +11781,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Unionsoppløsningen_i_1905",
-    "name": "Unionsoppløsningen i 1905 – Store norske leksikon",
+    "name": "Unionsoppløsningen i 1905",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -11777,7 +11819,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Grunnloven",
-    "name": "Grunnloven – Store norske leksikon",
+    "name": "Grunnloven",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -11815,7 +11857,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/vikingtid",
-    "name": "Vikingtid – Store norske leksikon",
+    "name": "Vikingtid",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -11853,7 +11895,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://ne.se/uppslagsverk/encyklopedi/lång/stockholms-blodbad",
-    "name": "Stockholms blodbad – Nationalencyklopedin",
+    "name": "Stockholms blodbad",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -11891,7 +11933,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Tabet_af_Sk%C3%A5ne_i_1658-1660",
-    "name": "Tabet af Skåne i 1658-1660 – lex.dk",
+    "name": "Tabet af Skåne i 1658-1660",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -11929,7 +11971,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Unionsoppløsningen_i_1905",
-    "name": "Unionsoppløsningen i 1905 – Store norske leksikon",
+    "name": "Unionsoppløsningen i 1905",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -11965,14 +12007,26 @@
    "reviewBody": "Danmark var ockuperat 9 april 1940–5 maj 1945; SNL anger att Norge angreps 9 april 1940 och befriades 1945.",
    "datePublished": "2026-10-18",
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
-   "citation": {
-    "@id": "https://lex.dk/5._maj_1945",
-    "name": "5. maj 1945 – lex.dk; Samene under andre verdenskrig – SNL",
-    "@type": "Article",
-    "dcterms:type": "kallor:#artikel",
-    "isPartOf": "wd:Q136450325"
-   },
-   "prov:wasDerivedFrom": "https://lex.dk/5._maj_1945"
+   "citation": [
+    {
+     "@id": "https://lex.dk/5._maj_1945",
+     "name": "5. maj 1945",
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q136450325"
+    },
+    {
+     "@id": "https://snl.no/Samene_under_andre_verdenskrig",
+     "name": "Samene under andre verdenskrig",
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q746368"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    "https://lex.dk/5._maj_1945",
+    "https://snl.no/Samene_under_andre_verdenskrig"
+   ]
   },
   {
    "@id": "nh:nh-c0181",
@@ -12005,7 +12059,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.norden.org/sv/information/nordiska-radets-historia",
-    "name": "Nordiska rådets historia – Norden.org",
+    "name": "Nordiska rådets historia",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q146165"
@@ -12043,7 +12097,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Alltinget",
-    "name": "Store norske leksikon: Alltinget",
+    "name": "Alltinget",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -12081,7 +12135,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Jellingstenene",
-    "name": "lex.dk: Jellingstenene",
+    "name": "Jellingstenene",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -12119,7 +12173,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Snorre_Sturlason",
-    "name": "Store norske leksikon: Snorre Sturlason",
+    "name": "Snorre Sturlason",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -12157,7 +12211,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uu.se/550/tidigare-jubileer-och-kort-historik",
-    "name": "Uppsala universitet: Kort historik och tidigare jubileer",
+    "name": "Kort historik och tidigare jubileer",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q185246"
@@ -12182,7 +12236,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=30221",
-     "name": "SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom",
+     "name": "påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",
@@ -12195,7 +12249,7 @@
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=30290",
-     "name": "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala",
+     "name": "ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala",
      "@type": "CreativeWork",
      "dcterms:type": "kallor:#registerpost",
      "isPartOf": "kallor:sdhk",
@@ -12243,7 +12297,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Københavns_Universitet",
-    "name": "lex.dk: Københavns Universitet",
+    "name": "Københavns Universitet",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -12281,7 +12335,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Tycho_Brahe",
-    "name": "lex.dk: Tycho Brahe",
+    "name": "Tycho Brahe",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -12319,7 +12373,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Ole_Rømer",
-    "name": "lex.dk: Ole Rømer",
+    "name": "Ole Rømer",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -12357,7 +12411,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.ne.se/uppslagsverk/encyklopedi/lång/systema-naturae",
-    "name": "Nationalencyklopedin: Systema naturae",
+    "name": "Systema naturae",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q1165538"
@@ -12382,7 +12436,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735",
-     "name": "SBL: Carl (von) Linné",
+     "name": "Carl (von) Linné",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -12433,7 +12487,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius",
-    "name": "Uppsala universitet: Anders Celsius",
+    "name": "Anders Celsius",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q185246"
@@ -12458,7 +12512,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758",
-     "name": "SBL: Anders Celsius",
+     "name": "Anders Celsius",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -12505,7 +12559,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://riksarkivet.se/resurser/tryckfrihetsforordningen-1766",
-    "name": "Riksarkivet: Tryckfrihetsförordningen 1766",
+    "name": "Tryckfrihetsförordningen 1766",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1724971"
@@ -12543,7 +12597,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf",
-    "name": "JO: JO – i riksdagens tjänst (bok, jo.se)",
+    "name": "JO – i riksdagens tjänst (bok)",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q107157415"
@@ -12581,7 +12635,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Kalevala",
-    "name": "Store norske leksikon: Kalevala",
+    "name": "Kalevala",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -12619,7 +12673,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/",
-    "name": "Nobelprize.org: Alfred Nobel's life and work",
+    "name": "Alfred Nobel's life and work",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1781959"
@@ -12648,7 +12702,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143",
-     "name": "SBL: Alfred B Nobel",
+     "name": "Alfred B Nobel",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",
@@ -12695,7 +12749,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Fridtjof_Nansen",
-    "name": "Store norske leksikon: Fridtjof Nansen",
+    "name": "Fridtjof Nansen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -12733,7 +12787,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.nobelprize.org/prizes/facts/nobel-prize-facts/",
-    "name": "Nobelprize.org: Nobel Prize facts",
+    "name": "Nobel Prize facts",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1781959"
@@ -12771,7 +12825,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html",
-    "name": "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet",
+    "name": "Kvinnor i riksdagsvalet",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q798557"
@@ -12809,7 +12863,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Roald_Amundsen",
-    "name": "Store norske leksikon: Roald Amundsen",
+    "name": "Roald Amundsen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -12847,7 +12901,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Niels_Bohr",
-    "name": "lex.dk: Niels Bohr",
+    "name": "Niels Bohr",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -12885,7 +12939,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage",
-    "name": "Tetra Pak: Heritage",
+    "name": "Heritage",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q659200"
@@ -12927,7 +12981,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle",
-    "name": "LEGO: The stud and tube principle",
+    "name": "The stud and tube principle",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1063455"
@@ -12969,7 +13023,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf",
-    "name": "IVA: Svenska innovationer – Pacemakern",
+    "name": "Svenska innovationer – Pacemakern",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q3394637"
@@ -13007,7 +13061,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/",
-    "name": "Volvo Cars pressmeddelande: trepunktsbeltet fyller 60 år",
+    "name": "Pressmeddelande: trepunktsbeltet fyller 60 år",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q215293"
@@ -13045,7 +13099,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Ekofisk",
-    "name": "Store norske leksikon: Ekofisk",
+    "name": "Ekofisk",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -13083,7 +13137,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.computerhistory.org/revolution/personal-computers/17/307/1235",
-    "name": "Computer History Museum: Linux",
+    "name": "Linux",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q964035"
@@ -13121,7 +13175,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.sverigesradio.se/artikel/5667619",
-    "name": "Sveriges Radio",
+    "name": "Artikel hos Sveriges Radio",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1543058"
@@ -13310,6 +13364,14 @@
     "@type": "PropertyValue",
     "propertyID": "wd:P4342",
     "value": "Fosnakulturen"
+   }
+  },
+  {
+   "@id": "https://snl.no/Komsakulturen",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "Komsakulturen"
    }
   },
   {
@@ -13774,6 +13836,14 @@
     "@type": "PropertyValue",
     "propertyID": "wd:P8313",
     "value": "5._maj_1945"
+   }
+  },
+  {
+   "@id": "https://snl.no/Samene_under_andre_verdenskrig",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P4342",
+    "value": "Samene_under_andre_verdenskrig"
    }
   },
   {

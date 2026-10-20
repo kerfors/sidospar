@@ -169,7 +169,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf",
-    "name": "JO: JO – i riksdagens tjänst (bok, jo.se)",
+    "name": "JO – i riksdagens tjänst (bok)",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q107157415"

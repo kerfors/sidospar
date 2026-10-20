@@ -169,7 +169,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius",
-    "name": "Uppsala universitet: Anders Celsius",
+    "name": "Anders Celsius",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q185246"
@@ -194,7 +194,7 @@
    "citation": [
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758",
-     "name": "SBL: Anders Celsius",
+     "name": "Anders Celsius",
      "@type": "Article",
      "dcterms:type": "kallor:#artikel",
      "isPartOf": "wd:Q379406",

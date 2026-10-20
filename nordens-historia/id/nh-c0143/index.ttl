@@ -27,7 +27,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Magnus_7._Eriksson" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Magnus 7. Eriksson" .
+    schema:name "Magnus 7. Eriksson" .
 
 nh:nh-c0143 a schema:Claim ;
     dcterms:identifier "GE14",

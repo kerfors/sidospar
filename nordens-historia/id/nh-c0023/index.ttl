@@ -25,7 +25,7 @@
             schema:propertyID wd:P8313 ;
             schema:value "Hedeby" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Hedeby" .
+    schema:name "Hedeby" .
 
 nh:nh-c0023 a schema:Claim ;
     dcterms:identifier "DA07",

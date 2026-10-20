@@ -71,7 +71,7 @@ nh:nh-c0033 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Valdemar_Atterdag" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Valdemar Atterdag" .
+    schema:name "Valdemar Atterdag" .
 
 <https://lex.dk/Danmarks_historie_i_middelalderen> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -79,7 +79,7 @@ nh:nh-c0033 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Danmarks_historie_i_middelalderen" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Danmarks historie i middelalderen" .
+    schema:name "Danmarks historie i middelalderen" .
 
 nh:nh-p0013 a crm:E4_Period,
         skos:Concept ;

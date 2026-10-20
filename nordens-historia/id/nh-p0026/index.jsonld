@@ -204,7 +204,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Norges_historie",
-    "name": "Store norske leksikon: Norges historie",
+    "name": "Norges historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -242,7 +242,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Haakon_7.",
-    "name": "Store norske leksikon: Haakon 7.",
+    "name": "Haakon 7.",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -280,7 +280,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/stemmerett_for_kvinner_i_Norge",
-    "name": "Store norske leksikon: stemmerett for kvinner i Norge",
+    "name": "stemmerett for kvinner i Norge",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"

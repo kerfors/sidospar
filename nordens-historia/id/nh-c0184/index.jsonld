@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Snorre_Sturlason",
-    "name": "Store norske leksikon: Snorre Sturlason",
+    "name": "Snorre Sturlason",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"

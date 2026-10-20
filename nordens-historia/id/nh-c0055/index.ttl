@@ -25,7 +25,7 @@
             schema:propertyID wd:P4342 ;
             schema:value "Sverre_-_norsk_konge" ] ;
     schema:isPartOf wd:Q746368 ;
-    schema:name "Store norske leksikon: Sverre – norsk konge" .
+    schema:name "Sverre – norsk konge" .
 
 nh:nh-c0055 a schema:Claim ;
     dcterms:identifier "NO13",

@@ -58,12 +58,12 @@ nh:nh-c0101 a schema:Claim ;
             schema:propertyID wd:P4854 ;
             schema:value "FiFoerHistoria" ] ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: förhistoria" .
+    schema:name "förhistoria" .
 
 <https://www.uppslagsverket.fi/sv/view-170045-AaboDomkyrka> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q3503516 ;
-    schema:name "Uppslagsverket Finland: Åbo domkyrka" .
+    schema:name "Åbo domkyrka" .
 
 nh:nh-p0044 a crm:E4_Period,
         skos:Concept ;

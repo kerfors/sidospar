@@ -205,7 +205,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/borgerkrigstiden",
-    "name": "Store norske leksikon: borgerkrigstiden",
+    "name": "borgerkrigstiden",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -243,7 +243,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Norge_i_h%C3%B8ymiddelalderen",
-    "name": "Store norske leksikon: Norge i høymiddelalderen",
+    "name": "Norge i høymiddelalderen",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"
@@ -281,7 +281,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://snl.no/Sverre_-_norsk_konge",
-    "name": "Store norske leksikon: Sverre – norsk konge",
+    "name": "Sverre – norsk konge",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q746368"

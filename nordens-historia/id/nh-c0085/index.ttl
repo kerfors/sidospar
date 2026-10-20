@@ -29,5 +29,5 @@ nh:nh-c0085 a schema:Claim ;
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/sverige-under-andra-v%C3%A4rldskriget> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Nationalencyklopedin – Sverige under andra världskriget" .
+    schema:name "Sverige under andra världskriget" .
 

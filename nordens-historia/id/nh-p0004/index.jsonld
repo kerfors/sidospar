@@ -206,7 +206,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lex.dk/Islands_historie",
-    "name": "Islands historie (lex.dk, Den Store Danske)",
+    "name": "Islands historie",
     "@type": "Article",
     "dcterms:type": "kallor:#artikel",
     "isPartOf": "wd:Q136450325"
@@ -248,7 +248,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879",
-    "name": "Alþingi í Lærða skólanum 1845–1879 (althingi.is)",
+    "name": "Alþingi í Lærða skólanum 1845–1879",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q131279"
@@ -290,7 +290,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/",
-    "name": "Heimastjórn 1904–1918 (stjornarradid.is)",
+    "name": "Heimastjórn 1904–1918",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q3354110"

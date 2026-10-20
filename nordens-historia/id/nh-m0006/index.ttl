@@ -34,7 +34,7 @@ nh:nh-c0187 a schema:Claim ;
             schema:propertyID wd:P8313 ;
             schema:value "Tycho_Brahe" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "lex.dk: Tycho Brahe" .
+    schema:name "Tycho Brahe" .
 
 nh:nh-m0006 a crm:E5_Event,
         schema:Event ;

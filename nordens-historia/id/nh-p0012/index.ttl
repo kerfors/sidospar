@@ -88,5 +88,5 @@ nh:nh-p0012 a crm:E4_Period,
             schema:propertyID wd:P8313 ;
             schema:value "Danmarks_historie_i_middelalderen" ] ;
     schema:isPartOf wd:Q136450325 ;
-    schema:name "Lex: Danmarks historie i middelalderen" .
+    schema:name "Danmarks historie i middelalderen" .
 

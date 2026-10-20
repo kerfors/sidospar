@@ -27,7 +27,7 @@
             schema:propertyID wd:P3222 ;
             schema:value "västerås-riksdag" ] ;
     schema:isPartOf wd:Q1165538 ;
-    schema:name "Västerås riksdag – Nationalencyklopedin" .
+    schema:name "Västerås riksdag" .
 
 nh:nh-c0161 a schema:Claim ;
     dcterms:identifier "GE32",

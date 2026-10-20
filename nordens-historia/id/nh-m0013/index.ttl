@@ -42,7 +42,7 @@
             schema:propertyID wd:P3217 ;
             schema:value "8143" ] ;
     schema:isPartOf wd:Q379406 ;
-    schema:name "SBL: Alfred B Nobel" .
+    schema:name "Alfred B Nobel" .
 
 nh:nh-c0194 a schema:Claim ;
     dcterms:identifier "MI13",
@@ -64,6 +64,6 @@ nh:nh-m0013 a crm:E5_Event,
 
 <https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Nobelprize.org: Alfred Nobel's life and work" ;
+    schema:name "Alfred Nobel's life and work" ;
     schema:publisher wd:Q1781959 .
 

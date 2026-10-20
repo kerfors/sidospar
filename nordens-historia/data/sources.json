@@ -1,0 +1,17 @@
+{
+ "note": "Vad källorna är och vem som ger ut dem, för det här projektet. Läses bara av ld.py här; projektet är fristående. IRI:erna är gemensamma: Wikidatas där verket eller utgivaren finns där, annars de publicerade under https://w3id.org/people/kerfors/sidospar/kallor/id/ (SDHK och källtyperna). Namnen är kopior för läsbarheten. En källa (URL) hör till ett verk om den börjar med verkets url_prefix, annars till en utgivare via webbplatsen (hosts). Steg 1: bara Riksarkivet.",
+ "types": {
+  "artikel": {"iri": "kallor:#artikel", "schema": "Article"},
+  "registerpost": {"iri": "kallor:#registerpost", "schema": "CreativeWork"},
+  "webbsida": {"iri": "kallor:#webbsida", "schema": "WebPage"}
+ },
+ "publishers": [
+  {"iri": "wd:Q1724971", "name": "Riksarkivet", "hosts": ["riksarkivet.se"]}
+ ],
+ "works": [
+  {"register": "SBL", "iri": "wd:Q379406", "name": "Svenskt biografiskt lexikon (SBL)",
+   "part_type": "artikel", "url_prefix": "https://sok.riksarkivet.se/sbl/", "id_property": "wd:P3217"},
+  {"register": "SDHK", "iri": "kallor:sdhk", "name": "Svenskt Diplomatariums huvudkartotek (SDHK)",
+   "part_type": "registerpost", "url_prefix": "https://sok.riksarkivet.se/sdhk", "id_property": "kallor:sdhk"}
+ ]
+}

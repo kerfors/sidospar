@@ -115,18 +115,18 @@ def load():
     return items, claims, wd, defs
 
 
-def load_kallor():
-    """../kallor/data/kallor.json: what each source is and who publishes it, shared by all sidospår.
-    Described in full, and resolvable, under kallor/id/; here only referenced."""
-    return json.loads((HERE.parent / "kallor" / "data" / "kallor.json").read_text(encoding="utf-8"))
+def load_sources():
+    """data/sources.json: what each source is and who publishes it. The IRIs are shared
+    (Wikidata, and kallor/id/ for SDHK and the source types); the file is this project's own."""
+    return json.loads((HERE / "data" / "sources.json").read_text(encoding="utf-8"))
 
 
-KALLOR_DATA = load_kallor()
+SOURCES = load_sources()
 
 
 def source_work(url):
     """The work a source URL is part of (an article in SBL, an entry in SDHK), or None."""
-    for w in KALLOR_DATA["works"]:
+    for w in SOURCES["works"]:
         if url.startswith(w["url_prefix"]):
             return w
     return None
@@ -134,23 +134,23 @@ def source_work(url):
 
 def source_desc(url):
     """What a source URL is: part of a work, or a page published by an organisation.
-    Empty for sources not yet described in kallor.json."""
-    types = {t["id"]: t for t in KALLOR_DATA["types"]}
+    Empty for sources not yet described in data/sources.json."""
+    types = SOURCES["types"]
     w = source_work(url)
     if w:
         t = types[w["part_type"]]
-        return {"@type": t["schema"], "dcterms:type": "kallor:#" + t["id"], "isPartOf": w["iri"]}
+        return {"@type": t["schema"], "dcterms:type": t["iri"], "isPartOf": w["iri"]}
     host = url.split("/")[2] if url.startswith("http") else ""
-    for o in KALLOR_DATA["publishers"]:
+    for o in SOURCES["publishers"]:
         if any(host == h or host.endswith("." + h) for h in o["hosts"]):
             t = types["webbsida"]
-            return {"@type": t["schema"], "dcterms:type": "kallor:#" + t["id"], "publisher": o["iri"]}
+            return {"@type": t["schema"], "dcterms:type": t["iri"], "publisher": o["iri"]}
     return {}
 
 
 def source_label_nodes():
-    """Names of the works and publishers, so the data reads on its own; the rest is under kallor/id/."""
-    return [{"@id": x["iri"], "name": x["name"]} for x in KALLOR_DATA["publishers"] + KALLOR_DATA["works"]]
+    """Names of the works and publishers, so the data reads on its own."""
+    return [{"@id": x["iri"], "name": x["name"]} for x in SOURCES["publishers"] + SOURCES["works"]]
 
 
 def load_riksarkivet():
@@ -331,8 +331,8 @@ def event_node(e, wd, kind, rel=None):
 def ra_citation(x):
     """A register entry: what it is, the work it is part of, and its number in that work."""
     w = source_work(x["url"])
-    if not w or w["id"] != x["register"].lower():
-        raise ValueError(f"record {x['url']} is not in work {x['register']} according to kallor.json")
+    if not w or w["register"] != x["register"]:
+        raise ValueError(f"record {x['url']} is not in work {x['register']} according to data/sources.json")
     return {"@id": x["url"], "name": x["title"], **source_desc(x["url"]),
             "dcterms:identifier": x["register"] + " " + x["id"],
             "identifier": {"@type": "PropertyValue", "propertyID": w["id_property"], "value": x["id"]}}

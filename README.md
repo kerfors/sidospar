@@ -12,7 +12,7 @@ https://kerfors.github.io/sidospar/
 | `kungalvs-kyrka-brod/` | Källgenomgång: tvättades taket i Kungälvs kyrka med ljust bröd? Med en version för barn. |
 | `bohus-1678/` | Källgenomgång: sköt belägrarna in latrin i Bohus fästning 1678? Med en version för barn. |
 | `kameramuseum-contax/` | Experiment: klickbar översiktsbild av Contax-skåpet i CyberPhotos kameramuseum, med data och skript. |
-| `kallor/` | Inget eget sidospår: källorna som sidospåren hänvisar till, vad de är och vem som ger ut dem, som linked data (`python3 kallor/build.py`). |
+| `kallor/` | Inget eget sidospår: identifierare för källor som saknas i Wikidata (SDHK) och för typer av källor, som linked data (`python3 kallor/build.py`). Projekten pekar på identifierarna men läser inte filerna här när de byggs. |
 
 ## Struktur
 

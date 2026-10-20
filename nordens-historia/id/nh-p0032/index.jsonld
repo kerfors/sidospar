@@ -327,7 +327,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.britannica.com/place/Stockholm",
-    "name": "Encyclopaedia Britannica – Stockholm"
+    "name": "Encyclopaedia Britannica – Stockholm",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q5375741"
    },
    "prov:wasDerivedFrom": "https://www.britannica.com/place/Stockholm"
   },
@@ -389,6 +392,14 @@
     "@type": "PropertyValue",
     "propertyID": "wd:P3222",
     "value": "folkungar"
+   }
+  },
+  {
+   "@id": "https://www.britannica.com/place/Stockholm",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P1417",
+    "value": "place/Stockholm"
    }
   }
  ]

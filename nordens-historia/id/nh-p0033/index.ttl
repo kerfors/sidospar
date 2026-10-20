@@ -62,5 +62,8 @@ nh:nh-p0033 a crm:E4_Period,
     schema:name "Nytt statsskick: 1809 års RF" ;
     schema:temporalCoverage "1809/1814" .
 
-<https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/> schema:name "Sveriges riksdag – Regeringsformen 50 år" .
+<https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Sveriges riksdag – Regeringsformen 50 år" ;
+    schema:publisher wd:Q272930 .
 

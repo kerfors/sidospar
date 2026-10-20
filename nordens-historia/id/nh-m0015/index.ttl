@@ -39,5 +39,8 @@ nh:nh-m0015 a crm:E5_Event,
     schema:name "Nobelpriset" ;
     schema:startDate "1901"^^xsd:gYear .
 
-<https://www.nobelprize.org/prizes/facts/nobel-prize-facts/> schema:name "Nobelprize.org: Nobel Prize facts" .
+<https://www.nobelprize.org/prizes/facts/nobel-prize-facts/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Nobelprize.org: Nobel Prize facts" ;
+    schema:publisher wd:Q1781959 .
 

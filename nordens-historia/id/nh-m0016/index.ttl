@@ -28,7 +28,10 @@ nh:nh-c0197 a schema:Claim ;
     schema:about nh:nh-m0016 ;
     schema:text "Kvinnlig rösträtt och valbarhet: 1906" .
 
-<https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html> schema:name "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet" .
+<https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet" ;
+    schema:publisher wd:Q798557 .
 
 nh:nh-m0016 a crm:E5_Event,
         schema:Event ;

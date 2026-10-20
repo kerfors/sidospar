@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0207#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -25,5 +26,8 @@ nh:nh-c0207 a schema:Claim ;
     schema:about nh:nh-m0026 ;
     schema:text "Spotify: 2008" .
 
-<https://www.sverigesradio.se/artikel/5667619> schema:name "Sveriges Radio" .
+<https://www.sverigesradio.se/artikel/5667619> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Sveriges Radio" ;
+    schema:publisher wd:Q1543058 .
 

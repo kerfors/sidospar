@@ -39,5 +39,8 @@ nh:nh-m0011 a crm:E5_Event,
     schema:name "Justitieombudsmannen" ;
     schema:startDate "1809"^^xsd:gYear .
 
-<https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf> schema:name "JO: JO – i riksdagens tjänst (bok, jo.se)" .
+<https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "JO: JO – i riksdagens tjänst (bok, jo.se)" ;
+    schema:publisher wd:Q107157415 .
 

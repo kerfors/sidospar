@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0019#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -18,7 +19,10 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0019 .
 
-<https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> schema:name "Nationalmuseet: The Neolithic period" .
+<https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Nationalmuseet: The Neolithic period" ;
+    schema:publisher wd:Q648166 .
 
 nh:nh-c0019 a schema:Claim ;
     dcterms:identifier "DA03",

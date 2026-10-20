@@ -97,7 +97,10 @@ nh:nh-c0105 a schema:Claim ;
     schema:about nh:nh-p0045 ;
     schema:text "enkammarlantdag och kvinnlig rösträtt 1906" .
 
-<https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> schema:name "Riksdagen: Riksdagens historia (broschyr)" .
+<https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Riksdagen: Riksdagens historia (broschyr)" ;
+    schema:publisher wd:Q643412 .
 
 <https://snl.no/Finlands_historie> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;

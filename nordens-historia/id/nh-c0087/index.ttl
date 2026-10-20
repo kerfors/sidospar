@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0087#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -25,5 +26,8 @@ nh:nh-c0087 a schema:Claim ;
     schema:about nh:nh-p0036 ;
     schema:text "EU 1995" .
 
-<https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/> schema:name "Regeringskansliet – Sverige i EU 30 år" .
+<https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Regeringskansliet – Sverige i EU 30 år" ;
+    schema:publisher wd:Q10650489 .
 

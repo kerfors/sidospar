@@ -239,7 +239,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/",
-    "name": "Regeringskansliet – Sverige i EU 30 år"
+    "name": "Regeringskansliet – Sverige i EU 30 år",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q10650489"
    },
    "prov:wasDerivedFrom": "https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/"
   },
@@ -274,7 +277,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/",
-    "name": "Regeringskansliet – Sveriges och Natos historia"
+    "name": "Regeringskansliet – Sveriges och Natos historia",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q10650489"
    },
    "prov:wasDerivedFrom": "https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/"
   }

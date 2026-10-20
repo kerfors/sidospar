@@ -52,7 +52,7 @@
             crm:P82b_end_of_the_end "1050"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0030 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-historiska> ;
-    skos:prefLabel "Vikingatid enligt Statens historiska museer"@sv ;
+    skos:prefLabel "Vikingatid enligt Historiska museet"@sv ;
     skos:scopeNote "Källans formulering: vikingatid 793–1050"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0073#granskning> .
 
@@ -103,7 +103,10 @@ nh:nh-c0075 a schema:Claim ;
     schema:isPartOf wd:Q1165538 ;
     schema:name "Nationalencyklopedin – Birka" .
 
-<https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
+<https://historiska.se/utforska-historien/tidsaldrar/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Statens historiska museer – Tidsåldrar" ;
+    schema:publisher wd:Q1726607 .
 
 <https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> a schema:Article ;
     dcterms:identifier "SBL 7749" ;

@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0162#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -25,5 +26,8 @@ nh:nh-c0162 a schema:Claim ;
     schema:about nh:nh-p0066 ;
     schema:text "Uppsala möte 1593" .
 
-<https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> schema:name "Bekännelseskrifter – Svenska kyrkan" .
+<https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Bekännelseskrifter – Svenska kyrkan" ;
+    schema:publisher wd:Q749243 .
 

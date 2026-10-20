@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0206#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -25,5 +26,8 @@ nh:nh-c0206 a schema:Claim ;
     schema:about nh:nh-m0025 ;
     schema:text "Linux: 1991" .
 
-<https://www.computerhistory.org/revolution/personal-computers/17/307/1235> schema:name "Computer History Museum: Linux" .
+<https://www.computerhistory.org/revolution/personal-computers/17/307/1235> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Computer History Museum: Linux" ;
+    schema:publisher wd:Q964035 .
 

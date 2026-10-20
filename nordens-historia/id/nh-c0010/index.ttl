@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0010#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -27,5 +28,8 @@ nh:nh-c0010 a schema:Claim ;
     schema:about nh:nh-p0004 ;
     schema:text "Alltinget återupprättas 1845" .
 
-<https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> schema:name "Alþingi í Lærða skólanum 1845–1879 (althingi.is)" .
+<https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Alþingi í Lærða skólanum 1845–1879 (althingi.is)" ;
+    schema:publisher wd:Q131279 .
 

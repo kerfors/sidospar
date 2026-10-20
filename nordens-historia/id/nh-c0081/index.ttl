@@ -3,6 +3,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0081#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -53,7 +54,13 @@
     schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
 
-<https://www.britannica.com/place/Stockholm> schema:name "Encyclopaedia Britannica – Stockholm" .
+<https://www.britannica.com/place/Stockholm> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P1417 ;
+            schema:value "place/Stockholm" ] ;
+    schema:isPartOf wd:Q5375741 ;
+    schema:name "Encyclopaedia Britannica – Stockholm" .
 
 nh:nh-c0081 a schema:Claim ;
     dcterms:identifier "SV14",

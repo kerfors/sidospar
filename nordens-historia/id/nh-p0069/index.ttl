@@ -111,7 +111,10 @@ nh:nh-c0171 a schema:Claim ;
     schema:about nh:nh-p0069 ;
     schema:text "Gustav III:s statskupp 1772" .
 
-<https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809> schema:name "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)" .
+<https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)" ;
+    schema:publisher wd:Q11885692 .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/gustavianska-tiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;

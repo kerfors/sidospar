@@ -159,12 +159,20 @@ def source_desc(url):
     if w:
         t = types[w["part_type"]]
         return {"@type": t["schema"], "dcterms:type": t["iri"], "isPartOf": w["iri"]}
+    o = source_publisher(url)
+    if o:
+        t = types["webbsida"]
+        return {"@type": t["schema"], "dcterms:type": t["iri"], "publisher": o["iri"]}
+    return {}
+
+
+def source_publisher(url):
+    """The publisher whose site a source URL is on (by hosts), or None."""
     host = url.split("/")[2] if url.startswith("http") else ""
     for o in SOURCES["publishers"]:
         if any(host == h or host.endswith("." + h) for h in o["hosts"]):
-            t = types["webbsida"]
-            return {"@type": t["schema"], "dcterms:type": t["iri"], "publisher": o["iri"]}
-    return {}
+            return o
+    return None
 
 
 def article_id_nodes(nodes):
@@ -244,25 +252,17 @@ def relations(items):
 
 
 # ---------------------------------------------------------------- sources as schemes
-# Sources of boundary definitions that are not yet a work in data/sources.json.
-PUBLICATIONS = [
-    ("historiska.se", "historiska", "Statens historiska museer"),
-    ("riksdagen.se", "riksdagen", "Sveriges riksdag"),
-    ("natmus.dk", "natmus", "Nationalmuseet"),
-]
-
-
 def publication(url):
-    """Key and name of the source a boundary definition comes from, and what the scheme points to:
-    the work (dcterms:source) when it is in data/sources.json, otherwise the site's home page (url)."""
+    """Key and name of the source a boundary definition comes from, and what the scheme is derived
+    from (dcterms:source): the work when the page is part of one, otherwise the page itself, whose
+    publisher is given in data/sources.json."""
     w = source_work(url)
     if w and w.get("scheme"):
         return w["scheme"], w["name"], w["iri"]
-    host = url.split("/")[2] if url.startswith("http") else ""
-    for dom, key, name in PUBLICATIONS:
-        if host == dom or host.endswith("." + dom):
-            return key, name, f"https://{dom}/"
-    raise ValueError(f"no publication for source {url}")
+    o = source_publisher(url)
+    if o and o.get("scheme"):
+        return o["scheme"], o["name"], url
+    raise ValueError(f"no work or publisher with a scheme for source {url} in data/sources.json")
 
 
 def place_ref(col, wd):
@@ -350,9 +350,11 @@ def scheme_nodes(defs):
     seen = {}
     for d in defs:
         key, name, ref = publication(d["source_url"])
-        seen[key] = {"@id": f"nh:#kalla-{key}", "@type": "skos:ConceptScheme",
-                     "skos:prefLabel": {"sv": f"Periodindelning enligt {name}"},
-                     ("url" if ref.startswith("http") else "dcterms:source"): ref, "isPartOf": "nh:#dataset"}
+        node = seen.setdefault(key, {"@id": f"nh:#kalla-{key}", "@type": "skos:ConceptScheme",
+                                     "skos:prefLabel": {"sv": f"Periodindelning enligt {name}"},
+                                     "dcterms:source": [], "isPartOf": "nh:#dataset"})
+        if ref not in node["dcterms:source"]:
+            node["dcterms:source"].append(ref)
     return list(seen.values())
 
 

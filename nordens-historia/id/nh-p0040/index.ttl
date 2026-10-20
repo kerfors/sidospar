@@ -83,7 +83,10 @@ nh:nh-c0095 a schema:Claim ;
     schema:about nh:nh-p0040 ;
     schema:text "Sammallahdenmäki" .
 
-<https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki> schema:name "Wikipedia (en): Sammallahdenmäki" .
+<https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:isPartOf wd:Q328 ;
+    schema:name "Wikipedia (en): Sammallahdenmäki" .
 
 nh:nh-p0040 a crm:E4_Period,
         skos:Concept ;

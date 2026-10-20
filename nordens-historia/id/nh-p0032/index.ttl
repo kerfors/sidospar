@@ -132,7 +132,13 @@ nh:nh-c0081 a schema:Claim ;
     schema:about nh:nh-p0032 ;
     schema:text "Stockholm nämns 1252" .
 
-<https://www.britannica.com/place/Stockholm> schema:name "Encyclopaedia Britannica – Stockholm" .
+<https://www.britannica.com/place/Stockholm> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P1417 ;
+            schema:value "place/Stockholm" ] ;
+    schema:isPartOf wd:Q5375741 ;
+    schema:name "Encyclopaedia Britannica – Stockholm" .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;

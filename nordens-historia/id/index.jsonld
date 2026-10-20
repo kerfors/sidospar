@@ -276,6 +276,126 @@
    "name": "Svenska folkskolans vänner"
   },
   {
+   "@id": "wd:Q1726607",
+   "@type": "Organization",
+   "name": "Historiska museet"
+  },
+  {
+   "@id": "wd:Q272930",
+   "@type": "Organization",
+   "name": "Sveriges riksdag"
+  },
+  {
+   "@id": "wd:Q648166",
+   "@type": "Organization",
+   "name": "Nationalmuseet"
+  },
+  {
+   "@id": "wd:Q185246",
+   "@type": "Organization",
+   "name": "Uppsala universitet"
+  },
+  {
+   "@id": "wd:Q749243",
+   "@type": "Organization",
+   "name": "Svenska kyrkan"
+  },
+  {
+   "@id": "wd:Q10650489",
+   "@type": "Organization",
+   "name": "Regeringskansliet"
+  },
+  {
+   "@id": "wd:Q1781959",
+   "@type": "Organization",
+   "name": "Nobelstiftelsen"
+  },
+  {
+   "@id": "wd:Q131279",
+   "@type": "Organization",
+   "name": "Alltinget"
+  },
+  {
+   "@id": "wd:Q3354110",
+   "@type": "Organization",
+   "name": "Islands regering"
+  },
+  {
+   "@id": "wd:Q643412",
+   "@type": "Organization",
+   "name": "Finlands riksdag"
+  },
+  {
+   "@id": "wd:Q2639539",
+   "@type": "Organization",
+   "name": "Utrikesministeriet (Finland)"
+  },
+  {
+   "@id": "wd:Q7809",
+   "@type": "Organization",
+   "name": "UNESCO"
+  },
+  {
+   "@id": "wd:Q11885692",
+   "@type": "Organization",
+   "name": "Utbildningsstyrelsen"
+  },
+  {
+   "@id": "wd:Q146165",
+   "@type": "Organization",
+   "name": "Nordiska rådet"
+  },
+  {
+   "@id": "wd:Q107157415",
+   "@type": "Organization",
+   "name": "Justitieombudsmannen"
+  },
+  {
+   "@id": "wd:Q798557",
+   "@type": "Organization",
+   "name": "Statistikcentralen"
+  },
+  {
+   "@id": "wd:Q659200",
+   "@type": "Organization",
+   "name": "Tetra Pak"
+  },
+  {
+   "@id": "wd:Q1063455",
+   "@type": "Organization",
+   "name": "Lego A/S"
+  },
+  {
+   "@id": "wd:Q3394637",
+   "@type": "Organization",
+   "name": "Kungliga Ingenjörsvetenskapsakademien"
+  },
+  {
+   "@id": "wd:Q215293",
+   "@type": "Organization",
+   "name": "Volvo Personvagnar"
+  },
+  {
+   "@id": "wd:Q964035",
+   "@type": "Organization",
+   "name": "Computer History Museum"
+  },
+  {
+   "@id": "wd:Q1543058",
+   "@type": "Organization",
+   "name": "Sveriges Radio"
+  },
+  {
+   "@id": "wd:Q2743906",
+   "@type": "Organization",
+   "name": "Encyclopædia Britannica, Inc."
+  },
+  {
+   "@id": "wd:Q180",
+   "@type": "Organization",
+   "name": "Wikimedia Foundation"
+  },
+  {
    "@id": "wd:Q379406",
    "@type": "CreativeWork",
    "dcterms:type": "kallor:#uppslagsverk",
@@ -317,6 +437,20 @@
    "name": "Nationalencyklopedin"
   },
   {
+   "@id": "wd:Q5375741",
+   "@type": "CreativeWork",
+   "dcterms:type": "kallor:#uppslagsverk",
+   "name": "Encyclopædia Britannica Online",
+   "publisher": "wd:Q2743906"
+  },
+  {
+   "@id": "wd:Q328",
+   "@type": "CreativeWork",
+   "dcterms:type": "kallor:#uppslagsverk",
+   "name": "Engelskspråkiga Wikipedia",
+   "publisher": "wd:Q180"
+  },
+  {
    "@id": "wd:Q189",
    "name": "Island"
   },
@@ -342,7 +476,9 @@
    "skos:prefLabel": {
     "sv": "Periodindelning enligt Store norske leksikon"
    },
-   "dcterms:source": "wd:Q746368",
+   "dcterms:source": [
+    "wd:Q746368"
+   ],
    "isPartOf": "nh:#dataset"
   },
   {
@@ -351,7 +487,9 @@
    "skos:prefLabel": {
     "sv": "Periodindelning enligt Lex"
    },
-   "dcterms:source": "wd:Q136450325",
+   "dcterms:source": [
+    "wd:Q136450325"
+   ],
    "isPartOf": "nh:#dataset"
   },
   {
@@ -360,16 +498,20 @@
    "skos:prefLabel": {
     "sv": "Periodindelning enligt Nationalmuseet"
    },
-   "url": "https://natmus.dk/",
+   "dcterms:source": [
+    "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period"
+   ],
    "isPartOf": "nh:#dataset"
   },
   {
    "@id": "nh:#kalla-historiska",
    "@type": "skos:ConceptScheme",
    "skos:prefLabel": {
-    "sv": "Periodindelning enligt Statens historiska museer"
+    "sv": "Periodindelning enligt Historiska museet"
    },
-   "url": "https://historiska.se/",
+   "dcterms:source": [
+    "https://historiska.se/utforska-historien/tidsaldrar/"
+   ],
    "isPartOf": "nh:#dataset"
   },
   {
@@ -378,7 +520,9 @@
    "skos:prefLabel": {
     "sv": "Periodindelning enligt Nationalencyklopedin"
    },
-   "dcterms:source": "wd:Q1165538",
+   "dcterms:source": [
+    "wd:Q1165538"
+   ],
    "isPartOf": "nh:#dataset"
   },
   {
@@ -387,7 +531,9 @@
    "skos:prefLabel": {
     "sv": "Periodindelning enligt Sveriges riksdag"
    },
-   "url": "https://riksdagen.se/",
+   "dcterms:source": [
+    "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/"
+   ],
    "isPartOf": "nh:#dataset"
   },
   {
@@ -396,7 +542,9 @@
    "skos:prefLabel": {
     "sv": "Periodindelning enligt Uppslagsverket Finland"
    },
-   "dcterms:source": "wd:Q3503516",
+   "dcterms:source": [
+    "wd:Q3503516"
+   ],
    "isPartOf": "nh:#dataset"
   },
   {
@@ -2018,7 +2166,7 @@
    ],
    "dcterms:identifier": "def-027",
    "skos:prefLabel": {
-    "sv": "Jägarstenålder enligt Statens historiska museer"
+    "sv": "Jägarstenålder enligt Historiska museet"
    },
    "skos:inScheme": "nh:#kalla-historiska",
    "skos:exactMatch": "nh:nh-p0028",
@@ -2077,7 +2225,7 @@
    ],
    "dcterms:identifier": "def-028",
    "skos:prefLabel": {
-    "sv": "Bondestenålder enligt Statens historiska museer"
+    "sv": "Bondestenålder enligt Historiska museet"
    },
    "skos:inScheme": "nh:#kalla-historiska",
    "skos:exactMatch": "nh:nh-p0029",
@@ -2136,7 +2284,7 @@
    ],
    "dcterms:identifier": "def-029",
    "skos:prefLabel": {
-    "sv": "Vikingatid enligt Statens historiska museer"
+    "sv": "Vikingatid enligt Historiska museet"
    },
    "skos:inScheme": "nh:#kalla-historiska",
    "skos:exactMatch": "nh:nh-p0030",
@@ -5296,7 +5444,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879",
-    "name": "Alþingi í Lærða skólanum 1845–1879 (althingi.is)"
+    "name": "Alþingi í Lærða skólanum 1845–1879 (althingi.is)",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q131279"
    },
    "prov:wasDerivedFrom": "https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879",
    "schema:comment": {
@@ -5335,7 +5486,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/",
-    "name": "Heimastjórn 1904–1918 (stjornarradid.is)"
+    "name": "Heimastjórn 1904–1918 (stjornarradid.is)",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q3354110"
    },
    "prov:wasDerivedFrom": "https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/"
   },
@@ -5640,7 +5794,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period",
-    "name": "Nationalmuseet: The Neolithic period"
+    "name": "Nationalmuseet: The Neolithic period",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q648166"
    },
    "prov:wasDerivedFrom": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period"
   },
@@ -5713,7 +5870,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period",
-    "name": "Nationalmuseet: The Neolithic period"
+    "name": "Nationalmuseet: The Neolithic period",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q648166"
    },
    "prov:wasDerivedFrom": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period"
   },
@@ -7557,7 +7717,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/",
-    "name": "Statens historiska museer – Tidsåldrar"
+    "name": "Statens historiska museer – Tidsåldrar",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1726607"
    },
    "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/"
   },
@@ -7592,7 +7755,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/",
-    "name": "Statens historiska museer – Mesolitikum"
+    "name": "Statens historiska museer – Mesolitikum",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1726607"
    },
    "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/"
   },
@@ -7627,7 +7793,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/",
-    "name": "Statens historiska museer – Mesolitikum"
+    "name": "Statens historiska museer – Mesolitikum",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1726607"
    },
    "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/"
   },
@@ -7662,7 +7831,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/",
-    "name": "Statens historiska museer – Tidsåldrar"
+    "name": "Statens historiska museer – Tidsåldrar",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1726607"
    },
    "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/"
   },
@@ -7735,7 +7907,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/",
-    "name": "Statens historiska museer – Tidsåldrar"
+    "name": "Statens historiska museer – Tidsåldrar",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1726607"
    },
    "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/",
    "schema:correction": "793 – 1050",
@@ -7966,7 +8141,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd",
-    "name": "Svenska kyrkan – Ärkebiskopslängd"
+    "name": "Svenska kyrkan – Ärkebiskopslängd",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q749243"
    },
    "prov:wasDerivedFrom": "https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd"
   },
@@ -8158,7 +8336,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.britannica.com/place/Stockholm",
-    "name": "Encyclopaedia Britannica – Stockholm"
+    "name": "Encyclopaedia Britannica – Stockholm",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q5375741"
    },
    "prov:wasDerivedFrom": "https://www.britannica.com/place/Stockholm"
   },
@@ -8245,7 +8426,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/",
-    "name": "Sveriges riksdag – Regeringsformen 50 år"
+    "name": "Sveriges riksdag – Regeringsformen 50 år",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q272930"
    },
    "prov:wasDerivedFrom": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/",
    "schema:correction": "1809 – 1818 (NE) / RF gällde 1809–1974",
@@ -8331,7 +8515,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/",
-    "name": "Sveriges riksdag – Kampen om rösträtten"
+    "name": "Sveriges riksdag – Kampen om rösträtten",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q272930"
    },
    "prov:wasDerivedFrom": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/"
   },
@@ -8442,7 +8629,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/",
-    "name": "Regeringskansliet – Sverige i EU 30 år"
+    "name": "Regeringskansliet – Sverige i EU 30 år",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q10650489"
    },
    "prov:wasDerivedFrom": "https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/"
   },
@@ -8477,7 +8667,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/",
-    "name": "Regeringskansliet – Sveriges och Natos historia"
+    "name": "Regeringskansliet – Sveriges och Natos historia",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q10650489"
    },
    "prov:wasDerivedFrom": "https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/"
   },
@@ -8764,7 +8957,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki",
-    "name": "Wikipedia (en): Sammallahdenmäki"
+    "name": "Wikipedia (en): Sammallahdenmäki",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q328"
    },
    "prov:wasDerivedFrom": "https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki"
   },
@@ -9154,7 +9350,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf",
-    "name": "Riksdagen: Riksdagens historia (broschyr)"
+    "name": "Riksdagen: Riksdagens historia (broschyr)",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q643412"
    },
    "prov:wasDerivedFrom": "https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf"
   },
@@ -9498,7 +9697,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://um.fi/finland-and-nato",
-    "name": "Finlands utrikesministerium: Finland's membership in NATO"
+    "name": "Finlands utrikesministerium: Finland's membership in NATO",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q2639539"
    },
    "prov:wasDerivedFrom": "https://um.fi/finland-and-nato"
   },
@@ -9609,7 +9811,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://whc.unesco.org/en/list/557",
-    "name": "UNESCO World Heritage: Rock Carvings in Tanum"
+    "name": "UNESCO World Heritage: Rock Carvings in Tanum",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q7809"
    },
    "prov:wasDerivedFrom": "https://whc.unesco.org/en/list/557"
   },
@@ -9987,7 +10192,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde",
-    "name": "Uppsala universitet/Gustavianum: Valsgärde"
+    "name": "Uppsala universitet/Gustavianum: Valsgärde",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q185246"
    },
    "prov:wasDerivedFrom": "https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde"
   },
@@ -10965,7 +11173,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.svenskakyrkan.se/kristentro/bekannelseskrifter",
-    "name": "Bekännelseskrifter – Svenska kyrkan"
+    "name": "Bekännelseskrifter – Svenska kyrkan",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q749243"
    },
    "prov:wasDerivedFrom": "https://www.svenskakyrkan.se/kristentro/bekannelseskrifter"
   },
@@ -11262,7 +11473,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/",
-    "name": "Besluten som förändrade Sverige – Sveriges riksdag"
+    "name": "Besluten som förändrade Sverige – Sveriges riksdag",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q272930"
    },
    "prov:wasDerivedFrom": "https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/"
   },
@@ -11449,7 +11663,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809",
-    "name": "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)"
+    "name": "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q11885692"
    },
    "prov:wasDerivedFrom": "https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809"
   },
@@ -11788,7 +12005,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.norden.org/sv/information/nordiska-radets-historia",
-    "name": "Nordiska rådets historia – Norden.org"
+    "name": "Nordiska rådets historia – Norden.org",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q146165"
    },
    "prov:wasDerivedFrom": "https://www.norden.org/sv/information/nordiska-radets-historia"
   },
@@ -11937,7 +12157,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uu.se/550/tidigare-jubileer-och-kort-historik",
-    "name": "Uppsala universitet: Kort historik och tidigare jubileer"
+    "name": "Uppsala universitet: Kort historik och tidigare jubileer",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q185246"
    },
    "prov:wasDerivedFrom": "https://www.uu.se/550/tidigare-jubileer-och-kort-historik"
   },
@@ -12210,7 +12433,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius",
-    "name": "Uppsala universitet: Anders Celsius"
+    "name": "Uppsala universitet: Anders Celsius",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q185246"
    },
    "prov:wasDerivedFrom": "https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius"
   },
@@ -12317,7 +12543,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf",
-    "name": "JO: JO – i riksdagens tjänst (bok, jo.se)"
+    "name": "JO: JO – i riksdagens tjänst (bok, jo.se)",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q107157415"
    },
    "prov:wasDerivedFrom": "https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf"
   },
@@ -12390,7 +12619,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/",
-    "name": "Nobelprize.org: Alfred Nobel's life and work"
+    "name": "Nobelprize.org: Alfred Nobel's life and work",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1781959"
    },
    "prov:wasDerivedFrom": "https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/",
    "schema:comment": {
@@ -12501,7 +12733,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.nobelprize.org/prizes/facts/nobel-prize-facts/",
-    "name": "Nobelprize.org: Nobel Prize facts"
+    "name": "Nobelprize.org: Nobel Prize facts",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1781959"
    },
    "prov:wasDerivedFrom": "https://www.nobelprize.org/prizes/facts/nobel-prize-facts/"
   },
@@ -12536,7 +12771,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html",
-    "name": "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet"
+    "name": "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q798557"
    },
    "prov:wasDerivedFrom": "https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html"
   },
@@ -12647,7 +12885,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage",
-    "name": "Tetra Pak: Heritage"
+    "name": "Tetra Pak: Heritage",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q659200"
    },
    "prov:wasDerivedFrom": "https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage",
    "schema:comment": {
@@ -12686,7 +12927,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle",
-    "name": "LEGO: The stud and tube principle"
+    "name": "LEGO: The stud and tube principle",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1063455"
    },
    "prov:wasDerivedFrom": "https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle",
    "schema:comment": {
@@ -12725,7 +12969,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf",
-    "name": "IVA: Svenska innovationer – Pacemakern"
+    "name": "IVA: Svenska innovationer – Pacemakern",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q3394637"
    },
    "prov:wasDerivedFrom": "https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf"
   },
@@ -12760,7 +13007,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/",
-    "name": "Volvo Cars pressmeddelande: trepunktsbeltet fyller 60 år"
+    "name": "Volvo Cars pressmeddelande: trepunktsbeltet fyller 60 år",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q215293"
    },
    "prov:wasDerivedFrom": "https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/"
   },
@@ -12833,7 +13083,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.computerhistory.org/revolution/personal-computers/17/307/1235",
-    "name": "Computer History Museum: Linux"
+    "name": "Computer History Museum: Linux",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q964035"
    },
    "prov:wasDerivedFrom": "https://www.computerhistory.org/revolution/personal-computers/17/307/1235"
   },
@@ -12868,7 +13121,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.sverigesradio.se/artikel/5667619",
-    "name": "Sveriges Radio"
+    "name": "Sveriges Radio",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1543058"
    },
    "prov:wasDerivedFrom": "https://www.sverigesradio.se/artikel/5667619"
   },
@@ -13214,6 +13470,14 @@
     "@type": "PropertyValue",
     "propertyID": "wd:P3222",
     "value": "folkungar"
+   }
+  },
+  {
+   "@id": "https://www.britannica.com/place/Stockholm",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "wd:P1417",
+    "value": "place/Stockholm"
    }
   },
   {

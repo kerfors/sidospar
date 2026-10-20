@@ -1,43 +1,346 @@
 {
- "note": "Vad källorna är och vem som ger ut dem, för det här projektet. Läses bara av ld.py här; projektet är fristående. IRI:erna är gemensamma: Wikidatas där verket eller utgivaren finns där, annars de publicerade under https://w3id.org/people/kerfors/sidospar/kallor/id/ (SDHK och källtyperna). Namnen är kopior för läsbarheten. En källa (URL) hör till ett verk om den börjar med ett av verkets url_prefixes, annars till en utgivare via webbplatsen (hosts). Artikelnumret tas ur adressen med Wikidatas URL-mönster (P8966) för verkets egenskap, med två tillägg: www. i värdnamnet räknas som samma webbplats, och mönstret måste täcka hela adressen. Adresser som inte följer mönstret får inget nummer. Uppslagsverken och utgivarna är kontrollerade i Wikidata 2026-10-20. Nationalencyklopedin har ingen utgivare i Wikidata och står utan utgivare här. scheme är nyckeln för verkets periodindelning i datan (nh:#kalla-<scheme>).",
+ "note": "Vad källorna är och vem som ger ut dem, för det här projektet. Läses bara av ld.py här; projektet är fristående. IRI:erna är gemensamma: Wikidatas där verket eller utgivaren finns där, annars de publicerade under https://w3id.org/people/kerfors/sidospar/kallor/id/ (SDHK och källtyperna). Namnen är kopior för läsbarheten. En källa (URL) hör till ett verk om den börjar med ett av verkets url_prefixes, annars till en utgivare via webbplatsen (hosts). Artikelnumret tas ur adressen med Wikidatas URL-mönster (P8966) för verkets egenskap, med två tillägg: www. i värdnamnet räknas som samma webbplats, och mönstret måste täcka hela adressen. Adresser som inte följer mönstret får inget nummer. Uppslagsverken och utgivarna är kontrollerade i Wikidata 2026-10-20. Nationalencyklopedin har ingen utgivare i Wikidata och står utan utgivare här. En utgivare på en webbplats är den post i Wikidata vars officiella webbplats (P856) är webbplatsen; grunden står i basis. scheme är nyckeln för verkets eller utgivarens periodindelning i datan (nh:#kalla-<scheme>).",
  "types": {
-  "uppslagsverk": {"iri": "kallor:#uppslagsverk", "schema": "CreativeWork"},
-  "register": {"iri": "kallor:#register", "schema": "Dataset"},
-  "artikel": {"iri": "kallor:#artikel", "schema": "Article"},
-  "registerpost": {"iri": "kallor:#registerpost", "schema": "CreativeWork"},
-  "webbsida": {"iri": "kallor:#webbsida", "schema": "WebPage"}
+  "uppslagsverk": {
+   "iri": "kallor:#uppslagsverk",
+   "schema": "CreativeWork"
+  },
+  "register": {
+   "iri": "kallor:#register",
+   "schema": "Dataset"
+  },
+  "artikel": {
+   "iri": "kallor:#artikel",
+   "schema": "Article"
+  },
+  "registerpost": {
+   "iri": "kallor:#registerpost",
+   "schema": "CreativeWork"
+  },
+  "webbsida": {
+   "iri": "kallor:#webbsida",
+   "schema": "WebPage"
+  }
  },
  "publishers": [
-  {"iri": "wd:Q1724971", "name": "Riksarkivet", "hosts": ["riksarkivet.se"]},
-  {"iri": "wd:Q11992497", "name": "Store norske leksikon", "hosts": [],
-   "basis": "Wikidata: Q746368 owned by (P127) Q11992497; Q11992497 product or material produced (P1056) Q746368"},
-  {"iri": "wd:Q90681275", "name": "Foreningen lex.dk", "hosts": [],
-   "basis": "Wikidata: Q136450325 publisher (P123) Q90681275"},
-  {"iri": "wd:Q3431677", "name": "Svenska folkskolans vänner", "hosts": [],
-   "basis": "Wikidata: Q3503516 publisher (P123) Q3431677"}
+  {
+   "iri": "wd:Q1724971",
+   "name": "Riksarkivet",
+   "hosts": [
+    "riksarkivet.se"
+   ]
+  },
+  {
+   "iri": "wd:Q11992497",
+   "name": "Store norske leksikon",
+   "hosts": [],
+   "basis": "Wikidata: Q746368 owned by (P127) Q11992497; Q11992497 product or material produced (P1056) Q746368"
+  },
+  {
+   "iri": "wd:Q90681275",
+   "name": "Foreningen lex.dk",
+   "hosts": [],
+   "basis": "Wikidata: Q136450325 publisher (P123) Q90681275"
+  },
+  {
+   "iri": "wd:Q3431677",
+   "name": "Svenska folkskolans vänner",
+   "hosts": [],
+   "basis": "Wikidata: Q3503516 publisher (P123) Q3431677"
+  },
+  {
+   "iri": "wd:Q1726607",
+   "name": "Historiska museet",
+   "hosts": [
+    "historiska.se"
+   ],
+   "basis": "Wikidata: Q1726607 official website (P856) historiska.se; part of (P361) Statens historiska museer, Q2324548",
+   "scheme": "historiska"
+  },
+  {
+   "iri": "wd:Q272930",
+   "name": "Sveriges riksdag",
+   "hosts": [
+    "riksdagen.se"
+   ],
+   "basis": "Wikidata: Q272930 official website (P856) www.riksdagen.se",
+   "scheme": "riksdagen"
+  },
+  {
+   "iri": "wd:Q648166",
+   "name": "Nationalmuseet",
+   "hosts": [
+    "natmus.dk"
+   ],
+   "basis": "Wikidata: Q648166 official website (P856) nationalmuseet.dk/en; natmus.dk, the address of our source, is not in Wikidata",
+   "scheme": "natmus"
+  },
+  {
+   "iri": "wd:Q185246",
+   "name": "Uppsala universitet",
+   "hosts": [
+    "uu.se"
+   ],
+   "basis": "Wikidata: Q185246 official website (P856) www.uu.se"
+  },
+  {
+   "iri": "wd:Q749243",
+   "name": "Svenska kyrkan",
+   "hosts": [
+    "svenskakyrkan.se"
+   ],
+   "basis": "Wikidata: Q749243 official website (P856) www.svenskakyrkan.se"
+  },
+  {
+   "iri": "wd:Q10650489",
+   "name": "Regeringskansliet",
+   "hosts": [
+    "regeringen.se"
+   ],
+   "basis": "Wikidata: Q10650489 official website (P856) regeringen.se"
+  },
+  {
+   "iri": "wd:Q1781959",
+   "name": "Nobelstiftelsen",
+   "hosts": [
+    "nobelprize.org"
+   ],
+   "basis": "Wikidata: the website nobelprize.org, Q23684016, publisher (P123) Q1781959"
+  },
+  {
+   "iri": "wd:Q131279",
+   "name": "Alltinget",
+   "hosts": [
+    "althingi.is"
+   ],
+   "basis": "Wikidata: Q131279 official website (P856) althingi.is"
+  },
+  {
+   "iri": "wd:Q3354110",
+   "name": "Islands regering",
+   "hosts": [
+    "stjornarradid.is"
+   ],
+   "basis": "Wikidata: Q3354110 official website (P856) www.stjornarradid.is; Q12351757 (Government of Iceland) has the same website"
+  },
+  {
+   "iri": "wd:Q643412",
+   "name": "Finlands riksdag",
+   "hosts": [
+    "riksdagen.fi"
+   ],
+   "basis": "Wikidata: Q643412 official website (P856) www.eduskunta.fi; riksdagen.fi, the address of our source, is not in Wikidata"
+  },
+  {
+   "iri": "wd:Q2639539",
+   "name": "Utrikesministeriet (Finland)",
+   "hosts": [
+    "um.fi"
+   ],
+   "basis": "Wikidata: Q2639539 official website (P856) um.fi"
+  },
+  {
+   "iri": "wd:Q7809",
+   "name": "UNESCO",
+   "hosts": [
+    "unesco.org"
+   ],
+   "basis": "Wikidata: Q7809; our source is on whc.unesco.org, the World Heritage Centre's site under unesco.org, which is not in Wikidata as a website"
+  },
+  {
+   "iri": "wd:Q11885692",
+   "name": "Utbildningsstyrelsen",
+   "hosts": [
+    "oph.fi"
+   ],
+   "basis": "Wikidata: Q11885692 official website (P856) www.oph.fi"
+  },
+  {
+   "iri": "wd:Q146165",
+   "name": "Nordiska rådet",
+   "hosts": [
+    "norden.org"
+   ],
+   "basis": "Wikidata: Q146165 official website (P856) www.norden.org/en; Nordiska ministerrådet, Q182379, has a page under the same site"
+  },
+  {
+   "iri": "wd:Q107157415",
+   "name": "Justitieombudsmannen",
+   "hosts": [
+    "jo.se"
+   ],
+   "basis": "Wikidata: Q107157415 (authority under the Riksdag) official website (P856) www.jo.se"
+  },
+  {
+   "iri": "wd:Q798557",
+   "name": "Statistikcentralen",
+   "hosts": [
+    "stat.fi"
+   ],
+   "basis": "Wikidata: Q798557 official website (P856) www.stat.fi"
+  },
+  {
+   "iri": "wd:Q659200",
+   "name": "Tetra Pak",
+   "hosts": [
+    "tetrapak.com"
+   ],
+   "basis": "Wikidata: Q659200 official website (P856) www.tetrapak.com"
+  },
+  {
+   "iri": "wd:Q1063455",
+   "name": "Lego A/S",
+   "hosts": [
+    "lego.com"
+   ],
+   "basis": "Wikidata: Q1063455 official website (P856) www.lego.com"
+  },
+  {
+   "iri": "wd:Q3394637",
+   "name": "Kungliga Ingenjörsvetenskapsakademien",
+   "hosts": [
+    "iva.se"
+   ],
+   "basis": "Wikidata: Q3394637 official website (P856) www.iva.se"
+  },
+  {
+   "iri": "wd:Q215293",
+   "name": "Volvo Personvagnar",
+   "hosts": [
+    "volvocars.com"
+   ],
+   "basis": "Wikidata: Q215293 official website (P856) www.volvocars.com"
+  },
+  {
+   "iri": "wd:Q964035",
+   "name": "Computer History Museum",
+   "hosts": [
+    "computerhistory.org"
+   ],
+   "basis": "Wikidata: Q964035 official website (P856) computerhistory.org"
+  },
+  {
+   "iri": "wd:Q1543058",
+   "name": "Sveriges Radio",
+   "hosts": [
+    "sverigesradio.se"
+   ],
+   "basis": "Wikidata: Q1543058 official website (P856) sverigesradio.se"
+  },
+  {
+   "iri": "wd:Q2743906",
+   "name": "Encyclopædia Britannica, Inc.",
+   "hosts": [],
+   "basis": "Wikidata: Q5375741 owned by (P127) Q2743906"
+  },
+  {
+   "iri": "wd:Q180",
+   "name": "Wikimedia Foundation",
+   "hosts": [],
+   "basis": "Wikidata: Q328 operator (P137) and owned by (P127) Q180"
+  }
  ],
  "works": [
-  {"register": "SBL", "iri": "wd:Q379406", "name": "Svenskt biografiskt lexikon (SBL)",
-   "type": "uppslagsverk", "publisher": "wd:Q1724971",
-   "part_type": "artikel", "url_prefixes": ["https://sok.riksarkivet.se/sbl/"], "id_property": "wd:P3217"},
-  {"register": "SDHK", "iri": "kallor:sdhk", "name": "Svenskt Diplomatariums huvudkartotek (SDHK)",
-   "type": "register", "publisher": "wd:Q1724971",
-   "part_type": "registerpost", "url_prefixes": ["https://sok.riksarkivet.se/sdhk"], "id_property": "kallor:sdhk"},
-  {"iri": "wd:Q746368", "name": "Store norske leksikon", "scheme": "snl",
-   "type": "uppslagsverk", "publisher": "wd:Q11992497",
-   "part_type": "artikel", "url_prefixes": ["https://snl.no/"],
-   "id_property": "wd:P4342", "id_pattern": "^https?://snl\\.no/(.+)$"},
-  {"iri": "wd:Q136450325", "name": "Lex", "scheme": "lex",
-   "type": "uppslagsverk", "publisher": "wd:Q90681275",
-   "part_type": "artikel", "url_prefixes": ["https://lex.dk/"],
-   "id_property": "wd:P8313", "id_pattern": "^https?://lex\\.dk/(.+)$"},
-  {"iri": "wd:Q3503516", "name": "Uppslagsverket Finland", "scheme": "uppslagsverket",
-   "type": "uppslagsverk", "publisher": "wd:Q3431677",
-   "part_type": "artikel", "url_prefixes": ["https://www.uppslagsverket.fi/", "https://uppslagsverket.fi/"],
-   "id_property": "wd:P4854", "id_pattern": "^https?://(?:www\\.)?uppslagsverket\\.fi/sv/sok/view-170045-(\\w+)$"},
-  {"iri": "wd:Q1165538", "name": "Nationalencyklopedin", "scheme": "ne",
-   "type": "uppslagsverk", "publisher": null,
-   "part_type": "artikel", "url_prefixes": ["https://www.ne.se/", "https://ne.se/"],
-   "id_property": "wd:P3222", "id_pattern": "^https?://(?:www\\.)?ne\\.se/uppslagsverk/encyklopedi/lång/([0-9a-zäöå-][0-9a-zäöå()-]*)$"}
+  {
+   "register": "SBL",
+   "iri": "wd:Q379406",
+   "name": "Svenskt biografiskt lexikon (SBL)",
+   "type": "uppslagsverk",
+   "publisher": "wd:Q1724971",
+   "part_type": "artikel",
+   "url_prefixes": [
+    "https://sok.riksarkivet.se/sbl/"
+   ],
+   "id_property": "wd:P3217"
+  },
+  {
+   "register": "SDHK",
+   "iri": "kallor:sdhk",
+   "name": "Svenskt Diplomatariums huvudkartotek (SDHK)",
+   "type": "register",
+   "publisher": "wd:Q1724971",
+   "part_type": "registerpost",
+   "url_prefixes": [
+    "https://sok.riksarkivet.se/sdhk"
+   ],
+   "id_property": "kallor:sdhk"
+  },
+  {
+   "iri": "wd:Q746368",
+   "name": "Store norske leksikon",
+   "scheme": "snl",
+   "type": "uppslagsverk",
+   "publisher": "wd:Q11992497",
+   "part_type": "artikel",
+   "url_prefixes": [
+    "https://snl.no/"
+   ],
+   "id_property": "wd:P4342",
+   "id_pattern": "^https?://snl\\.no/(.+)$"
+  },
+  {
+   "iri": "wd:Q136450325",
+   "name": "Lex",
+   "scheme": "lex",
+   "type": "uppslagsverk",
+   "publisher": "wd:Q90681275",
+   "part_type": "artikel",
+   "url_prefixes": [
+    "https://lex.dk/"
+   ],
+   "id_property": "wd:P8313",
+   "id_pattern": "^https?://lex\\.dk/(.+)$"
+  },
+  {
+   "iri": "wd:Q3503516",
+   "name": "Uppslagsverket Finland",
+   "scheme": "uppslagsverket",
+   "type": "uppslagsverk",
+   "publisher": "wd:Q3431677",
+   "part_type": "artikel",
+   "url_prefixes": [
+    "https://www.uppslagsverket.fi/",
+    "https://uppslagsverket.fi/"
+   ],
+   "id_property": "wd:P4854",
+   "id_pattern": "^https?://(?:www\\.)?uppslagsverket\\.fi/sv/sok/view-170045-(\\w+)$"
+  },
+  {
+   "iri": "wd:Q1165538",
+   "name": "Nationalencyklopedin",
+   "scheme": "ne",
+   "type": "uppslagsverk",
+   "publisher": null,
+   "part_type": "artikel",
+   "url_prefixes": [
+    "https://www.ne.se/",
+    "https://ne.se/"
+   ],
+   "id_property": "wd:P3222",
+   "id_pattern": "^https?://(?:www\\.)?ne\\.se/uppslagsverk/encyklopedi/lång/([0-9a-zäöå-][0-9a-zäöå()-]*)$"
+  },
+  {
+   "iri": "wd:Q5375741",
+   "name": "Encyclopædia Britannica Online",
+   "type": "uppslagsverk",
+   "publisher": "wd:Q2743906",
+   "part_type": "artikel",
+   "url_prefixes": [
+    "https://www.britannica.com/",
+    "https://britannica.com/"
+   ],
+   "id_property": "wd:P1417",
+   "id_pattern": "^https?://(?:www\\.)?britannica\\.com/((?:topic|facts|place|event|science|technology|plant|animal|biography|sports|art|money)(?:/[^\\s/]+)+)(?:#.+|$)"
+  },
+  {
+   "iri": "wd:Q328",
+   "name": "Engelskspråkiga Wikipedia",
+   "type": "uppslagsverk",
+   "publisher": "wd:Q180",
+   "part_type": "artikel",
+   "url_prefixes": [
+    "https://en.wikipedia.org/"
+   ]
+  }
  ]
 }

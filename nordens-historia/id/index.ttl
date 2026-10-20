@@ -2067,7 +2067,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "-3999"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0028 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-historiska> ;
-    skos:prefLabel "Jägarstenålder enligt Statens historiska museer"@sv ;
+    skos:prefLabel "Jägarstenålder enligt Historiska museet"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0068#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0029#def-028> a crm:E4_Period,
@@ -2080,7 +2080,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "-1699"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0029 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-historiska> ;
-    skos:prefLabel "Bondestenålder enligt Statens historiska museer"@sv ;
+    skos:prefLabel "Bondestenålder enligt Historiska museet"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0071#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0030#def-029> a crm:E4_Period,
@@ -2093,7 +2093,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1050"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0030 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-historiska> ;
-    skos:prefLabel "Vikingatid enligt Statens historiska museer"@sv ;
+    skos:prefLabel "Vikingatid enligt Historiska museet"@sv ;
     skos:scopeNote "Källans formulering: vikingatid 793–1050"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0073#granskning> .
 
@@ -2539,24 +2539,79 @@ nh: a schema:WebPage ;
     skos:prefLabel "Unionen Sverige–Norge enligt Store norske leksikon"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0173#granskning> .
 
+wd:Q1063455 a schema:Organization ;
+    schema:name "Lego A/S" .
+
+wd:Q11885692 a schema:Organization ;
+    schema:name "Utbildningsstyrelsen" .
+
 wd:Q11992497 a schema:Organization ;
     schema:name "Store norske leksikon" .
+
+wd:Q1543058 a schema:Organization ;
+    schema:name "Sveriges Radio" .
+
+wd:Q180 a schema:Organization ;
+    schema:name "Wikimedia Foundation" .
+
+wd:Q215293 a schema:Organization ;
+    schema:name "Volvo Personvagnar" .
+
+wd:Q2639539 a schema:Organization ;
+    schema:name "Utrikesministeriet (Finland)" .
+
+wd:Q2743906 a schema:Organization ;
+    schema:name "Encyclopædia Britannica, Inc." .
+
+wd:Q328 a schema:CreativeWork ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#uppslagsverk> ;
+    schema:name "Engelskspråkiga Wikipedia" ;
+    schema:publisher wd:Q180 .
+
+wd:Q3354110 a schema:Organization ;
+    schema:name "Islands regering" .
+
+wd:Q3394637 a schema:Organization ;
+    schema:name "Kungliga Ingenjörsvetenskapsakademien" .
 
 wd:Q3431677 a schema:Organization ;
     schema:name "Svenska folkskolans vänner" .
 
+wd:Q5375741 a schema:CreativeWork ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#uppslagsverk> ;
+    schema:name "Encyclopædia Britannica Online" ;
+    schema:publisher wd:Q2743906 .
+
+wd:Q643412 a schema:Organization ;
+    schema:name "Finlands riksdag" .
+
+wd:Q648166 a schema:Organization ;
+    schema:name "Nationalmuseet" .
+
+wd:Q659200 a schema:Organization ;
+    schema:name "Tetra Pak" .
+
+wd:Q7809 a schema:Organization ;
+    schema:name "UNESCO" .
+
+wd:Q798557 a schema:Organization ;
+    schema:name "Statistikcentralen" .
+
 wd:Q90681275 a schema:Organization ;
     schema:name "Foreningen lex.dk" .
 
+wd:Q964035 a schema:Organization ;
+    schema:name "Computer History Museum" .
+
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-natmus> a skos:ConceptScheme ;
+    dcterms:source <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> ;
     skos:prefLabel "Periodindelning enligt Nationalmuseet"@sv ;
-    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
-    schema:url <https://natmus.dk/> .
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-riksdagen> a skos:ConceptScheme ;
+    dcterms:source <https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/> ;
     skos:prefLabel "Periodindelning enligt Sveriges riksdag"@sv ;
-    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
-    schema:url <https://riksdagen.se/> .
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#riksarkivets-mcp> a prov:Entity,
         schema:WebAPI ;
@@ -4840,11 +4895,38 @@ nh:nh-m0026 a crm:E5_Event,
     schema:name "Spotify" ;
     schema:startDate "2008"^^xsd:gYear .
 
-<https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki> schema:name "Wikipedia (en): Sammallahdenmäki" .
+wd:Q10650489 a schema:Organization ;
+    schema:name "Regeringskansliet" .
+
+wd:Q107157415 a schema:Organization ;
+    schema:name "Justitieombudsmannen" .
+
+wd:Q131279 a schema:Organization ;
+    schema:name "Alltinget" .
+
+wd:Q146165 a schema:Organization ;
+    schema:name "Nordiska rådet" .
+
+wd:Q1726607 a schema:Organization ;
+    schema:name "Historiska museet" .
+
+wd:Q1781959 a schema:Organization ;
+    schema:name "Nobelstiftelsen" .
+
+wd:Q749243 a schema:Organization ;
+    schema:name "Svenska kyrkan" .
+
+<https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:isPartOf wd:Q328 ;
+    schema:name "Wikipedia (en): Sammallahdenmäki" .
 
 <https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf> schema:name "Läkartidningen 2003 (artikel om digerdöden)" .
 
-<https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle> schema:name "LEGO: The stud and tube principle" .
+<https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "LEGO: The stud and tube principle" ;
+    schema:publisher wd:Q1063455 .
 
 <https://lex.dk/5._maj_1945> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5070,14 +5152,20 @@ nh:nh-m0026 a crm:E5_Event,
     schema:isPartOf wd:Q1165538 ;
     schema:name "Westfaliska freden – Nationalencyklopedin" .
 
-<https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf> schema:name "IVA: Svenska innovationer – Pacemakern" .
+<https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "IVA: Svenska innovationer – Pacemakern" ;
+    schema:publisher wd:Q3394637 .
 
 <https://riksarkivet.se/resurser/tryckfrihetsforordningen-1766> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
     schema:name "Riksarkivet: Tryckfrihetsförordningen 1766" ;
     schema:publisher wd:Q1724971 .
 
-<https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> schema:name "Riksdagen: Riksdagens historia (broschyr)" .
+<https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Riksdagen: Riksdagens historia (broschyr)" ;
+    schema:publisher wd:Q643412 .
 
 <https://snl.no/Alltinget> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5466,11 +5554,20 @@ nh:nh-m0026 a crm:E5_Event,
     schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
 
-<https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html> schema:name "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet" .
+<https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet" ;
+    schema:publisher wd:Q798557 .
 
-<https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> schema:name "Tetra Pak: Heritage" .
+<https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Tetra Pak: Heritage" ;
+    schema:publisher wd:Q659200 .
 
-<https://um.fi/finland-and-nato> schema:name "Finlands utrikesministerium: Finland's membership in NATO" .
+<https://um.fi/finland-and-nato> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Finlands utrikesministerium: Finland's membership in NATO" ;
+    schema:publisher wd:Q2639539 .
 
 <https://videnskab.dk/kultur-samfund/mystiske-krigere-angreb-dansk-oe-for-2-300-aar-siden-hvem-var-de/> schema:name "Videnskab.dk: Mystiske krigere angreb dansk ø for 2.300 år siden" .
 
@@ -5611,15 +5708,33 @@ nh:nh-c0194 a schema:Claim ;
     schema:about nh:nh-m0013 ;
     schema:text "Nobels dynamit: 1867" .
 
-<https://whc.unesco.org/en/list/557> schema:name "UNESCO World Heritage: Rock Carvings in Tanum" .
+<https://whc.unesco.org/en/list/557> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "UNESCO World Heritage: Rock Carvings in Tanum" ;
+    schema:publisher wd:Q7809 .
 
-<https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> schema:name "Alþingi í Lærða skólanum 1845–1879 (althingi.is)" .
+<https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Alþingi í Lærða skólanum 1845–1879 (althingi.is)" ;
+    schema:publisher wd:Q131279 .
 
-<https://www.britannica.com/place/Stockholm> schema:name "Encyclopaedia Britannica – Stockholm" .
+<https://www.britannica.com/place/Stockholm> a schema:Article ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P1417 ;
+            schema:value "place/Stockholm" ] ;
+    schema:isPartOf wd:Q5375741 ;
+    schema:name "Encyclopaedia Britannica – Stockholm" .
 
-<https://www.computerhistory.org/revolution/personal-computers/17/307/1235> schema:name "Computer History Museum: Linux" .
+<https://www.computerhistory.org/revolution/personal-computers/17/307/1235> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Computer History Museum: Linux" ;
+    schema:publisher wd:Q964035 .
 
-<https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf> schema:name "JO: JO – i riksdagens tjänst (bok, jo.se)" .
+<https://www.jo.se/Global/Bok%20JO%20-%20i%20riksdagens%20tj%c3%a4nst.pdf> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "JO: JO – i riksdagens tjänst (bok, jo.se)" ;
+    schema:publisher wd:Q107157415 .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/birka> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5658,29 +5773,65 @@ nh:nh-c0194 a schema:Claim ;
     schema:isPartOf wd:Q1165538 ;
     schema:name "Nationalencyklopedin: Systema naturae" .
 
-<https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> schema:name "Nobelprize.org: Alfred Nobel's life and work" .
+<https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Nobelprize.org: Alfred Nobel's life and work" ;
+    schema:publisher wd:Q1781959 .
 
-<https://www.nobelprize.org/prizes/facts/nobel-prize-facts/> schema:name "Nobelprize.org: Nobel Prize facts" .
+<https://www.nobelprize.org/prizes/facts/nobel-prize-facts/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Nobelprize.org: Nobel Prize facts" ;
+    schema:publisher wd:Q1781959 .
 
-<https://www.norden.org/sv/information/nordiska-radets-historia> schema:name "Nordiska rådets historia – Norden.org" .
+<https://www.norden.org/sv/information/nordiska-radets-historia> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Nordiska rådets historia – Norden.org" ;
+    schema:publisher wd:Q146165 .
 
-<https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809> schema:name "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)" .
+<https://www.oph.fi/sv/laromedel/zooma-in-pa-historia-7-9/del-1/3-finska-kriget-1808-1809> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Finska kriget 1808–1809 – Utbildningsstyrelsen (Finland)" ;
+    schema:publisher wd:Q11885692 .
 
-<https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/> schema:name "Regeringskansliet – Sverige i EU 30 år" .
+<https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Regeringskansliet – Sverige i EU 30 år" ;
+    schema:publisher wd:Q10650489 .
 
-<https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/> schema:name "Regeringskansliet – Sveriges och Natos historia" .
+<https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Regeringskansliet – Sveriges och Natos historia" ;
+    schema:publisher wd:Q10650489 .
 
-<https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/> schema:name "Besluten som förändrade Sverige – Sveriges riksdag" .
+<https://www.riksdagen.se/sv/aktuellt/fran-kungamakt-till-folkstyre/besluten-som-forandrade-sverige/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Besluten som förändrade Sverige – Sveriges riksdag" ;
+    schema:publisher wd:Q272930 .
 
-<https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/> schema:name "Sveriges riksdag – Kampen om rösträtten" .
+<https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Sveriges riksdag – Kampen om rösträtten" ;
+    schema:publisher wd:Q272930 .
 
-<https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/> schema:name "Heimastjórn 1904–1918 (stjornarradid.is)" .
+<https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Heimastjórn 1904–1918 (stjornarradid.is)" ;
+    schema:publisher wd:Q3354110 .
 
-<https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd> schema:name "Svenska kyrkan – Ärkebiskopslängd" .
+<https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Svenska kyrkan – Ärkebiskopslängd" ;
+    schema:publisher wd:Q749243 .
 
-<https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> schema:name "Bekännelseskrifter – Svenska kyrkan" .
+<https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Bekännelseskrifter – Svenska kyrkan" ;
+    schema:publisher wd:Q749243 .
 
-<https://www.sverigesradio.se/artikel/5667619> schema:name "Sveriges Radio" .
+<https://www.sverigesradio.se/artikel/5667619> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Sveriges Radio" ;
+    schema:publisher wd:Q1543058 .
 
 <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoriaMedeltiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5695,13 +5846,28 @@ nh:nh-c0194 a schema:Claim ;
     schema:isPartOf wd:Q3503516 ;
     schema:name "Uppslagsverket Finland: Åbo domkyrka" .
 
-<https://www.uu.se/550/tidigare-jubileer-och-kort-historik> schema:name "Uppsala universitet: Kort historik och tidigare jubileer" .
+<https://www.uu.se/550/tidigare-jubileer-och-kort-historik> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Uppsala universitet: Kort historik och tidigare jubileer" ;
+    schema:publisher wd:Q185246 .
 
-<https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde> schema:name "Uppsala universitet/Gustavianum: Valsgärde" .
+<https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Uppsala universitet/Gustavianum: Valsgärde" ;
+    schema:publisher wd:Q185246 .
 
-<https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius> schema:name "Uppsala universitet: Anders Celsius" .
+<https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Uppsala universitet: Anders Celsius" ;
+    schema:publisher wd:Q185246 .
 
-<https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/> schema:name "Volvo Cars pressmeddelande: trepunktsbeltet fyller 60 år" .
+<https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Volvo Cars pressmeddelande: trepunktsbeltet fyller 60 år" ;
+    schema:publisher wd:Q215293 .
+
+wd:Q272930 a schema:Organization ;
+    schema:name "Sveriges riksdag" .
 
 <https://lex.dk/Enev%C3%A6ldens_faser_1660-1848> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5784,9 +5950,9 @@ nh:nh-c0194 a schema:Claim ;
     schema:name "Store norske leksikon: merovingertid" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-historiska> a skos:ConceptScheme ;
-    skos:prefLabel "Periodindelning enligt Statens historiska museer"@sv ;
-    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
-    schema:url <https://historiska.se/> .
+    dcterms:source <https://historiska.se/utforska-historien/tidsaldrar/> ;
+    skos:prefLabel "Periodindelning enligt Historiska museet"@sv ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/folkungar> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -5811,12 +5977,16 @@ nh:nh-c0194 a schema:Claim ;
     schema:isPartOf wd:Q1165538 ;
     schema:name "Nationalencyklopedin – Sverige, historia: Välfärdssamhället" .
 
-<https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/> schema:name "Sveriges riksdag – Regeringsformen 50 år" .
-
 wd:Q1724971 a schema:Organization ;
     schema:name "Riksarkivet" .
 
-<https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> schema:name "Statens historiska museer – Mesolitikum" .
+wd:Q185246 a schema:Organization ;
+    schema:name "Uppsala universitet" .
+
+<https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Statens historiska museer – Mesolitikum" ;
+    schema:publisher wd:Q1726607 .
 
 <https://snl.no/Ekofisk> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6027,6 +6197,11 @@ nh:nh-p0044 a crm:E4_Period,
     schema:name "Svenska riket" ;
     schema:temporalCoverage "1300/1319" .
 
+<https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/regeringsformen-50-ar/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Sveriges riksdag – Regeringsformen 50 år" ;
+    schema:publisher wd:Q272930 .
+
 <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoria1800Talet> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
     schema:identifier [ a schema:PropertyValue ;
@@ -6034,8 +6209,6 @@ nh:nh-p0044 a crm:E4_Period,
             schema:value "FinlandsHistoria1800Talet" ] ;
     schema:isPartOf wd:Q3503516 ;
     schema:name "Uppslagsverket Finland: Finlands historia – 1800-talet" .
-
-<https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> schema:name "Nationalmuseet: The Neolithic period" .
 
 <https://lex.dk/Danmarks_historie_i_vikingetiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6329,6 +6502,11 @@ wd:Q3503516 a schema:CreativeWork ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#uppslagsverk> ;
     schema:name "Uppslagsverket Finland" ;
     schema:publisher wd:Q3431677 .
+
+<https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Nationalmuseet: The Neolithic period" ;
+    schema:publisher wd:Q648166 .
 
 <https://lex.dk/Danmark-Norge> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6991,8 +7169,6 @@ nh:nh-p0068 a crm:E4_Period,
     schema:name "Frihetstiden" ;
     schema:temporalCoverage "1719/1772" .
 
-<https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
-
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-uppslagsverket> a skos:ConceptScheme ;
     dcterms:source wd:Q3503516 ;
     skos:prefLabel "Periodindelning enligt Uppslagsverket Finland"@sv ;
@@ -7090,6 +7266,11 @@ nh:nh-p0064 a crm:E4_Period,
     schema:description "Reformationen 1536; Norges riksråd avskaffas 1536/37; Kristian IV" ;
     schema:name "Danmark–Norge" ;
     schema:temporalCoverage "1523/1660" .
+
+<https://historiska.se/utforska-historien/tidsaldrar/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Statens historiska museer – Tidsåldrar" ;
+    schema:publisher wd:Q1726607 .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> a schema:Dataset ;
     schema:creator [ a schema:Person ;

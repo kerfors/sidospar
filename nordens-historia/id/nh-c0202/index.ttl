@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0202#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -20,7 +21,10 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0202 .
 
-<https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle> schema:name "LEGO: The stud and tube principle" .
+<https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "LEGO: The stud and tube principle" ;
+    schema:publisher wd:Q1063455 .
 
 nh:nh-c0202 a schema:Claim ;
     dcterms:identifier "MI21",

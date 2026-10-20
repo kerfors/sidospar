@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0197#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -18,7 +19,10 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0197 .
 
-<https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html> schema:name "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet" .
+<https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet" ;
+    schema:publisher wd:Q798557 .
 
 nh:nh-c0197 a schema:Claim ;
     dcterms:identifier "MI16",

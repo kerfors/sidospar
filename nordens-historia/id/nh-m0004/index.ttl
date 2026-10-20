@@ -72,5 +72,8 @@ nh:nh-m0004 a crm:E5_Event,
     schema:name "Uppsala universitet" ;
     schema:startDate "1477"^^xsd:gYear .
 
-<https://www.uu.se/550/tidigare-jubileer-och-kort-historik> schema:name "Uppsala universitet: Kort historik och tidigare jubileer" .
+<https://www.uu.se/550/tidigare-jubileer-och-kort-historik> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Uppsala universitet: Kort historik och tidigare jubileer" ;
+    schema:publisher wd:Q185246 .
 

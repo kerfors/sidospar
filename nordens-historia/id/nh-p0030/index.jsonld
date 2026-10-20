@@ -159,7 +159,7 @@
    ],
    "dcterms:identifier": "def-029",
    "skos:prefLabel": {
-    "sv": "Vikingatid enligt Statens historiska museer"
+    "sv": "Vikingatid enligt Historiska museet"
    },
    "skos:inScheme": "nh:#kalla-historiska",
    "skos:exactMatch": "nh:nh-p0030",
@@ -208,7 +208,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/",
-    "name": "Statens historiska museer – Tidsåldrar"
+    "name": "Statens historiska museer – Tidsåldrar",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1726607"
    },
    "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/",
    "schema:correction": "793 – 1050",

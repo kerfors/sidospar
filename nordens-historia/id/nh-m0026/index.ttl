@@ -39,5 +39,8 @@ nh:nh-m0026 a crm:E5_Event,
     schema:name "Spotify" ;
     schema:startDate "2008"^^xsd:gYear .
 
-<https://www.sverigesradio.se/artikel/5667619> schema:name "Sveriges Radio" .
+<https://www.sverigesradio.se/artikel/5667619> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Sveriges Radio" ;
+    schema:publisher wd:Q1543058 .
 

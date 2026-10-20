@@ -39,5 +39,8 @@ nh:nh-m0023 a crm:E5_Event,
     schema:name "Trepunktsbältet" ;
     schema:startDate "1959"^^xsd:gYear .
 
-<https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/> schema:name "Volvo Cars pressmeddelande: trepunktsbeltet fyller 60 år" .
+<https://www.volvocars.com/no/media/press-releases/6440B0F0A0207756/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Volvo Cars pressmeddelande: trepunktsbeltet fyller 60 år" ;
+    schema:publisher wd:Q215293 .
 

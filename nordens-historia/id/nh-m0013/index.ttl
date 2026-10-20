@@ -62,5 +62,8 @@ nh:nh-m0013 a crm:E5_Event,
     schema:name "Nobels dynamit (patent)" ;
     schema:startDate "1867"^^xsd:gYear .
 
-<https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> schema:name "Nobelprize.org: Alfred Nobel's life and work" .
+<https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Nobelprize.org: Alfred Nobel's life and work" ;
+    schema:publisher wd:Q1781959 .
 

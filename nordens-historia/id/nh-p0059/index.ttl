@@ -66,7 +66,10 @@ nh:nh-c0142 a schema:Claim ;
     schema:about nh:nh-p0059 ;
     schema:text "Gamla Uppsala, Vendel och Valsgärde" .
 
-<https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde> schema:name "Uppsala universitet/Gustavianum: Valsgärde" .
+<https://www.uu.se/en/gustavianum/about-the-museum/our-collections/the-historical-collections/nordic-archeology/valsgarde> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Uppsala universitet/Gustavianum: Valsgärde" ;
+    schema:publisher wd:Q185246 .
 
 <https://snl.no/merovingertid> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;

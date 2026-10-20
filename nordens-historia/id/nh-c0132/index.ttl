@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0132#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -25,5 +26,8 @@ nh:nh-c0132 a schema:Claim ;
     schema:about nh:nh-p0055 ;
     schema:text "hällristningarna i Tanum" .
 
-<https://whc.unesco.org/en/list/557> schema:name "UNESCO World Heritage: Rock Carvings in Tanum" .
+<https://whc.unesco.org/en/list/557> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "UNESCO World Heritage: Rock Carvings in Tanum" ;
+    schema:publisher wd:Q7809 .
 

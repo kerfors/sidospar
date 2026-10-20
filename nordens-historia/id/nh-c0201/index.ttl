@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0201#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -20,7 +21,10 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0201 .
 
-<https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> schema:name "Tetra Pak: Heritage" .
+<https://tetrapak.com/en-ca/about-tetra-pak/who-we-are/heritage> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Tetra Pak: Heritage" ;
+    schema:publisher wd:Q659200 .
 
 nh:nh-c0201 a schema:Claim ;
     dcterms:identifier "MI20",

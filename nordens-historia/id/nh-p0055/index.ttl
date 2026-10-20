@@ -89,7 +89,10 @@ nh:nh-c0132 a schema:Claim ;
     schema:isPartOf wd:Q136450325 ;
     schema:name "Lex.dk: Solen – symbolik" .
 
-<https://whc.unesco.org/en/list/557> schema:name "UNESCO World Heritage: Rock Carvings in Tanum" .
+<https://whc.unesco.org/en/list/557> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "UNESCO World Heritage: Rock Carvings in Tanum" ;
+    schema:publisher wd:Q7809 .
 
 <https://snl.no/bronsealder> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;

@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0011#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -25,5 +26,8 @@ nh:nh-c0011 a schema:Claim ;
     schema:about nh:nh-p0004 ;
     schema:text "hemmastyre 1904" .
 
-<https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/> schema:name "Heimastjórn 1904–1918 (stjornarradid.is)" .
+<https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Heimastjórn 1904–1918 (stjornarradid.is)" ;
+    schema:publisher wd:Q3354110 .
 

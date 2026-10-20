@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0196#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -25,5 +26,8 @@ nh:nh-c0196 a schema:Claim ;
     schema:about nh:nh-m0015 ;
     schema:text "Nobelpriset: 1901" .
 
-<https://www.nobelprize.org/prizes/facts/nobel-prize-facts/> schema:name "Nobelprize.org: Nobel Prize facts" .
+<https://www.nobelprize.org/prizes/facts/nobel-prize-facts/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Nobelprize.org: Nobel Prize facts" ;
+    schema:publisher wd:Q1781959 .
 

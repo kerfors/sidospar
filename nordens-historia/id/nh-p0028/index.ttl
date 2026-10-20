@@ -40,7 +40,7 @@
             crm:P82b_end_of_the_end "-3999"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0028 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-historiska> ;
-    skos:prefLabel "Jägarstenålder enligt Statens historiska museer"@sv ;
+    skos:prefLabel "Jägarstenålder enligt Historiska museet"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0068#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0028/> a schema:WebPage ;
@@ -79,9 +79,15 @@ nh:nh-c0070 a schema:Claim ;
     schema:about nh:nh-p0028 ;
     schema:text "Hensbackakultur på Västkusten" .
 
-<https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
+<https://historiska.se/utforska-historien/tidsaldrar/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Statens historiska museer – Tidsåldrar" ;
+    schema:publisher wd:Q1726607 .
 
-<https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> schema:name "Statens historiska museer – Mesolitikum" .
+<https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Statens historiska museer – Mesolitikum" ;
+    schema:publisher wd:Q1726607 .
 
 nh:nh-p0028 a crm:E4_Period,
         skos:Concept ;

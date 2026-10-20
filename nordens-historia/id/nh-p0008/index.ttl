@@ -87,7 +87,10 @@ nh:nh-c0021 a schema:Claim ;
     schema:isPartOf wd:Q136450325 ;
     schema:name "Lex: tragtbægerkulturen" .
 
-<https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> schema:name "Nationalmuseet: The Neolithic period" .
+<https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Nationalmuseet: The Neolithic period" ;
+    schema:publisher wd:Q648166 .
 
 nh:nh-p0008 a crm:E4_Period,
         skos:Concept ;

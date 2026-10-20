@@ -79,9 +79,15 @@ nh:nh-c0088 a schema:Claim ;
     schema:about nh:nh-p0036 ;
     schema:text "Nato 2024" .
 
-<https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/> schema:name "Regeringskansliet – Sverige i EU 30 år" .
+<https://www.regeringen.se/regeringens-politik/sverige-i-eu-30-ar/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Regeringskansliet – Sverige i EU 30 år" ;
+    schema:publisher wd:Q10650489 .
 
-<https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/> schema:name "Regeringskansliet – Sveriges och Natos historia" .
+<https://www.regeringen.se/regeringens-politik/sverige-och-nato/sveriges-och-natos-historia/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Regeringskansliet – Sveriges och Natos historia" ;
+    schema:publisher wd:Q10650489 .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/v%C3%A4lf%C3%A4rdssamh%C3%A4llet> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;

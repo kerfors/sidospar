@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0073#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -21,7 +22,10 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0073 .
 
-<https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
+<https://historiska.se/utforska-historien/tidsaldrar/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Statens historiska museer – Tidsåldrar" ;
+    schema:publisher wd:Q1726607 .
 
 nh:nh-c0073 a schema:Claim ;
     dcterms:identifier "SV06",

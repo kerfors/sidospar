@@ -60,5 +60,8 @@ nh:nh-m0009 a crm:E5_Event,
     schema:name "Celsiusskalan" ;
     schema:startDate "1742"^^xsd:gYear .
 
-<https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius> schema:name "Uppsala universitet: Anders Celsius" .
+<https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Uppsala universitet: Anders Celsius" ;
+    schema:publisher wd:Q185246 .
 

@@ -156,7 +156,7 @@
    ],
    "dcterms:identifier": "def-027",
    "skos:prefLabel": {
-    "sv": "Jägarstenålder enligt Statens historiska museer"
+    "sv": "Jägarstenålder enligt Historiska museet"
    },
    "skos:inScheme": "nh:#kalla-historiska",
    "skos:exactMatch": "nh:nh-p0028",
@@ -202,7 +202,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/",
-    "name": "Statens historiska museer – Tidsåldrar"
+    "name": "Statens historiska museer – Tidsåldrar",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1726607"
    },
    "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/"
   },
@@ -237,7 +240,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/",
-    "name": "Statens historiska museer – Mesolitikum"
+    "name": "Statens historiska museer – Mesolitikum",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1726607"
    },
    "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/"
   },
@@ -272,7 +278,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/",
-    "name": "Statens historiska museer – Mesolitikum"
+    "name": "Statens historiska museer – Mesolitikum",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1726607"
    },
    "prov:wasDerivedFrom": "https://historiska.se/utforska-historien/tidsaldrar/stenalder-mesolitikum/"
   }

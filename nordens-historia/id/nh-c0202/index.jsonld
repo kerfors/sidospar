@@ -146,7 +146,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle",
-    "name": "LEGO: The stud and tube principle"
+    "name": "LEGO: The stud and tube principle",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1063455"
    },
    "prov:wasDerivedFrom": "https://lego.com/en-gb/history/articles/d-the-stud-and-tube-principle",
    "schema:comment": {

@@ -82,7 +82,10 @@ nh:nh-c0114 a schema:Claim ;
     schema:about nh:nh-p0048 ;
     schema:text "Nato 2023" .
 
-<https://um.fi/finland-and-nato> schema:name "Finlands utrikesministerium: Finland's membership in NATO" .
+<https://um.fi/finland-and-nato> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Finlands utrikesministerium: Finland's membership in NATO" ;
+    schema:publisher wd:Q2639539 .
 
 nh:nh-p0048 a crm:E4_Period,
         skos:Concept ;

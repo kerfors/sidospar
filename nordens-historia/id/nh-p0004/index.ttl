@@ -83,9 +83,15 @@ nh:nh-c0011 a schema:Claim ;
     schema:about nh:nh-p0004 ;
     schema:text "hemmastyre 1904" .
 
-<https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> schema:name "Alþingi í Lærða skólanum 1845–1879 (althingi.is)" .
+<https://www.althingi.is/tilkynningar/althingi-i-laerda-skolanum-1845-1879> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Alþingi í Lærða skólanum 1845–1879 (althingi.is)" ;
+    schema:publisher wd:Q131279 .
 
-<https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/> schema:name "Heimastjórn 1904–1918 (stjornarradid.is)" .
+<https://www.stjornarradid.is/rikisstjorn/sogulegt-efni/heimastjorn-1904-1918/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Heimastjórn 1904–1918 (stjornarradid.is)" ;
+    schema:publisher wd:Q3354110 .
 
 <https://lex.dk/Islands_historie> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;

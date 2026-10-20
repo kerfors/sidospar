@@ -319,7 +319,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf",
-    "name": "Riksdagen: Riksdagens historia (broschyr)"
+    "name": "Riksdagen: Riksdagens historia (broschyr)",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q643412"
    },
    "prov:wasDerivedFrom": "https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf"
   },

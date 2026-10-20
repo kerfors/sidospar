@@ -66,7 +66,10 @@ nh:nh-c0084 a schema:Claim ;
     schema:about nh:nh-p0034 ;
     schema:text "Allmän rösträtt 1921" .
 
-<https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/> schema:name "Sveriges riksdag – Kampen om rösträtten" .
+<https://www.riksdagen.se/sv/sa-fungerar-riksdagen/riksdagens-historia/kampen-om-rostratten/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Sveriges riksdag – Kampen om rösträtten" ;
+    schema:publisher wd:Q272930 .
 
 <https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/sverige/historia/demokratins-genombrott> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;

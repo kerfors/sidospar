@@ -39,5 +39,8 @@ nh:nh-m0025 a crm:E5_Event,
     schema:name "Linux" ;
     schema:startDate "1991"^^xsd:gYear .
 
-<https://www.computerhistory.org/revolution/personal-computers/17/307/1235> schema:name "Computer History Museum: Linux" .
+<https://www.computerhistory.org/revolution/personal-computers/17/307/1235> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Computer History Museum: Linux" ;
+    schema:publisher wd:Q964035 .
 

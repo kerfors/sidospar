@@ -29,7 +29,7 @@
             crm:P82b_end_of_the_end "-1699"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0029 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-historiska> ;
-    skos:prefLabel "Bondestenålder enligt Statens historiska museer"@sv ;
+    skos:prefLabel "Bondestenålder enligt Historiska museet"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0071#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0029/> a schema:WebPage ;
@@ -69,7 +69,10 @@ nh:nh-c0072 a schema:Claim ;
     schema:isPartOf wd:Q1165538 ;
     schema:name "Nationalencyklopedin – neolitikum" .
 
-<https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
+<https://historiska.se/utforska-historien/tidsaldrar/> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Statens historiska museer – Tidsåldrar" ;
+    schema:publisher wd:Q1726607 .
 
 nh:nh-p0029 a crm:E4_Period,
         skos:Concept ;

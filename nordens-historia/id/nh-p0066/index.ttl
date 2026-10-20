@@ -140,7 +140,10 @@ nh:nh-c0160 a schema:Claim ;
     schema:about nh:nh-p0066 ;
     schema:text "Gustav Vasa" .
 
-<https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> schema:name "Bekännelseskrifter – Svenska kyrkan" .
+<https://www.svenskakyrkan.se/kristentro/bekannelseskrifter> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Bekännelseskrifter – Svenska kyrkan" ;
+    schema:publisher wd:Q749243 .
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/vasatiden> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;

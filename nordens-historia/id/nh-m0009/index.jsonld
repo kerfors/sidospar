@@ -169,7 +169,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius",
-    "name": "Uppsala universitet: Anders Celsius"
+    "name": "Uppsala universitet: Anders Celsius",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q185246"
    },
    "prov:wasDerivedFrom": "https://www.uu.se/om-uu/historia/framstaende-personer/anders-celsius"
   },

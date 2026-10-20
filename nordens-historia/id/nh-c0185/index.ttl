@@ -3,6 +3,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0185#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -51,7 +52,10 @@
     schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala" .
 
-<https://www.uu.se/550/tidigare-jubileer-och-kort-historik> schema:name "Uppsala universitet: Kort historik och tidigare jubileer" .
+<https://www.uu.se/550/tidigare-jubileer-och-kort-historik> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Uppsala universitet: Kort historik och tidigare jubileer" ;
+    schema:publisher wd:Q185246 .
 
 nh:nh-c0185 a schema:Claim ;
     dcterms:identifier "MI04",

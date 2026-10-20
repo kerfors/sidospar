@@ -45,5 +45,8 @@ nh:nh-e0006 a crm:E5_Event,
     schema:name "1952 Nordiska rådet (Finland ansluter 1955)" ;
     schema:startDate "1952"^^xsd:gYear .
 
-<https://www.norden.org/sv/information/nordiska-radets-historia> schema:name "Nordiska rådets historia – Norden.org" .
+<https://www.norden.org/sv/information/nordiska-radets-historia> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Nordiska rådets historia – Norden.org" ;
+    schema:publisher wd:Q146165 .
 

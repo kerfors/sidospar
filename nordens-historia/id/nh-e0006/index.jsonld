@@ -175,7 +175,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.norden.org/sv/information/nordiska-radets-historia",
-    "name": "Nordiska rådets historia – Norden.org"
+    "name": "Nordiska rådets historia – Norden.org",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q146165"
    },
    "prov:wasDerivedFrom": "https://www.norden.org/sv/information/nordiska-radets-historia"
   }

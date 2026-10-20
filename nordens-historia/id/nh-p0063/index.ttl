@@ -1,5 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix kallor: <https://w3id.org/people/kerfors/sidospar/kallor/id/> .
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
@@ -96,16 +97,40 @@ nh:nh-c0152 a schema:Claim ;
     schema:about nh:nh-p0063 ;
     schema:text "Sverige bryter sig ur 1523" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392> a schema:Article ;
+    dcterms:identifier "SBL 15392" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "15392" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Erik av Pommern" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097> a schema:Article ;
+    dcterms:identifier "SBL 9097" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "9097" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Margareta" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=14836> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=14836> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 14836" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "14836" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 14836: kung Eriks kröningsbrev, Kalmar" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=14837> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=14837> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 14837" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "14837" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 14837: Kalmardokumentet: de tre rikenas råd om en kung, Kalmar" .
 
 nh:nh-c0151 a schema:Claim ;

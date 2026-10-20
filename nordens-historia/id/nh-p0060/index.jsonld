@@ -10,6 +10,7 @@
   "wd": "http://www.wikidata.org/entity/",
   "time": "http://www.w3.org/2006/time#",
   "nh": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/",
+  "kallor": "https://w3id.org/people/kerfors/sidospar/kallor/id/",
   "skos:prefLabel": {
    "@container": "@language"
   },
@@ -98,6 +99,12 @@
    "@type": "@id"
   },
   "prov:used": {
+   "@type": "@id"
+  },
+  "publisher": {
+   "@type": "@id"
+  },
+  "propertyID": {
    "@type": "@id"
   }
  },
@@ -271,12 +278,28 @@
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=3228",
      "name": "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 3228",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "3228"
+     }
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=39886",
      "name": "SDHK nr 39886: samma fred, i en annan medeltida avskrift",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 39886",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "39886"
+     }
     }
    ],
    "prov:wasDerivedFrom": [

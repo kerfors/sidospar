@@ -1,5 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix kallor: <https://w3id.org/people/kerfors/sidospar/kallor/id/> .
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
@@ -2551,9 +2552,7 @@ nh: a schema:WebPage ;
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#riksarkivets-mcp> a prov:Entity,
         schema:WebAPI ;
     schema:name "Riksarkivets MCP-tjänst (beta)" ;
-    schema:provider [ a schema:Organization ;
-            schema:name "Riksarkivet" ;
-            schema:url <https://riksarkivet.se/> ] .
+    schema:provider wd:Q1724971 .
 
 nh:nh-c0001 a schema:Claim ;
     dcterms:identifier "IS01",
@@ -4832,6 +4831,8 @@ nh:nh-m0026 a crm:E5_Event,
     schema:name "Spotify" ;
     schema:startDate "2008"^^xsd:gYear .
 
+wd:Q1724971 schema:name "Riksarkivet" .
+
 <https://en.wikipedia.org/wiki/Sammallahdenm%C3%A4ki> schema:name "Wikipedia (en): Sammallahdenmäki" .
 
 <https://lakartidningen.se/wp-content/uploads/OldPdfFiles/2003/26433.pdf> schema:name "Läkartidningen 2003 (artikel om digerdöden)" .
@@ -4896,7 +4897,10 @@ nh:nh-m0026 a crm:E5_Event,
 
 <https://preproduction.iva.se/contentassets/3db374dcb7fa4927b805f34791e8dd86/svenska-innovationer_pacemakern.pdf> schema:name "IVA: Svenska innovationer – Pacemakern" .
 
-<https://riksarkivet.se/resurser/tryckfrihetsforordningen-1766> schema:name "Riksarkivet: Tryckfrihetsförordningen 1766" .
+<https://riksarkivet.se/resurser/tryckfrihetsforordningen-1766> a schema:WebPage ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
+    schema:name "Riksarkivet: Tryckfrihetsförordningen 1766" ;
+    schema:publisher wd:Q1724971 .
 
 <https://riksdagen.fi/FI/naineduskuntatoimii/esitemateriaalit/Documents/2012Eduskunta_historia_SWE.pdf> schema:name "Riksdagen: Riksdagens historia (broschyr)" .
 
@@ -4954,61 +4958,175 @@ nh:nh-m0026 a crm:E5_Event,
 
 <https://snl.no/vikingtid> schema:name "Vikingtid – Store norske leksikon" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735> a schema:Article ;
+    dcterms:identifier "SBL 10735" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "10735" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Carl (von) Linné" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357> a schema:Article ;
+    dcterms:identifier "SBL 12357" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "12357" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Karl XII" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315> a schema:Article ;
+    dcterms:identifier "SBL 13315" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "13315" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Gustav I" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> a schema:Article ;
+    dcterms:identifier "SBL 13316" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "13316" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Gustav II Adolf" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317> a schema:Article ;
+    dcterms:identifier "SBL 13317" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "13317" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Gustav III" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758> a schema:Article ;
+    dcterms:identifier "SBL 14758" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "14758" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Anders Celsius" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392> a schema:Article ;
+    dcterms:identifier "SBL 15392" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "15392" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Erik av Pommern" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648> a schema:Article ;
+    dcterms:identifier "SBL 5648" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "5648" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Albrekt av Mecklenburg" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143> a schema:Article ;
+    dcterms:identifier "SBL 8143" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "8143" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Alfred B Nobel" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097> a schema:Article ;
+    dcterms:identifier "SBL 9097" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "9097" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Margareta" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=14836> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=14836> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 14836" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "14836" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 14836: kung Eriks kröningsbrev, Kalmar" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=14837> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=14837> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 14837" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "14837" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 14837: Kalmardokumentet: de tre rikenas råd om en kung, Kalmar" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=203> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=203> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 203" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "203" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=30221> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=30221> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 30221" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "30221" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=30290> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=30290> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 30290" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "30290" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=3228> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=3228> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 3228" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "3228" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=39886> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=39886> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 39886" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "39886" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 39886: samma fred, i en annan medeltida avskrift" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=664> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=664> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 664" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "664" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=665> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=665> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 665" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "665" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
 
 <https://stat.fi/til/evaa/2003/evaa_2003_2004-05-31_kat_004_sv.html> schema:name "Statistikcentralen (stat.fi): Kvinnor i riksdagsvalet" .
@@ -5253,11 +5371,23 @@ nh:nh-c0194 a schema:Claim ;
 
 <https://snl.no/Norge_i_h%C3%B8ymiddelalderen> schema:name "Store norske leksikon: Norge i høymiddelalderen" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238> a schema:Article ;
+    dcterms:identifier "SBL 18238" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "18238" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Birger Magnusson (Birger jarl)",
         "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> a schema:Article ;
+    dcterms:identifier "SBL 7749" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "7749" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Olof \"skötkonung\"",
         "Svenskt biografiskt lexikon – Olof \"skötkonung\"" .
 
@@ -6328,11 +6458,6 @@ nh:nh-p0068 a crm:E4_Period,
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:url <https://uppslagsverket.fi/> .
 
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> a schema:Dataset ;
-    schema:name "Diplomatarium Suecanum (SDHK)" ;
-    schema:publisher [ a schema:Organization ;
-            schema:name "Riksarkivet" ] .
-
 nh:nh-p0002 a crm:E4_Period,
         skos:Concept ;
     dcterms:identifier "nh-p0002" ;
@@ -6516,14 +6641,11 @@ nh:nh-p0070 a crm:E4_Period,
     schema:name "Unionen Sverige–Norge" ;
     schema:temporalCoverage "1814/1905" .
 
+wd:Q379406 schema:name "Svenskt biografiskt lexikon (SBL)" .
+
 <https://snl.no/Finlands_historie> schema:name "Store norske leksikon: Finlands historie" .
 
 <https://snl.no/Islands_historie> schema:name "Islands historie (Store norske leksikon)" .
-
-<https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> a schema:Dataset ;
-    schema:name "Svenskt biografiskt lexikon (SBL)" ;
-    schema:publisher [ a schema:Organization ;
-            schema:name "Riksarkivet" ] .
 
 <https://lex.dk/Danmarks_historie_i_middelalderen> schema:name "Lex: Danmarks historie i middelalderen" .
 
@@ -6536,6 +6658,8 @@ nh:nh-p0070 a crm:E4_Period,
     schema:name "Kontroll mot Riksarkivets register" .
 
 <https://lex.dk/Islands_historie> schema:name "Islands historie (lex.dk, Den Store Danske)" .
+
+kallor:sdhk schema:name "Svenskt Diplomatariums huvudkartotek (SDHK)" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> a skos:ConceptScheme ;
     skos:prefLabel "Periodindelning enligt Lex (Den Store Danske)"@sv ;

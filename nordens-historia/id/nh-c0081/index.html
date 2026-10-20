@@ -19,6 +19,7 @@
   "wd": "http://www.wikidata.org/entity/",
   "time": "http://www.w3.org/2006/time#",
   "nh": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/",
+  "kallor": "https://w3id.org/people/kerfors/sidospar/kallor/id/",
   "skos:prefLabel": {
    "@container": "@language"
   },
@@ -108,6 +109,12 @@
   },
   "prov:used": {
    "@type": "@id"
+  },
+  "publisher": {
+   "@type": "@id"
+  },
+  "propertyID": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -171,12 +178,28 @@
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=664",
      "name": "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 664",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "664"
+     }
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=665",
      "name": "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 665",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "665"
+     }
     }
    ],
    "prov:wasDerivedFrom": [

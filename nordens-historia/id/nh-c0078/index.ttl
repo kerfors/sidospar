@@ -1,4 +1,5 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix kallor: <https://w3id.org/people/kerfors/sidospar/kallor/id/> .
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
@@ -32,7 +33,13 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0078 .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=203> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=203> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 203" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "203" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens" .
 
 <https://www.svenskakyrkan.se/arkebiskopen/arkebiskopslangd> schema:name "Svenska kyrkan – Ärkebiskopslängd" .

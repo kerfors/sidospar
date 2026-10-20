@@ -30,6 +30,7 @@ from rdflib.compare import isomorphic
 HERE = Path(__file__).parent
 BASE = "https://kerfors.github.io/sidospar/nordens-historia/"
 ID = "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/"
+KALLOR = "https://w3id.org/people/kerfors/sidospar/kallor/id/"
 CHECK_DATE = "2026-10-18"
 ORIGINAL_POST = "https://lnkd.in/p/ePw54Bpe"
 ORIGINAL_POSTER = "https://media.licdn.com/dms/image/v2/D4E22AQHrvGeeC1Ylvg/feedshare-shrink_480/B4EaFEPazcKoAg-/0/1792146255419?e=1793836800&v=beta&t=dkVaqlOlNRKleqIJVH9ou7Dd-xSD3iDiva5qpIxfqi4"
@@ -45,6 +46,7 @@ CONTEXT = {
     "wd": "http://www.wikidata.org/entity/",
     "time": "http://www.w3.org/2006/time#",
     "nh": ID,
+    "kallor": KALLOR,
     "skos:prefLabel": {"@container": "@language"},
     "skos:definition": {"@container": "@language"},
     "skos:inScheme": {"@type": "@id"},
@@ -75,6 +77,8 @@ CONTEXT = {
     "prov:wasAssociatedWith": {"@type": "@id"},
     "prov:actedOnBehalfOf": {"@type": "@id"},
     "prov:used": {"@type": "@id"},
+    "publisher": {"@type": "@id"},
+    "propertyID": {"@type": "@id"},
 }
 
 PREFIXES = {k: v for k, v in CONTEXT.items() if isinstance(v, str) and not k.startswith("@")}
@@ -109,6 +113,44 @@ def load():
     wd = json.loads(wpath.read_text(encoding="utf-8")) if wpath.exists() else {}
     defs = json.loads((HERE / "data" / "definitions.json").read_text(encoding="utf-8"))["definitions"]
     return items, claims, wd, defs
+
+
+def load_kallor():
+    """../kallor/data/kallor.json: what each source is and who publishes it, shared by all sidospår.
+    Described in full, and resolvable, under kallor/id/; here only referenced."""
+    return json.loads((HERE.parent / "kallor" / "data" / "kallor.json").read_text(encoding="utf-8"))
+
+
+KALLOR_DATA = load_kallor()
+
+
+def source_work(url):
+    """The work a source URL is part of (an article in SBL, an entry in SDHK), or None."""
+    for w in KALLOR_DATA["works"]:
+        if url.startswith(w["url_prefix"]):
+            return w
+    return None
+
+
+def source_desc(url):
+    """What a source URL is: part of a work, or a page published by an organisation.
+    Empty for sources not yet described in kallor.json."""
+    types = {t["id"]: t for t in KALLOR_DATA["types"]}
+    w = source_work(url)
+    if w:
+        t = types[w["part_type"]]
+        return {"@type": t["schema"], "dcterms:type": "kallor:#" + t["id"], "isPartOf": w["iri"]}
+    host = url.split("/")[2] if url.startswith("http") else ""
+    for o in KALLOR_DATA["publishers"]:
+        if any(host == h or host.endswith("." + h) for h in o["hosts"]):
+            t = types["webbsida"]
+            return {"@type": t["schema"], "dcterms:type": "kallor:#" + t["id"], "publisher": o["iri"]}
+    return {}
+
+
+def source_label_nodes():
+    """Names of the works and publishers, so the data reads on its own; the rest is under kallor/id/."""
+    return [{"@id": x["iri"], "name": x["name"]} for x in KALLOR_DATA["publishers"] + KALLOR_DATA["works"]]
 
 
 def load_riksarkivet():
@@ -286,6 +328,16 @@ def event_node(e, wd, kind, rel=None):
     return node
 
 
+def ra_citation(x):
+    """A register entry: what it is, the work it is part of, and its number in that work."""
+    w = source_work(x["url"])
+    if not w or w["id"] != x["register"].lower():
+        raise ValueError(f"record {x['url']} is not in work {x['register']} according to kallor.json")
+    return {"@id": x["url"], "name": x["title"], **source_desc(x["url"]),
+            "dcterms:identifier": x["register"] + " " + x["id"],
+            "identifier": {"@type": "PropertyValue", "propertyID": w["id_property"], "value": x["id"]}}
+
+
 def ra_review_node(c, r, checked):
     """The second check of a claim, against Riksarkivet's registers."""
     node = {
@@ -297,8 +349,7 @@ def ra_review_node(c, r, checked):
         "reviewBody": r["evidence"],
         "datePublished": checked,
         "prov:wasGeneratedBy": "nh:#kontroll-riksarkivet-" + checked,
-        "citation": [{"@id": x["url"], "name": x["title"], "isPartOf": "nh:#register-" + x["register"].lower()}
-                     for x in r["records"]],
+        "citation": [ra_citation(x) for x in r["records"]],
         "prov:wasDerivedFrom": [x["url"] for x in r["records"]],
     }
     if r["note"]:
@@ -325,7 +376,7 @@ def claim_nodes(c, ra):
         "prov:wasGeneratedBy": "nh:#kontroll-" + CHECK_DATE,
     }
     if c["source_url"]:
-        review["citation"] = {"@id": c["source_url"], "name": c["source_title"]}
+        review["citation"] = {"@id": c["source_url"], "name": c["source_title"], **source_desc(c["source_url"])}
         review["prov:wasDerivedFrom"] = c["source_url"]
     if c["correct_value"]:
         review["schema:correction"] = c["correct_value"]
@@ -377,12 +428,8 @@ def shared_nodes(wd, columns, ra):
          "prov:used": "nh:#riksarkivets-mcp"},
         {"@id": "nh:#riksarkivets-mcp", "@type": ["WebAPI", "prov:Entity"],
          "name": "Riksarkivets MCP-tjänst (beta)",
-         "provider": {"@type": "Organization", "name": "Riksarkivet", "url": "https://riksarkivet.se/"}},
-        {"@id": "nh:#register-sbl", "@type": "Dataset", "name": "Svenskt biografiskt lexikon (SBL)",
-         "publisher": {"@type": "Organization", "name": "Riksarkivet"}},
-        {"@id": "nh:#register-sdhk", "@type": "Dataset", "name": "Diplomatarium Suecanum (SDHK)",
-         "publisher": {"@type": "Organization", "name": "Riksarkivet"}},
-    ]
+         "provider": {"@id": "wd:Q1724971"}},
+    ] + source_label_nodes()
     for c in columns:
         ref = place_ref(c, wd)
         if ref:

@@ -19,6 +19,7 @@
   "wd": "http://www.wikidata.org/entity/",
   "time": "http://www.w3.org/2006/time#",
   "nh": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/",
+  "kallor": "https://w3id.org/people/kerfors/sidospar/kallor/id/",
   "skos:prefLabel": {
    "@container": "@language"
   },
@@ -107,6 +108,12 @@
    "@type": "@id"
   },
   "prov:used": {
+   "@type": "@id"
+  },
+  "publisher": {
+   "@type": "@id"
+  },
+  "propertyID": {
    "@type": "@id"
   }
  },
@@ -265,7 +272,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316",
      "name": "SBL: Gustav II Adolf",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 13316",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "13316"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -361,7 +376,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357",
      "name": "SBL: Karl XII",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 12357",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "12357"
+     }
     }
    ],
    "prov:wasDerivedFrom": [

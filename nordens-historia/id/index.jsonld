@@ -10,6 +10,7 @@
   "wd": "http://www.wikidata.org/entity/",
   "time": "http://www.w3.org/2006/time#",
   "nh": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/",
+  "kallor": "https://w3id.org/people/kerfors/sidospar/kallor/id/",
   "skos:prefLabel": {
    "@container": "@language"
   },
@@ -98,6 +99,12 @@
    "@type": "@id"
   },
   "prov:used": {
+   "@type": "@id"
+  },
+  "publisher": {
+   "@type": "@id"
+  },
+  "propertyID": {
    "@type": "@id"
   }
  },
@@ -245,28 +252,20 @@
    ],
    "name": "Riksarkivets MCP-tjänst (beta)",
    "provider": {
-    "@type": "Organization",
-    "name": "Riksarkivet",
-    "url": "https://riksarkivet.se/"
+    "@id": "wd:Q1724971"
    }
   },
   {
-   "@id": "nh:#register-sbl",
-   "@type": "Dataset",
-   "name": "Svenskt biografiskt lexikon (SBL)",
-   "publisher": {
-    "@type": "Organization",
-    "name": "Riksarkivet"
-   }
+   "@id": "wd:Q1724971",
+   "name": "Riksarkivet"
   },
   {
-   "@id": "nh:#register-sdhk",
-   "@type": "Dataset",
-   "name": "Diplomatarium Suecanum (SDHK)",
-   "publisher": {
-    "@type": "Organization",
-    "name": "Riksarkivet"
-   }
+   "@id": "wd:Q379406",
+   "name": "Svenskt biografiskt lexikon (SBL)"
+  },
+  {
+   "@id": "kallor:sdhk",
+   "name": "Svenskt Diplomatariums huvudkartotek (SDHK)"
   },
   {
    "@id": "wd:Q189",
@@ -7570,7 +7569,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749",
-    "name": "Svenskt biografiskt lexikon – Olof \"skötkonung\""
+    "name": "Svenskt biografiskt lexikon – Olof \"skötkonung\"",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q379406"
    },
    "prov:wasDerivedFrom": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749"
   },
@@ -7593,7 +7595,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749",
      "name": "SBL: Olof \"skötkonung\"",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 7749",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "7749"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -7729,7 +7739,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=203",
      "name": "SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 203",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "203"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -7811,7 +7829,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238",
-    "name": "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)"
+    "name": "Svenskt biografiskt lexikon – Birger Magnusson (Birger jarl)",
+    "@type": "Article",
+    "dcterms:type": "kallor:#artikel",
+    "isPartOf": "wd:Q379406"
    },
    "prov:wasDerivedFrom": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238"
   },
@@ -7834,7 +7855,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238",
      "name": "SBL: Birger Magnusson (Birger jarl)",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 18238",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "18238"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -7899,12 +7928,28 @@
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=664",
      "name": "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 664",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "664"
+     }
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=665",
      "name": "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 665",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "665"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -9678,12 +9723,28 @@
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=3228",
      "name": "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 3228",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "3228"
+     }
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=39886",
      "name": "SDHK nr 39886: samma fred, i en annan medeltida avskrift",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 39886",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "39886"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -9858,7 +9919,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648",
      "name": "SBL: Albrekt av Mecklenburg",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 5648",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "5648"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -9993,22 +10062,54 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392",
      "name": "SBL: Erik av Pommern",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 15392",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "15392"
+     }
     },
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097",
      "name": "SBL: Margareta",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 9097",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "9097"
+     }
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=14836",
      "name": "SDHK nr 14836: kung Eriks kröningsbrev, Kalmar",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 14836",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "14836"
+     }
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=14837",
      "name": "SDHK nr 14837: Kalmardokumentet: de tre rikenas råd om en kung, Kalmar",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 14837",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "14837"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -10364,7 +10465,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13315",
      "name": "SBL: Gustav I",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 13315",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "13315"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -10534,7 +10643,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316",
      "name": "SBL: Gustav II Adolf",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 13316",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "13316"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -10630,7 +10747,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=12357",
      "name": "SBL: Karl XII",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 12357",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "12357"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -10835,7 +10960,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13317",
      "name": "SBL: Gustav III",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 13317",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "13317"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -11355,12 +11488,28 @@
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=30221",
      "name": "SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 30221",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "30221"
+     }
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=30290",
      "name": "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 30290",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "30290"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -11527,7 +11676,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10735",
      "name": "SBL: Carl (von) Linné",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 10735",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "10735"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -11592,7 +11749,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=14758",
      "name": "SBL: Anders Celsius",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 14758",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "14758"
+     }
     }
    ],
    "prov:wasDerivedFrom": [
@@ -11630,7 +11795,10 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://riksarkivet.se/resurser/tryckfrihetsforordningen-1766",
-    "name": "Riksarkivet: Tryckfrihetsförordningen 1766"
+    "name": "Riksarkivet: Tryckfrihetsförordningen 1766",
+    "@type": "WebPage",
+    "dcterms:type": "kallor:#webbsida",
+    "publisher": "wd:Q1724971"
    },
    "prov:wasDerivedFrom": "https://riksarkivet.se/resurser/tryckfrihetsforordningen-1766"
   },
@@ -11762,7 +11930,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143",
      "name": "SBL: Alfred B Nobel",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 8143",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "8143"
+     }
     }
    ],
    "prov:wasDerivedFrom": [

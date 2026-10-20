@@ -19,6 +19,7 @@
   "wd": "http://www.wikidata.org/entity/",
   "time": "http://www.w3.org/2006/time#",
   "nh": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/",
+  "kallor": "https://w3id.org/people/kerfors/sidospar/kallor/id/",
   "skos:prefLabel": {
    "@container": "@language"
   },
@@ -107,6 +108,12 @@
    "@type": "@id"
   },
   "prov:used": {
+   "@type": "@id"
+  },
+  "publisher": {
+   "@type": "@id"
+  },
+  "propertyID": {
    "@type": "@id"
   }
  },
@@ -307,7 +314,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=203",
      "name": "SDHK nr 203: påven Alexander III till Sveriges biskopar om Stefan i Uppsala som ärkebiskop, Sens",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 203",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "203"
+     }
     }
    ],
    "prov:wasDerivedFrom": [

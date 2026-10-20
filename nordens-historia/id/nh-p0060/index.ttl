@@ -1,5 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix kallor: <https://w3id.org/people/kerfors/sidospar/kallor/id/> .
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
@@ -77,10 +78,22 @@ nh:nh-c0143 a schema:Claim ;
 
 <https://lex.dk/Sjlisselburg> schema:name "Lex.dk: Sjlisselburg" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=3228> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=3228> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 3228" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "3228" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 3228: storfursten Jurij Danielowitsch sluter fred med kung Magnus" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=39886> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=39886> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 39886" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "39886" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 39886: samma fred, i en annan medeltida avskrift" .
 
 nh:nh-c0144 a schema:Claim ;

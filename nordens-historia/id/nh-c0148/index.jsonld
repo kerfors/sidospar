@@ -10,6 +10,7 @@
   "wd": "http://www.wikidata.org/entity/",
   "time": "http://www.w3.org/2006/time#",
   "nh": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/",
+  "kallor": "https://w3id.org/people/kerfors/sidospar/kallor/id/",
   "skos:prefLabel": {
    "@container": "@language"
   },
@@ -99,6 +100,12 @@
   },
   "prov:used": {
    "@type": "@id"
+  },
+  "publisher": {
+   "@type": "@id"
+  },
+  "propertyID": {
+   "@type": "@id"
   }
  },
  "@graph": [
@@ -162,7 +169,15 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=5648",
      "name": "SBL: Albrekt av Mecklenburg",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 5648",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "5648"
+     }
     }
    ],
    "prov:wasDerivedFrom": [

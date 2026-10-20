@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0164#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -32,7 +33,13 @@
 
 <https://ne.se/uppslagsverk/encyklopedi/lång/stormaktstiden> schema:name "Stormaktstiden – Nationalencyklopedin" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13316> a schema:Article ;
+    dcterms:identifier "SBL 13316" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "13316" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Gustav II Adolf" .
 
 nh:nh-c0164 a schema:Claim ;

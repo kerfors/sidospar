@@ -19,6 +19,7 @@
   "wd": "http://www.wikidata.org/entity/",
   "time": "http://www.w3.org/2006/time#",
   "nh": "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/",
+  "kallor": "https://w3id.org/people/kerfors/sidospar/kallor/id/",
   "skos:prefLabel": {
    "@container": "@language"
   },
@@ -107,6 +108,12 @@
    "@type": "@id"
   },
   "prov:used": {
+   "@type": "@id"
+  },
+  "publisher": {
+   "@type": "@id"
+  },
+  "propertyID": {
    "@type": "@id"
   }
  },
@@ -279,22 +286,54 @@
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=15392",
      "name": "SBL: Erik av Pommern",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 15392",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "15392"
+     }
     },
     {
      "@id": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=9097",
      "name": "SBL: Margareta",
-     "isPartOf": "nh:#register-sbl"
+     "@type": "Article",
+     "dcterms:type": "kallor:#artikel",
+     "isPartOf": "wd:Q379406",
+     "dcterms:identifier": "SBL 9097",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "wd:P3217",
+      "value": "9097"
+     }
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=14836",
      "name": "SDHK nr 14836: kung Eriks kröningsbrev, Kalmar",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 14836",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "14836"
+     }
     },
     {
      "@id": "https://sok.riksarkivet.se/sdhk?SDHK=14837",
      "name": "SDHK nr 14837: Kalmardokumentet: de tre rikenas råd om en kung, Kalmar",
-     "isPartOf": "nh:#register-sdhk"
+     "@type": "CreativeWork",
+     "dcterms:type": "kallor:#registerpost",
+     "isPartOf": "kallor:sdhk",
+     "dcterms:identifier": "SDHK 14837",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "kallor:sdhk",
+      "value": "14837"
+     }
     }
    ],
    "prov:wasDerivedFrom": [

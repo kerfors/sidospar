@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0194#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -32,7 +33,13 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0194 .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=8143> a schema:Article ;
+    dcterms:identifier "SBL 8143" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "8143" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Alfred B Nobel" .
 
 <https://www.nobelprize.org/alfred-nobel/alfred-nobels-life-and-work/> schema:name "Nobelprize.org: Alfred Nobel's life and work" .

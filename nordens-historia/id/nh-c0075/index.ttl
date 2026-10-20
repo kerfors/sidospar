@@ -2,6 +2,7 @@
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0075#granskning> a prov:Entity,
         schema:ClaimReview ;
@@ -37,7 +38,13 @@ nh:nh-c0075 a schema:Claim ;
     schema:about nh:nh-p0030 ;
     schema:text "Olof Skötkonung" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> a schema:Article ;
+    dcterms:identifier "SBL 7749" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "7749" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Olof \"skötkonung\"",
         "Svenskt biografiskt lexikon – Olof \"skötkonung\"" .
 

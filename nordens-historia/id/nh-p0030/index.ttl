@@ -99,7 +99,13 @@ nh:nh-c0075 a schema:Claim ;
 
 <https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
 
-<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sbl> ;
+<https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7749> a schema:Article ;
+    dcterms:identifier "SBL 7749" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID wd:P3217 ;
+            schema:value "7749" ] ;
+    schema:isPartOf wd:Q379406 ;
     schema:name "SBL: Olof \"skötkonung\"",
         "Svenskt biografiskt lexikon – Olof \"skötkonung\"" .
 

@@ -1,4 +1,5 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix kallor: <https://w3id.org/people/kerfors/sidospar/kallor/id/> .
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
@@ -34,10 +35,22 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-c0081 .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=664> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=664> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 664" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "664" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 664: kung Valdemar och Birger jarl tar Fogdö kloster i sitt beskydd, Stockholm" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=665> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=665> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 665" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "665" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 665: Birger jarl till invånarna i Attundaland om fattigtionden, Stockholm" .
 
 <https://www.britannica.com/place/Stockholm> schema:name "Encyclopaedia Britannica – Stockholm" .

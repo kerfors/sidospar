@@ -1,5 +1,6 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix kallor: <https://w3id.org/people/kerfors/sidospar/kallor/id/> .
 @prefix nh: <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix schema: <https://schema.org/> .
@@ -35,10 +36,22 @@
     schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
     schema:mainEntity nh:nh-m0004 .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=30221> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=30221> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 30221" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "30221" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 30221: påven Sixtus IV utfärdar privilegier för studium generale i Uppsala, Rom" .
 
-<https://sok.riksarkivet.se/sdhk?SDHK=30290> schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#register-sdhk> ;
+<https://sok.riksarkivet.se/sdhk?SDHK=30290> a schema:CreativeWork ;
+    dcterms:identifier "SDHK 30290" ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID kallor:sdhk ;
+            schema:value "30290" ] ;
+    schema:isPartOf kallor:sdhk ;
     schema:name "SDHK nr 30290: ärkebiskop Jakob, Uppsala universitets kansler, om studium privilegiatum i Uppsala" .
 
 nh:nh-c0185 a schema:Claim ;

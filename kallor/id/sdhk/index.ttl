@@ -1,0 +1,17 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix kallor: <https://w3id.org/people/kerfors/sidospar/kallor/id/> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+<https://w3id.org/people/kerfors/sidospar/kallor/id/sdhk/> a schema:WebPage ;
+    schema:isPartOf kallor: ;
+    schema:mainEntity kallor:sdhk .
+
+kallor:sdhk a schema:Dataset ;
+    dcterms:relation wd:Q3437169 ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#register> ;
+    schema:description "Register över medeltidsbrev fram till 1540, med uppgifter om personer, platser och datering. Diplomatarium Suecanum är utgåvan i bokform som ger ut brevens texter; SDHK är huvudkartoteket bakom den. SDHK har ingen egen post i Wikidata, därför en egen identifierare här." ;
+    schema:name "Svenskt Diplomatariums huvudkartotek (SDHK)" ;
+    schema:publisher wd:Q1724971 ;
+    schema:url <https://sok.riksarkivet.se/sdhk> .
+

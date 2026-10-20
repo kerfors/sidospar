@@ -1,0 +1,55 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix kallor: <https://w3id.org/people/kerfors/sidospar/kallor/id/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+wd:Q379406 a schema:CreativeWork ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#uppslagsverk> ;
+    schema:description "Personhistoriskt lexikon, en del av Riksarkivet. Artikelnumret är också en egenskap i Wikidata (P3217), som personerna där har." ;
+    schema:name "Svenskt biografiskt lexikon (SBL)" ;
+    schema:publisher wd:Q1724971 ;
+    schema:url <https://sok.riksarkivet.se/sbl/> .
+
+kallor: a schema:WebPage ;
+    schema:name "Källor" .
+
+<https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> a skos:Concept ;
+    skos:closeMatch wd:Q3055347 ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/kallor/id/#kalltyper> ;
+    skos:prefLabel "Artikel i ett uppslagsverk"@sv .
+
+<https://w3id.org/people/kerfors/sidospar/kallor/id/#registerpost> a skos:Concept ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/kallor/id/#kalltyper> ;
+    skos:prefLabel "Post i ett register"@sv .
+
+<https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> a skos:Concept ;
+    skos:exactMatch wd:Q36774 ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/kallor/id/#kalltyper> ;
+    skos:prefLabel "Webbsida"@sv .
+
+kallor:sdhk a schema:Dataset ;
+    dcterms:relation wd:Q3437169 ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#register> ;
+    schema:description "Register över medeltidsbrev fram till 1540, med uppgifter om personer, platser och datering. Diplomatarium Suecanum är utgåvan i bokform som ger ut brevens texter; SDHK är huvudkartoteket bakom den. SDHK har ingen egen post i Wikidata, därför en egen identifierare här." ;
+    schema:name "Svenskt Diplomatariums huvudkartotek (SDHK)" ;
+    schema:publisher wd:Q1724971 ;
+    schema:url <https://sok.riksarkivet.se/sdhk> .
+
+<https://w3id.org/people/kerfors/sidospar/kallor/id/#register> a skos:Concept ;
+    skos:closeMatch wd:Q2352616 ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/kallor/id/#kalltyper> ;
+    skos:prefLabel "Register"@sv .
+
+<https://w3id.org/people/kerfors/sidospar/kallor/id/#uppslagsverk> a skos:Concept ;
+    skos:exactMatch wd:Q13136 ;
+    skos:inScheme <https://w3id.org/people/kerfors/sidospar/kallor/id/#kalltyper> ;
+    skos:prefLabel "Uppslagsverk"@sv .
+
+wd:Q1724971 a schema:Organization ;
+    schema:name "Riksarkivet" ;
+    schema:url <https://riksarkivet.se/> .
+
+<https://w3id.org/people/kerfors/sidospar/kallor/id/#kalltyper> a skos:ConceptScheme ;
+    skos:prefLabel "Typer av källor"@sv .
+

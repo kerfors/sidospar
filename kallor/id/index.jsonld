@@ -1,0 +1,123 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "wd": "http://www.wikidata.org/entity/",
+  "kallor": "https://w3id.org/people/kerfors/sidospar/kallor/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:type": {
+   "@type": "@id"
+  },
+  "dcterms:relation": {
+   "@type": "@id"
+  },
+  "publisher": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://w3id.org/people/kerfors/sidospar/kallor/id/",
+   "@type": "WebPage",
+   "name": "Källor"
+  },
+  {
+   "@id": "kallor:#kalltyper",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": {
+    "sv": "Typer av källor"
+   }
+  },
+  {
+   "@id": "kallor:#uppslagsverk",
+   "@type": "skos:Concept",
+   "skos:prefLabel": {
+    "sv": "Uppslagsverk"
+   },
+   "skos:inScheme": "kallor:#kalltyper",
+   "skos:exactMatch": "wd:Q13136"
+  },
+  {
+   "@id": "kallor:#artikel",
+   "@type": "skos:Concept",
+   "skos:prefLabel": {
+    "sv": "Artikel i ett uppslagsverk"
+   },
+   "skos:inScheme": "kallor:#kalltyper",
+   "skos:closeMatch": "wd:Q3055347"
+  },
+  {
+   "@id": "kallor:#register",
+   "@type": "skos:Concept",
+   "skos:prefLabel": {
+    "sv": "Register"
+   },
+   "skos:inScheme": "kallor:#kalltyper",
+   "skos:closeMatch": "wd:Q2352616"
+  },
+  {
+   "@id": "kallor:#registerpost",
+   "@type": "skos:Concept",
+   "skos:prefLabel": {
+    "sv": "Post i ett register"
+   },
+   "skos:inScheme": "kallor:#kalltyper"
+  },
+  {
+   "@id": "kallor:#webbsida",
+   "@type": "skos:Concept",
+   "skos:prefLabel": {
+    "sv": "Webbsida"
+   },
+   "skos:inScheme": "kallor:#kalltyper",
+   "skos:exactMatch": "wd:Q36774"
+  },
+  {
+   "@id": "wd:Q1724971",
+   "@type": "Organization",
+   "name": "Riksarkivet",
+   "url": "https://riksarkivet.se/"
+  },
+  {
+   "@id": "wd:Q379406",
+   "@type": "CreativeWork",
+   "dcterms:type": "kallor:#uppslagsverk",
+   "name": "Svenskt biografiskt lexikon (SBL)",
+   "url": "https://sok.riksarkivet.se/sbl/",
+   "publisher": "wd:Q1724971",
+   "description": "Personhistoriskt lexikon, en del av Riksarkivet. Artikelnumret är också en egenskap i Wikidata (P3217), som personerna där har."
+  },
+  {
+   "@id": "kallor:sdhk",
+   "@type": "Dataset",
+   "dcterms:type": "kallor:#register",
+   "name": "Svenskt Diplomatariums huvudkartotek (SDHK)",
+   "url": "https://sok.riksarkivet.se/sdhk",
+   "publisher": "wd:Q1724971",
+   "description": "Register över medeltidsbrev fram till 1540, med uppgifter om personer, platser och datering. Diplomatarium Suecanum är utgåvan i bokform som ger ut brevens texter; SDHK är huvudkartoteket bakom den. SDHK har ingen egen post i Wikidata, därför en egen identifierare här.",
+   "dcterms:relation": "wd:Q3437169"
+  }
+ ]
+}

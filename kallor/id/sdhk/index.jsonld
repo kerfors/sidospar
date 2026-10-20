@@ -1,0 +1,58 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "dcterms": "http://purl.org/dc/terms/",
+  "wd": "http://www.wikidata.org/entity/",
+  "kallor": "https://w3id.org/people/kerfors/sidospar/kallor/id/",
+  "skos:prefLabel": {
+   "@container": "@language"
+  },
+  "skos:inScheme": {
+   "@type": "@id"
+  },
+  "skos:exactMatch": {
+   "@type": "@id"
+  },
+  "skos:closeMatch": {
+   "@type": "@id"
+  },
+  "dcterms:type": {
+   "@type": "@id"
+  },
+  "dcterms:relation": {
+   "@type": "@id"
+  },
+  "publisher": {
+   "@type": "@id"
+  },
+  "isPartOf": {
+   "@type": "@id"
+  },
+  "mainEntity": {
+   "@type": "@id"
+  },
+  "url": {
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "@id": "https://w3id.org/people/kerfors/sidospar/kallor/id/sdhk/",
+   "@type": "WebPage",
+   "mainEntity": "kallor:sdhk",
+   "isPartOf": "https://w3id.org/people/kerfors/sidospar/kallor/id/"
+  },
+  {
+   "@id": "kallor:sdhk",
+   "@type": "Dataset",
+   "dcterms:type": "kallor:#register",
+   "name": "Svenskt Diplomatariums huvudkartotek (SDHK)",
+   "url": "https://sok.riksarkivet.se/sdhk",
+   "publisher": "wd:Q1724971",
+   "description": "Register över medeltidsbrev fram till 1540, med uppgifter om personer, platser och datering. Diplomatarium Suecanum är utgåvan i bokform som ger ut brevens texter; SDHK är huvudkartoteket bakom den. SDHK har ingen egen post i Wikidata, därför en egen identifierare här.",
+   "dcterms:relation": "wd:Q3437169"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "note": "Källorna som sidospåren hänvisar till: vad de är och vem som ger ut dem. Gemensamt för alla sidospår. Verk och utgivare som finns i Wikidata har Wikidatas identifierare; övriga får en egen under https://w3id.org/people/kerfors/sidospar/kallor/id/. Steg 1: bara Riksarkivet.",
+ "types": [
+  {"id": "uppslagsverk", "label": "Uppslagsverk", "schema": "CreativeWork",
+   "match": "exactMatch", "qid": "Q13136", "wikidata_label": "reference work"},
+  {"id": "artikel", "label": "Artikel i ett uppslagsverk", "schema": "Article",
+   "match": "closeMatch", "qid": "Q3055347", "wikidata_label": "reference work entry"},
+  {"id": "register", "label": "Register", "schema": "Dataset",
+   "match": "closeMatch", "qid": "Q2352616", "wikidata_label": "catalog"},
+  {"id": "registerpost", "label": "Post i ett register", "schema": "CreativeWork",
+   "match": null, "qid": null, "wikidata_label": null},
+  {"id": "webbsida", "label": "Webbsida", "schema": "WebPage",
+   "match": "exactMatch", "qid": "Q36774", "wikidata_label": "web page"}
+ ],
+ "publishers": [
+  {"id": "riksarkivet", "iri": "wd:Q1724971", "name": "Riksarkivet",
+   "url": "https://riksarkivet.se/", "hosts": ["riksarkivet.se"]}
+ ],
+ "works": [
+  {"id": "sbl", "iri": "wd:Q379406", "name": "Svenskt biografiskt lexikon (SBL)",
+   "type": "uppslagsverk", "part_type": "artikel", "publisher": "riksarkivet",
+   "url": "https://sok.riksarkivet.se/sbl/", "url_prefix": "https://sok.riksarkivet.se/sbl/",
+   "id_property": "wd:P3217",
+   "description": "Personhistoriskt lexikon, en del av Riksarkivet. Artikelnumret är också en egenskap i Wikidata (P3217), som personerna där har."},
+  {"id": "sdhk", "iri": "kallor:sdhk", "name": "Svenskt Diplomatariums huvudkartotek (SDHK)",
+   "type": "register", "part_type": "registerpost", "publisher": "riksarkivet",
+   "url": "https://sok.riksarkivet.se/sdhk", "url_prefix": "https://sok.riksarkivet.se/sdhk",
+   "id_property": "kallor:sdhk",
+   "related": "wd:Q3437169",
+   "description": "Register över medeltidsbrev fram till 1540, med uppgifter om personer, platser och datering. Diplomatarium Suecanum är utgåvan i bokform som ger ut brevens texter; SDHK är huvudkartoteket bakom den. SDHK har ingen egen post i Wikidata, därför en egen identifierare här."}
+ ]
+}

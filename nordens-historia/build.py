@@ -4,6 +4,10 @@ Chart Origin's "Timeline of World History".
 Data lives in data/items.json and data/claims.json.
 Run: python3 build.py  ->  writes index.html, kallor.html, id/, linked-data.html and sparql.html
 (via make_kallor.py, ld.py, ld_page.py and sparql_page.py).
+
+nordens-historia-affisch.png is a snapshot of the poster (1200 px wide, rendered
+from the SVG with cairosvg). This script does not re-render it: render it again
+by hand when the poster changes.
 """
 import json
 import sys
@@ -66,7 +70,6 @@ TICKS = [-10000, -8000, -6000, -4000, -3000, -2000, -1000, -500, 1, 200, 400,
          600, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1550, 1600, 1650,
          1700, 1750, 1800, 1850, 1900, 1950, 2000]
 
-CREDIT_IMG = "https://media.licdn.com/dms/image/v2/D4E22AQHrvGeeC1Ylvg/feedshare-shrink_480/B4EaFEPazcKoAg-/0/1792146255419?e=1793836800&v=beta&t=dkVaqlOlNRKleqIJVH9ou7Dd-xSD3iDiva5qpIxfqi4"
 CREDIT_POST = "https://lnkd.in/p/ePw54Bpe"
 
 INK = "#1d2733"
@@ -575,7 +578,7 @@ def panel_data():
 
 def main():
     out = Path(__file__).with_name("index.html")
-    html = PAGE.format(svg=build_svg(), img=CREDIT_IMG, post=CREDIT_POST)
+    html = PAGE.format(svg=build_svg(), post=CREDIT_POST)
     data = json.dumps(panel_data(), ensure_ascii=False).replace("</", "<\\/")
     html = html.replace("</head>", EXTRA_HEAD + "</head>", 1)
     html = html.replace("</main>", PANEL + "</main>", 1)

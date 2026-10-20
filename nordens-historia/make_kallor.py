@@ -200,7 +200,7 @@ RA_SECTION = """<h2 id="riksarkivet">Andra kontrollen, mot Riksarkivet</h2>
 <div class="intro">
 <p>Den första kontrollen använde uppslagsverk och museisidor, källor som sammanfattar andra källor. För {n}
 uppgifter om svenska personer och medeltida brev gick en andra kontroll ett steg närmare källorna, till två
-källor hos Riksarkivet: uppslagsverket Svenskt biografiskt lexikon (SBL) och Svenskt Diplomatariums huvudkartotek (SDHK), registret över
+källor hos Riksarkivet: uppslagsverket Svenskt biografiskt lexikon (SBL) och <a href="https://w3id.org/people/kerfors/sidospar/kallor/id/sdhk">Svenskt Diplomatariums huvudkartotek (SDHK)</a>, registret över
 Sveriges medeltidsbrev. De nåddes genom Riksarkivets MCP-tjänst (beta), som låter en AI-agent söka direkt i
 dem. Kontrollen hänvisar till {sbl} SBL-artiklar och {sdhk} SDHK-brev.</p>
 <p>{ok} uppgifter bekräftades och {unk} gick inte att pröva, eftersom tjänsten ger SBL:s sammanfattning och

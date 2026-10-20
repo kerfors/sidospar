@@ -45,7 +45,6 @@ ID = "https://w3id.org/people/kerfors/sidospar/nordens-historia/id/"
 KALLOR = "https://w3id.org/people/kerfors/sidospar/kallor/id/"
 CHECK_DATE = "2026-10-18"
 ORIGINAL_POST = "https://lnkd.in/p/ePw54Bpe"
-ORIGINAL_POSTER = "https://media.licdn.com/dms/image/v2/D4E22AQHrvGeeC1Ylvg/feedshare-shrink_480/B4EaFEPazcKoAg-/0/1792146255419?e=1793836800&v=beta&t=dkVaqlOlNRKleqIJVH9ou7Dd-xSD3iDiva5qpIxfqi4"
 
 CONTEXT = {
     "@vocab": "https://schema.org/",
@@ -613,7 +612,7 @@ def ra_html(r, checked):
     note = f'<dt>Notering</dt><dd>{escape(r["note"])}</dd>' if r["note"] else ""
     return f"""<h2>Andra kontrollen: Riksarkivet</h2>
 <p>Uppgiften är också kontrollerad mot två källor hos Riksarkivet, uppslagsverket Svenskt biografiskt lexikon (SBL) och
-registret Svenskt Diplomatariums huvudkartotek (SDHK), genom Riksarkivets MCP-tjänst (beta). Det är en egen granskning bredvid den första.</p>
+registret <a href="https://w3id.org/people/kerfors/sidospar/kallor/id/sdhk">Svenskt Diplomatariums huvudkartotek (SDHK)</a>, genom Riksarkivets MCP-tjänst (beta). Det är en egen granskning bredvid den första.</p>
 <dl>
 <dt>Utlåtande</dt><dd>{verdict_badge(r["verdict"])}</dd>
 <dt>Artiklar och registerposter</dt><dd>{recs}</dd>

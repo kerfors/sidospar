@@ -7,6 +7,8 @@ from html import escape
 from pathlib import Path
 from collections import Counter
 
+import ld
+
 HERE = Path(__file__).parent
 CLAIMS = json.loads((HERE / "data" / "claims.json").read_text(encoding="utf-8"))
 _ITEMS = json.loads((HERE / "data" / "items.json").read_text(encoding="utf-8"))
@@ -76,9 +78,7 @@ def strip_ctx(claim):
 
 def row(c):
     ctx, text = c["context"], c["statement"]
-    url = c["source_url"]
-    src = escape(c["source_title"] or url)
-    link = f'<a href="{escape(url)}">{src}</a>' if url else src
+    link = ld.source_html(c)
     action = c["action"]
     v = c["verdict"]
     items = ", ".join(f'<a href="id/{a}/">{escape(LABEL[a])}</a>' for a in c["about"])

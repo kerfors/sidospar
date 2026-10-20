@@ -192,6 +192,19 @@ def source_name(url):
     return o["name"] if o else url.split("/")[2].removeprefix("www.")
 
 
+def source_label(url):
+    """How a source is shown on the pages: its own title and the work or publisher, "Norges historie – Store norske leksikon"."""
+    return f"{source_title(url)} – {source_name(url)}"
+
+
+def source_html(c):
+    """The claim's sources as links, one per line; its source_title when it has no address."""
+    if not c["source_url"]:
+        return escape(c["source_title"])
+    return "<br>".join(f'<a href="{escape(u)}">{escape(source_label(u))}</a>'
+                       for u in [c["source_url"]] + c["also_sources"])
+
+
 def article_id_nodes(nodes):
     """The article number of each cited source, once per source and document. Kept out of the
     citations themselves: a source cited by several claims would otherwise get one blank
@@ -581,8 +594,7 @@ def claims_table(cl, ra, show_about=False, by_id=None):
         about = ""
         if show_about:
             about = "<td>" + ", ".join(f'<a href="../{a}/">{escape(by_id[a]["label"])}</a>' for a in c["about"]) + "</td>"
-        src = (f'<a href="{escape(c["source_url"])}">{escape(c["source_title"] or c["source_url"])}</a>'
-               if c["source_url"] else escape(c["source_title"]))
+        src = source_html(c)
         r = ra["by_claim"].get(c["id"])
         second = f'<br><span style="color:#6b7682">Riksarkivet:</span> {verdict_badge(r["verdict"])}' if r else ""
         rows.append(f'<tr><td><a href="../{c["id"]}/">{c["id"]}</a></td><td>{escape(c["statement"])}</td>'
@@ -686,8 +698,7 @@ def claim_page(c, by_id, ra):
     nodes = claim_nodes(c, ra)
     iri = ID + c["id"]
     about = ", ".join(f'<a href="../{a}/">{escape(by_id[a]["label"])}</a> <code>{a}</code>' for a in c["about"])
-    src = (f'<a href="{escape(c["source_url"])}">{escape(c["source_title"] or c["source_url"])}</a>'
-           if c["source_url"] else escape(c["source_title"]))
+    src = source_html(c)
     doc = {"@context": CONTEXT, "@graph": [
         {"@id": iri + "/", "@type": "WebPage", "mainEntity": "nh:" + c["id"], "isPartOf": "nh:#dataset"}] + nodes}
     doc["@graph"] += article_id_nodes(doc["@graph"])

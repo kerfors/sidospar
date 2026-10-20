@@ -146,7 +146,7 @@
    "prov:wasGeneratedBy": "nh:#kontroll-2026-10-18",
    "citation": {
     "@id": "https://www.sverigesradio.se/artikel/5667619",
-    "name": "Artikel hos Sveriges Radio",
+    "name": "Artikel om Spotifys femårsdag",
     "@type": "WebPage",
     "dcterms:type": "kallor:#webbsida",
     "publisher": "wd:Q1543058"

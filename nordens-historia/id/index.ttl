@@ -5871,7 +5871,7 @@ nh:nh-c0194 a schema:Claim ;
 
 <https://www.sverigesradio.se/artikel/5667619> a schema:WebPage ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#webbsida> ;
-    schema:name "Artikel hos Sveriges Radio" ;
+    schema:name "Artikel om Spotifys femårsdag" ;
     schema:publisher wd:Q1543058 .
 
 <https://www.uppslagsverket.fi/sv/sok/view-170045-FinlandsHistoriaMedeltiden> a schema:Article ;

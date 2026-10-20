@@ -113,7 +113,7 @@ def group_html(g, first, second, numbers, by_id):
         num = f'<td class="num">{escape(nums[u] or "–")}</td>' if show_num else ""
         rows.append(f'<tr><td><a href="{escape(u)}">{escape(ld.source_title(u))}</a></td>{num}'
                     f'<td>{claim_list(u, first, second, by_id)}</td></tr>')
-    num_head = "<th>Nummer</th>" if show_num else ""
+    num_head = "<th>Id i verket</th>" if show_num else ""
     return (f'<h3 id="{anchor(g["iri"])}">{escape(g["name"])}</h3>\n'
             f'<p class="meta">{" · ".join(meta)}</p>\n'
             f'<p class="meta">Varje källa: {escape(TYPES[g["part_type"]]["label"].lower())}</p>\n'

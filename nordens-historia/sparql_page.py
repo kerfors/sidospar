@@ -103,7 +103,7 @@ ORDER BY ?ar
 ORDER BY ?ar
 """),
     ("kallor", "Utlåtanden per källa",
-     "Antal granskningar i den första kontrollen per webbplats, och hur många som blev bekräftade och omdiskuterade.",
+     "Antal granskningar i den första kontrollen per verk (uppslagsverk och register, schema:isPartOf), och per webbplats för övriga källor, och hur många som blev bekräftade och omdiskuterade.",
      f"""SELECT ?kalla (COUNT(?granskning) AS ?granskningar)
        (SUM(IF(?utlatande = "bekräftad", 1, 0)) AS ?bekraftade)
        (SUM(IF(?utlatande = "omdiskuterad", 1, 0)) AS ?omdiskuterade) WHERE {{
@@ -111,7 +111,8 @@ ORDER BY ?ar
               prov:wasGeneratedBy <{ld.ID}#kontroll-{ld.CHECK_DATE}> ;
               schema:citation ?url ;
               schema:reviewRating/schema:alternateName ?utlatande .
-  BIND (REPLACE(STRBEFORE(STRAFTER(STR(?url), "://"), "/"), "^www[.]", "") AS ?kalla)
+  OPTIONAL {{ ?url schema:isPartOf/schema:name ?verk }}
+  BIND (COALESCE(?verk, REPLACE(STRBEFORE(STRAFTER(STR(?url), "://"), "/"), "^www[.]", "")) AS ?kalla)
 }}
 GROUP BY ?kalla
 ORDER BY DESC(?granskningar) ?kalla

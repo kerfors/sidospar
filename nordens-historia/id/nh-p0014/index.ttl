@@ -29,7 +29,7 @@
             crm:P82b_end_of_the_end "1848"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0014 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Enväldets sista decennier enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Enväldets sista decennier enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: enväldets sena fas från ca 1800, enväldet slutar 1848. Ungefärligt årtal: start"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0034#granskning> .
 

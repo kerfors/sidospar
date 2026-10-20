@@ -1731,7 +1731,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1262"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0002 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Fristaten enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Fristaten enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0003#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0003#def-003> a crm:E4_Period,
@@ -1757,7 +1757,7 @@ nh: a schema:WebPage ;
             crm:P82a_begin_of_the_begin "1380"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0004 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Under danska kronan enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Under danska kronan enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: i praktiken del av den danska monarkin från 1380"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0009#granskning> .
 
@@ -1771,7 +1771,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1944"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0005 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Konungariket Island enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Konungariket Island enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0012#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0006#def-006> a crm:E4_Period,
@@ -1784,7 +1784,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0006 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Republiken Island enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Republiken Island enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0014#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0007#def-007> a crm:E4_Period,
@@ -1797,7 +1797,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "-3999"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0007 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Jägarstenålder enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Jägarstenålder enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: mesolitikum i Danmark ca 9600–4000 f.Kr.. Ungefärligt årtal: start, slut"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0017#granskning> .
 
@@ -1823,7 +1823,7 @@ nh: a schema:WebPage ;
             crm:P82a_begin_of_the_begin "0800"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0009 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Vikingatid enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Vikingatid enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: vikingatiden i Danmark ca 800 – mitten av 1000-talet. Ungefärligt årtal: start, slut"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0022#granskning> .
 
@@ -1837,7 +1837,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1157"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0010 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Tidig medeltid enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Tidig medeltid enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: tidig medeltid 1047–1157"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0026#granskning> .
 
@@ -1851,7 +1851,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1241"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0011 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Valdemarstiden enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Valdemarstiden enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0028#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0012#def-012> a crm:E4_Period,
@@ -1864,7 +1864,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1340"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0012 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Strid och rikets upplösning enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Strid och rikets upplösning enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: Strid og rigsopløsning 1241–1340"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0031#granskning> .
 
@@ -1878,7 +1878,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1387"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0013 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Riket återupprättas enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Riket återupprättas enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: Rigets genrejsning og pesten 1340–1387"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0031#granskning> .
 
@@ -1892,7 +1892,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1848"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0014 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Enväldets sista decennier enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Enväldets sista decennier enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: enväldets sena fas från ca 1800, enväldet slutar 1848. Ungefärligt årtal: start"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0034#granskning> .
 
@@ -1905,7 +1905,7 @@ nh: a schema:WebPage ;
             crm:P82a_begin_of_the_begin "1849"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0015 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Grundlov och 1864 enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Grundlov och 1864 enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: konstitutionell monarki från 1849"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0036#granskning> .
 
@@ -1919,7 +1919,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1945"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0016 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Världskrigens tid enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Världskrigens tid enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: verdenskrigsepoken 1914–1945"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0036#granskning> .
 
@@ -1933,7 +1933,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1973"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0017 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Välfärdsstaten byggs enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Välfärdsstaten byggs enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: efterkrigstiden 1945–1973"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0040#granskning> .
 
@@ -2355,7 +2355,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "0400"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0057 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Romersk järnålder enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Romersk järnålder enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0135#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0058#def-055> a crm:E4_Period,
@@ -2417,7 +2417,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1397"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0062 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Danmark–Norge enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Danmark–Norge enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0149#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0063#def-059> a crm:E4_Period,
@@ -2434,7 +2434,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1523"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0063 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Kalmarunionen enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Kalmarunionen enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0150#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0064#def-060> a crm:E4_Period,
@@ -2449,7 +2449,7 @@ nh: a schema:WebPage ;
             crm:P82b_end_of_the_end "1660"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0064 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Danmark–Norge enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Danmark–Norge enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0153#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0065#def-061> a crm:E4_Period,
@@ -6035,11 +6035,6 @@ nh:nh-p0044 a crm:E4_Period,
     schema:isPartOf wd:Q3503516 ;
     schema:name "Uppslagsverket Finland: Finlands historia – 1800-talet" .
 
-wd:Q3503516 a schema:CreativeWork ;
-    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#uppslagsverk> ;
-    schema:name "Uppslagsverket Finland" ;
-    schema:publisher wd:Q3431677 .
-
 <https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-neolithic-period> schema:name "Nationalmuseet: The Neolithic period" .
 
 <https://lex.dk/Danmarks_historie_i_vikingetiden> a schema:Article ;
@@ -6329,6 +6324,11 @@ nh:nh-p0056 a crm:E4_Period,
     schema:description "Hjortspringbåten" ;
     schema:name "Förromersk järnålder" ;
     schema:temporalCoverage "-0499/0001" .
+
+wd:Q3503516 a schema:CreativeWork ;
+    dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#uppslagsverk> ;
+    schema:name "Uppslagsverket Finland" ;
+    schema:publisher wd:Q3431677 .
 
 <https://lex.dk/Danmark-Norge> a schema:Article ;
     dcterms:type <https://w3id.org/people/kerfors/sidospar/kallor/id/#artikel> ;
@@ -6896,9 +6896,9 @@ nh:nh-p0069 a crm:E4_Period,
     schema:name "Store norske leksikon: steinalderen i Norge" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-ne> a skos:ConceptScheme ;
+    dcterms:source wd:Q1165538 ;
     skos:prefLabel "Periodindelning enligt Nationalencyklopedin"@sv ;
-    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
-    schema:url <https://ne.se/> .
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> .
 
 nh:nh-p0055 a crm:E4_Period,
         skos:Concept ;
@@ -6994,9 +6994,9 @@ nh:nh-p0068 a crm:E4_Period,
 <https://historiska.se/utforska-historien/tidsaldrar/> schema:name "Statens historiska museer – Tidsåldrar" .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-uppslagsverket> a skos:ConceptScheme ;
+    dcterms:source wd:Q3503516 ;
     skos:prefLabel "Periodindelning enligt Uppslagsverket Finland"@sv ;
-    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
-    schema:url <https://uppslagsverket.fi/> .
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> .
 
 nh:nh-p0002 a crm:E4_Period,
         skos:Concept ;
@@ -7245,14 +7245,14 @@ kallor:sdhk a schema:Dataset ;
     schema:publisher wd:Q1724971 .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> a skos:ConceptScheme ;
-    skos:prefLabel "Periodindelning enligt Lex (Den Store Danske)"@sv ;
-    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
-    schema:url <https://lex.dk/> .
+    dcterms:source wd:Q136450325 ;
+    skos:prefLabel "Periodindelning enligt Lex"@sv ;
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-snl> a skos:ConceptScheme ;
+    dcterms:source wd:Q746368 ;
     skos:prefLabel "Periodindelning enligt Store norske leksikon"@sv ;
-    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> ;
-    schema:url <https://snl.no/> .
+    schema:isPartOf <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#dataset> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#typ-milstolpe> a skos:Concept ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#uppgiftstyper> ;

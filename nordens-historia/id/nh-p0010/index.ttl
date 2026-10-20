@@ -29,7 +29,7 @@
             crm:P82b_end_of_the_end "1157"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0010 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Tidig medeltid enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Tidig medeltid enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: tidig medeltid 1047–1157"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0026#granskning> .
 

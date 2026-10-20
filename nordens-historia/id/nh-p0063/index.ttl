@@ -65,7 +65,7 @@
             crm:P82b_end_of_the_end "1523"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0063 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Kalmarunionen enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Kalmarunionen enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0150#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0063/> a schema:WebPage ;

@@ -342,16 +342,16 @@
    "skos:prefLabel": {
     "sv": "Periodindelning enligt Store norske leksikon"
    },
-   "url": "https://snl.no/",
+   "dcterms:source": "wd:Q746368",
    "isPartOf": "nh:#dataset"
   },
   {
    "@id": "nh:#kalla-lex",
    "@type": "skos:ConceptScheme",
    "skos:prefLabel": {
-    "sv": "Periodindelning enligt Lex (Den Store Danske)"
+    "sv": "Periodindelning enligt Lex"
    },
-   "url": "https://lex.dk/",
+   "dcterms:source": "wd:Q136450325",
    "isPartOf": "nh:#dataset"
   },
   {
@@ -378,7 +378,7 @@
    "skos:prefLabel": {
     "sv": "Periodindelning enligt Nationalencyklopedin"
    },
-   "url": "https://ne.se/",
+   "dcterms:source": "wd:Q1165538",
    "isPartOf": "nh:#dataset"
   },
   {
@@ -396,7 +396,7 @@
    "skos:prefLabel": {
     "sv": "Periodindelning enligt Uppslagsverket Finland"
    },
-   "url": "https://uppslagsverket.fi/",
+   "dcterms:source": "wd:Q3503516",
    "isPartOf": "nh:#dataset"
   },
   {
@@ -502,7 +502,7 @@
    ],
    "dcterms:identifier": "def-002",
    "skos:prefLabel": {
-    "sv": "Fristaten enligt Lex (Den Store Danske)"
+    "sv": "Fristaten enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0002",
@@ -621,7 +621,7 @@
    ],
    "dcterms:identifier": "def-004",
    "skos:prefLabel": {
-    "sv": "Under danska kronan enligt Lex (Den Store Danske)"
+    "sv": "Under danska kronan enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:closeMatch": "nh:nh-p0004",
@@ -682,7 +682,7 @@
    ],
    "dcterms:identifier": "def-005",
    "skos:prefLabel": {
-    "sv": "Konungariket Island enligt Lex (Den Store Danske)"
+    "sv": "Konungariket Island enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0005",
@@ -738,7 +738,7 @@
    ],
    "dcterms:identifier": "def-006",
    "skos:prefLabel": {
-    "sv": "Republiken Island enligt Lex (Den Store Danske)"
+    "sv": "Republiken Island enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0006",
@@ -794,7 +794,7 @@
    ],
    "dcterms:identifier": "def-007",
    "skos:prefLabel": {
-    "sv": "Jägarstenålder enligt Lex (Den Store Danske)"
+    "sv": "Jägarstenålder enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:closeMatch": "nh:nh-p0007",
@@ -915,7 +915,7 @@
    ],
    "dcterms:identifier": "def-009",
    "skos:prefLabel": {
-    "sv": "Vikingatid enligt Lex (Den Store Danske)"
+    "sv": "Vikingatid enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:closeMatch": "nh:nh-p0009",
@@ -975,7 +975,7 @@
    ],
    "dcterms:identifier": "def-010",
    "skos:prefLabel": {
-    "sv": "Tidig medeltid enligt Lex (Den Store Danske)"
+    "sv": "Tidig medeltid enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:closeMatch": "nh:nh-p0010",
@@ -1037,7 +1037,7 @@
    ],
    "dcterms:identifier": "def-011",
    "skos:prefLabel": {
-    "sv": "Valdemarstiden enligt Lex (Den Store Danske)"
+    "sv": "Valdemarstiden enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0011",
@@ -1095,7 +1095,7 @@
    ],
    "dcterms:identifier": "def-012",
    "skos:prefLabel": {
-    "sv": "Strid och rikets upplösning enligt Lex (Den Store Danske)"
+    "sv": "Strid och rikets upplösning enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0012",
@@ -1156,7 +1156,7 @@
    ],
    "dcterms:identifier": "def-013",
    "skos:prefLabel": {
-    "sv": "Riket återupprättas enligt Lex (Den Store Danske)"
+    "sv": "Riket återupprättas enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:closeMatch": "nh:nh-p0013",
@@ -1218,7 +1218,7 @@
    ],
    "dcterms:identifier": "def-014",
    "skos:prefLabel": {
-    "sv": "Enväldets sista decennier enligt Lex (Den Store Danske)"
+    "sv": "Enväldets sista decennier enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:closeMatch": "nh:nh-p0014",
@@ -1280,7 +1280,7 @@
    ],
    "dcterms:identifier": "def-015",
    "skos:prefLabel": {
-    "sv": "Grundlov och 1864 enligt Lex (Den Store Danske)"
+    "sv": "Grundlov och 1864 enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:closeMatch": "nh:nh-p0015",
@@ -1340,7 +1340,7 @@
    ],
    "dcterms:identifier": "def-016",
    "skos:prefLabel": {
-    "sv": "Världskrigens tid enligt Lex (Den Store Danske)"
+    "sv": "Världskrigens tid enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0016",
@@ -1397,7 +1397,7 @@
    ],
    "dcterms:identifier": "def-017",
    "skos:prefLabel": {
-    "sv": "Välfärdsstaten byggs enligt Lex (Den Store Danske)"
+    "sv": "Välfärdsstaten byggs enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0017",
@@ -3350,7 +3350,7 @@
    ],
    "dcterms:identifier": "def-054",
    "skos:prefLabel": {
-    "sv": "Romersk järnålder enligt Lex (Den Store Danske)"
+    "sv": "Romersk järnålder enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0057",
@@ -3654,7 +3654,7 @@
    ],
    "dcterms:identifier": "def-058",
    "skos:prefLabel": {
-    "sv": "Danmark–Norge enligt Lex (Den Store Danske)"
+    "sv": "Danmark–Norge enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0062",
@@ -3725,7 +3725,7 @@
    ],
    "dcterms:identifier": "def-059",
    "skos:prefLabel": {
-    "sv": "Kalmarunionen enligt Lex (Den Store Danske)"
+    "sv": "Kalmarunionen enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0063",
@@ -3792,7 +3792,7 @@
    ],
    "dcterms:identifier": "def-060",
    "skos:prefLabel": {
-    "sv": "Danmark–Norge enligt Lex (Den Store Danske)"
+    "sv": "Danmark–Norge enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0064",

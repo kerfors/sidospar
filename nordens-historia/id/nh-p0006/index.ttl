@@ -40,7 +40,7 @@
             crm:P82b_end_of_the_end "2026"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0006 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Republiken Island enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Republiken Island enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0014#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0006/> a schema:WebPage ;

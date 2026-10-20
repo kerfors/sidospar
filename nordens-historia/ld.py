@@ -236,11 +236,8 @@ def relations(items):
 
 
 # ---------------------------------------------------------------- sources as schemes
+# Sources of boundary definitions that are not yet a work in data/sources.json.
 PUBLICATIONS = [
-    ("snl.no", "snl", "Store norske leksikon"),
-    ("lex.dk", "lex", "Lex (Den Store Danske)"),
-    ("uppslagsverket.fi", "uppslagsverket", "Uppslagsverket Finland"),
-    ("ne.se", "ne", "Nationalencyklopedin"),
     ("historiska.se", "historiska", "Statens historiska museer"),
     ("riksdagen.se", "riksdagen", "Sveriges riksdag"),
     ("natmus.dk", "natmus", "Nationalmuseet"),
@@ -248,6 +245,11 @@ PUBLICATIONS = [
 
 
 def publication(url):
+    """Key and name of the source a boundary definition comes from, and what the scheme points to:
+    the work (dcterms:source) when it is in data/sources.json, otherwise the site's home page (url)."""
+    w = source_work(url)
+    if w and w.get("scheme"):
+        return w["scheme"], w["name"], w["iri"]
     host = url.split("/")[2] if url.startswith("http") else ""
     for dom, key, name in PUBLICATIONS:
         if host == dom or host.endswith("." + dom):
@@ -339,10 +341,10 @@ def definition_node(d, p, wd):
 def scheme_nodes(defs):
     seen = {}
     for d in defs:
-        key, name, home = publication(d["source_url"])
+        key, name, ref = publication(d["source_url"])
         seen[key] = {"@id": f"nh:#kalla-{key}", "@type": "skos:ConceptScheme",
                      "skos:prefLabel": {"sv": f"Periodindelning enligt {name}"},
-                     "url": home, "isPartOf": "nh:#dataset"}
+                     ("url" if ref.startswith("http") else "dcterms:source"): ref, "isPartOf": "nh:#dataset"}
     return list(seen.values())
 
 

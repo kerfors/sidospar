@@ -159,7 +159,7 @@
    ],
    "dcterms:identifier": "def-002",
    "skos:prefLabel": {
-    "sv": "Fristaten enligt Lex (Den Store Danske)"
+    "sv": "Fristaten enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0002",

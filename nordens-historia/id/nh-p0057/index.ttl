@@ -42,7 +42,7 @@
             crm:P82b_end_of_the_end "0400"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0057 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Romersk järnålder enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Romersk järnålder enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0135#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0057/> a schema:WebPage ;

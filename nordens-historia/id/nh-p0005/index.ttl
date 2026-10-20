@@ -29,7 +29,7 @@
             crm:P82b_end_of_the_end "1944"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0005 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Konungariket Island enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Konungariket Island enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0012#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0005/> a schema:WebPage ;

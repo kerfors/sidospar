@@ -156,7 +156,7 @@
    ],
    "dcterms:identifier": "def-006",
    "skos:prefLabel": {
-    "sv": "Republiken Island enligt Lex (Den Store Danske)"
+    "sv": "Republiken Island enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0006",

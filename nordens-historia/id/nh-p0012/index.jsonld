@@ -158,7 +158,7 @@
    ],
    "dcterms:identifier": "def-012",
    "skos:prefLabel": {
-    "sv": "Strid och rikets upplösning enligt Lex (Den Store Danske)"
+    "sv": "Strid och rikets upplösning enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0012",

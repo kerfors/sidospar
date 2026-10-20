@@ -159,7 +159,7 @@
    ],
    "dcterms:identifier": "def-011",
    "skos:prefLabel": {
-    "sv": "Valdemarstiden enligt Lex (Den Store Danske)"
+    "sv": "Valdemarstiden enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0011",

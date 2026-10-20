@@ -169,7 +169,7 @@
    ],
    "dcterms:identifier": "def-059",
    "skos:prefLabel": {
-    "sv": "Kalmarunionen enligt Lex (Den Store Danske)"
+    "sv": "Kalmarunionen enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0063",

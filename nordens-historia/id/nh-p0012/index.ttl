@@ -29,7 +29,7 @@
             crm:P82b_end_of_the_end "1340"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0012 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Strid och rikets upplösning enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Strid och rikets upplösning enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: Strid og rigsopløsning 1241–1340"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0031#granskning> .
 

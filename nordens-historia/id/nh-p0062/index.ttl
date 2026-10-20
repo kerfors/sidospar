@@ -20,7 +20,7 @@
             crm:P82b_end_of_the_end "1397"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0062 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Danmark–Norge enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Danmark–Norge enligt Lex"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0149#granskning> .
 
 <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0062/> a schema:WebPage ;

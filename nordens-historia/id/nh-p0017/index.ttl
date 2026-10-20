@@ -18,7 +18,7 @@
             crm:P82b_end_of_the_end "1973"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0017 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Välfärdsstaten byggs enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Välfärdsstaten byggs enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: efterkrigstiden 1945–1973"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0040#granskning> .
 

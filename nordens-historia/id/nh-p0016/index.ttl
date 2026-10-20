@@ -29,7 +29,7 @@
             crm:P82b_end_of_the_end "1945"^^xsd:gYear ] ;
     skos:exactMatch nh:nh-p0016 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Världskrigens tid enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Världskrigens tid enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: verdenskrigsepoken 1914–1945"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0036#granskning> .
 

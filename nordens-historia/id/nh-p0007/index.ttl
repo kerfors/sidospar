@@ -29,7 +29,7 @@
             crm:P82b_end_of_the_end "-3999"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0007 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Jägarstenålder enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Jägarstenålder enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: mesolitikum i Danmark ca 9600–4000 f.Kr.. Ungefärligt årtal: start, slut"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0017#granskning> .
 

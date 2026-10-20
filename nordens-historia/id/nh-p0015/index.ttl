@@ -41,7 +41,7 @@
             crm:P82a_begin_of_the_begin "1849"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0015 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Grundlov och 1864 enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Grundlov och 1864 enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: konstitutionell monarki från 1849"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0036#granskning> .
 

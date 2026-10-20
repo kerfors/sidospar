@@ -158,7 +158,7 @@
    ],
    "dcterms:identifier": "def-016",
    "skos:prefLabel": {
-    "sv": "Världskrigens tid enligt Lex (Den Store Danske)"
+    "sv": "Världskrigens tid enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0016",

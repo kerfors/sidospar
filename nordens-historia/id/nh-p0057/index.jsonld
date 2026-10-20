@@ -163,7 +163,7 @@
    ],
    "dcterms:identifier": "def-054",
    "skos:prefLabel": {
-    "sv": "Romersk järnålder enligt Lex (Den Store Danske)"
+    "sv": "Romersk järnålder enligt Lex"
    },
    "skos:inScheme": "nh:#kalla-lex",
    "skos:exactMatch": "nh:nh-p0057",

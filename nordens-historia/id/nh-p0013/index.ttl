@@ -29,7 +29,7 @@
             crm:P82b_end_of_the_end "1387"^^xsd:gYear ] ;
     skos:closeMatch nh:nh-p0013 ;
     skos:inScheme <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kalla-lex> ;
-    skos:prefLabel "Riket återupprättas enligt Lex (Den Store Danske)"@sv ;
+    skos:prefLabel "Riket återupprättas enligt Lex"@sv ;
     skos:scopeNote "Källans formulering: Rigets genrejsning og pesten 1340–1387"@sv ;
     prov:wasDerivedFrom <https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-c0031#granskning> .
 

@@ -1,11 +1,19 @@
 """Linked data for Nordens historia.
 
-Reads data/items.json, data/claims.json and data/wikidata.json and writes
+Reads data/items.json, data/claims.json, data/wikidata.json, data/definitions.json,
+data/riksarkivet.json and data/sources.json and writes
   id/index.html, id/index.jsonld, id/index.ttl   register of all identifiers
   id/<nh-id>/index.html, index.jsonld, index.ttl one page per period, event,
                                                  milestone and claim
 Turtle is generated from the JSON-LD with rdflib; the build fails if the two
 do not give the same graph.
+
+data/sources.json says what each cited source is: the work an address belongs
+to (by url_prefixes), the work's publisher, and how to take the article number
+from the address (Wikidata's URL match pattern, P8966, for the work's property;
+www. counts as the same site, and the pattern must cover the whole address).
+The file is this project's own and the folder builds on its own; the IRIs are
+shared: Wikidata's, or kallor/id/ for SDHK and the source types.
 
 URI pattern (minted under w3id.org, hosted on GitHub Pages):
   thing     https://w3id.org/people/kerfors/sidospar/nordens-historia/id/nh-p0015
@@ -716,7 +724,15 @@ typ (<code>dcterms:type</code>): periodens namn och gränser, en detalj i period
 schema för den källan (Store norske leksikon, Lex, Uppslagsverket Finland, NE …), matchad mot affischens period med
 <code>skos:exactMatch</code> när gränserna sammanfaller och <code>skos:closeMatch</code> när de avviker, och härledd
 (<code>prov:wasDerivedFrom</code>) från källkontrollens granskning. Ungefärliga årtal är markerade, och källans
-formulering finns i <code>skos:scopeNote</code>.</li>
+formulering finns i <code>skos:scopeNote</code>. Schemat pekar på verket med <code>dcterms:source</code>.</li>
+<li><strong>Källorna</strong>: varje källa i en granskning (<code>schema:citation</code>) säger vad den är
+(<code>dcterms:type</code>: artikel i ett uppslagsverk, post i ett register eller webbsida) och vilket verk den ingår i
+(<code>schema:isPartOf</code>). Verken och deras utgivare (<code>schema:publisher</code>) har Wikidatas identifierare:
+Store norske leksikon, Lex, Uppslagsverket Finland, Nationalencyklopedin och Svenskt biografiskt lexikon. En artikel har
+sitt nummer i verket (<code>schema:identifier</code>) med den egenskap Wikidata använder för verket, till exempel
+<code>wd:P4342</code> för Store norske leksikon, så att samma artikel går att hitta från Wikidata. Registret SDHK och
+typerna av källor saknas i Wikidata och har egna identifierare under
+<a href="https://w3id.org/people/kerfors/sidospar/kallor/id/">…/sidospar/kallor/id/</a>.</li>
 <li><strong>OWL-Time och CIDOC-CRM</strong> för relationerna mellan posterna, härledda ur affischen:
 <code>time:intervalMeets</code> när en period slutar samma år som nästa börjar i samma kolumn, och
 <code>crm:P10_falls_within</code> för händelser och milstolpar som inträffar under en period.</li>

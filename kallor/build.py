@@ -196,7 +196,9 @@ def register_page(data, types):
     body = f"""<h1>Källor</h1>
 <p>Källorna som sidospåren hänvisar till: vad varje källa är och vem som ger ut den. Verk och utgivare
 som finns i Wikidata har Wikidatas identifierare. De som saknas där har en egen identifierare under
-<code>{ID}</code>, som går att slå upp på samma sätt som perioderna i Nordens historia.</p>
+<code>{ID}</code>, som går att slå upp på samma sätt som perioderna i Nordens historia.
+Sidospåren pekar på identifierarna här, på samma sätt som på Wikidata, men läser inte filerna här när de
+byggs: varje sidospår bygger från sin egen mapp.</p>
 <h2>Verk</h2>
 <div class="tw"><table><thead><tr><th>Verk</th><th>Typ</th><th>Utgivare</th></tr></thead><tbody>{rows_w}</tbody></table></div>
 <h2>Utgivare</h2>

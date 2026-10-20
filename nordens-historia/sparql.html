@@ -72,6 +72,10 @@ och <code>crm:P10_falls_within</code> till perioden.</li>
 och typen i <code>dcterms:type</code> (begrepp i <code>&lt;https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#uppgiftstyper&gt;</code>);
 granskningen är en <code>schema:ClaimReview</code> med <code>schema:itemReviewed</code>, utlåtandet i
 <code>schema:reviewRating/schema:alternateName</code> och källan i <code>schema:citation</code>.</li>
+<li><strong>Källorna</strong>: källan i <code>schema:citation</code> har sin typ i <code>dcterms:type</code>, verket i
+<code>schema:isPartOf</code> (med <code>schema:name</code> och <code>schema:publisher</code>) och artikelnumret i
+<code>schema:identifier</code> (<code>schema:propertyID</code>, till exempel <code>wd:P4342</code>, och
+<code>schema:value</code>). Källornas scheman för periodgränser pekar på verket med <code>dcterms:source</code>.</li>
 <li><strong>Två kontroller</strong>: granskningarna skiljs åt av <code>prov:wasGeneratedBy</code>. Den första kontrollen
 är <code>&lt;https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#kontroll-2026-10-18&gt;</code>; den andra, mot Riksarkivets SBL och SDHK, använde
 (<code>prov:used</code>) <code>&lt;https://w3id.org/people/kerfors/sidospar/nordens-historia/id/#riksarkivets-mcp&gt;</code>.</li>

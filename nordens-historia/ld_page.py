@@ -49,6 +49,16 @@ def stats():
     same = sum(1 for d in defs if (d["start"], d["end"]) == (periods[d["period"]]["start"], periods[d["period"]]["end"]))
     moved = [d for d in defs if d["basis"].startswith("bekräftad")
              and (d["start"], d["end"]) != (periods[d["period"]]["start"], periods[d["period"]]["end"])]
+    claim = {c["id"]: c for c in claims}
+    on_poster = {d["id"]: (periods[d["period"]]["start"], periods[d["period"]]["end"]) for d in defs}
+    agree = [d for d in defs if (d["start"], d["end"]) == on_poster[d["id"]]]
+    differ = [d for d in defs if (d["start"], d["end"]) != on_poster[d["id"]]]
+    disputed_differ = [d for d in differ if claim[d["claim"]]["verdict"] == "omdiskuterad"]
+    kept = [d for d in disputed_differ if checked_span(claim[d["claim"]]["statement"]) == on_poster[d["id"]]]
+    confirmed_agree = sum(1 for d in agree if claim[d["claim"]]["verdict"] == "bekräftad")
+    changed_agree = sum(1 for d in agree if claim[d["claim"]]["verdict"] == "omdiskuterad")
+    assert confirmed_agree + changed_agree == len(agree), "definition with an unexpected verdict"
+    assert len(disputed_differ) + len(moved) == len(differ), "differing definition neither disputed nor moved"
     hosts = Counter(ld.source_name(u) for c in claims if c["source_url"] for u in [c["source_url"]] + c["also_sources"])
     ra = json.loads((HERE / "data" / "riksarkivet.json").read_text(encoding="utf-8"))["checks"]
     return {
@@ -57,6 +67,8 @@ def stats():
         "period_claims": sum(1 for c in claims if c["kind"] == "period"),
         "period_disputed": sum(1 for c in claims if c["kind"] == "period" and c["verdict"] == "omdiskuterad"),
         "defs": len(defs), "defs_same": same, "defs_diff": len(defs) - same,
+        "confirmed_agree": confirmed_agree, "changed_agree": changed_agree,
+        "kept": len(kept), "changed_differ": len(disputed_differ) - len(kept),
         "defs_periods": len({d["period"] for d in defs}), "moved": [(periods[d["period"]]["label"], d) for d in moved],
         "wd_items": len(linked), "places": sum(1 for c in items["columns"] if wd.get("place:" + c, {}).get("qid")),
         "meets": sum(map(len, rel["meets"].values())), "within": sum(map(len, rel["within"].values())),
@@ -66,6 +78,13 @@ def stats():
         "sources": len({u for c in claims for u in [c["source_url"]] + c["also_sources"]}
                        | {x["url"] for r in ra for x in r["records"]}),
     }
+
+
+def checked_span(statement):
+    """The years in a checked period statement, e.g. "Period 'Vikingatid': 793 – 1066"
+    or "Period 'Jägarstenålder': 10 000 f.Kr. – 3 900 f.Kr."."""
+    a, b = statement.rsplit("': ", 1)[1].split(" – ")
+    return tuple(-int(x[:-6].replace(" ", "")) if x.endswith(" f.Kr.") else int(x.replace(" ", "")) for x in (a, b))
 
 
 def yr(v):
@@ -129,10 +148,15 @@ data level, instead of being handled later in software or hidden in footnotes. A
 It is a choice made by someone, in a source.</p>
 <p>So the model now says exactly that. The poster has its own boundaries, as one choice among others.
 Each source's boundary is a separate definition: {s['defs']} definitions for {s['defs_periods']} of the
-{s['periods']} periods. {s['defs_same']} of them agree with the poster and {s['defs_diff']} differ.
-Three boundaries were confirmed by the source and then moved by me afterwards, to make the poster consistent.
-The data shows this openly:</p>
+{s['periods']} periods, from {s['period_claims']} checked boundaries (one source has no matching period, and two periods
+split after the check have a definition for each half).
+{s['defs_same']} agree with the poster: {s['confirmed_agree']} were confirmed as they were, and {s['changed_agree']} because
+I changed the poster to the source's boundary after the check. {s['defs_diff']} differ: {s['kept']} were disputed and kept
+as my own choice, {s['changed_differ']} were disputed and changed, but not to exactly the source's years, and three were
+confirmed by the source and then moved by me afterwards, to make the poster consistent. The three:</p>
 <ul>{moved}</ul>
+<p>Verdict against match can be <a href="sparql.html#grans-mot-affisch">queried on the SPARQL page</a>. Whether the poster
+was changed after the check cannot: that is only in the statement's text, not as structured data.</p>
 
 <h2>Identifiers</h2>
 <p>Every item has a persistent identifier under <code>https://w3id.org/people/kerfors/sidospar/nordens-historia/id/</code>,

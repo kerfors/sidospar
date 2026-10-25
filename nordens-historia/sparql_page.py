@@ -130,6 +130,19 @@ ORDER BY DESC(?granskningar) ?kalla
 GROUP BY ?typ ?typNamn ?utlatande
 ORDER BY ?typ ?utlatande
 """),
+    ("grans-mot-affisch", "Källornas gränser mot affischen",
+     "Varje källas periodgräns, efter utlåtandet i källkontrollen och om gränsen stämmer med affischen (skos:exactMatch) eller avviker (skos:closeMatch). Om affischen ändrades efter kontrollen står bara i uppgiftens text, inte som egna data.",
+     f"""SELECT ?utlatande ?motAffischen (COUNT(?def) AS ?definitioner) WHERE {{
+  ?def prov:wasDerivedFrom ?granskning .
+  ?granskning schema:reviewRating/schema:alternateName ?utlatande .
+  {{ ?def skos:exactMatch ?period . BIND ("stämmer" AS ?motAffischen) }}
+  UNION
+  {{ ?def skos:closeMatch ?period . BIND ("avviker" AS ?motAffischen) }}
+  ?period skos:inScheme {SCHEME} .
+}}
+GROUP BY ?utlatande ?motAffischen
+ORDER BY ?utlatande ?motAffischen
+"""),
     ("riksarkivet", "Två kontroller av samma uppgift",
      "Uppgifter som också är kontrollerade mot Riksarkivets SBL och SDHK, med utlåtandet från båda kontrollerna.",
      f"""SELECT ?uppgift ?text ?forsta ?riksarkivet (GROUP_CONCAT(DISTINCT ?kallNamn; separator=", ") AS ?kallor) WHERE {{

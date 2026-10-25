@@ -99,7 +99,7 @@ def build(ld_graph_path, out_path):
 <h1>The linked data behind the poster</h1>
 <p class="lead">A poster is a picture. The facts behind it should be possible to look up, check and reuse.
 This page explains how the timeline <a href="./">Nordens historia</a> is published as linked data,
-what we learned on the way, and what comes next. The poster and the other pages are in Swedish; this page is in English.</p>
+and what we learned on the way. The poster and the other pages are in Swedish; this page is in English.</p>
 
 <div class="stats">
 <div><strong>{s['items']}</strong><span>periods, events and milestones, each with its own identifier</span></div>
@@ -121,9 +121,9 @@ Then every statement was checked against a reference source by AI agents with we
 <h2>What the data showed</h2>
 <p>The source check gave {v['bekräftad']} confirmed and {v['omdiskuterad']} disputed statements, and no statement
 that was simply wrong. The disputed ones are almost all period boundaries: {s['period_disputed']} of the
-{s['period_claims']} checked boundaries do not match what the source says. The Swedish, Danish and Norwegian reference works
+{s['period_claims']} checked boundaries do not match what the source says. The Nordic reference works
 do not draw the lines in the same places. The Viking Age ends in 1066 in English convention, but around 1050 in
-the Nordic reference works.</p>
+Sweden and Denmark, and in 1025 in Finland. Store norske leksikon gives both 1050 and 1066.</p>
 <p>This is a typical linked data experience. When the data has to be explicit, the fine details come up early, at the
 data level, instead of being handled later in software or hidden in footnotes. A period boundary is not a fact.
 It is a choice made by someone, in a source.</p>
@@ -138,6 +138,7 @@ The data shows this openly:</p>
 <p>Every item has a persistent identifier under <code>https://w3id.org/people/kerfors/sidospar/nordens-historia/id/</code>,
 an opaque number such as <code>nh-p0030</code>, so a period can be renamed or re-dated without breaking links.
 w3id.org answers with a 303 to the page, or to Turtle or JSON-LD. More on the <a href="id/">identifier page</a>.
+Each block on the poster links to its identifier, and each item page links back to its block on the poster.
 The sources, their works and their publishers use Wikidata's identifiers. The few that are missing there, such as
 the register SDHK, have one under <a href="https://w3id.org/people/kerfors/sidospar/kallor/id/"><code>https://w3id.org/people/kerfors/sidospar/kallor/id/</code></a>.</p>
 
@@ -174,8 +175,8 @@ one Wikidata uses, so the same article can be found from Wikidata.</td></tr>
 
 <p>The chain for one period boundary:</p>
 <div class="chain">
-<span class="box"><b>Source</b>"Tidsåldrar", a page by Historiska museet</span><span class="arrow">derived from →</span>
-<span class="box"><b>Review</b>ClaimReview: "omdiskuterad"</span><span class="arrow">derived from →</span>
+<span class="box"><b>Source</b>"Tidsåldrar", a page by Historiska museet</span><span class="arrow">← derived from</span>
+<span class="box"><b>Review</b>ClaimReview: "omdiskuterad", the poster said 1066, now 1050</span><span class="arrow">← derived from</span>
 <span class="box"><b>Definition</b>Vikingatid 793–1050, per the museum</span><span class="arrow">exactMatch →</span>
 <span class="box"><b>Period</b>Vikingatid, Sverige, on the poster</span><span class="arrow">exactMatch →</span>
 <span class="box"><b>Wikidata</b>Viking Age Sweden</span>

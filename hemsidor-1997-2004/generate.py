@@ -44,6 +44,10 @@ NOTES = {
     "viktoria/IRIS98_tidningar.htm": "hela artikeln",
     "viktoria/MDI15ar.htm": "bilden sparades inte i arkivet",
     "viktoria/MDI15ar_overview.htm": "översiktsbild",
+    "viktoria/www9/ExtRDF.htm": (
+        "hela artikeln, med Lars Dannstedt; publicerad i Computer Networks 33, 2000, "
+        "[doi:10.1016/S1389-1286(00)00065-7](https://doi.org/10.1016/S1389-1286%2800%2900065-7)"
+    ),
 }
 # Copied but not listed: index.htm is the same file as index.html.
 UNLISTED = {"viktoria/index.htm"}
@@ -56,6 +60,8 @@ Kerstin Forsberg · november 2026 · [Till Sidospår](../)
 Vårt första internetabonnemang köpte vi av Netg på Bokmässan i Göteborg 1994. Det gällde tio timmar.
 
 1997 började jag som industridoktorand på Viktoriainstitutet, senare Informatik vid Göteborgs universitet. I december 2001 tog jag min licentiatexamen med avhandlingen [*Mobile newsmaking*](https://libris.kb.se/6phfq9mj3nwcjns#it) (Papers in informatics nr 9). Forskningsområdet var datorstött samarbete (CSCW). I gruppen Mobile Informatics studerade jag vad som behövs för att mycket rörliga yrkesgrupper, som nyhetsjournalister, ska få information anpassad till sin situation genom mobila tillämpningar: *Mobile Newsmaking*. Avhandlingens egen [webbsida](sidor/viktoria/thesis/index.htm) finns kvar i arkivet, och där finns [hela avhandlingen som PDF](sidor/viktoria/thesis/bookscreen.pdf), 109 sidor.
+
+During my PhD studies I wrote the paper [*Extensible use of RDF in a Business Context*](sidor/viktoria/www9/ExtRDF.htm) together with Lars Dannstedt at Volvo IT. I presented it at the WWW9 conference in Amsterdam in May 2000, and it was also published in Computer Networks ([doi:10.1016/S1389-1286(00)00065-7](https://doi.org/10.1016/S1389-1286%2800%2900065-7)). It was my first work with RDF and linked data, something I [still work with](https://kerfors.github.io/).
 
 Sidorna här kommer från olika doktorandkurser och projekt. De är hämtade ur [Internet Archive](https://web.archive.org/) (Wayback Machine), som den senast sparade versionen av varje sida. *Datum* är det datum sidan själv anger ("Updated by Kerstin Forsberg …"), eller när sidan senast sparades i Word om den inte anger något. *Arkiverad* är dagen då arkivet sparade kopian. Länkar mellan mina egna sidor fungerar. Länkar ut till andra webbplatser går till arkivets kopia från ungefär samma tid, när en sådan finns. Några bilder och sidor sparades aldrig.
 

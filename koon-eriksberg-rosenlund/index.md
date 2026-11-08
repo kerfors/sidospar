@@ -186,4 +186,4 @@ Bilder från Bohusläns museum via DigitaltMuseum, alla märkta Public Domain (l
 
 - [Rosenlunds naturreservat](https://sv.wikipedia.org/wiki/Rosenlunds_naturreservat), svenska Wikipedia
 - [Jakten på Koökrokodilen](https://hallensgeocachingaventyr.com/2022/03/05/jakten-pa-kookrokodilen/), geocachingblogg
-- [Marstrand, tidning för Marstrands stad och badgäster, lördagen den 14 augusti 1897, sidan 1](https://tidningar.kb.se/gvxwjj4bd90tdbwp/part/1/page/1). Tryckt i Göteborg hos Wald. Zachrissons boktryckeri. Digitaliserad av Kungliga biblioteket, Svenska tidningar. Tidningssidan på den här sidan är hämtad i full upplösning från KB:s bildtjänst, fil `bibq1jxnlc3nfrb211g_18970814_166129_10_0001.jp2`, och förminskad.
+- [Marstrand, tidning för Marstrands stad och badgäster, 14 augusti 1897, sidan 1](https://tidningar.kb.se/gvxwjj4bd90tdbwp/part/1/page/1), Kungliga biblioteket, Svenska tidningar

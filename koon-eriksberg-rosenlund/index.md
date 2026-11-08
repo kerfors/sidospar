@@ -2,6 +2,8 @@
 
 Kerstin Forsberg · 7 november 2026 · [Till Sidospår](../)
 
+Vi promenerar ofta i det här fina området på Koön, fotar och fikar, framför allt utanför säsong. När vi gick där i helgen pratade vi om när husen egentligen byggdes. Det blev början på den här sammanställningen.
+
 ## Sammanfattning
 
 På Koön, innanför Marstrand, ligger några fina äldre hus vid Eriksberg och Rosenlund. I skogen vid Rosenlund står en sten med texten ”Oscar 18 11/8 97”. Frågan var när husen byggdes och vad som finns att berätta om dem.
@@ -24,83 +26,29 @@ Arbetet gjordes en lördagskväll, i ett samtal med Claude (Anthropic):
 5. Sökning i Kungliga bibliotekets digitaliserade dagstidningar.
 6. Dagen efter fotograferade Björn Forsberg stenen. Med datumet lästes badgästtidningen *Marstrand* för den veckan. Sidan maskinlästes och notisen kontrollerades mot bilden av tidningssidan.
 
-## Eriksberg
+## Husen
 
-Eriksbergs gård ligger på Eriksbergsvägen 12. Uppgifterna kommer från hembygdsföreningens ägarförteckning och från inventeringen 2005. De två stämmer överens utom i ett namn.
+![Utsnitt ur Ekonomiska kartan 1976 med Koön, Backudden, Rosenlund, Eriksberg, Myren och Arvidsvik. Prickade linjer är gångstigar](karta-koon-1976.jpg)
 
-| År | Händelse |
-| --- | --- |
-| 1822 | Handlanden Erik Widell i Marstrand arrenderar gården och har den som sommarnöje till sin död 1837 |
-| 1845 | Britta Johansdotter, gift med arbetaren Peter Johansson |
-| 1861 | Carl Rutgersson och hustrun Johanna börjar bruka jorden. Drängen var kusk under Oscar II:s tid och körde badgäster med häst och vagn till Backudden |
-| 1880 | Nuvarande mangårdsbyggnad uppförs |
-| ? – 1930 | Sonen Mauritz och hustrun Augusta arrenderar stället |
-| 1932 | Ivar och Anna Andersson från Långön |
-| 1944 | Sonen Tage och hustrun Harriet Arnhage |
-| 1946 | Fabrikör Harald Hjort köper gården som sommarbostad |
-| ? | Familjen Arvidsson, senare bröderna Conny och Christoffer Arvidsson |
+*Koön 1976. Backudden och Rosenlund längst upp till höger, Eriksberg i mitten, Arvidsvik och Marstrand nere till vänster. De prickade linjerna är gångstigar. Utsnitt ur Ekonomiska kartan, blad Instön 7B5a, Statens lantmäteriverk 1976.*
 
-Kusken heter Johan Rasmusson i ägarförteckningen och Johan Johansson i inventeringen. Församlingsböckerna kan avgöra vilket som stämmer.
+### Eriksberg
 
-Inventeringen anger på ett annat ställe att köpmannen Olof Widell arrenderade Myren, Reparebanan och Eriksberg som sommarnöje 1820–1837. Förnamnet skiljer sig alltså också där.
+Eriksbergs gård, Eriksbergsvägen 12, var redan 1822 sommarnöje för en Marstrandshandlare, samma år som badverksamheten började på Koön. Från 1861 brukades jorden av arrendatorer, och gårdens kusk körde badgäster med häst och vagn till Backudden under Oscar II:s tid. Nuvarande mangårdsbyggnad uppfördes 1880, och grannhuset nr 13 byggdes som vagnsbod till gården. Från 1946 har gården varit sommarbostad.
 
-Grannhuset Eriksbergsvägen 13 byggdes som vagnsbod till gården. Fastighetsuppgifter på nätet anger byggår 1880 för Eriksbergsvägen 12, vilket stämmer med inventeringen.
+Källorna skiljer sig i två namn. Kusken heter Johan Rasmusson i hembygdsföreningens ägarförteckning och Johan Johansson i inventeringen 2005. Handlanden från 1822 heter Erik Widell i den ena och Olof Widell i den andra.
 
-## Rosenlund
+### Rosenlund
 
-Inventeringen räknar fem hus på Rosenlund. Marken på både Rosenlund och Backudden har alltid varit arrendemark.
+Platsen var salteri under det stora sillfisket. I slutet av 1700-talet byggde Sven-Olof Rosenberg, handlare i Marstrand och direktör i Ostindiska kompaniet, det första huset. Under 1800-talet hade officerare och köpmän stället, och från 1877 arrenderade häradshövding Ragnar Berger det i 43 år. Det var alltså Berger som hade Rosenlund när kungen kom till Marstrand om somrarna.
 
-### Hus 1, huvudbyggnaden
+1920 tog diplomaten Björn Prytz (1887–1976) över, senare svensk minister i London under andra världskriget. 1939 revs det bergerska huset och det nuvarande byggdes. Runt huvudbyggnaden ligger mindre hus för tjänstefolk, parkskötare och trädgårdsmästare, och ett båthus från omkring 1938. Parkförvaltarens hus kallades från 1887 ”Oskars hus”, efter Oskar Isaksson och hans hustru Selma. Marken har alltid varit arrendemark.
 
-| År | Händelse |
-| --- | --- |
-| Slutet av 1700-talet | Sven-Olof Rosenberg, handlare i Marstrand och direktör i Ostindiska kompaniet, bygger det första huset |
-| 1822 | Kapten Avelin |
-| 1829 | Köpmannen och riddaren Avelin |
-| 1850-talet | Major Silfversvan |
-| 1877 | Häradshövding Ragnar Berger arrenderar på 25 år. Arrendet varade i 43 år |
-| 1920 | Björn Prytz, svensk minister i London från 1938 och under hela andra världskriget |
-| 1929 | Elektricitet installeras |
-| 1939 | Det bergerska huset rivs och det nuvarande byggs |
-| 1980-talet | Änkan Aino Prytz |
-| 1997 | Gustaf Krafft |
+Parken blev kommunalt naturreservat 1985, omkring 40 hektar ädellövskog med ek, alm, lind och bok. Sedan 2017 ingår den i naturreservatet Marstrand.
 
-Björn Prytz (1887–1976) har en artikel i Svenskt biografiskt lexikon. Han var diplomat och industriman, född i Göteborg och död i Marstrand.
+### Backudden
 
-Ragnar Berger kallas häradshövding här. På ett annat ställe i inventeringen kallas han direktör från Alingsås, sommarboende på Rosenlund. Det är troligen samma person, men det är inte kontrollerat.
-
-Inventeringen har ett foto märkt Rosenlundsvägen 40 som visar ett stort vitt hus bland ekarna. Att det är hus 1, huset från 1939, är vår tolkning. En mäklarannons för Rosenlundsvägen 40 anger byggår 1937.
-
-### Hus 2–5
-
-- **Hus 2** byggdes som bostad för tjänstefolk. I övrigt samma historia som hus 1.
-- **Hus 3** byggdes förmodligen på 1870-talet, också för tjänstefolket. På 1870-talet kallades det ”Kindbergs hus” efter parkskötaren. Från 1887 kallades det ”Oskars hus” efter parkförvaltaren Oskar Isaksson och hans hustru Selma. Numera gäststuga.
-- **Hus 4** byggdes omkring 1938 som båthus. På 1980- och 90-talen användes det av Kristinebergs forskningsstation för marinbiologisk forskning.
-- **Hus 5** var trädgårdsmästarbostad på familjen Prytz tid. Numera sommarhus.
-
-Parkförvaltaren Oscar Alexander Isaksson kom från Klöverön och dog 1930. Enligt inventeringen lät Berger 1898 bygga ett hus åt honom och Selma inne i Marstrand, på kvarteret Ringen.
-
-### Parken
-
-Rosenlund blev kommunalt naturreservat 1985, omkring 40 hektar, mest ädellövskog med ek, alm, lind och bok. Den högsta punkten kallas Danska utkiken. Sedan 2017 ingår området i det större naturreservatet Marstrand.
-
-## Backudden
-
-Backudden ligger strax norr om Rosenlund och hade samma bakgrund.
-
-- Under sillperioden i slutet av 1700-talet fanns salterier både på Backudden och Rosenlund.
-- 1799 bodde en löjtnant Peter Johan Engberg med sin hustru Petronella från Holland där, och en tunnbindare Lyberg från Karlstad.
-- Från 1808, när sillen tagit slut, var Backudden sommarställe för Marstrands borgare.
-
-Några av husen enligt inventeringen:
-
-| Hus | Historia |
-| --- | --- |
-| Backudden 2, ”Holmska villan” eller ”Ekebacken” | 1910 generalkonsul Holger Holm. 1920 van der Heiden, Lund. 1940 minister Björn Prytz och, med frågetecken i inventeringen, Holger Graffman. 1979 Göran Rutgerson, ägare till Rutgerson Marin |
-| Backudden 3 | 1874 säljer änkan efter rådmannen Erik Röing huset. 1905 dispaschör Conrad Pinéus. 1933 direktör Erik och Stina Frisell, där dottern Ragni, gift med skådespelaren Uno Henning, också bodde |
-| Backudden 4 | 1830-talet löjtnant Aminoff från Carlstens fästning. På 1890-talet köper konsul Fredrik Holm och hustrun Augusta huset och bygger till allt eftersom familjen växer. De fick sju barn |
-
-Ett känt foto från 1899 visar Oscar II på en sommarlunch på Backudden. I Riksarkivet finns en ritning till ombyggnad av villan vid Backudden, daterad 8 april 1896.
+Backudden, granne till Rosenlund, hade också salterier under sillfisket. När sillen tog slut 1808 blev udden sommarställe för Marstrands borgare. Under andra halvan av 1800-talet växte villorna fram, bland dem konsul Fredrik Holms sommarhus från 1890-talet och den så kallade Holmska villan. Ägarna var köpmän, konsuler och direktörer från Marstrand och Göteborg. Ett känt foto från 1899 visar Oscar II på en sommarlunch på Backudden. I Riksarkivet finns en ritning till ombyggnad av villan där från 1896.
 
 ## Stenen med Oscars namn
 
@@ -196,6 +144,10 @@ Stenar med Oscar II:s namn på andra platser:
 
 - [Grännabergsleden](http://jennysutflykter.blogspot.com/2014/06/grannabergsleden.html), bloggen Jennys utflykter, om stenen vid Oscarshöjd i Gränna
 - [Oscar II besök, minnessten, Östersund](https://commons.wikimedia.org/wiki/File:Oscar_II_bes%C3%B6k,_minnessten,_%C3%96stersund,_juni_2023.jpg), Wikimedia Commons
+
+Karta:
+
+- [Ekonomiska kartan, blad Instön 7B5a](https://historiskakartor.lantmateriet.se/hk/viewer/internal/J133-7B5a76/52414b5f4a3133332d374235613736/rak2/RAK/Inst%C3%B6n,%207B5a76/Ekonomiska%20kartan), Statens lantmäteriverk 1976, via Lantmäteriets Historiska kartor. Ekonomiska kartan är öppna data under CC0 enligt [Lantmäteriet](https://lantmateriet.se/en/geodata/geodata-products/product-list/ekonomiska-kartan).
 
 Övrigt:
 

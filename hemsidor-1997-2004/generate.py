@@ -24,7 +24,7 @@ import shutil
 import urllib.parse
 from pathlib import Path
 
-from fetch import local_path
+from fetch import SOURCES, local_path
 
 ROOT = Path(__file__).parent
 DATA_DIR = ROOT / "data"
@@ -100,9 +100,20 @@ def rewrite_html(text, item, files_by_key):
         value = match.group("dq") or match.group("sq") or match.group("bare") or ""
         absolute = urllib.parse.urljoin(item["original"], html.unescape(value))
         target_path = local_path(absolute)
-        if target_path is None or str(target_path).lower() not in files_by_key:
+        if target_path is None:
             return match.group(0)
-        target = files_by_key[str(target_path).lower()]
+        target = files_by_key.get(str(target_path).lower())
+        if target is None:
+            # The Viktoria pages are a move of the netg pages with the same
+            # folder layout: a file missing in one source is taken from the
+            # same path in the other, when it is there.
+            rest = Path(*target_path.parts[1:])
+            for folder in SOURCES.values():
+                target = files_by_key.get(str(Path(folder) / rest).lower())
+                if target is not None:
+                    break
+        if target is None:
+            return match.group(0)
         relative = os.path.relpath(target["path"], here).replace(os.sep, "/")
         fragment = urllib.parse.urlsplit(absolute).fragment
         if fragment:

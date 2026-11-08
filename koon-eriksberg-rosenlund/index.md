@@ -56,7 +56,7 @@ Parken blev kommunalt naturreservat 1985, omkring 40 hektar ädellövskog med ek
 
 *”No 12. Marstrand. Backudden.” Foto: Robert Dahllöf, 1870-talet. Bohusläns museum, UMFA55055:0009, Public Domain.*
 
-Backudden, granne till Rosenlund, hade också salterier under sillfisket. När sillen tog slut 1808 blev udden sommarställe för Marstrands borgare. Under andra halvan av 1800-talet växte villorna fram, bland dem konsul Fredrik Holms sommarhus från 1890-talet och den så kallade Holmska villan. Ägarna var köpmän, konsuler och direktörer från Marstrand och Göteborg. Ett känt foto från 1899 visar Oscar II på en sommarlunch på Backudden. I Riksarkivet finns en ritning till ombyggnad av villan där från 1896.
+Backudden, granne till Rosenlund, hade också salterier under sillfisket. När sillen tog slut 1808 blev udden sommarställe för Marstrands borgare. Under andra halvan av 1800-talet växte villorna fram, bland dem konsul Fredrik Holms sommarhus från 1890-talet och den så kallade Holmska villan. Ägarna var köpmän, konsuler och direktörer från Marstrand och Göteborg. Ett känt foto av hovfotografen Aron Jonason visar Oscar II på en sommarlunch på Backudden, med Lotten Abelin, Mathilde De la Gardie och fler ur kungens krets kring bordet. Fotot finns i Bernadottebiblioteket och visas, med mer om kungens somrar i Marstrand, i artikeln [Oscar II besöker Marstrand 1899](https://popularhistoria.se/kultur/fotografi/oscar-ii-besoker-marstrand-1899) i Populär Historia (2008). I Riksarkivet finns en ritning till ombyggnad av villan där från 1896.
 
 ## Stenen med Oscars namn
 
@@ -152,7 +152,7 @@ Kartorna och ritningen nedan är inte digitaliserade. Länkarna leder till Riksa
 Oscar II och Marstrand:
 
 - [Kung Oscar II anländer till Marstrand](https://digitaltmuseum.se/011014327065/kung-oscar-ii-anlander-till-marstrand), Bohusläns museum via DigitaltMuseum
-- [Oscar II besöker Marstrand 1899](https://popularhistoria.se/kultur/fotografi/oscar-ii-besoker-marstrand-1899), Populär Historia
+- [Oscar II besöker Marstrand 1899](https://popularhistoria.se/kultur/fotografi/oscar-ii-besoker-marstrand-1899), Jacob Wiberg, Populär Historia 7/2008. Om Aron Jonasons foto från lunchen på Backudden
 - [Badorten Marstrand](https://www.bohuslansmuseum.se/samlingar-och-historia/gamla-historiska-artiklar/badorten-marstrand/), Bohusläns museum
 
 Stenar med Oscar II:s namn på andra platser:

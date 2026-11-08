@@ -127,19 +127,39 @@ def copy_path(item):
     return Path("sidor") / item["path"]
 
 
-def banner(item):
+def banner(item, nav):
+    """Archive note plus a navigation line: previous, all pages, next.
+
+    nav is (previous, next) in the order of the table, each (title, item) or
+    None; pages that are not listed get (None, None).
+    """
     project = "../" * (len(copy_path(item).parts) - 1)
+    here = Path(item["path"]).parent
+
+    def link(entry, label):
+        title, target = entry
+        href = os.path.relpath(target["path"], here).replace(os.sep, "/")
+        return (f'<a href="{html.escape(href)}" title="{html.escape(title)}">'
+                f'{label}</a>')
+
+    previous, following = nav
+    parts = []
+    if previous:
+        parts.append(link(previous, "‹ Föregående"))
+    parts.append(f'<a href="{project}"><b>Alla sidor</b></a>')
+    if following:
+        parts.append(link(following, "Nästa ›"))
     return (
-        '<div style="font:13px/1.4 sans-serif;background:#fff8e1;color:#333;'
+        '<div style="font:13px/1.5 sans-serif;background:#fff8e1;color:#333;'
         'border-bottom:1px solid #e0c97a;padding:6px 10px;margin:0 0 8px 0">'
-        f'Arkiverad kopia, sparad {archive_date(item)} i '
+        f'<div>{" · ".join(parts)}</div>'
+        f'<div style="font-size:12px;color:#666">Arkiverad kopia, sparad {archive_date(item)} i '
         f'<a href="{html.escape(wayback_url(item))}">Internet Archive</a>. '
-        f'Original: {html.escape(item["original"])}. '
-        f'<a href="{project}">Alla sidor</a></div>'
+        f'Original: {html.escape(item["original"])}.</div></div>'
     )
 
 
-def rewrite_html(text, item, files_by_key, used):
+def rewrite_html(text, item, files_by_key, used, nav=(None, None)):
     """Relative links to downloaded files; banner after <body>.
 
     The files linked to are added to used.
@@ -194,9 +214,9 @@ def rewrite_html(text, item, files_by_key, used):
         text = extra + text
     body = BODY_RE.search(text)
     if body:
-        text = text[:body.end()] + banner(item) + text[body.end():]
+        text = text[:body.end()] + banner(item, nav) + text[body.end():]
     else:
-        text = banner(item) + text
+        text = banner(item, nav) + text
     return text
 
 
@@ -231,9 +251,13 @@ def md_cell(text):
     return text.replace("|", "\\|").replace("[", "\\[").replace("]", "\\]")
 
 
+def table_order(rows):
+    """Oldest first by the page's own date; pages without one last, by title."""
+    return sorted(rows, key=lambda row: (row[1] is None, row[1] or "", row[0].lower()))
+
+
 def write_index(rows):
-    # Oldest first by the page's own date; pages without one last.
-    rows = sorted(rows, key=lambda row: (row[1] is None, row[1] or "", row[0].lower()))
+    rows = table_order(rows)
     dated = [date for _, date, _ in rows if date]
     lines = [INTRO]
     lines.append("## Sidorna\n")
@@ -282,6 +306,7 @@ def main():
         shutil.rmtree(COPY_DIR)
     listed_keys = {item["path"].lower() for item in listed}
     rows = []
+    pages = []
     for key in sorted(files_by_key):
         item = files_by_key[key]
         target = ROOT / copy_path(item)
@@ -292,7 +317,19 @@ def main():
         text, _ = read_page(item)
         if key in listed_keys and item["path"] not in UNLISTED:
             rows.append((page_title(text, item), page_date(text), item))
-        text = rewrite_html(text, item, files_by_key, set())
+        pages.append((key, item, text, target))
+
+    # Previous and next page, in the order of the table.
+    ordered = [(title, item) for title, _, item in table_order(rows)]
+    nav_by_key = {}
+    for i, (_, item) in enumerate(ordered):
+        previous = ordered[i - 1] if i > 0 else None
+        following = ordered[i + 1] if i + 1 < len(ordered) else None
+        nav_by_key[item["path"].lower()] = (previous, following)
+
+    for key, item, text, target in pages:
+        nav = nav_by_key.get(key, (None, None))
+        text = rewrite_html(text, item, files_by_key, set(), nav)
         target.write_text(text, encoding="utf-8")
 
     write_index(rows)

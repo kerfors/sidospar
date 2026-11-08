@@ -78,11 +78,8 @@ Det finns sådana stenar på närmare håll också. Vid vattnet vid Nääs slott
 
 Badgästtidningen *Marstrand* kom ut lördagen den 14 augusti 1897. På första sidan, under rubriken ”Om hvartannat”, redovisas kungens vecka dag för dag:
 
-![Faksimil ur badgästtidningen Marstrand 14 augusti 1897, notisen Om hvartannat om kungens vecka, med utfärden till Backudden på onsdagen](faksimil-om-hvartannat-1897-08-14.jpg)
-
-*Faksimil ur* Marstrand, tidning för Marstrands stad och badgäster, *14 augusti 1897, första sidan. Rubriken står längst ned i en spalt och texten fortsätter i nästa. Kungliga biblioteket.*
-
-Sammanfattat:
+<div style="display:flex; flex-wrap:wrap; gap:1.5em; align-items:flex-start;">
+<div style="flex:1 1 340px; min-width:0;" markdown="1">
 
 | Dag | Enligt tidningen |
 | --- | --- |
@@ -92,6 +89,13 @@ Sammanfattat:
 | Tisdag 10 augusti | Utfärd med inbjudna herrar och damer |
 | **Onsdag 11 augusti** | ”Onsdagen hade H. M. af medlemmar ur societeten inbjudits till en utfärd till Backudden. Utfärden gjordes i landtligt enkla åkdon.” |
 | Torsdag 12 augusti | Förmiddag hos Pontus Fürstenberg, kväll på herr Klausens soaré |
+
+</div>
+<figure style="flex:0 1 240px; margin:0;">
+<img src="faksimil-om-hvartannat-1897-08-14.jpg" alt="Faksimil ur badgästtidningen Marstrand 14 augusti 1897, notisen Om hvartannat om kungens vecka, med utfärden till Backudden på onsdagen" style="width:100%; height:auto;">
+<figcaption style="font-size:0.85em;"><em>Faksimil ur badgästtidningen Marstrand, 14 augusti 1897, första sidan. Rubriken står längst ned i en spalt och texten fortsätter i nästa. Kungliga biblioteket.</em></figcaption>
+</figure>
+</div>
 
 Tidningen meddelar också att kungen skulle resa den 25 augusti, och att han låtit fotografera sig i Aron Jonasons ateljé.
 

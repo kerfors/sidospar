@@ -34,7 +34,7 @@ Arbetet gjordes en lördagskväll, i ett samtal med Claude (Anthropic):
 
 ### Eriksberg
 
-Eriksbergs gård, Eriksbergsvägen 12, var redan 1822 sommarnöje för en Marstrandshandlare, samma år som badverksamheten började på Koön. Från 1861 brukades jorden av arrendatorer, och gårdens kusk körde badgäster med häst och vagn till Backudden under Oscar II:s tid. Nuvarande mangårdsbyggnad uppfördes 1880, och grannhuset nr 13 byggdes som vagnsbod till gården. Från 1946 har gården varit sommarbostad.
+Eriksbergs gård var redan 1822 sommarnöje för en Marstrandshandlare, samma år som badverksamheten började på Koön. Från 1861 brukades jorden av arrendatorer, och gårdens kusk körde badgäster med häst och vagn till Backudden under Oscar II:s tid. Nuvarande mangårdsbyggnad uppfördes 1880, och ett av grannhusen byggdes som vagnsbod till gården. Från 1946 har gården varit sommarbostad.
 
 Källorna skiljer sig i två namn. Kusken heter Johan Rasmusson i hembygdsföreningens ägarförteckning och Johan Johansson i inventeringen 2005. Handlanden från 1822 heter Erik Widell i den ena och Olof Widell i den andra.
 
@@ -176,6 +176,4 @@ Bilder från Bohusläns museum via DigitaltMuseum, alla märkta Public Domain (l
 
 - [Rosenlunds naturreservat](https://sv.wikipedia.org/wiki/Rosenlunds_naturreservat), svenska Wikipedia
 - [Jakten på Koökrokodilen](https://hallensgeocachingaventyr.com/2022/03/05/jakten-pa-kookrokodilen/), geocachingblogg
-- [Eriksbergsvägen 12](https://www.hitta.se/v%C3%A4stra+g%C3%B6talands+l%C3%A4n/marstrand/eriksbergsv%C3%A4gen+12/omr%C3%A5de/57.893723:11.609331), hitta.se
-- [Rosenlundsvägen 40](https://www.hemnet.se/bostad/villa-10rum-marstrand-rosenlund-kungalvs-kommun-rosenlundsvagen-40-11857495), Hemnet
 - [Marstrand, tidning för Marstrands stad och badgäster, 14 augusti 1897](https://tidningar.kb.se/gvxwjj4bd90tdbwp/part/1/page/1), Kungliga biblioteket, Svenska tidningar

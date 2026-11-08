@@ -93,7 +93,7 @@ Badgästtidningen *Marstrand* kom ut lördagen den 14 augusti 1897. På första 
 </div>
 <figure style="flex:0 1 260px; margin:0;">
 <a href="marstrand-1897-08-14-sida1.jpg"><img src="marstrand-1897-08-14-sida1-liten.jpg" alt="Första sidan av badgästtidningen Marstrand, lördagen den 14 augusti 1897. Notisen Om hvartannat står längst ned i den näst sista spalten och fortsätter överst i spalten längst till höger" style="width:100%; height:auto; border:1px solid #ddd;"></a>
-<figcaption style="font-size:0.85em;"><em>Första sidan av badgästtidningen Marstrand, 14 augusti 1897. ”Om hvartannat” börjar längst ned i den näst sista spalten och fortsätter överst i spalten längst till höger. Kungliga biblioteket. Klicka för större bild.</em></figcaption>
+<figcaption style="font-size:0.85em;"><em>Första sidan av badgästtidningen Marstrand, 14 augusti 1897. ”Om hvartannat” börjar längst ned i den näst sista spalten och fortsätter överst i spalten längst till höger. Källa: <a href="https://tidningar.kb.se/gvxwjj4bd90tdbwp/part/1/page/1">Kungliga biblioteket, Svenska tidningar</a>. Klicka på bilden för större version.</em></figcaption>
 </figure>
 </div>
 
@@ -186,4 +186,4 @@ Bilder från Bohusläns museum via DigitaltMuseum, alla märkta Public Domain (l
 
 - [Rosenlunds naturreservat](https://sv.wikipedia.org/wiki/Rosenlunds_naturreservat), svenska Wikipedia
 - [Jakten på Koökrokodilen](https://hallensgeocachingaventyr.com/2022/03/05/jakten-pa-kookrokodilen/), geocachingblogg
-- [Marstrand, tidning för Marstrands stad och badgäster, 14 augusti 1897](https://tidningar.kb.se/gvxwjj4bd90tdbwp/part/1/page/1), Kungliga biblioteket, Svenska tidningar
+- [Marstrand, tidning för Marstrands stad och badgäster, lördagen den 14 augusti 1897, sidan 1](https://tidningar.kb.se/gvxwjj4bd90tdbwp/part/1/page/1). Tryckt i Göteborg hos Wald. Zachrissons boktryckeri. Digitaliserad av Kungliga biblioteket, Svenska tidningar. Tidningssidan på den här sidan är hämtad i full upplösning från KB:s bildtjänst, fil `bibq1jxnlc3nfrb211g_18970814_166129_10_0001.jp2`, och förminskad.

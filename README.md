@@ -47,4 +47,5 @@ kommer från Bohusläns museum via DigitaltMuseum (UMFA55055:0013, UMFA55055:000
 
 Tidningssidan `koon-eriksberg-rosenlund/marstrand-1897-08-14-sida1.jpg` (och den förminskade `-liten.jpg`) är första sidan av
 *Marstrand, tidning för Marstrands stad och badgäster*, 14 augusti 1897, digitaliserad av Kungliga biblioteket
-(https://tidningar.kb.se/gvxwjj4bd90tdbwp/part/1/page/1). Texten är osignerad och från 1897.
+(https://tidningar.kb.se/gvxwjj4bd90tdbwp/part/1/page/1), hämtad i full upplösning från KB:s bildtjänst
+(fil `bibq1jxnlc3nfrb211g_18970814_166129_10_0001.jp2`). Texten är osignerad och från 1897.

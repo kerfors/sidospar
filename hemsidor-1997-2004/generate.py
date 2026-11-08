@@ -34,6 +34,19 @@ COPY_DIR = ROOT / "sidor"
 WAYBACK = "https://web.archive.org/web"
 # Sources whose pages are listed on the project page.
 LISTED = ["viktoria.informatik.gu.se/~kerstinf/"]
+# A short note after the title, for pages whose titles are the same.
+NOTES = {
+    "viktoria/extranet.htm": "på engelska",
+    "viktoria/extranet_sv.htm": "på svenska",
+    "viktoria/thesis/index.htm": "avhandlingens webbsida",
+    "viktoria/thesis/errata.htm": "errata",
+    "viktoria/cscwnews.htm": "sammanfattning och innehåll",
+    "viktoria/IRIS98_tidningar.htm": "hela artikeln",
+    "viktoria/MDI15ar.htm": "bilden sparades inte i arkivet",
+    "viktoria/MDI15ar_overview.htm": "översiktsbild",
+}
+# Copied but not listed: index.htm is the same file as index.html.
+UNLISTED = {"viktoria/index.htm"}
 
 INTRO = """\
 # Mina hemsidor från Viktoriainstitutet
@@ -42,7 +55,7 @@ Kerstin Forsberg · november 2026 · [Till Sidospår](../)
 
 Vårt första internetabonnemang köpte vi av Netg på Bokmässan i Göteborg 1994. Det gällde tio timmar.
 
-1997 började jag som industridoktorand på Viktoriainstitutet, senare Informatik vid Göteborgs universitet. I december 2001 tog jag min licentiatexamen med avhandlingen [*Mobile newsmaking*](https://libris.kb.se/6phfq9mj3nwcjns#it) (Papers in informatics nr 9). Forskningsområdet var datorstött samarbete (CSCW). I gruppen Mobile Informatics studerade jag vad som behövs för att mycket rörliga yrkesgrupper, som nyhetsjournalister, ska få information anpassad till sin situation genom mobila tillämpningar: *Mobile Newsmaking*.
+1997 började jag som industridoktorand på Viktoriainstitutet, senare Informatik vid Göteborgs universitet. I december 2001 tog jag min licentiatexamen med avhandlingen [*Mobile newsmaking*](https://libris.kb.se/6phfq9mj3nwcjns#it) (Papers in informatics nr 9). Forskningsområdet var datorstött samarbete (CSCW). I gruppen Mobile Informatics studerade jag vad som behövs för att mycket rörliga yrkesgrupper, som nyhetsjournalister, ska få information anpassad till sin situation genom mobila tillämpningar: *Mobile Newsmaking*. Avhandlingens egen [webbsida](sidor/viktoria/thesis/index.htm) finns kvar i arkivet, och där finns [hela avhandlingen som PDF](sidor/viktoria/thesis/bookscreen.pdf), 109 sidor.
 
 Sidorna här kommer från olika doktorandkurser och projekt. De är hämtade ur [Internet Archive](https://web.archive.org/) (Wayback Machine), som den senast sparade versionen av varje sida. *Datum* är det datum sidan själv anger ("Updated by Kerstin Forsberg …"), eller när sidan senast sparades i Word om den inte anger något. *Arkiverad* är dagen då arkivet sparade kopian. Länkar mellan mina egna sidor fungerar. Länkar ut till andra webbplatser går till arkivets kopia från ungefär samma tid, när en sådan finns. Några bilder och sidor sparades aldrig.
 
@@ -79,6 +92,7 @@ HEAD_EXTRA = (
     "padding:0 1rem}</style>"
 )
 TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.IGNORECASE | re.DOTALL)
+HEADING_RE = re.compile(r"<h[1-3]\b[^>]*>(.*?)</h[1-3]>", re.IGNORECASE | re.DOTALL)
 CHARSET_RE = re.compile(rb"""charset\s*=\s*["']?([A-Za-z0-9_-]+)""", re.IGNORECASE)
 
 
@@ -181,9 +195,14 @@ def rewrite_html(text, item, files_by_key, used):
 
 
 def page_title(text, item):
+    """<title>, or the first h1–h3 when the title is missing or "Untitled"."""
     match = TITLE_RE.search(text)
-    if match and match.group(1).strip():
-        return " ".join(html.unescape(match.group(1)).split())
+    title = " ".join(html.unescape(match.group(1)).split()) if match else ""
+    if title and title.lower() != "untitled":
+        return title
+    heading = HEADING_RE.search(text)
+    if heading:
+        return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", heading.group(1))).split())
     return item["path"]
 
 
@@ -218,8 +237,10 @@ def write_index(rows):
     lines.append("| --- | --- | --- |")
     for title, date, item in rows:
         href = urllib.parse.quote(copy_path(item).as_posix())
+        note = NOTES.get(item["path"])
+        note = f" · *{note}*" if note else ""
         lines.append(
-            f"| {date or '–'} | [{md_cell(title)}]({href}) "
+            f"| {date or '–'} | [{md_cell(title)}]({href}){note} "
             f"| [{archive_date(item)}]({wayback_url(item)}) |"
         )
     lines.append("")
@@ -261,7 +282,7 @@ def main():
             target.write_bytes((DATA_DIR / item["path"]).read_bytes())
             continue
         text, _ = read_page(item)
-        if key in listed_keys:
+        if key in listed_keys and item["path"] not in UNLISTED:
             rows.append((page_title(text, item), page_date(text), item))
         text = rewrite_html(text, item, files_by_key, set())
         target.write_text(text, encoding="utf-8")

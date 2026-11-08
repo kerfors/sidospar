@@ -42,5 +42,5 @@ Kartan i `koon-eriksberg-rosenlund/karta-koon-1976.jpg` är ett utsnitt ur Ekono
 (Statens lantmäteriverk 1976), hämtat från https://historiskakartor.lantmateriet.se/
 Ekonomiska kartan är öppna data under CC0 enligt Lantmäteriet.
 
-Bilderna `rosenlund-1870-tal.jpg`, `backudden-1870-tal.jpg` och `rosenlund-vinter-1920-tal.jpg` i `koon-eriksberg-rosenlund/`
-kommer från Bohusläns museum via DigitaltMuseum (UMFA55055:0013, UMFA55055:0009, UMFA53247:0030), märkta Public Domain.
+Bilderna `rosenlund-1870-tal.jpg` och `backudden-1870-tal.jpg` i `koon-eriksberg-rosenlund/`
+kommer från Bohusläns museum via DigitaltMuseum (UMFA55055:0013, UMFA55055:0009), märkta Public Domain.

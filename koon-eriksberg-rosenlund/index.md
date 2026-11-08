@@ -50,10 +50,6 @@ Platsen var salteri under det stora sillfisket. I slutet av 1700-talet byggde Sv
 
 Parken blev kommunalt naturreservat 1985, omkring 40 hektar ädellövskog med ek, alm, lind och bok. Sedan 2017 ingår den i naturreservatet Marstrand.
 
-![Vintermotiv från Rosenlund, en stig mellan snötyngda träd ned mot vattnet](rosenlund-vinter-1920-tal.jpg)
-
-*Vintermotiv från Rosenlund, Djupandal. Okänd fotograf, 1920-talet. Bohusläns museum, UMFA53247:0030, Public Domain.*
-
 ### Backudden
 
 ![Backudden på 1870-talet, en väg mellan lövträd fram mot en villa](backudden-1870-tal.jpg)
@@ -175,7 +171,6 @@ Bilder från Bohusläns museum via DigitaltMuseum, alla märkta Public Domain (l
 
 - [Rosenlund, Marstrand](https://digitaltmuseum.se/011014497911/rosenlund-marstrand), Robert Dahllöf, 1870-talet
 - [Backudden, Marstrand](https://digitaltmuseum.se/011014497907/backudden-marstrand), Robert Dahllöf, 1870-talet
-- [Vintermotiv från Rosenlund, Djupandal](https://digitaltmuseum.se/011014326081/umfa53247-0030), okänd fotograf, 1920-talet. Gåva från Marstrands hembygdsförening
 
 Övrigt:
 

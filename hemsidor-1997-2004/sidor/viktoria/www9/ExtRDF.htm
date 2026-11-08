@@ -1,0 +1,1106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+  <HEAD>
+    <META http-equiv="Content-type" content="text/html; charset=ISO-8859-1">
+    <META name="DC.Title" lang="en" content="Extensible use of RDF in a Business Context">
+    <LINK rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#title">
+    <META name="DC.Creator" lang="en" content="Kerstin Forsberg, kerstin.forsberg@aderagroup.com">
+    <LINK rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#creator">
+    <META name="DC.Contributor" lang="en" content="Lars Dannstedt, it1.larsd@memo.volvo.se">
+    <LINK rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#contributor">
+    <META name="DC.Subject" lang="en" content="Metadata, RDF, XML, Intranet">
+    <LINK rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#subject">
+    <META name="DC.Description" lang="en" content="WWW9 publication">
+    <LINK rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#description">
+    <META name="DC.Date" scheme="ISO8601" lang="en" content="2000-02-29">
+    <LINK rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#date">
+    <META name="DC.Type" lang="en" content="Paper">
+    <LINK rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#type">
+    <META name="DC.Format" lang="en" content="html">
+    <LINK rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#format">
+    <META name="DC.Identifier" scheme="URI" lang="en" content="http://www.viktoria.informatics.gu.se/~kerstinf/ExtUseRDF.htm">
+    <LINK rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#identifier">
+    <META name="DC.Language" scheme="RFC1766" lang="en" content="en">
+    <LINK rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#language">
+    <TITLE>Extensible use of RDF in a Business Context</TITLE>
+<STYLE type="text/css">
+<!--
+body { background-color: #ffffff; font-family: arial, times new roman, sans-serif; }
+a:link, a:visited, a:active { text-decoration: none; color: #0000ff; }
+
+h1, h2 { padding-top: 15pt; text-align: center; font-weight: bold; }
+h3, h4, h5 { text-align: left; font-weight: bold; }
+h6 { text-align: center; font-weight: bold; font-size: small; }
+h6.caption { text-align: center; font-weight: bold; font-size: small; font-style: italic; }
+
+p { text-indent: 1em; }
+p.code { text-indent: 0; color: #ff0000; }
+
+/* ul, ol, dl { font-size: small; } */
+ul { list-style: square; }
+/* li { font-size: x-small; text-align: left; } */
+li { text-align: left; }
+code, cite { font-weight: bold; }
+
+blockquote { margin-left: 1em; margin-right: 1em }
+td, img { vertical-align: top; align: center; }
+sup { color: #0000ff; font-size: small; }
+-->
+</STYLE>
+  </HEAD>
+
+  <BODY bgcolor="#ffffff"><div style="font:13px/1.4 sans-serif;background:#fff8e1;color:#333;border-bottom:1px solid #e0c97a;padding:6px 10px;margin:0 0 8px 0">Arkiverad kopia, sparad 2004-01-20 i <a href="https://web.archive.org/web/20040120232152/http://www.viktoria.informatik.gu.se:80/~kerstinf/www9/ExtRDF.htm">Internet Archive</a>. Original: http://www.viktoria.informatik.gu.se:80/~kerstinf/www9/ExtRDF.htm. <a href="../../../">Alla sidor</a></div>
+    <H1>Extensible use of RDF in a Business Context</H1>
+
+    <H6>Kerstin Forsberg, Viktoria Institute and Adera, O Hamngatan 41-43, S-411 10 Gothenburg Sweden, kerstin.forsberg@aderagroup.com<BR>
+    Lars Dannstedt, Volvo Information Technology, Web Program Center, S-405 08, Gothenburg Sweden, it1.larsd@memo.volvo.se</H6>
+
+    <H2>Abstract</H2>
+
+    <P>The next generation of intranets should facilitate the structuring of information as well as the organising of communication in networking organisations. For many organisations, one step in that direction is to structure information by adding metadata. We have encountered problems when applying Dublin Core, a metadata element set developed for discovery of existing information resources on the public Internet, on an extensive intranet. Our conclusion, argued in this paper, is that these problems are a consequence of trying to describe information resources without taking into account the context in which end users create and consume information. The next generation of intranets calls for a more contextual approach. The contribution of this paper is such an approach. We propose a framework including: 1) A model for describing three different areas of resources: business, information and communication, and integrating the resources description areas by means of generic classes, constrains and relations. 2) An extension to the model describing and integrating nodes and relations in networking organisations. 3) An extension to the model describing and organising the communication of information in the business. The framework suggests an extensible use of RDF (Resource Description Framework) in a business context.</P>
+
+    <H2>Keywords</H2>
+
+    <P>Metadata, RDF, XML, Intranet</P>
+
+    <H2>1. Introduction</H2>
+
+    <P>The first generation of intranets provided easy access to large amount of information using (hyper)links. The second generation of intranets provided interaction and transaction through numerous web enabled applications. Many intranets have become a gigantic &ldquo;mess&rdquo; of information, links and applications. It has been argued that if such an intranet remains uncontrolled, it will be perceived useless and therefore users will abandon it [5]. This paper heads for <I>the next generation of intranets that facilitate the structuring of information, as well as the organising of communication, in networking organisations.</I></P>
+
+    <P>The introduction of XML (eXtensible Markup Language) will make information self-describing [2] and facilitate information discovering. At the same time the deployment of <I>metadata</I> will be required. Metadata is &ldquo; &hellip; structured, encoded data that describe characteristics of information-bearing entities to aid in the identification, discovery, assessment, and management of the described entities.&rdquo; [1] We prefer the phrase: <I>structured descriptions of resources</I> and have used it instead of metadata. One set of structured descriptions of information resources on Internet is recommended by the Dublin Core initiative [6]. This recommendation includes elements such as Creator, Date, Resource Type and Coverage. Resources could be described using RDF (Resource Description Framework), proposed by W3C [14]. The RDF Schema [15] provides a machine-understandable application of XML to encode <I>schemas</I> for descriptive vocabularies like the Dublin Core.</P>
+
+    <P>Currently, many organisations use the Dublin Core schema [7] for information resources on the public Internet as a template for recommending schemas for intranets. Although contemporary literature has a number of references to existing metadata schema and <I>resource description communities</I>, few of them report experiences from intranets, and hardly anyone covers the process of establishing new resource description communities or the long-term managing process. One exception is the work by EU-NSF Working Group on Metadata that points out: &ldquo;The definition and maintenance of metadata standards over time is a complex social process requiring negotiation, consensus-building, and iteration. Learning to manage such processes effectively and to coordinate the ever-growing activities of many disparate communities of interest is clearly a long-term research undertaking involving complex economic, technical, and social questions.&rdquo; [8] In this paper we summarize problems occurring when an organisation entered this &lsquo;complex social process&rsquo; without paying enough attention to the context in which end users create and consume information.</P>
+
+    <P>The framework we propose enables resource description communities, such as business units, projects, departments and professional groups within the organisation, to <I>set their own context</I>. They can extend the model and add their own structures and vocabulary for the business, information and communication resources. However, the extensions must conform to the proposed model of generic classes, constrains and relations integrating the three areas of resource descriptions. To visualize next generation of intranets, we introduce a news exchange application for an extensive intranet that shows how the framework could be applied. In the future, an extended framework could enable <I>context sensitive editing</I> for users creating information, as well as <I>context driven views and navigation</I> for users consuming information.</P>
+
+    <P>The framework could be seen as a <I>meta model for a shared information spaces</I>. Our approach has some similarities with the work conducted by the Advanced Intranet Collaboration (AIS) project. They use the notion of a shared information spaces (SIS): &ldquo;A SIS may be considered as a background canvas, a reference frame shared by all fellow employees &hellip; materialized as a corporate intranet.&rdquo; [13] However, in our approach we extend the notion of a shared information space to become a <I>shared resource description space</I>.</P>
+
+    <P>The rest of the paper is structured as follows. In the next section we summarize encountered problems and in section 3 we explore the foundations for the proposed framework. In section 4, we introduce some examples of existing communities of descriptions of resources in each of the three areas of resource description that we propose. We highlight some of the RDF and RDF Schema concepts used in section 5. Section 6 elaborates on the proposed news exchange application and framework implementing our approach of <I>Extensible use of RDF in a Business Context</I>. Finally, in section 7, we summarize lessons learned and outlines future directions concerning the <I>framework for the next generation of intranets.</I></P>
+
+    <H2>2. Problems</H2>
+
+    <P>Currently, information masters, site owners, content providers and web editors ask themselves how to enhance discovery of information through the use of metadata. One key question is: <I>what to cover in a recommended metadata element set for an intranet?</I> We have encountered problems when recommending structured descriptions of information resources for an extensive intranet. Our starting point was the Dublin Core recommendation [7], which is nowadays often used in industry.</P>
+
+    <UL>
+      <LI><B>Fail to make the assumptions made about the business explicit</B><BR>
+      Schema recommendations developed for information resources always make assumptions about the business. However, these assumptions are rarely made explicit. For example, questions like the following are in most cases not considered: What types of entities in the business should be encoded as the metadata element Creator? What should the metadata element Coverage refer to in the business model?</LI>
+
+      <LI><B>Only takes into account communication through static web pages</B><BR>
+      Information resources are not just static HTML pages. Even though the Dublin Core has the ambition to cover a wider spectrum of information resources, the main interpretation of the Dublin Core information resource category is web pages. Information resources in a modern business must be possible to communicate through many different channels, e.g., assembled as a dynamic web page, included in a subscribed e-mail newsletter, or distributed as a short message to a wireless device.</LI>
+
+      <LI><B>Are defined using a top-down strategy which does not fit the flat organizations of today</B><BR>
+      The recommendation is often defined top-down in the organisation. Accordingly, it is based on the assumption of a hierarchical organisation. However, in the flat organizations of today this kind of top-down strategies may not be suitable, as groups and local units need to control and define information resources according to their practices.</LI>
+
+      <LI><B>Are seldom used for metadata creation and validation</B><BR>
+      The recommended set of structured descriptions of information resources is seldom used for metadata creation and validation in an effective way. This causes inconsistent and incomplete descriptions of the resources.</LI>
+    </UL>
+
+    <P>This list of problems is not a critique of Dublin Core. It is to be seen as a consequence of trying to describe information resources not taking into account the context in which end users create and consume information.</P>
+
+    <H2>3. Foundations for the proposed framework</H2>
+
+    <P>In just a few years Internet has changed the conditions of doing business. The notion of the web has become the metaphor for the whole Internet, as well as for intranets. Contemporary, the notion of the network has become the metaphor for modern organisations. Several authors have suggested the notion of <I>networking</I> (c.f. [4] and [9]) as the metaphor for the future:</P>
+
+    <P>&ldquo;It is a networking society, not a network society. It is activities and actions rather than organizations and agents that make up that society. (Even when we want to use verbs, we find only nouns.) Weick (1976) therefore wanted us to study organizing rather than organizations, and Czarniawska (1997) therefore prefers to speak of &lsquo;action-nets&rsquo; rather than &lsquo;actor-networks.&rsquo;&rdquo; [9]</P>
+
+    <P>Accordingly, the framework for next generation of intranets that we propose, is based on the foundation that intranets should facilitate the <I>structuring of information</I>, as well as the <I>organising of communication,</I> in <I>networking organisations</I>. Below we discuss the design principles for the proposed framework.</P>
+
+    <H3>3.1 Structuring and integrating resource descriptions</H3>
+
+    <P>Our point of departure is a resource-based view. Resources are assets that have a structured description, which makes them maintainable, usable, and reusable. Based on the experiences gained during the process of recommending an intranet version of the Dublin Core schema, our conclusion is that resource descriptions should be separated into three different areas of resources. In a business context we propose following areas; <I>business</I>, <I>information</I> and <I>communication,</I> each one with its own set of structured descriptions.</P>
+
+    <UL>
+      <LI><I>Business resources</I> should be descried through a vocabulary that captures <I>what people talk about and act upon</I> in their every day work: what they do, what services and products they offer, how they are organised, how they dived their responsibilities into roles and so on.</LI>
+
+      <LI><I>Communication resources</I> should include descriptions of available communication channels, such as e-mail, paper, web, and mobile phone, and the specific devices capabilities, as well as communication mechanisms such as subscription.</LI>
+
+      <LI><I>Information resources</I> should include information types that are created, maintained and communicated in the business.</LI>
+    </UL>
+
+    <P>Obviously, the three separate areas of resource descriptions are related to each other. Information resources should be related to what they cover in the business context and how they should be communicated within the business. Business resources could be described in different ways, using different types of information resources. Communication resources are the connection between information and business. We propose that the three different areas of resource descriptions should be integrated by means of generic classes, constrains and relations. One example is that business resource can point to information resources for more information and information resources could point to business resources to capture the coverage of the information. Another example is that new types of information resources should include core properties common for all information resources.</P>
+
+    <H3>3.2 Descriptions of networking organisations</H3>
+
+    <P>In the business area an extension to the model using the concept of <I>nodes in the business network</I> could be used to describe and integrate modern networking organisations. Nodes have positions in the business network that describe relations to other nodes. Relations that not only capture the hierarchical relationship: belong-to respective contains, but also includes relations like cooperate-with, interested-in, delivers-to and so on. Nodes that encompasses preferred communication channels and also direct communication to preferred destination. A department, an employee or a product, all of them nodes in the business network, could point to more information about the node on a home page or to some other type of information resource.</P>
+
+    <H3>3.3 Descriptions of the organising of communication</H3>
+
+    <P>In the communication area an extension to the model could be used to facilitate the organising of communication. It should enable two-way communication; both consumer-driven (subscription) and producer-driven communication (distribution). People and organisation in the business context should be able to define subscription of their own views of information resources based on search criteria, sort order and preferred communication channel (pull). At the same time enable distribution of information to other nodes in the business, through the communication channel they prefer (push).</P>
+
+    <H3>3.4 Encoding the framework</H3>
+
+    <P>Resources are described using RDF (Resource Description Framework), proposed by W3C [14] and RDF Schema [15]. RDF is a common infrastructure to encode, exchange and reuse structured descriptions of resources. Throughout this paper we have used RDF to encode both the framework and the instances of resource descriptions. Of course, the instances often exist in different sources such as employee databases, service catalogues, department tables, and so on. In this paper, we have not covered the question of interfaces to databases and legacy systems. However, we think that RDF could offer a scalable approach also to data integration.</P>
+
+    <H2>4. Three different areas of resource descriptions</H2>
+
+    <P>In this section we introduce some of the communities of resource description existing today. To illustrate the different areas we present one community for description of resources from each area, which we have based our model on. The examples are also used directly in our model further on.</P>
+
+    <OL>
+      <LI>In the <B>information area</B> we describe the Dublin Core initiative.</LI>
+
+      <LI>In the <B>communication area</B> we selected the W3C Mobile Access Interest Group and their Composite Capability/Preference Profiles (CC/PP).</LI>
+
+      <LI>From the <B>business area</B> we use one part of the Open Information Model (OIM) from the Metadata Coalition as our example.</LI>
+    </OL>
+
+    <H3>4.1 Descriptions of information resources</H3>
+
+    <P>Lately, general specifications for structured descriptions of information resources have been developed. The Dublin Core initiative [6] is the most well known example for resources on Internet. They focus on simple resource descriptions for discovery of existing information. Their vocabulary [7] is captured in a 15-element set of descriptors in three groups: 1) Content; title, subject, description, type, source, relation and coverage, 2) Intellectual property; creator, publisher, contributor and rights, 3) Instantiation; date, format, identifier and language. Guidance concerning how to express the Dublin Core with RDF [12] has also been published and is now being discussed in the Dublin Core community.</P>
+
+    <P>The Dublin Core recommendation is well known and often used as a template and therefore a natural starting point for our proposed model.</P>
+
+    <H3>4.2 Descriptions of communication resources</H3>
+
+    <P>A community that uses RDF from the beginning to set up a mechanism to describe resources is the W3C Mobile Access Interest Group [17]. They describe communication resources; new mobile devices, such as wireless phones. A general, yet extensible framework for describing user preferences and device capabilities, called Composite Capability/Preference Profiles (CC/PP) [3], has been proposed by the group. It is intended to provide information necessary to adapt the content and the content delivery mechanisms to fit the capabilities and preferences of the user and its agents. The profile vocabulary is clustered into three groups of metadata elements: 1) User of the device; such as preferred language, sound on/off and images on/off, 2) Hardware platform, attributes; like vendor, screen size and input device, 3) Defined variables; such as application brand and version and level of WAP support.</P>
+
+    <P>CC/PP has some interesting features that could be used for a wide range of communication devices that we find usable and therefore include it in our proposed model.</P>
+
+    <H3>4.3 Descriptions of business resources</H3>
+
+    <P>Business resources are a wide area of assets. In the same way as information and communication resources they have to have a structured description to make them maintainable, usable, and reusable. Business resources are described through a vocabulary that captures what people talk about and act upon in their everyday work. The descriptions of business resources have traditionally been captured using entity-relationship representations and conceptual modelling languages. In the document-centric world these models have often been overlooked. The structured document representation (&agrave; la SGML) has been favoured. In these cases DTD:s (Document Type Definitions) have been used to structure the documents, not the business objects and their relations.</P>
+
+    <P>The Metadata Coalition is a community of software vendors and users. Lately, they have launched the Open Information Model (OIM), a set of metadata specifications to facilitate sharing and reuse in the application development and data warehousing domains [10]. OIM is described in UML (Unified Modeling Language) and Metadata Coalition does not, so far, encode their models using RDF.</P>
+
+    <P>We have found some very usable parts of their models that we have included in our model. In particularly, the key phrase: &ldquo;Business Units can be arranged into a hierarchy to reflect the structure of industries or organizations. Because they are Resources, BusinessUnits may play specific Resource Roles in relationships to other Resources.&rdquo; [11] That phrase inspired us to introduce the concept of organisational nodes in a business network.</P>
+
+    <P>The information description communities mentioned above, and the examples from their respective vocabulary, can be positioned in the model we elaborated in this paper (see figure 1).</P>
+
+    <P align="center"><IMG src="ExtRDF1.gif" width="354" height="218" alt="Three resource description areas, including one example in each"></P>
+
+    <H6 class="CAPTION">Figure 1. The three resource description areas form the basis for the proposed model. Including the three examples introduced above.</H6>
+
+    <H2>5. Concepts used in the framework</H2>
+
+    <P>In this section we describe the RDF [14] and RDF Schema [15] concepts used in our framework and in the proposed news exchange application. We start of with the basic RDF statement, then we describe how to use classes and subclasses and introduce a specific set of property categories, describe how to use domain and range constraints, discuss how to use property typing. We conclude the section with a general discussion regarding constrained vs. unconstrained models.</P>
+
+    <H3>5.1 RDF Statement</H3>
+
+    <P>RDF is a framework to describe resources and their properties. The basic concept is the <I>RDF statement</I>. This is a triple, describing a resource, a property of that resource and its property value. The property value can be another resource or a literal value.</P>
+
+    <P align="center"><IMG src="ExtRDF2.gif" width="505" height="145" alt="RDF Statement"></P>
+
+    <H6 class="CAPTION">Figure 2. RDF Statement</H6>
+
+    <P>The common <I>namespace</I> for the entire Volvo group is called Volvo core (namespace prefix = vc:). If the headline property was defined in the Volvo core namespace, the RDF statement for the example above looks like:</P>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:vc="http://volvo.se/vc-namespace/schema.rdf#"&gt;
+    &lt;rdf:Description
+     rdf:about="http://vit.volvo.se/153-news/vits-0067.xml"&gt;
+        &lt;vc:headline&gt;XML consultancy during the millennium shift
+        &lt;/vc:headline&gt;
+    &lt;rdf:Description&gt;
+&lt;/rdf:RDF&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example A. RDF Statement</H6>
+
+    <H3>5.2 Classes and Subclasses</H3>
+
+    <P>Other organization units within the Volvo group can define own subclasses of a core class. All resources in our application have to be instances of a <I>class or subclass</I> that is defined in Volvo core namespace or a subordinate namespace. For example, Volvo core defines the class InfoObject with its subclass News as follows:</P>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;rdfs:Class rdf:ID="InfoObject"&gt;
+    &lt;rdfs:label&gt;Information object&lt;/rdfs:label&gt;
+    &lt;rdfs:comment xml:lang="en"&gt;
+        The InfoObject class is comprised of textual, graphical
+        and video-based information objects.
+        Volvo-defined subclasses of InfoObject are:
+        News, WebPage, Instruction, etc.
+        Example of possibly new objects are: Policy, Minute,
+        Agreement, Directive, Standard, Template, Form, etc.
+    &lt;/rdfs:comment&gt;
+&lt;/rdfs:Class&gt;
+
+&lt;rdfs:Class rdf:ID="News"&gt;
+    &lt;rdfs:subClassOf rdf:resource="#InfoObject"/&gt;
+    &lt;rdfs:label&gt;News&lt;/rdfs:label&gt;
+    &lt;rdfs:comment xml:lang="en"&gt;
+        The News class is comprised of all information about
+        changes or events at Volvo, like pressreleases, product
+        launches and organisational changes.
+        When needed, subclasses of News are defined by appropriate
+        instances in the organisation, outside Volvo core.
+    &lt;/rdfs:comment&gt;
+&lt;/rdfs:Class&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example B. News is a subclass of InfoObject</H6>
+
+    <P>The class InfoObjects and its subclasses, which are common for the entire Volvo Group, share a common namespace. Headline is one of the properties defined in that Information namespace (namespace prefix = vci:).</P>
+
+    <P>The news bulletin "vits-0067" is an instance of the class "vci:News" with a headline property defined in the namespace with the prefix=vci. In abbreviated form, the RDF statement in Figure 2 can be written as:</P>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:vci="http://volvo.se/vci-namespace/schema.rdf#"&gt;
+    &lt;vci:News
+     rdf:about="http://vit.volvo.se/153-news/vits-0067.xml"&gt;
+        &lt;vci:headline&gt;XML consultancy during the millennium shift
+        &lt;/vci:headline&gt;
+    &lt;/vci:News&gt;
+&lt;/rdf:RDF&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example C. Part of News metadata</H6>
+
+    <H3>5.3 Property categories</H3>
+
+    <P>All properties in our application have to be categorized as one of four Volvo-core defined subproperties. The Open Information Model (OIM) [10] proposes the categorization term, facts, action and inference:</P>
+
+    <UL>
+      <LI><B>term</B> - Describes a category of properties used for definition of terms.</LI>
+
+      <LI><B>facts</B> - Describes a category of properties used for to give characteristics of resources.</LI>
+
+      <LI><B>action</B> - Describes a category of properties for supporting invocation of actions. They express triggering conditions.</LI>
+    </UL>
+
+    <P>An example of an action property is the property "date". When used for Information Objects this property gives date of release, best before, etc. These kinds of dates will trigger distribution, removal from a site etc. A second example is the property 'moreinfo'. It gives a link from a Business Object to an Information Object with more detailed in-house information. The property 'moreinfo' will trigger an access control to check that the user is allowed to get the in-house details.</P>
+
+    <UL>
+      <LI><B>inference</B> - Describes a category of properties for inference or derivation of a business rule from other rules. The property value for this kind of properties will by derived dynamically instead of explicitly stored.</LI>
+    </UL>
+
+    <P>An example of an inference property is the property "distributeTo". This property is used to give a distribution list for a published instance. It is also used in subscriptions to give the address of the subscriber. The application must create an aggregated distribution list, removing multiple occurrences of receivers.</P>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;!-- ******* Volvo-core main property types ********** --&gt;
+&lt;rdf:Property rdf:ID="termProperty"&gt;
+    &lt;rdfs:label xml:lang="en"&gt;Term Property&lt;/rdfs:label&gt;
+    &lt;rdfs:comment xml:lang="en"&gt;
+        Property category for properties that define terms
+    &lt;/rdfs:comment&gt;
+&lt;/rdf:Property&gt;
+&lt;rdf:Property rdf:ID="factProperty"&gt;
+    &lt;rdfs:label xml:lang="en"&gt;Facts Property&lt;/rdfs:label&gt;
+    &lt;rdfs:comment xml:lang="en"&gt;
+        Property category for properties that describe resources.
+    &lt;/rdfs:comment&gt;
+&lt;/rdf:Property&gt;
+&lt;rdf:Property rdf:ID="actionProperty"&gt;
+    &lt;rdfs:label xml:lang="en"&gt;Action Property&lt;/rdfs:label&gt;
+    &lt;rdfs:comment xml:lang="en"&gt;
+        Property category for properties that may cause
+        invocation or triggering of an action.
+    &lt;/rdfs:comment&gt;
+&lt;/rdf:Property&gt;
+&lt;rdf:Property rdf:ID="inferenceProperty"&gt;
+    &lt;rdfs:label xml:lang="en"&gt;Inference Property&lt;/rdfs:label&gt;
+    &lt;rdfs:comment xml:lang="en"&gt;
+        Property category for properties that may cause inference
+        or derivation of a business rule.
+    &lt;/rdfs:comment&gt;
+&lt;/rdf:Property&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example D. Core property categories</H6>
+
+    <H3>5.4 Domain and Range constraints</H3>
+
+    <P>Most properties are constrained by the property domain, described in the RDF Schema Specification [15]. The domain property defines the class to which the resource in the RDF statement must belong. When possible, the property values are constrained by the property range from RDF Schema Specification. The range property implies a class. Instances of that class will give the set of values that the property can be given.</P>
+
+    <P>The property "headline" is defined in Volvo Information namespace (vci: ) with the domain constraint:</P>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;rdf:Property ID="headline"&gt;
+    &lt;rdfs:subPropertyOf
+     rdf:resource="http://volvo.se/vc-namespace/schema.rdf#factProperty"/&gt;
+    &lt;rdfs:domain rdf:resource="#InfoObject"/&gt;
+    &lt;rdfs:label xml:lang="en"&gt;Headline&lt;/rdfs:label&gt;
+    &lt;rdfs:comment xml:lang="en"&gt;
+        A header, describing the content of an information object.
+    &lt;/rdfs:comment&gt;
+&lt;/rdf:Property&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example E. Definition of the headline property</H6>
+
+    <H3>5.5 Property typing</H3>
+
+    <P>Often there is a need to further qualify a property value. The properties 'date' and 'relation' are good example of properties that are likely to be used in different places. Different usage requires different ranges. If 'date' is used for an Information Object it gives date of creation, date of release, etc. When used for an organization node the date will give valid-from-date, valid-to-date etc. To qualify general properties for different usages we add a qualification ("typing") property. This property and its range are defined in appropriate namespaces. The example below shows different ranges for information (vci:), organization node (vcbo:) and employee (vcbe:).</P>
+
+    <TABLE border="1" cellpadding="0" width="624">
+      <TR>
+        <TH>Main Property</TH>
+
+        <TH>Type Property</TH>
+
+        <TH>Type Property values</TH>
+      </TR>
+
+      <TR>
+        <TD>vc:date</TD>
+
+        <TD>vci:dateType</TD>
+
+        <TD>BestBefore</TD>
+      </TR>
+
+      <TR>
+        <TD>&nbsp;</TD>
+
+        <TD>&nbsp;</TD>
+
+        <TD>Creation</TD>
+      </TR>
+
+      <TR>
+        <TD>&nbsp;</TD>
+
+        <TD>&nbsp;</TD>
+
+        <TD>Obsolete</TD>
+      </TR>
+
+      <TR>
+        <TD>&nbsp;</TD>
+
+        <TD>&nbsp;</TD>
+
+        <TD>Release</TD>
+      </TR>
+
+      <TR>
+        <TD>vc:date</TD>
+
+        <TD>vcbe:dateType</TD>
+
+        <TD>Employeed</TD>
+      </TR>
+
+      <TR>
+        <TD>&nbsp;</TD>
+
+        <TD>&nbsp;</TD>
+
+        <TD>Retired</TD>
+      </TR>
+
+      <TR>
+        <TD>vc:relation</TD>
+
+        <TD>vcbo:relationType</TD>
+
+        <TD>BelongTo</TD>
+      </TR>
+
+      <TR>
+        <TD>&nbsp;</TD>
+
+        <TD>&nbsp;</TD>
+
+        <TD>Contain</TD>
+      </TR>
+
+      <TR>
+        <TD>&nbsp;</TD>
+
+        <TD>&nbsp;</TD>
+
+        <TD>CooperateWith</TD>
+      </TR>
+
+      <TR>
+        <TD>vc:relation</TD>
+
+        <TD>vcbe:relationType</TD>
+
+        <TD>EmployedBy</TD>
+      </TR>
+
+      <TR>
+        <TD>&nbsp;</TD>
+
+        <TD>&nbsp;</TD>
+
+        <TD>ResponsibleFor</TD>
+      </TR>
+
+      <TR>
+        <TD>&nbsp;</TD>
+
+        <TD>&nbsp;</TD>
+
+        <TD>MemberOf</TD>
+      </TR>
+    </TABLE>
+
+    <P>The range for the 'dateType' property in the RDF schema (namespace vci:) is defined as below.</P>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;!-- Valid range of property 'date' --&gt;
+&lt;rdfs:Class rdf:ID="DateType"/&gt;
+        &lt;DateType rdf:ID="BestBefore"&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Best-before date&lt;/rdfs:label&gt;
+        &lt;rdfs:comment xml:lang="en"&gt;Date after which the information
+        may be invalid
+        &lt;/rdfs:comment&gt;
+    &lt;/DateType&gt;
+        &lt;DateType rdf:ID="Creation"&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Creation date&lt;/rdfs:label&gt;
+        &lt;rdfs:comment xml:lang="en"&gt;Date when the information
+        was created
+        &lt;/rdfs:comment&gt;
+    &lt;/DateType&gt;
+        &lt;DateType rdf:ID="Obsolete"&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Obsolete date&lt;/rdfs:label&gt;
+        &lt;rdfs:comment xml:lang="en"&gt;Date after which the information
+        is obsolete
+        &lt;/rdfs:comment&gt;
+    &lt;/DateType&gt;
+        &lt;DateType rdf:ID="Release"&gt;
+        &lt;rdfs:label xml:lang="en"&gt;Release date&lt;/rdfs:label&gt;
+        &lt;rdfs:comment xml:lang="en"&gt;Date when the information
+        is released
+        &lt;/rdfs:comment&gt;
+    &lt;/DateType&gt;
+
+&lt;!-- ****** Volvo core properties in domain InfoObject ****** --&gt;
+&lt;rdf:Property ID="dateType"&gt;
+    &lt;rdfs:subPropertyOf
+     rdf:resource="http://volvo.se/vc-namespace/schema.rdf#actionProperty"/&gt;
+    &lt;rdfs:domain rdf:resource="#InfoObject"/&gt;
+        &lt;rdfs:range rdf:resource="#DateType"/&gt;
+    &lt;rdfs:label xml:lang="en"&gt;Type of date&lt;/rdfs:label&gt;
+    &lt;rdfs:comment xml:lang="en"&gt;
+        Defines the kind of date of an Information Object
+    &lt;/rdfs:comment&gt;
+&lt;/rdf:Property&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example F. Date typing for Information Objects</H6>
+
+    <P>If we add two dates to the instance in Figure 2, we get the graphic in Figure 3 below. See also RDF Schema Specification [15], Non-Binary Relations.</P>
+
+    <P align="center"><IMG src="ExtRDF3.gif" width="408" height="226" alt="Qualification (typing) of date property"></P>
+
+    <H6 class="CAPTION">Figure 3. Qualification (typing) of date property</H6>
+
+    <P>The RDF description related to Figure 3 looks like:</P>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:vc="http://volvo.se/vc-namespace/schema.rdf#"
+         xmlns:vci="http://volvo.se/vci-namespace/schema.rdf#"&gt;
+         &lt;vci:News rdf:about="http://vit.volvo.se/153-news/vits-0067.xml"&gt;
+         &lt;vci:headline&gt;XML consultancy during the millennium shift
+         &lt;/vci:headline&gt;
+         &lt;vc:date rdf:parseType="Resource"&gt;
+            &lt;rdf:value&gt;1999-09-25&lt;/rdf:value&gt;
+            &lt;vci:dateType
+    &lt;rdf:resource="http://volvo.se/vci-namespace/schema.rdf#Release"/&gt;
+         &lt;/vc:date&gt;
+         &lt;vc:date rdf:parseType="Resource"&gt;
+            &lt;rdf:value&gt;2000-01-05&lt;/rdf:value&gt;
+            &lt;vci:dateType
+    &lt;rdf:resource="http://volvo.se/vci-namespace/schema.rdf#BestBefore"/&gt;
+         &lt;/vc:date&gt;
+    &lt;/vci:News&gt;
+&lt;/rdf:RDF&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example G. Dates in the news metadata</H6>
+
+    <H3>5.6 Constrained vs. unconstrained models</H3>
+
+    <P>Building an RDF model without any constraints will give total freedom. But, as in our case, when the model describes a business and its business rules, then the RDF model has to conform to a business model. We can still build in flexibility, but under control by corporate rules and conventions. The examples above illustrate decentralized use of subclasses and subproperties in a controlled way and use of namespace-controlled qualification (typing). The advantages with a constrained model are:</P>
+
+    <UL>
+      <LI>The RDF-model is more easily developed if the core classes and properties are defined, based on a business model. The classes serve as anchor points when new resources and properties are added. Inconsistency in the definition of resources and properties can be discovered earlier.</LI>
+
+      <LI>An RDF knowledgeable tool can dynamically govern the editing of a resource. A list of valid properties for the actual resource could be produced. The validity of property values can be validated.</LI>
+    </UL>
+
+    <P>The core classification of properties indicates where business rules have to interact (action and inference properties).</P>
+
+    <H2>6. Applying the proposed framework</H2>
+
+    <P>We start the description of the proposed news exchange application using a scenario. In the following sections we describe the model enabling the scenario using the RDF concepts described in section 5, and connects the proposed framework to the existing descriptions of resources earlier introduced in section 4. See also Appendix A: Code examples from the News exchange application, including following instances:</P>
+
+    <OL>
+      <LI>News instance (information resource)</LI>
+
+      <LI>News metadata (information resource description)</LI>
+
+      <LI>News aggregated distribution list (communication resource description)</LI>
+
+      <LI>OrgNode description of Dept. D153 (business resource description)</LI>
+
+      <LI>Subscription (communication resource description)</LI>
+    </OL>
+
+    <H3>6.1 Scenario</H3>
+
+    <P>To visualize the next generation of intranets, we introduce a news exchange application for an extensive intranet that shows how the framework we propose could be applied.</P>
+
+    <P>A department wants to inform about one of the offered services during the millennium shift. A web based news form reached via the department&rsquo;s start page is used to write the news message. The form includes all data and metadata needed. The creator of the news message gets relevant values in drop-down boxes in the news form and gets error messages if data is not valid. The creator of the information can be confident that all relevant persons and organisations receive information about the news in a way that is chosen by each one. This means that the news message about the service during the millennium shift reaches all customers who use the service and colleagues they cooperate with, as well as colleagues in the same organisation. This implies both implicit and explicit receivers: implicit as a consequence of the defined network of relations in the business, explicit as a consequent of subscriptions. A complete distribution list is available for the news message afterwards.</P>
+
+    <H3>6.2 Classes and Namespaces</H3>
+
+    <P>In the model we divide resource descriptions into three areas: business, information and communication. Each area has a top class: BizObject, InfoObject and CommunicationObject. All of these share a common namespace for the entire Volvo group (vc: ). Each area (business, information and communication) also has its own unique namespace (vcb:, vci: and vcc: ) to be able to define the vocabulary used to describe resources.</P>
+
+    <P>In the business area it is a appropriate to divide the namespace around the next level of subclasses: The vocabulary to describe Employees differs from the vocabularies describing Organisations and Services. Employees, Organisations and Services are the types of Business objects common to the Volvo group that we identified for the news exchange application. In the Information area the InfoObject has a couple of proposed subclasses: News, WebPage and Instructions. Bellow an overview of the Volvo Core model applying classes and namespaces.</P>
+
+    <P align="center"><IMG src="ExtRDF4.gif" width="575" height="504" alt="Overview of the Volvo Core model: classes and namespaces"></P>
+
+    <H6 class="CAPTION">Figure 4. Overview of the Volvo Core model: classes and namespaces</H6>
+
+    <H3>6.3 Properties</H3>
+
+    <TABLE border="1" cellpadding="0">
+      <TR>
+        <TH width="512" colspan="4">Volvo Core domain</TH>
+      </TR>
+
+      <TR>
+        <TD width="105"><B>Property</B></TD>
+
+        <TD width="130"><B>Property Type</B></TD>
+
+        <TD width="106"><B>Domain</B></TD>
+
+        <TD width="165"><B>Range</B></TD>
+      </TR>
+
+      <TR>
+        <TD width="105">date</TD>
+
+        <TD width="130">Action</TD>
+
+        <TD width="106">&nbsp;</TD>
+
+        <TD width="165">ISOdate</TD>
+      </TR>
+
+      <TR>
+        <TD width="105">relation</TD>
+
+        <TD width="130">Fact</TD>
+
+        <TD width="106">&nbsp;</TD>
+
+        <TD width="165">&nbsp;</TD>
+      </TR>
+    </TABLE>
+
+    <P>The Volvo Core domain also defines the property categories (term, facts, action and inference) see above.</P>
+
+    <P>In the three areas: information, business and communication the defined properties set the basic typing and the core relationships between the classes. Together with the described typing for the Volvo Core properties date and relations the tables below gives an overview of the properties.</P>
+
+    <H4>6.3.1 Information resource descriptions properties</H4>
+
+    <P>In the information area we have used the Dublin Core Metadata Element Set (see section 4) as a starting point for the proposed set of properties. We also propose a set of properties to capture the relations to other classes: BizObject, Employee and CommunicationChannel. An example of an information resource description, see Appendix A: Code example 2 News metadata. Bellow an table describing constrains for relevant information resource descriptions properties.</P>
+
+    <TABLE border="1" cellpadding="0">
+      <TR>
+        <TH width="515" colspan="4">Info Object domain</TH>
+      </TR>
+
+      <TR>
+        <TD width="141"><B>Property</B></TD>
+
+        <TD width="94"><B>Property Type</B></TD>
+
+        <TD width="118"><B>Domain</B></TD>
+
+        <TD width="156"><B>Range</B></TD>
+      </TR>
+
+      <TR>
+        <TD width="141">abstract</TD>
+
+        <TD width="94">Fact</TD>
+
+        <TD width="118">InfoObject</TD>
+
+        <TD width="156">&nbsp;</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">communication</TD>
+
+        <TD width="94">Fact</TD>
+
+        <TD width="118">InfoObject</TD>
+
+        <TD width="156">CommunicationChannel</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">coverage</TD>
+
+        <TD width="94">Fact</TD>
+
+        <TD width="118">InfoObject</TD>
+
+        <TD width="156">BizObject</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">creator</TD>
+
+        <TD width="94">Fact</TD>
+
+        <TD width="118">InfoObject</TD>
+
+        <TD width="156">Employee</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">employeeRef</TD>
+
+        <TD width="94">Inference</TD>
+
+        <TD width="118">InfoObject</TD>
+
+        <TD width="156">EmployeeRef</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">headline</TD>
+
+        <TD width="94">Fact</TD>
+
+        <TD width="118">InfoObject</TD>
+
+        <TD width="156">&nbsp;</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">longDescr</TD>
+
+        <TD width="94">Term</TD>
+
+        <TD width="118">InfoObject</TD>
+
+        <TD width="156">&nbsp;</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">shortDescr</TD>
+
+        <TD width="94">Term</TD>
+
+        <TD width="118">InfoObject</TD>
+
+        <TD width="156">&nbsp;</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">uri</TD>
+
+        <TD width="94">Term</TD>
+
+        <TD width="118">WebPage</TD>
+
+        <TD width="156">&nbsp;</TD>
+      </TR>
+    </TABLE>
+
+    <H4>6.3.2 Business resource descriptions</H4>
+
+    <P>In the business area we have been inspired by the description of business units, proposed by Metadata Coalition (see section 4), adding an extension to the model to be able to describe nodes and relations in networking organisations. In our proposed model each business object instantiate itself by:</P>
+
+    <UL>
+      <LI>Position it in the business network, describing the relations to other nodes (using the types of relation valid for OrgNodes: BelongTo, Contain, CooperateWith, see above)</LI>
+
+      <LI>How to communicate with it (communicationChannel and destination) for example via e-mail to a department&rsquo;s common e-mail-id or via the news section on their start page on the intranet.</LI>
+
+      <LI>Where to find more information about it.</LI>
+
+      <LI>What services each identified node in the organisational network offers.</LI>
+    </UL>
+
+    <P>An example of a business resource description, see Appendix A: Code example 4 OrgNode description of Dept. D153. Bellow a table describing constrains for relevant business resource descriptions properties.</P>
+
+    <TABLE border="1" cellpadding="0">
+      <TR>
+        <TH width="512" colspan="4">Biz Object domain</TH>
+      </TR>
+
+      <TR>
+        <TD><B>Property</B></TD>
+
+        <TD width="92"><B>Property Type</B></TD>
+
+        <TD width="118"><B>Domain</B></TD>
+
+        <TD width="153"><B>Range</B></TD>
+      </TR>
+
+      <TR>
+        <TD>communicationChannel</TD>
+
+        <TD width="92">Fact</TD>
+
+        <TD width="118">BizObject</TD>
+
+        <TD width="153">CommunicationChannel</TD>
+      </TR>
+
+      <TR>
+        <TD>destination</TD>
+
+        <TD width="92">Fact</TD>
+
+        <TD width="118">BizObject</TD>
+
+        <TD width="153">&nbsp;</TD>
+      </TR>
+
+      <TR>
+        <TD>moreinfo</TD>
+
+        <TD width="92">Action</TD>
+
+        <TD width="118">BizObject</TD>
+
+        <TD width="153">InfoObject</TD>
+      </TR>
+
+      <TR>
+        <TD>serviceOffering</TD>
+
+        <TD width="92">Fact</TD>
+
+        <TD width="118">OrgNode</TD>
+
+        <TD width="153">Service</TD>
+      </TR>
+    </TABLE>
+
+    <H4>6.3.3 Communication resource descriptions</H4>
+
+    <P>In the communication area we have been inspired by the proposed Composite Capability/Preference Profiles (CC/PP) (see section 4) as a framework for describing properties for devices. We propose a similar framework describing different communication channels such as e-mail, web, paper etc. with properties such as graphicsAllowed and maxSize.</P>
+
+    <P>We also propose a mechanism for description of organising communications of information about the business. This gives employees, departments etc. the possibility to subscribe on different types of information using searchString and sortOrder. We suggest that these are encoded using the proposed XSLT pattern [16]</P>
+
+    <P>Two example of business resource descriptions, see Appendix A: Code example 3 News aggregated distribution list, and 5 Subscription. Bellow an table describing constrains for relevant communication resource descriptions properties.</P>
+
+    <TABLE border="1" cellpadding="0">
+      <TR>
+        <TH width="512" colspan="4">Communication object domain</TH>
+      </TR>
+
+      <TR>
+        <TD width="141"><B>Property</B></TD>
+
+        <TD width="93"><B>Property Type</B></TD>
+
+        <TD width="119"><B>Domain</B></TD>
+
+        <TD width="153"><B>Range</B></TD>
+      </TR>
+
+      <TR>
+        <TD width="141">distributeTo</TD>
+
+        <TD width="93">Inference</TD>
+
+        <TD width="119">Communication Object</TD>
+
+        <TD width="153">BizObject</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">elementRef</TD>
+
+        <TD width="93">Fact</TD>
+
+        <TD width="119">Subscription</TD>
+
+        <TD width="153">XSLT pattern</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">graphicsAllowed</TD>
+
+        <TD width="93">Fact</TD>
+
+        <TD width="119">Communication Channel</TD>
+
+        <TD width="153">YesOrNo</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">maxSize</TD>
+
+        <TD width="93">Fact</TD>
+
+        <TD width="119">Communication Channel</TD>
+
+        <TD width="153">&nbsp;</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">searchString</TD>
+
+        <TD width="93">Fact</TD>
+
+        <TD width="119">Subscription</TD>
+
+        <TD width="153">Literal</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">sortOrder</TD>
+
+        <TD width="93">Fact</TD>
+
+        <TD width="119">Subscription</TD>
+
+        <TD width="153">XSLT pattern</TD>
+      </TR>
+
+      <TR>
+        <TD width="141">subscriptOf</TD>
+
+        <TD width="93">Fact</TD>
+
+        <TD width="119">Subscription</TD>
+
+        <TD width="153">InfoObject</TD>
+      </TR>
+    </TABLE>
+
+    <H3>6.4 Extending the model</H3>
+
+    <P>The company Volvo IT is an instance of the class SupportUnit in the domain for Volvo Core Business Object (vcbo: ). It is a service company and needs to define its own subclasses for services, information and organization nodes. Below an overview of how Volvo IT (VIT) extend the model and introduce their company wide vocabulary:</P>
+
+    <UL>
+      <LI>
+        Volvo IT specific type of organisations: 
+
+        <UL>
+          <LI>BPU. Business Process Unit (defined in the VIT schema as: An organization node which supports a Business Process with IT services.)</LI>
+
+          <LI>Team (defined in the VIT schema as: A number of individuals with the same role or mission, constituting a formal or informal group for a limited period of time).</LI>
+
+          <LI>Volvo IT specific types of services: Application Service and Service Bureau</LI>
+        </UL>
+      </LI>
+    </UL>
+
+    <H2>7. Lessons learned and future directions</H2>
+
+    <P>The work reported in this paper was initiated by the encountered problems trying to recommend a metadata schema for an extensive intranet. Although, it has been energized by the vision of <I>context sensitive editing</I> for users creating information, and gradually, also by the vision of <I>context driven views and navigation</I> for users consuming information. We wanted to explore the possibilities to develop context-sensitive content editing that uses RDF [14] and RDF schemas [15] to provide content providers with dynamic forms including relevant properties, permitted values to choose from and direct validation of data and metadata. The conclusion is that such visions could be realised, but require a consistent approach for how to set the context. In addition, a framework implementing such an approach, must take into account the constantly change of context: re-structuring of information, re-organising of communication and re-positioning nodes in the business network.</P>
+
+    <P>The contribution of this paper is such a framework called: <I>A framework for the next generation of intranets.</I> The framework includes three interrelated components:</P>
+
+    <OL>
+      <LI>A model describing three different areas of resources: business, information and communication, and integrating the resources descriptions areas by means of generic classes, constrains and relations.</LI>
+
+      <LI>An extension to the model describing and integrating nodes and relations in networking organisations.</LI>
+
+      <LI>An extension to the model describing and organising the communication of information in the business.</LI>
+    </OL>
+
+    <P>The framework suggests an <I>extensible use of RDF (Resource Description Framework) in a business context.</I></P>
+
+    <P>Our experiences are very promising. Combining subclassing and the namespace-controlled qualification (typing) gave us a robust implementation and application of the framework. However, we did found it hard to select between the RDF subclassing and instancing mechanism in a consequent way. The RDF-syntax is sometime very complex and offers several different ways of encoding for example the typing mechanism. There is an intensive debate in the RDF interest community regarding a simpler syntax. We look forward to see the implications of this debate. The ongoing discussion on the overlaps and complements between RDF Schemas and XML Schemas could also improve the encoding of the framework. We would also like to see cross discipline communities that combine lessons learned from the deployment of object orientation analysis and programming, with the scalable and non-centralized mechanisms cultivated throughout the development of Internet.</P>
+
+    <P>The next step will be to evaluate the different RDF parsers, RDF editors and as well as RDF spiders that we now can see being introduced on the market. We would also like to expand the scope of the framework, opening up new possibilities:</P>
+
+    <UL>
+      <LI>Add <I>functional resource descriptions</I>. The proposed property categories; action and inference, could be used as anchor points for adding structured specifications of business rules in the business area.</LI>
+
+      <LI>Add <I>presentational and navigational resource descriptions</I>. Adding structured specifications of styles and navigational patterns in the communication area. Connecting such a mechanism to the consumer-driven subscription, which defines views of information, could enable a context driven navigation.</LI>
+    </UL>
+
+    <P>The result of the experiments reported in this paper, will also be used in future work regarding editorial systems. Adapt the framework to a news production context, instead of a business context.</P>
+
+    <H2>Appendix A: Code examples from the News exchange application</H2>
+
+    <OL>
+      <LI>News instance (information resource)</LI>
+
+      <LI>News metadata (information resource description)</LI>
+
+      <LI>News aggregated distribution list (communication resource description)</LI>
+
+      <LI>OrgNode description of Dept. D153 (business resource description)</LI>
+
+      <LI>Subscription (communication resource description)</LI>
+    </OL>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;!DOCTYPE News SYSTEM "news.dtd"&gt;
+&lt;News id="vits-0067"&gt;
+    &lt;headline&gt;Web consultancy during the millennium shift&lt;/headline&gt;
+    &lt;abstract&gt;Limited uptime for ... ...&lt;/abstract&gt;
+    &lt;fulltext&gt;The schedule is ... ...&lt;/fulltext&gt;
+&lt;/News&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example 1. News instance</H6>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:vc="http://volvo.se/vc-namespace/schema.rdf#"
+         xmlns:vci="http://volvo.se/vci-namespace/schema.rdf#"
+         xmlns:vcbe="http://volvo.se/vcbe-namespace/schema.rdf#"&gt;
+
+    &lt;vci:News rdf:about="http://vit.volvo.se/153/news/vits-0067.xml"&gt;
+        &lt;vci:headline&gt;XML consultancy during the millennium shift
+        &lt;/vci:headline&gt;
+        &lt;vci:abstract&gt;Limited support during ... ...&lt;/vci:abstract&gt;
+        &lt;vci:coverage
+    rdf:resource="http://vit.volvo.se/153/service.rdf#WebConsulting"/&gt;
+        &lt;vc:date rdf:parseType="Resource"&gt;
+            &lt;rdf:value&gt;1999-09-25&lt;/rdf:value&gt;
+            &lt;vci:dateType
+    rdf:resource="http://volvo.se/vci-namespace/schema.rdf#Release"/&gt;
+        &lt;/vc:date&gt;
+        &lt;vc:date rdf:parseType="Resource"&gt;
+            &lt;rdf:value&gt;2000-01-05&lt;/rdf:value&gt;
+            &lt;vci:dateType
+    rdf:resource="http://volvo.se/vci-namespace/schema.rdf#BestBefore"/&gt;
+        &lt;/vc:date&gt;
+        &lt;vci:creator rdf:parseType="Resource"&gt;
+            &lt;rdf:value
+             rdf:resource="http://vit.volvo.se/empl.rdf#E12345"/&gt;
+                &lt;vcbe:employeeRef
+    rdf:resource="http://volvo.se/vcbe-namespace/schema.rdf#EmployeeId"/&gt;
+        &lt;/vci:creator&gt;
+    &lt;/vci:News&gt;
+&lt;/rdf:RDF&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example 2. News metadata</H6>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:vcc="http://volvo.se/vcc-namespace/schema.rdf#"&gt;
+    &lt;vcc:Distribution
+     rdf:about="http://vit.volvo.se/153-news/vits-0067.xml"&gt;
+        &lt;vcc:distributeTo
+          rdf:resource="http://vit.volvo.se/153-org.rdf"/&gt;
+        &lt;vcc:distributeTo
+          rdf:resource="http://vit.volvo.se/empl.rdf#E44180"/&gt;
+        &lt;!-- Added by subscription S0001 --&gt;
+        &lt;vcc:distributeTo
+          rdf:resource="http://vit.volvo.se/empl.rdf#E12345"/&gt;
+        &lt;!-- Added by subscription S0002 --&gt;
+        &lt;vcc:distributeTo
+          rdf:resource="http://vit.volvo.se/empl.rdf#E123456"/&gt;
+    &lt;/vcc:Distribution&gt;
+&lt;/rdf:RDF&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example 3. News aggregated distribution list</H6>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/TR/1999/PR-rdf-schema-19990303#"
+    xmlns:vc="http://volvo.se/vc-namespace/schema.rdf#"
+    xmlns:vcb="http://volvo.se/vcb-namespace/schema.rdf#"
+    xmlns:vcbo="http://volvo.se/vcbo-namespace/schema.rdf#"&gt;
+    &lt;vcbo:Dept ID="D153"&gt;
+        &lt;rdfs:label&gt;XML/SGML Center&lt;/rdfs:label&gt;
+        &lt;rdfs:comment&gt;The main tasks for XML/SGML Center is ..
+        &lt;/rdfs:comment&gt;
+        &lt;vcb:communicationChannel rdf:parseType="Literal"&gt;
+            &lt;rdf:value&gt;Email&lt;/rdf:value&gt;
+            &lt;vcb:destination&gt;it1.jsmith@memo.volvo.se"
+            &lt;/vcb:destination&gt;
+        &lt;/vcb:communicationChannel&gt;
+        &lt;vc:relation rdf:parseType="Resource"&gt;
+            &lt;vcbo:relationType
+        rdf:resource="http://volvo.se/vcbo-namespace/schema.rdf#BelongTo"/&gt;
+        &lt;rdf:value rdf:resource="http://vit.volvo.se/org.rdf#D15"/&gt;
+        &lt;/vc:relation&gt;
+        &lt;vc:relation rdf:parseType="Resource"&gt;
+            &lt;vcbo:relationType
+        rdf:resource="http://volvo.se/vcbo-namespace/schema.rdf#CooperateWith"/&gt;
+            &lt;rdf:value&gt;
+            &lt;rdf:Bag&gt;
+            &lt;rdf:li
+            rdf:resource="http://volvo.se/vit-namespace/schema.rdf#BPU"/&gt;
+            &lt;rdf:li
+            rdf:resource="http://vit.volvo.se/D173-org.rdf"/&gt;
+            &lt;rdf:li
+            rdf:resource="http://vit.volvo.se/InfoMasters-org.rdf"/&gt;
+            &lt;/rdf:Bag&gt;
+            &lt;/rdf:value&gt;
+        &lt;/vc:relation&gt;
+        &lt;vcbo:serviceOffering
+         rdf:resource="http://vit.volvo.se/D153-service.rdf"/&gt;
+        &lt;vcb:moreInfo rdf:parseType="Resource"&gt;
+            &lt;vcb:moreinfoType
+             rdf:resource="http://volvo.se/schema.rdf#WebPage"/&gt;
+            &lt;rdf:value resource="http://vit.volvo.se/D153/webpage.rdf#D153HP"/&gt;
+        &lt;/vcb:moreInfo&gt;
+    &lt;/vcbo:Dept&gt;
+&lt;/rdf:RDF&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example 4. OrgNode description of Dept. D153</H6>
+<PRE style="font-family: 'courier new', courier; font-size: 9pt">
+&lt;rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:vci="http://volvo.se/vci-namespace/schema.rdf#"
+    xmlns:vcc="http://volvo.se/vcc-namespace/schema.rdf#"&gt;
+    &lt;vcc:Subscription rdf:ID="S0001"&gt;
+        &lt;vcc:subscriptOf
+            rdf:resource="http://volvo.se/vci-namespace/schema.rdf#News"/&gt;
+        &lt;vcc:searchString rdf:parseType="Literal"&gt;
+            &lt;rdf:value&gt;XML&lt;/rdf:value&gt;
+            &lt;vcc:elementRef&gt;vci:headline&lt;/vcc:elementRef&gt;
+        &lt;/vcc:searchString&gt;
+        &lt;vcc:sortOrder&gt;
+            &lt;rdf:Seq&gt;
+                &lt;rdf:li&gt;vc:date[@vci:dateType="BestBefore"]&lt;/rdf:li&gt;
+                &lt;rdf:li&gt;vci:headline&lt;/rdf:li&gt;
+            &lt;/rdf:Seq&gt;
+        &lt;/vcc:sortOrder&gt;
+        &lt;vcc:distributeTo rdf:resource="http://vit volvo.se/empl.rdf#E12345"/&gt;
+    &lt;/vcc:Subscription&gt;
+&lt;/rdf:RDF&gt;
+</PRE>
+
+    <H6 class="CAPTION">Code example 5. Subscription</H6>
+
+    <H2>References</H2>
+
+    <P>[1] Association for Library Collections and Technical Services, Task Force on Metadata, Summary Report June 1999, <A href="http://www.ala.org/alcts/organization/ccs/ccda/tf-meta3.html">http://www.ala.org/alcts/organization/ccs/ccda/tf-meta3.html</A></P>
+
+    <P>[2] J. Bosak, T. Bray XML and the Second-Generation Web, Scientific American, May 1999, <A href="http://www.sciam.com/1999/0599issue/0599bosak.html">"http://www.sciam.com/1999/0599issue/0599bosak.html</A></P>
+
+    <P>[3] Composite Capability/Preference Profiles (CC/PP), W3C Note, 27 July 1999, <A href="http://www.w3.org/TR/NOTE-CCPP/">http://www.w3.org/TR/NOTE-CCPP/</A></P>
+
+    <P>[4] B. Dahlbom, From Infrastructure to Networking, In C.Ciborra (ed.) From Control to Drift, Oxford University Press, 2000.</P>
+
+    <P>[5] J. Damsgard, R. Scheepers (1999), Astage model of intranet technology implementation and management, Information Systems Journal, forthcoming</P>
+
+    <P>[6] Dublin Core Home Page, <A href="http://purl.org/DC/">http://purl.org/DC/</A></P>
+
+    <P>[7] Dublin Core Metadata Element Set, Version 1.1: Reference Description, Dublin Core, <A href="http://purl.oclc.org/dc/documents/rec-dces-19990702.htm">http://purl.oclc.org/dc/documents/rec-dces-19990702.htm</A></P>
+
+    <P>[8] EU-NSF Working Group on Metadata, Metadata for Digital Libraries: a Research Agenda, <A href="http://www.iei.pi.cnr.it/DELOS/REPORTS/metadata.html">http://www.iei.pi.cnr.it/DELOS/REPORTS/metadata.html</A></P>
+
+    <P>[9] F. Ljungberg, Networking Ph.D. thesis, Department of Informatics, Gothenburg University, 1998</P>
+
+    <P>[10] Meta Data Coalition, Open Information Model, Version 1.0 - August 1999, <A href="http://www.mdcinfo.com/OIM/OIM10.html">http://www.mdcinfo.com/OIM/OIM10.html</A></P>
+
+    <P>[11] Meta Data Coalition, Open Information Model, Business Engineering Model Business Rules, July 15, 1999 Review draft, <A href="http://www.mdcinfo.com/OIM/models/BRM.html">http://www.mdcinfo.com/OIM/models/BRM.html</A></P>
+
+    <P>[12] E. Miller, P. Miller and D. Brickley (1999), Guidance on expressing the Dublin Core within the Resource Description Framework (RDF), draft proposal, <A href="http://www.ukoln.ac.uk/metadata/resources/dc/datamodel/WD-dc-rdf">http://www.ukoln.ac.uk/metadata/resources/dc/datamodel/WD-dc-rdf</A></P>
+
+    <P>[13] M. K., Natvig and O. Ohren, (1999), Modelling shared information spaces (SIS); Proceedings of the international ACM SIGGROUP conference on Supporting group work, 1999, Pages 199 - 208</P>
+
+    <P>[14] Resource Description Framework (RDF) Model and Syntax Specification, W3C Recommendation, 22 February 1999, <A href="http://www.w3.org/TR/REC-rdf-syntax">http://www.w3.org/TR/REC-rdf-syntax</A></P>
+
+    <P>[15] Resource Description Framework (RDF) Schema Specification, W3C Proposed Recommendation, 3 March 1999 <A href="http://www.w3.org/TR/PR-rdf-schema/">http://www.w3.org/TR/PR-rdf-schema/</A></P>
+
+    <P>[16] XSL Transformations (XSLT), Version 1.0, W3C Proposed Recommendation 8 October 1999, <A href="http://www.w3.org/TR/PR-rdf-schema/">http://www.w3.org/TR/PR-rdf-schema/</A></P>
+
+    <P>[17] W3C Mobile Access Interest Group, <A href="http://www.w3.org/Mobile/">http://www.w3.org/Mobile/</A></P>
+
+    <P>[18] WAP Forum, <A href="http://www.wapforum.org/">http://www.wapforum.org/</A></P>
+
+    <H2>Vitae</H2>
+
+    <DIV align="center">
+      <P><IMG src="kerstinf.jpg" width="108" height="135" alt="Kerstin Forsberg, Viktoria Institute and Adera, kerstin.forsberg@aderagroup.com" border="1"></P>
+
+      <P>Kerstin Forsberg is a consultant at Adera, Europe&rsquo;s first e-agency, uniting skills in marketing, communication, management and IT. She is also a PhD. student at the Viktoria Institute, Gothenburg, Sweden, and belongs to the Mobile Informatics research group. Her research interests include editorial processes, information structuring and mobile IT support for knowledge management.</P>
+
+      <P><IMG src="larsd.jpg" width="108" height="136" alt="Lars Dannstedt, Volvo Information Technology, it1.larsd@memo.volvo.se" border="1"></P>
+
+      <P>Lars Dannstedt is a Senior Consultant at Volvo information Technology. He has promoted the use of structured information since early 1980's. Recently he joined the Web Program Center at VOLVO IT with main focus on XML-based solutions. At that position the need for robust metadata solutions has been proven.</P>
+    </DIV>
+  </BODY>
+</HTML>
+

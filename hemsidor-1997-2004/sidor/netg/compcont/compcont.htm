@@ -1,0 +1,599 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>Computers in Context</TITLE>
+
+<META NAME="GENERATOR" CONTENT="Internet Assistant for Microsoft Word 2.0z">
+</HEAD>
+<BODY background="../images/binder.gif"><div style="font:13px/1.4 sans-serif;background:#fff8e1;color:#333;border-bottom:1px solid #e0c97a;padding:6px 10px;margin:0 0 8px 0">Arkiverad kopia, sparad 1999-02-02 i <a href="https://web.archive.org/web/19990202192842/http://www.netg.se:80/%7Ekerfor/compcont/compcont.htm">Internet Archive</a>. Original: http://www.netg.se:80/%7Ekerfor/compcont/compcont.htm. <a href="../../../">Alla sidor</a></div>
+
+<BLOCKQUOTE>
+<H1><CENTER>Computers in Context</CENTER></H1>
+
+<H1><CENTER><I><FONT SIZE=5>The Philosophy and Practice of System
+Design</FONT></I><FONT SIZE=6> <BR>
+</FONT></CENTER></H1>
+
+<P>
+<CENTER>By <A HREF="http://www.adb.gu.se/~dahlbom/">Bo Dahlbom</A>
+and <A HREF="http://www.cs.auc.dk/~larsm/cv.html">Lars Mathiassen</A></CENTER>
+<P>
+<HR>
+
+This is a summary, done by Kerstin Forsberg, as part of my introduction
+course at the Viktoria Institute for Research on Information Technology
+Use. See more about this on my <A HREF="study.htm">study-page</A>
+for my industrial education program
+
+<H2>Table of content </H2>
+
+<UL>
+<LI><A HREF="compcont.htm#Idea"><B>The idea of this book</B></A>
+<LI><A HREF="compcont.htm#Overview"><B>Overview - Mindmap</B></A>
+<LI><A HREF="compcont.htm#PersRefl"><B>A few personal reflections</B></A>
+<LI><A HREF="compcont.htm#Key"><B>More about some of the Key Concepts, Ideas and Persons</B></A>
+<LI><A HREF="compcont.htm#Reading"><B>Further Reading </B></A>
+<LI><A HREF="compcont.htm#LinkList"><B>Link List</B></A> 
+</UL>
+
+<HR>
+
+<H2><A NAME="Idea">The idea of this book ... </A></H2>
+
+<UL>
+<LI><CITE>... turn our back on the buzzwords for a while and reflect
+on our profession.</CITE>
+<LI><CITE>... introduce a number of perspectives from our intellectual
+history and apply them to the world of computers and systems development.</CITE>
+<LI><CITE>... explicitly play with perspectives and metaphors
+to stimulate learning.</CITE>
+<LI><CITE>... deal with the fundamental challenge of our profession,
+the challenge to make the relation between philosophy and practice
+a dialectic process of confrontation and change, to turn daily
+routine into a struggle for quality.</CITE>
+<LI><CITE>... not to become philosophers but rather to challenge
+ourselves to become more professional.</CITE> <BR>
+</UL>
+
+[Source: Quotations from the book]<BR>
+
+<HR>
+
+<H2><A NAME="Overview">Overview - Mindmap </A></H2>
+
+<IMG SRC="compcont.gif" ALT="Computers in Concept - Mindmap">
+
+<P>
+<HR>
+
+<H2><A NAME="PersRefl">A few personal reflections </A><BR>
+</H2>
+
+During my reading of this book, several situations and persons,
+successes and disasters came to my mind from more than 15 years
+of experience as a system developer in a big corporation. 
+
+<H3>The Mechanistic Heritage <BR>
+</H3>
+
+Being a practitioner using dataflow-diagrams and datamodels during
+the 80s and objectmodels and processmaps during the early 90s,
+it was interesting to realize that I tried to be a good engineer.
+Really believing that we could &quot;photograph&quot; the operations
+from the outside, finding the core objects, the real relationships
+and the explicit rules to be able to build the perfect system
+for the next decade.
+<P>
+The top-down approach using structured methods was the paradigm
+for dealing with the solution. But one of the most common comments
+from the future users was <I>- Not sure I understand your model
+&#133;but it looks fine! Which year can you install the system?</I>
+<P>
+During the mid 80s I was involved in the introduction of a
+new system development process. The model had strictly defined
+phases and steps delivering specified documents, based on the
+idea of specification driven development, concentration first
+on the problem definition and after that, specifying the proposed
+solution. The objective was to construct the right system solving
+the right problem, based on the perfect specification.
+<P>
+The top-down approach using structured methods was still the paradigm,
+used for both dealing with the problem and the solution. But one
+of the most common questions from the users, now being our fellow
+project members, was <I>- My colleague told me about a PC-system
+that I think could solve our problems - couldn't we look at that
+instead of drawing strange problem-fishbone-diagrams?</I>&quot;
+<P>
+We expanded the development process with a project management
+process, adding project directives, steering committees and responsibility
+matrixes, as well as steps to define and verify the objectives.
+We wanted to know the exact objectives and have the best plans
+to gain effective coordination in giant projects, typical for
+that decade.
+<P>
+The top-down approach using structured methods was now also used
+for controlling the process of constructing the system. But one
+of the most common criticism from the future system owners, now
+being members of the steering committees, was <I>- I don't want
+to pay for a directive saying what the objectives of my functions
+are! I want a working solution tomorrow!</I>
+<P>
+After reading this book I see that our top-down approach was
+a typical hard system approach, applying hard system thinking
+to system development. Our perspective was influenced by the mechanistic
+heritage from Descartes and Leibniz; thinking as mathematical
+computation. Our system construction paradigm, was actually going
+back to Aristotelian concepts - formalizing our knowledge by providing
+rules and criteria. We tried to use a bureaucratized version of
+problem solving, using ideas in the positivistic tradition - analyzing
+objects into their constitutes, generalizations, trying to be
+observers of the reality representing facts.
+
+<H3>A Romantic Challenge</H3>
+
+In the late 80s I heard about new ideas of a Spiral Model instead
+of a Waterfall Model. This was an exciting idea which I immediately
+liked after participating in at least two <CITE>giant projects,
+trying to write the perfect specification, and then building The
+System of the decade</CITE>. One of them was pretty much a success,
+but almost caused a couple of burn-outs, and the other one more
+or less a disaster. I was questing our methods and looking for
+other approaches all over.
+<P>
+When joined another part of the corporation I realized
+that I changed environment; applications for engineers instead
+of administration departments and economy functions, calculation
+tools used by a few specialists instead of big systems for hundreds
+of users, or more, and workstations instead of water-cooling giants.
+Also the culture was different; identifying and experimenting
+with possible solutions was more important than analyzing problems;
+together with the users, also being our engineering colleagues,
+we developed the tools, learning from each other - the
+tool-maker and the tool-user.
+<P>
+Enthusiastically we tried to apply the Spiral Model ideas using
+an iterative development process which we thought was extremely
+suitable for smaller project within the Technology Development
+domain. Still using our common Development Model, from the traditionally
+Administrative Development domain, as a framework. Adapting the
+creativity phase to an iterative and learning process for the
+key parts of the future solution - the system evolved bottom-up.
+But our enthusiasm wasn't shared with colleagues in the system
+development method community<I>: - Don't confuse the users of
+the model with new and unknown concepts, we have to stick to the
+pure model</I>.
+<P>
+After reading this book I see that our bottom-up approach was
+a typical soft system approach, applying soft system thinking
+to system development. Our perspective was influenced by the romantic
+tradition from Freud and Nietzsche; appreciating the complexity
+of human beings, social organizations and information use. Our
+idea of system development as a learning process, was actually
+going back to Platonic intuitions - knowing something based on
+doing something. We tried to use an evolutionary version of methods
+for developing solutions, using ideas in the hermeneutics tradition
+- interpretation, understanding our users professional language,
+going back and forth between the parts and the whole, trying to
+be facilitators in the dialog with the users, experimenting, developing
+satisfactory computer solutions.
+
+<H3>Struggling for Quality</H3>
+
+After the depression in the early 90s Quality Assurance,
+ISO9000 and Quality Plans became the magic words. During this
+period I joined the method department, my ambition was to adapt
+our common processes and methods gradually towards a more iterative
+approach. Instead I become a part of the Quality System as one
+of 18 process-owners. The goal was to be certified and we got
+the certificate a year later.
+<P>
+Now we have loads of process descriptions, internal and external
+auditions, review-procedures and test-methods, and we measure
+the numbers of reviewed directives and written contracts. When
+we have contradictions with our users, now we call them customers,
+we say: <I>- </I><CITE>The system owner approved the directive,
+the quality objectives, and signed the contract and that functionality
+wasn't mentioned in it so it is not our responsibility if you
+aren't satisfied!</CITE>
+<P>
+After reading this book I see that we approached the quality
+issue as engineers, influenced by our mechanistic heritage using
+a bureaucratize process. We concentrated on quality assurance
+methods and control procedures implementing them top-down. We
+did not really engage the competence and basic assumptions of
+each individual employee. To turn the general question of quality
+into more operational questions of specific qualities in work-groups
+and projects, identifying opportunities to improve quality, select
+and emphasize the initiatives that were useful bottom-up. 
+
+<H3>The media contradictions</H3>
+
+Now in the middle of the 90s many of us system developer have
+been overwhelmed by the internet-technologies, providing the active
+actors, no more passive users, with a medium for interaction and
+communication. Today we can se contradictions every day between
+the central information staff and individual departments and groups
+about how a web-page on intranet should be designed, between the
+traditionally PC-support and individual users about which plug-ins
+to use, between the central IS-department and the local webmaster
+about which software to download.
+<P>
+Where does system development start when web-pages evolve into
+database-interfaces, when workflow-systems become into the framework
+for information handling, and when intranet-structures help us
+to navigate through data, information, manuals and discussions?
+When technology and business conditions evolve so fast - what
+approach can add value in the designing for change?
+<P>
+After reading this book I see that we have to use a dialectic
+approach viewing the organization as a living organism with powerful
+internal forces and conflicts. Our perspective will be influenced
+by critical theorists tradition from Marx, Habermas and Foucault;
+the importance of self-realization through expression and the
+idea of an ongoing process of change and emancipation. <CITE>Using
+computers to make our lives rich and rewarding instead of narrow
+and boring.</CITE>
+
+<H3>Conclusion and added-value for me</H3>
+
+Reading this book gave me a thought-provoking analysis of our
+profession. It was a challenge to read and think on parallel levels:
+to understand the introduced philosophers and their ideas, at
+the same time seeing the perspectives on the world of computers
+and systems development from the authors view and also trying
+to reflect on my own experiences.
+<P>
+I saw many parallels to a book I read in the late 80s, <CITE>Den
+datoriserade Prometheus</CITE> by Johansson C and Grahm &Aring;,
+1986 (see my summary of the book in Swedish). The book introduced
+three value-perspectives on system development: positivism, commercialism
+and humanism. Johansson and Grahm advocate an iterative approach
+and system development as a learning process. Reading <CITE>Computers
+in Context</CITE> gave me a more in-depth and up-to-dated view of
+philosophical perspectives on system development.
+<P>
+The discussions about <CITE>Systems</CITE> and <CITE>Development</CITE>
+were easy to read and understand. The key chapter about <CITE>Quality</CITE>
+was hard to understand, especially since it introduced so many
+perspectives that I got lost several times. The summary in the
+concluding discussion on <CITE>Systems and Change</CITE> and <CITE>From
+Philosophy to Practice</CITE> explained many of my questions and
+gave me inspiration to write down these reflections.
+<P>
+The book gave me one keyword, one idea, and one quotation, 
+which I think are the added-values for me reading this book:
+
+<UL>
+<LI>The keyword is <CITE>Facilitator =</CITE> <CITE>someone who
+makes progress easier</CITE> (see <A HREF="compcont.htm#facil">Facilitator</A>)
+which I think will be a role I would like to learn more about
+and I will try to include more enlightened in my profession.
+<LI>The idea is <CITE>Hermeneutics = the science and methodology
+of interpretation </CITE>(see <A HREF="compcont.htm#hermen">Hermeneutics</A>)
+which will be one of my starting points for my future studies.
+<LI>The quotation will be part of my professional objectives:
+<CITE>Use our tools, technical and otherwise, as tools for cultivating
+a process rather than designing a product.<BR>
+</CITE>
+</UL>
+
+<HR>
+
+<H2><A NAME="Key">More about some of the Key Concepts, Ideas and
+Persons </A><BR>
+</H2>
+
+<A HREF="compcont.htm#cmm"><FONT SIZE=2>Capability Maturity Model</FONT></A><FONT SIZE=2>
+| <A HREF="compcont.htm#critic">Critical Theory</A> | <A HREF="compcont.htm#contra">Contradiction</A>
+| <A HREF="compcont.htm#dialect">Dialectics</A> | <A HREF="compcont.htm#dialthink">Dialectical thinking</A>
+| <A HREF="compcont.htm#facil">Facilitator</A> | <A HREF="compcont.htm#habermas">Habermas</A>
+| <A HREF="compcont.htm#hegel">Hegel</A> | <A HREF="compcont.htm#hermen">Hermeneutics</A>
+| <A HREF="compcont.htm#interpret">Interpretation</A> | <A HREF="compcont.htm#intervent">Intervention</A>
+| <A HREF="compcont.htm#levi">L&eacute;vi-Strauss</A> | <A HREF="compcont.htm#positiv">Positivism</A>
+| <A HREF="compcont.htm#spiral">Spiral Process Model</A> | <A HREF="compcont.htm#tinker">Tinker or Bricoleur</A>
+| </FONT>
+<H4><A NAME="cmm">Capability Maturity Model </A></H4>
+
+<CITE>The Capability Maturity Model for Software describes the
+principles and practices underlying software process maturity
+and is intended to help software organizations improve the maturity
+of their software processes in terms of an evolutionary path from
+ad hoc, chaotic processes to mature, disciplined software processes.
+The CMM is organized into five maturity levels:</CITE> 
+
+<P>
+<TABLE >
+<TR><TD WIDTH=369><B><IMG SRC="cmm.gif" ALT="Capability Maturity Model "></B>
+</TD><TD WIDTH=302><I><B><FONT SIZE=2>1 Initial. </FONT></B><FONT SIZE=2>The software process is characterized as ad hoc, and occasionally even chaotic. Few processes are defined, and success depends on individual effort and heroics. </FONT></I>
+<P>
+<I><B><FONT SIZE=2>2 Repeatable.</FONT></B><FONT SIZE=2> Basic project management processes are established to track cost, schedule, and functionality. The necessary process discipline is in place to repeat earlier successes on projects with similar applications. </FONT></I>
+<P>
+<I><B><FONT SIZE=2>3 Defined.</FONT></B><FONT SIZE=2> The software process for both management and engineering activities is documented, standardized, and integrated into a standard software process for the organization. All projects use an approved, tailored version of the organization's standard software process for developing and maintaining software. </FONT></I>
+<P>
+<I><B><FONT SIZE=2>4 Managed. </FONT></B><FONT SIZE=2>Detailed measures of the software process and product quality are collected. Both the software process and products are quantitatively understood and controlled. </FONT></I>
+<P>
+<I><B><FONT SIZE=2>5 Optimizing. </FONT></B><FONT SIZE=2>Continuous process improvement is enabled by quantitative feedback from the process and from piloting innovative ideas and technologies.</FONT></I>
+</TD></TR>
+
+</TABLE>
+
+<P>
+
+<UL>
+<LI>Source: Software Engineering Institute, <A HREF="http://www.sei.cmu.edu/technology/cmm.html">Capability Maturity Model (sm) for Software</A>
+</UL>
+
+<H4><A NAME="critic"><B>Critical Theory </B></A></H4>
+
+<CITE>Critical theory is primarily a way of doing philosophy,
+integrating the normative aspects of philosophical reflection
+with the explanatory achievements of the social sciences. The
+ultimate goal of its program is to link theory and practice, to
+provide insight, and to empower subjects to change their oppressive
+circumstances and achieve human emancipation, a rational society
+that satisfies human needs and powers....<B>Habermas'</B> analysis
+of communication seeks to provide norms for non-dominating relations
+to others and a broader notion of reason.</CITE>
+<P>
+[Cambridge Dictionary of Philosophy, pp. 278-79]
+<UL>
+<LI>Source: <A HREF="http://www.uta.edu/huma/illuminations/">Illuminations: The Critical Theory Website </A>
+<LI><A HREF="http://www.cudenver.edu/~mryder/itc_data/postmodern.html">Contemporary Philosophy, Critical Theory and Postmodern Thought</A>
+</UL>
+
+<H4><A NAME="contra"><B>Contradiction </B></A></H4>
+Contradiction is the central point of <B>Hegel's</B> critique of
+Formal Logic and the most popular concept for introducing <B>dialectical</B> ideas.
+<P>
+<CITE>Sense 1 - negation, contradiction, opposition, oppositeness
+<P>
+Sense 2 - contradiction, contradiction in terms -- ((in logic)
+a statement that is necessarily false; ``the statement `he is
+brave and he is not brave' is a contradiction'' ) <BR>
+falsehood, falsity, untruth, false statement -- (a false statement)
+<P>
+Sense 3 - contradiction -- (the speech act of contradicting someone;
+``he spoke as if he thought his claims were immune to contradiction''
+)<BR>
+negation, negating</CITE>
+<P>
+[Source: Advanced, WordNet Vocabulary Helper via OneLook Dictionaries] 
+
+<H4><A NAME="dialect"><B>Dialectics </B></A></H4>
+
+<CITE>The <B>Hegelian</B> method of logic, based on the concept
+of advancing contradictory arguments, of thesis and antithesis,
+and seeking their resolution by synthesis.
+<P>
+</CITE>[Source: Principia Cybernetica Web] 
+
+<H4><A NAME="dialthink"><B>Dialectical thinking </B></A></H4>
+
+<CITE>(thinking within more than one perspective)<BR>
+Conducted to test the strengths and weaknesses of opposing points
+of view. (Court trials and debates are, in a sense, dialectical.)
+When thinking dialectically, reasoners pit two or more opposing
+points of view in competition with each other, developing each
+by providing support, raising objections, countering those objections,
+raising further objections, and so on. Dialectical thinking or
+discussion can be conducted so as to &quot;win&quot; by defeating
+the positions one disagrees with-using critical insight to support
+one's own view and point out flaws in other views (associated
+with critical thinking in the restricted or weak sense), or fairmindedly,
+by conceding points that don't stand up to critique, trying to
+integrate or incorporate strong points found in other views, and
+using critical insight to develop a fuller and more accurate view
+(associated with critical thinking in the fuller or strong sense).</CITE>
+<P>
+[Source: An Educator's Guide to Critical Thinking Terms
+and Concepts] 
+<H4><A NAME="facil"><B>Facilitator</B></A></H4>
+
+<CITE>(someone who makes progress easier) -&gt; assistant,
+helper, help, supporter -- (a person who contributes to the fulfillment
+of a need or furtherance of an effort or purpose; ``my invaluable
+assistant&quot;; &quot;they hired additional help to finish the
+work'' )</CITE>
+<P>
+[Source: Advanced, WordNet Vocabulary Helper via OneLook
+Dictionaries]
+<UL>
+<LI><A HREF="http://hsb.baylor.edu/fuller/fac/">Facilitator Central</A>
+</UL>
+<H4><A NAME="habermas"><B>Habermas </B></A></H4>
+
+<CITE>Is widely considered as the most influential thinker
+in Germany over the past decade [1970-80]. As a philosopher and
+sociologist he has mastered and creatively articulated an extraordinary
+range of specialized literature in the social sciences, social
+theory and the history of ideas in the provocative critical theory
+of knowledge and human interests. His roots are in the tradition
+of German thought from Kant to Marx, and he has been associated
+with the Frankfurt School of <B>critical theorists</B> which pioneered
+in the study of the relationship of the ideas of Marx and Freud.</CITE>
+<P>
+<B>Habermas' Three Domains of Knowledge</B>
+<P>
+<IMG SRC="habermas.gif">
+<UL>
+<LI>Source: <A HREF="http://www.phy.nau.edu/~danmac/habcritthy.html">The Critical Theory of Jurgen Habermas</A>
+<LI><A HREF="http://www.niu.edu/acad/english/wac/hbrms.html">An Introduction to J. Habermas</A>
+</UL>
+
+<H4><A NAME="hegel"><B>Hegel </B></A></H4>
+
+<CITE>Georg Wilhelm Friedrich Hegel (1770-1831) was an influential
+and controversial German idealist in the period after Kant.</CITE>
+<UL>
+<LI><A HREF="http://werple.net.au/~andy/index.htm">Hegel by HyperText</A>
+<LI><A HREF="http://www.knuten.liu.se/~bjoch509/noframes/philosophers/heg.html">Bj&ouml;rn's Guide To Philosophy - Hegel</A>
+</UL>
+
+<H4><A NAME="hermen"><B>Hermeneutics </B></A></H4>
+
+<CITE>The science and methodology of interpretation, especially
+of Scriptural text. From the Greek &quot;to interpret.&quot;</CITE>
+<P>
+[Source: Principia Cybernetica Web]
+<UL>
+<LI><A HREF="http://www.ai.mit.edu:8000/people/jcma/papers/1986-ai-memo-871/memo.html">Hermeneutics: From Textual Explication to Computer Understanding?</A>
+<LI><A HREF="http://www.management.mcgill.ca/homepage/Leean/herm.htm">A Guide to Selected References on Hermeneutics</A>
+</UL>
+
+<H4><A NAME="interpret"><B>Interpretation </B></A></H4>
+
+<CITE>Sense1 -interpretation, reading, version
+-- (a mental representation of the meaning or significance of
+something)<BR>
+representation, mental representation, internal representation
+-- (a presentation to the mind in the form of an idea or image)
+<P>
+Sense 2 - rendition, rendering, interpretation
+-- (the act of interpreting something as expressed in an artistic
+performance)<BR>
+performance -- (the act of presenting a play or a piece of
+music or other entertainment; ``we congratulated him on his performance
+at the recital'' )
+<P>
+Sense 3 - interpretation -- (an explanation resulting
+from interpreting something)<BR>
+speech act -- (the use of speech to perform some act)<BR>
+explanation, account -- (a statement that explains; ``he launched
+into a detailed explanation'' )
+<P>
+Sense 4 - interpretation, interpreting, rendition, rendering<BR>
+representational process -- (any basic cognitive process in which
+some entity comes to stand for represent something else)</CITE>
+<P>
+[Source: Advanced, WordNet Vocabulary Helper via OneLook
+Dictionaries] 
+
+<H4><A NAME="intervent"><B>Intervention </B></A></H4>
+
+<CITE>Sense1 - intervention, intercession<BR>
+engagement, participation, involvement -- (sharing the activities
+of a group) <P>
+Sense 2 - intervention, interference -- (a policy of intervening
+in the affairs of other countries)<BR>
+foreign policy -- (a policy governing international relations)</CITE>
+<P>
+[Source: Advanced, WordNet Vocabulary Helper via OneLook
+Dictionaries]
+
+<H4><A NAME="levi"><B>L&eacute;vi-Strauss </B></A></H4>
+
+<CITE>&quot;Father of Structuralism;&quot; born in Brussels.
+Obtained a law degree from the University of Paris. He became
+a professor of sociology at the University of Sao Paulo in Brazil
+in 1934. It was at this time that he began to think about human
+thought cross-culturally and alterity, when he was exposed to
+various cultures in Brazil. His first publication in anthropology
+appeared in 1936 and covered the social organization of the Bororo.
+After W.W.II, he taught at the New School for Social Research
+in New York. Here he met Roman Jakobson, from whom he took the
+structural linguistics model and applied its framework to culture.
+L&eacute;vi-Strauss has been noted as singly associated for the
+elaboration of the structuralist paradigm in anthropology.</CITE>
+<UL>
+<LI>Source: <A HREF="http://www.as.ua.edu/ant/murphy/struct.htm">Structuralism</A>
+by Janelle Meyer 
+</UL>
+
+<H4><A NAME="positiv"><B>Positivism </B></A></H4>
+
+<CITE>Positivism in the philosophy of science holds that we
+should admit as knowledge only that about which we can be absolutely
+certain, i.e., what is immediately graspable or &quot;empirical&quot;.
+The first thinker who is labeled a positivist was the nineteenth-century
+French philosopher <B>August Comte</B>. Comte put great stress
+on science and progress and was interested only in observable
+phenomena and the laws that determine how they act together, without
+any investigation of ultimate causes or metaphysics.</CITE>
+<P>
+[Source: A Hypertext Dictionary of Philosophy]
+<UL>
+<LI><A HREF="http://www.mygale.org/04/clotilde/home.htm">Auguste Comte Home Page</A>
+</UL>
+
+<H4><A NAME="spiral"><B>Spiral Process Model </B></A></H4>
+
+<IMG SRC="expmodel3.gif" ALT="Spiral Model">
+<UL>
+<LI>Source: <A HREF="http://www.software.org/">Software Productivity Consortium</A>
+</UL>
+
+<H4><A NAME="tinker"><B>Tinker or Bricoleur </B></A></H4>
+
+Concept from <B>Claude L&eacute;vi-Strauss</B>
+<P>
+<CITE>From Tink, because the tinker's way of proclaiming his
+trade is to beat a kettle, or because in his work he makes a tinkling noise.<BR>
+One skilled in a variety of small mechanical work.</CITE>
+<P>
+[Webster via OneLook Dictionaries]
+<P>
+<CITE>This is somebody who doesn't care about the purity or stability
+of the system s/he uses, but rather uses what's there to get a
+particular job done.
+<P>
+A bricoleur is a jack-of-all-trades, a potterer, with overtones
+of unexpected strokes. The idea of bricolage has been adopted
+by literary critics to describe a style of arranging and rearranging
+elements, working through new combinations, to lead to new and
+unexpected results. Some people compute with a plan; some people
+compute by the seat of their pants &#173; they improvise.</CITE>
+<UL>
+<LI>Source: &quot;<A HREF="http://www.wired.com/wired/4.04/features/turkle.html">
+Sherry Turkle knows what role-playing in cyberspace really means</A>&quot;
+A profile portrait in Hotwired. 
+<A HREF="http://web.mit.edu/sturkle/www/">Sherry Turkle</A> is
+professor of the sociology of science at the Massachusetts Institute
+of and the author of Life on the Screen: Identity in the Age of
+the Internet. 
+</UL>
+
+<HR>
+
+<H2><A NAME="Reading">Further Reading </A></H2>
+
+<UL>
+<LI>Internet Resources
+<UL>
+<LI><A HREF="http://ei.cs.vt.edu/~cs3604/fall.94/ACM.Commentary.html">A Scandinavian View on ACM's Code of Ethics</A>
+
+</UL>
+
+<LI>Books
+<UL>
+<LI><A HREF="http://www.ics.uci.edu/~kling/cc2.html">Computerization and Controversy: Value Conflicts and Social Choices</A>
+<LI><A HREF="http://www-mitpress.mit.edu/mitp/recent-books/phil/coydh.html">Designing Information Technology in the Postmodern Age - From Method to Metaphor</A>
+<LI><A HREF="http://dorsethouse.com/books/sota.html">Software State-of-the-Art: Selected Papers</A>
+
+</UL>
+
+</UL>
+
+<HR>
+
+<H2><A NAME="LinkList">Link List </A></H2>
+
+<UL>
+<LI><A HREF="http://www.knuten.liu.se/~bjoch509/">Bj&ouml;rn's Guide to Philosophy</A>
+<LI><A HREF="http://www.sonoma.edu/Cthink/University/univlibrary/Gloss/intro.nclk">An Educator's Guide to Critical Thinking Terms and Concepts</A>
+<LI><A HREF="http://www.plantaganet.com/user_sites/stpeter/ism/ism.html">A Hypertext Dictionary of Philosophy</A>
+<LI><A HREF="http://www.earlham.edu/suber/philinks.htm">Guide to Philosophy on the Internet</A>
+<LI><A HREF="http://www.brint.com/kuhn.htm">Philosophy of Science &amp; Information Technology: @BRINT (tm)</A>
+<LI><A HREF="http://pespmc1.vub.ac.be/">Principia Cybernetica Web</A>
+<LI><A HREF="http://www.onelook.com/">OneLook Dictionaries</A>
+<LI><A HREF="http://www.usc.edu/dept/v-lib/anthropology.html">Anthropology - WWW Virtual Library</A>
+<LI><A HREF="http://www.wsu.edu:8000/~i9248809/journals.html">Nicole's AnthroPage</A>
+
+</UL>
+
+<HR>
+</BLOCKQUOTE>
+</BODY>
+
+</HTML>
+

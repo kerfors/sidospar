@@ -40,13 +40,25 @@ Källorna skiljer sig i två namn. Kusken heter Johan Rasmusson i hembygdsfören
 
 ### Rosenlund
 
+![Rosenlund på 1870-talet, ett bostadshus bakom trädgård och lövträd](rosenlund-1870-tal.jpg)
+
+*”No 14. Marstrand. Rosenlund.” Foto: Robert Dahllöf, 1870-talet. Bohusläns museum, UMFA55055:0013, Public Domain.*
+
 Platsen var salteri under det stora sillfisket. I slutet av 1700-talet byggde Sven-Olof Rosenberg, handlare i Marstrand och direktör i Ostindiska kompaniet, det första huset. Under 1800-talet hade officerare och köpmän stället, och från 1877 arrenderade häradshövding Ragnar Berger det i 43 år. Det var alltså Berger som hade Rosenlund när kungen kom till Marstrand om somrarna.
 
 1920 tog diplomaten Björn Prytz (1887–1976) över, senare svensk minister i London under andra världskriget. 1939 revs det bergerska huset och det nuvarande byggdes. Runt huvudbyggnaden ligger mindre hus för tjänstefolk, parkskötare och trädgårdsmästare, och ett båthus från omkring 1938. Parkförvaltarens hus kallades från 1887 ”Oskars hus”, efter Oskar Isaksson och hans hustru Selma. Marken har alltid varit arrendemark.
 
 Parken blev kommunalt naturreservat 1985, omkring 40 hektar ädellövskog med ek, alm, lind och bok. Sedan 2017 ingår den i naturreservatet Marstrand.
 
+![Vintermotiv från Rosenlund, en stig mellan snötyngda träd ned mot vattnet](rosenlund-vinter-1920-tal.jpg)
+
+*Vintermotiv från Rosenlund, Djupandal. Okänd fotograf, 1920-talet. Bohusläns museum, UMFA53247:0030, Public Domain.*
+
 ### Backudden
+
+![Backudden på 1870-talet, en väg mellan lövträd fram mot en villa](backudden-1870-tal.jpg)
+
+*”No 12. Marstrand. Backudden.” Foto: Robert Dahllöf, 1870-talet. Bohusläns museum, UMFA55055:0009, Public Domain.*
 
 Backudden, granne till Rosenlund, hade också salterier under sillfisket. När sillen tog slut 1808 blev udden sommarställe för Marstrands borgare. Under andra halvan av 1800-talet växte villorna fram, bland dem konsul Fredrik Holms sommarhus från 1890-talet och den så kallade Holmska villan. Ägarna var köpmän, konsuler och direktörer från Marstrand och Göteborg. Ett känt foto från 1899 visar Oscar II på en sommarlunch på Backudden. I Riksarkivet finns en ritning till ombyggnad av villan där från 1896.
 
@@ -101,7 +113,7 @@ Inga träffar på stenen. Däremot några kartor, en ritning och personuppgifter
 - Björn Prytz i Svenskt biografiskt lexikon.
 - Claes Krantz samling, med en volym om Marstrand. Krantz skrev om Oscar II:s Marstrand.
 
-Kartorna och ritningen har ingen bildlänk i katalogen och verkar inte vara digitaliserade.
+Kartorna och ritningen har ingen bildlänk i katalogen och verkar inte vara digitaliserade. Länkarna under Källor leder därför bara till katalogposterna.
 
 ## Vad dagstidningarna gav
 
@@ -128,13 +140,18 @@ Hembygdsföreningen:
 
 Riksarkivet:
 
-- [Karta över trankok och sillsalterier på Koön](https://sok.riksarkivet.se/arkiv/3xruKpzFrADPjTY8GY2DyA), 1789
-- [Situations Charta öfver Koön vid Marstrand](https://sok.riksarkivet.se/arkiv/hzxLhzcu8fCbkB91TPHqL7), 1804
-- [Situationskarta över Koön vid Marstrand](https://sok.riksarkivet.se/arkiv/8nfD1t08VaECX0Ro4EGSO0), kopia omkring 1900, Krigsarkivet
-- [Ritning till ombyggnad av villan vid Backudden på Koön](https://sok.riksarkivet.se/arkiv/hzERhzWyHSbrLVpwj5YMKN), 1896
-- [Marstrands församlingsbok 1895–1912](https://sok.riksarkivet.se/bildvisning/00120123), [1912–1932](https://sok.riksarkivet.se/bildvisning/00098196), [1932–1945](https://sok.riksarkivet.se/bildvisning/00098199)
+Kartorna och ritningen nedan är inte digitaliserade. Länkarna leder till Riksarkivets katalogpost, inte till själva kartan:
+
+- [Karta över trankok och sillsalterier på Koön](https://sok.riksarkivet.se/arkiv/3xruKpzFrADPjTY8GY2DyA), 1789 (katalogpost)
+- [Situations Charta öfver Koön vid Marstrand](https://sok.riksarkivet.se/arkiv/hzxLhzcu8fCbkB91TPHqL7), 1804 (katalogpost)
+- [Situationskarta över Koön vid Marstrand](https://sok.riksarkivet.se/arkiv/8nfD1t08VaECX0Ro4EGSO0), kopia omkring 1900, Krigsarkivet (katalogpost)
+- [Ritning till ombyggnad av villan vid Backudden på Koön](https://sok.riksarkivet.se/arkiv/hzERhzWyHSbrLVpwj5YMKN), 1896 (katalogpost)
+
+Övrigt från Riksarkivet:
+
+- [Marstrands församlingsbok 1895–1912](https://sok.riksarkivet.se/bildvisning/00120123), [1912–1932](https://sok.riksarkivet.se/bildvisning/00098196), [1932–1945](https://sok.riksarkivet.se/bildvisning/00098199) (digitaliserade, länkarna öppnar själva böckerna)
 - [Björn G Prytz](https://sok.riksarkivet.se/sbl/Presentation.aspx?id=7409), Svenskt biografiskt lexikon
-- [Claes Krantz samling, Marstrand](https://sok.riksarkivet.se/arkiv/dgQmz4zTyg8qta00I810yx)
+- [Claes Krantz samling, Marstrand](https://sok.riksarkivet.se/arkiv/dgQmz4zTyg8qta00I810yx) (katalogpost, inte digitaliserad)
 
 Oscar II och Marstrand:
 
@@ -152,7 +169,13 @@ Stenar med Oscar II:s namn på andra platser:
 
 Karta:
 
-- [Ekonomiska kartan, blad Instön 7B5a](https://historiskakartor.lantmateriet.se/hk/viewer/internal/J133-7B5a76/52414b5f4a3133332d374235613736/rak2/RAK/Inst%C3%B6n,%207B5a76/Ekonomiska%20kartan), Statens lantmäteriverk 1976, via Lantmäteriets Historiska kartor. Ekonomiska kartan är öppna data under CC0 enligt [Lantmäteriet](https://lantmateriet.se/en/geodata/geodata-products/product-list/ekonomiska-kartan).
+- [Ekonomiska kartan, blad Instön 7B5a](https://historiskakartor.lantmateriet.se/hk/viewer/internal/J133-7B5a76/52414b5f4a3133332d374235613736/rak2/RAK/Inst%C3%B6n,%207B5a76/Ekonomiska%20kartan), Statens lantmäteriverk 1976, via Lantmäteriets Historiska kartor (länken öppnar själva kartan). Ekonomiska kartan är öppna data under CC0 enligt Lantmäteriets produktbeskrivning.
+
+Bilder från Bohusläns museum via DigitaltMuseum, alla märkta Public Domain (länkarna öppnar bildsidan):
+
+- [Rosenlund, Marstrand](https://digitaltmuseum.se/011014497911/rosenlund-marstrand), Robert Dahllöf, 1870-talet
+- [Backudden, Marstrand](https://digitaltmuseum.se/011014497907/backudden-marstrand), Robert Dahllöf, 1870-talet
+- [Vintermotiv från Rosenlund, Djupandal](https://digitaltmuseum.se/011014326081/umfa53247-0030), okänd fotograf, 1920-talet. Gåva från Marstrands hembygdsförening
 
 Övrigt:
 

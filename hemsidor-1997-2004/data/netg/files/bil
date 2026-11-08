@@ -1,0 +1,197 @@
+;;; Toy example of "adaptive car radio assistant"
+;;;
+;;; Staffan Truvé, CR&T, 97-09-10
+
+;;; data type for events - with constructor and selectors
+;;; a triple of person name, time of event, and channel changed to
+
+(define (create-event person time channel)
+  (list person time channel))
+
+(define (event-person e)
+  (car e))
+
+(define (event-time e)
+  (cadr e))
+
+(define (event-channel e)
+  (caddr e))
+
+
+;;; sample list of events
+(define events1
+  (list (create-event 'kalle 7  'p1)
+	  (create-event 'kalle 9  'p1)
+	  (create-event 'kalle 13 'p3)
+	  (create-event 'kalle 16 'city)
+	  (create-event 'kalle 17 'p1)
+	  (create-event 'kalle 18 'city)
+	  (create-event 'kalle 22 'p3)
+	  (create-event 'kalle 7  'p1)
+	  (create-event 'kalle 8  'p2)
+	  (create-event 'kalle 9  'p3)
+	  (create-event 'kalle 10 'p1)
+	  (create-event 'kalle 7  'p1)
+	  (create-event 'kalle 13 'p2)
+	  (create-event 'kalle 14 'city)
+	  (create-event 'kalle 17 'p1)
+	  (create-event 'kalle 19 'p2)
+	  (create-event 'kalle 23 'p3)
+   )
+)
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;;; data types for person model - constructor and selectors
+;;; (person ((starttime endtime channel) 
+;;;           ...
+;;;         ))
+
+(define (create-model person)
+  (list person '()))
+
+(define (model-person model)
+  (car model))
+
+(define (model-zones model)
+  (cadr model))
+
+(define (create-zone time channel)
+  (list time (list channel)))
+
+(define (zone-time zone)
+  (car zone))
+
+(define (zone-channels zone)
+  (cadr zone))
+
+(define (update-zone zone channel)
+  (let ((zone-t (zone-time zone))
+	  (zone-cs (zone-channels zone)))
+    (list zone-t (cons channel zone-cs))))
+
+
+;;; very simple learning function; takes a person model + a list of events
+;;; and returns the refined model
+
+(define (learn model events)
+  (if (null? events)
+      model
+      (learn (learnone model (car events)) (cdr events))))
+
+(define (learnone model event)
+  (let ((name (model-person model))
+	  (zones (model-zones model))
+	  (time (event-time event))
+	  (channel (event-channel event)))
+    (list name (update zones time channel))))
+
+(define (update zones time channel)
+  (if (null? zones)
+      (list (create-zone time channel))
+      (let* ((zone (car zones))
+	       (zone-t (zone-time zone))
+	       (zone-cs (zone-channels zone))
+	       (rest (cdr zones))
+	      )
+	  (cond ((= time zone-t)
+	         (cons (update-zone zone channel)
+		         rest))
+	        ((> zone-t time)
+	         (cons (create-zone time channel)
+		         zones))
+	        (else
+	         (cons zone
+		         (update rest time channel)))))))
+
+
+
+
+
+
+
+
+
+
+;;; this is the simple advisor - takes a model and a time, and 
+;;; suggests a radio channel
+(define (suggest model time)
+  (let ((zones (model-zones model)))
+    (suggester zones time '???)))
+
+(define (suggester zones time default)
+  (if (null? zones)
+      default
+      (let* ((zone (car zones))
+	       (zone-t (zone-time zone))
+	       (zone-cs (zone-channels zone))
+	       (rest (cdr zones))
+	      )
+	  (cond ((= time zone-t)
+	         (best-choice zone-cs))
+	        ((> zone-t time)
+	         default)
+	        (else
+	         (suggester rest time (best-choice zone-cs)))))))
+
+
+;;; really naive chooser of best channel!!!
+(define (best-choice channels)
+  (car channels))
+     
+    
+;;; test it all
+
+
+(define kalle (create-model 'kalle)) 
+
+(define m1 (learn kalle events1))
+
+;;; m1 ===>
+;(kalle ((7 (p1 p1 p1))
+;        (8 (p2))
+;        (9 (p3 p1))
+;        (10 (p1))
+;        (13 (p2 p3))
+;        (14 (city))
+;        (16 (city))
+;        (17 (p1 p1))
+;        (18 (city))
+;        (19 (p2))
+;        (22 (p3))
+;        (23 (p3))))
+;
+;
+;> (suggest m1 9)
+;p3
+;> (suggest m1 0)
+;???
+;> (suggest m1 20)
+;p2
+;

@@ -55,6 +55,15 @@ ATTR_RE = re.compile(
     re.IGNORECASE,
 )
 BODY_RE = re.compile(r"<body\b[^>]*>", re.IGNORECASE)
+HEAD_RE = re.compile(r"<head\b[^>]*>", re.IGNORECASE)
+META_CHARSET_RE = re.compile(r"""(<meta\b[^>]*charset\s*=\s*["']?)[A-Za-z0-9_-]+""", re.IGNORECASE)
+# The copies are written as UTF-8 (GitHub Pages serves them as UTF-8), and
+# the page content is centred with a maximum width.
+HEAD_EXTRA = (
+    '<meta charset="utf-8">'
+    "<style>body{max-width:56rem;margin-left:auto!important;margin-right:auto!important;"
+    "padding:0 1rem}</style>"
+)
 TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.IGNORECASE | re.DOTALL)
 CHARSET_RE = re.compile(rb"""charset\s*=\s*["']?([A-Za-z0-9_-]+)""", re.IGNORECASE)
 
@@ -133,6 +142,15 @@ def rewrite_html(text, item, files_by_key, used):
         return f'{match.group("name")}"{html.escape(relative)}"'
 
     text = ATTR_RE.sub(replace, text)
+    # Declared charset (iso-8859-1, windows-1252) becomes utf-8; a page
+    # without one gets <meta charset="utf-8">. Plus the centring style.
+    text, declared = META_CHARSET_RE.subn(r"\g<1>utf-8", text)
+    extra = HEAD_EXTRA if declared == 0 else HEAD_EXTRA.replace('<meta charset="utf-8">', "")
+    head = HEAD_RE.search(text)
+    if head:
+        text = text[:head.end()] + extra + text[head.end():]
+    else:
+        text = extra + text
     body = BODY_RE.search(text)
     if body:
         text = text[:body.end()] + banner(item) + text[body.end():]
@@ -203,11 +221,11 @@ def main():
         if not is_html(item):
             target.write_bytes((DATA_DIR / item["path"]).read_bytes())
             continue
-        text, encoding = read_page(item)
+        text, _ = read_page(item)
         if key in listed_keys:
             rows.append((page_title(text, item), item))
         text = rewrite_html(text, item, files_by_key, set())
-        target.write_bytes(text.encode(encoding, errors="xmlcharrefreplace"))
+        target.write_text(text, encoding="utf-8")
 
     write_index(rows)
     print(f"sidor/ and index.md written: {len(rows)} pages listed, "

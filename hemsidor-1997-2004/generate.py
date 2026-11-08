@@ -98,7 +98,10 @@ def rewrite_html(text, item, files_by_key):
 
     def replace(match):
         value = match.group("dq") or match.group("sq") or match.group("bare") or ""
-        absolute = urllib.parse.urljoin(item["original"], html.unescape(value))
+        # Some pages were saved from Word with Windows paths (images\fig1.gif);
+        # browsers read the backslash as a slash, and so does this.
+        value = html.unescape(value).replace("\\", "/")
+        absolute = urllib.parse.urljoin(item["original"], value)
         target_path = local_path(absolute)
         if target_path is None:
             return match.group(0)

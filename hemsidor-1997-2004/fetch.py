@@ -36,6 +36,10 @@ WAYBACK = "https://web.archive.org/web"
 USER_AGENT = "sidospar-hemsidor/1.0 (personal archive recovery)"
 PAUSE_SECONDS = 1.5
 RETRY_CODES = (429, 502, 503, 504)
+# When the pages moved to Viktoria in February 2000, some netg pages were
+# replaced by a short notice with this title. A capture with the notice is
+# not the page itself, so an older capture is used instead.
+MOVE_NOTICE = b"New personal homepage address"
 
 
 def get(url):
@@ -98,6 +102,15 @@ def local_path(url):
 
 
 def main():
+    # Which capture each already downloaded file came from, from the last run.
+    previous = {}
+    manifest_path = DATA_DIR / "manifest.json"
+    if manifest_path.exists():
+        last = json.loads(manifest_path.read_text(encoding="utf-8"))
+        for source in last["sources"].values():
+            for item in source["files"]:
+                previous[item["path"].lower()] = item
+
     manifest = {"sources": {}}
     for prefix, folder in SOURCES.items():
         print(f"Listing captures under {prefix}")
@@ -126,16 +139,22 @@ def main():
         print(f"  {len(captures)} captures, {len(candidates)} files with content, "
               f"{len(set(skipped_query))} URLs with query string skipped")
         # The CDX index sometimes lists a 200 capture that the archive then
-        # answers 404 for. Then older captures of the same URL are tried; if all
-        # fail, the file is listed as missing in the manifest.
+        # answers 404 for, and some netg captures are only the move notice.
+        # Then older captures of the same URL are tried; if all fail, the file
+        # is listed as missing in the manifest.
         chosen = []
         missing = []
         for key in sorted(candidates):
             versions = sorted(candidates[key], key=lambda c: c["timestamp"], reverse=True)
             target = DATA_DIR / versions[0]["path"]
+            if target.exists() and MOVE_NOTICE in target.read_bytes():
+                print(f"  {versions[0]['path']}: move notice, replacing it with an older capture")
+                target.unlink()
+            if target.exists():
+                # Downloaded in an earlier run: keep the capture recorded then.
+                chosen.append(previous.get(key, versions[0]))
+                continue
             for item in versions:
-                if target.exists():
-                    break
                 print(f"  {item['timestamp'][:8]}  {item['path']}")
                 try:
                     content = get(f"{WAYBACK}/{item['timestamp']}id_/{item['original']}")
@@ -145,12 +164,15 @@ def main():
                     print("    404 in the archive, trying an older capture")
                     time.sleep(PAUSE_SECONDS)
                     continue
+                if MOVE_NOTICE in content:
+                    print("    move notice, trying an older capture")
+                    time.sleep(PAUSE_SECONDS)
+                    continue
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes(content)
+                chosen.append(item)
                 time.sleep(PAUSE_SECONDS)
                 break
-            if target.exists():
-                chosen.append(item)
             else:
                 missing.append(versions[0]["path"])
 

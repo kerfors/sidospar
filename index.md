@@ -2,6 +2,12 @@
 
 Personliga projekt vid sidan av arbetet. [Kerstin Forsberg](https://kerfors.github.io/)
 
+## Eriksberg och Rosenlund på Koön
+
+När byggdes de fina husen vid Eriksberg och Rosenlund innanför Marstrand, och vad betyder stenen med Oscars namnteckning från 11 augusti 1897? En källgenomgång med hembygdsföreningens husinventering, öppna webbkällor och Riksarkivets MCP-tjänst, november 2026.
+
+- [Eriksberg och Rosenlund på Koön – källäget](koon-eriksberg-rosenlund/)
+
 ## Nordens historia: en tidslinje
 
 Hur skulle Chart Origins affisch Timeline of World History se ut för Norden? En kolumn per land, med unionerna som gemensamma block. Varje uppgift kontrollerad mot nordiska uppslagsverk, oktober 2026.

@@ -7,6 +7,7 @@ https://kerfors.github.io/sidospar/
 
 | Mapp | Projekt |
 | --- | --- |
+| `koon-eriksberg-rosenlund/` | Källgenomgång: när byggdes husen vid Eriksberg och Rosenlund på Koön, och vad är stenen med Oscars namn? |
 | `nordens-historia/` | Tidslinje: Nordens historia i stil med Chart Origins Timeline of World History, med källkontroll per uppgift (data, JSON och skript). |
 | `kongahalla-beredskapssjukhus/` | Källgenomgång: var Kongahällagymnasiet i Kungälv planlagt som beredskapssjukhus under kalla kriget? |
 | `kungalvs-kyrka-brod/` | Källgenomgång: tvättades taket i Kungälvs kyrka med ljust bröd? Med en version för barn. |
@@ -34,3 +35,5 @@ https://pub.raa.se/dokumentation/063c1b4a-29a6-42c8-8267-79686fffa299
 Bilden i `kameramuseum-contax/contax-hyllan.html` är fotograferad av Thomas Lövgren, CyberPhoto,
 och kommer från https://www.cyberphoto.se/captains-log/kameramuseum
 Den används med hans tillstånd (e-post 8 oktober 2026).
+
+Bilden i `koon-eriksberg-rosenlund/oscar-stenen-1897.jpg` är fotograferad av Björn Forsberg, november 2026.

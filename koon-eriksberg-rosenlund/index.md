@@ -64,6 +64,8 @@ Stenen ligger i skogen vid Rosenlund, vid en av de många fina gamla anlagda pro
 
 Det är Oscar II:s namnteckning och datumet 11 augusti 1897, skrivet på samma sätt som på hans minnessten i Östersund, ”Oscar 18 21/7 97”, från samma sommar. Kungen lät hugga in sin namnteckning på platser han besökt. Vid Oscarshöjd i Gränna finns en sten efter ett besök 1895.
 
+Det finns sådana stenar på närmare håll också. Vid vattnet vid Nääs slott och slöjdseminarium, vid Sävelången, finns ”Kungastenen” med kungliga namnteckningar. Enligt en geocache-beskrivning höggs Oscar II:s in 1874, när han besökte August Abrahamson, och kungen kom tillbaka 1891 med sönerna Gustaf och Eugen. I Jonsered finns kungens namn med datum i berget där kraftverkskanalen börjar, från ett besök den 14 september 1901. Uppgifterna om Nääs och Jonsered är inte kontrollerade mot primärkällor.
+
 ### Vad tidningen skrev
 
 Badgästtidningen *Marstrand* kom ut lördagen den 14 augusti 1897. På första sidan, under rubriken ”Om hvartannat”, redovisas kungens vecka dag för dag:
@@ -143,6 +145,9 @@ Oscar II och Marstrand:
 Stenar med Oscar II:s namn på andra platser:
 
 - [Grännabergsleden](http://jennysutflykter.blogspot.com/2014/06/grannabergsleden.html), bloggen Jennys utflykter, om stenen vid Oscarshöjd i Gränna
+- [Slottsparken](https://naas.se/se-gora/slottsparken/), Nääs slott, om Kungastenen med kungliga autografer
+- [Folk och figurer från Nääs; Grottan o Kungastenen](https://www.geocaching.com/geocache/GC33TWZ), geocache GC33TWZ
+- [Oscar II firas årligen i Jonsered](https://larsgahrnskriver.wordpress.com/2013/05/23/oscar-ii-firas-arligen-i-jonsered/), bloggen Lars Gahrn skriver, 2013
 - [Oscar II besök, minnessten, Östersund](https://commons.wikimedia.org/wiki/File:Oscar_II_bes%C3%B6k,_minnessten,_%C3%96stersund,_juni_2023.jpg), Wikimedia Commons
 
 Karta:

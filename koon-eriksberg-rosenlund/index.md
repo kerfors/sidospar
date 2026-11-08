@@ -91,9 +91,9 @@ Badgästtidningen *Marstrand* kom ut lördagen den 14 augusti 1897. På första 
 | Torsdag 12 augusti | Förmiddag hos Pontus Fürstenberg, kväll på herr Klausens soaré |
 
 </div>
-<figure style="flex:0 1 240px; margin:0;">
-<a href="faksimil-om-hvartannat-1897-08-14.jpg"><img src="faksimil-om-hvartannat-1897-08-14.jpg" alt="Faksimil ur badgästtidningen Marstrand 14 augusti 1897, notisen Om hvartannat om kungens vecka, med utfärden till Backudden på onsdagen" style="width:100%; height:auto;"></a>
-<figcaption style="font-size:0.85em;"><em>Faksimil ur badgästtidningen Marstrand, 14 augusti 1897, första sidan. Rubriken står längst ned i en spalt och texten fortsätter i nästa. Kungliga biblioteket. Klicka för större bild.</em></figcaption>
+<figure style="flex:0 1 260px; margin:0;">
+<a href="marstrand-1897-08-14-sida1.jpg"><img src="marstrand-1897-08-14-sida1-liten.jpg" alt="Första sidan av badgästtidningen Marstrand, lördagen den 14 augusti 1897. Notisen Om hvartannat står längst ned i den näst sista spalten och fortsätter överst i spalten längst till höger" style="width:100%; height:auto; border:1px solid #ddd;"></a>
+<figcaption style="font-size:0.85em;"><em>Första sidan av badgästtidningen Marstrand, 14 augusti 1897. ”Om hvartannat” börjar längst ned i den näst sista spalten och fortsätter överst i spalten längst till höger. Kungliga biblioteket. Klicka för större bild.</em></figcaption>
 </figure>
 </div>
 

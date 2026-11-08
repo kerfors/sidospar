@@ -36,7 +36,7 @@ Bilden i `kameramuseum-contax/contax-hyllan.html` är fotograferad av Thomas Lö
 och kommer från https://www.cyberphoto.se/captains-log/kameramuseum
 Den används med hans tillstånd (e-post 8 oktober 2026).
 
-Bilden i `koon-eriksberg-rosenlund/oscar-stenen-1897.jpg` är fotograferad av Björn Forsberg, november 2026.
+Bilden i `koon-eriksberg-rosenlund/oscar-stenen-1897.jpg` är fotograferad av Björn Forsberg, november 2025.
 
 Kartan i `koon-eriksberg-rosenlund/karta-koon-1976.jpg` är ett utsnitt ur Ekonomiska kartan, blad Instön 7B5a
 (Statens lantmäteriverk 1976), hämtat från https://historiskakartor.lantmateriet.se/

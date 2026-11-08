@@ -24,7 +24,7 @@ Arbetet gjordes en lördagskväll, i ett samtal med Claude (Anthropic):
 3. Hembygdsföreningens inventering från 2005 ligger på deras webbplats som ett Windows-program (.exe) från en CD-skiva. Det laddades ned och texterna och bilderna togs ut ur filen, utan att programmet kördes.
 4. Sökning via Riksarkivets MCP-server.
 5. Sökning i Kungliga bibliotekets digitaliserade dagstidningar.
-6. Dagen efter fotograferade Björn Forsberg stenen. Med datumet lästes badgästtidningen *Marstrand* för den veckan. Sidan maskinlästes och notisen kontrollerades mot bilden av tidningssidan.
+6. Datumet på stenen kom från ett foto som Björn Forsberg tog på en kall promenad i november 2025. Med datumet lästes badgästtidningen *Marstrand* för den veckan. Sidan maskinlästes och notisen kontrollerades mot bilden av tidningssidan.
 
 ## Husen
 
@@ -56,7 +56,7 @@ Stenen ligger i skogen vid Rosenlund, vid en av de många fina gamla anlagda pro
 
 ![Stenen med Oscar II:s namnteckning och datumet 11/8 1897, förgylld, bland mossa och stensöta](oscar-stenen-1897.jpg)
 
-*Stenen vid Rosenlund, november 2026. Foto: Björn Forsberg.*
+*Stenen vid Rosenlund, november 2025. Foto: Björn Forsberg.*
 
 
 > Oscar

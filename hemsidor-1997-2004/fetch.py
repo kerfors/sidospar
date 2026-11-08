@@ -104,12 +104,12 @@ def main():
         captures = list_captures(prefix)
         time.sleep(PAUSE_SECONDS)
 
-        # Latest 200 capture per local file. Keyed case-insensitively, since
+        # All 200 captures per local file, newest first. Keyed case-insensitively, since
         # macOS file names are (~Kerfor and ~kerfor would collide).
         # URLs with a query string are skipped: they are Apache directory
         # listings sorted another way (?D=A, ?N=D ...), the same listing as the
         # directory URL itself. They are kept in the manifest as skipped_query.
-        chosen = {}
+        candidates = {}
         skipped_query = []
         for capture in captures:
             if capture["statuscode"] != "200":
@@ -121,24 +121,43 @@ def main():
             if path is None:
                 raise ValueError(f"Capture outside {prefix}: {capture['original']}")
             key = str(path).lower()
-            if key not in chosen or capture["timestamp"] > chosen[key]["timestamp"]:
-                chosen[key] = dict(capture, path=str(path))
+            candidates.setdefault(key, []).append(dict(capture, path=str(path)))
 
-        print(f"  {len(captures)} captures, {len(chosen)} files with content, "
+        print(f"  {len(captures)} captures, {len(candidates)} files with content, "
               f"{len(set(skipped_query))} URLs with query string skipped")
-        for item in sorted(chosen.values(), key=lambda c: c["path"]):
-            target = DATA_DIR / item["path"]
+        # The CDX index sometimes lists a 200 capture that the archive then
+        # answers 404 for. Then older captures of the same URL are tried; if all
+        # fail, the file is listed as missing in the manifest.
+        chosen = []
+        missing = []
+        for key in sorted(candidates):
+            versions = sorted(candidates[key], key=lambda c: c["timestamp"], reverse=True)
+            target = DATA_DIR / versions[0]["path"]
+            for item in versions:
+                if target.exists():
+                    break
+                print(f"  {item['timestamp'][:8]}  {item['path']}")
+                try:
+                    content = get(f"{WAYBACK}/{item['timestamp']}id_/{item['original']}")
+                except urllib.error.HTTPError as err:
+                    if err.code != 404:
+                        raise
+                    print("    404 in the archive, trying an older capture")
+                    time.sleep(PAUSE_SECONDS)
+                    continue
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(content)
+                time.sleep(PAUSE_SECONDS)
+                break
             if target.exists():
-                continue
-            print(f"  {item['timestamp'][:8]}  {item['path']}")
-            content = get(f"{WAYBACK}/{item['timestamp']}id_/{item['original']}")
-            target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_bytes(content)
-            time.sleep(PAUSE_SECONDS)
+                chosen.append(item)
+            else:
+                missing.append(versions[0]["path"])
 
         manifest["sources"][prefix] = {
             "folder": folder,
-            "files": sorted(chosen.values(), key=lambda c: c["path"]),
+            "files": chosen,
+            "missing": missing,
             "skipped_query": sorted(set(skipped_query)),
             "all_captures": captures,
         }

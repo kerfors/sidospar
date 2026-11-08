@@ -121,12 +121,12 @@
      "path": "netg/dynamic_content.gif"
     },
     {
-     "timestamp": "20000310074043",
+     "timestamp": "20000123015651",
      "original": "http://www.netg.se:80/~kerfor/eBusinessLinks.htm",
      "statuscode": "200",
      "mimetype": "text/html",
-     "digest": "RV2P7444WLUUB6WNHWXL4TGCIKJAFR6Y",
-     "length": "1444",
+     "digest": "5K5SVELNPXOCG4V3SXXMZTA7O24V7QP4",
+     "length": "4459",
      "path": "netg/eBusinessLinks.htm"
     },
     {
@@ -148,12 +148,12 @@
      "path": "netg/english.htm"
     },
     {
-     "timestamp": "20000310101251",
+     "timestamp": "19991128202956",
      "original": "http://www.netg.se:80/~kerfor/extranet.htm",
      "statuscode": "200",
      "mimetype": "text/html",
-     "digest": "LVA7X5PDD4XVTHIJ5BML5JOKMYFC5NAL",
-     "length": "1352",
+     "digest": "RJLULVXWLDISO5DVNHIUIF2WR3POYOTF",
+     "length": "11226",
      "path": "netg/extranet.htm"
     },
     {
@@ -418,6 +418,15 @@
      "path": "netg/images/kerstin1.jpg"
     },
     {
+     "timestamp": "20000109183327",
+     "original": "http://www.netg.se:80/~kerfor/images/sitename60_mining.gif",
+     "statuscode": "200",
+     "mimetype": "im",
+     "digest": "JEYV4EPNBZFVKEGV2MQZLK6ZMNE4Q66Z",
+     "length": "1838",
+     "path": "netg/images/sitename60_mining.gif"
+    },
+    {
      "timestamp": "19991109200335",
      "original": "http://www.netg.se:80/~kerfor/images/sumtable.gif",
      "statuscode": "200",
@@ -610,7 +619,6 @@
    "missing": [
     "netg/images/fig2.gif",
     "netg/images/mingo.gif",
-    "netg/images/sitename60_mining.gif",
     "netg/kajak.htm"
    ],
    "skipped_query": [
@@ -5555,6 +5563,15 @@
      "path": "viktoria/images/binder.gif"
     },
     {
+     "timestamp": "20030913014028",
+     "original": "http://viktoria.informatik.gu.se:80/~kerstinf/images/fig4.gif",
+     "statuscode": "200",
+     "mimetype": "image/gif",
+     "digest": "AJV4QMIQZAVSOPTY5722MWZLOYP2I2FI",
+     "length": "3445",
+     "path": "viktoria/images/fig4.gif"
+    },
+    {
      "timestamp": "20030914173006",
      "original": "http://viktoria.informatik.gu.se:80/~kerstinf/images/fig6.gif",
      "statuscode": "200",
@@ -5926,7 +5943,6 @@
    ],
    "missing": [
     "viktoria/compcont/cmm.gif",
-    "viktoria/images/fig4.gif",
     "viktoria/images/fig7.gif",
     "viktoria/images/viktoria.gif",
     "viktoria/mingo.gif"

@@ -12,7 +12,7 @@ Hämtningen gjordes med [fetch.py](fetch.py) och kopian byggdes med [generate.py
 
 ## netg.se/~kerfor/
 
-37 sidor, sparade i arkivet 1998-12-01 – 2000-03-10.
+37 sidor, sparade i arkivet 1998-12-01 – 2000-01-23.
 
 | Sparad | Sida | I arkivet |
 | --- | --- | --- |
@@ -24,10 +24,10 @@ Hämtningen gjordes med [fetch.py](fetch.py) och kopian byggdes med [generate.py
 | 2000-01-22 | [Content Management](sidor/netg/contentmgm.htm) | [Wayback](https://web.archive.org/web/20000122225032/http://www.netg.se:80/~kerfor/contentmgm.htm) |
 | 1999-11-05 | [Creativity - the "Fourth Wave"?](sidor/netg/creativity.htm) | [Wayback](https://web.archive.org/web/19991105103152/http://www.netg.se:80/~kerfor/creativity.htm) |
 | 1999-12-30 | [The Organizing of Editorial Work: Eliciting Implications for New IT use](sidor/netg/cscwnews.htm) | [Wayback](https://web.archive.org/web/19991230200110/http://www.netg.se:80/~kerfor/cscwnews.htm) |
-| 2000-03-10 | [Please note: New personal homepage address](sidor/netg/eBusinessLinks.htm) | [Wayback](https://web.archive.org/web/20000310074043/http://www.netg.se:80/~kerfor/eBusinessLinks.htm) |
+| 2000-01-23 | [eBusiness readings and links](sidor/netg/eBusinessLinks.htm) | [Wayback](https://web.archive.org/web/20000123015651/http://www.netg.se:80/~kerfor/eBusinessLinks.htm) |
 | 1999-02-03 | [Editorial and Publishing Links](sidor/netg/editorial_publishing.htm) | [Wayback](https://web.archive.org/web/19990203024742/http://www.netg.se:80/%7Ekerfor/editorial_publishing.htm) |
 | 1999-02-03 | [My English Companion](sidor/netg/english.htm) | [Wayback](https://web.archive.org/web/19990203035110/http://www.netg.se:80/%7Ekerfor/english.htm) |
-| 2000-03-10 | [Please note: New personal homepage address](sidor/netg/extranet.htm) | [Wayback](https://web.archive.org/web/20000310101251/http://www.netg.se:80/~kerfor/extranet.htm) |
+| 1999-11-28 | [Extranet - a reference page](sidor/netg/extranet.htm) | [Wayback](https://web.archive.org/web/19991128202956/http://www.netg.se:80/~kerfor/extranet.htm) |
 | 1999-02-03 | [Reviews and Comments on my Extranet-page](sidor/netg/extranet_review.htm) | [Wayback](https://web.archive.org/web/19990203071831/http://www.netg.se:80/%7Ekerfor/extranet_review.htm) |
 | 1999-02-03 | [Extranet - a reference page](sidor/netg/extranet_sv.htm) | [Wayback](https://web.archive.org/web/19990203083541/http://www.netg.se:80/%7Ekerfor/extranet_sv.htm) |
 | 1999-02-03 | [Fängslande information](sidor/netg/fangslande.htm) | [Wayback](https://web.archive.org/web/19990203095028/http://www.netg.se:80/%7Ekerfor/fangslande.htm) |

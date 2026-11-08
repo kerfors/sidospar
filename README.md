@@ -44,3 +44,7 @@ Ekonomiska kartan är öppna data under CC0 enligt Lantmäteriet.
 
 Bilderna `rosenlund-1870-tal.jpg` och `backudden-1870-tal.jpg` i `koon-eriksberg-rosenlund/`
 kommer från Bohusläns museum via DigitaltMuseum (UMFA55055:0013, UMFA55055:0009), märkta Public Domain.
+
+Faksimilen `koon-eriksberg-rosenlund/faksimil-om-hvartannat-1897-08-14.jpg` är ett utsnitt ur
+*Marstrand, tidning för Marstrands stad och badgäster*, 14 augusti 1897, digitaliserad av Kungliga biblioteket
+(https://tidningar.kb.se/gvxwjj4bd90tdbwp/part/1/page/1). Texten är osignerad och från 1897.

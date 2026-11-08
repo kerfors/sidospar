@@ -78,6 +78,12 @@ Det finns sådana stenar på närmare håll också. Vid vattnet vid Nääs slott
 
 Badgästtidningen *Marstrand* kom ut lördagen den 14 augusti 1897. På första sidan, under rubriken ”Om hvartannat”, redovisas kungens vecka dag för dag:
 
+![Faksimil ur badgästtidningen Marstrand 14 augusti 1897, notisen Om hvartannat om kungens vecka, med utfärden till Backudden på onsdagen](faksimil-om-hvartannat-1897-08-14.jpg)
+
+*Faksimil ur* Marstrand, tidning för Marstrands stad och badgäster, *14 augusti 1897, första sidan. Rubriken står längst ned i en spalt och texten fortsätter i nästa. Kungliga biblioteket.*
+
+Sammanfattat:
+
 | Dag | Enligt tidningen |
 | --- | --- |
 | Lördag 7 augusti | Kungen bevistade soarén |

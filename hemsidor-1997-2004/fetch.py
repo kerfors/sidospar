@@ -106,12 +106,17 @@ def main():
 
         # Latest 200 capture per local file. Keyed case-insensitively, since
         # macOS file names are (~Kerfor and ~kerfor would collide).
+        # URLs with a query string are skipped: they are Apache directory
+        # listings sorted another way (?D=A, ?N=D ...), the same listing as the
+        # directory URL itself. They are kept in the manifest as skipped_query.
         chosen = {}
+        skipped_query = []
         for capture in captures:
             if capture["statuscode"] != "200":
                 continue
             if urllib.parse.urlsplit(capture["original"]).query:
-                raise ValueError(f"URL with query string, no local path rule: {capture['original']}")
+                skipped_query.append(capture["original"])
+                continue
             path = local_path(capture["original"])
             if path is None:
                 raise ValueError(f"Capture outside {prefix}: {capture['original']}")
@@ -119,7 +124,8 @@ def main():
             if key not in chosen or capture["timestamp"] > chosen[key]["timestamp"]:
                 chosen[key] = dict(capture, path=str(path))
 
-        print(f"  {len(captures)} captures, {len(chosen)} files with content")
+        print(f"  {len(captures)} captures, {len(chosen)} files with content, "
+              f"{len(set(skipped_query))} URLs with query string skipped")
         for item in sorted(chosen.values(), key=lambda c: c["path"]):
             target = DATA_DIR / item["path"]
             if target.exists():
@@ -133,6 +139,7 @@ def main():
         manifest["sources"][prefix] = {
             "folder": folder,
             "files": sorted(chosen.values(), key=lambda c: c["path"]),
+            "skipped_query": sorted(set(skipped_query)),
             "all_captures": captures,
         }
 

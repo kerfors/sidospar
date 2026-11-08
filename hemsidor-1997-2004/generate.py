@@ -239,9 +239,11 @@ def write_index(rows):
         href = urllib.parse.quote(copy_path(item).as_posix())
         note = NOTES.get(item["path"])
         note = f" · *{note}*" if note else ""
+        # Dates in a span that does not wrap, so 1997-04-12 stays on one line.
+        nowrap = '<span style="white-space:nowrap">{}</span>'
         lines.append(
-            f"| {date or '–'} | [{md_cell(title)}]({href}){note} "
-            f"| [{archive_date(item)}]({wayback_url(item)}) |"
+            f"| {nowrap.format(date) if date else '–'} | [{md_cell(title)}]({href}){note} "
+            f"| [{nowrap.format(archive_date(item))}]({wayback_url(item)}) |"
         )
     lines.append("")
     (ROOT / "index.md").write_text("\n".join(lines), encoding="utf-8")

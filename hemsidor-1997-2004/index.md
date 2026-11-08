@@ -1,60 +1,16 @@
-# Mina hemsidor 1997–2004
+# Mina hemsidor från Viktoriainstitutet
 
 Kerstin Forsberg · november 2026 · [Till Sidospår](../)
 
-Under webbens första år hade jag en egen hemsida. Jag mindes att leverantören hette ungefär Netguide. Fanns det några spår kvar i webbarkiven?
+Vårt första internetabonnemang köpte vi av Netg på Bokmässan i Göteborg 1994. Det gällde tio timmar.
 
-Det fanns det. En länksida vid University of the West of England, senast ändrad i januari 2000, länkade till min sida *Extranet – a reference page* på Viktoriainstitutet i Göteborg. På den sidan stod min gamla e-postadress, kerfor@netg.se. Leverantören hette alltså Netg, och hemsidan låg på netg.se/~kerfor/. Extranetsidan säger själv att jag uppdaterade den från mars 1997.
+1997 började jag som industridoktorand på Viktoriainstitutet, senare Informatik vid Göteborgs universitet. I december 2001 tog jag min licentiatexamen med avhandlingen [*Mobile newsmaking*](https://libris.kb.se/6phfq9mj3nwcjns#it) (Papers in informatics nr 9). Forskningsområdet var datorstött samarbete (CSCW). I gruppen Mobile Informatics studerade jag vad som behövs för att mycket rörliga yrkesgrupper, som nyhetsjournalister, ska få information anpassad till sin situation genom mobila tillämpningar: *Mobile Newsmaking*.
 
-Sidorna nedan är hämtade ur [Internet Archive](https://web.archive.org/) (Wayback Machine). Varje sida är den senast sparade versionen. Datumet är dagen då arkivet sparade sidan, inte när jag skrev den. Länkar mellan mina egna sidor fungerar; länkar ut till andra webbplatser leder oftast ingenstans i dag.
+Sidorna här kommer från olika doktorandkurser och projekt. De är hämtade ur [Internet Archive](https://web.archive.org/) (Wayback Machine). Varje sida är den senast sparade versionen, och datumet är dagen då arkivet sparade sidan, inte när jag skrev den. Länkar mellan mina egna sidor fungerar. Länkar ut till andra webbplatser leder oftast ingenstans i dag, och några bilder sparades aldrig.
 
 Hämtningen gjordes med [fetch.py](fetch.py) och kopian byggdes med [generate.py](generate.py). Rådata och en förteckning över alla sparade versioner ligger i [data/](data/manifest.json).
 
-## netg.se/~kerfor/
-
-37 sidor, sparade i arkivet 1998-12-01 – 2000-01-23.
-
-| Sparad | Sida | I arkivet |
-| --- | --- | --- |
-| 1999-01-28 | [Artificial Intelligence](sidor/netg/ai.htm) | [Wayback](https://web.archive.org/web/19990128224145/http://www.netg.se:80/%7Ekerfor/ai.htm) |
-| 1999-12-30 | [Car sharing and car pooling](sidor/netg/carpool.htm) | [Wayback](https://web.archive.org/web/19991230075018/http://www.netg.se:80/~kerfor/carpool.htm) |
-| 1999-02-02 | [Computers in Context](sidor/netg/compcont/compcont.htm) | [Wayback](https://web.archive.org/web/19990202192842/http://www.netg.se:80/%7Ekerfor/compcont/compcont.htm) |
-| 1999-02-02 | [Vad, Vem & När? Frågorna att ställa inför en extranet-satsning!](sidor/netg/conferator_mar98.htm) | [Wayback](https://web.archive.org/web/19990202221700/http://www.netg.se:80/%7Ekerfor/conferator_mar98.htm) |
-| 1999-02-02 | [From Layout of Pages to Configuration of Information Products](sidor/netg/configlayout.htm) | [Wayback](https://web.archive.org/web/19990202232407/http://www.netg.se:80/%7Ekerfor/configlayout.htm) |
-| 2000-01-22 | [Content Management](sidor/netg/contentmgm.htm) | [Wayback](https://web.archive.org/web/20000122225032/http://www.netg.se:80/~kerfor/contentmgm.htm) |
-| 1999-11-05 | [Creativity - the "Fourth Wave"?](sidor/netg/creativity.htm) | [Wayback](https://web.archive.org/web/19991105103152/http://www.netg.se:80/~kerfor/creativity.htm) |
-| 1999-12-30 | [The Organizing of Editorial Work: Eliciting Implications for New IT use](sidor/netg/cscwnews.htm) | [Wayback](https://web.archive.org/web/19991230200110/http://www.netg.se:80/~kerfor/cscwnews.htm) |
-| 2000-01-23 | [eBusiness readings and links](sidor/netg/eBusinessLinks.htm) | [Wayback](https://web.archive.org/web/20000123015651/http://www.netg.se:80/~kerfor/eBusinessLinks.htm) |
-| 1999-02-03 | [Editorial and Publishing Links](sidor/netg/editorial_publishing.htm) | [Wayback](https://web.archive.org/web/19990203024742/http://www.netg.se:80/%7Ekerfor/editorial_publishing.htm) |
-| 1999-02-03 | [My English Companion](sidor/netg/english.htm) | [Wayback](https://web.archive.org/web/19990203035110/http://www.netg.se:80/%7Ekerfor/english.htm) |
-| 1999-11-28 | [Extranet - a reference page](sidor/netg/extranet.htm) | [Wayback](https://web.archive.org/web/19991128202956/http://www.netg.se:80/~kerfor/extranet.htm) |
-| 1999-02-03 | [Reviews and Comments on my Extranet-page](sidor/netg/extranet_review.htm) | [Wayback](https://web.archive.org/web/19990203071831/http://www.netg.se:80/%7Ekerfor/extranet_review.htm) |
-| 1999-02-03 | [Extranet - a reference page](sidor/netg/extranet_sv.htm) | [Wayback](https://web.archive.org/web/19990203083541/http://www.netg.se:80/%7Ekerfor/extranet_sv.htm) |
-| 1999-02-03 | [Fängslande information](sidor/netg/fangslande.htm) | [Wayback](https://web.archive.org/web/19990203095028/http://www.netg.se:80/%7Ekerfor/fangslande.htm) |
-| 1999-10-18 | [Index of /~kerfor/files](sidor/netg/files/index.html) | [Wayback](https://web.archive.org/web/19991018215109/http://www.netg.se:80/%7Ekerfor/files/) |
-| 1999-02-03 | [Human Computer Interaction](sidor/netg/hci.htm) | [Wayback](https://web.archive.org/web/19990203103129/http://www.netg.se:80/%7Ekerfor/hci.htm) |
-| 1999-02-03 | [Human-Computer Interaction: Key words and theories](sidor/netg/hcikey.htm) | [Wayback](https://web.archive.org/web/19990203114754/http://www.netg.se:80/%7Ekerfor/hcikey.htm) |
-| 1998-12-01 | [VAD vill vi egentligen dela med VEM och NÄR?](sidor/netg/IIRjan98.htm) | [Wayback](https://web.archive.org/web/19981201082742/http://www.netg.se:80/%7Ekerfor/IIRjan98.htm) |
-| 1999-10-19 | [Index of /~kerfor/images](sidor/netg/images/index.html) | [Wayback](https://web.archive.org/web/19991019002023/http://www.netg.se:80/%7Ekerfor/images/) |
-| 1999-10-14 | [Index of /~kerfor](sidor/netg/index.html) | [Wayback](https://web.archive.org/web/19991014020606/http://www.netg.se:80/%7Ekerfor/) |
-| 1999-02-03 | [Home page of Kerstin Forsberg](sidor/netg/indexkf.htm) | [Wayback](https://web.archive.org/web/19990203125828/http://www.netg.se:80/%7Ekerfor/indexkf.htm) |
-| 1999-11-09 | [Summary of: "Rich Interaction in the Digital Library"](sidor/netg/indiglib.htm) | [Wayback](https://web.archive.org/web/19991109221734/http://www.netg.se:80/~kerfor/indiglib.htm) |
-| 1999-01-28 | [The Organizing of Editorial Work: Eliciting Implications for New IT use](sidor/netg/IRIS98_tidningar.htm) | [Wayback](https://web.archive.org/web/19990128205646/http://www.netg.se:80/%7Ekerfor/IRIS98_tidningar.htm) |
-| 1999-10-09 | [Konferensrapport: IRIS 21](sidor/netg/iris_notes.htm) | [Wayback](https://web.archive.org/web/19991009012049/http://www.netg.se:80/~kerfor/iris_notes.htm) |
-| 1999-11-28 | [IT and Management](sidor/netg/itmgm.htm) | [Wayback](https://web.archive.org/web/19991128221212/http://www.netg.se:80/~kerfor/itmgm.htm) |
-| 1999-11-28 | [artiklar](sidor/netg/itmgmart.htm) | [Wayback](https://web.archive.org/web/19991128232843/http://www.netg.se:80/~kerfor/itmgmart.htm) |
-| 1999-11-10 | [MDI under 15 år i industrin](sidor/netg/mdiresume.htm) | [Wayback](https://web.archive.org/web/19991110011230/http://www.netg.se:80/~kerfor/mdiresume.htm) |
-| 1999-10-09 | [Summary of: Working with Interface Metaphors](sidor/netg/metaphor.htm) | [Wayback](https://web.archive.org/web/19991009030735/http://www.netg.se:80/~kerfor/metaphor.htm) |
-| 1999-02-03 | [Sources of Inspirations](sidor/netg/quotations.htm) | [Wayback](https://web.archive.org/web/19990203235527/http://www.netg.se:80/%7Ekerfor/quotations.htm) |
-| 1999-12-30 | [Rapport WWW8](sidor/netg/RapportWWW8.htm) | [Wayback](https://web.archive.org/web/19991230051335/http://www.netg.se:80/~kerfor/RapportWWW8.htm) |
-| 1999-02-04 | [Research and study program](sidor/netg/study.htm) | [Wayback](https://web.archive.org/web/19990204005813/http://www.netg.se:80/%7Ekerfor/study.htm) |
-| 1999-10-09 | [Surfa eller drunkna](sidor/netg/surfdrun.htm) | [Wayback](https://web.archive.org/web/19991009043340/http://www.netg.se:80/~kerfor/surfdrun.htm) |
-| 1999-02-04 | [The Virtual Product; An Advanced User Interfacefor Real Products?](sidor/netg/virtprod.htm) | [Wayback](https://web.archive.org/web/19990204033443/http://www.netg.se:80/%7Ekerfor/virtprod.htm) |
-| 1999-11-10 | [Untitled](sidor/netg/vpscenario.htm) | [Wayback](https://web.archive.org/web/19991110021151/http://www.netg.se:80/~kerfor/vpscenario.htm) |
-| 2000-01-23 | [Our WWW9-paper](sidor/netg/www9paper.htm) | [Wayback](https://web.archive.org/web/20000123033059/http://www.netg.se:80/~kerfor/www9paper.htm) |
-| 1999-10-14 | [XML kurs material](sidor/netg/XML/index.html) | [Wayback](https://web.archive.org/web/19991014035144/http://www.netg.se:80/%7Ekerfor/XML/) |
-
-## viktoria.informatik.gu.se/~kerstinf/
+## Sidorna
 
 44 sidor, sparade i arkivet 2003-02-21 – 2004-01-23.
 

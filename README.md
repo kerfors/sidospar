@@ -7,6 +7,7 @@ https://kerfors.github.io/sidospar/
 
 | Mapp | Projekt |
 | --- | --- |
+| `hemsidor-1997-2004/` | Mina hemsidor från Viktoriainstitutet, doktorandkurser och projekt, hämtade ur Internet Archive (`python3 fetch.py`, sedan `python3 generate.py`). |
 | `koon-eriksberg-rosenlund/` | Källgenomgång: när byggdes husen vid Eriksberg och Rosenlund på Koön, och vad är stenen med Oscars namn? |
 | `nordens-historia/` | Tidslinje: Nordens historia i stil med Chart Origins Timeline of World History, med källkontroll per uppgift (data, JSON och skript). |
 | `kongahalla-beredskapssjukhus/` | Källgenomgång: var Kongahällagymnasiet i Kungälv planlagt som beredskapssjukhus under kalla kriget? |

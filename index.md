@@ -2,6 +2,12 @@
 
 Personliga projekt vid sidan av arbetet. [Kerstin Forsberg](https://kerfors.github.io/)
 
+## Mina hemsidor från Viktoriainstitutet
+
+Webbsidor från doktorandkurser och projekt 1997–2001, hämtade ur Internet Archive, november 2026.
+
+- [Mina hemsidor från Viktoriainstitutet](hemsidor-1997-2004/)
+
 ## Eriksberg och Rosenlund på Koön
 
 När byggdes de fina husen vid Eriksberg och Rosenlund innanför Marstrand, och vad betyder stenen med Oscars namnteckning från 11 augusti 1897? En källgenomgång med hembygdsföreningens husinventering, öppna webbkällor och Riksarkivets MCP-tjänst, november 2026.

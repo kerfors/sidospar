@@ -44,7 +44,7 @@ Vårt första internetabonnemang köpte vi av Netg på Bokmässan i Göteborg 19
 
 1997 började jag som industridoktorand på Viktoriainstitutet, senare Informatik vid Göteborgs universitet. I december 2001 tog jag min licentiatexamen med avhandlingen [*Mobile newsmaking*](https://libris.kb.se/6phfq9mj3nwcjns#it) (Papers in informatics nr 9). Forskningsområdet var datorstött samarbete (CSCW). I gruppen Mobile Informatics studerade jag vad som behövs för att mycket rörliga yrkesgrupper, som nyhetsjournalister, ska få information anpassad till sin situation genom mobila tillämpningar: *Mobile Newsmaking*.
 
-Sidorna här kommer från olika doktorandkurser och projekt. De är hämtade ur [Internet Archive](https://web.archive.org/) (Wayback Machine). Varje sida är den senast sparade versionen, och datumet är dagen då arkivet sparade sidan, inte när jag skrev den. Länkar mellan mina egna sidor fungerar. Länkar ut till andra webbplatser leder oftast ingenstans i dag, och några bilder sparades aldrig.
+Sidorna här kommer från olika doktorandkurser och projekt. De är hämtade ur [Internet Archive](https://web.archive.org/) (Wayback Machine), som den senast sparade versionen av varje sida. *Datum* är det datum sidan själv anger ("Updated by Kerstin Forsberg …"), eller när sidan senast sparades i Word om den inte anger något. *Arkiverad* är dagen då arkivet sparade kopian. Länkar mellan mina egna sidor fungerar. Länkar ut till andra webbplatser går till arkivets kopia från ungefär samma tid, när en sådan finns. Några bilder och sidor sparades aldrig.
 
 Hämtningen gjordes med [fetch.py](fetch.py) och kopian byggdes med [generate.py](generate.py). Rådata och en förteckning över alla sparade versioner ligger i [data/](data/manifest.json).
 """
@@ -55,6 +55,20 @@ ATTR_RE = re.compile(
     re.IGNORECASE,
 )
 BODY_RE = re.compile(r"<body\b[^>]*>", re.IGNORECASE)
+# The date a page gives itself: "Updated by Kerstin Forsberg 13 November 1997",
+# "Uppdaterad av Kerstin Forsberg, 18 mars 1998", "Updated 5 October 1997".
+UPDATED_RE = re.compile(
+    r"(?:Updated|Uppdaterad)(?:\s+(?:by|av)\s+Kerstin\s+Forsberg)?,?\s+"
+    r"(\d{1,2})\s+([A-Za-zÅÄÖåäö]+)\s+(\d{4})",
+    re.IGNORECASE,
+)
+LAST_SAVED_RE = re.compile(r"<o:LastSaved>(\d{4}-\d{2}-\d{2})")
+MONTHS = {
+    "january": 1, "januari": 1, "february": 2, "februari": 2, "march": 3, "mars": 3,
+    "april": 4, "may": 5, "maj": 5, "june": 6, "juni": 6, "july": 7, "juli": 7,
+    "august": 8, "augusti": 8, "september": 9, "october": 10, "oktober": 10,
+    "november": 11, "december": 12,
+}
 HEAD_RE = re.compile(r"<head\b[^>]*>", re.IGNORECASE)
 META_CHARSET_RE = re.compile(r"""(<meta\b[^>]*charset\s*=\s*["']?)[A-Za-z0-9_-]+""", re.IGNORECASE)
 # The copies are written as UTF-8 (GitHub Pages serves them as UTF-8), and
@@ -118,22 +132,29 @@ def rewrite_html(text, item, files_by_key, used):
         # browsers read the backslash as a slash, and so does this.
         value = html.unescape(value).replace("\\", "/")
         absolute = urllib.parse.urljoin(item["original"], value)
+        parts = urllib.parse.urlsplit(absolute)
+        if parts.scheme not in ("http", "https") or parts.hostname == "web.archive.org":
+            return match.group(0)
         target_path = local_path(absolute)
-        if target_path is None:
-            return match.group(0)
-        # The Viktoria pages are a move of the netg pages with the same folder
-        # layout. A link is taken to the same path in a LISTED source first
-        # (also links that point to netg), then to the other sources.
-        rest = Path(*target_path.parts[1:])
-        folders = [SOURCES[prefix] for prefix in LISTED]
-        folders += [f for f in SOURCES.values() if f not in folders]
         target = None
-        for folder in folders:
-            target = files_by_key.get(str(Path(folder) / rest).lower())
-            if target is not None:
-                break
+        if target_path is not None:
+            # The Viktoria pages are a move of the netg pages with the same folder
+            # layout. A link is taken to the same path in a LISTED source first
+            # (also links that point to netg), then to the other sources.
+            rest = Path(*target_path.parts[1:])
+            folders = [SOURCES[prefix] for prefix in LISTED]
+            folders += [f for f in SOURCES.values() if f not in folders]
+            for folder in folders:
+                target = files_by_key.get(str(Path(folder) / rest).lower())
+                if target is not None:
+                    break
         if target is None:
-            return match.group(0)
+            # Not copied here: link to the Wayback Machine at the date of this
+            # page; it redirects to the nearest capture, if there is one.
+            # Images get the im_ form, which serves the image itself.
+            flag = "" if match.group("name").lower().startswith("href") else "im_"
+            wayback = f"{WAYBACK}/{item['timestamp']}{flag}/{absolute}"
+            return f'{match.group("name")}"{html.escape(wayback)}"'
         used.add(target["path"].lower())
         relative = os.path.relpath(target["path"], here).replace(os.sep, "/")
         fragment = urllib.parse.urlsplit(absolute).fragment
@@ -166,22 +187,40 @@ def page_title(text, item):
     return item["path"]
 
 
+def page_date(text):
+    """The date the page gives itself (last "Updated by ..." in the visible
+    text), else Word's LastSaved date, else None. ISO yyyy-mm-dd."""
+    visible = re.sub(r"(?is)<(script|style|xml)\b.*?</\1>|<!--.*?-->", " ", text)
+    visible = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", visible)).split())
+    matches = UPDATED_RE.findall(visible)
+    if matches:
+        day, month, year = matches[-1]
+        return f"{year}-{MONTHS[month.lower()]:02d}-{int(day):02d}"
+    saved = LAST_SAVED_RE.search(text)
+    if saved:
+        return saved.group(1)
+    return None
+
+
 def md_cell(text):
     return text.replace("|", "\\|").replace("[", "\\[").replace("]", "\\]")
 
 
 def write_index(rows):
-    dates = sorted(archive_date(item) for _, item in rows)
+    # Oldest first by the page's own date; pages without one last.
+    rows = sorted(rows, key=lambda row: (row[1] is None, row[1] or "", row[0].lower()))
+    dated = [date for _, date, _ in rows if date]
     lines = [INTRO]
     lines.append("## Sidorna\n")
-    lines.append(f"{len(rows)} sidor, sparade i arkivet {dates[0]} – {dates[-1]}.\n")
-    lines.append("| Sparad | Sida | I arkivet |")
+    lines.append(f"{len(rows)} sidor. {len(dated)} av dem anger ett datum, "
+                 f"från {dated[0]} till {dated[-1]}.\n")
+    lines.append("| Datum | Sida | Arkiverad |")
     lines.append("| --- | --- | --- |")
-    for title, item in rows:
+    for title, date, item in rows:
         href = urllib.parse.quote(copy_path(item).as_posix())
         lines.append(
-            f"| {archive_date(item)} | [{md_cell(title)}]({href}) "
-            f"| [Wayback]({wayback_url(item)}) |"
+            f"| {date or '–'} | [{md_cell(title)}]({href}) "
+            f"| [{archive_date(item)}]({wayback_url(item)}) |"
         )
     lines.append("")
     (ROOT / "index.md").write_text("\n".join(lines), encoding="utf-8")
@@ -223,7 +262,7 @@ def main():
             continue
         text, _ = read_page(item)
         if key in listed_keys:
-            rows.append((page_title(text, item), item))
+            rows.append((page_title(text, item), page_date(text), item))
         text = rewrite_html(text, item, files_by_key, set())
         target.write_text(text, encoding="utf-8")
 

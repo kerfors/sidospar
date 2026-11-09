@@ -10,7 +10,7 @@ Under doktorandtiden skrev jag tillsammans med Lars Dannstedt på Volvo IT artik
 
 Sidorna här kommer från olika doktorandkurser och projekt. De är hämtade ur [Internet Archive](https://web.archive.org/) (Wayback Machine), som den senast sparade versionen av varje sida. *Datum* är det datum sidan själv anger ("Updated by Kerstin Forsberg …"), eller när sidan senast sparades i Word om den inte anger något. *Arkiverad* är dagen då arkivet sparade kopian. Länkar mellan mina egna sidor fungerar. Länkar ut till andra webbplatser går till arkivets kopia från ungefär samma tid, när en sådan finns. Några bilder och sidor sparades aldrig.
 
-Hämtningen gjordes med [fetch.py](fetch.py) och kopian byggdes med [generate.py](generate.py). Rådata och en förteckning över alla sparade versioner ligger i [data/](data/manifest.json).
+Sidorna grävdes fram i ett samtal med Claude (Anthropic). Hur vi gick till väga, och vad vi lärde oss om att hitta gamla webbsidor, står på en egen sida: [Så grävde vi fram sidorna](erfarenheter.html).
 
 ## Sidorna
 

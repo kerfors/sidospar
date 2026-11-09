@@ -2,6 +2,14 @@
 
 Kerstin Forsberg · november 2026 · [Till Mina hemsidor från Viktoriainstitutet](./)
 
+> **Faktaruta: Wayback Machine**
+>
+> Wayback Machine är webbarkivet hos Internet Archive, en ideell organisation i San Francisco som Brewster Kahle grundade 1996. Samma år började arkivet samla in webbsidor automatiskt, och sedan 2001 kan vem som helst bläddra i det. I oktober 2025 passerade arkivet en biljon sparade webbsidor.
+>
+> Man skriver in en webbadress och får en kalender med de dagar då sidan sparades. Det går inte att söka på innehåll eller namn, bara på adress.
+>
+> [web.archive.org](https://web.archive.org/)
+
 ## Arbetsgången
 
 Arbetet gjordes en söndagseftermiddag och kväll, i ett samtal med Claude (Anthropic):

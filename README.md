@@ -39,9 +39,9 @@ Den används med hans tillstånd (e-post 8 oktober 2026).
 
 Bilden i `koon-eriksberg-rosenlund/oscar-stenen-1897.jpg` är fotograferad av Björn Forsberg, november 2025.
 
-Kartan i `koon-eriksberg-rosenlund/karta-koon-1976.jpg` är ett utsnitt ur Ekonomiska kartan, blad Instön 7B5a
-(Statens lantmäteriverk 1976), hämtat från https://historiskakartor.lantmateriet.se/
-Ekonomiska kartan är öppna data under CC0 enligt Lantmäteriet.
+Kartan i `koon-eriksberg-rosenlund/karta-koon-1935.jpg` är ett utsnitt ur Ekonomiska kartan, blad Marstrand 21NV
+(Rikets allmänna kartverk 1935), hämtat från https://historiskakartor.lantmateriet.se/
+Lantmäteriets kartor äldre än 70 år är fria att publicera (besked från Lantmäteriets geodatasupport, november 2026).
 
 Bilderna `rosenlund-1870-tal.jpg` och `backudden-1870-tal.jpg` i `koon-eriksberg-rosenlund/`
 kommer från Bohusläns museum via DigitaltMuseum (UMFA55055:0013, UMFA55055:0009), märkta Public Domain.

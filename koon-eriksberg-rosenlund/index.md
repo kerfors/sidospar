@@ -28,9 +28,9 @@ Arbetet gjordes en lördagskväll, i ett samtal med Claude (Anthropic):
 
 ## Husen
 
-![Utsnitt ur Ekonomiska kartan 1976 med Koön, Backudden, Rosenlund, Eriksberg, Myren och Arvidsvik. Prickade linjer är gångstigar](karta-koon-1976.jpg)
+[![Utsnitt ur Ekonomiska kartan 1935 med Marstrand, Arvidsvik, Koön, Eriksberg, Backudden och Rosenlund](karta-koon-1935.jpg)](karta-koon-1935.jpg)
 
-*Koön 1976. Backudden och Rosenlund längst upp till höger, Eriksberg i mitten, Arvidsvik och Marstrand nere till vänster. De prickade linjerna är gångstigar. Utsnitt ur Ekonomiska kartan, blad Instön 7B5a, Statens lantmäteriverk 1976.*
+*Koön 1935. Backudden och Rosenlund längst upp till höger, med parkens gångar, Eriksberg i mitten, Arvidsvik och Marstrand nere till vänster. Utsnitt ur Ekonomiska kartan, blad Marstrand 21NV, Rikets allmänna kartverk 1935. Klicka för större bild.*
 
 ### Eriksberg
 
@@ -175,7 +175,7 @@ Stenar med Oscar II:s namn på andra platser:
 
 Karta:
 
-- [Ekonomiska kartan, blad Instön 7B5a](https://historiskakartor.lantmateriet.se/hk/viewer/internal/J133-7B5a76/52414b5f4a3133332d374235613736/rak2/RAK/Inst%C3%B6n,%207B5a76/Ekonomiska%20kartan), Statens lantmäteriverk 1976, via Lantmäteriets Historiska kartor (länken öppnar själva kartan). Ekonomiska kartan är öppna data under CC0 enligt Lantmäteriets produktbeskrivning.
+- [Ekonomiska kartan, blad Marstrand 21NV](https://historiskakartor.lantmateriet.se/hk/viewer/internal/J131-21NV/52414b5f4a3133312d32314e56/rak2/RAK/Marstrand,%2021NV/Ekonomiska%20kartan), Rikets allmänna kartverk 1935, via Lantmäteriets Historiska kartor (länken öppnar själva kartan). Lantmäteriets kartor äldre än 70 år är fria att publicera, enligt Lantmäteriets geodatasupport i november 2026.
 
 Bilder från Bohusläns museum via DigitaltMuseum, alla märkta Public Domain (länkarna öppnar bildsidan):
 

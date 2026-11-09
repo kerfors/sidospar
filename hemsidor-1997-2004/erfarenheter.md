@@ -20,6 +20,13 @@ Arbetet gjordes en söndagseftermiddag och kväll, i ett samtal med Claude (Anth
 
 Skripten och rådata ligger på GitHub: [fetch.py](https://github.com/kerfors/sidospar/blob/main/hemsidor-1997-2004/fetch.py) hämtar sidorna, [generate.py](https://github.com/kerfors/sidospar/blob/main/hemsidor-1997-2004/generate.py) bygger kopian och sidan med tabellen, och [data/](https://github.com/kerfors/sidospar/tree/main/hemsidor-1997-2004/data) innehåller de hämtade filerna och en förteckning över alla sparade versioner.
 
+## Om kopian
+
+- Varje sida är den senast sparade versionen i arkivet, utom där den senaste bara var en flyttlapp (se nedan).
+- I tabellen är *Datum* det datum sidan själv anger ("Updated by Kerstin Forsberg …"), eller när sidan senast sparades i Word om den inte anger något. *Arkiverad* är dagen då arkivet sparade kopian, och länken går till kopian i Wayback Machine.
+- Länkar mellan mina egna sidor fungerar. Länkar ut till andra webbplatser går till arkivets kopia från ungefär samma tid, när en sådan finns.
+- Några bilder och sidor sparades aldrig, och de länkarna leder ingenstans.
+
 ## Vad vi lärde oss om att gräva fram gamla webbsidor
 
 - **Arkivet söks på adress, inte på namn.** Wayback Machine går inte att söka i på innehåll, och vanliga sökmotorer indexerar inte arkivet. Utan en adress kommer man ingenstans. Vägen in var någon annans sida som länkade till min.

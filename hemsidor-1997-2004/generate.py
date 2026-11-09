@@ -63,9 +63,7 @@ Vårt första internetabonnemang köpte vi av Netg på Bokmässan i Göteborg 19
 
 Under doktorandtiden skrev jag tillsammans med Lars Dannstedt på Volvo IT artikeln [*Extensible use of RDF in a Business Context*](sidor/viktoria/www9/ExtRDF.htm). Jag presenterade den på WWW9-konferensen i Amsterdam i maj 2000 ([bildspelet](https://www.slideshare.net/slideshow/extensible-use-of-rdf/4368566) finns på Slideshare), och den publicerades också i tidskriften Computer Networks ([doi:10.1016/S1389-1286(00)00065-7](https://doi.org/10.1016/S1389-1286%2800%2900065-7)). Det var mitt första arbete med RDF och länkade data, något jag [fortfarande arbetar med](https://kerfors.github.io/).
 
-Sidorna här kommer från olika doktorandkurser och projekt. De är hämtade ur [Internet Archive](https://web.archive.org/) (Wayback Machine), som den senast sparade versionen av varje sida. *Datum* är det datum sidan själv anger ("Updated by Kerstin Forsberg …"), eller när sidan senast sparades i Word om den inte anger något. *Arkiverad* är dagen då arkivet sparade kopian. Länkar mellan mina egna sidor fungerar. Länkar ut till andra webbplatser går till arkivets kopia från ungefär samma tid, när en sådan finns. Några bilder och sidor sparades aldrig.
-
-Sidorna grävdes fram i ett samtal med Claude (Anthropic). Hur vi gick till väga, och vad vi lärde oss om att hitta gamla webbsidor, står på en egen sida: [Så grävde vi fram sidorna](erfarenheter.html).
+Sidorna här kommer från olika doktorandkurser och projekt. De grävdes fram ur [Internet Archive](https://web.archive.org/) i ett samtal med Claude (Anthropic). Hur vi gick till väga, hur kopian är gjord och vad vi lärde oss står på en egen sida: [Så grävde vi fram sidorna](erfarenheter.html).
 """
 
 ATTR_RE = re.compile(

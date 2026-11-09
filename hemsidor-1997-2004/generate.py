@@ -44,6 +44,7 @@ NOTES = {
     "viktoria/IRIS98_tidningar.htm": "hela artikeln",
     "viktoria/MDI15ar.htm": "bilden sparades inte i arkivet",
     "viktoria/MDI15ar_overview.htm": "översiktsbild",
+    "viktoria/configlayout.htm": "bara sammanfattning och referenser, hela texten finns inte kvar",
     "viktoria/www9/ExtRDF.htm": (
         "hela artikeln, med Lars Dannstedt; publicerad i Computer Networks 33, 2000, "
         "[doi:10.1016/S1389-1286(00)00065-7](https://doi.org/10.1016/S1389-1286%2800%2900065-7)"

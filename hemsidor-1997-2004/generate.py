@@ -44,6 +44,7 @@ NOTES = {
     "viktoria/IRIS98_tidningar.htm": "hela artikeln",
     "viktoria/MDI15ar.htm": "bilden sparades inte i arkivet",
     "viktoria/MDI15ar_overview.htm": "översiktsbild",
+    "viktoria/itmgmart.htm": "länksamling till kursen IT and Management",
     "viktoria/configlayout.htm": "bara sammanfattning och referenser, hela texten finns inte kvar",
     "viktoria/www9/ExtRDF.htm": (
         "hela artikeln, med Lars Dannstedt; publicerad i Computer Networks 33, 2000, "
@@ -52,6 +53,18 @@ NOTES = {
 }
 # Copied but not listed: index.htm is the same file as index.html.
 UNLISTED = {"viktoria/index.htm"}
+# Links to files the archive never kept, pointed to an equivalent that exists:
+# local path (lower case) -> local path, or a URL.
+LINK_FIXES = {
+    # The WWW9 slides, uploaded by Kerstin to Slideshare.
+    "viktoria/www9/extrdf www9 slides.pdf":
+        "https://www.slideshare.net/slideshow/extensible-use-of-rdf/4368566",
+    # Thesis parts kept only in the other format (print / screen), same content.
+    "viktoria/thesis/bookprint.pdf": "viktoria/thesis/bookscreen.pdf",
+    "viktoria/thesis/introscreen.pdf": "viktoria/thesis/introprint.pdf",
+    # Error in the original: the study page is one level up.
+    "viktoria/compcont/study.htm": "viktoria/study.htm",
+}
 
 INTRO = """\
 # Mina hemsidor från Viktoriainstitutet
@@ -175,6 +188,11 @@ def rewrite_html(text, item, files_by_key, used, nav=(None, None)):
         if parts.scheme not in ("http", "https") or parts.hostname == "web.archive.org":
             return match.group(0)
         target_path = local_path(absolute)
+        fix = LINK_FIXES.get(str(target_path).lower()) if target_path is not None else None
+        if fix is not None and fix.startswith("http"):
+            return f'{match.group("name")}"{html.escape(fix)}"'
+        if fix is not None:
+            target_path = Path(fix)
         target = None
         if target_path is not None:
             # The Viktoria pages are a move of the netg pages with the same folder
